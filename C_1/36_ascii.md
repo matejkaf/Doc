@@ -1,0 +1,55 @@
+---
+title: ASCII Code Tabelle
+cmds: ['md_html.bash','md_html.bash --small']
+---
+
+
+
+ASCII = **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange. Festgelegt 1967.
+
+Die leeren Felder sind nach ASCII Norm spezielle Steuerzeichen, unter Windows verbergen sich dahinter aber einige ganz hübsche Symbole.
+
+Ein ASCII Zeichen lässt sich in einem Byte abbilden. Der Datentyp `char` entspricht einem Byte. Die Zeichen von 128 bis 255 sind abhängig von Betriebssystem und Sprache, z.B.\ ISO~8859-1 für westeuropäische Sonderzeichen (z.B.\ Umlaute) – siehe [Link](http://de.wikipedia.org/wiki/ISO_8859-1).
+
+
+```
++--------------------------------------------------------------+
+| Dez | Zeichen | Dez | Zeichen | Dez | Zeichen | Dez | Zeichen|
+| --- | ------- | --- | ------- | --- | ------- | --- | -------|
+|  0  |   NL    | 32  |  Space  | 64  |   @     | 96  |   `    |
+|  1  |         | 33  |   !     | 65  |   A     | 97  |   a    |
+|  2  |         | 34  |   '     | 66  |   B     | 98  |   b    |
+|  3  |         | 35  |   #     | 67  |   C     | 99  |   c    |
+|  4  |         | 36  |   $     | 68  |   D     | 100 |   d    |
+|  5  |         | 37  |   %     | 69  |   E     | 101 |   e    |
+|  6  |         | 38  |   \     | 70  |   F     | 102 |   f    |
+|  7  |  AL     | 39  |   '     | 71  |   G     | 103 |   g    |
+|  8  |         | 40  |   (     | 72  |   H     | 104 |   h    |
+|  9  |  TAB    | 41  |   )     | 73  |   I     | 105 |   i    |
+|  10 |  NL     | 42  |   *     | 74  |   J     | 106 |   j    |
+|  11 |         | 43  |   +     | 75  |   K     | 107 |   k    |
+|  12 |         | 44  |   ,     | 76  |   L     | 108 |   l    |
+|  13 |  CR     | 45  |   -     | 77  |   M     | 109 |   m    |
+|  14 |         | 46  |   .     | 78  |   N     | 110 |   n    |
+|  15 |         | 47  |   /     | 79  |   O     | 111 |   o    |
+|  16 |         | 48  |   0     | 80  |   P     | 112 |   p    |
+|  17 |         | 49  |   1     | 81  |   Q     | 113 |   q    |
+|  18 |         | 50  |   2     | 82  |   R     | 114 |   r    |
+|  19 |         | 51  |   3     | 83  |   S     | 115 |   s    |
+|  20 |         | 52  |   4     | 84  |   T     | 116 |   t    |
+|  21 |         | 53  |   5     | 85  |   U     | 117 |   u    |
+|  22 |         | 54  |   6     | 86  |   V     | 118 |   v    |
+|  23 |         | 55  |   7     | 87  |   W     | 119 |   w    |
+|  24 |         | 56  |   8     | 88  |   X     | 120 |   x    |
+|  25 |         | 57  |   9     | 89  |   Y     | 121 |   y    |
+|  26 |         | 58  |   :     | 90  |   Z     | 122 |   z    |
+|  27 |         | 59  |   ;     | 91  |   [     | 123 |   {    |
+|  28 |         | 60  |   <     | 92  |   \     | 124 |   |    |
+|  29 |         | 61  |   =     | 93  |   ]     | 125 |   }    |
+|  30 |         | 62  |   >     | 94  |   ^     | 126 |   ~    |
+|  31 |         | 63  |   ?     | 95  |   _     | 127 |   DEL  |
++--------------------------------------------------------------+
+```
+
+
+

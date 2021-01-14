@@ -1,0 +1,213 @@
+
+# small tools
+
+`history` - zeigt die shell History an (shell built in)
+
+`cal` - calendar (`cal 2020`, `cal 5 2020`)
+
+`date` - Uhrzeit und Datum
+
+`env` - listet alle shell umgebungs (*environment*) variablen
+
+`export` - converts local variable to environment variable
+
+`which` - zeigt pfad zum tool (`which ls`)
+
+`whoami` - loggin name
+
+`which` - zeigt pfad eines Tools
+
+`hostname`
+
+`alias` - liste alle Alias
+
+`uname` - Systeminformation
+
+`clear`
+
+`ascii` Zeige ASCII Tabelle (immer installiert? Nicht macOS)
+
+`pwd`, `cd`
+
+`touch`
+
+`mkdir`
+
+
+
+# ls
+
+```bash
+# -l Lang Format
+# -h: human readable size
+$ ls -lh /usr/bin/perl                        
+-rwxr-xr-x 2 root root 11K Feb  4  2018 /usr/bin/perl
+
+# auch versteckte Dateien
+$ ls -a
+
+# Zeige Directories und nicht deren Inhalt
+$ ls -d S*
+
+# Rekursiv
+$ ls -R
+
+# Sort by size
+$ ls -lS
+
+# Sort by modification time
+$ ls -lt
+
+# show all time information
+$ ls --full-time
+
+# -r ... reverse order
+
+
+```
+
+# man
+
+Suche in man pages mit `/`, `n` für next.
+
+Suche nach man pages: `man -f passwd`. Shows different sections. `man 5 passwd`.
+
+`man -k copy` : searches both the names and descriptions of the man pages for a keyword
+
+# cp
+
+```bash
+$ cp [source] [destination]
+# -v Verbose mode
+# -i prompt before overwriting
+# -n no overwrite
+# -r copy directory
+
+```
+
+# mv (move, rename)
+
+```bash
+$ mv [source] [destination]
+
+# -i -n -v Wie bei cp
+```
+
+Verschiebt auch Directories.
+
+# rm
+
+```bash
+$ rm -i * # ask 
+$ rm -r # delete directory
+$ rmdir # delete directory (if empty)
+```
+
+# grep
+
+Mit filename (`-H`) und Zeilennummer (`-n`)
+```bash
+$ grep -Hn ToDo *
+```
+
+Rekursiv (`-r`) + ignore case  (`-i`)
+```bash
+$ grep -rin searchstring *
+```
+
+# ps
+
+Zeige Prozesse
+
+```bash
+$ sudo ps -elf
+# -e selects all processes (not only current user)
+# -l long format
+# -f full
+```
+
+
+
+```bash
+$ sudo ps –ejH
+# show process tree
+# nicht BSD/macOS
+```
+
+# mount / umount
+
+```bash
+# list mounted file systems
+$ mount
+
+$ mkdir second_drive
+
+# mount drive B - Partition 1
+$ sudo mount /dev/sdb1 ~/second_drive/
+
+# unmount file system
+$ sudo umount /dev/sdb1
+
+```
+
+
+
+# seq
+
+```bash
+$ seq -w 01 10
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+```
+
+
+
+```bash
+for num in $(seq -w 01 10); do
+    mkdir "$num"
+done
+```
+
+
+
+# xxd – hexdump
+
+```bash
+$ xxd backuptoonedrive.bash 
+00000000: 2321 2f62 696e 2f62 6173 680a 0a23 2068  #!/bin/bash..# h
+00000010: 7474 7073 3a2f 2f68 656c 702e 7562 756e  ttps://help.ubun
+00000020: 7475 2e63 6f6d 2f63 6f6d 6d75 6e69 7479  tu.com/community
+$ xxd -p backuptoonedrive.bash 
+23212f62696e2f626173680a0a232068747470733a2f2f68656c702e7562
+756e74752e636f6d2f636f6d6d756e6974792f4261636b7570596f757253
+797374656d2f5441520a0a746172202d6376707a66202f566f6c756d6573
+2f4672616e7a2f4f6e6544726976655f48544c2f4261636b7570732f446f
+63756d656e74735f242864617465202b25595f256d5f25645f25485f254d
+292e7461722e677a202d2d6f6e652d66696c652d73797374656d202e0a
+```
+
+Tool kann auch in der Gegenrichtung agieren.
+
+
+
+# chmod
+
+[ask ubuntu](https://askubuntu.com/questions/932713/what-is-the-difference-between-chmod-x-and-chmod-755)
+
+```bash
+chmod 755 
+# is equal to (rwx r-x r-x)
+chmod u=rwx,go=rx
+# 755 means full permissions for the owner and read and execute permission for others
+```
+
+
+

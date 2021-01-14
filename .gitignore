@@ -1,0 +1,10 @@
+# ignore all
+*.*
+
+# but
+!.gitignore
+!gitpushall.sh
+!*.md
+!*.jpg
+!*.jpeg
+!*.png
