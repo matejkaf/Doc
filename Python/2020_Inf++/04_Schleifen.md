@@ -1,7 +1,9 @@
 ---
-title: Schleifen in Python
+title: Doc
 cmds: ['md_html.bash --small']
 ---
+
+# Schleifen in Python
 
 Lies folgende Tutorials:
 
