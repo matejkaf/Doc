@@ -61,7 +61,7 @@ void input(int tabelle[][SPALTEN])
 
 
 
-Um die Übersicht nicht zu verlieren sollten immer die gleichen Variablennamen für Zeile und Spalte verwendet werden. Z.B.\ `z` (oder `i`) für die Zeile, `s` (oder `j`) für die Spalte.
+Um die Übersicht nicht zu verlieren sollten immer die gleichen Variablennamen für Zeile und Spalte verwendet werden. Z.B.:  `z` (oder `i`) für die Zeile, `s` (oder `j`) für die Spalte.
 Außerdem hilft es sehr die Anzahl der Zeilen und Spalten als globale Konstanten zu definieren
 
 ```c
