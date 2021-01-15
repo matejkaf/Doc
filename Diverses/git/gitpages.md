@@ -10,6 +10,8 @@ HTML include allerdings notwendig:
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ```
 
+[](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages-and-jekyll)
+
 
 
 # Erste Zeile wegbringen
@@ -17,15 +19,18 @@ HTML include allerdings notwendig:
 Link auf main-Page wegbringen!?
 
 - [](https://stackoverflow.com/questions/46375765/how-do-you-remove-header-on-github-pages)
+
 - [](https://stackoverflow.com/questions/49961202/remove-md-webpage-header-in-github)
+
 - [](https://github.com/pages-themes/primer/issues/21)
-- 
+
+  
 
 
 
 
 
-[](https://matejkaf.github.io/Doc/Python/2020_Inf++/01_Basics)
+Tests: [](https://matejkaf.github.io/Doc/Python/2020_Inf++/01_Basics)
 
 
 

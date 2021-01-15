@@ -5,6 +5,7 @@ node_modules/
 # but
 !.gitignore
 !gitpushall.sh
+!_config.yml
 !*.md
 !*.jpg
 !*.jpeg
