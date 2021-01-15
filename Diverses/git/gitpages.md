@@ -26,3 +26,20 @@ Link auf main-Page wegbringen!?
 
 
 [](https://matejkaf.github.io/Doc/Python/2020_Inf++/01_Basics)
+
+
+
+[gitpage layout Vorlage:](https://github.com/pages-themes/primer/blob/master/_layouts/default.html)
+
+```
+      {% if site.title and site.title != page.title %}
+      <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+      {% endif %}
+```
+
+
+
+SEO Tag:
+
+[](https://github.com/jekyll/jekyll-seo-tag)
+

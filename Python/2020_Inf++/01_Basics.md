@@ -1,6 +1,7 @@
 ---
 name: Datentypen und Variable
 title: Doc
+author: F. Matejka
 cmds: ['md_html.bash --small']
 ---
 
