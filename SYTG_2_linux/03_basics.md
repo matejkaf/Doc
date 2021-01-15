@@ -296,8 +296,6 @@ $ ls
 $ cat <test.txt
 ```
 
-> [!2AHITS G1 18.12.2020]
-
 **Übung:** mit Hilfe von "cat" eine Kopie der Datei test.txt --> test2.txt
 
 Der Befehl `echo` gibt sein Argument auf stdout aus, durch stdout Umleitung kann eine Datei mit Textinhalt erzeugt werden.
@@ -370,7 +368,7 @@ $ more <etc.txt
 # weiter mit Leertaste
 ```
 
-it Hilfe von Pipes können mehrere Befehle hintereinander ausgeführt werden, dabei wird stdout des einen Befehls zum stdin des nächsten Befehls. Die Befehle werden dabei durch das Pipe (`'|'`) Zeichen voneinander getrennt.
+Mit Hilfe von Pipes können mehrere Befehle hintereinander ausgeführt werden, dabei wird stdout des einen Befehls zum stdin des nächsten Befehls. Die Befehle werden dabei durch das Pipe (`'|'`) Zeichen voneinander getrennt.
 
 Beispiel:
 
@@ -452,6 +450,8 @@ $ git remote add origin https://github.com/matejkaf/sytg2-testdata.git
 $ git branch -M main
 $ git push -u origin main
 ```
+
+> [!2AHITS G1 15.01.2021]
 
 
 

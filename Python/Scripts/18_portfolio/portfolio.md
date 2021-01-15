@@ -50,6 +50,7 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
     -   ca. 15 % davon entfallen auf Europa (inkl. GB und CH)
 -   Emerging Markets ca. 11% des Weltaktienmarktes
 -   Small Caps sind per definition die untersten 15% eines Markts (diese sind nicht im MSCI enthalten)
+- [Rohstoffe sinnvoll](https://www.gerd-kommer-invest.de/sind-rohstoff-investments-sinnvoll/) Kurz: Nein
 
 
 
@@ -57,20 +58,6 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 
 Siehe `Portfolio.numbers`
 
-# Rebalancing
-
-## Q3/2020
-
-```
-R E B A L A N C I N G
-                     Betrag  Zielbetrag  AbweichungAbs  AbweichungP
-Typ                                                                
-Low-Risk          100493.83    98560.55       -1933.28        -1.96
-AT                 16865.65    14555.35       -2310.30       -15.86
-Faktor              5853.72     7485.61        1631.89        21.67
-Emerging Markets    5368.95     7277.68        1908.73        26.29
-Immo                4857.32     5822.14         964.82        16.43
-```
 
 
 
