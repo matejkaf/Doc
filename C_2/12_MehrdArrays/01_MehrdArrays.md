@@ -5,11 +5,7 @@ cmds: ['md_html.bash --small','md_html.bash']
 tags: [c,array]
 ---
 
-
-
 # Mehrdimensionale Arrays
-
-
 
 Vielfältige Anwendungen:
 
