@@ -1,4 +1,5 @@
 ---
+title: Doc
 name: Datentypen und Variable
 description: Description Text
 tagline: this is a description
@@ -10,7 +11,7 @@ In diesem Kapitel erarbeiten wir uns die Basics von Python.
 
 
 
-# Theorie 8
+# Theorie 9
 
 Gehe auf die Seite [w3schools – Python Tutorial](https://www.w3schools.com/python/default.asp) und arbeite dich durch die Kapitel:
 
