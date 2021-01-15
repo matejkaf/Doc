@@ -46,16 +46,16 @@ Nur der erste Index darf leer gelassen werden.
 void input( int tabelle[][SPALTEN] );
 void main()
 {
-	int tabelle[ZEILEN][SPALTEN];
-	input( tabelle ); 
+  int tabelle[ZEILEN][SPALTEN];
+  input( tabelle ); 
 }
 void input(int tabelle[][SPALTEN]) 
 {
-	int z;	// Zeilen
-	int s;	// Spalten
-	for( z = 0; z < ZEILEN; z++ ) 
-		for( s = 0; s < SPALTEN; s++ ) 
-			scanf( "%d", &tabelle[z][s] );
+  int z;	// Zeilen
+  int s;	// Spalten
+  for( z = 0; z < ZEILEN; z++ ) 
+    for( s = 0; s < SPALTEN; s++ ) 
+        scanf( "%d", &tabelle[z][s] );
 }
 ```
 
@@ -78,8 +78,8 @@ Initialisierung eines mehrdimensionalen Arrays – erster Index darf leer bleibe
 
 ```c
 int tabelle[][3] = {
-		{ 3, 4, 5 }, 
-		{ 6, 7, 8 }
-    };
+  { 3, 4, 5 }, 
+  { 6, 7, 8 }
+};
 ```
 
