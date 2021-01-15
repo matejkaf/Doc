@@ -1,6 +1,6 @@
 ---
 name: Datentypen und Variable
-title: null
+title: Doc
 cmds: ['md_html.bash --small']
 ---
 
@@ -8,7 +8,7 @@ In diesem Kapitel erarbeiten wir uns die Basics von Python.
 
 
 
-# Theorie 2
+# Theorie 3
 
 Gehe auf die Seite [w3schools – Python Tutorial](https://www.w3schools.com/python/default.asp) und arbeite dich durch die Kapitel:
 
