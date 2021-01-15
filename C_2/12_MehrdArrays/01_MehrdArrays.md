@@ -1,5 +1,5 @@
 ---
-title: Mehrdimensionale Arrays
+title: Doc
 type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
 tags: [c,array]
@@ -7,7 +7,7 @@ tags: [c,array]
 
 
 
-# Allgemein
+# Mehrdimensionale Arrays
 
 
 

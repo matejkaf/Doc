@@ -2,8 +2,6 @@
 title: Doc
 name: Datentypen und Variable
 description: Description Text
-tagline: this is a description
-author: F. Matejka
 cmds: ['md_html.bash --small']
 ---
 

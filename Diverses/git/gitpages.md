@@ -45,3 +45,31 @@ SEO Tag:
 - [](http://jekyll.github.io/jekyll-seo-tag/usage/)
 
 - [](http://jekyll.github.io/jekyll-seo-tag/advanced-usage/)
+
+
+
+Lösung: (`site.title`=Doc)
+
+```
+---
+title: Doc
+---
+```
+
+Dann ist zwar der Seitentitel immer Doc aber die erste Zeile ist nicht mehr da
+
+
+
+```
+---
+description: Description Text
+---
+```
+
+
+
+```
+<meta name="description" content="Description Text">
+<meta property="og:description" content="Description Text">
+```
+
