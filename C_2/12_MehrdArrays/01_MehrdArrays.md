@@ -6,7 +6,7 @@ tags: [c,array]
 
 
 
-# Mehrdimensionale Arrays
+# Mehrdimensionale Arrays 2
 
 
 
