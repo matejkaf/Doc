@@ -41,5 +41,7 @@ Link auf main-Page wegbringen!?
 
 SEO Tag:
 
-[](https://github.com/jekyll/jekyll-seo-tag)
+- [](https://github.com/jekyll/jekyll-seo-tag)
+- [](http://jekyll.github.io/jekyll-seo-tag/usage/)
 
+- [](http://jekyll.github.io/jekyll-seo-tag/advanced-usage/)

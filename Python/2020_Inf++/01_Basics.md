@@ -1,6 +1,7 @@
 ---
 name: Datentypen und Variable
 title: Doc
+page.title: Bla
 author: F. Matejka
 cmds: ['md_html.bash --small']
 ---
@@ -9,7 +10,7 @@ In diesem Kapitel erarbeiten wir uns die Basics von Python.
 
 
 
-# Theorie 4
+# Theorie 5
 
 Gehe auf die Seite [w3schools – Python Tutorial](https://www.w3schools.com/python/default.asp) und arbeite dich durch die Kapitel:
 
