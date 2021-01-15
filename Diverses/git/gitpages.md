@@ -12,6 +12,8 @@ HTML include allerdings notwendig:
 
 [](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages-and-jekyll)
 
+`_config.yml`
+
 
 
 # Erste Zeile wegbringen
