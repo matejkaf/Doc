@@ -1,6 +1,8 @@
 # JSON API mit Flask
 
-Siehe [Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
+Siehe [Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask). Alternative wäre Django ([Vergleich](https://testdriven.io/blog/django-vs-flask/)).
+
+[Source auf github](https://github.com/miguelgrinberg/REST-tutorial/blob/master/rest-server.py)
 
 ```bash
 $ python3 -m pip install flask
@@ -9,8 +11,6 @@ $ python3 -m pip install flask
 
 ```python
 #! /usr/bin/python3
-# -*- encoding: utf-8 -*-
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -23,5 +23,12 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-- [stackoverflow: What does the “at” (@) symbol do in Python?](https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python) – kurz: Funktion wird als Parameter übergeben.
+- [stackoverflow: What does the “at” (@) symbol do in Python?](https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python) – Decorator [](https://realpython.com/primer-on-python-decorators/), kurz: Funktion wird als Parameter übergeben.
 - Interessant: automatischer restart des Server Scripts bei Änderung
+
+
+
+## Static Files
+
+[How to serve static files in Flask](https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask)
+

@@ -1,11 +1,11 @@
 ---
-title: Proxy – Design Pattern
+title: Doc
 type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [ patterns ]
 ---
 
-
+# Proxy – Design Pattern
 
 ```csharp
 // (c) G. Waser
