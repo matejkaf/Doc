@@ -1,10 +1,21 @@
 ---
-title: Verzweigungen Übungen
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
+# if Anweisungen (Übungen)
 
+**Übung (Verketten)**
+
+Einteilung Körpergrößen in 4 Stufen:
+
+- XS unter 80
+- S ab 80
+- M ab 100
+- L ab 150
+
+Schreibe ein Programm das nach Eingabe der Körpergrößen die entsprechende Stufe (XS, S, M oder L) ausgibt. Verwende eine verkettete if Anweisung – keine Vergleichsoperatoren und keine Verschachtelung.
 
 ---
 
@@ -21,7 +32,6 @@ Löse mit Hilfe **verketteter if-Anweisungen** (keine logischen Operatoren verwe
 
 ---
 
-
 **Übung (Alter):**
 Das Allgemeine Bürgerliche Gesetzbuch (ABGB) unterscheidet vier Altersstufen:
 
@@ -29,8 +39,6 @@ Das Allgemeine Bürgerliche Gesetzbuch (ABGB) unterscheidet vier Altersstufen:
 - ab 7 bis 14 Jahren **unmündige/r Minderjährige/r**,
 - ab 15 bis 17 Jahren **mündige/r Minderjährige/r** (d.h. man ist strafbar) und
 - mit dem 18. Geburtstag wird man **Volljährig/er** und damit voll handlungsfähig.
-
-
 
 Aufgaben:
 
@@ -43,17 +51,3 @@ Die Ausgabe soll dann geschlechtsspezifisch erfolgen:
 
 ---
 
-**Übung (Größte von Drei):**
-Schreibe ein Programm das drei Zahlen einliest und **die Größte** davon ausgibt. Berücksichtige: Zwei oder drei der Zahlen können gleich groß sein.
-
-Beispiele:
-
-```
-Eingabe:  Ausgabe:
-  1 3 2     -->  3
-  1 8 7     -->  8
-  3 2 3     -->  3
-  5 5 5     -->  5
-```
-
----

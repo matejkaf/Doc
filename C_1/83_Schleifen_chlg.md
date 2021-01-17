@@ -1,10 +1,12 @@
 ---
-title: Schleifen (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
 
+
+# Schleifen (Challenges)
 
 
 
@@ -30,8 +32,6 @@ Beendet wird durch Eingabe von $-1$, danach wird noch ein Gesamtergebnis ausgege
 
 
 ---
-
-
 
 **Übung (Parallelogramm):**
 Schreibe ein Programm, das ein mit Sternchen gefülltes Parallelogramm ausgibt. 

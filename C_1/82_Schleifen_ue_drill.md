@@ -1,10 +1,10 @@
 ---
-title: Schleifen (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
-
+# Schleifen (Übungen)
 
 Überlege zuerst was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere dann am Rechner. 
 

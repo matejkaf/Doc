@@ -1,10 +1,10 @@
 ---
-title: Logische Operatoren
+title: Doc
 type: lecture
 cmds: ['md_html.bash --small']
 ---
 
-
+# Logische Operatoren
 
 Es gibt 3 logische Operatoren:
 
@@ -31,6 +31,8 @@ Anwendung:
 
 
 ### Negation
+
+Mit vorgesetztem `!`
 
 wahr$\rightarrow$falsch bzw. falsch$\rightarrow$wahr
 

@@ -1,11 +1,12 @@
 ---
-title: Logische Operatoren (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
+# Logische Operatoren (Übungen)
 
----
+
 
 **Übung (Vergleichen III):**
 Schreibe ein Programm, das 3 Werte $x$, $y$ und $z$ einliest und mit Hilfe von **logischen Operatoren** überprüft:
@@ -32,3 +33,4 @@ Die bei einem Test erreichten Punkte ergeben wie folgt eine Note:
 - "I": mehr als 24 Punkte
 
 Schreibe ein Programm, das nach Eingabe der Punkte die passende Note ausgibt.
+

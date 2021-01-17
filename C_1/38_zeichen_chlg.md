@@ -1,12 +1,12 @@
 ---
-title: Zeichen (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
+# Zeichen (Übungen)
 
 
-------
 
 **Übung (Groß-/Klein):** Man kann aufgrund des ASCII Codes eines Buchstabens herausfinden ob es sich um einen Groß- oder Kleinbuchstaben handelt. Schreibe ein Programm dass zur Eingabe eines Zeichens auffordert und dann prüft ob es sich um einen Groß- oder Kleinbuchstaben oder um ein ganz anderes Zeichen handelt. Gib für jede der 3 Möglichkeiten einen informativen Text aus.
 

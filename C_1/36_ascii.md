@@ -1,9 +1,9 @@
 ---
-title: ASCII Code Tabelle
+title: Doc
 cmds: ['md_html.bash','md_html.bash --small']
 ---
 
-
+# ASCII Code Tabelle
 
 ASCII = **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange. Festgelegt 1967.
 

@@ -1,10 +1,10 @@
 ---
-title: Der Würstl Tycoon
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
-
+# Der Würstl Tycoon
 
 **Übung (Würstl Tycoon):**
 Stell dir vor, du hast soeben ein Würstelstandl gepachtet. Die Aufgabe ist ein Spiel zu programmieren, das den Geschäftsablauf Tag für Tag simuliert (=nachspielt). Das folgende Programm berechnet eine zufälligen Nachfrage nach Würstel pro Tag und gibt diese am Bildschirm aus.

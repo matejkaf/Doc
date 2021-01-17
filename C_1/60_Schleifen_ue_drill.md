@@ -1,13 +1,12 @@
 ---
-title: Schleifen (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
+# Schleifen (Übungen)
 
-
-Überlege zuerst was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere dann am Rechner. 
-
+Überlege **zuerst** was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
 
 **Übung (Lesen von Schleifen I):**
 

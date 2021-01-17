@@ -1,14 +1,14 @@
 ---
-title: if Anweisung
+title: Doc
 type: lecture
 cmds: ['md_html.bash']
 ---
 
 
 
-# Verketten
+# if Anweisungen verketten
 
-Aufgabenstellung:
+Beispiel Aufgabenstellung:
 
 Der Wert einer Variable `x` soll
 
@@ -33,7 +33,7 @@ if(x>10)
 printf("%d\n",x);
 ```
 
-Korrekte Lösung:
+Korrekte Lösung durch `else if` Kette:
 ```c
 int x;
 scanf("%d",&x);
@@ -52,17 +52,8 @@ else
 printf("%d\n",x);
 ```
 
+In einer `else if` Kette wird nur ein Code Block ausgeführt.
 
 
-**Übung (Verketten)**
-
-Einteilung Körpergrößen in 4 Stufen:
-
-- XS unter 80
-- S ab 80
-- M ab 100
-- L ab 150
-
-Schreibe ein Programm das nach Eingabe der Körpergrößen die entsprechende Stufe (Xs, S, M oder L) ausgibt. Verwende eine verkettete if Anweisung – keine Vergleichsoperatoren und keine Verschachtelung.
 
 

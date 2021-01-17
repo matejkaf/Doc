@@ -39,5 +39,22 @@ Der Anwender hat nun nicht schon nach dem ersten Fehlversuch verloren, sondern b
 
 Das Spiel ist verloren wenn auch der zweite Versuch fehlschlägt.
 
+
+
+---
+
+**Übung (Größte von Drei):**
+Schreibe ein Programm das drei Zahlen einliest und **die Größte** davon ausgibt. Berücksichtige: Zwei oder drei der Zahlen können gleich groß sein.
+
+Beispiele:
+
+```
+Eingabe:  Ausgabe:
+  1 3 2     -->  3
+  1 8 7     -->  8
+  3 2 3     -->  3
+  5 5 5     -->  5
+```
+
 ---
 

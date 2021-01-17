@@ -1,12 +1,12 @@
 ---
-title: Zeichen (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
+# Zeichen (Übungen)
 
 
----
 
 **Übung (Elektronischer Würfel):** Schreibe einen elektronischen Würfel. Eine zufällige Zahl von 1 bis 6 wird ermittelt und ausgegeben. Danach wird der Benutzer gefragt ob er nochmals würfeln möchte. Wird die `j`-Taste gedrückt so wird wieder eine Zufallszahl ausgegeben und die Frage wiederholt.
 
