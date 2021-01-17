@@ -30,16 +30,16 @@ Anwendung:
 
 
 
-### Negation
+## Negation
 
 Mit vorgesetztem `!`
 
-wahr$\rightarrow$falsch bzw. falsch$\rightarrow$wahr
+wahr ⟶ falsch bzw. falsch ⟶ wahr
 
 Beispiel:
 `!(alter<14)` entspricht `alter>=14`
 
-## Beispiele
+# Beispiele
 
 ```c
 a >= 10 && a <= 99

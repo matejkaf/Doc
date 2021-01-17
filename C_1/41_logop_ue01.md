@@ -3,7 +3,6 @@ title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 tags: [1AHITS]
-
 ---
 
 # Logische Operatoren (Übungen)
@@ -11,10 +10,10 @@ tags: [1AHITS]
 
 
 **Übung (Vergleichen III):**
-Schreibe ein Programm, das 3 Werte $x$, $y$ und $z$ einliest und mit Hilfe von **logischen Operatoren** überprüft:
+Schreibe ein Programm, das 3 Werte x, y und z einliest und mit Hilfe von **logischen Operatoren** überprüft:
 
-- ob $x$, $y$ und $z$ alle gleich sind,
-- ob $x$, $y$ und $z$ alle unterschiedlich sind,
+- ob x, y und z alle gleich sind,
+- ob x, y und z alle unterschiedlich sind,
 - ob mindestens zwei Werte gleich sind.
 
 Gib für jeden Fall einen entsprechenden Text aus.

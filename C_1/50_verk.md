@@ -10,7 +10,7 @@ cmds: ['md_html.bash']
 
 Beispiel Aufgabenstellung:
 
-Der Wert einer Variable `x` soll
+Der Wert einer Variable `x` soll:
 
 - geviertelt werden falls diese größer als 30 ist.
 - halbiert werden falls diese größer als 10 ist.
