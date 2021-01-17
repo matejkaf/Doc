@@ -1,27 +1,16 @@
 ---
-title: Doc
+
 type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
 description: Eine Beschreibung um was es geht
 tags: [ csharp, python, dotnet, c, java, array ]
 ---
 
+# Titel Nummer Drei
+
+titel: nicht gesetzt
 
 
-# Das ist der Titel
-
-Eine Liste in YAML muss mit eckigen Klammern definiert werden
-
-# Typen
-
-- lecture
-- assignment
-
-
-
-# Überschrift
-
-Und los gehts 
 
 <Ende des Dokuments>
 
