@@ -1,9 +1,11 @@
 ---
-title: if Anweisung
+title: Doc
 type: lecture
 cmds: ['md_html.bash']
+tags: [1AHITS]
 ---
 
+# if Anweisung
 
 Mit der `if` Anweisung wird ein Programmteil nur dann ausgeführt wenn eine **Bedingung** **wahr** ist.
 

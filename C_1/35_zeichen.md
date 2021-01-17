@@ -1,7 +1,10 @@
 ---
-title: Buchstaben im Computer
+title: Doc
 cmds: ['md_html.bash']
+tags: [1AHITS]
 ---
+
+# Buchstaben im Computer
 
 Datentyp `char` – speichert einzelnes Zeichen.
 

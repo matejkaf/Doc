@@ -2,7 +2,6 @@
 title: Doc
 type: lecture
 cmds: ['md_html.bash --small']
-tags: [1AHITS, 1AHELS]
 ---
 
 # Logische Operatoren

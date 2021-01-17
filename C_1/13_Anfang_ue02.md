@@ -1,8 +1,11 @@
 ---
-title: Anfangs Übungen
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
+
+Anfangs Übungen
 
 **Übung (Kreisumfang):**
 

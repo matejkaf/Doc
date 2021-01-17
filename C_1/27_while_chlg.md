@@ -1,10 +1,11 @@
 ---
-title: While Schleifen (Challenge)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
 
-
+# While Schleifen (Challenge)
 
 **Übung (Zahlenfolge auf und ab):**
 

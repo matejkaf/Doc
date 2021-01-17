@@ -1,10 +1,13 @@
 ---
-title: Verschachteln von if Anweisungen (Übungen)
+title: Doc
 type: assignmen
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
 
----
+# Verschachteln von if Anweisungen (Übungen)
+
+
 
 **Übung (Zahlenratespiel):**
 Schreibe ein Programm das eine **Zufallszahl von 1 bis 6** erzeugt. Der Anwender versucht diese Zahl zu erraten (Eingabe).

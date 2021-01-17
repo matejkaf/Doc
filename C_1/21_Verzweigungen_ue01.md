@@ -1,10 +1,11 @@
 ---
-title: Verzweigungen Übungen
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
 
-
+# Verzweigungen Übungen
 
 **Übung (Vergleichen I):**
 Schreibe ein Programm das 2 Zahlen (`int`) einliest und ausgibt ob die Zahlen gleich oder ungleich sind.

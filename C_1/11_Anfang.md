@@ -1,12 +1,12 @@
 ---
-title: Programmieren Anfang
+title: Doc
 type: lecture
 cmds: ['md_html.bash']
 ---
 
 
 
-# Ziel
+# Programmieren Anfang
 
 Programmieren von Computern (Programmiersprache C)
 

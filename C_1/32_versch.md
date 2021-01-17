@@ -1,10 +1,11 @@
 ---
-title: Verschachteln von if Anweisungen
+title: Doc
 type: lecture
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
 
-
+# Verschachteln von if Anweisungen
 
 Aufgabe: Eingabe der Körpergrößen und Einteilung in 4 Stufen:
 

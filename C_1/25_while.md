@@ -1,10 +1,11 @@
 ---
-title: while Schleifen
+title: Doc
 type: lecture
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
 
-
+# while Schleifen
 
 ```c
 while (Bedingung)

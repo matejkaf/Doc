@@ -2,7 +2,7 @@
 title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
-tags: [Test, 1AHITS]
+tags: [1AHITS]
 
 ---
 

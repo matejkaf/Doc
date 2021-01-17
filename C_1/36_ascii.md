@@ -1,6 +1,7 @@
 ---
 title: Doc
 cmds: ['md_html.bash','md_html.bash --small']
+tags: [1AHITS]
 ---
 
 # ASCII Code Tabelle
