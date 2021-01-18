@@ -1,13 +1,13 @@
 ---
-title: Strategy – Design Pattern
+title: Doc
 type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ patterns ]
+tags: [ 5AHELS, patterns ]
 ---
 
 
 
-# Strategy
+# Strategy – Design Pattern
 
 Mit dem *Strategy* Pattern können zur Laufzeit austauschbare Algorithmen definiert werden.
 [wikipedia: Strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern)

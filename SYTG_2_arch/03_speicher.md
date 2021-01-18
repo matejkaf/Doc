@@ -1,22 +1,29 @@
 ---
-title: Speicher
+title: Doc
 description: Arten von Speicher. Cache.
 ---
 
-# Speicher-Arten
+# Speicher
+
+*Bild: CPU Bus Speicher*
+
+
 
 Für Programme und Daten, von der CPU aus über den Bus direkt und byteweise adressierbar.
 
--   RAM - Random Access Memory (Strom weg => Daten weg)
-    -   SRAM – Static RAM (D Flip Flops, schnell, teuer), nur für spezielle Anwendungen
-    -   **SDRAM** – Synchronous Dynamic RAM (Kondensator, langsamer, billiger), der Standard!
--   ROM - Read Only Memory (behält die Daten bei Spannungsverlust)
-    -   EEPROM – electrically erasable programmable read-only memory, ROM das byteweise auch wieder gelöscht und neu programmiert werden kann. Lebensdauer ca. 1 Mio. Zyklen. Meist nur wenige MB und teuer.
-    -   **Flash** – spezieller günstiger EEPROM Typ der nur in großen Blöcken (>=512 Bytes) gelöscht werden kann. Lebensdauer ca. 10.000 Zyklen. Im GB/TB Bereich verfügbar. Verwendung in SSD (Solid State Disk), Handys, Tablets, ...
+-   Flüchtiger Speicher (Strom weg => Daten weg)
+    -   RAM - Random Access Memory 
+        -   SRAM – Static RAM (D Flip Flops, schnell, teuer), nur für spezielle Anwendungen
+        -   **SDRAM** – Synchronous Dynamic RAM (Kondensator, langsamer, billiger), der Standard!
+
+- Nicht-flüchtiger Speicher (behält die Daten bei Spannungsverlust)
+  - ROM - Read Only Memory 
+    - EEPROM – electrically erasable programmable read-only memory, byteweise löschen und neu programmieren möglich. Lebensdauer ca. 1 Mio. Zyklen. Meist nur wenige MB und teuer.
+    - **Flash** – spezieller günstiger EEPROM Typ der nur in großen Blöcken (>=512 Bytes) gelöscht werden kann. Lebensdauer ca. 10.000 Zyklen. Im GB/TB Bereich verfügbar. Verwendung in SSD (Solid State Disk), Handys, Tablets, ...
 
 
 
-# Speicher Architektur
+## Speicher Architektur
 
 Systeme mit geringer Taktfrequenz (ca. 100-400MHz) und wenig Speicher (kB-MB) – µC
 
@@ -68,7 +75,7 @@ Die Gesamtsystem-Performance ist abhängig davon wie gut das Zusammenspiel zwisc
 >
 >   The DRAM chips can transfer those 64-bit blocks in burst mode. This can fill the cache line without any further commands from the memory controller and the possibly associated delays. If the processor prefetches cache lines this is probably the best way to operate. ([quelle](https://lwn.net/Articles/252125/))
 
-# Processor die
+## Processor die
 
 Silizium Chip (die), Intel Quad Core mit Grafik, 1,4 Mrd Transistoren, 160mm2 Fläche (ca. 13x13mm)
 
@@ -77,4 +84,8 @@ Silizium Chip (die), Intel Quad Core mit Grafik, 1,4 Mrd Transistoren, 160mm2 Fl
 *Soll zeigen wie viel Fläche der Cache braucht! Im Core ganz oben sollte der L2 Cache zu sehen sein, links neben dem Text "Core" ist wahrscheinlich der L1 Cache*. Chipfläche = Kosten!
 
 
+
+## Weiteres
+
+- [Video: How Smartphones Operate || Inside the Primary Processor/ System on a Chip/ Brain of your Smartphone](https://youtu.be/NKfW8ijmRQ4), Super Animationen
 

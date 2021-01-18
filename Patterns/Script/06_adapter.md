@@ -2,10 +2,8 @@
 title: Doc
 type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ patterns ]
+tags: [ 5AHELS, patterns ]
 ---
-
-
 
 # Adapter – Design Pattern
 

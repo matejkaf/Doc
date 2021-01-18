@@ -2,10 +2,8 @@
 title: Doc
 type: solution
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ patterns ]
+tags: [ 5AHELS, patterns ]
 ---
-
-
 
 # Lösung
 

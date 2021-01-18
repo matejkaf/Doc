@@ -164,7 +164,3 @@ Zum Verstehen wie ein Prozessor funktioniert. Aber: Assembler wird heute nur in 
 
 
 
-# Weiteres
-
-- [Video: How Smartphones Operate || Inside the Primary Processor/ System on a Chip/ Brain of your Smartphone](https://youtu.be/NKfW8ijmRQ4), Super Animationen
-

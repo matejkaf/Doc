@@ -2,10 +2,10 @@
 title: Doc
 type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ patterns ]
+tags: [ 5AHELS, patterns ]
 ---
 
-
+# Adapter Design Pattern (Übungen)
 
 **Übung (Graphics Adapter)**
 
