@@ -8,7 +8,7 @@ tags: [2AHELS,c]
 # Mehrdimensionale Arrays (Übungen)
 
 **Übung (Grundlagen):**
-Lege eine zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
+Lege ein zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
 
 - Schreibe durch verschachtelte Schleifen die Zahlen $10,11,12, \ldots$ zeilenweise in das Array. Es sollen alle Elemente einen Wert erhalten.
 - Gib das Array zeilenweise aus (das dient auch zum Überprüfen ob die vorangegangene Aufgabe korrekt gelöst wurde).
