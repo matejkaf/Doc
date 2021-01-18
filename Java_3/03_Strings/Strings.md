@@ -1,8 +1,12 @@
 ---
-title: Java Strings
+title: Doc
 cmds: ['md_html.bash --small', 'md_html.bash']
+tags: [3BHELS]
 ---
 
+# Java Strings
+
+>
 > The secret of joy in work is contained in one word: excellence. To know how to do something well is to enjoy it. *Pearl S. Buck*
 
 
@@ -235,7 +239,7 @@ Um den Inhalt zweier Zeichenketten zu vergleichen wird die Methode `equals` verw
 ```java
 String t1 = "Bla";
 String t2 = "Bla";
-if (text1.equals(text2)) {
+if (t1.equals(t2)) {
     //...
 }
 ```
