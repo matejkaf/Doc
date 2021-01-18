@@ -44,6 +44,10 @@ SDRAM (Synchron Dynamic RAM), für Hauptspeicher von Computern, seit ca. 20 Jahr
 - **DDR4:** 2014
 - **DDR5:** 2021
 
+### Performance Rechnungen
+
+Richtiges Interpretieren der technischen Daten. 
+
 ![image-20210110160423967](fig/image-20210110160423967.png)
 
 ([Quelle wikipedia](https://en.wikipedia.org/wiki/DDR_SDRAM#Generations))

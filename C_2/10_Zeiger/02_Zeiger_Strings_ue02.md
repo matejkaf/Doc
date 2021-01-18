@@ -2,7 +2,7 @@
 title: Zeiger und Strings (Übungen)
 type: assignment
 cmds: ['md_html.bash --small']
-tags: [c,pointer,strings,intro]
+tags: [2AHELS,c,pointer,strings,intro]
 ---
 
 ---
@@ -42,6 +42,7 @@ Beispiel:
 
 ```
 strcspn("Hallo Welt", "cde") --> 'e' (in Welt)
+strcspn("3+4-9*2/4", "+-*/") --> '+'
 ```
 
 

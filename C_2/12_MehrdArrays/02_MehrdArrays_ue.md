@@ -1,11 +1,11 @@
 ---
-title: Mehrdimensionale Arrays (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
-tags: [c]
+tags: [2AHELS,c]
 ---
 
-
+# Mehrdimensionale Arrays (Übungen)
 
 **Übung (Grundlagen):**
 Lege eine zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
