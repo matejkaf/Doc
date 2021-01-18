@@ -5,8 +5,6 @@ cmds: ['md_html.bash','md_html.bash --small']
 tags: [ 5AHELS, patterns ]
 ---
 
-
-
 # Factory Method – Design Pattern
 
 [wikipedia – Factory method pattern](https://en.wikipedia.org/wiki/Factory_method_pattern)
@@ -17,82 +15,64 @@ In class-based programming, the **factory method pattern** is a creational patte
 
 ## Variante 1
 
+Produkt monatsabhängig aus unterschiedlichen Ländern verfügbar. Z.B. Orangen, ...
+
 ```csharp
-// (c) Waser
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FactoryMethodTheoryCode
+namespace _210118_factory_method
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Creator c = new Creator();
-            IProduct product;
+      for(int month=1; month<=12 ; month++) {
+        IOrange orange = OrangeCreator.newInstance(month);
+        System.Console.WriteLine(month + " : "+ orange.ShipFrom());
+      }
+    }
+  }
 
-            //IProduct p = new ProductA();
-            
-            for (int i = 1; i <= 12; i++)
-            {
-                product = Creator.newInstance(i);
-                Console.WriteLine("Avocados " + product.ShipFrom());
-            }
+  interface IOrange {
+    string ShipFrom();
+  }
 
-            Console.ReadLine();
-        }
+  class OrangeSpain : IOrange
+  {
+    public string ShipFrom()
+    {
+      return "I am from spain";
     }
+  }
 
-    interface IProduct
+  class OrangeSouthAfrica : IOrange
+  {
+    public string ShipFrom()
     {
-        string ShipFrom();
+      return "I am from south africa";
     }
+  }
 
-    class ProductA : IProduct
+  class OrangeUnavailable : IOrange
+  {
+    public string ShipFrom()
     {
-        public String ShipFrom()
-        {
-            return " from South Africa";
-        }
+      return "Not Available";
     }
-    class ProductB : IProduct
-    {
-        public String ShipFrom()
-        {
-            return " from Spain";
-        }
-    }
-    class DefaultProduct : IProduct
-    {
-        public String ShipFrom()
-        {
-            return "not available";
-        }
-    }
+  }
 
-    class Creator
-    {
-        public static IProduct newInstance(int month)
-        {
-            if (month >= 4 && month <= 11)
-            {
-                return new ProductA();
-            }
-            else
-            {
-                if (month == 1 || month == 2 || month == 12)
-                {
-                    return new ProductB();
-                }
-                else
-                {
-                    return new DefaultProduct();
-                }
-            }
-        }
+  class OrangeCreator {
+    public static IOrange newInstance(int month) {
+      if(month==11 || month==12 || month==1) {
+        return new OrangeSpain();
+      } else if(month==3 || month==4 || month==5) {
+        return new OrangeSouthAfrica();
+      } else {
+        return new OrangeUnavailable();
+      }
     }
+  }
+
 }
+
 ```
