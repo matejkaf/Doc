@@ -1,14 +1,12 @@
 ---
-title: Arrays in Java (Mock Exercises)
+title: Doc
 type: assignment
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [java, array]
 ---
 
-
-
-
+# Arrays in Java (Mock Exercises)
 
 Is there a flaw in following program fragment?
 

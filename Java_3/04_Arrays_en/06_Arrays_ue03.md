@@ -1,20 +1,16 @@
 ---
-title: Übungen zu Array
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
+# Übungen – Static Array
+
+In dieser Aufgabenstellung ist eine Klasse zu implementieren die Daten in einem Array verwalten kann. Ähnlich wie bei der Standard Klasse `ArrayList` sollen die Array Elemente über eine `get` und eine `set` Methode zugreifbar sein. Anders als bei der Klasse `ArrayList` ist das durch diese Klasse verwaltete Array nicht ein dynamisches sondern ein statisches Array einer fixen Größe, es kann daher nicht beliebig groß werden. 
 
 
-
-
-
-
-In dieser Aufgabenstellung ist eine Klasse zu implementieren die Daten in einem Array verwalten kann. Ähnlich wie bei der Standard Klasse `ArrayList` sollen die Array Elemente über eine `get` und eine `set` Methode zugreifbar sein. Anders als bei der Klasse `ArrayList` ist das durch diese Klasse verwaltete Array nicht ein dynamisches sondern ein statisches Array einer fixen Größe. 
 
 ---
-
-
 
 **Übung (StaticArray):**
 

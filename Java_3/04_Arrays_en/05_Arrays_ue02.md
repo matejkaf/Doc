@@ -1,10 +1,10 @@
 ---
-title: Übungen zu ArrayList
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
----
+# Übungen zu ArrayList
 
 **Übung (Schulweg Statistik):**
 Du möchtest wissen wie lange du durchschnittlich für den Schulweg brauchst (in Minuten) und wie stark diese Dauer variiert. Schreibe dazu ein Programm das die Eingabe beliebig vieler `int` Werte ermöglicht. Speichere alle Werte in einer ArrayList. Ende wenn 0 eingegeben wird. Berechne anschließend den Mittelwert (auch Erwartungswert genannt) und die Standardabweichung (das ist das statistische Maß für die Streuung = Variation). Schreibe Methoden zur Berechnung beider Werte. 

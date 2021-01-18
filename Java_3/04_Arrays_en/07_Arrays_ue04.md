@@ -1,10 +1,10 @@
 ---
-title: Übungen zu Array (dynamic)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
 
-
+# Übungen zu Array (dynamic)
 
 Es ist ein dynamisches Array aufgrund der folgenden Code-Basis zu erstellen:
 ```java

@@ -1,14 +1,12 @@
 ---
-title: Dynamische Arrays in Java
+title: Doc
 type: lecture
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [java, array]
 ---
 
-
-
-# Dynamic arrays
+# Dynamic arrays in Java
 
 With class `ArrayList` (Java library)
 
@@ -130,9 +128,6 @@ Sort words by number of occurence in descending order.
 ---
 
 
-
-
-# Mocks
 
 
 

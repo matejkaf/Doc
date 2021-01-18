@@ -1,8 +1,14 @@
+---
+title: Doc
+type: lecture
+tags: [4AHELS]
+---
+
 # Streams für Text
 
 Lesen und Schreiben von Files die Text enthalten.
 
-# Grundgerüst und zeichenweises Schreiben
+## Grundgerüst und zeichenweises Schreiben
 
 Schreiben einzelner Buchstaben in eine Textdatei
 
@@ -43,7 +49,7 @@ finally
 
 
 
-# Textfile lesen – Zeichenweise
+## Textfile lesen – Zeichenweise
 
 `StreamReader`:
 
@@ -61,7 +67,7 @@ if( data != -1) // -1 : Ende der Datei
 
 
 
-# Textfile – Zeilenweise
+## Textfile – Zeilenweise
 
 `StreamWriter`:
 
@@ -88,7 +94,7 @@ else
 
 
 
-# Aufgaben
+## Aufgaben
 
 **Übung 4:** (Zahlenkolonnen addieren) Die Textdatei `columns.txt` enthält einige Zeilen mit Zahlen, Jede Zeile besteht aus 3 Zahlen. Der gesamte Datenbestand besteht somit aus 3 Spalten, die extra aufaddiert werden sollen. Die 3 sich ergebenden Spaltensummen sind auszugeben. Berücksichtige, dass die Datei Leerzeilen enthalten kann (auch mit Leerzeichen und Tabulatoren). Außerdem können Kommentare enthalten sein, Kommentare beginnen mit einem `#` Zeichen und gehen bis zum Ende der Zeile. Kommentare können eine ganze Zeile betreffen oder nach den Zahlen stehen.
 
@@ -96,7 +102,7 @@ else
 
 
 
-# using Direktive
+## using Direktive
 
 Zur Vereinfachung der try/catch/finally Syntax.
 

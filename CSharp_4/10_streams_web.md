@@ -1,3 +1,9 @@
+---
+title: Doc
+type: lecture
+tags: [4AHELS]
+---
+
 # Zugriff auf Web Daten
 
 die Daten eine Website (URL) über `StreamReader` lesen:
@@ -15,7 +21,7 @@ if(response.StatusCode == HttpStatusCode.OK)
 {
   Console.WriteLine("ContentType: "+response.ContentType);
   Console.WriteLine("ContentLength: "+response.ContentLength);
-  Console.WriteLine(response.Headers);
+  Console.WriteLine("Response Header: "+response.Headers);
 
   StreamReader sr = new StreamReader(response.GetResponseStream());
   string line;

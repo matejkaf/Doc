@@ -1,6 +1,6 @@
 ---
-title: Arrays in Java (Mock Exercises)
-type: assignment
+title: Doc
+type: lecture
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [java, array]

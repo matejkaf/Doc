@@ -1,18 +1,14 @@
 ---
-title: Arrays in Java
+title: Doc
 type: lecture
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java, array]
+tags: [java, array, 3BHELS]
 ---
-
-
 
 > The important thing is not to stop questioning. –Albert Einstein
 
-
-
-# Define an Array
+# Arrays in Java
 Two step process:
 
 
@@ -99,7 +95,7 @@ Distinguish: Compile time error $\longleftrightarrow$ Run time error
 
 ---
 
-**Exercise (Create Array):**
+**Assignment (Create Array):**
 Write a program that fills an `int` Array (size entered by user) with the values $\{1,2,4,8,16,...\}$.
 
 ---
@@ -132,7 +128,24 @@ Changes of array values within the method modifies the original array.
 
 ---
 
-**Übung (Reverse – in place):**
+**Assignment (Rectangular frame):**
+
+Write a method that takes an array of strings and prints them, one per line, in a rectangular frame. For example the array `"Hello World", "in", "a", "frame"` gets printed as:
+
+```
+***************
+* Hello World *
+*          in *
+*           a *
+*       frame *
+***************
+```
+
+
+
+---
+
+**Assignment (Reverse – in place):**
 Implement a `static` method which gets an `int` Array as a parameter and returns `void`. The array passed to the method should be reversed "in place", which means no new array should be allocated to store the reversed array. Instead implement by swapping 2 array elements at a time.
 
 - Implement as explained.
@@ -166,7 +179,7 @@ a = methodName();
 
 ---
 
-**Übung (Reverse):**
+**Assignment (Reverse):**
 Write a `static` method that takes an `int` array as parameter and returns a new array in reversed order. The array passed to the method must not be modified!
 
 - Implement as explained.
