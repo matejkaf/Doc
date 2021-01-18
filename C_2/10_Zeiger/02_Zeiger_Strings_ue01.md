@@ -1,11 +1,11 @@
 ---
-title: Zeiger und Strings (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 tags: [c,pointer,strings,intro]
 ---
 
----
+# Zeiger und Strings (Übungen)
 
 **Übung (Ausgabe I):**
 Was gibt dieses Programm aus? Überlege zuerst im Kopf/am Papier und probier es dann am Rechner aus.

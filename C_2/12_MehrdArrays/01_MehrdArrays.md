@@ -32,7 +32,7 @@ t[1][2] // ganz rechts unten
 
 
 
-# Übergabe an Funktionen
+## Übergabe an Funktionen
 
 Nur der erste Index darf leer gelassen werden.
 
@@ -68,7 +68,7 @@ const int ZEILEN=2;
 
 
 
-# Initialisierung
+## Initialisierung
 
 Initialisierung eines mehrdimensionalen Arrays – erster Index darf leer bleiben:
 
