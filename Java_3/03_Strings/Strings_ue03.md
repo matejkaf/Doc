@@ -1,8 +1,10 @@
 ---
-title: Übungen zu Strings
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
 ---
+
+# Übungen zu Strings
 
 
 

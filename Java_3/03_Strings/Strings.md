@@ -4,13 +4,9 @@ cmds: ['md_html.bash --small', 'md_html.bash']
 tags: [3BHELS]
 ---
 
-# Java Strings
-
->
 > The secret of joy in work is contained in one word: excellence. To know how to do something well is to enjoy it. *Pearl S. Buck*
 
-
-# Allgemein
+# Java Strings
 
 Strings sind in Java **Objekte** der **Klasse** `String`. 
 

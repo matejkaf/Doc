@@ -1,12 +1,13 @@
 ---
-title: Übungen zu Strings
+title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
+tags: [java,strings,3BHELS]
 ---
 
+# Strings (Übungen)
 
 
----
 
 **Übung (toUpper):**
 
