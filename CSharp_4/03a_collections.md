@@ -1,3 +1,11 @@
+---
+title: Doc
+type: lecture
+tags: [4AHELS]
+---
+
+
+
 # Collections
 
 
@@ -82,6 +90,12 @@ var dict2 = new Dictionary<string,int>() {
   {"4AHELS", 28}, {"1BHELS", 34}
 };
 ```
+
+
+
+## Tuples
+
+ToDo, Siehe Aufgabenstellung bei Threads (Download Manager).
 
 
 
