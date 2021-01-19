@@ -1,10 +1,12 @@
 ---
-title: Body Mass Index – Übung zu Strukturen
+title: Doc
 type: assignment
 cmds: ['md_html.bash']
 description: 
 tags: [ c, structure ]
 ---
+
+# Strukturen (Übungen)
 
 
 

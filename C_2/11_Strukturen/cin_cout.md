@@ -1,3 +1,10 @@
+---
+title: Doc
+type: lecture
+tags: [2AHITS]
+---
+
+
 
 # Ausgabe
 
@@ -43,11 +50,11 @@ cin >> x;
 # `cin` statt `scanf`!
 
 Die folgenden Aufgabenstellungen erfordern die wechselweise Eingabe von Text und Zahlen.
-Bei Verwendung von `scanf` ergeben sich dabei erhebliche Probleme.
+Bei Verwendung von `scanf` ergeben sich dabei  Probleme.
 
 Alternative: `cin`, Beispiel:
 
-```c
+```c++
 #include <iostream>
 using namespace std;
 //...

@@ -1,3 +1,9 @@
+---
+title: Doc
+type: lecture
+---
+
+
 
 Array aus int
 

@@ -1,14 +1,14 @@
 ---
-title: Strukturen
+title: Doc
 type: lecture
 cmds: ['md_html.bash']
 description: Einführung in C Strukturen
-tags: [ c, structure ]
+tags: [ 2AHITS, c, structure ]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-## Strukturen
+# Strukturen
 
 Eine Struktur ist eine Zusammenfassung mehrerer Variablen.
 
@@ -80,7 +80,7 @@ Erweitere so, dass auch die Bezeichnung der Ware berücksichtigt wird.
 
 
 
-# Arrays von Strukturvariablen
+## Arrays von Strukturvariablen
 
 ```c
 Einkauf korb[3];
@@ -116,15 +116,16 @@ Ergänze:
 
 - 
 Ermittle die teuerste Ware (Anzahl * Preis).
-- Ergänze eine Strukturvariable für die Warengruppe. Es gibt folgende Gruppen:
+- Ergänze eine Strukturvariable (`int`) für die Warengruppe. Es gibt folgende Gruppen:
 	
-	- Obst
-	- Getränke
-	- Nahrungsmittel
-	- Süßwaren
+	- 1 – Obst
+	- 2 – Getränke
+	- 3 – Nahrungsmittel
+	- 4 – Süßwaren
 	
-- Berücksichtige die Warengruppe bei der Ein- und Ausgabe. 
-- Gib am Ende den Gesamtpreis pro Warengruppe aus.
+	Berücksichtige die Warengruppe bei der Ein- und Ausgabe. 
+	
+- Gib am Ende die Preis-Summe pro Warengruppe aus.
 
 ---
 
@@ -132,7 +133,7 @@ Ermittle die teuerste Ware (Anzahl * Preis).
 
 
 
-# Strukturen und Zeiger
+## Strukturen und Zeiger
 
 Es können Zeiger auf Strukturvariablen definiert werden.
 
@@ -145,8 +146,6 @@ struct Datum {
 ```
 
 
-
-
 ```c
 Datum dat = {22,9,2013};
 
@@ -156,13 +155,7 @@ p = &dat;
 p->tag = 10;
 ```
 
-
-
-"Pfeilschreibweise" bei **Zeiger auf** Strukturen – Sonst müsste `(*p).tag` geschrieben werden.
-
-
-
-## Speicher
+"Pfeilschreibweise" bei **Zeiger auf** Strukturen – Sonst müsste `(*p).tag` geschrieben werden, weil `.` eine höhere Priorität als `*` hat.
 
 Im Speicher kann man sich das folgendermaßen vorstellen:
 
@@ -180,7 +173,7 @@ p->tag = 10;
 
 
 
-## Anwendung
+### Anwendung – Zeiger
 Für die Parameterübergaben an Funktionen.
 
 - Bei der Parameterübergabe an Funktionen wird kopiert (call-by-value).
