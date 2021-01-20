@@ -69,18 +69,3 @@ public class StrategyMain {
     }
 }
 ```
-
----
-
-**Übung (Strategy Pattern – Bankkonten**
-
-Eine Bank bietet ein Girokonto für Studenten und Berufstätigen an. Die Konditionen sind unterschiedlich für die jährlichen Zinsen und ob man das Konto überziehen kann (ins Minus kommen) oder nicht.
-
-Implementiere mit Hilfe des Strategy Patterns ein Software Design, dass ein Konto darstellen kann mit dem folgendes möglich ist:
-
-- Einzahlungen
-- Auszahlungen
-- Berechnung und Gutschrift der jährlichen Zinsen
-- Überweisungen von einem Konto auf ein anderes
-
----

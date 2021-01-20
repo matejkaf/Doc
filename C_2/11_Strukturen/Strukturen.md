@@ -71,10 +71,50 @@ Wie dies im Speicher aussieht kann man sich so vorstellen:
 Schreibe ein Programm mit dem 2 Einkäufe eingegeben werden können.
 Das Programm soll beide Einkäufe ausgeben (Anzahl und Preis) sowie den Gesamtpreis ausrechnen und ausgeben.
 
+
+
+---
+
+**Übung (Funktion für Ausgabe):**
+
+Schreibe eine Funktion `printEinkauf` die Preis, Anzahl und Gesamtpreis ausgibt. Es wird eine Strukturvariable übergeben.
+
+```c
+void printEinkauf(Einkauf e)
+{
+	// TODO   
+}
+```
+
+
+
 ---
 
 **Übung (Warenbezeichnung):**
-Erweitere so, dass auch die Bezeichnung der Ware berücksichtigt wird.
+Neu: auch die Produktbezeichnung berücksichtigen (Siehe Code). Eingabe für e1,e2,e3 im Hauptprogramm. Ausgabe mittels printEinkauf.
+
+```c
+struct Einkauf 
+{
+  int anzahl;
+  double preis;
+  char bezeichnung[50]; // <-- !!! neu
+}
+
+void printEinkauf(Einkauf e)
+{
+
+}
+
+void main()
+{
+  Einkauf e1;
+  Einkauf e2;
+  Einkauf e3;
+}
+```
+
+
 
 ---
 
