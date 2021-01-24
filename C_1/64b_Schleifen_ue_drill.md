@@ -2,10 +2,10 @@
 title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
-tags: [1AHITS]
+tags: []
 ---
 
-# Schleifen (Übungen)
+# for Schleifen (Übungen)
 
 Überlege **zuerst** was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
 
@@ -13,62 +13,50 @@ tags: [1AHITS]
 
 
 ```c
-// (a)
-int i=1;
-while(i<3)
+// (f)
+int i;
+for(i=0 ; i<5 ; i++)
 {
      printf("%d ",i);
-     i++;
 }
 printf("\nEnde=%d", i);
 ```
 
-
 ```c
-// (b)
-int i=1;
-while(i<=3)
+// (g)
+int i;
+for(i=4 ; i>=0 ; i--)
 {
-     printf("%d ",i);
-     i++;
-}
-printf("\nEnde=%d", i);
-```
-
-
-```c
-// (c)
-int i=1;
-while(i<=3)
-{
-     i++;
      printf("%d ",i);
 }
 printf("\nEnde=%d", i);
 ```
 
+
 ```c
-// (d)
-int i = 1;
-while(i<11) 
+// (h)
+int n=65;
+int i;
+for(i=2; i>=0; i--)
 {
-	i = i + 3;
-	printf("%d ",i);
+	n = n / 2;
+	printf("%d ", n);
 }
-printf("\nEnde=%d", i);
+printf("%d", i);
 ```
 
 
 ```c
-// (e)
-int i = 4;
-int n = 1;
-while(i>=0)
-{
-	n = n * 2;
-	i = i - 1;
-	printf("%d %d\n", i, n);
+// (i)
+int tmp;
+int a = 2;
+int b = 1;      
+for (int i = 0; i < 5; i++) {
+	tmp = a;
+	a = a + b;
+	b = tmp;
 }
+printf("a=%d, b=%d\n", a, b);
 ```
 
 ---
