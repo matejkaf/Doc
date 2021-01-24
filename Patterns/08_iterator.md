@@ -5,15 +5,15 @@ cmds: ['md_html.bash','md_html.bash --small']
 tags: [ patterns ]
 ---
 
-
-
 # Iterator – Design Pattern
 
-[Wikipedia – Iterator Pattern](https://en.wikipedia.org/wiki/Iterator_pattern)
+- [Wikipedia – Iterator Pattern](https://en.wikipedia.org/wiki/Iterator_pattern)
 
-C# hat dieses Pattern in die Sprache integriert (für foreach Schleife).
+- [refactoring.guru](https://refactoring.guru/design-patterns/iterator)
 
-Dafür die Interfaces `IEnumerable` und `IEnumerator`
+C# hat dieses Pattern in die Sprache integriert (für **foreach** Schleife).
+
+Dafür die Interfaces `IEnumerable` und `IEnumerator`.
 
 ```csharp
 // (c) Waser
@@ -47,7 +47,7 @@ namespace IteratorTest1
       }
 
       Console.WriteLine();
-			// das macht der C# Compiler eigentlich daraus:
+      // das macht der C# Compiler eigentlich daraus:
       IEnumerator schoolClassEnumerator = schoolClass.GetEnumerator();
       while(schoolClassEnumerator.MoveNext())
       {
@@ -55,7 +55,7 @@ namespace IteratorTest1
       }
 
       Console.WriteLine();
-			// einen speziellen Enumerator verwenden
+      // einen speziellen Enumerator verwenden
       foreach(Pupil p in schoolClass.GetERNamesEnumerator())
       {
         Console.WriteLine(p);
@@ -95,7 +95,7 @@ namespace IteratorTest1
 
     // mit yield Schlüsselwort spart man sich die extra IEnumerator Klasse
     // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield
-    
+
     public IEnumerable GetERNamesEnumerator()
     {
       foreach(Pupil p in this.pupils)

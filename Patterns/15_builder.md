@@ -1,5 +1,5 @@
 ---
-title: Builder – Design Pattern
+title: Doc
 type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [ patterns ]
@@ -7,9 +7,15 @@ tags: [ patterns ]
 
 
 
-# Builder
+# Builder – Design Pattern
 
-Probleme wenn Konstruktoren zu viel Parameter haben:
+- [refactoring.guru](https://refactoring.guru/design-patterns/builder)
+
+
+
+## Konstruktor Problem
+
+Probleme wenn Konstruktoren zu viele Parameter haben:
 
 - Aus der Position wird die Bedeutung nicht klar.
 - Welchen Wert bekommen optionale Parameter (`null`, 0, ?).

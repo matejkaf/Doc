@@ -2,6 +2,7 @@
 title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
+tags: [1AHELS]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -46,7 +47,9 @@ Nach der letzten Zahl folgt kein Beistrich!
 ---
 
 **Übung (Zahlenfolge):**
-Erzeuge die Zahlenfolge $$1, 2, 4, 8, 16, 32, \ldots, 1024, \ldots $$
+Erzeuge die Zahlenfolge 
+
+$$1, 2, 4, 8, 16, 32, \ldots, 1024, \ldots $$
 
 Es kann eingegeben werden wie viele Zahlen dieser Folge ausgegeben werden.
 
@@ -72,7 +75,9 @@ In einem Artikel ("Die ZEIT" Nr. 2, 2019) wird behauptet, dass bei weiter ungebr
 ---
 
 **Übung (Zahlenfolge):**
-Erzeuge die Zahlenfolge $$1, 4, 3, 6, 5, 8, 7, 10, 9, \ldots $$
+Erzeuge die Zahlenfolge 
+
+$$1, 4, 3, 6, 5, 8, 7, 10, 9, \ldots $$
 
 Es kann eingegeben werden **wie viele** Zahlen dieser Folge ausgegeben werden.
 

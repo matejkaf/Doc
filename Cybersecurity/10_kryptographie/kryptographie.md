@@ -35,10 +35,10 @@ Ohne Computer-Unterstützung. Gelten heute als unsicher.
 
 Einzelne Buchstaben werden betrachtet und entweder:
 
-- (Substitution) durch einen anderen Buchstaben ersetzt, oder
-- (Transposition) wechseln die Position mit anderen Buchstaben
+- **Substitution:** durch einen anderen Buchstaben ersetzt, oder
+- **Transposition:** wechseln die Position mit anderen Buchstaben
 
-**Schlüssel**: Die Information die Sender und Empfänger zum ver- und entschlüsseln brauchen
+**Schlüssel**: Die Information die Sender **und** Empfänger zum ver- und entschlüsseln brauchen.
 
 
 

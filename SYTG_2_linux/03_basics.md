@@ -404,12 +404,7 @@ $ cd Urlaubs\ Fotos
 $ pwd
 $ cd ..
 $ cd "Urlaubs Fotos" # double quotes
-
 ```
-
-
-> [!2AHITS G2 08.01.2021]
-
 
 
 # Testdaten
@@ -456,6 +451,8 @@ $ git push -u origin main
 
 
 # Mehr über Optionen
+
+- `head`
 
 Optionen die das Verhalten von Kommandos verändern werden häufig benötigt.
 
@@ -511,6 +508,8 @@ Versuche zu verstehen was das folgender shell Ausdruck macht
 ```bash
 $ head --help | head -n12
 ```
+> [!2AHITS G2 22.01.2021]
+
 
 ---
 

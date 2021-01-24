@@ -286,7 +286,8 @@ Ausgabe:
 33
 ```
 
-**Übung:** Schreibe eine Methode die Ausdrücke in der Form `"<zahl_1>+<zahl_2>+...+<zahl_n>"` berechnen kann.
+**Übung:** Schreibe eine Methode die Ausdrücke in der Form `"<zahl_1>+<zahl_2>+...+<zahl_n>"` berechnen kann. 
+Hinweis : Verwende `split("\\+")` da `+` alleine eine spezielle Bedeutung in split hat.
 
 
 

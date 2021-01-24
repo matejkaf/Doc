@@ -1,5 +1,5 @@
 ---
-title: Bridge – Design Pattern
+title: Doc
 type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [ patterns ]
@@ -7,11 +7,19 @@ tags: [ patterns ]
 
 
 
-# Bridge
+# Bridge – Design Pattern
 
 GoF Pattern. [Bridge pattern](https://en.wikipedia.org/wiki/Bridge_pattern)
 
+[refactoring.guru](https://refactoring.guru/design-patterns/bridge) – Super Erklärt!
 
+
+
+[![img](fig/W3sDesign_Bridge_Design_Pattern_UML.jpg)](https://en.wikipedia.org/wiki/File:W3sDesign_Bridge_Design_Pattern_UML.jpg)
+
+
+
+[![Bridge UML class diagram.svg](fig/500px-Bridge_UML_class_diagram.svg.png)](https://en.wikipedia.org/wiki/File:Bridge_UML_class_diagram.svg)
 
 ```csharp
 // (c) Gerhard WASER
@@ -85,7 +93,15 @@ namespace BridgeTheoryCode
 
 
 
-Übungsaufgabe: todo
+---
+
+**Übung (Bridge Pattern):**
+
+todo
+
+---
+
+
 
 ```csharp
 // (c) Waser

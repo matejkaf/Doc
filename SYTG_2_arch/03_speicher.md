@@ -52,7 +52,9 @@ Richtiges Interpretieren der technischen Daten.
 
 ([Quelle wikipedia](https://en.wikipedia.org/wiki/DDR_SDRAM#Generations))
 
-Performance Betrachtung für Norm Bezeichnung **DDR4-3200**:
+[**Raspberry Pi 4** Tech Specs](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/)
+
+Was bedeutet **DDR4-3200**?:
 
 - Chip clock rate: 400 (MHz) – intern im SDRAM
 - Bus clock rate: 1600 (MHz)
@@ -173,11 +175,7 @@ Von der CPU im Cache überschriebene Daten werden besonders gekennzeichnet (dirt
 
 Die Gesamtsystem-Performance ist abhängig davon wie gut das Zusammenspiel zwischen der CPU, den Caches und dem Hauptspeicher ist.
 
-
-
 *Evtl. ein Video das die Funktion zeigt? [Video: CPU Cache Explained - What is Cache Memory?](https://youtu.be/yi0FhRqDJfo)*
-
-
 
 >   Memory is transferred from the main memory into the caches in blocks which are smaller than the cache line size. Today 64 *bits* are transferred at once and the cache line size is 64 or 128 *bytes*. This means 8 or 16 transfers per cache line are needed.
 >
@@ -190,6 +188,12 @@ Silizium Chip (die), Intel Quad Core mit Grafik, 1,4 Mrd Transistoren, 160mm2 Fl
 ![OiaaB](comparch/OiaaB.jpg)
 
 *Soll zeigen wie viel Fläche der Cache braucht! Im Core ganz oben sollte der L2 Cache zu sehen sein, links neben dem Text "Core" ist wahrscheinlich der L1 Cache*. Chipfläche = Kosten!
+
+## CPU Guide
+
+Vergleich von Destop und Laptop Prozessoren.
+
+ [CPU_Guide.pdf aus Chip 12/2020](fig/CPU_Guide.pdf) 
 
 
 
