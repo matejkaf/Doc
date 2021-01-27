@@ -11,7 +11,7 @@ tags: [ 5AHELS, patterns ]
 
 **Übung (Meal Decider)**
 
-Schreibe ein Programm mit Klasse `MealDecider`  und factory method `GetMeal` die für die aktuelle Stunde (Verwende die .NET Klasse `DateTime`) ein bestimmtes Objekt mit **IMeal** interface erzeugt. 
+Schreibe ein Programm mit Klasse `MealDecider`  und factory method `GetMeal` die für die **aktuelle Stunde** (Hinweis: Verwende die .NET Klasse `DateTime`) ein bestimmtes Objekt mit **IMeal** interface erzeugt. Es gibt auch Stunden des Tages in denen es nichts zu essen gibt, in diesem Fall liefert die factory method eine Nullreferenz.
 
 Beispiel:
 
@@ -39,7 +39,7 @@ class Jausenweckerl : IMeal
 //...
 ```
 
-Es gibt auch Stunden des Tages in denen es nichts zu essen gibt, in diesem Fall liefert die factory method eine Nullreferenz.
+
 
 ---
 
