@@ -21,7 +21,7 @@ interface IMeal
   string Eat();
 }
 
-class Müsli : IMeal
+class Muesli : IMeal
 {
   public string Eat()
   {

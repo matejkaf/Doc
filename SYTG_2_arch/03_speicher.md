@@ -54,6 +54,8 @@ Richtiges Interpretieren der technischen Daten.
 
 [**Raspberry Pi 4** Tech Specs](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/)
 
+> [!25.01.2021 2AHITS]
+
 Was bedeutet **DDR4-3200**?:
 
 - Chip clock rate: 400 (MHz) – intern im SDRAM
@@ -65,7 +67,7 @@ Erklärungen
 
 - 3200 = Transfer Rate (MT/s)
   pro Transfer werden 8 Bytes übertragen
-  daraus ergibt sich die Bandbreite von 8*3200 = 256000 MB/s
+  daraus ergibt sich die Bandbreite von 8*3200 = 25600 MB/s
   daher sind solche Module auch unter der Bezeichnung **PC4-25600** im Handel.
 - Berechnung der Transfer Rate
   - Chip Clock Rate = 400 MHz

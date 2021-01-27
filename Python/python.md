@@ -4,6 +4,7 @@
 - [docs.python.org](https://docs.python.org/3/)
 - [wikibooks - Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
 - [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
+- 
 
 # Interesting
 
@@ -15,7 +16,7 @@
 
 V2 vs. V3
 
-V2 wird seit 01.01.2020 nicht mehr gewartet. macOS und Linux (Ubuntu, Kali, Raspbian,...) beide Versionen sind im Standard Umfang enthalten.
+V2 wird seit 01.01.2020 nicht mehr gewartet. macOS und Linux (Ubuntu, Kali, Raspbian,...): beide Versionen sind im Standard Umfang enthalten.
 
 
 
@@ -521,6 +522,16 @@ delta = now-then # timedelta
 future = date.today() + timedelta(days=50)
 ```
 
+```python
+def getDateEu(dateStr):
+  s = dateStr.split('.')
+  return datetime.date(int(s[2]),int(s[1]),int(s[0]))
+
+print(getDateEu('01.10.2020')<=getDateEu('22.11.2020'))
+print(getDateEu('01.10.2020')>=getDateEu('22.11.2020'))
+print(getDateEu('01.10.2020')>=getDateEu('01.10.2020'))
+```
+
 ## random
 
 ```python
@@ -539,6 +550,37 @@ sys.argv # array
 sys.argv[0] # Skript Name
 sys.argv[1:] # Nur die Argumente
 x = " ".join(sys.argv[1:])
+
+```
+
+
+
+## Regular Expressions
+
+```python
+import re
+import datetime
+
+tests = [
+  '5AHELS KSN Gruppe B (Di, 13.10.2020)',
+  '5AHELS KSN Gruppe B (22.11.2020)',
+  '5AHELS KSN Gruppe B (22.11.2020) Test',
+  '5AHELS DIC Gruppe A (Mi, 07.10.2020, 13:00-14:40)',
+  '5AHELS DIC Gruppe A',
+  '5AHELS DIC Gruppe A (Nix) Bla',
+]
+
+
+def getDate(str):
+  date_pattern = re.compile(r'.*\(.*(\d\d\.\d\d\.\d\d\d\d).*\)')
+  match = date_pattern.search(str)
+  if match:
+    return getDateEu(match.group(1))
+  else:
+    return None
+
+for str in tests:
+  print(getDate(str))
 
 ```
 

@@ -99,7 +99,7 @@ struct Einkauf
   int anzahl;
   double preis;
   char bezeichnung[50]; // <-- !!! neu
-}
+};
 
 void printEinkauf(Einkauf e)
 {
