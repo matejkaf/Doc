@@ -1,12 +1,12 @@
 ---
-title: Funktionen
+title: Doc
 type: lecture
 cmds: ['md_html.bash']
 description: Einführung in Funktionen in C
 tags: [ c, funktionen ]
 ---
 
-# Motivation
+# Funktionen
 
 
 Probleme bei längeren Programmen:
@@ -20,7 +20,7 @@ Verbesserung durch Funktionen.
 
 
 
-# Allgemein
+## Allgemein
 
 Beispiel: Es soll folgendes ausgegeben werden
 
@@ -93,7 +93,7 @@ Für jede Funktion: Eigener Speicherbereich für Variablen (=Lokal)
 
 
 
-# Funktionen mit Parameter
+## Funktionen mit Parameter
 
 
 Mit Parametern werden beim Aufruf **Werte** an Funktionen **übergeben**.
@@ -137,7 +137,7 @@ Parameter:
 
 
 
-## Parameter
+### Parameter
 
 Bei jedem Aufruf der Funktion wird ein konkreter Wert (=Argument) als Wert der Parameter-Variable festgelegt. Dies kann auf unterschiedliche Arten geschehen:
 
@@ -166,7 +166,7 @@ linie(3*x-2);
 
 
 
-## Mehrere Parameter
+### Mehrere Parameter
 
 Durch Kommas getrennt.
 ```c
@@ -184,7 +184,7 @@ void main()
 
 
 
-# Lokale Variable – Level 2
+## Lokale Variable – Level 2
 
 
 Jede Funktion hat einen **eigenen Speicherbereich** für ihre lokale Variablen. Dieser Speicher wird bei **Aufruf** der Funktion neu angelegt und beim **Verlassen** der Funktion wieder freigegeben. Die Variablenwerte gehen daher beim Verlassen der Funktion verloren.

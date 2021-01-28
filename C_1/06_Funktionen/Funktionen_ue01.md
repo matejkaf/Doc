@@ -1,11 +1,11 @@
 ---
-title: Funktionen (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [ c, funktionen ]
 ---
 
-
+# Funktionen (Übungen)
 
 **Übung (Hallo Welt):**
 
@@ -34,7 +34,7 @@ tags: [ c, funktionen ]
 **Übung (Zahlenfolge in Funktion):**
 Schreibe eine Funktion die, mit Hilfe einer Schleife, folgende Zahlenfolge ausgibt.
 
-$2,5,8,11,14,17,$
+`2,5,8,11,14,17,`
 
 Die Zahlen sollen hintereinander durch Beistriche getrennt ausgegeben werden. Rufe die Funktion im Hauptprogramm einmal auf.
 
@@ -80,7 +80,7 @@ Hinweis: Verwende eine Schleife um die Funktion `innen` mehrfach aufzurufen – 
 ---
 
 **Übung (Zahlenfolge in Funktion II):**
-Schreibe eine Funktion die die Zahlenfolge $42,42,41,39,36,32,27,$ (hintereinander in einer Zeile) ausgibt. Die Zahlenfolge soll 10 Mal untereinander wiederholt ausgegeben werden.  Die Wiederholung soll durch eine Schleife im Hauptprogramm implementiert werden.
+Schreibe eine Funktion die die Zahlenfolge `42,42,41,39,36,32,27,` (hintereinander in einer Zeile) ausgibt. Die Zahlenfolge soll 10 Mal untereinander wiederholt ausgegeben werden.  Die Wiederholung soll durch eine Schleife im Hauptprogramm implementiert werden.
 
 
 
@@ -89,9 +89,9 @@ Schreibe eine Funktion die die Zahlenfolge $42,42,41,39,36,32,27,$ (hintereinand
 **Übung (Zahlenfolge in Funktion III):**
 Schreibe eine Funktion die folgende Zahlenfolge in einer Zeile ausgibt:
 
-$1,2,4,5,7,8,10$
+`1,2,4,5,7,8,10`
 
-Hinweis zur Lösung: abwechselnd $+1$ oder $+2$ je nach dem ob die Laufvariable gerade oder ungerade ist.
+Hinweis zur Lösung: abwechselnd +1 oder +2 je nach dem ob die Laufvariable gerade oder ungerade ist.
 
 Die Zahlenfolge soll weiters untereinander wiederholt werden. Die Anzahl der Wiederholungen wird durch eine Eingabe im Hauptprogramm bestimmt.
 

@@ -1,9 +1,13 @@
 ---
-title: Funktionen mit Parameter (Übungen)
+title: Doc
 type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
 tags: [ c, funktionen, parameter ]
 ---
+
+
+
+# Funktionen mit Parameter (Übungen)
 
 
 
@@ -29,7 +33,7 @@ Schreibe eine Funktion zum Prozentrechnen. Als Parameter werden eine Kommazahl u
 **Übung (Summe ungerader Zahlen):**
 Implementiere eine Funktion `usumme` die die Summe einer gewissen Anzahl von ungeraden Zahlen bestimmt und ausgibt. Wie viele Zahlen addiert werden sollen, bestimmt ein `int` Parameter `anzahl`.
 
-Bsp.: Der Aufruf von `usumme(4)` ergibt $16$ weil: $1+3+5+7=16$
+Bsp.: Der Aufruf von `usumme(4)` ergibt $16$ weil: `1+3+5+7=16​`
 
 
 
