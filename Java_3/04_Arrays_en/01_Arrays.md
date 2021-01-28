@@ -87,16 +87,16 @@ java.lang.ArrayIndexOutOfBoundsException
 
 This is a programming error discovered at runtime.
 
-**Exceptions** help to discover problems early. Got an exception? $\longrightarrow$ locate bug in your code!
+**Exceptions** help to discover problems early. Got an exception? Locate bug in your code!
 
-Distinguish: Compile time error $\longleftrightarrow$ Run time error
+Distinguish: Compile time error – Run time error
 
 
 
 ---
 
 **Assignment (Create Array):**
-Write a program that fills an `int` Array (size entered by user) with the values $\{1,2,4,8,16,...\}$.
+Write a program that fills an `int` Array (size entered by user) with the values `1,2,4,8,16,...`.
 
 ---
 
