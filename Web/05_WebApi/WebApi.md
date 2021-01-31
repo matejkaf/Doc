@@ -1,7 +1,14 @@
+---
+title: Doc
+type: lecture
+tags: []
+---
+
+# Java Script – Web API
 
 
 
-# Ereignisse
+## Ereignisse
 
 Über Attribute:
 
@@ -23,6 +30,7 @@ document.getElementById("myBtn").addEventListener("click", function(){
 Liste der Events auf [w3schools](https://www.w3schools.com/tags/ref_eventattributes.asp).
 
 
+
 ## Timing Events
 
 Wiederholend:
@@ -39,7 +47,8 @@ setTimeout(function(){ ... },milliseconds);
 ```
 
 
-# Formulare
+
+## Formulare
 
 ```html
 <form onsubmit="formSubmit(this);return false">
@@ -62,7 +71,7 @@ function formSubmit(formElement) {
 
 
 
-# AJAX
+## AJAX
 
 Asynchronous JavaScript and XML.
 
@@ -84,11 +93,10 @@ httpReq.send(JSON.stringify(training))
 ```
 
 
-# DOM
+
+## DOM
 
 Document Object Model ([w3schools](https://www.w3schools.com/jsref/dom_obj_document.asp))
-
-
 
 Ist die interne Browser Repräsentation einer Web Seite.
 
@@ -101,7 +109,7 @@ node mit einer bestimmten id finden:
 document.getElementById("myid");
 ```
 
-## Element node
+### Element node
 
 ```javascript
 if(el.nodeType==1) { }
@@ -124,7 +132,7 @@ el.getElementsByClassName("example");
 el.getElementsByTagName("p")
 ```
 
-## Attribute
+### Attribute
 
 Attribute sind Properties eines Element nodes:
 
@@ -157,7 +165,7 @@ el.hasAttribute("attrName")
 el.getAttribute("attrName")
 ```
 
-## Text Node
+### Text Node
 
 ```javascript
 if(el.nodeType==3) { }
