@@ -59,38 +59,34 @@ Richtiges Interpretieren der technischen Daten.
 Was bedeutet **DDR4-3200**?:
 
 - Chip clock rate: 400 (MHz) – intern im SDRAM
-- Bus clock rate: 1600 (MHz)
+- Bus clock rate: 1600 (MHz) – CPU↔SDRAM
 - Bus transfer rate: 3200 (MT/s)
 - Bus bandwidth: 25600 (MB/s)
 
-Erklärungen
+Zusammenhänge:
 
-- 3200 = Transfer Rate (MT/s)
-  pro Transfer werden 8 Bytes übertragen
-  daraus ergibt sich die Bandbreite von 8*3200 = 25600 MB/s
-  daher sind solche Module auch unter der Bezeichnung **PC4-25600** im Handel.
-- Berechnung der Transfer Rate
-  - Chip Clock Rate = 400 MHz
-  - [prefetch](https://en.wikipedia.org/wiki/Synchronous_dynamic_random-access_memory#DDR_SDRAM_prefetch_architecture): es werden mehrere hintereinanderliegende 8 Byte Blöcke gelesen.
-    Bei 8n werden 8 Blöcke gelesen und es ergibt sich 400*8n =1600 MHz Bus clock rate
-  - Da beim Bus clock steigende und fallende Flanke genutzt wird (DDR Prinzip) verdoppelt sich die Zahl zur Bus transfer rate = 2*1600=3200
+- Chip **Clock Rate** (400 MHz) → Bus transfer rate (3200 MT/s)
+  Pro chip-clock werden 8 hintereinanderliegende 64 Bit Blöcke gelesen. (**[8n prefetch](https://en.wikipedia.org/wiki/Synchronous_dynamic_random-access_memory#DDR_SDRAM_prefetch_architecture)**). Daher am Bus die 8-fache **transfer rate**  (3200 MT/s) notwendig.
+- DDR: am Bus wird  steigende und fallende Flanke genutzt, daher ist die **bus clock rate** die halbe transfer rate 3200 / 2 = 1600 MHz
+
+- Pro Transfer werden 64 Bits (8 Bytes) übertragen, daher Bandbreite (bus bandwith) = 3200*8=25600 MB/s. DIMMs sind häufig mit der Bezeichnung **PC4-25600** im Handel.
 
 
 
 ### DDR5
 
-- Höhere Bandbreiten werden benötigt weil immer mehr CPU Cores auf den einen gemeinsamen Speicher zugreifen.
-- Geringerer Stromverbrauch
 - Verfügbar 2021, zuerst in Servern
+- Höhere Bandbreiten werden benötigt weil immer mehr CPU Cores auf einen gemeinsamen Speicher zugreifen.
+- Geringerer Stromverbrauch
 - DDR4: max. 32GB pro DIMM Modul, DDR5: 128GB
 - Transfer Rate: ab DDR5-3200 (in 400er Schritten) bis DDR5-6400 (Zukunft: 8400MT/s).
 - 16n Prefetch (d.h. 16*8=128 Bytes pro Speicherzugriff)
-- Diverse Optimierungen um reale Datenrate zu erhöhen. Ca. ⅓ schneller als DDR4 bei gleicher Transfer Rate.
+- Diverse Optimierungen um **reale Datenrate** zu erhöhen. Ca. ⅓ schneller als DDR4 bei gleicher Transfer Rate.
   ![img](fig/ddr5_blog_post_image_2.png)
 
 ### Dual (Quad) Channel
 
-2 DIMM Steckplätze werden parallel verwendet, erweitert die Busbreite auf 128 Bits.
+2 DIMM Steckplätze werden parallel verwendet, verdoppelt die Busbreite auf 128 Bits.
 
 Quad Channel: 256 Bits.
 
@@ -101,7 +97,7 @@ Quad Channel: 256 Bits.
 - [RAM Explained - Random Access Memory](https://youtu.be/PVad0c2cljo) – Basics, Allgemeine Einführung, DIMM, SRAM, SDRAM, Bandwidth (PC-100, PC-133), RIMM, DDR, DDR2, DDR3, DDR4, ECC
 
   -   data path width 64 Bits = 8 Bytes. Manchmal genannt "line" (en)
-  -   DDR-333, PC2700 – warum nicht doppelt soviel (333x8x2=5333, wegen double data rate)
+  -   DDR-333, PC2700 – warum nicht doppelt soviel (333x8x2=5333), wegen double data rate)
       Antwort: 333MHz ist bereits die verdoppelte Frequenz (d.h. zählt auch die negativen Flanken) 
 
 - [Dynamic Random Access Memory (DRAM). Part 1: Memory Cell Arrays](https://youtu.be/I-9XWtdW_Co)
@@ -153,7 +149,7 @@ Nur SDRAMs sind in diesen Größen verfügbar, dieser kann aber mit der CPU Gesc
 
 Zusätzlich Trend zu mehreren CPU Cores pro Prozessor, diese müssen  sich den gemeinsamen Hauptspeicher teilen.
 
-Lösung: **Cache Speicher** (SRAM) dienen als schnelle Zwischenspeicher. Ziel: Im Cache sind jene Programmteile und Daten die die CPU jetzt gerade bzw. sehr häufig braucht (z.B. Schleifen und lokale Variable). Cache Speicher ist teuer: 10–100x normales SDRAM.
+Lösung: **Cache Speicher** (schnell SRAM Zwischenspeicher) zwischen CPU und SDRAM . Ziel: Im Cache sind jene Programmteile und Daten die die CPU jetzt gerade bzw. sehr häufig braucht (z.B. Schleifen und lokale Variable). Cache Speicher ist teuer: 10–100x normales SDRAM.
 
 [How Does CPU Cache Work and What Are L1, L2, and L3?](https://www.makeuseof.com/tag/what-is-cpu-cache/)
 
@@ -167,7 +163,7 @@ Caches können hierarchisch organisiert sein. Aktuell max. 3 Level
 
 Die Busbreite ist typischerweise 64 Bit.
 
-Es wird immer mehr aus dem Speicher in den gelesen als aktuell gerade gebraucht werden (Cache-Burst). Annahme diese Daten werden sehr wahrscheinlich auch benötigt werden.
+Es wird immer mehr aus dem SDRAM gelesen als aktuell gerade gebraucht wird (Cache-Burst). Diese Daten werden sehr wahrscheinlich auch benötigt. Dies passt gut zur prefetch Architektur des SDRAMs.
 
 Die CPU sucht die Daten zuerst im Cache. Werden diese nicht gefunden (Cache miss) wird im darüberliegenden Cache (oder im Hauptspeicher) gesucht.
 

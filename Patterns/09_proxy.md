@@ -15,9 +15,11 @@ tags: [ patterns ]
 
 - GoF Pattern
 
-- ![img](fig/W3sDesign_Proxy_Design_Pattern_UML.jpg)
+![img](fig/W3sDesign_Proxy_Design_Pattern_UML.jpg)
 
-- [![img](fig/439px-Proxy_pattern_diagram.svg.png)](https://en.wikipedia.org/wiki/File:Proxy_pattern_diagram.svg)
+![img](fig/439px-Proxy_pattern_diagram.svg.png)
+
+
 
 ## Beispiel – Protection Proxy
 

@@ -11,6 +11,8 @@ tags: [ patterns ]
 
 GoF Pattern. [wikipedia: Template method pattern](https://en.wikipedia.org/wiki/Template_method_pattern)
 
+[refactoring guru – template mothod](https://refactoring.guru/design-patterns/template-method)
+
 > This pattern is an example of [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) because the high-level code no longer determines what algorithms to run; a lower-level algorithm is instead selected at run-time.
 
 ![Template Method scheme](fig/Template_Method.png)

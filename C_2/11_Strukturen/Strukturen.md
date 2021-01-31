@@ -6,8 +6,6 @@ description: Einführung in C Strukturen
 tags: [ 2AHITS, c, structure ]
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 # Strukturen
 
 Eine Struktur ist eine Zusammenfassung mehrerer Variablen.
@@ -247,8 +245,9 @@ void heute(Datum* d)
 ```c
 main()
 {
-    Datum h;
-    heute(&h);
+  Datum h;
+  heute(&h);
+	printf("%02d.%02d.%d\n",h.tag,h.monat,h.jahr);
 }
 ```
 
@@ -257,34 +256,62 @@ main()
 ---
 
 **Übung (Ein- und Ausgabe):**
-Beginne ein neues Projekt und schreibe für die Struktur `Einkauf` eine Funktion zur Eingabe und eine Funktion zur Ausgabe.
-Diesen Funktionen wird ein Zeiger auf `Einkauf` als Parameter übergeben.
-Aufruf:
 
-```c
-Einkauf joghurt;
-input(&joghurt);
-output(&joghurt);
+Schreibe eine Funktion `inputDatum` zur Eingabe und eine Funktion `outputDatum` zur Ausgabe eines Datums. Verwende die Struktur `Datum` und übergib die Struktur immer als Zeiger.
+
+
+
+---
+
+**Übung (Kalendereintrag):**
+
+In einem Test/Schularbeitenkalender sollen Datum und Bezeichnung des Fachs erfasst werden. Verwende dazu die Struktur:
+
+```c++
+struct KalenderEintrag
+{
+  Datum am;
+	char bezeichnung[50];  
+};
+```
+
+Schreibe eine Funktion `inputKalenderEintrag` zur Eingabe und eine Funktion `outputKalenderEintrag` zur Ausgabe eines Kalendereintrags. Übergib die Struktur in beiden Fällen als Zeiger.
+
+Hinweis:
+
+```c++
+void foo(KalenderEintrag* pKalender) 
+{
+  int tag;
+	// beachte die Anwendung von `->` und `.`
+  tag = pKalender->am.tag;
+}
 ```
 
 
 
 ---
 
-**Übung (Erweiterung Einkaufskorb):**
-Verwende die Funktionen `input` und `output` im Programm der Einkaufskorb-Übung.
+**Übung (Kalender):**
+
+Ermögliche die Eingabe für ein Array aus 5 Kalendereinträgen. Nachdem alle eingegeben wurden sollen alle Kalendereinträge wieder ausgegeben werden, markiere dabei alle Einträge die im Februar sind mit einem vorgesetzten  `*`.
 
 
 
 ---
 
 **Übung (Datum vergleichen):**
+
 Schreibe eine Funktion die 2 als Zeiger übergebene Datums-Strukturen vergleicht.
-Ist das erste Datum früher soll die Funktion 1, bei Gleichheit 0 und falls das erste Datum später als das zweite ist $$-1$$ zurückgeben.
+Ist das erste Datum früher soll die Funktion 1, bei Gleichheit 0 und falls das erste Datum später als das zweite ist –1 zurückgeben.
+
+
 
 ---
 
+**Übung (Sortieren)**
 
+Sortiere den Kalender nach aufsteigendem Datum. Verwende Bubble Sort und die vorher implementierte Funktion zum Vergleiche von 2 Datums-Strukturen.
 
 
 

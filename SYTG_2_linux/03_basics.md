@@ -446,8 +446,6 @@ $ git branch -M main
 $ git push -u origin main
 ```
 
-> [!2AHITS G1 15.01.2021]
-
 
 
 # Mehr über Optionen
@@ -503,7 +501,7 @@ Welche Optionen/Argumente unterstützt ein Kommando?  `--help` oder `man` nutzen
 ---
 
 **Übung (head)**
-Versuche zu verstehen was das folgender shell Ausdruck macht
+Versuche zu verstehen was das folgender shell Ausdruck macht:
 
 ```bash
 $ head --help | head -n12
@@ -521,6 +519,10 @@ Verwende Optionen von `date` damit die Ausgabe des Datums und der Uhrzeit in der
 
 
 
+Systeme können sich bei den Optionen unterscheiden. Gibt unterschiedliche Standards und Implementierungen (GNU/POSIX). Beispiel  `date` auf dem Mac (BSD) hat keine `-I` Option, cygwin/GNU (Mac: `gdate` falls installiert) schon.
+
+
+
 # Filter
 
 - `head` / `tail` / `sort`
@@ -530,6 +532,8 @@ Aufgabe: Sortiere die Einkaufsliste `shopping.txt`, gib dann nur die letzten 5 Z
 ```bash
 $ cat shopping.txt | tail -n5
 ```
+
+> [!2AHITS G1 29.01.2021]
 
 Erweiterung: verwende cat.
 
@@ -543,11 +547,17 @@ Sortiere den Inhalt von `shopping.txt` kombiniert mit `shopping2.txt`. Hinweis: 
 cat shopping.txt shopping2.txt | sort | tail -n15
 ```
 
-Aufgabe: Sortiere in umgekehrter Reihenfolge (Option von sort)
+---
 
-Aufgabe: Sortiere nach der 2ten Spalte (Obstnamen)
+**Übung (Sort)**
 
-Aufgabe: Gib die letzten 7 Elemente aus die sich durch alphabetisch absteigende Reihenfolge des Personennamens ergeben (Z zuerst). Diese 7 Elemente sollen aufsteigend sortiert nach Obstname ausgegeben werden.
+-  Sortiere in umgekehrter Reihenfolge (Option von sort)
+
+- Sortiere nach der 2ten Spalte (Obstnamen)
+
+- Gib die letzten 7 Elemente aus die sich durch alphabetisch absteigende Reihenfolge des Personennamens ergeben (Z zuerst). Diese 7 Elemente sollen aufsteigend sortiert nach Obstname ausgegeben werden.
+
+---
 
 
 
@@ -613,24 +623,29 @@ Wagner,18.09.2019,20.0,Werkstatt
 
 **Übung (Anzahl Werkstatt)**
 
-Schreibe ein shell Kommando das die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
+Schreibe ein shell Kommando das in `klassenkassa.csv` die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
 
 ---
 
+**Übung (Werkstatt Einzeiler)**
 
+Schreibe ein shell Kommand das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
 
-# Anwendung
+```
+20.0+20.0+20.0+20.0
+```
 
-**Advanced**: Summieren aller Beträge für Werkstatt.
+Hinweise:
 
+- Verwende `grep` und `cut` um nur die Beträge zu filtern – diese stehen jedoch dann noch auf einzelnen Zeilen.
+- Verwende `paste` um die Zeilen zusammenzufassen.
 
+Lösung:
 
 ```bash
 $ grep Werkstatt klassenkassa.csv | cut -d, -f3 | paste -s -d+
 20.0+20.0+20.0+20.0
 ```
-
-- `paste` verbindet alle Zeile zu einer.
 
 Auswerten eines arithmetischen Ausdrucks mit python:
 
@@ -638,7 +653,7 @@ Auswerten eines arithmetischen Ausdrucks mit python:
 echo '1+2+3' | python3 -c 'print(eval(input()))'
 ```
 
-`bc`  (wenn installiert) geht auch.
+> [!TODO] Das tatsächlich summieren der Werte wäre ein Beispiel für AWK
 
 
 
@@ -685,3 +700,8 @@ hi robots
 # Übungen
 
 Verwende `od` um den Inhalt einer Textdatei im ASCII Code anzuzeigen.
+
+```bash
+$ $ od -A x -t x1z -v shopping.txt
+```
+
