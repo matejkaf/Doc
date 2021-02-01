@@ -2,6 +2,7 @@
 title: Doc
 type: assignment
 cmds: ['md_html.bash --small']
+tags: [1AHITS]
 ---
 
 # for Schleifen (Übungen)
