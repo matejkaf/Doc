@@ -263,7 +263,7 @@ In einem Test/Schularbeitenkalender sollen Datum und Bezeichnung des Fachs erfas
 struct KalenderEintrag
 {
   Datum am;
-	char bezeichnung[50];  
+  char bezeichnung[50];  
 };
 ```
 
@@ -275,7 +275,7 @@ Hinweis:
 void foo(KalenderEintrag* pKalender) 
 {
   int tag;
-	// beachte die Anwendung von `->` und `.`
+  // beachte die Anwendung von `->` und `.`
   tag = pKalender->am.tag;
 }
 ```
