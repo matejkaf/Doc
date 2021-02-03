@@ -177,9 +177,9 @@ Es können Zeiger auf Strukturvariablen definiert werden.
 
 ```c
 struct Datum {
-    int tag;
-    int monat;
-    int jahr;
+  int tag;
+  int monat;
+  int jahr;
 };
 ```
 
@@ -225,9 +225,9 @@ Für die Parameterübergaben an Funktionen.
 ```c
 struct Datum
 {
-    int tag;
-    int monat;
-    int jahr;
+  int tag;
+  int monat;
+  int jahr;
 };
 ```
 
@@ -235,9 +235,9 @@ struct Datum
 ```c
 void heute(Datum* d)
 {
-    d->tag = 11;
-    d->monat = 11;
-    d->jahr = 2011;
+  d->tag = 11;
+  d->monat = 11;
+  d->jahr = 2011;
 }
 ```
 
@@ -246,7 +246,7 @@ void heute(Datum* d)
 main()
 {
   Datum h;
-	heute(&h);
+  heute(&h);
   printf("%02d.%02d.%d\n",h.tag,h.monat,h.jahr);
 }
 ```
