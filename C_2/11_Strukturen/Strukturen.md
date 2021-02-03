@@ -197,14 +197,6 @@ p->tag = 10;
 
 Im Speicher kann man sich das folgendermaßen vorstellen:
 
-
-```c
-Datum dat = {22,9,2013};
-Datum* p;
-p = &dat;
-p->tag = 10;
-```
-
 ![image-20201102100600908](fig/image-20201102100600908.png)
 
 
