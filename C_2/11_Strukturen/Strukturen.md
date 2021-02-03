@@ -246,8 +246,8 @@ void heute(Datum* d)
 main()
 {
   Datum h;
-  heute(&h);
-	printf("%02d.%02d.%d\n",h.tag,h.monat,h.jahr);
+	heute(&h);
+  printf("%02d.%02d.%d\n",h.tag,h.monat,h.jahr);
 }
 ```
 
