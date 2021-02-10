@@ -1,9 +1,9 @@
 ---
 title: CPU / Prozessor
-type: lecture
 description: Grundlegende Arbeitsweise einer CPU
 cmds: ['md_html.bash']
 tags : [hw]
+tags: [lecture]
 ---
 
 Der Prozessor (CPU) führt Programme (=Folge von Befehlen) aus die im Speicher stehen.

@@ -1,7 +1,6 @@
 ---
 title: Doc
-type: lecture
-tags: [2AHITS]
+tags: [lecture,2AHITS]
 ---
 
 

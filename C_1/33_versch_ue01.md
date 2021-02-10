@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: assignmen
 cmds: ['md_html.bash --small']
-tags: [1AHITS]
+tags: [assignmen,1AHITS]
 ---
 
 # Verschachteln von if Anweisungen (Übungen)

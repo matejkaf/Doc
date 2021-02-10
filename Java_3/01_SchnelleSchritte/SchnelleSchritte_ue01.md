@@ -1,9 +1,8 @@
 ---
 title: Übungen – Einstieg in Java
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
 description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static public.
-tags: [java]
+tags: [assignment,java]
 ---
 
 **Übung (FizzBuzz):**

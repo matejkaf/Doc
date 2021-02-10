@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: lecture
 cmds: ['md_html.bash']
-tags: [1AHITS]
+tags: [lecture,1AHITS]
 ---
 
 # if Anweisung

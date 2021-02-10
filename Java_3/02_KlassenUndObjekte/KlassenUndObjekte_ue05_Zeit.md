@@ -1,8 +1,7 @@
 ---
 title: Übung Klasse für Uhrzeit
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java]
+tags: [assignment,java]
 ---
 
 

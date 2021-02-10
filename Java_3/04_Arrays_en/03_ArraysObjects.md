@@ -1,9 +1,8 @@
 ---
 title: Doc
-type: lecture
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java, array]
+tags: [lecture,java, array]
 ---
 
 # Arrays of Objects

@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [1AHITS]
+tags: [assignment,1AHITS]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

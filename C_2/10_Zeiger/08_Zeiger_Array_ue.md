@@ -1,8 +1,7 @@
 ---
 title: Zeiger und Arrays Übungen
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [c,pointer,array]
+tags: [assignment,c,pointer,array]
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 title: Zeiger - allgemeine Grundlagen Übungen
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [c,pointer,intro]
+tags: [assignment,c,pointer,intro]
 ---
 
 **Übung (Adressen und Größen):**

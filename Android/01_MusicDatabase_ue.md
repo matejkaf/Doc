@@ -1,7 +1,7 @@
 ---
 title: Musik Datenbank (Übung)
-type: assignment
 cmds: ['md_html.bash --small']
+tags: [assignment]
 ---
 
 ---

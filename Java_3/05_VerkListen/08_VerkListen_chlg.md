@@ -1,6 +1,6 @@
 ---
 title: Doc
-type: assignment
+tags: [assignment]
 ---
 
 # Einfach verkettete Liste (Challenges)

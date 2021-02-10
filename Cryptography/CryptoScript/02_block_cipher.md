@@ -1,9 +1,8 @@
 ---
 title: Block cipher
 description: Block cipher Verschlüsselung, DES, AES, Block cipher mode
-type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ krypto ]
+tags: [lecture, krypto ]
 ---
 
 

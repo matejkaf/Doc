@@ -1,8 +1,7 @@
 ---
 title: Hashing in .NET Core
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ krypto,assignment,solution ]
+tags: [assignment, krypto,assignment,solution ]
 ---
 
 

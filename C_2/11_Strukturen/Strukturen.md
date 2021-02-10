@@ -1,9 +1,8 @@
 ---
 title: Doc
-type: lecture
 cmds: ['md_html.bash']
 description: Einführung in C Strukturen
-tags: [ 2AHITS, c, structure ]
+tags: [lecture, 2AHITS, c, structure ]
 ---
 
 # Strukturen

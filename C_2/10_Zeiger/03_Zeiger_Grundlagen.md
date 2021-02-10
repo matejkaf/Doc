@@ -1,8 +1,7 @@
 ---
 title: Zeiger - allgemeine Grundlagen
-type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,pointer,intro]
+tags: [lecture,c,pointer,intro]
 ---
 
 Zeiger (auf englisch *pointer*) sind ein **weiterführendes Sprachkonzept** von C mit vielfältigen Anwendungsmöglichkeiten. Zeiger sind **Variablen** die **Adressen** speichern. Zeiger werden definiert indem man an den Datentypen einen Stern anhängt.

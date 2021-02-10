@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: lecture
 cmds: ['md_html.bash --small']
-tags: [1AHITS]
+tags: [lecture,1AHITS]
 ---
 
 # while Schleifen

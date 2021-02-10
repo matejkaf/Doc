@@ -1,8 +1,7 @@
 ---
 title: Body Mass Index – Übung Klassen
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [java, oop]
+tags: [assignment,java, oop]
 ---
 
 

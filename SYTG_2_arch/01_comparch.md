@@ -1,9 +1,9 @@
 ---
 title: Computerarchitektur Hardware
-type: lecture
 description: Klassifikation von Computern. Von Neumann Architektur. Grundlagen zu Speicher und Bus.
 cmds: ['md_html.bash']
 tags : [hw]
+tags: [lecture]
 ---
 
 Ziel: Durch verstehen wie Computer intern funktionieren IT Systeme besser anwenden können.

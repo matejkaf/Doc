@@ -1,7 +1,6 @@
 ---
 title: Doc
-type: lecture
-tags: [4AHELS]
+tags: [lecture,4AHELS]
 ---
 
 # Streams für Text

@@ -1,9 +1,8 @@
 ---
 title: Doc
-type: lecture
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java, array, 3BHELS]
+tags: [lecture,java, array, 3BHELS]
 ---
 
 > The important thing is not to stop questioning. –Albert Einstein

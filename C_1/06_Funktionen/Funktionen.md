@@ -1,9 +1,8 @@
 ---
 title: Doc
-type: lecture
 cmds: ['md_html.bash']
 description: Einführung in Funktionen in C
-tags: [ c, funktionen ]
+tags: [lecture, c, funktionen ]
 ---
 
 # Funktionen

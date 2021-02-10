@@ -1,8 +1,7 @@
 ---
 title: Observer – Übung
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [ patterns ]
+tags: [assignment, patterns ]
 ---
 
 

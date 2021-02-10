@@ -1,8 +1,7 @@
 ---
 title: Zeiger - call by reference
-type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,pointer]
+tags: [lecture,c,pointer]
 ---
 
 # Der Adressoperator (`&`)

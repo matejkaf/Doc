@@ -1,7 +1,6 @@
 ---
 
-type: lecture
-tags: [ csharp, python, dotnet, c, java, array ]
+tags: [lecture, csharp, python, dotnet, c, java, array ]
 ---
 
 titel: nicht gesetzt

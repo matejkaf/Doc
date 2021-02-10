@@ -1,8 +1,7 @@
 ---
 title: Magisches Quadrat
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [c]
+tags: [assignment,c]
 ---
 
 

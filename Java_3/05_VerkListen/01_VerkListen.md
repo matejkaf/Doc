@@ -1,6 +1,6 @@
 ---
 title: Doc
-type: lecture
+tags: [lecture]
 ---
 
 >  Was eine guten Meister macht: Wissen, Können und Wollen. (Deutsches Sprichwort)

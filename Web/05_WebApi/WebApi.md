@@ -1,7 +1,6 @@
 ---
 title: Doc
-type: lecture
-tags: []
+tags: [lecture,]
 ---
 
 # Java Script – Web API

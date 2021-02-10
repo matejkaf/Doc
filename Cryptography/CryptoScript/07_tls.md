@@ -1,9 +1,8 @@
 ---
 title: Transport Layer Security (TLS) 
 description:
-type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ krypto ]
+tags: [lecture, krypto ]
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 title: Übung Klasse Datum
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java, challenge]
+tags: [assignment,java, challenge]
 ---
 
 

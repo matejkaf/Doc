@@ -54,7 +54,7 @@ done
 
 
 
-Ein zusätzliches Verzeichnis:
+Ein zusätzliches nummeriertes Verzeichnis:
 
 ```bash
 #!/bin/bash
@@ -146,5 +146,23 @@ tail -n 5 copy_dump_from_htl.log
 
 ```bash
 for filename in ./*; do mv "./$filename" "./$(echo "$filename" | sed -e 's/to delete//g')";  done
+```
+
+
+
+## Alle .tex Files in einem Verzeichnis bearbeiten
+
+```bash
+#!/bin/sh
+#
+# alle .tex Files in einem Verzeichnis bearbeiten
+#
+for filename in *.tex; do
+    [ -f "$filename" ] || break
+    echo $filename "${filename%.*}.md"
+    mv $filename "${filename%.*}.md"
+    tex_to_md.bash "${filename%.*}.md"
+done
+
 ```
 

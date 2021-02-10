@@ -1,9 +1,8 @@
 ---
 title: Doc
-type: assignment
 description: 
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java, array]
+tags: [assignment,java, array]
 ---
 
 # Arrays in Java (Mock Exercises)

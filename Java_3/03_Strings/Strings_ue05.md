@@ -1,7 +1,7 @@
 ---
 title: Übungen zu Strings
-type: assignment
 cmds: ['md_html.bash --small']
+tags: [assignment]
 ---
 
 

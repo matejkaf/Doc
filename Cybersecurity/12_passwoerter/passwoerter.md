@@ -1,7 +1,7 @@
 ---
 title: Passwörter
-type: lecture
 cmds: ['md_html.bash']
+tags: [lecture]
 ---
 
 

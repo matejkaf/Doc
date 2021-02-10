@@ -1,9 +1,9 @@
 ---
 title: Übung Schulklasse
-type: assignment
 description: Einfache erste Übungen zu OOP
 cmds: ['md_html.bash','md_html.bash --small']
 tag: [java, oop]
+tags: [assignment]
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
-tags: [2AHELS,c,array]
+tags: [lecture,2AHELS,c,array]
 ---
 
 # Mehrdimensionale Arrays

@@ -1,7 +1,7 @@
 ---
 title: Android Zwei-Operanden Rechner (Lösung)
-type: solution
 cmds: []
+tags: [solution]
 ---
 
 ---

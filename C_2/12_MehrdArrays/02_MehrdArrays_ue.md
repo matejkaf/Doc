@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [2AHELS,c]
+tags: [assignment,2AHELS,c]
 ---
 
 # Mehrdimensionale Arrays (Übungen)

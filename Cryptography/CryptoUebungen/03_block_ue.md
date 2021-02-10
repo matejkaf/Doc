@@ -1,9 +1,8 @@
 ---
 title: Kryptographie Block Cipher (Übungen)
 description: Übungen zu Block Cipher
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ krypto ]
+tags: [assignment, krypto ]
 ---
 
 ---

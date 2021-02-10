@@ -1,8 +1,7 @@
 ---
 title: Observer Design Pattern – C# Events
-type: lecture
 cmds: ['md_html.bash']
-tags: [ patterns ]
+tags: [lecture, patterns ]
 ---
 
 

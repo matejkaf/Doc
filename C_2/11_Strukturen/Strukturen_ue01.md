@@ -1,9 +1,8 @@
 ---
 title: Doc
-type: assignment
 cmds: ['md_html.bash']
 description: 
-tags: [ c, structure ]
+tags: [assignment, c, structure ]
 ---
 
 # Strukturen (Übungen)

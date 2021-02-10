@@ -1,6 +1,6 @@
 ---
 title: Doc
-type: lecture
+tags: [lecture]
 ---
 
 

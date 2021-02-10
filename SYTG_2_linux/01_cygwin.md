@@ -1,9 +1,8 @@
 ---
 title: Cygwin installieren
-type: lecture
 cmds: ['md_html.bash']
 description:
-tags: [ cygwin ]
+tags: [lecture, cygwin ]
 ---
 
 

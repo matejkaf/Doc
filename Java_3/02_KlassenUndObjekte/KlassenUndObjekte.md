@@ -1,9 +1,8 @@
 ---
 title: Klassen und Objekte
-type: lecture
 description: Erste Einführung in Klassen und Objekte. Methoden, Konstruktor, this, this(), toString
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java, klasse]
+tags: [lecture,java, klasse]
 ---
 
 > Wie wenig Lärm machen die wirklichen Wunder. *Antoine de Saint Exupéry*

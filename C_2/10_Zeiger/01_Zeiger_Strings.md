@@ -1,8 +1,7 @@
 ---
 title: Zeiger und Strings
-type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,pointer,strings,intro]
+tags: [lecture,c,pointer,strings,intro]
 ---
 
 Strings sind Arrays aus `char` Elementen. Das Ende eines Strings wird durch den `char` Wert `\0` gekennzeichnet.

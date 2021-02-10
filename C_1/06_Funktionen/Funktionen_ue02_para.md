@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ c, funktionen, parameter ]
+tags: [assignment, c, funktionen, parameter ]
 ---
 
 

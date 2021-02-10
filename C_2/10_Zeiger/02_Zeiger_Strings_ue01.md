@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [c,pointer,strings,intro]
+tags: [assignment,c,pointer,strings,intro]
 ---
 
 # Zeiger und Strings (Übungen)

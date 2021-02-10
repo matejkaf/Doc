@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ 5AHELS, patterns ]
+tags: [lecture, 5AHELS, patterns ]
 ---
 
 # Factory Method – Design Pattern

@@ -1,8 +1,7 @@
 ---
 title: String Library
-type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,pointer,strings,intro]
+tags: [lecture,c,pointer,strings,intro]
 
 ---
 

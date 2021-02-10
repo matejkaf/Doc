@@ -1,8 +1,7 @@
 ---
 title: Mehrdimensionale Arrays (Übungen)
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [c]
+tags: [assignment,c]
 ---
 
 **Diagonalen:**

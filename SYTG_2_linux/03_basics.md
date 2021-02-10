@@ -1,9 +1,8 @@
 ---
 title: Grundlagen UNIX shell
-type: lecture
 description: Elemementare bash Bedienung
 cmds: ['md_html.bash']
-tags: [ unix, shell, bash ]
+tags: [lecture, unix, shell, bash ]
 ---
 
 

@@ -1,9 +1,8 @@
 ---
 title: Threads
-type: lecture
 description: Einführung in .NET Threads. Race conditions.
 cmds: ['md_html.bash', 'md_html.bash --small']
-tags: [csharp, dotnet, threads]
+tags: [lecture,csharp, dotnet, threads]
 ---
 
 - Ein Thread ist ein unabhänger Pfad der Programm-Ausführung.

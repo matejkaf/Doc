@@ -1,9 +1,8 @@
 ---
 title: Public-key cryptography (RSA)
 description:
-type: lecture
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ krypto ]
+tags: [lecture, krypto ]
 ---
 
 *shared secret key* Verschlüsselungssysteme haben zur Voraussetzung, dass beide Kommunikationspartner über den gleichen Schlüssel verfügen (*shared symetric key*) und diesen geheim halten. Die große Problematik ist Angriffe im Moment des Schlüsselaustauschs zu verhindern.

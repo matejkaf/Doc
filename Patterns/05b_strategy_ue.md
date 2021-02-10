@@ -1,8 +1,7 @@
 ---
 title: Doc
-type: assignment
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [ 5AHELS, patterns ]
+tags: [assignment, 5AHELS, patterns ]
 ---
 
 

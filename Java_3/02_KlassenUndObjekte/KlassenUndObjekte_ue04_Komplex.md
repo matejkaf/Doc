@@ -1,9 +1,8 @@
 ---
 title: Übung Komplexe Zahl
-type: assignment
 description: Klasse zum Rechnen mit komplexen Zahlen. Beispiel mit Mandelbrotmenge und Apfelmännchen.
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [java]
+tags: [assignment,java]
 ---
 
 

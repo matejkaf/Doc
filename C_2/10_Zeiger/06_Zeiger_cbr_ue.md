@@ -1,8 +1,7 @@
 ---
 title: Call-by-Reference Übungen
-type: assignment
 cmds: ['md_html.bash --small']
-tags: [c,pointer]
+tags: [assignment,c,pointer]
 ---
 
 

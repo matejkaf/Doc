@@ -1,9 +1,8 @@
 ---
 title: Kryptographie Stream Cipher (Übungen)
 description: Übungen zu Stream Cipher
-type: assignment
 cmds: []
-tags: [ krypto, java ]
+tags: [assignment, krypto, java ]
 ---
 
 ---

@@ -1,8 +1,7 @@
 ---
 title: Zeiger und Arrays
-type: lecture
 cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,pointer,array]
+tags: [lecture,c,pointer,array]
 ---
 
 Zeiger sind eine Alternative zum Index-Zugriff. C kennt intern eigentlich gar keinen Index sondern wandelt dies in Zugriffe über Zeiger um.

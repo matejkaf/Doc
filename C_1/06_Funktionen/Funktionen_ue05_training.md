@@ -1,7 +1,6 @@
 ---
 title: Doc
-type: assignment
-tags: [ c, funktionen ]
+tags: [assignment, c, funktionen ]
 ---
 
 # Funktionen (weitere Übungen)
