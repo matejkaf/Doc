@@ -1,8 +1,9 @@
 ---
-title: Hangman
-cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,strings,exercise]
+title: Doc
+tags: [c,strings,assignment]
 ---
+
+# Hangman
 
 Wir wollen Schritt für Schritt das Spiel "Hangman" programmieren.
 

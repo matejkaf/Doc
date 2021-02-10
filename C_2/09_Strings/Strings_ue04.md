@@ -1,8 +1,9 @@
 ---
-title: String Aufgabenstellungen (Gruppen)
-cmds: ['md_html.bash --small']
+title: Doc
 tags: [c,strings,assignment]
 ---
+
+# String Aufgabenstellungen (Gruppen)
 
 **Übung (searchlast):**
 Schreibe eine Funktion die ein Zeichen in einem String sucht. Rückgabewert ist der Index des Zeichens bzw. `-1` wenn des Zeichen nicht gefunden wurde. Kommt das Zeichen mehrfach vor soll die Position des letzten Zeichens genommen werden.

@@ -1,10 +1,9 @@
 ---
-title: String Aufgabenstellungen
-cmds: ['md_html.bash --small']
-tags: [c,strings,exercise]
+title: Doc
+tags: [c,strings,assignment]
 ---
 
-
+# String Aufgabenstellungen
 
 
 - Verstehe zuerst die Aufgabenstellung. 

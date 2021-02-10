@@ -34,9 +34,6 @@ Beispiele:
 
 ---
 
-
----
-
 **Übung (Geometrie -- Punkteabstand):**
 
 Schreibe ein Programm, das die *x* und *y* Koordinaten zweier Punkte einliest und deren Abstand ausgibt. Hinweis: verwende den Satz des Pythagoras. 

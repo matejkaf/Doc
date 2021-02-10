@@ -1,12 +1,9 @@
 ---
-title: Strings
-cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,strings,intro]
+title: Doc
+tags: [lecture,c,strings,intro]
 ---
 
-
-
-# Array aus char
+# Strings
 
 Für einzelne Zeichen gibt es den Datentyp `char`.
 

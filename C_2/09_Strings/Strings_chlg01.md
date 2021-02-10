@@ -1,10 +1,9 @@
 ---
-title: Laufschrift (String Challenge)
-cmds: ['md_html.bash --small']
+title: Doc
 tags: [c,strings,assignment,challenge]
 ---
 
----
+# Laufschrift (String Challenge)
 
 **Übung (Laufschrift)**
 
@@ -35,7 +34,7 @@ Hinweise zur Implementierung:
   {
     for(int i=0; i<10; i++)
     {
-      printf("-- %d --\n",i+1);
+      printf("-- %d --\r",i+1);
       Sleep(300); // 300 Millisekunden warten      
     }
   }

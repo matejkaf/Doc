@@ -1,8 +1,9 @@
 ---
-title: Übungen Strings
-cmds: ['md_html.bash --small','md_html.bash']
-tags: [c,strings,exercise]
+title: Doc
+tags: [c,strings,assignment]
 ---
+
+# Übungen Strings
 
 **Übung (Standard Stringfunktionen I):**
 
