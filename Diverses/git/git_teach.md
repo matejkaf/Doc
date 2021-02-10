@@ -16,9 +16,7 @@ git unterscheidet 3 Stellen in der sich eine Datei befinden kann:
 - working directory/tree
 - staging area (auch "index" oder "cache", Sammlung abgeschlossener Änderungen)
 - repository (.git subdir)
-
-\ 
-![git Areas](fig/areas.png)
+  <img src="fig/areas.png" alt="git Areas" style="zoom:50%;" />
 
 
 # Getting Started

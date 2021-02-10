@@ -38,3 +38,7 @@ _=/usr/bin/printenv
   - z.B. Command Prompt ändern
 - Bedeutung der Linux System Directories (`/etc`, ...)
 
+
+
+# Übungen
+

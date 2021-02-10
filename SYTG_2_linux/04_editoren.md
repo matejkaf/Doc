@@ -52,3 +52,11 @@ Bedienung selbsterklärend.
 
 
 
+# Visual Studio Code
+
+Installieren unter Windows: [User Installer](https://code.visualstudio.com/download) verwenden (kein Admin Acount notwendig).
+
+Verwenden von cygwin als integrierte Shell: [VS Code - Cygwin as Integrated Terminal](https://stackoverflow.com/questions/46061894/vs-code-cygwin-as-integrated-terminal)
+
+
+

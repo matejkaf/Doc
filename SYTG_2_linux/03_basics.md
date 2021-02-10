@@ -506,7 +506,6 @@ Versuche zu verstehen was das folgender shell Ausdruck macht:
 ```bash
 $ head --help | head -n12
 ```
-> [!2AHITS G2 22.01.2021]
 
 
 ---
@@ -552,10 +551,17 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 **Übung (Sort)**
 
 -  Sortiere in umgekehrter Reihenfolge (Option von sort)
-
-- Sortiere nach der 2ten Spalte (Obstnamen)
-
+-  Sortiere nach der 2ten Spalte (Obstnamen)
 - Gib die letzten 7 Elemente aus die sich durch alphabetisch absteigende Reihenfolge des Personennamens ergeben (Z zuerst). Diese 7 Elemente sollen aufsteigend sortiert nach Obstname ausgegeben werden.
+
+
+[!2AHITS G2 05.02.2021]
+
+---
+
+**Übung (middle)**
+
+Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen aus. Hinweis: die `-n` Option von `head` und `tail` erlaubt dies durch eine spezielle Angabe bei der Zeilenanzahl.
 
 ---
 
