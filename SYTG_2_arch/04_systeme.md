@@ -1,49 +1,47 @@
 ---
-title: Systemvergleich
+title: Doc
 description: Gegenüberstellung unterschiedlicher Systeme. Prozessoren. Zukünftige Entwicklung.
+tags: [lecture]
 ---
-
-
 
 # Systemvergleich
 
 <img src="fig/Weltweiter Endgeraeteabsatz.jpeg" alt="Weltweiter Endgeraeteabsatz" style="zoom:50%;" />
 
-
-
-Computersysteme – grobe Klassifizierung
+Grobe Klassifizierung
 
 - Endgeräte
   - Desktop
   - Notebook
   - Tablets
-- Server
-- Handy
+  - Smartphone (2020: ca. 1600 Mio. Stk.)
+- Server (2020: 12 Mio. Stk.)
 - IoT (RaspberryPi, Überwachungskameras, ...)
 - Embedded System (Waschmaschine, Autoelektronik, Industriesysteme)
 
 
 
-**Server** Eigenschaften (im Vergleich zu Desktop)
+## Server
+
+Vergleich zu Desktop
 
 - Ausgelegt auf Dauerbetrieb und lange Lebensdauer. z.B. 100% Last 24/7 über 5 Jahre.
 - Hoher Stromverbrauch und aufwändige Kühlung
 - Hoher Preis
-- Hohe Verfügbarkeit
-- Andere Bauform (Rack statt Gehäuse)
+- Andere Bauform –[19" Rack](https://de.wikipedia.org/wiki/Rack)
 - mehrere CPUs (multi-socket)
-- mehr Kerne pro CPU (cores)
-- Grafik rudimentär oder nicht vorhanden
+- mehr Kerne pro CPU
+- Kein Bildschirm (headless server)
 
 
 
-# Prozessoren – Beispiele
+## Prozessoren – Beispiele
 
 Vergleich von CPU's für unterschiedliche Anwendungen. Stand 2020.
 
-[List of Intel Core i7 microprocessors](https://en.wikipedia.org/wiki/List_of_Intel_Core_i7_microprocessors)
+Desktop/Notebook: [List of Intel Core i7 microprocessors](https://en.wikipedia.org/wiki/List_of_Intel_Core_i7_microprocessors)
 
-[List of Intel Xeon microprocessors](https://en.wikipedia.org/wiki/List_of_Intel_Xeon_microprocessors)
+Server: [List of Intel Xeon microprocessors](https://en.wikipedia.org/wiki/List_of_Intel_Xeon_microprocessors)
 
 Flagschiff CPUs 01/2020:
 
@@ -82,8 +80,6 @@ Flagschiff CPUs 01/2020:
 
 
 
-
-
 ### Speicherkonfiguration
 
 Stark vom Anwendungsfall abhängig. Faustregeln
@@ -103,27 +99,25 @@ Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.micro
 
 
 
-# Trends
+## Trends
 
-**Moore's Law** (Intel, 1975): Die Anzahl der Transistoren pro IC verdoppelt sich alle 2 Jahre, bzw. wächst um 40% in einem Jahr.
+**Moore's Law** (Intel, 1975): Die Anzahl der Transistoren pro IC verdoppelt sich alle 2 Jahre (+40% p.a.).
 
 - 1972, Intel 8008 (200kHz): 3500 Transistoren
 - 2019, Intel 56-Core Xeon Platinum 9282 (2,6GHz): 8 Mrd. Transistoren
 - 47 Jahre bei 40%: Faktor 1,4^47 = 7,4 Mio.
 
-Strukturen am IC werden immer kleiner: Aktuell beste Technologie: 5nm ([wikipedia](https://en.wikipedia.org/wiki/5_nm_process)).
+**Strukturen** am IC werden immer kleiner: Aktuell beste Technologie: 5nm ([wikipedia](https://en.wikipedia.org/wiki/5_nm_process)).
 Si Atomdurchmesser: ca. 0.2 nm
 
-Aktuelle Schätzwerte für Wachstum:
+Schätzwerte für **Wachstum**:
 
 - Prozessoren
-  - 30% mehr Komponenten pro Jahr
+  - 30% mehr Transistoren pro Jahr
   - Alle 1,5 Jahre: Verdopplung der Geschwindigkeit
   - Taktfrequenz stagniert seit >10 Jahren, stattdessen Multi-Core und Architekturverbesserungen.
   
-- Speicher
-  - 60% mehr Kapazität pro Jahr
-- Festplatten
+- Speicher / Festplatten
   - 60% mehr Kapazität pro Jahr
 - Kosten
   - 25% weniger pro Jahr

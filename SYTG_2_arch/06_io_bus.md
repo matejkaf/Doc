@@ -1,8 +1,11 @@
-# Input/Output
+---
+title: Doc
+tags: [l]
+---
 
-Fasst alle Möglichkeiten zusammen die bestehen um in einem Computer Daten zu lesen bzw. zu schreiben.
 
-Beispiele: Tastatur, Maus, Drucker, Festplatte.
+
+# IO BSysteme
 
 Innerhalb eines PC's gibt es für I/O unterschiedliche Bus-Systeme. Geräte sind meist nicht fest verbunden sondern werden gesteckt, entweder direkt auf die Hauptplatine oder mit Hilfe von Kabeln. Manche I/O Geräte wie Festplatten werden innerhalb des Rechnergehäuses untergebracht und meist mechanisch fixiert. Andere wiederum werden mittels längerer Kabel (Tastatur) mit dem Rechner verbunden.
 
@@ -18,9 +21,7 @@ Außerhalb/Externe Kabel:
 -   Ethernet LAN
 -   Thunderbolt (=PCIe+DisplayPort+USB)
 
-
-
-Außer PCIe sind alle hot plugging fähig, d.h. Geräte können im Betrieb hinzugefügt und entfernt werden.
+Außer PCIe sind alle **hot plugging** fähig, d.h. Geräte können im Betrieb hinzugefügt und entfernt werden.
 
 Vergleich der Datenraten (ungefähre Best-Werte, bei aktueller HW)
 
@@ -61,7 +62,7 @@ Typische Anwendungen:
 
 
 
-# PCIe
+## PCIe
 
 [Video: Explaining PCIe Slots](https://youtu.be/PrXwe21biJo), [elektronik-kompendium.de](https://www.elektronik-kompendium.de/sites/com/0904051.htm)
 
@@ -75,7 +76,7 @@ Typische Anwendungen:
 
 
 
-# SATA
+## SATA
 
 Serial AT Attachment
 
@@ -87,14 +88,11 @@ AT: von 1984 IBM AT wurde de facto Industriestandard. "Advanced Technology"
 
 Aktuell: SATA revision 3.0 (6 Gbit/s, 600 MB/s, Serial ATA-600)
 
-Eigenschaften
-
--   hot plugging
--   ?
+hot plugging fähig
 
 
 
-# SAS
+## SAS
 
 Serial Attached SCSI. [wikipedia SAS](https://en.wikipedia.org/wiki/Serial_Attached_SCSI). Alternative zu SATA in Servern. [SAS vs SATA: What's the Difference?](https://store.hp.com/us/en/tech-takes/sas-vs-sata)
 
@@ -104,7 +102,7 @@ SAS ist Performanter und ist technologisch fortschrittlicher als SATA. Ist aber 
 
 
 
-# DisplayPort
+## DisplayPort
 
 [HDMI, DisplayPort, DVI, VGA, Thunderbolt - Video Port Comparison](https://youtu.be/iFO3EiQbNJ8)
 
@@ -126,7 +124,9 @@ Historie der Grafikschnittstellen
 
 [Graphics display resolution](https://en.wikipedia.org/wiki/Graphics_display_resolution)
 
-# USB
+
+
+## USB
 
 [wikipedia (en)](https://en.wikipedia.org/wiki/USB)
 
@@ -194,7 +194,7 @@ USB-C
 
 
 
-# Ethernet LAN
+## Ethernet LAN
 
 Siehe Netzwerktechnik.
 
@@ -212,7 +212,7 @@ Quelle: [wikipedia](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
 
 
-# Thunderbolt
+## Thunderbolt
 
 Thunderbolt-3, USB-C Stecker. 
 
@@ -226,7 +226,7 @@ Using USB-C on copper cables, it can incorporate USB Power Delivery, allowing th
 
 
 
-# Kompatibilität
+## Kompatibilität
 
 Eine der grundlegenden Designprinzipien der Computerarchitektur ist die **Modularität**, d.h. das man unterschiedliche Komponenten  miteinander verbinden kann. Wenn man als Anwender davon ausgehen kann, dass das grundsätzlich funktioniert auch bei unterschiedlichen Herstellern und Alter der Komponenten spricht man von **Kompatibilität**. Kompatibilität wird erreicht indem sich Hersteller an gemeinsame Standards halten und diese Standards (z.B. USB) selbst eine größtmögliche Kompatibilität gewährleisten (was meist mit relativ viel Aufwand verbunden ist).
 

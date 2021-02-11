@@ -1,7 +1,7 @@
 ---
 title: Doc
 description: Arten von Speicher. Cache.
-tags: [2AHITS]
+tags: [lecture, 2AHITS]
 ---
 
 # Speicher
@@ -73,13 +73,23 @@ Zusammenhänge:
 
 
 
+### Detail-Infos DRAM
+
+*Info. Nicht für Unterricht*
+
+-   The naming convention for DDR, DDR2 and DDR3 modules specifies either a maximum speed (e.g., DDR2-800) or a maximum bandwidth (e.g., PC2-6400). The speed rating (800) is not the maximum clock speed, but twice that (because of the doubled data rate). The specified bandwidth (6400) is the maximum megabytes transferred per second using a 64-bit width. In a dual-channel mode configuration, this is effectively a 128-bit width. Thus, the memory configuration in the example can be simplified as: two DDR2-800 modules running in dual-channel mode. [Memory bandwidth](https://en.wikipedia.org/wiki/Memory_bandwidth)
+
+-   Beschriftung mit (doppelter) Taktfrequenz (DDR4-1600) oder Bandbreite im MB/s (PC4-12800)
+    DDR4-1600 (pos. und neg. Flanken) => 800 MHZ I/O Bus (zwischen memory-controller und DIMM), Speichertakt (im DIMM) 200 MHz, die Differenz zwischen 200 auf 1600 MHz wird durch einen Trick (8x Prefetch) im Speichermodul ermöglicht. ([wikipedia](https://de.wikipedia.org/wiki/DDR-SDRAM), [elektronik-kompendium.de](https://www.elektronik-kompendium.de/sites/com/1312291.htm))
+
 ### DDR5
 
+Höhere Bandbreiten werden benötigt weil immer mehr CPU Cores auf einen gemeinsamen Speicher zugreifen.
+
 - Verfügbar 2021, zuerst in Servern
-- Höhere Bandbreiten werden benötigt weil immer mehr CPU Cores auf einen gemeinsamen Speicher zugreifen.
 - Geringerer Stromverbrauch
 - DDR4: max. 32GB pro DIMM Modul, DDR5: 128GB
-- Transfer Rate: ab DDR5-3200 (in 400er Schritten) bis DDR5-6400 (Zukunft: 8400MT/s).
+- Transfer Rate: ab DDR5-3200, in 400er Schritten bis DDR5-6400 (Zukunft: 8400MT/s).
 - 16n Prefetch (d.h. 16*8=128 Bytes pro Speicherzugriff)
 - Diverse Optimierungen um **reale Datenrate** zu erhöhen. Ca. ⅓ schneller als DDR4 bei gleicher Transfer Rate.
   ![img](fig/ddr5_blog_post_image_2.png)
@@ -118,24 +128,13 @@ Quad Channel: 256 Bits.
 
 
 
-### Detail-Infos DRAM
-
--   The naming convention for DDR, DDR2 and DDR3 modules specifies either a maximum speed (e.g., DDR2-800) or a maximum bandwidth (e.g., PC2-6400). The speed rating (800) is not the maximum clock speed, but twice that (because of the doubled data rate). The specified bandwidth (6400) is the maximum megabytes transferred per second using a 64-bit width. In a dual-channel mode configuration, this is effectively a 128-bit width. Thus, the memory configuration in the example can be simplified as: two DDR2-800 modules running in dual-channel mode. [Memory bandwidth](https://en.wikipedia.org/wiki/Memory_bandwidth)
-
--   most mainstream DDR4 memory kits range from 2,666Mbps to 3,400Mbps
-
--   Beschriftung mit (doppelter) Taktfrequenz (DDR4-1600) oder Bandbreite im MB/s (PC4-12800)
-    DDR4-1600 (pos. und neg. Flanken) => 800 MHZ I/O Bus (zwischen memory-controller und DIMM), Speichertakt (im DIMM) 200 MHz, die Differenz zwischen 200 auf 1600 MHz wird durch einen Trick (8x Prefetch) im Speichermodul ermöglicht. ([wikipedia](https://de.wikipedia.org/wiki/DDR-SDRAM), [elektronik-kompendium.de](https://www.elektronik-kompendium.de/sites/com/1312291.htm))
-
-
-
 
 
 ## Speicher Architektur – Cache
 
 Systeme mit geringer Taktfrequenz (ca. 100-400MHz) und wenig Speicher (kB-MB) – µC
 
-- Main Memory ⟷ CPU(s)
+- Main Memory ⟷ CPU
 
 SRAM kann als Speicher eingesetzt werden. CPU und Speicher etwa gleich schnell.
 
@@ -143,35 +142,32 @@ SRAM kann als Speicher eingesetzt werden. CPU und Speicher etwa gleich schnell.
 
 Hohe CPU Taktfrequenz (GHz), viel Hauptspeicher (GB)
 
-- Main Memory ⟷ Cache(s) ⟷ CPU(s)
+- Main Memory ⟷ Cache(s) ⟷ CPU(s) (Multicore)
 
-Nur SDRAMs sind in diesen Größen verfügbar, dieser kann aber mit der CPU Geschwindigkeit nicht mithalten (ca. Faktor 10x) – CPU muss lange warten – Memory Bottleneck.
+In diesen Größen: SDRAMs – langsamer als CPU (ca. 10x). CPU muss lange warten – Memory Bottleneck.
 
-Zusätzlich Trend zu mehreren CPU Cores pro Prozessor, diese müssen  sich den gemeinsamen Hauptspeicher teilen.
-
-Lösung: **Cache Speicher** (schnell SRAM Zwischenspeicher) zwischen CPU und SDRAM . Ziel: Im Cache sind jene Programmteile und Daten die die CPU jetzt gerade bzw. sehr häufig braucht (z.B. Schleifen und lokale Variable). Cache Speicher ist teuer: 10–100x normales SDRAM.
+Lösung: **Cache**  – schneller SRAM Zwischenspeicher – zwischen CPU und SDRAM . Im Cache sind Daten die die CPU jetzt gerade bzw. sehr häufig braucht (z.B. Schleifen und lokale Variable). Cache Speicher ist teuer: 10–100x normales SDRAM und in diesen Größen nicht verfügbar.
 
 [How Does CPU Cache Work and What Are L1, L2, and L3?](https://www.makeuseof.com/tag/what-is-cpu-cache/)
 
 Caches können hierarchisch organisiert sein. Aktuell max. 3 Level
 
--   L1 Cache, am nähesten zum CPU Kern, der schnellste Cache, z.B. 256 kB. Häufig 2 Caches: **L1i**=instruction cache, **L1d**=data cache
--   L2 meist pro CPU Kern, etwas langsamer, z.B. 2MB
+-   L1 Cache, am nähesten zum CPU Kern, der schnellste Cache, z.B. 256 kB. 
+    -   Häufig 2 Caches: **L1i**=instruction cache, **L1d**=data cache
+-   L2 pro CPU Kern, etwas langsamer, z.B. 2MB
 -   L3 Cache, teilen sich alle CPU Kerne, z.B. 8MB
 
 ![img](fig/cpumemory.2.png)
 
-Die Busbreite ist typischerweise 64 Bit.
+- Es wird immer mehr aus dem SDRAM gelesen als aktuell gerade gebraucht wird (Cache-Burst). Diese Daten werden sehr wahrscheinlich auch benötigt. Dies passt gut zur prefetch Architektur des SDRAMs.
 
-Es wird immer mehr aus dem SDRAM gelesen als aktuell gerade gebraucht wird (Cache-Burst). Diese Daten werden sehr wahrscheinlich auch benötigt. Dies passt gut zur prefetch Architektur des SDRAMs.
+- Die CPU sucht die Daten zuerst im Cache. Werden diese nicht gefunden (Cache miss) wird im darüberliegenden Cache (oder im Hauptspeicher) gesucht.
 
-Die CPU sucht die Daten zuerst im Cache. Werden diese nicht gefunden (Cache miss) wird im darüberliegenden Cache (oder im Hauptspeicher) gesucht.
+- Neu aus dem HS gelesene Daten landen im Cache (ersetzen dort ältere Daten)
 
-Neu aus dem HS gelesene Daten landen im Cache (ersetzen dort ältere Daten)
+- Von der CPU im Cache überschriebene Daten werden besonders gekennzeichnet (dirty flag) und bei günstiger Gelegenheit in den darüberliegenden Cache (oder Hauptspeicher) geschrieben.
 
-Von der CPU im Cache überschriebene Daten werden besonders gekennzeichnet (dirty flag) und bei günstiger Gelegenheit in den darüberliegenden Cache (oder Hauptspeicher) geschrieben.
-
-Die Gesamtsystem-Performance ist abhängig davon wie gut das Zusammenspiel zwischen der CPU, den Caches und dem Hauptspeicher ist.
+- Die Gesamtsystem-Performance ist abhängig davon wie gut das Zusammenspiel zwischen der CPU, den Caches und dem Hauptspeicher ist.
 
 *Evtl. ein Video das die Funktion zeigt? [Video: CPU Cache Explained - What is Cache Memory?](https://youtu.be/yi0FhRqDJfo)*
 
