@@ -1,7 +1,12 @@
+---
+title: Doc
+tags: [lecture]
+---
+
 # Encoding
 
 Hashwerte sind große Binärzahlen (typisch 128/256/512 Bits). Diese möchte man als Text darstellen.
-Die Art Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
+Die Art der Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
 
 Möglichkeiten:
 - Hex (Radix-16), 1 Buchstabe = 4 Bit

@@ -1,8 +1,13 @@
+---
+title: Doc
+tags: [lecture]
+---
+
 # Kryptographie
 
 Geheimschrift / Verschlüsselungsverfahren
 
-Allgemein: Information widerstandsfähig gegen Manipulation und unbefugtes Lesen machen.
+Information widerstandsfähig gegen unbefugtes Lesen und Manipulation machen.
 
 
 
@@ -10,43 +15,51 @@ Allgemein: Information widerstandsfähig gegen Manipulation und unbefugtes Lesen
 
 Es sollen Verschlüsselungsverfahren (Chiffre, engl. Cipher) definiert werden die eines (oder mehrere) der folgenden Ziele erfüllen:
 
-- Vertraulichkeit/Zugriffsschutz: Zugriff nur für Berechtigte
-- Integrität/Änderungsschutz: Veränderung kann erkannt werden.
-- Authentizität/Fälschungsschutz:  Urheber der Daten ist eindeutig identifizierbar sein.
-- Verbindlichkeit/Nichtabstreitbarkeit: Urheberschaft nicht bestreitbar.
+- Vertraulichkeit (*confidentiality*)/Zugriffsschutz
+  Zugriff nur für Berechtigte
+- Integrität (*integrity*)/Änderungsschutz
+  Veränderung kann erkannt werden.
+- Authentizität (*authentication*)/Fälschungsschutz
+  Urheber der Daten ist eindeutig identifizierbar.
+- Verbindlichkeit (*non-repudiation*)/Nichtabstreitbarkeit
+  Urheberschaft nicht bestreitbar.
 
 
 
 ## Grundbegriffe
 
-- Plaintext
-- Ciphertext
-- Key
+- Plaintext (Klartext)
+- Ciphertext (Geheimtext)
+- Key, **Schlüssel**: Die Information die Sender **und** Empfänger zum ver- und entschlüsseln brauchen.
 
 Alice Bob Eve
 
 *Zeichnung: Alice schickt an Bob, plaintext-encrypt (cipher+key)-ciphertext-decrypt (cipher+key)-plaintext, Eve hört mit*
 
+Chiffre / Verschlüsselungsmethode / Cipher
+
+Symmetrische Verschlüsselung (shared key)
+
+Public Key Verschlüsselung
+
 
 
 ## Klassische Kryptographie
 
-Ohne Computer-Unterstützung. Gelten heute als unsicher.
+Ohne Computer-Unterstützung – Gelten heute als unsicher.
 
 Einzelne Buchstaben werden betrachtet und entweder:
 
 - **Substitution:** durch einen anderen Buchstaben ersetzt, oder
 - **Transposition:** wechseln die Position mit anderen Buchstaben
 
-**Schlüssel**: Die Information die Sender **und** Empfänger zum ver- und entschlüsseln brauchen.
-
 
 
 ### Caesar-Chiffre
 
-[Video – Die Caesar Verschlüsselung - Was ist eine Verschlüsselung?](https://youtu.be/DcX77qgbBZw)
+- [Video – Die Caesar Verschlüsselung - Was ist eine Verschlüsselung?](https://youtu.be/DcX77qgbBZw)
 
-[Video – Einleitung+Caesar](https://youtu.be/-nK32SkZdgY)
+- [Video – Einleitung+Caesar](https://youtu.be/-nK32SkZdgY)
 
 *Was ist der Schlüssel im Caesar Verfahren*?
 
