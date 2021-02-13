@@ -707,6 +707,7 @@ hi robots
 Verwende `od` um den Inhalt einer Textdatei im ASCII Code anzuzeigen.
 
 ```bash
-$ $ od -A x -t x1z -v shopping.txt
+$ od -A x -t x1z -v shopping.txt
 ```
 
+Geht besser mit `xxd` (wenn installiert)

@@ -82,11 +82,9 @@ Backticks:
 
 ```bash
 `command`
-oder
+oder neuere Varienate
 $(command)
 ```
-
-Neuere Variante
 
 ```bash
 echo "Hello, $(whoami)."
