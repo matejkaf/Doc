@@ -1,18 +1,20 @@
-# Infos
+# Python
+
+## Infos
 
 - [Google's Python Class](https://developers.google.com/edu/python)
 - [docs.python.org](https://docs.python.org/3/)
 - [wikibooks - Python Programming](https://en.wikibooks.org/wiki/Python_Programming)
 - [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
-- 
+- [w3schools](https://www.w3schools.com/python/default.asp)
 
-# Interesting
+## Interesting
 
 - Python mit Turtle [repl.it](https://repl.it/@franzmatejka/DesertedGummyLivecd#main.py)
 
 
 
-# Allgemein
+## Allgemein
 
 V2 vs. V3
 
@@ -20,7 +22,7 @@ V2 wird seit 01.01.2020 nicht mehr gewartet. macOS und Linux (Ubuntu, Kali, Rasp
 
 
 
-# PIP
+## PIP
 
 ```bash
 sudo python3 -m pip install python-frontmatter
@@ -28,7 +30,7 @@ sudo python3 -m pip install python-frontmatter
 
 
 
-# Command Line
+## Command Line
 
 ```bash
 $ python --help
@@ -123,7 +125,7 @@ $ ./hallo.py
 
 
 
-# Basics
+## Basics
 
 Keine Klammern, Einrückung wesentlich.
 
@@ -147,7 +149,14 @@ print("Hello, World!")
 
 
 
-# Variable
+```python
+val = input("Enter your value: ")
+# This function first takes the input from the user and then evaluates the expression, which means Python automatically identifies whether user entered a string or a number or list.
+```
+
+
+
+## Variable
 
 ```python
 # Multi assignment
@@ -174,14 +183,15 @@ u = int("3")
 # in String wandeln mit str()
 d = str(y)
 
-# kein i++ / i--
+# kein i++ / i-- aber
+i+=1
 ```
 
 
 
 
 
-# Strings
+## Strings
 
 [wikibooks Python Programming/Strings](https://en.wikibooks.org/wiki/Python_Programming/Strings#split,_splitlines)
 
@@ -223,7 +233,7 @@ print(f'{x*2} Test')
 
 
 
-# Array / List
+## Array / List
 
 [Google for Education](https://developers.google.com/edu/python/lists)
 
@@ -262,7 +272,7 @@ Lists: append(), insert(), remove(), filter(), map(), reduce()
 
 
 
-# Dictionary
+## Dictionary
 
 ```python
 params = {"id":33,"method":"authenticate","params":{"user":"matejkafr", "password":"mypass", "client":"CLIENT"},"jsonrpc":"2.0"}
@@ -279,9 +289,11 @@ import pprint # pretty print
 pprint.pprint(params)
 ```
 
+[Google edu: Python Dict and File](https://developers.google.com/edu/python/dict-files)
 
 
-# Parallel Assignment
+
+## Parallel Assignment
 
 ```python
 # Fibonacci
@@ -293,7 +305,7 @@ while b < 10:
 
 
 
-# Control flow  
+## Control flow  
 
 
 ```python
@@ -333,7 +345,7 @@ result = x if a > b else y
 
 
 
-# Funktionen
+## Funktionen
 
 ```python
 def fib2(n): # return Fibonacci series up to n
@@ -357,7 +369,7 @@ def foo():
 
 
 
-# Klassen
+## Klassen
 
 [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
 
@@ -401,7 +413,7 @@ def staticmethod():
 
 
 
-# import / main
+## import / main
 
 ```python
 # lib.py
@@ -420,9 +432,9 @@ lib.name # qualification necessary
 
 
 
-# Snippets
+## Snippets
 
-## Read from standard input
+### Read from standard input
 
 [stackoverflow - How do you read from stdin?](https://stackoverflow.com/questions/1450393/how-do-you-read-from-stdin)
 
@@ -434,7 +446,7 @@ for line in sys.stdin:
 
 
 
-## Copy files
+### Copy files
 
 ```python
 #! /usr/bin/env python
@@ -458,7 +470,7 @@ print os.path.getmtime(dst2)
 
 
 
-## UTF8
+### UTF8
 
 In python3 nicht mehr notwendig?
 
@@ -470,7 +482,7 @@ In python3 nicht mehr notwendig?
 
 
 
-## Dir Rekursion
+### Dir Rekursion
 
 Rekursiver Scan von Verzeichnissen
 
@@ -504,7 +516,7 @@ for path in ret:
 
 
 
-## datetime
+### datetime
 
 [Python doc](https://docs.python.org/3/library/datetime.html)
 
@@ -532,7 +544,7 @@ print(getDateEu('01.10.2020')>=getDateEu('22.11.2020'))
 print(getDateEu('01.10.2020')>=getDateEu('01.10.2020'))
 ```
 
-## random
+### random
 
 ```python
 import random
@@ -542,7 +554,7 @@ print(random.randrange(1, 10))
 
 
 
-## Kommandozeilen Argument
+### Kommandozeilen Argument
 
 ```python
 import sys
@@ -555,7 +567,7 @@ x = " ".join(sys.argv[1:])
 
 
 
-## Regular Expressions
+### Regular Expressions
 
 ```python
 import re

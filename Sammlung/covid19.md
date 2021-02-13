@@ -1,5 +1,5 @@
 ---
-titel: Doc
+title: Doc
 ---
 
 # Bioinformatik (Übung)
