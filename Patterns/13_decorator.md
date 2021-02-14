@@ -1,29 +1,36 @@
 ---
 title: Doc
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, patterns ]
+tags: [5AHELS, lecture, patterns ]
 ---
 
 # Decorator – Design Pattern
 
-- [refactoring.guru](https://refactoring.guru/design-patterns/decorator)
+[refactoring.guru](https://refactoring.guru/design-patterns/decorator)
 
-Beispiel: Java Stream Klassen:
+[wikipedia](https://en.wikipedia.org/wiki/Decorator_pattern)
+
+![img](fig/606px-Decorator_UML_class_diagram.svg.png)
+
+[Weiteres Decorator Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm)
+
+Beispiel – Java Stream Klassen:
 
 ```java
 URLConnection connectionHTL=urlHTL.openConnection();
-    BufferedReader in =
-       new BufferedReader(
-           new InputStreamReader(
-              connectionHTL.getInputStream()));              
+BufferedReader in =
+  new BufferedReader(
+  new InputStreamReader( connectionHTL.getInputStream() ));              
 ```
 
 ```java
-BufferedReader file;
-file = new BufferedReader(new FileReader("test.txt"));
+BufferedReader file = new BufferedReader(new FileReader("test.txt"));
 ```
 
-Beispiel - Kaffee der optional mit Milch und/oder Zucker sein kann.
+
+
+## Beispiel - Kaffee (Java)
+
+... der optional mit Milch und/oder Zucker sein kann.
 
 ```java
 interface Coffee {
@@ -98,7 +105,7 @@ public class CoffeeMain {
 }
 ```
 
-[Weiteres Decorator Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm)
+
 
 ---
 
@@ -207,7 +214,7 @@ namespace DecoratorTheoryCode
 
 
 
-## Extension Method
+## C# Extension Method
 
 C# Konzept, Ähnliche Anwendung wie Decorator.
 
@@ -236,8 +243,6 @@ namespace ExtensionMethodTest
       {
         Console.WriteLine("Es ist kein Palindrom!");
       }
-
-      Console.ReadLine();
     }
   }
 

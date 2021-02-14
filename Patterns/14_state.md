@@ -1,7 +1,6 @@
 ---
 title: Doc
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, patterns ]
+tags: [5AHELS, lecture, patterns ]
 ---
 
 # State – Design Pattern
@@ -9,6 +8,12 @@ tags: [lecture, patterns ]
 - [refactoring.guru](https://refactoring.guru/design-patterns/state)
 
 
+
+## Beispiel – Pattern Matcher
+
+DFS ... Deterministic Finite State Machine
+
+Aufgabe finde die Buchstabenfolge `ABC` in einem Text.
 
 ```csharp
 //(c) G.Waser
@@ -115,6 +120,162 @@ namespace StateTest1
 
 # Beispiel Getränkeautomat
 
+2 Dateien.
+
+```csharp
+//(c) G.Waser
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GetraenkeAutomat
+{
+  public enum Zustand { Euro0, Cent50, Euro1 };
+
+  public class NeuerZustandEventArgs
+  {
+    public Zustand Zustand { get; }
+
+    public NeuerZustandEventArgs(Zustand zustand)
+    {
+      this.Zustand = zustand;
+    }
+  }
+
+  public class GeldRueckgabeEventArgs
+  {
+    public int Cent { get; }
+
+    public GeldRueckgabeEventArgs(int cent)
+    {
+      this.Cent = cent;
+    }
+  }
+
+  class GetraenkeAutomat
+  {
+    // Startzustand
+    private Zustand zustand = Zustand.Euro0;
+
+    // Ereignisse
+    public delegate void NeuerZustandDelegate(object sender, NeuerZustandEventArgs e);
+    public event NeuerZustandDelegate NeuerZustand = delegate { };
+
+    public delegate void GetraenkAusgebenDelegate(object sender, EventArgs e);
+    public event GetraenkAusgebenDelegate GetraenkAusgabe = delegate { };
+
+    public delegate void GeldRueckgabeDelegate(object sender, GeldRueckgabeEventArgs e);
+    public event GeldRueckgabeDelegate GeldRueckgabe = delegate { };
+
+    public void Start()
+    {
+      // Ereignis auslösen
+      this.NeuerZustand(this, new NeuerZustandEventArgs(this.zustand));
+    }
+
+    public void Einwurf50Cent()
+    {
+      switch(this.zustand)
+      {
+        case Zustand.Euro0: // Keine Aktion
+          this.ZustandWechseln(Zustand.Cent50);
+          break;
+
+        case Zustand.Cent50:// Keine Aktion
+          this.ZustandWechseln(Zustand.Euro1);
+          break;
+
+        case Zustand.Euro1: 
+          this.GeldZurueckgeben(50);
+          break;
+      }
+    }
+
+    public void Einwurf1Euro()
+    {
+      switch (this.zustand)
+      {
+        case Zustand.Euro0: // Keine Aktion
+          this.ZustandWechseln(Zustand.Euro1);
+          break;
+
+        case Zustand.Cent50:
+          this.GeldZurueckgeben(50);
+          this.ZustandWechseln(Zustand.Euro1);
+          break;
+
+        case Zustand.Euro1: 
+          this.GeldZurueckgeben(100);
+          break;
+      }
+    }
+
+    public void GetraenkeTaste()
+    {
+      switch (this.zustand)
+      {
+        case Zustand.Euro0: // Keine Aktion
+          break;
+
+        case Zustand.Cent50:// Keine Aktion
+          break;
+
+        case Zustand.Euro1: 
+          this.GetraenkAusgeben();
+          this.ZustandWechseln(Zustand.Euro0);
+          break;
+      }
+    }
+
+    public void RueckgabeTaste()
+    {
+      switch (this.zustand)
+      {
+        case Zustand.Euro0: // Keine Aktion
+          break;
+
+        case Zustand.Cent50:
+          this.GeldZurueckgeben(50);
+          this.ZustandWechseln(Zustand.Euro0);
+          break;
+
+        case Zustand.Euro1: this.GeldZurueckgeben(100);
+          this.ZustandWechseln(Zustand.Euro0);
+          break;
+      }
+    }
+
+    private void ZustandWechseln(Zustand neuerZustand)
+    {
+      // Neuen Zustand setzen
+      this.zustand = neuerZustand;
+
+      // Ereignis auslösen
+      this.NeuerZustand(this, new NeuerZustandEventArgs(this.zustand));
+    }
+
+    private void GetraenkAusgeben()
+    {
+      // Ereignis auslösen
+      this.GetraenkAusgabe(this, EventArgs.Empty);
+    }
+
+    private void GeldZurueckgeben(int cent)
+    {
+      // Ereignis auslösen
+      this.GeldRueckgabe(this, new GeldRueckgabeEventArgs(cent));
+    }
+  }
+}
+
+```
+
+
+
 ```csharp
 //(c) G.Waser
 using System;
@@ -173,13 +334,16 @@ namespace GetraenkeAutomat
       Console.Write("Anzeige: ");
       switch(e.Zustand)
       {
-        case Zustand.Euro0: Console.WriteLine("0Euro");
+        case Zustand.Euro0: 
+          Console.WriteLine("0Euro");
           break;
 
-        case Zustand.Euro1: Console.WriteLine("1Euro");
+        case Zustand.Euro1: 
+          Console.WriteLine("1Euro");
           break;
 
-        case Zustand.Cent50:Console.WriteLine("50Ct");
+        case Zustand.Cent50:
+          Console.WriteLine("50Ct");
           break;
       }
     }

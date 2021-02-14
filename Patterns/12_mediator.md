@@ -1,14 +1,26 @@
 ---
 title: Doc
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, patterns ]
+tags: [5AHELS, lecture, patterns ]
 ---
 
 # Mediator – Design Pattern
 
-- [refactoring.guru](https://refactoring.guru/design-patterns/mediator)
+[refactoring.guru](https://refactoring.guru/design-patterns/mediator)
+
+> Over time a mediator can evolve into a [God Object](https://refactoring.guru/antipatterns/god-object).
+
+[wikipedia – Mediator Pattern](https://en.wikipedia.org/wiki/Mediator_pattern)
+
+![img](fig/W3sDesign_Mediator_Design_Pattern_UML.jpg)
+
+[tutorialspoint](https://www.tutorialspoint.com/design_pattern/mediator_pattern.htm) - Beispiel: Chat Room (in Java)
+
+[dofactory](https://www.dofactory.com/net/mediator-design-pattern) – Chat Room in C#
+
+[geeksforgeeks](https://www.geeksforgeeks.org/mediator-design-pattern/) - Air Traffic Controller (Java)
 
 ```csharp
+// (c) G.Waser
 using System;
 using System.Collections.Generic;
 using System.Linq;
