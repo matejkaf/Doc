@@ -24,11 +24,11 @@ HTML include allerdings notwendig:
 
 Link auf main-Page wegbringen!?
 
-- [](https://stackoverflow.com/questions/46375765/how-do-you-remove-header-on-github-pages)
+- [stackoverflow](https://stackoverflow.com/questions/46375765/how-do-you-remove-header-on-github-pages)
 
-- [](https://stackoverflow.com/questions/49961202/remove-md-webpage-header-in-github)
+- [stackoverflow](https://stackoverflow.com/questions/49961202/remove-md-webpage-header-in-github)
 
-- [](https://github.com/pages-themes/primer/issues/21)
+- [github](https://github.com/pages-themes/primer/issues/21)
 
   
 
@@ -36,11 +36,13 @@ Link auf main-Page wegbringen!?
 
 
 
-Tests: [](https://matejkaf.github.io/Doc/Python/2020_Inf++/01_Basics)
+Tests: [Tests](https://matejkaf.github.io/Doc/Python/2020_Inf++/01_Basics)
 
 
 
 [gitpage layout Vorlage:](https://github.com/pages-themes/primer/blob/master/_layouts/default.html)
+
+Achtung wird in gitpages weg-gerendert
 
 ```
       {% if site.title and site.title != page.title %}
@@ -52,10 +54,10 @@ Tests: [](https://matejkaf.github.io/Doc/Python/2020_Inf++/01_Basics)
 
 SEO Tag:
 
-- [](https://github.com/jekyll/jekyll-seo-tag)
-- [](http://jekyll.github.io/jekyll-seo-tag/usage/)
+- [info 1](https://github.com/jekyll/jekyll-seo-tag)
+- [info 2](http://jekyll.github.io/jekyll-seo-tag/usage/)
 
-- [](http://jekyll.github.io/jekyll-seo-tag/advanced-usage/)
+- [info 3](http://jekyll.github.io/jekyll-seo-tag/advanced-usage/)
 
 
 
