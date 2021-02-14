@@ -13,8 +13,8 @@ tags: [2AHITS]
 
 void main()
 {
-    printf("Hello World\n");
-    getch();
+  printf("Hello World\n");
+  getch();
 }
 ```
 
@@ -27,20 +27,26 @@ void main()
 void main()
 {
   srand(time(NULL));
-  
+
   int z = rand()%6 + 1; // 1,...,6
 }
 ```
 
-## Umlaute
+## Locale (Umlaute)
 
-```c++
+```c
 #include <locale.h>
 
 void main()
 {
-	setlocale( LC_ALL, "German" );
-  printf("öäüß\n");
+  setlocale(LC_ALL, "German");
+  printf("ÄÖÜäöüß°\n");
 }
+```
+
+## Warnungen Ausschalten
+
+```c++
+#pragma warning(disable:4996)
 ```
 

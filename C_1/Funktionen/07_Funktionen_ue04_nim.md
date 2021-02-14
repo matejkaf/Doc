@@ -3,11 +3,7 @@ title: Doc
 tags: [assignment, c, funktionen ]
 ---
 
-
-
 # Nim-Spiel
-
-
 
 Das **Nim-Spiel** ist ein Spiel für zwei Personen. 
 
