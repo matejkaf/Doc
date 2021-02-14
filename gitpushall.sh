@@ -8,7 +8,7 @@ echo "================================="
 
 echo "Publish to gitpages"
 git add --all
-git commit -m "upload $(date)"
+git commit -m "upload $(date '+%d.%m.%y %H:%M')"
 git push -u origin main
 
 echo "FINISHED"
