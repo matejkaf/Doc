@@ -1,14 +1,13 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
-tags: [assignment,]
+tags: [assignment,1AHITS]
 ---
 
 # for Schleifen (Übungen)
 
 Überlege **zuerst** was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
 
-**Übung (Lesen von Schleifen I):**
+**Übung (Lesen von Schleifen):**
 
 
 ```c

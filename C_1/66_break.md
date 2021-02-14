@@ -1,7 +1,6 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
-tags: [lecture]
+tags: [2AHITS,lecture]
 ---
 
 # break

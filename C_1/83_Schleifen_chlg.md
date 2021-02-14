@@ -1,7 +1,7 @@
 ---
 title: Doc
 cmds: ['md_html.bash --small']
-tags: [assignment]
+tags: [assignment,challenge]
 ---
 
 
@@ -25,8 +25,6 @@ Beendet wird durch Eingabe von $-1$, danach wird noch ein Gesamtergebnis ausgege
 5er:  0 | 
 ----------------------------
 ```
-
-
 
 
 
@@ -57,12 +55,10 @@ Gib die Zahlen von 1 bis 100 untereinander aus. Es sollen jedoch nur jeweils 20 
 
 ---
 
-
 **Übung (Multiplikation):**
-Multipliziere zwei natürliche Zahlen $a$ und $b$. Als Rechenoperation darf jedoch nur die Addition verwendet werden.  Die Zahlen können vom Anwender eingegeben werden. 
+Multipliziere zwei natürliche Zahlen a und b. Als Rechenoperation darf jedoch nur die Addition verwendet werden. Die Zahlen können vom Anwender eingegeben werden. 
 
 ---
-
 
 **Übung (Zeugnisklausel):**
 Schreibe ein Programm für Zeugnisklauseln: Das Zeugnis beinhaltet 10 Noten, diese Noten werden der Reihe nach eingegeben.
@@ -71,8 +67,8 @@ Folgende Regeln werden dabei verwendet:
 
 - Ein oder mehr 5er = Nicht bestanden
 - Kein 5er = Bestanden
-- Alle Noten $\le3$ und Notendurchschnitt $\le1.5$: Mit Auszeichnung bestanden
-- Alle Noten $\le3$ und Notendurchschnitt $\le2.0$: Mit gutem Erfolg bestanden
+- Alle Noten ≤3 und Notendurchschnitt ≤1.5: Mit Auszeichnung bestanden
+- Alle Noten ≤3 und Notendurchschnitt ≤2.0: Mit gutem Erfolg bestanden
 
 Das Programm fragt am Ende ob wiederholt werden soll.
 

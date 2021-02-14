@@ -1,7 +1,6 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
-tags: [assignment]
+tags: [assignment,1AHITS]
 ---
 
 # Zahlenratespiel

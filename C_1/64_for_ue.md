@@ -1,6 +1,5 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
 tags: [assignment,1AHITS]
 ---
 
@@ -36,7 +35,7 @@ Schreibe ein Programm das von einem eingegebenen Startwert immer jeden Wert bis 
 **Übung (Zahlenfolge):**
 Erzeuge die Zahlenfolge
 
-$1, 2, 4, 8, 16, 32, \ldots, 1024, \ldots $
+`1, 2, 4, 8, 16, 32, ..., 1024, ...`
 
 Es kann eingegeben werden wie viele Zahlen dieser Folge ausgegeben werden.
 
@@ -44,13 +43,13 @@ Es kann eingegeben werden wie viele Zahlen dieser Folge ausgegeben werden.
 
 ---
 
-**Übung (Summe I):**
+**Übung (Summe):**
 
--  Schreibe ein Programm, das die Eingabe einer Zahl $n$ erfordert und dann jede Zahl beginnend von 1 bis inklusive $n$ addiert. 
+-  Schreibe ein Programm, das die Eingabe einer Zahl `n` erfordert und dann jede Zahl beginnend von 1 bis inklusive `n` addiert. 
 Das Ergebnis soll ausgegeben werden.
-Beispiel.: Es wird 4 eingegeben, das Programm rechnet $1+2+3+4=10$ und gibt am Bildschirm 10 aus.
+Beispiel.: Es wird 4 eingegeben, das Programm rechnet `1+2+3+4=10​` und gibt am Bildschirm `10` aus.
 - Erweitere: Es soll die gesamte Rechnung zusätzlich zum Endergebnis ausgegeben werden.
 
-$1+2+3+4+5+6+7+8+9+10=55$
+`1+2+3+4+5+6+7+8+9+10=55​`
 
 

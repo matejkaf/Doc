@@ -1,6 +1,5 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
 tags: [assignment]
 ---
 
@@ -9,7 +8,7 @@ tags: [assignment]
 Überlege zuerst was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere dann am Rechner. Gib Dir für jede richtige Antwort einen Punkt.
 
 
-**Übung (Lesen von Schleifen II):**
+**Übung (Lesen von Schleifen):**
 
 
 ```c
