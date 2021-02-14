@@ -16,6 +16,10 @@ HTML include allerdings notwendig:
 
 
 
+- [How to typeset a matrix with MathJax?](https://tex.stackexchange.com/questions/43444/how-to-typeset-a-matrix-with-mathjax)
+
+
+
 # Erste Zeile wegbringen
 
 Link auf main-Page wegbringen!?
