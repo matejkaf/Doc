@@ -13,7 +13,7 @@ tags: [5AHELS, lecture, patterns ]
 
 ## Konstruktor Problem
 
-Probleme wenn Konstruktoren zu viele Parameter haben:
+Probleme wenn Konstruktoren zu viele Parameter haben
 
 - Aus der Position wird die Bedeutung nicht klar.
 - Welchen Wert bekommen optionale Parameter (`null`, 0, ?).

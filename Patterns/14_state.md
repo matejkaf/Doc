@@ -13,7 +13,7 @@ tags: [5AHELS, lecture, patterns ]
 
 DFS ... Deterministic Finite State Machine
 
-Aufgabe finde die Buchstabenfolge `ABC` in einem Text.
+Text besteht nur aus den Buchstaben `A`, `B` und `C`. Aufgabe: finde die exakte Buchstabenfolge `ABC` in einem Text.
 
 ```csharp
 //(c) G.Waser
@@ -116,11 +116,47 @@ namespace StateTest1
 
 ```
 
+? Objekt orientierte Implementierung ?
 
 
-# Beispiel Getränkeautomat
 
-2 Dateien.
+## Beispiel Getränkeautomat
+
+Getränk kostet einen Euro, Automat akzeptiert 50 Cent und 1 Euro.
+
+- Zuviel eingeworfenes Geld kommt sofort wieder heraus.
+
+Ereignisse (Methoden ohne Parameter):
+
+- Start
+- Einwurf50Cent
+- Einwurf1Euro
+- GetraenkeTaste
+- RueckgabeTaste
+
+
+
+Zustände:
+
+- Euro0
+- Cent50
+- Euro1
+
+`public enum Zustand { Euro0, Cent50, Euro1 };`
+
+
+
+Aktionen
+
+- GetraenkAusgeben
+- GeldZurueckgeben
+- NeuerZustand (Für Anzeige)
+
+
+
+### Source Code
+
+2 Dateien
 
 ```csharp
 //(c) G.Waser
@@ -275,6 +311,8 @@ namespace GetraenkeAutomat
 ```
 
 
+
+### Hauptprogramm
 
 ```csharp
 //(c) G.Waser

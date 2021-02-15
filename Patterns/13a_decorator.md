@@ -28,7 +28,7 @@ BufferedReader file = new BufferedReader(new FileReader("test.txt"));
 
 
 
-## Beispiel - Kaffee (Java)
+## Beispiel – Kaffee (Java)
 
 ... der optional mit Milch und/oder Zucker sein kann.
 
@@ -107,25 +107,88 @@ public class CoffeeMain {
 
 
 
----
+## Beispiel – Kaffee (C#)
 
-**Übung (Pizza Service)**
+```csharp
+using System;
 
-Ein Pizza Service bietet die folgenden Pizzen:
+namespace _210215_decorator
+{
+  interface ICoffee {
+    public string GetIngredients();
+  }
 
-- Margherita (8,00 EUR)
-- Napoli (9,50 EUR)
-- Mafiosi (9,80 EUR)
+  class PlainCoffee : ICoffee {
+    public string GetIngredients() {
+      return "Kaffee";
+    }
+  }
 
-Optional sind die folgenden Extras (auch mehrfach und kombiniert) möglich:
+  abstract class CoffeeDecorator : ICoffee {
+    ICoffee decoratedCoffee;
+    public CoffeeDecorator(ICoffee c) {
+      decoratedCoffee = c;
+    }
 
-- Oliven (+0,5 EUR)
-- Sardellen (+0,9 EUR)
-- Artischocken (+0,7 EUR)
+    public virtual string GetIngredients()
+    {
+      return decoratedCoffee.GetIngredients();
+    }
+  }
 
-Implementiere mit Hilfe des Decorator Patterns. Es soll für jede bestellte Pizza ein informativer Text und der Preis ausgegeben werden.
+  class WithMilk : CoffeeDecorator
+  {
+    public WithMilk(ICoffee c) : base(c) { }
+    public override string GetIngredients()
+    {
+      return base.GetIngredients() + ", mid Milli";
+    }
+  }
 
----
+  class WithSugar : CoffeeDecorator
+  {
+    public WithSugar(ICoffee c) : base(c) { }
+    public override string GetIngredients()
+    {
+      return base.GetIngredients() + ", mid Guzzi";
+    }
+  }
+
+  class WithWhiskey : CoffeeDecorator
+  {
+    public WithWhiskey(ICoffee c) : base(c) { }
+    public override string GetIngredients()
+    {
+      return base.GetIngredients() + ", mid Geist";
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      ICoffee kaffee = new PlainCoffee();
+      System.Console.WriteLine(kaffee.GetIngredients());
+
+      ICoffee k2 = new WithSugar( new PlainCoffee() );
+      System.Console.WriteLine(k2.GetIngredients());
+
+      ICoffee k3 = new WithMilk( new WithSugar( new PlainCoffee() ) );
+      System.Console.WriteLine(k3.GetIngredients());
+
+      ICoffee k4 = new WithSugar( new WithMilk( new PlainCoffee() ) );
+      System.Console.WriteLine(k4.GetIngredients());
+
+      ICoffee k5 = new WithWhiskey( new WithSugar( new WithMilk( new PlainCoffee() ) ) );
+      System.Console.WriteLine(k5.GetIngredients());
+
+      ICoffee k6 =  new WithWhiskey( new WithWhiskey( new WithSugar( new WithMilk( new PlainCoffee() ) ) ) );
+      System.Console.WriteLine(k6.GetIngredients());
+    }
+  }
+}
+
+```
 
 
 
@@ -216,7 +279,11 @@ namespace DecoratorTheoryCode
 
 ## C# Extension Method
 
-C# Konzept, Ähnliche Anwendung wie Decorator.
+C# Konzept, ähnliche Anwendung wie Decorator aber nicht gleich. Erweitert einen Datentypen ohne einen neuen anzulegen. Statisches Konzept im Vergleich zu Decorator – [The Decorator Pattern & Extension Methods in c#](https://stackoverflow.com/questions/4888116/the-decorator-pattern-extension-methods-in-c-sharp)
+
+> You can use extension methods to extend a class or interface, but **not to override** them. An extension method with the same name and signature as an interface or class method will never be called. [[Extension Methods (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods#binding-extension-methods-at-compile-time)]
+
+
 
 ```csharp
 using System;
