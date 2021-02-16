@@ -22,7 +22,8 @@ tags: [5AHELS, lecture, patterns ]
 - Zusätzliches Verhalten (bereits vorhandener Methoden)
 - Zusätzlichem Zustand (Instanzvariablen)
 - Zusätzliche Methoden
-- 
+
+
 
 ## Beispiel – Java Stream Klassen:
 

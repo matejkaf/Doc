@@ -1,13 +1,9 @@
 ---
 title: Doc
-cmds: ['md_html.bash']
-description: 
 tags: [assignment, c, structure ]
 ---
 
-# Strukturen (Übungen)
-
-
+# Strukturen (Übungen – Body Mass Index)
 
 **Übung (Body Mass Index – BMI):**
 Der Body Mass Index wird nach folgender Formel berechnet:
@@ -38,7 +34,7 @@ Schreibe eine Funktion die ausgibt ob eine Person Unter-, Normal oder Übergewic
 ---
 
 **Übung (Geschlecht):**
-Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen. Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich $20-25 kg/m^2$, und bei Frauen $19-24 kg/m^2$ (.Quelle: wikipedia)
+Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen. Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich $20-25 kg/m^2$, und bei Frauen $19-24 kg/m^2$ (Quelle: wikipedia)
 
 Berücksichtige dies bei der Bewertung des BMI.
 
