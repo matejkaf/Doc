@@ -8,15 +8,20 @@ tags: [5AHELS, lecture, patterns ]
 # Builder – Design Pattern
 
 - [refactoring.guru](https://refactoring.guru/design-patterns/builder)
+- [Beispiel - 8 design patterns that every developer should know](http://www.thedevpiece.com/design-patterns-that-every-developer-should-know/)
+- [The builder pattern in practice](https://jlordiales.me/2012/12/13/the-builder-pattern-in-practice/)
 
 
 
 ## Konstruktor Problem
 
-Probleme wenn Konstruktoren zu viele Parameter haben
+Probleme wenn Konstruktoren **zu viele Parameter** haben
 
 - Aus der Position wird die Bedeutung nicht klar.
-- Welchen Wert bekommen optionale Parameter (`null`, 0, ?).
+- Unterscheidung optional/required Parameter
+- Defaultwerte bei optional Parametern
+
+
 
 Mit Konstruktor:
 
@@ -24,7 +29,7 @@ Mit Konstruktor:
 Student hans = new Student("Hans",3);
 ```
 
-Mit Builder:
+Lösung mit Builder:
 
 ```java
 Student hans = new StudentBuilder().
@@ -32,6 +37,12 @@ Student hans = new StudentBuilder().
         setGrade(3).
         build();
 ```
+
+
+
+## Implementierung (Java)
+
+2 Klassen: `Student` und `StudentBuilder`
 
 ```java
 public class Student {
@@ -46,11 +57,9 @@ public class Student {
 }
 ```
 
-Begründung für `private final`:
-Die allermeisten Instanzvariablen werden nach dem Istanzieren nicht mehr verändert.
-Es bringt mehrere Vorteile ein Objekt so zu entwerfen, dass es **immutable** (d.h. unveränderbar ist).
-Bedeutet alle Instanzvariablen sind `final`.
-Siehe z.B. [The ins and outs of immutability](https://jlordiales.me/2012/12/24/the-ins-and-outs-of-immutability/)
+
+
+### StudentBuilder
 
 
 ```java
@@ -79,8 +88,29 @@ public class StudentBuilder {
 }
 ```
 
-Andere Variante mit Builder als innerer Klasse und Unterscheidung zwischen required und optional Parametern.
-Klasse für eine Person
+
+
+## Implementierung (C#)
+
+`readonly` fields, [Final variables in C#](https://www.tutorialspoint.com/Final-variables-in-Chash)
+
+
+
+## Immutability
+
+Begründung für `private final`: Die allermeisten Instanzvariablen werden nach dem Istanzieren nicht mehr verändert. Es bringt mehrere Vorteile ein Objekt so zu entwerfen, dass es **immutable** (d.h. unveränderbar ist). Bedeutet alle Instanzvariablen sind `final`. Siehe z.B. [The ins and outs of immutability](https://www.javacodegeeks.com/2013/01/the-ins-and-outs-of-immutability.html)
+
+- result in cleaner designs and easier to read code.
+- less error prone 
+- you can just share around those immutable objects without having to worry about [defensive copies](https://javacreed.com/what-is-defensive-copying)
+- just plain simple. They can be in only one state and they keep that state for their entire life
+- inherently thread-safe
+
+
+
+## optional/required
+
+Andere Variante mit Builder als innerer Klasse und Unterscheidung zwischen required und optional Parametern. Beispiel Klasse für eine Person:
 
 - Vorname und Nachname müssen immer angegeben werden (required)
 - Alter und Telefonnummer sind optional.
@@ -145,11 +175,12 @@ Person p = new Person.PersonBuilder("Max","Mustermann")
 ```
 
 
-Netbeans: 
 
-Rechtsklick in den Konstruktor >> Refactor >> Replace Constructor with Builder.
+## Sonstiges
 
-Weiteres Beispiel, RESTful Webservice in Netbeans mit JAX-RS. Build eines `Response` Objekts:
+Netbeans: Rechtsklick in den Konstruktor >> Refactor >> Replace Constructor with Builder.
+
+Weiteres Beispiel, RESTful Webservice in Netbeans mit **JAX-RS**. Build eines `Response` Objekts:
 
 ```java
 @POST
@@ -166,6 +197,7 @@ public Response post(Grade grade) {
 }
 ```
 
-- [Beispiel - 8 design patterns that every developer should know](http://www.thedevpiece.com/design-patterns-that-every-developer-should-know/)
-- [The builder pattern in practice](https://jlordiales.me/2012/12/13/the-builder-pattern-in-practice/)
+
+
+
 

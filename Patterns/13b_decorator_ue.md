@@ -19,7 +19,7 @@ Optional sind die folgenden Extras (auch mehrfach und kombiniert) möglich:
 - Sardellen (+0,9 EUR)
 - Artischocken (+0,7 EUR)
 
-Implementiere mit Hilfe des Decorator Patterns. Es soll für jede bestellte Pizza ein informativer Text und der Preis ausgegeben werden.
+Implementiere mit Hilfe des Decorator Patterns. Es soll für jede bestellte Pizza ein **informativer Text** und der **Preis** ausgegeben werden.
 
 ---
 

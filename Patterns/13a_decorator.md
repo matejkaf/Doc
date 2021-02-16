@@ -5,15 +5,26 @@ tags: [5AHELS, lecture, patterns ]
 
 # Decorator – Design Pattern
 
-[refactoring.guru](https://refactoring.guru/design-patterns/decorator)
+- [refactoring.guru](https://refactoring.guru/design-patterns/decorator)
 
-[wikipedia](https://en.wikipedia.org/wiki/Decorator_pattern)
+- [wikipedia](https://en.wikipedia.org/wiki/Decorator_pattern)
 
-![img](fig/606px-Decorator_UML_class_diagram.svg.png)
+- [tutorialspoint](https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm)
 
-[Weiteres Decorator Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm)
 
-Beispiel – Java Stream Klassen:
+
+<img src="fig/606px-Decorator_UML_class_diagram.svg.png" alt="img" style="zoom:67%;" />
+
+
+
+**Decorator** Erweitert das bestehende Interface um
+
+- Zusätzliches Verhalten (bereits vorhandener Methoden)
+- Zusätzlichem Zustand (Instanzvariablen)
+- Zusätzliche Methoden
+- 
+
+## Beispiel – Java Stream Klassen:
 
 ```java
 URLConnection connectionHTL=urlHTL.openConnection();
@@ -109,6 +120,8 @@ public class CoffeeMain {
 
 ## Beispiel – Kaffee (C#)
 
+Optional: Milch, Zucker, Whiskey
+
 ```csharp
 using System;
 
@@ -195,7 +208,7 @@ namespace _210215_decorator
 ## Beispiel
 
 ```csharp
-///(c) G.Waser
+// (c) G.Waser
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -322,9 +335,13 @@ namespace ExtensionMethodTest
 
     public static bool IsPalindrome(this string s)
     {
-      return (s = s.Replace(" ", "").ToLower()).Equals(s.Reverse());
+      return ( s = s.Replace(" ", "").ToLower() ).Equals(s.Reverse());
     }
   }
 }
 ```
+
+- [LINQ – Enumerable.Reverse](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.reverse?view=netframework-4.8)
+
+- [LINQ – Enumerable.ToArray](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.toarray?view=net-5.0)
 
