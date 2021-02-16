@@ -1,6 +1,6 @@
 ---
 title: Doc
-tags: [assignment]
+tags: [2AHITS, assignment]
 ---
 
 # Rezeptverwaltung (Übung)

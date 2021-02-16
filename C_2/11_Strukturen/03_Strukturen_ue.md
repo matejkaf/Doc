@@ -1,14 +1,17 @@
 ---
 title: Doc
-tags: [assignment, c, structure ]
+tags: [2AHITS, assignment, c, structure ]
 ---
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # Strukturen (Übungen – Body Mass Index)
 
 **Übung (Body Mass Index – BMI):**
+
 Der Body Mass Index wird nach folgender Formel berechnet:
 
-$BMI=M/L^2$
+$$BMI=M/L^2$$
 
 wobei $M$ die Körpermasse (in Kilogramm) und $L$ die Körpergröße (in Metern) angibt.
 
@@ -27,14 +30,14 @@ eine Struktur `Person` mit Variablen für Name, Gewicht und Größe,
 ---
 
 **Übung (Erweiterungen):**
-Schreibe eine Funktion die ausgibt ob eine Person Unter-, Normal oder Übergewichtig ist. Ein Wert von $18,5-25,0$ gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
+Schreibe eine Funktion die ausgibt ob eine Person Unter-, Normal oder Übergewichtig ist. Ein Wert von $$18,5-25,0$$ gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
 
 
 
 ---
 
 **Übung (Geschlecht):**
-Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen. Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich $20-25 kg/m^2$, und bei Frauen $19-24 kg/m^2$ (Quelle: wikipedia)
+Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen. Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich $$20-25 kg/m^2$$, und bei Frauen $$19-24 kg/m^2$$ (Quelle: wikipedia)
 
 Berücksichtige dies bei der Bewertung des BMI.
 
