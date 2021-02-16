@@ -13,7 +13,7 @@ Der Body Mass Index wird nach folgender Formel berechnet:
 
 $$BMI=M/L^2$$
 
-wobei $M$ die Körpermasse (in Kilogramm) und $L$ die Körpergröße (in Metern) angibt.
+wobei $$M$$ die Körpermasse (in Kilogramm) und $$L$$ die Körpergröße (in Metern) angibt.
 
 Schreibe:
 - 
@@ -30,7 +30,7 @@ eine Struktur `Person` mit Variablen für Name, Gewicht und Größe,
 ---
 
 **Übung (Erweiterungen):**
-Schreibe eine Funktion die ausgibt ob eine Person Unter-, Normal oder Übergewichtig ist. Ein Wert von $$18,5-25,0$$ gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
+Schreibe eine Funktion die ausgibt ob eine Person Unter-, Normal oder Übergewichtig ist. Ein Wert von $$18.5-25.0$$ gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
 
 
 
