@@ -17,7 +17,7 @@ wobei $$M$$ die Körpermasse (in Kilogramm) und $$L$$ die Körpergröße (in Met
 
 Schreibe:
 
--  eine Struktur `Person` mit Variablen für Name, Gewicht und Größe,
+- eine Struktur `Person` mit Variablen für Name, Gewicht und Größe,
 - Funktionen zur 
   - Eingabe,
   - Ausgabe und
