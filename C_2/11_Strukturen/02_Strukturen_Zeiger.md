@@ -30,7 +30,7 @@ p->tag = 10;
 
 Im Speicher kann man sich das folgendermaßen vorstellen:
 
-![image-20201102100600908](fig/image-20201102100600908.png)
+<img src="fig/image-20201102100600908.png" alt="image-20201102100600908" style="zoom:33%;" />
 
 
 

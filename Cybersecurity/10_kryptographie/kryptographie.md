@@ -46,7 +46,7 @@ Public Key Verschlüsselung
 
 ## Klassische Kryptographie
 
-Ohne Computer-Unterstützung – Gelten heute als unsicher.
+Ohne Computer-Unterstützung – gelten heute als unsicher.
 
 Einzelne Buchstaben werden betrachtet und entweder:
 
