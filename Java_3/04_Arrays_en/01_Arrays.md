@@ -31,7 +31,8 @@ int[] values = new int[5];
 
 Initialize with values:
 ```java
-int[] values = {1,2,3,4};  
+int[] values = {1,2,3,4};
+String[] txts = {"one","two","three"};
 // or:
 values = new int[] {1,2,3,4};
 ```
@@ -42,8 +43,6 @@ Size of array may be a variable:
 int n=7;
 int[] values = new int[n*2];
 ```
-
-
 
 Print an array:
 ```java
