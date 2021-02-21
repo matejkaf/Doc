@@ -3,9 +3,7 @@ title: Doc
 tags: [assignment]
 ---
 
-
-
----
+# Dynamische Speicherverwaltung (Übungen)
 
 **Übung (Array variable Länge):**
 

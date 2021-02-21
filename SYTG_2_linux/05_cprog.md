@@ -1,8 +1,10 @@
-# Installieren
+# C Programmieren
 
 ## Cygwin
 
-<TODO></TODO>
+```bash
+$ ./setup-x86_64.exe --no-admin -q -P "gcc-g++"
+```
 
 
 

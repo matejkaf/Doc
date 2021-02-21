@@ -1,16 +1,26 @@
-# Shutdown/ Reboot
+# System Kommandos
 
 
+
+## Shutdown/ Reboot
 
 ```bash
 $ sudo shutdown -h now
-
 $ sudo reboot
 ```
 
 
 
-# System Informationen
+## Get Root
+
+```bash
+$ su -
+# -, -l, --login: Provide an environment similar to what the user would expect had the user logged in directly.
+```
+
+
+
+## System Informationen
 
 ```bash
 $ uname -a
@@ -30,7 +40,7 @@ BUG_REPORT_URL="https://bugs.archlinux.org/"
 
 
 
-# Keyboard
+## Keyboard
 
 [ArchLinux](https://wiki.archlinux.org/index.php/Linux_console/Keyboard_configuration)
 

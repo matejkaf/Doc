@@ -32,3 +32,9 @@ if __name__ == '__main__':
 
 [How to serve static files in Flask](https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask)
 
+
+
+## repl.it
+
+[Flask Tutorial](https://repl.it/talk/learn/Flask-Tutorial-Part-1-the-basics/26272)
+

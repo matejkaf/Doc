@@ -5,7 +5,7 @@
 - [Unix file types](https://en.wikipedia.org/wiki/Unix_file_types)
 - [What do the fields in ls -al output mean?](https://unix.stackexchange.com/questions/103114/what-do-the-fields-in-ls-al-output-mean)
 
-# Basics
+## Basics
 
 ```bash
 $ pwd
@@ -84,7 +84,7 @@ allows the affected user to enter the directory (make this directory your workin
 
 
 
-# Permissions Ändern
+## Permissions Ändern
 
 `chmod`
 
@@ -104,7 +104,7 @@ $ chmod u=rwx,g=rx,o=rx myfile.txt
 
 ```
 
-# owner / group
+### owner / group
 
 - `chown`: change owner
 - `chgrp`: change group
@@ -114,7 +114,7 @@ Ein File/Directory hat genau einen owner (User) und gehört zu genau einer Grupp
 Ein User kann zu mehreren Gruppen gehören.
 
 
-# Arbeiten mit Gruppen
+## Arbeiten mit Gruppen
 
 Zeige die Gruppen zu denen der aktuell eingeloggte User gehört:
 
@@ -132,7 +132,7 @@ Note that this is automagically inherited for new subdirectories (as of Linux 3.
 If the setgid flag is not set, then the default group will be set to the current group id of the creating process. If you want to execute a particular command (or set of commands) with the changed group, use the command `sg <group> <command>`.
 
 
-## Beispiel
+### Beispiel
 
 ```bash
 # logged in as user 'htluser'
@@ -258,7 +258,7 @@ $ chmod o+t test
 
 
 
-## Aufgabe
+### Aufgabe
 
 Wie sollte man die permissions des eigenen Homedirectories setzen damit niemand spionieren kann?
 
@@ -273,7 +273,7 @@ Admin/super user/root legt einen Ordner `projects` an in dem befinden sich weite
 - Gruppe: math
 - Gruppe: sew
 
-# 2do
+## 2do
 
 - ACL (access control lists)
     - [Access Control Lists(ACL) in Linux](https://www.geeksforgeeks.org/access-control-listsacl-linux/)

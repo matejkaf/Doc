@@ -180,6 +180,10 @@ Person p = new Person.PersonBuilder("Max","Mustermann")
 
 Netbeans: Rechtsklick in den Konstruktor >> Refactor >> Replace Constructor with Builder.
 
+
+
+## Beispiel – Java
+
 Weiteres Beispiel, RESTful Webservice in Netbeans mit **JAX-RS**. Build eines `Response` Objekts:
 
 ```java
@@ -198,6 +202,25 @@ public Response post(Grade grade) {
 ```
 
 
+
+## Beispiel – Rust
+
+```rust
+use flappybird::FlappyBird;
+
+fn main() {
+  // Make a Context.
+  let (mut ctx, mut event_loop) = ContextBuilder::new("my_game", "Cool Game Author")
+  .window_setup(ggez::conf::WindowSetup::default().title("Flappy Bird"))
+  .window_mode(ggez::conf::WindowMode::default().dimensions(1200_f32,600_f32))
+  .build()
+  .expect("aieee, could not create ggez context!");
+
+  let mut my_game = FlappyBird::new(&mut ctx);
+
+}
+
+```
 
 
 

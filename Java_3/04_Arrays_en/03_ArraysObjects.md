@@ -63,8 +63,6 @@ System.out.println(sum);
 
 # Assignments
 
-
-
 **Assignment (Side in arrays):** The rectangle sides should be stored in 2 Arrays, one for side a and another for side b. Create the Rectangle objects using the value from these arrays inside a loop.
 
 

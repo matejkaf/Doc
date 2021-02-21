@@ -1,7 +1,6 @@
 ---
 title: Doc
 description: 
-cmds: ['md_html.bash','md_html.bash --small']
 tags: [lecture,java, array, 3BHELS]
 ---
 

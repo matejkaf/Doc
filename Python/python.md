@@ -131,6 +131,8 @@ Keine Klammern, Einrückung wesentlich.
 
 Datentypen
 
+`int` Datentypen können beliebig groß werden (automatisch BigInteger)
+
 ```python
 True, False, None
 ```
@@ -144,6 +146,7 @@ This is a comment
 written in 
 more than just one line
 """
+
 print("Hello, World!")
 ```
 
@@ -152,6 +155,12 @@ print("Hello, World!")
 ```python
 val = input("Enter your value: ")
 # This function first takes the input from the user and then evaluates the expression, which means Python automatically identifies whether user entered a string or a number or list.
+```
+
+
+
+```python
+
 ```
 
 
@@ -177,9 +186,6 @@ a = float(x)
 b = int(y)
 c = complex(x)
 
-# von String geht auch
-u = int("3")
-
 # in String wandeln mit str()
 d = str(y)
 
@@ -187,7 +193,12 @@ d = str(y)
 i+=1
 ```
 
+String nach Wert
 
+```python
+u = int("3")
+v = float("3.14")
+```
 
 
 
@@ -239,40 +250,133 @@ print(f'{x*2} Test')
 
 ```python
 a = ['spam', 'eggs', 100, 1234] # list a[0]
+print(a[0])
+print(a)
 for el in a:
   print(el)
 len(a) # list length
+```
+
+List Methoden:
+
+```python
+list = ['larry', 'curly', 'moe']
+list.append('shemp')         ## append elem at end
+list.insert(0, 'xxx')        ## insert elem at index 0
+list.extend(['yyy', 'zzz'])  ## add list of elems at end
+print(list)  ## ['xxx', 'larry', 'curly', 'moe', 'shemp', 'yyy', 'zzz']
+print(list.indprintex('curly'))    ## 2
+list.remove('curly')         ## search and remove that element
+list.pop(1)                  ## removes and returns 'larry'
+print(list)  ## ['xxx', 'moe', 'shemp', 'yyy', 'zzz']
+```
+
+Slices:
+
+```python
+a[-1] # letztes Element
+a[-2] # vorletztes Element
 
 # slices
+a[von:bis]
 a[1:-1]
 # slices sind immer Kopien
-a[:] # shallow copy
+a[:] # (shallow) copy
 # Listenelemente können überschrieben werden a[2] = a[2] + 23
-a[0:2] = [1, 12] # Replace some items
-a[0:2] = [] # Remove some
-a[1:1] = ['bletch', 'xyzzy'] # Insert some 
+a[0:2] = [1, 12] # Replace slices
+a[0:2] = [] # Remove
+a[1:1] = ['bletch', 'xyzzy'] # Insert 
+```
 
-# list comprehension
+list comprehension
+
+```python
+a=[(i+1)*2 for i in range(5)]
+print(a)
+
 [3*x for x in vec if x > 3]
+```
 
+`for` loop mit Index `enumerate`:
+
+```python
+presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson"]
+for num, name in enumerate(presidents, start=1):
+    print("President {}: {}".format(num, name))
+# Note: the start=1 option to enumerate here is optional. If we didn’t specify this, we’d start counting at 0 by default.
+```
+
+
+
+```python
 # nested lists
 q = [2, 3]
 p = [1, q, 4] p[1]
 p[1][0]
-
-# enumerate (Index mitführen) und del (Löschen eines Elements)
-files = ['text.txt','input.csv','zweites.csv']
-for i, fileName in enumerate(files):
-    if fileName.find('csv')==-1:
-        print(str(i)+fileName)
-        del files[i]
 ```
 
-Lists: append(), insert(), remove(), filter(), map(), reduce()
+filter(), map(), reduce()
 
 
 
 ## Dictionary
+
+[Google edu: Python Dict and File](https://developers.google.com/edu/python/dict-files)
+
+```python
+## Can build up a dict by starting with the the empty dict {}
+## and storing key/value pairs into the dict like this:
+## dict[key] = value-for-that-key
+dict = {}
+dict['a'] = 'alpha'
+dict['g'] = 'gamma'
+dict['o'] = 'omega'
+
+print(dict)  ## {'a': 'alpha', 'o': 'omega', 'g': 'gamma'}
+
+print dict['a']     ## Simple lookup, returns 'alpha'
+dict['a'] = 6       ## Put new key/value into dict
+'a' in dict         ## True
+## print dict['z']                  ## Throws KeyError
+if 'z' in ## dict: 
+  print dict['z']     ## Avoid KeyError
+print dict.get('z')  ## None (instead of KeyError)
+```
+
+```python
+## By default, iterating over a dict iterates over its keys.
+## Note that the keys are in a random order.
+for key in dict: 
+  print key
+  ## prints a g o
+
+## Exactly the same as above
+for key in dict.keys(): 
+  print key
+
+## Get the .keys() list:
+print dict.keys()  ## ['a', 'o', 'g']
+
+## Likewise, there's a .values() list of values
+print dict.values()  ## ['alpha', 'omega', 'gamma']
+
+## Common case -- loop over the keys in sorted order,
+## accessing each key/value
+for key in sorted(dict.keys()):
+  print(key + " " + dict[key])
+
+## .items() is the dict expressed as (key, value) tuples
+print dict.items()  ##  [('a', 'alpha'), ('o', 'omega'), ('g', 'gamma')]
+
+## This loop syntax accesses the whole dict by looping
+## over the .items() tuple list, accessing one (key, value)
+## pair on each iteration.
+for k, v in dict.items(): 
+  print(f"{k} => {v}")
+  ## a > alpha    o > omega     g > gamma
+```
+
+
 
 ```python
 params = {"id":33,"method":"authenticate","params":{"user":"matejkafr", "password":"mypass", "client":"CLIENT"},"jsonrpc":"2.0"}
@@ -288,8 +392,6 @@ Pretty print dict
 import pprint # pretty print
 pprint.pprint(params)
 ```
-
-[Google edu: Python Dict and File](https://developers.google.com/edu/python/dict-files)
 
 
 
@@ -328,15 +430,6 @@ range(5, 10)
 range(-10, -100, -30)
 ```
 
-`for` loop mit Index:
-
-```python
-presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson"]
-for num, name in enumerate(presidents, start=1):
-    print("President {}: {}".format(num, name))
-# Note: the start=1 option to enumerate here is optional. If we didn’t specify this, we’d start counting at 0 by default.
-```
-
 conditional expression (like ternary operator)
 
 ```python
@@ -349,13 +442,13 @@ result = x if a > b else y
 
 ```python
 def fib2(n): # return Fibonacci series up to n
-    """Return a list containing the Fibonacci series up to n."""
-    result = []
-    a, b = 0, 1
-    while a < n:
-        result.append(a)    # see below
-        a, b = b, a+b
-    return result
+  """Return a list containing the Fibonacci series up to n."""
+  result = []
+  a, b = 0, 1
+  while a < n:
+    result.append(a)    # see below
+    a, b = b, a+b
+  return result
 ```
 
 Globale Variablen
@@ -417,6 +510,9 @@ def staticmethod():
 
 ```python
 # lib.py
+def main():
+  pass
+
 if __name__ == "__main__":
     # execute only if run as a script
     main()
@@ -427,7 +523,6 @@ from lib import name # selective import
 
 import lib
 lib.name # qualification necessary
-
 ```
 
 
@@ -493,25 +588,25 @@ import os
 import fnmatch
 
 def dirrec(src,pattern='*'):
-    names = os.listdir(src)
-    result=[]
-    #print names
-    for name in names:
-        filename=os.path.join(src, name)
-        if os.path.islink(filename):
-           pass #ignore
-        elif os.path.isdir(filename):
-           #print 'DIR: '+filename
-           result = result+dirrec(filename,pattern)
-        elif fnmatch.fnmatch(filename, pattern):
-           result.append(filename)
-           #print filename
-    return result
+  names = os.listdir(src)
+  result=[]
+  #print names
+  for name in names:
+    filename=os.path.join(src, name)
+    if os.path.islink(filename):
+      pass #ignore
+    elif os.path.isdir(filename):
+      #print 'DIR: '+filename
+      result = result+dirrec(filename,pattern)
+      elif fnmatch.fnmatch(filename, pattern):
+        result.append(filename)
+        #print filename
+        return result
 
-       
-ret = dirrec('/Users/matejkafr/Dropbox/Documents/Htl/','*.tex')
-for path in ret:
-    os.system('convutf8.py '+'"'+path+'"')
+
+      ret = dirrec('/Users/matejkafr/Dropbox/Documents/Htl/','*.tex')
+      for path in ret:
+        os.system('convutf8.py '+'"'+path+'"')
 ```
 
 

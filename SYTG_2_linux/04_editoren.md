@@ -1,5 +1,7 @@
 # Editoren
 
+Editoren die im Terminal verwendet werden können
+
 - vi
 - vim (vi with improvements)
 - nano
@@ -12,7 +14,7 @@ nano ist leicht zu erlernen und zu bedienen und reicht für einfache Aufgaben au
 
 
 
-# vi /vim
+## vi /vim
 
 - Vorteil: Auf jedem System vorhanden, großer Funktionsumfang, manche Profis schwören drauf
 
@@ -44,7 +46,7 @@ Command Mode:
 
 
 
-# nano
+## nano
 
 Leichter bedienbar als vi. Muss manchmal nachinstalliert werden.
 
@@ -52,11 +54,13 @@ Bedienung selbsterklärend.
 
 
 
-# Visual Studio Code
+## Visual Studio Code
 
 Installieren unter Windows: [User Installer](https://code.visualstudio.com/download) verwenden (kein Admin Acount notwendig).
 
 Verwenden von cygwin als integrierte Shell: [VS Code - Cygwin as Integrated Terminal](https://stackoverflow.com/questions/46061894/vs-code-cygwin-as-integrated-terminal)
+
+Strg-, für Settings
 
 
 
