@@ -24,7 +24,7 @@ Hallo Welt
 ------------------------
 ```
 
-25 Bindestriche in einer Zeile. Einmal vor und einmal nach dem Text.
+25 Bindestriche in einer Zeile. Einmal vor und einmal nach dem Text. Implementierung durch eine Schleife
 
 ```c
 for(int i=0; i<25; i++)
@@ -50,17 +50,18 @@ Beispiel: Funktion mit Namen `linie`:
 ```c
 void linie()
 {
-	for(int i=0; i<25; i++)
-		printf("-");
-	printf("\n");
+  int i;
+  for(i=0; i<25; i++)
+    printf("-");
+  printf("\n");
 }
 
 void main()
 {
-    linie();
-    printf("Hallo Welt\n");
-    linie();
-    getch();
+  linie();
+  printf("Hallo Welt\n");
+  linie();
+  getch();
 }
 ```
 
@@ -79,6 +80,27 @@ Für jede Funktion: Eigener Speicherbereich für Variablen (=Lokal)
 - Verlassen der Funktion $\rightarrow$ freigeben
 
 
+
+## Namensgleiche lokale Variable
+
+`i`  kann auch in `main`  verwendet werden, `i` in `linie` und `i` in `main` heißen gleich, sind aber unterschiedliche Variablen.
+
+```c
+void main()
+{
+  int i;
+  for(i=0; i<5; i++)
+  {
+    linie();
+  }
+  printf("Hallo Welt\n");
+  for(i=0; i<7; i++)
+  {
+	  linie();
+  }
+  getch();
+}
+```
 
 
 

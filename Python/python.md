@@ -265,7 +265,7 @@ list.append('shemp')         ## append elem at end
 list.insert(0, 'xxx')        ## insert elem at index 0
 list.extend(['yyy', 'zzz'])  ## add list of elems at end
 print(list)  ## ['xxx', 'larry', 'curly', 'moe', 'shemp', 'yyy', 'zzz']
-print(list.indprintex('curly'))    ## 2
+print(list.index('curly'))    ## 2
 list.remove('curly')         ## search and remove that element
 list.pop(1)                  ## removes and returns 'larry'
 print(list)  ## ['xxx', 'moe', 'shemp', 'yyy', 'zzz']
@@ -338,7 +338,7 @@ print dict['a']     ## Simple lookup, returns 'alpha'
 dict['a'] = 6       ## Put new key/value into dict
 'a' in dict         ## True
 ## print dict['z']                  ## Throws KeyError
-if 'z' in ## dict: 
+if 'z' in dict: 
   print dict['z']     ## Avoid KeyError
 print dict.get('z')  ## None (instead of KeyError)
 ```
@@ -392,6 +392,8 @@ Pretty print dict
 import pprint # pretty print
 pprint.pprint(params)
 ```
+
+
 
 
 

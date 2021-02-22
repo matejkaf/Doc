@@ -1,13 +1,11 @@
 ---
 title: Doc
-tags: [assignment, c, funktionen, rueckgabe ]
+tags: [1AHITS,assignment, c, funktionen, rueckgabe ]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # Funktionen mit Rückgabewert (Übungen)
-
-
 
 **Hinweis:** Die Funktionen dürfen keine Befehle zur Ein- und Ausgabe enthalten.
 Die Ein- und Ausgabe muss ausschließlich im Hauptprogramm stattfinden.
@@ -24,9 +22,9 @@ double tflaeche(double a, double b, double h)
 ```
 
 
+
+
 ---
-
-
 
 **Übung (Absolutwert):**
 Schreibe eine Funktion `absolut` die einen `double` Wert als Parameter hat und einen `double` Wert als Rückgabewert liefert. Die Funktion soll den Absolutwert (den Wert ohne Vorzeichen) zurückgeben. Rufe die Funktion aus `main` auf und teste einige Werte. Das Programm soll die Ergebnisse ausgeben.
@@ -51,9 +49,9 @@ Beispiele:
 - `vorzeichen(2.72)` → `1`
 - `vorzeichen(0.0)` → `0`
 
+
+
 ---
-
-
 
 **Übung (Potenzieren):**
 Schreibe eine Funktion die einen `double` Wert $$x$$ hoch einem `int` Wert $$n$$ berechnet. Die Funktion soll so aussehen:

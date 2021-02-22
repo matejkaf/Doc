@@ -39,22 +39,21 @@ void main()
 Parameter:
 
 - besondere lokale Variablen
-- Wert wird bei Aufruf gesetzt
-- "Platzhalter" für konkreten Wert (=Argument)
+- "Platzhalter" für konkreten Wert
+- Wert wird bei Aufruf gesetzt (=Argument)
 
 
 
 
 ## Parameter
 
-Bei jedem Aufruf der Funktion wird ein konkreter Wert (=Argument) als Wert der Parameter-Variable festgelegt. Dies kann auf unterschiedliche Arten geschehen:
+Bei jedem Aufruf der Funktion wird durch das Argument der Wert der Parameter-Variable festgelegt. Dies kann auf unterschiedliche Arten geschehen:
 
 **Konstante**:
 
 
 ```c
 linie(5);
-
 ```
 
 **Variable**:
@@ -125,7 +124,35 @@ Das gleiche gilt für Parameter, diese verhalten sich wie lokale Variablen – n
 
 
 
+## Funktionsdeklaration
 
+Funktionen müssen im Programm vor ihrem ersten Aufruf bekannt (=deklariert) sein.
+
+
+
+```c
+void linie(int anzahl); // Deklaration
+
+void main()
+{
+    linie(7); // Aufruf
+    printf("\nHallo\n");
+    linie(5); // Aufruf
+
+    getch();
+}
+
+// Definition
+void linie(int anzahl)
+{
+    int i=0;
+    while(i<anzahl)
+    {
+        printf("-");
+        i++;
+    }
+}
+```
 
 
 

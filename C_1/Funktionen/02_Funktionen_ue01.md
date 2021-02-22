@@ -1,6 +1,6 @@
 ---
 title: Doc
-tags: [assignment, c, funktionen ]
+tags: [1AHITS, assignment, c, funktionen ]
 ---
 
 # Funktionen (Übungen)
@@ -30,7 +30,7 @@ tags: [assignment, c, funktionen ]
 ---
 
 **Übung (Zahlenfolge in Funktion):**
-Schreibe eine Funktion die, mit Hilfe einer Schleife, folgende Zahlenfolge ausgibt.
+Schreibe eine Funktion die, mit Hilfe einer Schleife, folgende Zahlenfolge ausgibt:
 
 `2,5,8,11,14,17,`
 
@@ -78,22 +78,31 @@ Hinweis: Verwende eine Schleife um die Funktion `innen` mehrfach aufzurufen – 
 ---
 
 **Übung (Zahlenfolge in Funktion II):**
-Schreibe eine Funktion die die Zahlenfolge `42,42,41,39,36,32,27,` (hintereinander in einer Zeile) ausgibt. Die Zahlenfolge soll 10 Mal untereinander wiederholt ausgegeben werden.  Die Wiederholung soll durch eine Schleife im Hauptprogramm implementiert werden.
+Schreibe eine Funktion die, mit Hilfe einer Schleife, die Zahlenfolge `42,42,41,39,36,32,27,` (hintereinander in einer Zeile) ausgibt. Die Zahlenfolge soll zusätzlich 10 Mal untereinander wiederholt ausgegeben werden.  Die Wiederholung soll durch eine Schleife im Hauptprogramm implementiert werden.
 
 
 
 ---
 
 **Übung (Zahlenfolge in Funktion III):**
-Schreibe eine Funktion die folgende Zahlenfolge in einer Zeile ausgibt:
+Schreibe eine Funktion die, mit Hilfe einer Schleife, die folgende Zahlenfolge in einer Zeile ausgibt:
 
-`1,2,4,5,7,8,10`
+`1,2,4,5,7,8,10,11,13,14`
 
-Hinweis zur Lösung: abwechselnd +1 oder +2 je nach dem ob die Laufvariable gerade oder ungerade ist.
+> Hinweis zur Lösung: abwechselnd +1 oder +2 je nach dem ob die Laufvariable gerade oder ungerade ist.
+>
+> ```c
+> if(i%2==0)
+> {
+>   // Laufvariable i ist gerade (0,2,4,6,...)
+> }
+> else
+> {
+>   // Laufvariable i ist ungerade (1,3,5,7,...)
+> }
+> ```
 
-Die Zahlenfolge soll weiters untereinander wiederholt werden. Die Anzahl der Wiederholungen wird durch eine Eingabe im Hauptprogramm bestimmt.
-
-
+Die Zahlenfolge soll weiters mehrfach untereinander wiederholt werden – die Anzahl der Wiederholungen wird durch eine Eingabe im Hauptprogramm bestimmt.
 
 ---
 
