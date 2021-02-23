@@ -116,7 +116,212 @@ namespace StateTest1
 
 ```
 
-TODO: Objekt orientierte Implementierung
+
+
+## Pattern Matcher mit OOP
+
+```csharp
+// F.Matejka 22.02.2021
+
+using System;
+
+// Design Pattern: State
+//   DFS deterministic finite state machine
+// refactoring.guru
+
+// Gegeben: String
+//  JDGFJKSHABCkjdsl
+// Match: ABC
+
+namespace _210222_state_pattern
+{
+    class PatternMatcher 
+    {
+        enum State {START, A, B, END};
+        State state = State.START;
+
+        public void reset()
+        {
+            state = State.START;
+        }
+        public bool isMatch()
+        {
+            return state==State.END;
+        }
+        public void match(char c) 
+        {
+            switch(state)
+            {
+                case State.START:
+                    if(c=='A')
+                    {
+                        state = State.A;
+                    }
+                break;
+                case State.A:
+                    if(c=='B')
+                    {
+                        state = State.B;
+                    }
+                    else
+                    {
+                        state = State.START;
+                    }
+                break;
+                case State.B:
+                    if(c=='C')
+                    {
+                        state = State.END;
+                    }
+                    else
+                    {
+                        state = State.START;
+                    }
+                break;
+                case State.END:
+                    break;
+            }
+
+        }
+    }
+
+    // mit Design Pattern:
+    class PatternMatcherContext
+    {
+        IState state;
+
+        public PatternMatcherContext()
+        {
+            reset();
+        }
+
+        public void changeState(IState nextState)
+        {
+            state = nextState;
+        }
+
+        public void reset()
+        {
+            state = new StateStart(this);
+        }
+        public bool isMatch()
+        {
+            return state is StateEnd;
+        }
+        public void match(char c)
+        {
+            state.match(c);
+        }
+    }
+
+    interface IState
+    {
+        void match(char c);
+    }
+
+    class StateStart : IState
+    {
+        PatternMatcherContext context;
+        public StateStart(PatternMatcherContext context)
+        {
+            this.context = context;
+        }
+        public void match(char c)
+        {
+            if(c=='A')
+            {
+                context.changeState(new StateA(context));
+            }
+        }
+    }
+    class StateA : IState
+    {
+        PatternMatcherContext context;
+        public StateA(PatternMatcherContext context)
+        {
+            this.context = context;
+        }
+        public void match(char c)
+        {
+            if(c=='B')
+            {
+                context.changeState(new StateB(context));
+            }
+            else
+            {
+                context.changeState(new StateStart(context));
+            }
+        }
+    }
+    class StateB : IState
+    {
+        PatternMatcherContext context;
+        public StateB(PatternMatcherContext context)
+        {
+            this.context = context;
+        }
+        public void match(char c)
+        {
+            if(c=='C')
+            {
+                context.changeState(new StateEnd(context));
+            }
+            else
+            {
+                context.changeState(new StateStart(context));
+            }
+        }
+    }
+    class StateEnd : IState
+    {
+        PatternMatcherContext context;
+        public StateEnd(PatternMatcherContext context)
+        {
+            this.context = context;
+        }
+        public void match(char c)
+        {
+        }
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            var matcher = new PatternMatcher();
+            var str = "ksjdhfkdshfjhABCsdkjfkdsafhjk";
+            foreach(var c in str)
+            {
+                matcher.match(c);
+                if(matcher.isMatch()) 
+                {
+                    System.Console.WriteLine("MATCH !");
+                    break;
+                }
+            }
+            System.Console.WriteLine("END");
+
+            System.Console.WriteLine("Mit State Pattern");
+            var matcher2 = new PatternMatcherContext();
+            foreach (var c in str)
+            {                
+                matcher2.match(c);
+                if(matcher.isMatch()) 
+                {
+                    System.Console.WriteLine("MATCH !");
+                    break;
+                }
+
+            }
+        }
+    }
+}
+
+```
+
+
 
 
 

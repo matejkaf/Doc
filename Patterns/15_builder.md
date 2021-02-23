@@ -101,9 +101,9 @@ public class StudentBuilder {
 Begründung für `private final`: Die allermeisten Instanzvariablen werden nach dem Istanzieren nicht mehr verändert. Es bringt mehrere Vorteile ein Objekt so zu entwerfen, dass es **immutable** (d.h. unveränderbar ist). Bedeutet alle Instanzvariablen sind `final`. Siehe z.B. [The ins and outs of immutability](https://www.javacodegeeks.com/2013/01/the-ins-and-outs-of-immutability.html)
 
 - result in cleaner designs and easier to read code.
+- just plain simple. They can be in only one state and they keep that state for their entire life
 - less error prone 
 - you can just share around those immutable objects without having to worry about [defensive copies](https://javacreed.com/what-is-defensive-copying)
-- just plain simple. They can be in only one state and they keep that state for their entire life
 - inherently thread-safe
 
 
