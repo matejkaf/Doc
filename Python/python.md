@@ -529,6 +529,12 @@ lib.name # qualification necessary
 
 
 
+## Short Infos
+
+- [range() und xrange()](https://www.geeksforgeeks.org/range-vs-xrange-python/) – xrange braucht weniger Speicher
+- [Role of Underscore(_) in Python](https://www.datacamp.com/community/tutorials/role-underscore-python) – Schleifen Laufvariable, ...
+- [List comprehension without brackets in Python](https://stackoverflow.com/questions/9060653/list-comprehension-without-in-python)
+
 ## Snippets
 
 ### Read from standard input

@@ -1,8 +1,11 @@
-# JSON API mit Flask
+---
+title: Doc
+tags: [5AHELS, lecture, python, flask, repl]
+---
 
-Siehe [Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask). Alternative wäre Django ([Vergleich](https://testdriven.io/blog/django-vs-flask/)).
+# Flask
 
-[Source auf github](https://github.com/miguelgrinberg/REST-tutorial/blob/master/rest-server.py)
+Alternative zu Flask wäre Django ([Vergleich](https://testdriven.io/blog/django-vs-flask/)).
 
 ```bash
 $ python3 -m pip install flask
@@ -28,13 +31,72 @@ if __name__ == '__main__':
 
 
 
-## Static Files
-
-[How to serve static files in Flask](https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask)
-
-
-
-## repl.it
+## repl.it Hosting
 
 [Flask Tutorial](https://repl.it/talk/learn/Flask-Tutorial-Part-1-the-basics/26272)
 
+
+
+## curl
+
+[jslinux](https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192), Geht auch in der shell von repl.it
+
+```bash
+localhost:~# curl https://flasktest01.franzmatejka.repl.co
+```
+
+
+
+## RESTful API
+
+Siehe [Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask). 
+
+[Source auf github](https://github.com/miguelgrinberg/REST-tutorial/blob/master/rest-server.py)
+
+
+
+## sqlite
+
+[sqlite Example auf repl.it](https://repl.it/@delamath/sqlite-example)
+
+```python
+import sqlite3
+
+conn = sqlite3.connect("test.db")
+c = conn.cursor()
+
+c.execute('''
+DROP TABLE IF EXISTS test_table2
+''')
+
+c.execute('''
+CREATE TABLE IF NOT EXISTS test_table
+(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)''')
+
+c.execute('''
+CREATE TABLE IF NOT EXISTS stocks
+(id INTEGER PRIMARY KEY AUTOINCREMENT, date text, trans text, symbol text, qty real, price real)''')
+
+#c.execute("INSERT INTO stocks (date, trans, symbol, qty, price) VALUES ('2006-01-05','BUY','RHAT',100,35.14)")
+
+#c.execute("INSERT INTO stocks (date, trans, symbol, qty, price) VALUES ('2016-04-21','SELL','RHAT',200,37.14)")
+
+print(c.fetchall())
+
+c.execute("""
+SELECT name FROM sqlite_master WHERE type='table'
+""")
+a = c.fetchall()
+print(a)
+
+c.execute("""
+SELECT * FROM stocks
+""")
+a = c.fetchall()
+print(a)
+
+conn.commit()
+#conn.close()
+```
+
+Legt in repl.it eine Datei `test.db` an.

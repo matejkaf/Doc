@@ -1,7 +1,11 @@
+---
+title: Doc
+tags: [5AHELS, lecture]
+---
+
 # cURL
 
 =client URL
-
 
 Tool für die Kommandozeile zum Absetzen von http Requests und Anzeige der http Response.
 [curl Homepage](https://curl.haxx.se)
@@ -15,7 +19,7 @@ curl http://httpbin.org/ip
 Hinweis:
 Für Tests eines http clients dient [http://httpbin.org](http://httpbin.org)
 
-# Mehr Informationen anzeigen
+## Mehr Informationen anzeigen
 
 `-i`, `--include`:  
 Zeigt den Header der http Response an.
@@ -27,7 +31,7 @@ curl --include http://httpbin.org/ip
 `-v`, `--verbose`:   
 Zeigt Details über den Verbindungsaufbau, den http request header und den http response header.
 
-# http request header Feld
+## http request header Feld
 
 `-H`, `--header`:  
 Setzt ein request header field. Mehrfach anwendbar. Beispiel:
@@ -36,7 +40,7 @@ Setzt ein request header field. Mehrfach anwendbar. Beispiel:
 curl --header 'Accept:application/json' http://httpbin.org/headers
 ```
 
-# http Methode
+## http Methode
 
 `-X`, `--request`  
 Bestimmt die http Request Methode
