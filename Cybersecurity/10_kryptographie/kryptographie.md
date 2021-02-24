@@ -15,32 +15,32 @@ Information widerstandsfähig gegen unbefugtes Lesen und Manipulation machen.
 
 Es sollen Verschlüsselungsverfahren (Chiffre, engl. Cipher) definiert werden die eines (oder mehrere) der folgenden Ziele erfüllen:
 
-- Vertraulichkeit (*confidentiality*)/Zugriffsschutz
+- Vertraulichkeit (*confidentiality*) / Zugriffsschutz
   Zugriff nur für Berechtigte
-- Integrität (*integrity*)/Änderungsschutz
+- Integrität (*integrity*) / Änderungsschutz
   Veränderung kann erkannt werden.
-- Authentizität (*authentication*)/Fälschungsschutz
+- Authentizität (*authentication*) / Fälschungsschutz
   Urheber der Daten ist eindeutig identifizierbar.
-- Verbindlichkeit (*non-repudiation*)/Nichtabstreitbarkeit
+- Verbindlichkeit (*non-repudiation*) / Nichtabstreitbarkeit
   Urheberschaft nicht bestreitbar.
 
 
 
 ## Grundbegriffe
 
+- Alice Bob Eve
 - Plaintext (Klartext)
 - Ciphertext (Geheimtext)
 - Key, **Schlüssel**: Die Information die Sender **und** Empfänger zum ver- und entschlüsseln brauchen.
+- Verschlüsselungsmethode / Chiffre / Cipher
 
-Alice Bob Eve
+
 
 *Zeichnung: Alice schickt an Bob, plaintext-encrypt (cipher+key)-ciphertext-decrypt (cipher+key)-plaintext, Eve hört mit*
 
-Chiffre / Verschlüsselungsmethode / Cipher
+- Symmetrische Verschlüsselung (shared key)
 
-Symmetrische Verschlüsselung (shared key)
-
-Public Key Verschlüsselung
+- Public Key Verschlüsselung
 
 
 
@@ -65,7 +65,7 @@ Einzelne Buchstaben werden betrachtet und entweder:
 
 *Allgemeines Substitutionsverfahren, Umstellung (Permutation) des Alphabets = Schlüssel*
 
-Diese Verfahren nennt man Monoalphabetische Substition
+Diese Verfahren nennt man **monoalphabetische Substition**
 
 
 
