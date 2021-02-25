@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
 [Flask Tutorial](https://repl.it/talk/learn/Flask-Tutorial-Part-1-the-basics/26272)
 
-
+Enthält das python File `import` so wird flask automatisch installiert.
 
 ## curl
 

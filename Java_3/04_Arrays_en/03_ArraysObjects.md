@@ -52,12 +52,10 @@ Now the referencesstored in the array `arr` can be used.
 // sum rectangle areas
 double sum=0;
 for(int i=0; i<rarr.length; i++) {
-    sum = sum + rarr[i].arrea();
+    sum = sum + rarr[i].area();
 }
 System.out.println(sum);
 ```
-
-
 
 
 
@@ -85,8 +83,8 @@ For this implement a class  `Window`. This class manages the position (x,y) and 
 
 - Define class, instance variables and constructor.
   Define an array of 7 `Window` Objects.
-- Write a method `isHit` that gets $(x,y)$ coordinates and checks whether this point is inside the rectangle. 
-- Let the user enter $(x,y)$ coordinates, then print out the program name if there is a window at this position.
+- Write a method `isHit` that gets *(x,y)* coordinates and checks whether this point is inside the rectangle. 
+- Let the user enter *(x,y)​* coordinates, then print out the program name if there is a window at this position.
 
 ---
 
