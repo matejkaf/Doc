@@ -1,7 +1,7 @@
 ---
 title: Doc
 description: Einführung in Funktionen in C
-tags: [lecture, c, funktionen ]
+tags: [1AHITS,lecture, c, funktionen ]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

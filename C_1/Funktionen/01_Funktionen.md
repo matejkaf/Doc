@@ -1,7 +1,7 @@
 ---
 title: Doc
 description: Einführung in Funktionen in C
-tags: [lecture, c, funktionen ]
+tags: [1AHITS,lecture, c, funktionen ]
 ---
 
 # Funktionen

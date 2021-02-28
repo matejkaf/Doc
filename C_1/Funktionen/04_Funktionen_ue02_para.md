@@ -1,6 +1,6 @@
 ---
 title: Doc
-tags: [2AHITS, assignment, c, funktionen, parameter ]
+tags: [1AHITS, assignment, c, funktionen, parameter ]
 ---
 
 # Funktionen mit Parameter (Übungen)
