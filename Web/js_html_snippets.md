@@ -1,19 +1,27 @@
+---
+title: Doc
+tags: [info,5AHELS]
+---
 
-# Readonly
+
+
+# Snippets: Javascrip / HTML
+
+## Readonly
 
 ```html
 <input id="membernrinput" name="membernr" readonly="readonly">
 ```
 
 
-# Hidden, visibility, display
+## Hidden, visibility, display
 
-## HTML form field
+### HTML form field
 ```html
 <input type="hidden">
 ```
 
-## visibility (space occopied)
+### visibility (space occopied)
 ```html
 <div  style="visibility: hidden">not shown, but space occupied</div>
 ```
@@ -25,7 +33,7 @@ document.getElementById("remember").style.visibility = 'visible'
 document.getElementById("remember").style.visibility = 'hidden'
 ```
 
-## display
+### display
 
 ```html
 <div id="divCheckbox" style="display: none;">
@@ -38,7 +46,7 @@ document.getElementById('submitCreateButton').style.display = '' // show
 document.getElementById('submitUpdateButton').style.display = 'none'
 ```
 
-# DOM attribute 'class'
+## DOM attribute 'class'
 
 [HTML DOM classList Property](https://www.w3schools.com/jsref/prop_element_classlist.asp)
 
@@ -48,13 +56,13 @@ element.classList.remove("mystyle");
 ```
 
 
-# XMLHttpRequest
+## XMLHttpRequest
 
 [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
 
 Drei Möglichkeiten:
 
-`onreadystatechange`:
+- `onreadystatechange`: wird von allen Browsern unterstützt
 
 ```javascript
 var httpReq = new XMLHttpRequest(),
@@ -71,7 +79,7 @@ httpReq.onreadystatechange = function () {
 httpReq.send();
 ```
 
-`onload`:
+- `onload`:  `onerror`, etc. sind spätere Erweiterungen.
 
 ```javascript
 var httpReq = new XMLHttpRequest();
@@ -89,7 +97,7 @@ httpReq.onerror = function () {
 httpReq.send(JSON.stringify(training))
 ```
 
-`addEventListener`:
+- `addEventListener`: Die Unterstützung des `addEventListener` APIs ist wiederum eine noch jüngere Erweiterung.
 
 ```javascript
 var httpReq = new XMLHttpRequest();
@@ -101,12 +109,9 @@ httpReq.open("GET", url);
 httpReq.send();
 ```
 
-`onreadystatechange` wird von allen Browsern unterstützt. `onload`, `onerror`, etc. sind spätere Erweiterungen.
-Die Unterstützung des `addEventListener` APIs ist wiederum eine noch jüngere Erweiterung.
 
 
-
-# Query String encoding
+## Query String encoding
 
 ```javascript
 serialize = function(obj) {
@@ -122,7 +127,7 @@ console.log(serialize({foo: "hi there", bar: "100%" }));
 ```
 
 
-# Query String parsing
+## Query String parsing
 
 In einer Webseite auf den query string zugreifen
 
@@ -143,7 +148,7 @@ function parseQuery(query) {
 ```
 
 
-# All SubElements
+## All SubElements
 
 Ohne Rekursion:
 
@@ -153,7 +158,7 @@ let elements = el.getElementsByTagName("*")
 ```
 
 
-# Forms Element Zugriff
+## Forms Element Zugriff
 
 ```html
 <form action="" onsubmit="savePerson(this);return false">
@@ -179,7 +184,7 @@ document.getElementById("myForm").elements["fname"].value;
 
 ```
 
-# Form processing without page reload
+## Form processing without page reload
 
 ```html
 <form id="idForm" method="post">
@@ -221,7 +226,7 @@ form.addEventListener('submit', function(ev)
 ```
 
 
-# Checkbox
+## Checkbox
 
 ```javascript
 checkbox.checked = true
@@ -235,7 +240,7 @@ checkbox.checked = false
 Unchecked wenn `checked` Attribut fehlt!
 
 
-# disable
+## disable
 
 ```html
 <input type="button" name=myButton value="disable" disabled>
@@ -248,7 +253,7 @@ foo.disabled = true
 Keine Daten von Radio Buttons mit `disabled`!
 Lösung: den selektierten button auf enabled lassen (alle anderen disabeln).
 
-# Web Storage API
+## Web Storage API
 
 Speichert Werte solange ein Tab geöffnet ist, auch über page loads hinweg.
 
@@ -258,7 +263,7 @@ let colorSetting = sessionStorage.getItem('colorSetting')
 ```
 
 
-# Date
+## Date
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
@@ -305,7 +310,7 @@ let parsed = parseDate('31.05.2010');
 console.log(toGermanString(parsed))
 ```
 
-# data Attribut
+## data Attribut
 
 [w3schools](https://www.w3schools.com/tags/att_global_data.asp)
 
@@ -323,7 +328,7 @@ function buttonPressed(buttonEl)
 ```
 
 
-# Regular Expressions
+## Regular Expressions
 
 [RegEx Tester](https://regex101.com)
 
@@ -341,9 +346,9 @@ while ((match = regex.exec(str)) !== null) {
 Siehe [RegEx101](https://regex101.com/r/VcVBKv/1)
 
 
-# ECMAScript 5
+## ECMAScript 5
 
-# forEach function
+### forEach function
 
 ```javascript
 ["dog", "cat", "hen"].forEach(function(currentValue, index, array) {
@@ -352,7 +357,7 @@ Siehe [RegEx101](https://regex101.com/r/VcVBKv/1)
 ```
 
 
-# ECMAScript 6
+## ECMAScript 6
 
 [ECMAScript 6 Tutorial - Mortgage Calculator](http://ccoenraets.github.io/es6-tutorial/)
 
@@ -365,7 +370,7 @@ Siehe [RegEx101](https://regex101.com/r/VcVBKv/1)
 - Template Strings
 
 
-## Destructuring
+### Destructuring
 
 ```javascript
 return {principal, years, rate, monthlyPayment, monthlyRate};
@@ -396,8 +401,6 @@ Zuordnung per Name.
 [](http://www.2ality.com/2012/04/arrow-functions.html)
 
 ## Native Module Support
-
-?
 
  Webpack and Browserify 
 

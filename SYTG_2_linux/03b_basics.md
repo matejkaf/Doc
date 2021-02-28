@@ -171,7 +171,8 @@ Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen
 
 - `nl`: number lines
 
-Aufgabe: Nummeriere `shopping.txt` in der Form (Links 10 Zeichen einrücken)
+**Übung (Nummerieren)** Nummeriere `shopping.txt` in der Form (Links 10 Zeichen einrücken)
+
 ```
          1. Fred apples 20
          2. Susy oranges 5
@@ -186,8 +187,12 @@ $ nl -s '. ' -w 10 shopping.txt
 
 - `wc`: word count
 
-Aufgabe:  Ermittle welches File in `sampletextfiles` aus den meisten Zeilen besteht.
+---
+
+**Übung (word count)**  Ermittle welches File in `sampletextfiles` aus den meisten Zeilen besteht.
 Die Ausgabe soll bestehen aus der Zeilenanzahl gefolgt vom Dateinamen.
+
+---
 
 Lösung:
 
@@ -195,6 +200,8 @@ Lösung:
 $ wc -l sampletextfiles/* | sort | tail -n2 | head -n1
 # -l number of lines
 ```
+
+---
 
 
 
@@ -227,15 +234,11 @@ Wagner,18.09.2019,20.0,Werkstatt
 
 ---
 
-**Übung (Anzahl Werkstatt)**
-
-Schreibe ein shell Kommando das in `klassenkassa.csv` die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
+**Übung (Anzahl Werkstatt)**: Schreibe ein shell Kommando das in `klassenkassa.csv` die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
 
 ---
 
-**Übung (Werkstatt Einzeiler)**
-
-Schreibe ein shell Kommand das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
+**Übung (Werkstatt Einzeiler)**: Schreibe ein shell Kommand das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
 
 ```
 20.0+20.0+20.0+20.0
@@ -246,6 +249,8 @@ Hinweise:
 - Verwende `grep` und `cut` um nur die Beträge zu filtern – diese stehen jedoch dann noch auf einzelnen Zeilen.
 - Verwende `paste` um die Zeilen zusammenzufassen.
 
+---
+
 Lösung:
 
 ```bash
@@ -253,7 +258,9 @@ $ grep Werkstatt klassenkassa.csv | cut -d, -f3 | paste -s -d+
 20.0+20.0+20.0+20.0
 ```
 
-Auswerten eines arithmetischen Ausdrucks mit python:
+---
+
+Erweiterung: Auswerten eines arithmetischen Ausdrucks mit python:
 
 ```bash
 echo '1+2+3' | python3 -c 'print(eval(input()))'

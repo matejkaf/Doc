@@ -1,7 +1,6 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
-tags: [assignment,1AHITS]
+tags: [assignment,1AHITS,1CHELS]
 ---
 
 # While Schleifen (Übungen)
