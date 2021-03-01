@@ -18,28 +18,26 @@ Erstelle ein Programm das das MVC Pattern implementiert.
 
 
 
-
-
-# Filter
+## Filter
 
 [Filter Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/filter_pattern.htm)
 
 
-# Null Object
+## Null Object
 
 [Null Object Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm)
 
 In einem Array aus Grade Objekten (mit Namen und Note) soll per Name gesucht werden.
 Implementiere den Fall, dass ein Name nicht gefunden werden kann mit Hilfe des Null Object Patterns.
 
-# Template
+## Template
 
 [Template Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/template_pattern.htm)
 
 Gleich wie Template Method?
 
 
-# Composite
+## Composite
 
 [Composite Beispiel - tutorialspoint](https://www.tutorialspoint.com/design_pattern/composite_pattern.htm)
 

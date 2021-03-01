@@ -1,7 +1,7 @@
 ---
 title: Observer – Beispiel Temperatursensor
 cmds: ['md_html.bash']
-tags: [lecture, patterns ]
+tags: [5AHELS, lecture, patterns ]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Design Patterns (Entwurfsmuster)
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, patterns ]
+tags: [5AHELS, lecture, patterns ]
 ---
 
 
