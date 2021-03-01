@@ -46,7 +46,7 @@ rarr[1] = new Rectangle(7,1);
 rarr[2] = new Rectangle(9,4);
 ```
 
-Now the referencesstored in the array `arr` can be used.
+Now the references stored in the array `arr` can be used.
 
 ```java
 // sum rectangle areas
