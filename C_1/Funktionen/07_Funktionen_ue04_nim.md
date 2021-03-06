@@ -14,6 +14,8 @@ Das **Nim-Spiel** ist ein Spiel für zwei Personen.
 Statt der Streichhölzer kann man auch Münzen, Spielkarten, Bierdeckel oder andere gleichartige Gegenstände verwenden.
 ([Wikipedia](http://de.wikipedia.org/wiki/Nim-Spiel))
 
+
+
 ---
 
 **Übung (Nim Spiel):**
@@ -91,8 +93,6 @@ do {
 	// ...
 } while(taste!='e');
 ```
----
-
 
 
 **Tipps zur Implementierung**

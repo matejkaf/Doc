@@ -7,8 +7,7 @@ tags: [1AHITS,assignment, c, funktionen, rueckgabe ]
 
 # Funktionen mit Rückgabewert (Übungen)
 
-**Hinweis:** Die Funktionen dürfen keine Befehle zur Ein- und Ausgabe enthalten.
-Die Ein- und Ausgabe muss ausschließlich im Hauptprogramm stattfinden.
+**Hinweis:** Die Funktionen dürfen keine Befehle zur Ein- und Ausgabe enthalten. Die Ein- und Ausgabe muss ausschließlich im Hauptprogramm stattfinden.
 
 
 
