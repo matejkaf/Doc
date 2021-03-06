@@ -14,84 +14,84 @@ using System.Collections.Generic;
 
 namespace _201221_observer
 {
-    abstract class Observer {
-        public abstract void update(Subject t);
-    }
+  abstract class Observer {
+    public abstract void update(Subject t);
+  }
 
-    class TooCold : Observer
+  class TooCold : Observer
+  {
+    public override void update(Subject t)
     {
-        public override void update(Subject t)
-        {
-            var thermo = t as Thermometer;
-            if(thermo.Temp<18) {
-                System.Console.WriteLine("it is too cold");
-            }
-        }
+      var thermo = t as Thermometer;
+      if(thermo.Temp<18) {
+        System.Console.WriteLine("it is too cold");
+      }
     }
-    class TooHot : Observer
+  }
+  class TooHot : Observer
+  {
+    public override void update(Subject t)
     {
-        public override void update(Subject t)
-        {
-            var thermo = t as Thermometer;
-            if(thermo.Temp>27) {
-                System.Console.WriteLine("it is too hot");
-            }
-        }
+      var thermo = t as Thermometer;
+      if(thermo.Temp>27) {
+        System.Console.WriteLine("it is too hot");
+      }
     }
+  }
 
-    abstract class Subject {
-        List<Observer> observers = new List<Observer>();
+  abstract class Subject {
+    List<Observer> observers = new List<Observer>();
 
-        public void attachObserver(Observer obs)
-        {
-            observers.Add(obs);
-        }
-        public void detachObserver(Observer obs) 
-        {
-            observers.Remove(obs);
-        }
-        protected void notifyObservers()
-        {
-            foreach (var observer in observers)
-            {
-                observer.update(this);
-            }
-        }
-    }
-    class Thermometer : Subject
+    public void attachObserver(Observer obs)
     {
-        double temp = 27.0;
-        public double Temp { 
-            get {return temp;}
-            set {
-                    if(temp != value)
-                    {
-                        temp = value;
-                        this.notifyObservers();
-                    }
-                }
-        }
-
-
+      observers.Add(obs);
     }
-    class Program
+    public void detachObserver(Observer obs) 
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            var thermo = new Thermometer();
-            var obs1 = new TooCold();
-            thermo.attachObserver(obs1);
-            var obs2 = new TooHot();
-            thermo.attachObserver(obs2);
-            thermo.Temp = 10; // --> too cold
-            thermo.Temp = 30; // --> too hot
-
-            thermo.detachObserver(obs1);
-            thermo.detachObserver(obs2);
-
-        }
+      observers.Remove(obs);
     }
+    protected void notifyObservers()
+    {
+      foreach (var observer in observers)
+      {
+        observer.update(this);
+      }
+    }
+  }
+  class Thermometer : Subject
+  {
+    double temp = 27.0;
+    public double Temp { 
+      get {return temp;}
+      set {
+        if(temp != value)
+        {
+          temp = value;
+          this.notifyObservers();
+        }
+      }
+    }
+
+
+  }
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
+      var thermo = new Thermometer();
+      var obs1 = new TooCold();
+      thermo.attachObserver(obs1);
+      var obs2 = new TooHot();
+      thermo.attachObserver(obs2);
+      thermo.Temp = 10; // --> too cold
+      thermo.Temp = 30; // --> too hot
+
+      thermo.detachObserver(obs1);
+      thermo.detachObserver(obs2);
+
+    }
+  }
 }
 
 ```

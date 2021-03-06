@@ -11,9 +11,9 @@ Information widerstandsfähig gegen unbefugtes Lesen und Manipulation machen.
 
 
 
-## Ziele der Kryptographie
+## Ziele
 
-Es sollen Verschlüsselungsverfahren (Chiffre, engl. Cipher) definiert werden die eines (oder mehrere) der folgenden Ziele erfüllen:
+Es sollen Verfahren (Chiffre, engl. Cipher) definiert werden die eines (oder mehrere) der folgenden Ziele erfüllen:
 
 - Vertraulichkeit (*confidentiality*) / Zugriffsschutz
   Zugriff nur für Berechtigte
@@ -21,7 +21,7 @@ Es sollen Verschlüsselungsverfahren (Chiffre, engl. Cipher) definiert werden di
   Veränderung kann erkannt werden.
 - Authentizität (*authentication*) / Fälschungsschutz
   Urheber der Daten ist eindeutig identifizierbar.
-- Verbindlichkeit (*non-repudiation*) / Nichtabstreitbarkeit
+- Verbindlichkeit (*non-repudiation*) / Abstreitschutz
   Urheberschaft nicht bestreitbar.
 
 

@@ -1,6 +1,12 @@
-# Math
+# Github Pages
+
+## Allgemeines
+
+- [Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) enthält Informationen zu Links
 
 
+
+## Math
 
 Geht von selbst mit MathJax [[Math on GitHub Pages](https://g14n.info/2014/09/math-on-github-pages/)]
 
@@ -20,7 +26,7 @@ HTML include allerdings notwendig:
 
 
 
-# Erste Zeile wegbringen
+## Erste Zeile wegbringen
 
 Link auf main-Page wegbringen!?
 

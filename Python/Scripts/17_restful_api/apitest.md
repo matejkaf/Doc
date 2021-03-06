@@ -23,7 +23,7 @@ def index():
     return "Hello, World!"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
 ```
 
 - [stackoverflow: What does the “at” (@) symbol do in Python?](https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python) – Decorator [](https://realpython.com/primer-on-python-decorators/), kurz: Funktion wird als Parameter übergeben.

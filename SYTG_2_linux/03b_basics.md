@@ -153,8 +153,6 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 -  Sortiere nach der 2ten Spalte (Obstnamen)
 - Gib die letzten 7 Elemente aus die sich durch alphabetisch absteigende Reihenfolge des Personennamens ergeben (Z zuerst). Diese 7 Elemente sollen aufsteigend sortiert nach Obstname ausgegeben werden.
 
-> [!2AHITS G2 05.02.2021]
-
 ---
 
 **Übung (middle)**
@@ -197,7 +195,7 @@ Die Ausgabe soll bestehen aus der Zeilenanzahl gefolgt vom Dateinamen.
 Lösung:
 
 ```bash
-$ wc -l sampletextfiles/* | sort | tail -n2 | head -n1
+$ wc --lines sampletextfiles/* | head -n-1 | sort --key=1 --general-numeric-sort | tail -n1
 # -l number of lines
 ```
 
@@ -216,6 +214,8 @@ $ cut -d , -f 2 klassenkassa.csv
 # -d , ... Beistricht als delimiter (Standard: TAB)
 # -f 2 ... 2tes Feld wählen
 ```
+
+> [!2AHITS G2 05.03.2021]
 
 `grep`
 
