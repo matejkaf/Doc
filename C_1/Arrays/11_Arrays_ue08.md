@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment,array,challenge]
 ---
 
-# Mehrere Arrays
+# Arrays – Mehrere Arrays (Übungen)
 
 
 

@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment,arrays]
 ---
 
-# Sortieren
+# Arrays – Sortieren
 
 **Aufgabe:** Bei einem Radrennen soll über die erfassten Zeiten der Teilnehmer die Platzierungen ermittelt werden.
 

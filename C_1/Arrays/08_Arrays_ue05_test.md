@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment,array]
 ---
 
-# Übung – Testnoten
+# Arrays – Testnoten (Übung)
 
 Folgende Übungen bilden eine aufeinander aufbauende Aufgabenstellung.
 

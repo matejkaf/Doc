@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment,array,challenge]
 ---
 
-# Geburtstagsparadoxon (Challenge)
+# Arrays – Geburtstagsparadoxon (Challenge)
 
 **Übung (Geburtstagsparadoxon):**
 Fragestellung:  Wie wahrscheinlich ist es, dass in einer Schulklasse mit 36 Schülern zwei davon am gleichen Tag Geburtstag haben?

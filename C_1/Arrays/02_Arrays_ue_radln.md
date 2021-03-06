@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment,arrays]
 ---
 
-# Arrays (Übungen)
+# Arrays Radrennen (Übungen)
 
 **Übung (Radrennen):**
 Bei einem Zeitfahren erreicht jeder Teilnehmer eines Radrennens eine bestimmte Zeit in Minuten (die Sekunden werden als Kommawert gespeichert). $1,5$ = 1 Minute und 30 Sekunden.\\

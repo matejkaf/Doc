@@ -3,7 +3,9 @@ title: Doc
 tags: [assignment,array]
 ---
 
-# Lotto
+# Arrays – Lotto (Übung)
+
+
 
 **Übung (Lotto Tip):** Schreibe ein Programm das hilft Lotto ("6 aus 45") zu spielen.
 

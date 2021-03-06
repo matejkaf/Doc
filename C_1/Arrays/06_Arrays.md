@@ -3,7 +3,7 @@ title: Doc
 tags: [lecture,arrays]
 ---
 
-# Diverses
+# Arrays – Diverses
 
 ## Index Wertebereich
 

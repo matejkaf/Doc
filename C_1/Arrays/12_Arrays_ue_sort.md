@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment,arrays,challenge]
 ---
 
-# Sortieren (Challenge)
+# Arrays – Sortieren (Challenge)
 
 
 

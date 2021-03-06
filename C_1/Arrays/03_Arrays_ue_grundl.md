@@ -3,7 +3,7 @@ title: Doc
 tags: [assignment, arrays]
 ---
 
-
+# Arrays – Grundlagen (Übungen)
 
 **Übung (Zahlenfolgen):**
 Schreibe ein Programm das mit Hilfe je einer Schleife alle Elemente eines Arrays (`int a[30]`) mit folgenden Werten füllt:
