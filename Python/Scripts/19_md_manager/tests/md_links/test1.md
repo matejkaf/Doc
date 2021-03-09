@@ -6,7 +6,14 @@ title: Doc
 
 Nur ein bischen Text
 
-[Link](test2)
+[Lokaler Link](test2)
+
+[Relativer Link](../../../17_restful_api/apitest)
+
+
+[Kompetter Link](https://matejkaf.github.io/Doc/Python/Scripts/17_restful_api/apitest)
+
+[Absoluter Link](/Doc/Python/Scripts/17_restful_api/apitest)
 
 Ende
 
