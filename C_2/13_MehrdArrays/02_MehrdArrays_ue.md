@@ -1,12 +1,12 @@
 ---
 title: Doc
-cmds: ['md_html.bash --small']
 tags: [assignment,2AHELS,c]
 ---
 
 # Mehrdimensionale Arrays (Übungen)
 
-**Übung (Grundlagen):**
+#### Übung (Grundlagen):
+
 Lege ein zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
 
 - Schreibe durch verschachtelte Schleifen die Zahlen `10,11,12,...` zeilenweise in das Array. Es sollen alle Elemente einen Wert erhalten.
@@ -23,7 +23,8 @@ Lege ein zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
 
 ---
 
-**Übung (Grundlagen Funktionen):**
+#### Übung (Grundlagen Funktionen):
+
 Lege ein 2 dimensionales `int` Array an. Definiere Anzahl der Zeilen und Spalten als globale Konstante (`ZEILEN` und `SPALTEN`). Implementiere die folgenden Funktionen:
 
 - `input()` – Werte zeilenweise ins Array eingeben.
@@ -35,8 +36,7 @@ Lege ein 2 dimensionales `int` Array an. Definiere Anzahl der Zeilen und Spalten
 
 ---
 
-
-**Übung (Diverse Funktionen):**
+#### Übung (Diverse Funktionen):
 
 Schreibe Funktionen für:
 - Summe einer Zeile berechnen (Zeilenindex ist Parameter).
