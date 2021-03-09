@@ -6,6 +6,7 @@ title: Doc
 
 Nur ein bischen Text
 
-[Link](test2_big.html)
+[Link](test2)
 
 Ende
+
