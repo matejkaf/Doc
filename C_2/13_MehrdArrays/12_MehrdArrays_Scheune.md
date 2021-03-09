@@ -5,7 +5,7 @@ tags: [challenge,2darray]
 
 # Scheune (Challenge)
 
-> Qualifikationsbeispiel für die Österreichische Informatik Olympiade 2013
+> Qualifikationsbeispiel für die österreichische Informatik Olympiade 2013
 
 Der Jungbauer Markus möchte eine möglichst große Scheune auf seiner quadratischen Farm errichten. Als Naturliebhaber hasst er es, unnötig Bäume auf seinem Land zu fällen. Daher möchte er einen Platz für seine Scheune finden, der bereits frei von Bäumen ist. Für unseren Zweck ist sein Gebiet in N x N gleich große quadratische Grundstücksparzellen eingeteilt, auf manchen davon stehen Bäume. Du sollst die **größtmögliche quadratische Scheune** ermitteln, die auf Markus’ Farm errichtet werden kann, ohne dass Parzellen mit Bäumen verwendet werden müssen. Die Wände der Scheune müssen parallel zu den Parzellengrenzen sein.
 
