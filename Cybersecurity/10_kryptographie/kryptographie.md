@@ -91,5 +91,10 @@ Sonstige:
 
 ## Moderne Kryptographie
 
-Computerunterstützt – Daten werden so verändert, dass sie nicht mehr von zufälligen Werten unterscheidbar sind.
+Computerunterstützt – Daten werden so verändert, dass sie nicht mehr von zufälligen Werten unterscheidbar sind. 
+
+Grundidee: 
+
+- XOR mit einem pseudozufälligen Bitmuster
+- Mathematik mit großen Primzahlen
 
