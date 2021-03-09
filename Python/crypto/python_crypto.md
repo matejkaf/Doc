@@ -28,6 +28,41 @@ text_bytes = text.encode('utf-8')
 print(text_bytes)
 ```
 
+### Encoding
+
+Ein String ist eine Sequenz aus Zeichen. Diese sind z.B. im Unicode Standard festgelegt. In Unicode ist jedem Zeichen eine Nummer zugeordnet, z.B. ö ([Unicode (ö)](https://www.compart.com/en/unicode/U+00F6)) hat die Nummer (Codepoint U+00F6). Es gibt so viele unterschiedliche Zeichen, dass 16 Bit nicht genug sind, daher sind 32 Bits notwendig. Ein Encoding beschreibt wie Zeichen im Speicher abgelegt sind. Beim UTF-32 Encoding werden für jedes Zeichen 4 Byte verwendet und enthalten 1:1 den Unicode Codepoint.
+
+Auf der anderen Seite sind die meisten verwendeten Zeichen im Unicode die ASCII Code Zeichen für die 8 Bits genügen würden ([Unicode Character “a” (U+0061)](https://www.compart.com/en/unicode/U+0061)). Durch UTF-32 würden ¾ des Speichers verschwendet. UTF-8 bildet alle Zeichen mit Codepoint <128 mit nur einem Byte ab (UTF-8 ist identisch zu ASCII), Codepoins ≥128 werden durch das vorsetzen eines weiteren Bytes encoded.
+
+[Unicode Character “a” (U+0061)](https://www.compart.com/en/unicode/U+0061)
+
+UTF-8 Encoding:	0x61
+UTF-16 Encoding:	0x0061
+UTF-32 Encoding:	0x00000061
+
+[Unicode Character “ö” (U+00F6)](https://www.compart.com/en/unicode/U+00F6)
+
+UTF-8 Encoding:	0xC3 0xB6
+UTF-16 Encoding:	0x00F6
+UTF-32 Encoding:	0x000000F6
+
+Ab einem gewissen Codepoint sind für UTF-8 3 Bytes notwendig:
+
+[Unicode Character “澽” (U+6FBD)](https://www.compart.com/en/unicode/U+6FBD)
+
+UTF-8 Encoding:	0xE6 0xBE 0xBD
+UTF-16 Encoding:	0x6FBD
+UTF-32 Encoding:	0x00006FBD
+
+[Unicode Character “𖼝” (U+16F1D)](https://www.compart.com/en/unicode/U+16F1D)
+
+UTF-8 Encoding:	0xF0 0x96 0xBC 0x9D
+UTF-16 Encoding:	0xD81B 0xDF1D
+UTF-32 Encoding:	0x00016F1D
+
+
+
+
 > https://stackoverflow.com/questions/6224052/what-is-the-difference-between-a-string-and-a-byte-string:
 >
 > Assuming Python 3: a string is a sequence of characters, ie [unicode codepoints](http://en.wikipedia.org/wiki/Unicode); these are an abstract concept, and can't be directly stored on disk. A byte string is a sequence of, unsurprisingly, bytes - things that *can* be stored on disk. The mapping between them is an *encoding* - there are quite a lot of these (and infinitely many are possible) - and you need to know which applies in the particular case in order to do the conversion, since a different encoding may map the same bytes to a different string: 
@@ -60,6 +95,10 @@ print(text_bytes)
 
 
 ### hashlib + base64
+
+
+
+[REPL HashlibTest](https://repl.it/@franzmatejka/HashlibTest)
 
 ```python
 import hashlib
@@ -157,9 +196,9 @@ b'\xf8\xb4y\t\xfc\xa9\r\xec\x18\xd3\xef8U\x1c\xb3\x11>N\x17\xe5\x81\xf8\xd8{\xf6
 
 
 
-Experiment:
+**Experiment** — sha256 Hash in Base64 Format einer Datei ermitteln.
 
-sha256 Hash in Base64 Format einer Datei ermitteln.
+[REPL HashFile](https://repl.it/@franzmatejka/HashFile)
 
 ```python
 import hashlib

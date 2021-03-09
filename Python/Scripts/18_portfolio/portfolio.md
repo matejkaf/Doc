@@ -33,12 +33,18 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 - Hello! von 200.000,- auf 275.000,- (ca. +75.000,-)
     - 70% High-Risk / 30% Low-Risk (max. kumm. Verlust 45%)
     - Kontinuierliches (Quartalsweise) Rebalancing innerhalb von 2 Jahren.
-    - Auf 3 Jahre **Plus 6.000,- pro Quartal** (12x6000=72.000)
+    - Auf 3 Jahre: **Plus 6.000,- pro Quartal** (12x6000,– = 72.000,–)
 - Savity: 500 – 1.500 pro Monat
 - Einzeltitel komplett abbauen
-- Gehaltskonto: 15. des letzen Monats im Quartal Abschöpfen in ganze 1000, >10000 bleiben am Konto
-    -  ½ Savity / ½ Hello
+- Gehaltskonto: 15. des letzen Monats im Quartal Abschöpfen in ganze 1000,– >10.000,– bleiben am Konto
+  
+    -  1 Teil Savity / 1 Teil Hello / 1 Teil Fill Up Fond
+    
+## Fill Up Fond
 
+Wenn Aktienteil mehr als 20% vom Höchstand verliert zum Auffüllen.
+
+Aktueller Stand: **€ 0,–**
 
 ## Ziel Allokation
 
@@ -56,7 +62,7 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 
 ### Aufteilung High-Risk
 
-Siehe `Portfolio.numbers`
+Siehe `allocation.py`
 
 
 
