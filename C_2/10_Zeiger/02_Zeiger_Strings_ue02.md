@@ -52,8 +52,6 @@ strcspn("3+4-9*2/4", "+-*/") --> '+'
 - `strrotateright` – String um ein Zeichen nach rechts bewegen, letztes Zeichen kommt ganz nach vorne.
 - `strstrinsert` – einen String in einen anderen String an einer Indexposition einfügen.
 
----
-
 
 
 
