@@ -1,7 +1,7 @@
 ---
 title: Grundlagen UNIX shell
 subtitle: Grundlegende bash Tools
-tags: [lecture, unix, shell, bash ]
+tags: [lecture, unix, shell, bash,2AHITS_Teach ]
 ---
 
 
