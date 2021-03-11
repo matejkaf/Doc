@@ -4,8 +4,6 @@ subtitle: Allgemeines und Encoding
 tag: [lecture, unicode, UTF-8, UTF-16, latin1, ]
 ---
 
-
-
 Unicode = *Universal Coded Character Set*
 
 > **Unicode** is a computing industry standard for the consistent encoding, representation, and handling of [text](https://en.wikipedia.org/wiki/Character_(computing)) expressed in most of the world's writing systems. [[wikipedia](https://en.wikipedia.org/wiki/Unicode)]
