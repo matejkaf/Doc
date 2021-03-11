@@ -4,7 +4,7 @@ subtitle: Übungen Einstieg
 tags: [assignment,2AHELS,c]
 ---
 
-#### Übung (Grundlagen):
+#### **Übung (Grundlagen):**
 
 Lege ein zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
 
@@ -22,7 +22,7 @@ Lege ein zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
 
 ---
 
-#### Übung (Grundlagen Funktionen):
+#### **Übung (Grundlagen Funktionen):**
 
 Lege ein 2 dimensionales `int` Array an. Definiere Anzahl der Zeilen und Spalten als globale Konstante (`ZEILEN` und `SPALTEN`). Implementiere die folgenden Funktionen:
 
@@ -35,7 +35,7 @@ Lege ein 2 dimensionales `int` Array an. Definiere Anzahl der Zeilen und Spalten
 
 ---
 
-#### Übung (Diverse Funktionen):
+#### **Übung (Diverse Funktionen):**
 
 Schreibe Funktionen für:
 - Summe einer Zeile berechnen (Zeilenindex ist Parameter).
