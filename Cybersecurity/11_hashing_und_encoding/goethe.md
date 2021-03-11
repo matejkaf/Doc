@@ -1,6 +1,6 @@
 ---
 title: Doc
-tags: [2AHITS]
+tags: [2AHITS,2AHITS_Teach]
 ---
 
 
