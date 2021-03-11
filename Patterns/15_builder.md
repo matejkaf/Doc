@@ -1,11 +1,8 @@
 ---
-title: Doc
+title: Design Pattern
+subtitle: Builder
 tags: [5AHELS, lecture, patterns ]
 ---
-
-
-
-# Builder – Design Pattern
 
 - [refactoring.guru](https://refactoring.guru/design-patterns/builder)
 - [Beispiel - 8 design patterns that every developer should know](http://www.thedevpiece.com/design-patterns-that-every-developer-should-know/)

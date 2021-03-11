@@ -1,4 +1,11 @@
-# Python
+---
+title: Python
+subtitle: Übersicht zum Nachschlagen
+---
+
+
+
+
 
 ## Infos
 

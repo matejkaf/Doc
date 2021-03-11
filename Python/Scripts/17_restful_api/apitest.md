@@ -1,5 +1,6 @@
 ---
-title: Doc
+title: RESTful API
+subtitle: Flask (Python)
 tags: [5AHELS, lecture, python, flask, repl]
 ---
 

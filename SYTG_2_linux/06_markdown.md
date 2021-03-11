@@ -1,4 +1,7 @@
-# Markdown
+---
+title: Grundlagen UNIX shell
+subtitel: Markdown
+---
 
 Einfache Auszeichnungssprache (markup language) für plain-text Files. Dateiendung `.md`
 
@@ -21,7 +24,8 @@ Vorteile:
 
 Elemente von markdown: [wiki](https://de.wikipedia.org/wiki/Markdown)
 
-# Sammlung
+## Sammlung
 
+- replit.com
 - pandoc (geht unter cygwin ?)
 - Typora

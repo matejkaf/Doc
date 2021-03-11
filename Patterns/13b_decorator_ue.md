@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Design Pattern
+subtitle: Decorator Übung
 tags: [5AHELS, assignment, patterns ]
 ---
 
-# Decorator (Übung)
-
-**Übung (Pizza Service)**
+### **Übung (Pizza Service)**
 
 Ein Pizza Service bietet die folgenden Pizzen:
 

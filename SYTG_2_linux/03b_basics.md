@@ -1,6 +1,6 @@
 ---
-title: Doc
-description: Grundlegende bash Tools
+title: Grundlagen UNIX shell
+subtitle: Grundlegende bash Tools
 tags: [lecture, unix, shell, bash ]
 ---
 

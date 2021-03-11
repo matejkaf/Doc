@@ -1,6 +1,9 @@
-# Editoren
+---
+title: Grundlagen UNIX shell
+subtitel: Editoren
+---
 
-Editoren die im Terminal verwendet werden können
+Editoren die im Terminal verwendet werden können:
 
 - vi
 - vim (vi with improvements)

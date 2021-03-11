@@ -1,9 +1,8 @@
 ---
-title: Doc
+title: Design Pattern
+subtitle: Decorator
 tags: [5AHELS, lecture, patterns ]
 ---
-
-# Decorator – Design Pattern
 
 - [refactoring.guru](https://refactoring.guru/design-patterns/decorator)
 

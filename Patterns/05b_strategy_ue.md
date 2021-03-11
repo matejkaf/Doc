@@ -1,18 +1,10 @@
 ---
-title: Doc
-cmds: ['md_html.bash','md_html.bash --small']
+title: Design Pattern
+subtitle: Strategy Übung
 tags: [assignment, 5AHELS, patterns ]
 ---
 
-
-
-# Strategy – Design Pattern (Übung)
-
-
-
----
-
-**Übung (Strategy Pattern – Bankkonten**):
+### **Übung (Strategy Pattern – Bankkonten**):
 
 Eine Bank bietet Girokonto mit unterschiedlichen Konditionen an. Es gibt eine einmalig zu zahlende, jährliche Grundgebühr und einen Betrag pro Transaktion.
 
@@ -25,5 +17,3 @@ Ein Konto kann:
 - Einzahlungen
 - Auszahlungen
 - Berechnung der aktuellen Kosten
-
----

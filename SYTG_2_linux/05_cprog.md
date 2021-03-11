@@ -1,4 +1,7 @@
-# C Programmieren
+---
+title: Grundlagen UNIX shell
+subtitel: C Programmieren
+---
 
 ## Cygwin
 
@@ -22,7 +25,7 @@ $ apt install build-essential
 
 
 
-# Compilieren und starten
+## Compilieren und starten
 
 Installation testen:
 
@@ -52,7 +55,7 @@ $ ./hello
 
 
 
-# C Programm in der shell
+## C Programm in der shell
 
 stdin / stdout
 

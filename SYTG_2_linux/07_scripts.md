@@ -1,10 +1,13 @@
-# Allgemein
+---
+title: Grundlagen UNIX shell
+subtitel: Shell Scripts
+---
 
 Shell Scripts sind kleine Programme die durch die shell selbst ausgeführt werden. Diese sind Textdateien und enthalten shell Kommandos.
 
 Ein shell script kann jedes shell Kommando enthalten. Umgekehrt kann jeder Teil eines Scripts auch direkt in der shell ausgeführt werden.
 
-# Hello World Script
+## Hello World Script
 
 
 Erstellen eines einfachen shell scripts
@@ -39,9 +42,9 @@ Kommentare
 echo Hello World
 ```
 
-# Variablen
+## Variablen
 
-## special Variables
+### special Variables
 
 Command line arguments (`$1`, `$2`)
 
@@ -68,7 +71,7 @@ sampledir=/etc
 ls $sampledir
 ```
 
-# Quotes
+## Quotes
 
 Leerzeichen dienen oft als Trenner zwischen mehreren Teilen eines Kommandos.
 Daher Variablenwerte mit Hochkomma definieren wenn diese Leerzeichen enthalten
@@ -106,7 +109,7 @@ echo ${name}_001
 
 
 
-# Command substitution
+## Command substitution
 
 Die Ausgabe eines Kommandos kann als Wert für eine Variable verwendet werden.
 
@@ -125,7 +128,7 @@ echo There are $myvar entries in the directory $mydir
 [Look at](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php#activities)
 
 
-# User input - read
+## User input - read
 
 ```bash
 echo Hello, who am I talking to?
@@ -146,7 +149,7 @@ echo Thankyou $uservar we now have your login details
 
 
 
-# Arithmetic
+## Arithmetic
 
 [Bash Scripting Tutorial - 4. ArithmeticTutorial Sections ](https://ryanstutorials.net/bash-scripting-tutorial/bash-arithmetic.php)
 
@@ -182,7 +185,7 @@ Aufgabe:
 - Skript das zufällige Zahlen erzeugt (`$RANDOM`)
 
 
-# test Kommando
+## test Kommando
 
 Zeigt im exit status (`$?`) das Ergebnis von Vergleichen. Grundlage für if Anweisungen in scripts.
 
@@ -231,7 +234,7 @@ Aufgaben:
 
 
 
-# if statement
+## if statement
 
 [Bash Scripting Tutorial - 5. If Statements](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
 
@@ -292,11 +295,11 @@ Aufgaben:
 
 
 
-# Schleifen
+## Schleifen
 
 [Bash Scripting Tutorial - 6. Loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
 
-## while
+### while
 
 ```bash
 #!/bin/bash
@@ -310,7 +313,7 @@ done
 echo All done
 ```
 
-## for
+### for
 
 Listen – Text mit Leerzeichen getrennt
 
