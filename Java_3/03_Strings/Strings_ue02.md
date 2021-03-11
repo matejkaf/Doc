@@ -1,14 +1,11 @@
 ---
-title: Doc
-cmds: ['md_html.bash --small']
+title: Strings
+subtitle: Übungen
 tags: [assignment]
 ---
 
-# Strings (Übungen)
+#### **Übung (substring):**
 
-
-
-**Übung (substring):**
 Schreibe eine (`static`) Methode mit der gleichen Funktionalität wie `substring`. Hinweis: Verwende `charAt` und den `+` Operator, siehe folgendes Beispiel:
 
 ```java
@@ -22,7 +19,8 @@ r=r+s.charAt(3);
 
 ---
 
-**Übung (Zähler):**
+#### **Übung (Zähler):**
+
 Mit Hilfe einer Klasse `Zaehler` soll Anzahl, Mengentext und Bezeichnung verwaltet werden.
 
 Beispiele: 
@@ -53,7 +51,3 @@ Erweitere so, dass Einzahl/Mehrzahl korrekt behandelt wird.
 `1 Sack Kartoffeln` vs. `7 Säcke Kartoffeln`
 
 Hinweis: Verwende 2 Variablen – `mengentextEinzahl`, `mengentextMerzahl`.
-
----
-
-

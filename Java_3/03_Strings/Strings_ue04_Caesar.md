@@ -1,10 +1,9 @@
 ---
-title: Doc
+title: Strings
+subtitle: Übung Caesar Cipher
 cmds: ['md_html.bash --small']
 tags: [assignment]
 ---
-
-# Caesar Cipher (Übung)
 
 Julius Caesar (100 -- 44 v.Chr.) verwendete ein sehr einfaches Verfahren um militärische Botschaften zu übermitteln. 
 
@@ -28,14 +27,16 @@ Geheimtext: C D E ... Z A B
 
 ---
 
-**Übung (Verschlüsseln):**
+#### **Übung (Verschlüsseln):**
+
 Verschlüssele (per Hand) den Text `rueckzug` nach Caesar mit dem Schlüssel C.
 
 
 
 ---
 
-**Übung (Caesar Verschlüsseln):**
+#### **Übung (Caesar Verschlüsseln):**
+
 Schreibe eine Klasse `Caesar` die Verschlüsselung nach dem Caesar Verfahren unterstützt.
 Die Klasse soll den String im Klartext und Geheimtext enthalten.
 Implementiere folgende Methoden:
@@ -81,7 +82,8 @@ Hilfreich sind auch die Klassenmethoden `Character.toLowerCase(char c)` und `Cha
 
 ---
 
-**Übung (Caesar Entschlüsselung):**
+#### **Übung (Caesar Entschlüsselung):**
+
 Erweitere die Klasse `Caesar` aus Übung  so, dass auch ein Text entschlüsselt werden kann. 
 Implementiere die Methoden:
 
@@ -96,7 +98,8 @@ Ergänze das Hauptprogramm entsprechend.
 
 ---
 
-**Übung (Caesar Knacken):**
+#### **Übung (Caesar Knacken):**
+
 Die Klasse `Caesar` aus Übung  soll nun auch eine nach Caesar verschlüsselte Nachricht knacken können. Schreibe eine Methode `deciffer()` die für den Geheimtext alle 26 möglichen Klartexte ausgibt.  Finde heraus von wem der folgende, verschlüsselte Ausspruch stammt.
 
 ```
