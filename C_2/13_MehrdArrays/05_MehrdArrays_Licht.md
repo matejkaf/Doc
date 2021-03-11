@@ -6,7 +6,7 @@ tags: [assignment,c]
 
 
 
-#### Übung (Licht Reflexion):
+#### **Übung (Licht Reflexion):**
 
 Schreibe ein Programm das die Reflexion eines schrägen Lichtstrahls verfolgt.
 Der Lichtstrahl beginnt an einem eingebbaren Spalten-Index in der obersten Zeile und geht schräg nach rechts unten. An jeder Grenze wird der Strahl im Winkel von 45 Grad reflektiert.
@@ -61,7 +61,7 @@ Die Verfolgung des Lichtstrahls wird in der obersten Zeile wieder gestoppt.
 
 ---
 
-#### Übung (Licht Reflexion II):
+#### **Übung (Licht Reflexion II):**
 
 Erweitere so, dass die Anzahl der Reflexionen einstellbar ist.
 
@@ -69,6 +69,6 @@ Erweitere so, dass die Anzahl der Reflexionen einstellbar ist.
 
 ---
 
-#### Übung (Licht Reflexion III):
+#### **Übung (Licht Reflexion III):**
 
 Experimentiere mit größeren Arrays (einstellbar über globale Konstanten).

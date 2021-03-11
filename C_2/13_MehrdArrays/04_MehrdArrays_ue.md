@@ -102,7 +102,7 @@ o o o o o X
 
 ---
 
-#### Übung (Diagonalen):
+#### **Übung (Diagonalen):**
 
 Schreibe Funktionen für:
 - Summe der Hauptdiagonale.
