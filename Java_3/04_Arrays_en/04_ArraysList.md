@@ -1,10 +1,7 @@
 ---
-title: Doc
-description: 
+title: Dynamic arrays in Java
 tags: [lecture,java, array]
 ---
-
-# Dynamic arrays in Java
 
 With class `ArrayList` (Java library)
 
@@ -95,11 +92,12 @@ Which calls the ArrayLists `toString` Method.
 
 
 
-# Dynamic Arrays – Exercises
+## Dynamic Arrays – Exercises
 
 
 
-**Exercise (Count words):**
+#### **Exercise (Count words):**
+
 Write a program to count word occurences. The program lets the user enter words and counts how often each word is entered. The program shall support an arbitrary amount of different words. At program start the number of different words is not known.
 
 If the user enters `"END"` the program stops and prints out:
@@ -115,7 +113,8 @@ Use a class `Word` which stores the word as `String` and the count as `int`. Sto
 
 ---
 
-**Exercise (Count words in sorted order):**
+#### **Exercise (Count words in sorted order):**
+
 Extend the last exercise: Sort the list. Hint 1: Use bubblesort for sorting. Hint 2: Read about the `compareTo` method of `String`.
 
 - 

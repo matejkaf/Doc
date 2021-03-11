@@ -1,10 +1,9 @@
 ---
-title: Doc
+title: Arrays
+subtitle: Übungen Static Array
 cmds: ['md_html.bash --small']
 tags: [assignment]
 ---
-
-# Übungen – Static Array
 
 In dieser Aufgabenstellung ist eine Klasse zu implementieren die Daten in einem Array verwalten kann. Ähnlich wie bei der Standard Klasse `ArrayList` sollen die Array Elemente über eine `get` und eine `set` Methode zugreifbar sein. Anders als bei der Klasse `ArrayList` ist das durch diese Klasse verwaltete Array nicht ein dynamisches sondern ein statisches Array einer fixen Größe, es kann daher nicht beliebig groß werden. 
 
@@ -12,7 +11,7 @@ In dieser Aufgabenstellung ist eine Klasse zu implementieren die Daten in einem 
 
 ---
 
-**Übung (StaticArray):**
+#### **Übung (StaticArray):**
 
 Implementiere:
 
@@ -29,8 +28,7 @@ Zugriffe mit ungültigen Indizes sollen ignoriert werden.
 
 ---
 
-
-**Übung (StaticArray Erweiterungen):**
+#### **Übung (StaticArray Erweiterungen):**
 
 Erweitere durch:
 
@@ -108,7 +106,8 @@ Test<Integer> test = new Test<Integer>(Integer.class, 7);
 
 ---
 
-**Übung (Generic StaticArray):**
+#### **Übung (Generic StaticArray):**
+
 Erweitere die Klasse `StaticArray` mittels Generics so, dass Arrays beliebiger Datentypen verwaltet werden können.
 
 Teste mit den Klassen:
@@ -121,7 +120,8 @@ Teste mit den Klassen:
 
 ---
 
-**Übung (Generic StaticArray):**
+#### **Übung (Generic StaticArray):**
+
 Erweitere durch:
 
 - 
@@ -129,6 +129,3 @@ eine Methode `slice` die ein Teil Array (definiert durch Start und End-Index zur
 - 
 eine Methode `add` die als Parameter ein `StaticArray` Objekt erhält und ein neues `StaticArray` Objekt erzeugt das die Daten des lokalen und des als Parameter übergebenen Objekts enthält.  Rückgabewert ist `StaticArray`.
 - eine Methode `find` die einen Wert im Array sucht. Rückgabewert ist der Index, bzw. $-1$ falls nicht gefunden.
-
-
----

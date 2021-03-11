@@ -1,12 +1,10 @@
 ---
-title: Doc
-description: 
+title: Arrays
 tags: [lecture,java, array, 3BHELS]
 ---
 
 > The important thing is not to stop questioning. –Albert Einstein
 
-# Arrays in Java
 Two step process:
 
 
@@ -50,7 +48,7 @@ System.out.println(Arrays.toString(values) );
 
 
 
-# Access the Array
+## Access the Array
 
 Use index:
 ```java
@@ -65,7 +63,7 @@ int len = values.length;
 
 
 
-# Watch your index!
+## Watch your index!
 Common programming error:
 ```java
 int[] values = {1,2,3,4};
@@ -92,7 +90,8 @@ Distinguish: Compile time error – Run time error
 
 ---
 
-**Assignment (Create Array):**
+#### **Assignment (Create Array):**
+
 Write a program that fills an `int` Array (size entered by user) with the values `1,2,4,8,16,...`.
 
 ---
@@ -101,7 +100,7 @@ Write a program that fills an `int` Array (size entered by user) with the values
 
 
 
-# Arrays and Methods
+## Arrays and Methods
 
 
 Arrays may be passed to methods as **parameters**.
@@ -125,7 +124,7 @@ Changes of array values within the method modifies the original array.
 
 ---
 
-**Assignment (Rectangular frame):**
+#### **Assignment (Rectangular frame):**
 
 Write a method that takes an array of strings and prints them, one per line, in a rectangular frame. For example the array `"Hello World", "in", "a", "frame"` gets printed as:
 
@@ -142,7 +141,8 @@ Write a method that takes an array of strings and prints them, one per line, in 
 
 ---
 
-**Assignment (Reverse – in place):**
+#### **Assignment (Reverse – in place):**
+
 Implement a `static` method which gets an `int` Array as a parameter and returns `void`. The array passed to the method should be reversed "in place", which means no new array should be allocated to store the reversed array. Instead implement by swapping 2 array elements at a time.
 
 - Implement as explained.
@@ -153,7 +153,7 @@ Implement a `static` method which gets an `int` Array as a parameter and returns
 
 
 
-# Arrays as return value of methods
+## Arrays as return value of methods
 An array may be **returned** by a method. Strictly speaking: a reference (memory address) is returned.
 
 Example:
@@ -176,7 +176,8 @@ a = methodName();
 
 ---
 
-**Assignment (Reverse):**
+#### **Assignment (Reverse):**
+
 Write a `static` method that takes an `int` array as parameter and returns a new array in reversed order. The array passed to the method must not be modified!
 
 - Implement as explained.
