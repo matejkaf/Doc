@@ -1,4 +1,11 @@
-# grep
+---
+title: Grundlagen UNIX shell
+subtitel: grep sed und Regular Expressions
+---
+
+
+
+## grep
 
 Zeigt Zeilen die einen Text enthalten.
 
@@ -19,7 +26,7 @@ ifconfig | grep inet
 
 
 
-# sed
+## sed
 
 stream editor, zum Ersetzen und Entfernen von Text
 
@@ -100,7 +107,7 @@ $ echo 'this troubles me' | sed  "s/\b\(.\)/\u\1/g"
 
 
 
-# Regular Expressions
+## Regular Expressions
 
 = Erweiterte Suche
 
@@ -215,7 +222,7 @@ aa bb aaaa
 
 
 
-# ERE
+## ERE
 
 Extended Regular Expressions. Mit Option `-E` bei `sed` und `grep`.
 
@@ -251,7 +258,7 @@ $ echo 'Ajfhl1234' | sed -E 's/^(A|B)[a-z]*([0-9]+)$/\2/'
 
 
 
-# Anhang
+## Anhang
 
 [Online Tester](https://regex101.com)
 
@@ -263,7 +270,7 @@ $ echo 'Ajfhl1234' | sed -E 's/^(A|B)[a-z]*([0-9]+)$/\2/'
 
 [.NET Regular Expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions?view=netframework-4.8)
 
-# Aufgaben
+## Aufgaben
 
 - [Coding Game](https://www.codingame.com/playgrounds/218/regular-expressions-basics/introduction)
 - Datum re-formatieren von `MM/TT/YYYY` auf `TT.MM.YYYY`. `01/12/2020`-> `12.01.2020`
