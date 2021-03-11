@@ -27,7 +27,7 @@ nano ist leicht zu erlernen und zu bedienen und reicht für einfache Aufgaben au
 
 (Hinweis: cygwin – Standard vi)
 
-Bedienungsbasics
+### Bedienungsbasics
 
 2 Modi
 
@@ -56,6 +56,8 @@ Leichter bedienbar als vi. Muss manchmal nachinstalliert werden.
 
 Bedienung selbsterklärend.
 
+Ausprobieren in [JSLinux](https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) oder cygwin. In replit.com nicht unterstützt.
+
 
 
 ## Visual Studio Code
@@ -64,7 +66,7 @@ Installieren unter Windows: [User Installer](https://code.visualstudio.com/downl
 
 Verwenden von cygwin als integrierte Shell: [VS Code - Cygwin as Integrated Terminal](https://stackoverflow.com/questions/46061894/vs-code-cygwin-as-integrated-terminal)
 
-Strg-, für Settings
+`Strg-`, für Settings
 
 
 
