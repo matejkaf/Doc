@@ -1,6 +1,5 @@
 ---
 title: Zeiger und Strings (Übungen)
-description: just a test
 tags: [assignment,2AHELS,c,pointer,strings,intro]
 ---
 

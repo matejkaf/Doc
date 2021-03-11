@@ -16,7 +16,7 @@ Default theme auswählen: [Step 5 - Selected a Github pages default theme](https
 
 
 
-
+`title` und `description` wird übernommen.
 
 
 
