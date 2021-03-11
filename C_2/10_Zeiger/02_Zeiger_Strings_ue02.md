@@ -1,9 +1,8 @@
 ---
-title: Zeiger und Strings (Übungen)
+title: Zeiger und Strings
+subtitle: Allgemeine Übungen
 tags: [assignment,2AHELS,c,pointer,strings,intro]
 ---
-
-# Zeiger und Strings (Übungen)
 
 **Übung (Umgekehrt ausgeben):**
 
