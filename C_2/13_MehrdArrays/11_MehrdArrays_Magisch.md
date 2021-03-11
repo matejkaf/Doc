@@ -1,13 +1,13 @@
 ---
-title: Magisches Quadrat
+title: Mehrdimensionale Arrays
+subtitle: Magisches Quadrat
 cmds: ['md_html.bash --small']
 tags: [assignment,c]
 ---
 
 
 
-
-**Übung (Magisches Quadrat):**
+#### **Übung (Magisches Quadrat):**
 
 Unter einem Magischen Quadrat der Kantenlänge $n$ befinden sich Zahlen $1,2,3,\ldots,n^2$ (jede nur einmal). Die Summen der Zeilen, Spalten, Haupt- und Nebendiagonalen sind gleich. 
 
@@ -29,7 +29,7 @@ Aufgabenstellung:
 
 ---
 
-**Übung (Ein Magisches Quadrat erzeugen):**
+#### **Übung (Ein Magisches Quadrat erzeugen):**
 
 - Lege ein Array mit $0$ Werten an (Kantenlänge ist Konstante `N`).
 Die Kantenlänge muss ungerade sein!

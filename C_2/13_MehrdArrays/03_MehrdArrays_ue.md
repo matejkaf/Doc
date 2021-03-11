@@ -28,3 +28,4 @@ int sum_z[ZEILEN];	// Zeilensummen
 #### **Übung (Spaltensumme in Array):**
 
 Wie Übung vorher aber Funktion für die Spaltensummen.
+

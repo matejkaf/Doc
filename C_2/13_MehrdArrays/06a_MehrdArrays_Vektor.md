@@ -26,7 +26,7 @@ Um Drehungen, Verkleinerung und Vergrößerung umzusetzen werden Matrizen verwen
 
 ---
 
-#### Übung (Matrizenrechnung):
+#### **Übung (Matrizenrechnung):**
 
 Lege eine $$3\times 3$$  Matrix aus `int` Elementen an und schreibe folgende Funktionen:
 
