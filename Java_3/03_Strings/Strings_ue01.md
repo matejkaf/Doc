@@ -6,7 +6,7 @@ tags: [assignment,java,strings,3BHELS]
 
 #### **Übung (toUpper):**
 
-Schreibe eine `static` Methode `toUpper` mit der ein beliebiges Wort in einem beliebigen Text auf Großbuchstaben geändert werden kann. Der geändere String ist der Rückgabewert.
+Schreibe eine `static` Methode `toUpper` mit der ein beliebiges Wort in einem beliebigen Text auf Großbuchstaben geändert werden kann. Der geänderte String ist der Rückgabewert.
 
 Anwendung:
 
@@ -88,4 +88,3 @@ String s="<p>...<img>...</img>...</p>";
 s=...; // <P>...<IMG>...</IMG>...</P>
 ```
 
----

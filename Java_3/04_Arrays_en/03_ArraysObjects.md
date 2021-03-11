@@ -95,16 +95,4 @@ For this implement a class  `Window`. This class manages the position (x,y) and 
 
 Imagine a funny GUI with circular windows.
 
----
-
-
-
-
-
-
-
-
-
-
-
 
