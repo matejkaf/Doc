@@ -2,7 +2,6 @@
 title: CPU / Prozessor
 description: Grundlegende Arbeitsweise einer CPU
 cmds: ['md_html.bash']
-tags : [hw]
 tags: [lecture]
 ---
 

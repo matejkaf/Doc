@@ -1,7 +1,7 @@
 ---
 title: Doc
 description: Gegenüberstellung unterschiedlicher Systeme. Prozessoren. Zukünftige Entwicklung.
-tags: [lecture, 2AHITS]
+tags: [lecture, 2AHITS_Teach]
 ---
 
 # Systemvergleich

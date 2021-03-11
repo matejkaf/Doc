@@ -1,7 +1,7 @@
 ---
 title: Doc
 description: Arten von Speicher. SDRAM
-tags: [lecture, 2AHITS]
+tags: [lecture, 2AHITS_Teach]
 ---
 
 # Speicher

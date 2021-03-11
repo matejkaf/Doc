@@ -1,7 +1,7 @@
 ---
 title: Doc
 description: Cache
-tags: [lecture, 2AHITS]
+tags: [lecture, 2AHITS_Teach]
 ---
 
 # Speicher Architektur – Cache

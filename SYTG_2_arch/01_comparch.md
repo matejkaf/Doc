@@ -1,8 +1,6 @@
 ---
 title: Computerarchitektur Hardware
 description: Klassifikation von Computern. Von Neumann Architektur. Grundlagen zu Speicher und Bus.
-cmds: ['md_html.bash']
-tags : [hw]
 tags: [lecture]
 ---
 
