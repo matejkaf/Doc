@@ -1,15 +1,14 @@
 ---
-title: Doc
-tags: [assignment,array]
+title: Arrays
+subtitle: Übung Testnoten
+tags: [assignment,array,1CHELS]
 ---
-
-# Arrays – Testnoten (Übung)
 
 Folgende Übungen bilden eine aufeinander aufbauende Aufgabenstellung.
 
 ---
 
-**Übung (Testnoten):**
+#### **Übung (Testnoten):**
 
 Schreibe ein Programm das ein Testergebnis analysieren kann.
 
@@ -28,7 +27,9 @@ Erstelle ein Programmgrundgerüst mit obigen Programmzeilen.
 
 ---
 
-**Übung (Anzahl ermitteln):** Schreibe eine Funktion die die Anzahl einer bestimmten Note ermittelt.
+#### **Übung (Anzahl ermitteln):** 
+
+Schreibe eine Funktion die die Anzahl einer bestimmten Note ermittelt.
 
 Anwendungsbeispiel:
 ```c
@@ -42,10 +43,11 @@ In `anzahl[0]` soll die Anzahl der 1er, in `anzahl[1]` die Anzahl der 2er, usw. 
 
 ---
 
+#### **Übung (Prozent ermitteln):**
 
-**Übung (Prozent ermitteln):**
 Schreibe eine Funktion die aufgrund der Anzahl der Noten und der Gesamtzahl der Schüler alle Prozentzahlen ermittelt und in das Array `prozent` schreibt.
 Die Funktion soll so aufgerufen werden:
+
 ```c
 rechne_prozent(anzahl, schueler, prozent); 
 ```
@@ -54,7 +56,9 @@ Dabei soll in `prozent[0]` der Prozentanteil der Schüler mit 1er, in `prozent[1
 
 
 ---
-**Übung (Ausgabe):** Schreibe eine Funktion die das Ergebnis ausgibt. Der Aufruf soll so aussehen:
+#### **Übung (Ausgabe):** 
+
+Schreibe eine Funktion die das Ergebnis ausgibt. Der Aufruf soll so aussehen:
 
 ```c
 print(noten, schueler, anzahl, prozent);
@@ -72,11 +76,14 @@ nicht genügend 	& 3 & 17.7\% \\
 ```
 
 ---
-**Übung (Eingabemöglichkeit):**
+#### **Übung (Eingabemöglichkeit):**
+
 Erweiterung: Die Noten können eingegeben werden. Abschluss durch Eingabe von 0. Es können maximal 36 Noten eingegeben werden. Eine Eingabe von ungültigen Noten ist zu verhindern.
 
 ---
-**Übung (Balkendiagramm):** Stelle die Notenanteile in einem horizontalen Balkendiagramm dar.
+#### **Übung (Balkendiagramm):** 
+
+Stelle die Notenanteile in einem horizontalen Balkendiagramm dar.
 
 ```
 1er *******
@@ -85,6 +92,4 @@ Erweiterung: Die Noten können eingegeben werden. Abschluss durch Eingabe von 0.
 4er ****
 5er *
 ```
-
----
 

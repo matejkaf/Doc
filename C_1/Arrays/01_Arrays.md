@@ -1,9 +1,8 @@
 ---
-title: Doc
-tags: [lecture,arrays]
+title: Arrays
+subtitle: Grundlagen
+tags: [lecture,arrays,1CHELS]
 ---
-
-# Arrays – Grundlagen
 
 Arrays dienen zum Speichern einer größeren Anzahl von Variablen.
 

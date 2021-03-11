@@ -1,6 +1,6 @@
 ---
 title: Doc
-tags: [lecture,arrays]
+tags: [lecture,arrays,1CHELS]
 ---
 
 # Arrays – Diverses

@@ -1,10 +1,8 @@
 ---
-title: Doc
-tags: [lecture,arrays]
+title: Arrays
+subtitle: Funktionen
+tags: [lecture,arrays,1CHELS]
 ---
-
-
-# Arrays – Funktionen
 
 
 Arrays können an Funktionen übergeben werden.
@@ -107,10 +105,6 @@ int tuwas(int c[], int b);
 	c[1]++;
 	b++;
 }
-```
-
-```
-8 10 11
 ```
 
 

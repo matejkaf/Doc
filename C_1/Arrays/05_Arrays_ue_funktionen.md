@@ -1,11 +1,10 @@
 ---
-title: Doc
-tags: [assignment, arrays]
+title: Arrays
+subtitle: Übungen Funktionen
+tags: [assignment, arrays,1CHELS]
 ---
 
-# Arrays – Funktionen (Übungen)
-
-**Übung (Basics):**
+#### **Übung (Basics):**
 
 Es ist ein Array aus 5 `int` Elementen anzulegen.
 Schreibe und teste die Funktionen:
@@ -27,7 +26,7 @@ Schreibe zur Lösung jeder der folgenden Aufgaben eine Funktion. In diesen Funkt
 
 
 ---
-**Übung (Einige Zahlenfolgen):**
+#### **Übung (Einige Zahlenfolgen):**
 
 Schreibe ein Programm das mit Hilfe einer Schleife alle Elemente eines Arrays (`int a[30]`) mit vorgegebenen Werten füllt und dann das Array ausgibt. Implementiere für jede Zahlenfolge eine eigene Funktion (`folgea` – `folged`). **Einschränkung:** Es darf innerhalb der Funktionen nur **eine einzige** lokale Variable (als Schleifen-Laufvariable) definiert werden! 
 
@@ -54,7 +53,7 @@ output(a);
 
 ---
 
-**Übung (Einige Zahlenfolgen):**
+#### **Übung (Einige Zahlenfolgen):**
 
 Schreibe ein Programm das mit Hilfe einer Schleife alle Elemente eines Arrays (`int a[30]`) mit vorgegebenen Werten füllt und dann das Array ausgibt. Implementiere für jede Zahlenfolge eine eigene Funktion (`folgec` bis `folgef`). **Einschränkung:** Es darf innerhalb der Funktionen nur **eine einzige** lokale Variable (als Schleifen-Laufvariable) definiert werden! 
 
@@ -78,7 +77,7 @@ Folge e bis f:
 
 ---
 
-**Übung (Einige Zahlenfolgen):**
+#### **Übung (Einige Zahlenfolgen):**
 
 Schreibe ein Programm das mit Hilfe einer Schleife alle Elemente eines Arrays (`int a[30]`) mit vorgegebenen Werten füllt und dann das Array ausgibt. Implementiere für jede Zahlenfolge eine eigene Funktion (`folgec` bis `folgef`). **Einschränkung:** Es darf innerhalb der Funktionen nur **eine einzige** lokale Variable (als Schleifen-Laufvariable) definiert werden! 
 
@@ -97,8 +96,5 @@ void folgeg(int a[])
 Folge g:
 
 - `0, 1, 1, 2, 3, 5, 8, 13, 21, ...`
-
-
----
 
 
