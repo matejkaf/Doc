@@ -1,9 +1,10 @@
 ---
-title: Doc
+title: Arrays
+subtitle: Diverses
 tags: [lecture,arrays,1CHELS]
 ---
 
-# Arrays – Diverses
+
 
 ## Index Wertebereich
 

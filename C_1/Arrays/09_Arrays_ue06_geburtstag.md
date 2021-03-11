@@ -1,11 +1,11 @@
 ---
-title: Doc
+title: Arrays
+subtitle: Challenge Geburtstagsparadoxon
 tags: [assignment,array,challenge]
 ---
 
-# Arrays – Geburtstagsparadoxon (Challenge)
+### **Übung (Geburtstagsparadoxon):**
 
-**Übung (Geburtstagsparadoxon):**
 Fragestellung:  Wie wahrscheinlich ist es, dass in einer Schulklasse mit 36 Schülern zwei davon am gleichen Tag Geburtstag haben?
 
 Anleitung:
@@ -31,7 +31,6 @@ Von 200 Versuchen waren 50 erfolgreich (d.h. gemeinsame Geburtstage), daraus fol
 
 ---
 
-**Übung (Geburtstagsparadoxon):** Die Fragestellung ist ähnlich zu Übung .
-Wie viele Personen muss man nehmen damit jeder mögliche Geburtstag mindestens einmal vorhanden ist?
+### **Übung (Geburtstagsparadoxon):** 
 
----
+Die Fragestellung ist ähnlich zur vorhergehenden Übung. Wie viele Personen muss man nehmen damit jeder mögliche Geburtstag mindestens einmal vorhanden ist?

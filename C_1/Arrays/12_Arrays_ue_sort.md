@@ -1,11 +1,9 @@
 ---
-title: Doc
+title: Arrays
+subtitle: Challenge Sortieren
+description: Selection Sort Algorithmus
 tags: [assignment,arrays,challenge]
 ---
-
-# Arrays – Sortieren (Challenge)
-
-
 
 ## Selection Sort
 
@@ -18,15 +16,15 @@ Selection-Sort ist ungefähr **doppelt so schnell wie Bubble-Sort**.
 
 ---
 
-**Übung (Selection-Sort):**
+#### **Übung (Selection-Sort):**
+
 Implementiere Selection-Sort in einer Funktion.
 
 
 
 ---
 
-
-**Übung (Radrennen Deluxe):**
+#### **Übung (Radrennen Deluxe):**
 
 Schreibe ein Programm das mit Hilfe eines Menüs das Erfassen und Auswerten der bei einem Radrennen erreichten Zeiten erlaubt. Das Menü soll so aussehen:
 
