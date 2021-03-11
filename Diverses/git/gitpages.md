@@ -4,13 +4,17 @@
 
 Jekyll
 
-Try: [How to customize your github pages blog layout in five minutes](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
 
 
+## Eigene Layout Einstellungen
 
 Default theme auswählen: [Step 5 - Selected a Github pages default theme](https://aregsar.com/blog/2019/how-to-setup-a-github-pages-blog-in-five-minutes/)
 
 `Cayman` ausgewählt. `git pull` für `_config.yml`
+
+[How to customize your github pages blog layout in five minutes](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
+
+
 
 
 
