@@ -1,14 +1,8 @@
 ---
-title: Doc
-description: 
-cmds: ['md_html.bash','md_html.bash --small']
+title: Arrays
+subtitle: for-each loop
 tags: [lecture,java, array]
 ---
-
-
-
-
-# for-each loop
 
 Frequently: process all array elements.
 
