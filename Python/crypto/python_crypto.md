@@ -81,7 +81,7 @@ UTF-32 Encoding:	0x00016F1D
 
 
 
-Siehe [Unicode](/Diverses/Unicode/unicode.md) für mehr Details
+Siehe [Unicode](/Diverses/Unicode/unicode) für mehr Details
 
 ## Standard Libraries
 
