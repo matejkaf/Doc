@@ -4,8 +4,6 @@ subtitle: Übung Lichtreflexion
 tags: [assignment,c]
 ---
 
-
-
 #### **Übung (Licht Reflexion):**
 
 Schreibe ein Programm das die Reflexion eines schrägen Lichtstrahls verfolgt.
