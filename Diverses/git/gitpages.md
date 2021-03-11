@@ -1,8 +1,31 @@
 # Github Pages
 
-## Allgemeines
+[Markdown Guide GitHub Pages](https://www.markdownguide.org/tools/github-pages/)
+
+Jekyll
+
+Try: [How to customize your github pages blog layout in five minutes](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
+
+
+
+Default theme auswählen: [Step 5 - Selected a Github pages default theme](https://aregsar.com/blog/2019/how-to-setup-a-github-pages-blog-in-five-minutes/)
+
+`Cayman` ausgewählt. `git pull` für `_config.yml`
+
+
+
+
+
+## Links
 
 - [Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) enthält Informationen zu Links
+
+```markdown
+[Lokaler Link](test2)
+[Relativer Link](../../../17_restful_api/apitest)
+[Kompletter Link](https://matejkaf.github.io/Doc/Python/Scripts/17_restful_api/apitest)
+[Absoluter Link](/Doc/Python/Scripts/17_restful_api/apitest)
+```
 
 
 
