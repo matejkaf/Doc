@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Funktionen
+subtitle: Übungen
 tags: [1AHITS, assignment, c, funktionen ]
 ---
 
-# Funktionen (Übungen)
-
-**Übung (Hallo Welt):**
+#### **Übung (Hallo Welt):**
 
 - Schreibe eine Funktion mit dem Namen `hallo` die "Hallo Welt" ausgibt
 
@@ -29,7 +28,8 @@ tags: [1AHITS, assignment, c, funktionen ]
 
 ---
 
-**Übung (Zahlenfolge in Funktion):**
+#### **Übung (Zahlenfolge in Funktion):**
+
 Schreibe eine Funktion die, mit Hilfe einer Schleife, folgende Zahlenfolge ausgibt:
 
 `2,5,8,11,14,17,`
@@ -40,7 +40,7 @@ Die Zahlen sollen hintereinander durch Beistriche getrennt ausgegeben werden. Ru
 
 ---
 
-**Übung (Rechteck):**
+#### **Übung (Rechteck):**
 
 Es soll folgende Figur (ausgefülltes Rechteck) ausgeben werden.
 
@@ -66,7 +66,8 @@ Hinweis: Diese Funktionen sind in geeigneter Reihenfolge und Anzahl aufzurufen.
 
 ---
 
-**Übung (Rechteck II):**
+#### **Übung (Rechteck II):**
+
 Erweitere das Programm aus voriger Übung:
 
 - Die Höhe des Rechtecks soll durch eine Eingabe bestimmt werden.
@@ -77,14 +78,16 @@ Hinweis: Verwende eine Schleife um die Funktion `innen` mehrfach aufzurufen – 
 
 ---
 
-**Übung (Zahlenfolge in Funktion II):**
+#### **Übung (Zahlenfolge in Funktion II):**
+
 Schreibe eine Funktion die, mit Hilfe einer Schleife, die Zahlenfolge `42,42,41,39,36,32,27,` (hintereinander in einer Zeile) ausgibt. Die Zahlenfolge soll zusätzlich 10 Mal untereinander wiederholt ausgegeben werden.  Die Wiederholung soll durch eine Schleife im Hauptprogramm implementiert werden.
 
 
 
 ---
 
-**Übung (Zahlenfolge in Funktion III):**
+#### **Übung (Zahlenfolge in Funktion III):**
+
 Schreibe eine Funktion die, mit Hilfe einer Schleife, die folgende Zahlenfolge in einer Zeile ausgibt:
 
 `1,2,4,5,7,8,10,11,13,14`

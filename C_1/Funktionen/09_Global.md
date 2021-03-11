@@ -1,10 +1,10 @@
 ---
-title: Doc
-description: Einführung in Funktionen in C
+title: Funktionen
+subtitle: Globale Variable
 tags: [lecture, c, funktionen ]
 ---
 
-# Globale Variable
+
 
 Variablen können außerhalb einer Funktion – am Beginn der Datei – definiert werden, diese sind dann **globale Variablen**. Alle Funktionen teilen sich diese Variablen.
 

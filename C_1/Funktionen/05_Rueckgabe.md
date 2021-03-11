@@ -1,12 +1,12 @@
 ---
-title: Doc
-description: Einführung in Funktionen in C
+title: Funktionen
+subtitle: Rückgabewert
 tags: [1AHITS,lecture,c,funktionen ]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-# Funktionen mit Rückgabewert
+
 
 Um einen Wert zurück ans aufrufende Programm zu geben.
 

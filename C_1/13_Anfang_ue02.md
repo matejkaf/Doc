@@ -1,18 +1,19 @@
 ---
-title: Doc
-cmds: ['md_html.bash --small']
+title: Programmieren Anfang
+subtitle: Übungen
 tags: [assignment,1AHITS]
 ---
 
-Anfangs Übungen
 
-**Übung (Kreisumfang):**
+
+#### **Übung (Kreisumfang):**
 
 Schreibe ein Programm das den Umfang eines Kreises berechnet. Der **Radius** kann eine **Kommazahl** sein. Mit Ein- und Ausgabe. Inklusive Benutzerführung.
 
 ---
 
-**Übung (Taschenrechner):**
+#### **Übung (Taschenrechner):**
+
 Schreibe ein Programm das zwei Kommazahlen von der Tastatur einliest. Beide Werte und deren Summe sollen danach ausgegeben werden. Beispiel-Programmablauf:
 
 ```
@@ -23,7 +24,7 @@ Gib Wert 2 ein: 9.339
 
 ---
 
-**Übung (Celsius nach Fahrenheit):**
+#### **Übung (Celsius nach Fahrenheit):**
 
 Die Umrechnungsformel von Celsius nach Fahrenheit lautet: 
 
@@ -35,12 +36,13 @@ Teste das Programm (z.B. mit Hilfe eines Einheiten Umrechners im Internet).
 
 ---
 
-**Übung (Fahrenheit nach Celsius):**
+#### **Übung (Fahrenheit nach Celsius):**
+
 Verändere das Programm aus voriger Übung so, dass auch die umgekehrte Rechnung – Fahrenheit nach Celsius – ausgeführt wird.
 
 ---
 
-**Übung (Taschenrechner II):**
+#### **Übung (Taschenrechner II):**
 
 Erweitere vorige Übung  auf 3 Zahlen und formatiere die Ausgabe ansprechender. Die Kommas sollen untereinander stehen, ganz egal wieviele Stellen die Zahlen benötigen. Alle Werte sollen mit 3 Stellen vor dem Komma und 2 Nachkommastellen ausgegeben werden. 
 
@@ -60,7 +62,7 @@ Gib Wert 3 ein: 123.899
 
 ---
 
-**Übung (Mopedkosten):**
+#### **Übung (Mopedkosten):**
 
 Du besitzt ein Moped 50 ccm, 2-Takter. Versicherung und Pickerl kosten im Jahr EUR 180,--. Der Spritverbrauch liegt bei 3,6 l/100km (Liter pro 100 gefahrenen Kilometern). Ein Liter kostet EUR 1,3. Schreibe ein Programm das die Eingabe der monatlich gefahrenen Kilometer ermöglicht und die Jahreskosten ermittelt.
 
@@ -71,10 +73,6 @@ km/Monat: 120
 Du bist 1440 km im Jahr gefahren.
 Es hat dich 247.39 Euro gekostet.
 ```
-
----
-
-
 
 
 

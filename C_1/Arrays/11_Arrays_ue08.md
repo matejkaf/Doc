@@ -1,6 +1,6 @@
 ---
 title: Arrays
-subtitle: Übungen Mehrere Arrays
+subtitle: Übungen – Mehrere Arrays
 tags: [assignment,array,challenge]
 ---
 

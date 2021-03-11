@@ -1,12 +1,7 @@
 ---
-title: Doc
-cmds: ['md_html.bash']
+title: Programmieren Anfang
 tags: [lecture]
 ---
-
-
-
-# Programmieren Anfang
 
 Programmieren von Computern (Programmiersprache C)
 

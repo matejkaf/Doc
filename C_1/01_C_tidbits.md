@@ -1,8 +1,6 @@
 ---
-title: Doc
+title: C tidbits
 ---
-
-# C tidbits
 
 
 
@@ -52,6 +50,8 @@ scanf("%s", s);
 
 
 ## cin/cout
+
+Ein- und Ausgabe in C++
 
 ```c++
 #include <iostream>

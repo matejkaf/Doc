@@ -1,11 +1,11 @@
 ---
-title: Doc
+title: Funktionen
+subtitle: Parameter Übungen
 tags: [1AHITS, assignment, c, funktionen, parameter ]
 ---
 
-# Funktionen mit Parameter (Übungen)
+#### **Übung (Produkt zweier Zahlen):**
 
-**Übung (Produkt zweier Zahlen):**
 Schreibe eine Funktion die als Parameter **zwei Kommazahlen** (`a` und `b`) übergeben bekommt.
 Beide Parameter sollen miteinander multipliziert und das Ergebnis auf 2 Kommastellen genau ausgegeben werden.
 
@@ -13,7 +13,8 @@ Beide Parameter sollen miteinander multipliziert und das Ergebnis auf 2 Kommaste
 
 ---
 
-**Übung (Prozentrechnen):**
+#### **Übung (Prozentrechnen):**
+
 Schreibe eine Funktion zum Prozentrechnen. Als Parameter werden eine **Kommazahl** und ein **ganzzahliger Prozentwert** übergeben. Die Funktion soll den Prozentwert berechnen und die folgende Ausgabe erzeugen:
 
 ```
@@ -24,7 +25,8 @@ Schreibe eine Funktion zum Prozentrechnen. Als Parameter werden eine **Kommazahl
 
 ---
 
-**Übung (Summe ungerader Zahlen):**
+#### **Übung (Summe ungerader Zahlen):**
+
 Implementiere eine Funktion `usumme` die die **Summe** einer gewissen **Anzahl von ungeraden Zahlen** bestimmt und ausgibt. Wie viele Zahlen addiert werden sollen, bestimmt ein `int` Parameter `anzahl`.
 
 Bsp.: Der Aufruf von `usumme(4)` ergibt $16$ weil: `1+3+5+7=16​`
@@ -33,7 +35,7 @@ Bsp.: Der Aufruf von `usumme(4)` ergibt $16$ weil: `1+3+5+7=16​`
 
 ---
 
-**Übung (Rechteck mit Breite):**
+#### **Übung (Rechteck mit Breite):**
 
 Es soll ein Rechteck beliebiger Breite gezeichnet werden.
 
@@ -79,14 +81,16 @@ Gib durch Aufruf dieser Funktionen Rechtecke unterschiedlicher Breite und Höhe 
 
 ---
 
-**Übung (Variables Rechteck):**
+#### **Übung (Variables Rechteck):**
+
 Erweitere das Programm aus voriger Übung so, dass Breite **und** Höhe des Rechtecks durch eine Eingabe bestimmt werden. Hinweis: die Funktion `innen` muss in einer Schleife aufgerufen werden.
 
 
 
 ---
 
-**Übung (Rechteck mit variablem Zeichen):**
+#### **Übung (Rechteck mit variablem Zeichen):**
+
 Erweitere das Programm aus voriger Übung. Das Zeichen mit dem das Rechteck gefüllt ist soll eingegeben werden können. 
 
 Hinweis: Das Zeichen muss als weiterer Parameter mit Datentyp `char` an die Funktion `innen` übergeben werden.
@@ -99,7 +103,8 @@ void innen(int breite, char zeichen);
 
 ---
 
-**Übung (Rechteck in Funktion):**
+#### **Übung (Rechteck in Funktion):**
+
 Erweitere das Programm aus voriger Übung. Implementiere eine Funktion `rechteck` die ein Rechteck zeichnet. Verwende dazu die bereits bestehenden Funktionen `innen` und `auszen` indem diese aus der Funktion `rechteck` heraus aufgerufen werden.
 
 ```c
@@ -109,5 +114,3 @@ void rechteck(int breite, int hoehe, char zeichen)
 }
 ```
 Rufe die Funktion `rechteck` mehrfach mit unterschiedlichen Argumenten vom Hauptprogramm aus auf.
-
----

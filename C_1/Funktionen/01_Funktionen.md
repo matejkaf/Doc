@@ -1,10 +1,8 @@
 ---
-title: Doc
-description: Einführung in Funktionen in C
+title: Funktionen
+subtitle: Einführung
 tags: [1AHITS,lecture, c, funktionen ]
 ---
-
-# Funktionen
 
 Probleme bei längeren Programmen:
 

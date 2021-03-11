@@ -1,11 +1,13 @@
 ---
-title: Doc
+title: Vorlagen
 tags: [2AHITS]
 ---
 
 # Vorlagen
 
 ## Standard
+
+Für Visual Studio Konsolen Projekt
 
 ```c++
 #include <stdio.h>
@@ -34,6 +36,8 @@ void main()
 
 ## Locale (Umlaute)
 
+Für Visual Studio Konsolen Projekt
+
 ```c
 #include <locale.h>
 
@@ -45,6 +49,8 @@ void main()
 ```
 
 ## Warnungen Ausschalten
+
+In Visual Studio
 
 ```c++
 #pragma warning(disable:4996)

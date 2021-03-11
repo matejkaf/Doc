@@ -1,10 +1,9 @@
 ---
-title: Doc
+title: Funktionen
+subtitle: Parameter
 description: Einführung in Funktionen in C
 tags: [1AHITS,lecture, c, funktionen ]
 ---
-
-# Funktionen mit Parameter
 
 Mit Parametern werden beim Aufruf **Werte** an Funktionen **übergeben**.
 

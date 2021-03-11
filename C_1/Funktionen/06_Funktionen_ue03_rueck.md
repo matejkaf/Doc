@@ -1,11 +1,12 @@
 ---
-title: Doc
+title: Funktionen
+subtitle: Rückgabewert Übungen
 tags: [1AHITS,assignment, c, funktionen, rueckgabe ]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-# Funktionen mit Rückgabewert (Übungen)
+
 
 **Hinweis:** Die Funktionen dürfen keine Befehle zur Ein- und Ausgabe enthalten. Die Ein- und Ausgabe muss ausschließlich im Hauptprogramm stattfinden.
 
@@ -13,7 +14,8 @@ tags: [1AHITS,assignment, c, funktionen, rueckgabe ]
 
 ---
 
-**Übung (Trapez-Fläche):**
+#### **Übung (Trapez-Fläche):**
+
 Schreibe eine Funktion `tflaeche` die die Fläche eines Trapez ($$\frac{a+b}{2} h$$) als Rückgabewert berechnet (`double` Parameter $$a$$, $$b$$ und $$h$$). Rufe die Funktion von `main()` aus auf und teste das Programm.
 
 ```c
@@ -25,7 +27,8 @@ double tflaeche(double a, double b, double h)
 
 ---
 
-**Übung (Absolutwert):**
+#### **Übung (Absolutwert):**
+
 Schreibe eine Funktion `absolut` die einen `double` Wert als Parameter hat und einen `double` Wert als Rückgabewert liefert. Die Funktion soll den Absolutwert (den Wert ohne Vorzeichen) zurückgeben. Rufe die Funktion aus `main` auf und teste einige Werte. Das Programm soll die Ergebnisse ausgeben.
 
 Beispiele:
@@ -39,7 +42,8 @@ Beispiele:
 
 ---
 
-**Übung (Vorzeichen):**
+#### **Übung (Vorzeichen):**
+
 Schreibe die Funktion `vorzeichen` die den Rückgabetyp `int` und einen `double` Wert als Parameter hat. Wenn der Wert größer als Null ist, soll 1, wenn er kleiner als Null ist, $$-1$$, und wenn er gleich Null ist, 0 zurückgegeben werden. Teste einige Werte.
 
 Beispiele:
@@ -52,7 +56,8 @@ Beispiele:
 
 ---
 
-**Übung (Potenzieren):**
+#### **Übung (Potenzieren):**
+
 Schreibe eine Funktion die einen `double` Wert $$x$$ hoch einem `int` Wert $$n$$ berechnet. Die Funktion soll so aussehen:
 
 ```c
@@ -68,7 +73,8 @@ Beispiel: $$2^5  = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$$
 
 ---
 
-**Übung (Negative Hochzahlen):**
+#### **Übung (Negative Hochzahlen):**
+
 Berücksichtige auch negative Hochzahlen: 
 
 $$x^{n}=\frac{1}{x^{-n}} \qquad \text{wenn}\; n<0$$

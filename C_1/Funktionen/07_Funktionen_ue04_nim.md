@@ -1,9 +1,10 @@
 ---
-title: Doc
+title: Funktionen
+subtitle: NIM Spiel
 tags: [assignment, c, funktionen ]
 ---
 
-# Nim-Spiel
+
 
 Das **Nim-Spiel** ist ein Spiel für zwei Personen. 
 
@@ -18,7 +19,7 @@ Statt der Streichhölzer kann man auch Münzen, Spielkarten, Bierdeckel oder and
 
 ---
 
-**Übung (Nim Spiel):**
+#### **Übung (Nim Spiel):**
 
 Schreibe eine Funktion `spiele` (ohne Parameter, mit `int` als Rückgabewert). Implementiere in dieser Funktion den Ablauf des Nim Spiels.  Es sind abwechselnd der Spieler 1 und der Spieler 2 am Zug. Der Rückgabewert der Funktion ist die Nummer des Spielers der gewonnen hat (1 oder 2). Verwende den Rückgabewert um im Hauptprogramm den Sieger auszugeben.
 
@@ -49,7 +50,7 @@ Spieler 2: _
 
 ---
 
-**Übung (Nim Spiel – Parameter):**
+#### **Übung (Nim Spiel – Parameter):**
 
 Gestalte das Spiel durch Funktionsparameter variabler:
 
@@ -66,7 +67,8 @@ Parameter:
 
 ---
 
-**Übung (Nim Spiel – Menü):**
+#### **Übung (Nim Spiel – Menü):**
+
 Programmiere ein Menü zur Bedienung des Spiels:
 
 ```
@@ -119,7 +121,8 @@ Der Rückgabewert ist der vom Anwender eingegebene neue Startwert.
 
 ---
 
-**Übung (Computergegner):**
+#### **Übung (Computergegner):**
+
 Ein Spieler soll vom Computer übernommen werden, mache über das Menü einstellbar welcher. 
 
 Implementiere verschiedene, einstellbare Schwierigkeitsstufen.
@@ -142,7 +145,8 @@ int schwierigkeit=1;
 
 ---
 
-**Übung (Variante):**
+#### **Übung (Variante):**
+
 Eine Variante des Spiels ist, dass derjenige der das letzte Streichholz nimmt verliert (nennt man auch Misère – französisch --- auf deutsch etwa ein "Bettler-Spiel"). Zwischen der Original und der Misère-Variante soll über das Menü gewählt werden können.
 
 Es soll auch bei der Misère-Variante möglich sein gegen den Computer zu spielen.
@@ -153,7 +157,5 @@ Hinweise für das Programm:
 int inputMisere();
 int misere=0; // 1 um Misere einzuschalten
 ```
-
----
 
 

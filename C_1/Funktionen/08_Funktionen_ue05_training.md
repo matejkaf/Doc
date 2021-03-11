@@ -1,13 +1,13 @@
 ---
-title: Doc
+title: Funktionen
+subtitle: Weitere Übungen
 tags: [assignment, c, funktionen ]
 ---
 
-# Funktionen (weitere Übungen)
 
 
+#### **Übung (Differenz):**
 
-**Übung (Differenz):**
 Schreibe eine Funktion `diff()`, die die Differenz zweier übergebenen `int`-Werte zurückgibt.
 Beachte: Die Differenz ist immer größer (oder gleich) Null.
 
@@ -16,33 +16,31 @@ Beispiel:
 
 ---
 
+#### **Übung (Maximum):**
 
-**Übung (Maximum):**
 Schreibe eine Funktion `max()`, welcher 2 int-Werte übergeben werden und welche den größeren der beiden Werte zurückliefert.
 
 ---
 
+#### **Übung (Celsius nach Fahrenheit):**
 
-**Übung (Celsius nach Fahrenheit):**
 Schreibe eine Funktionen zur Umrechnung von Celsius nach Fahrenheit.
 
 ---
 
-
-**Übung (Reihe):**
+#### **Übung (Reihe):**
 
 Schreibe eine Funktion `nsum()` zur Ermittlung der Summe der ersten n natürlichen Zahlen (1...n), n ist der Übergabeparameter.
 
 ---
 
+#### **Übung (Summe ungerader Zahlen):**
 
-**Übung (Summe ungerader Zahlen):**
 Schreibe eine Funktion `usum()` die eine untere und eine obere Grenze als Parameter übergeben bekommt (beide `int`). Die Funktion soll alle ungeraden Zahlen die sich zwischen den Grenzen befinden addieren und das Ergebnis zurückgeben. Sind die Grenzen ungerade Zahlen sind diese ebenfalls zu zählen.
 
 ---
 
-
-**Übung (Anzahl der Bits):**
+#### **Übung (Anzahl der Bits):**
 
 Von einer ganzen Zahl ist festzustellen wie viele Bits diese braucht.
 
@@ -56,14 +54,14 @@ Schreibe eine Funktion die von einem als Parameter übergebenen `int` Wert die A
 
 ---
 
+#### **Übung (Quersumme):**
 
-**Übung (Quersumme):**
 Bei der Quersumme handelt es sich um die Summe der einzelnen Ziffern einer mehrstelligen Zahl. Beispiel: Die Quersumme von 251 ist 8, da `2 + 5 + 1 = 8`.
 
 ---
 
+#### **Übung (Primzahlen):**
 
-**Übung (Primzahlen):**
 Eine Primzahl ist eine ganze positive Zahl größer 0 die nur durch 1 oder sich selbst ohne Rest geteilt werden kann. Ein gegebene Zahl kann auf Prim-Eigenschaft getestet werden indem geprüft wird ob es irgendeine Zahl zwischen 1 und der Zahl selbst gibt die die Zahl teilt.  Gibt es keine Teiler-Zahl so handelt es sich um eine Primzahl. Gibt es allerdings auch nur eine solche Teiler-Zahl so ist die Ausgangszahl keine Primzahl. 
 
 Beispiel: Um festzustellen, dass 7 eine Primzahl ist probiert man alle Zahlen von 2 bis 6 durch ob eine dieser Zahlen ein Teiler von 7 ist. Da kein Teiler gefunden werden kann ist 7 eine Primzahl. Wird die Zahl 9 auf Prim-Eigenschaft getestet so werden die Zahlen 2 bis 8 geprüft, allerdings stellt man bei 3 schon fest dass dies ein Teiler von 9 ist und kann aufhören (9 ist daher keine Primzahl).
@@ -78,7 +76,7 @@ Die Funktion soll alle Primzahlen von 2 bis zur Obergrenze (inklusive) zählen u
 
 ---
 
-**Übung (Zweier-Logarithmus):**
+#### **Übung (Zweier-Logarithmus):**
 
 Schreibe eine Funktion `log()` die einen `int`-Wert übergeben bekommt und die ermittelt wie oft 2 mit 2 multipliziert werden muss damit das Endergebnis größer gleich dem Übergabewert wird.  Rückgabewert ist die Anzahl der zu multiplizierenden Zweier.
 
@@ -86,8 +84,7 @@ Beispiele: `log(17) = 5`, `log(16) = 4`
 
 ---
 
-
-**Übung (Quadratzahl):**
+#### **Übung (Quadratzahl):**
 
 Jede Quadratzahl  n²  ist immer eine Summe von ungeraden Zahlen (Bsp.: 4²=16=1+3+5+7).
 
@@ -97,11 +94,8 @@ Hinweis: Summiere in einer Schleife in aufsteigender Reihenfolge die ungeraden Z
 
 ---
 
-**Übung (Prozentrechnen):**
+#### **Übung (Prozentrechnen):**
+
 Schreibe eine Funktion. Übergabeparameter sind 2 `double` Zahlen.  Beide Zahlen müssen positiv und die erste Zahl muss größer sein als die zweite. Die Funktion soll ermitteln wie oft von der ersten Zahl 10 Prozent abgezogen werden kann bis die zweite Zahl unterschritten wird. Diese Anzahl soll als Rückgabewert der Funktion verwendet werden. Erfüllen die beiden Zahlen nicht die Voraussetzungen so soll der Rückgabewert –1 sein.
-
----
-
-
 
 
