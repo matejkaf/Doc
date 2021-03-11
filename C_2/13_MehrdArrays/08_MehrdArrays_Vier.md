@@ -1,6 +1,6 @@
 ---
-title: Vier Gewinnt (Übungen)
-cmds: ['md_html.bash --small']
+title: Mehrdimensionale Arrays
+subtitle: Vier Gewinnt
 tags: [assignment,c]
 ---
 
@@ -16,7 +16,8 @@ Jeder Spieler besitzt 21 gleichfarbige Spielsteine. Wenn ein Spieler einen Spiel
 
 
 
-**Übung (Vier Gewinnt Grundlage):**
+#### **Übung (Vier Gewinnt Grundlage):**
+
 Ein erstes Programmgrundgerüst:
 
 - Lege für das Spielfeld ein zweidimensionales `int` Array  an (6 Zeilen, 7 Spalten).
@@ -50,7 +51,8 @@ Ein erstes Programmgrundgerüst:
 
 ---
 
-**Übung (Siegerkennung):**
+#### **Übung (Siegerkennung):**
+
 Das Spiel soll erkennen können ob ein Spieler gewonnen hat. 
 
 - Schreibe eine Funktion `testZeile`
@@ -69,7 +71,8 @@ Schreibe nach dem gleichen Schema:
 
 ---
 
-**Übung (Künstliche Intelligenz):**
+#### **Übung (Künstliche Intelligenz):**
+
 Das Spiel soll nun gegen den Computer gespielt werden. Spieler 2 ist der Computergegner. 
 Schreibe für die Ermittlung des Computerzugs eine eigene Funktion `int computerZug(int a[][7],int spieler,int strategie)`, dabei gibt der Parameter `spieler` an für welchen Spieler der Zug generiert werden soll, der Parameter `strategie` nach welcher Methode der Zug ermittelt wird und Rückgabewert ist die Spalte für den Einwurf.
 
@@ -89,15 +92,13 @@ Nimm die Spalte in der sich die längste Reihe (horizontal, vertikal oder diagon
 
 ---
 
-**Übung (Erweiterungen):**
+#### **Übung (Erweiterungen):**
+
 Möglichkeiten:
 
 - 
 Du kannst am Anfang auswählen ob Spieler 1 oder Spieler 2 der Computergegner ist.
 - 
 Versuche die Spielstärke des Computergegners zu erhöhen.
-
-
----
 
 

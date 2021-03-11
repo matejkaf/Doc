@@ -1,6 +1,6 @@
 ---
-title: Mehrdimensionale Arrays (Übungen)
-cmds: ['md_html.bash --small']
+title: Mehrdimensionale Arrays
+subtitle: Lösungen zu Vektorrechnung
 tags: [assignment,c]
 ---
 

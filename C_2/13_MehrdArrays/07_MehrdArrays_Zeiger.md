@@ -1,12 +1,12 @@
 ---
-title: Mehrdimensionale Arrays (Übungen)
-cmds: ['md_html.bash --small']
+title: Mehrdimensionale Arrays
+subtitle: Übungen Zeiger
 tags: [assignment,c]
 ---
 
 
 
-**Übung (Adressen):**
+#### **Übung (Adressen):**
 
 Lege ein 2 dimensionales Array `feld` aus `int` Werten an. 
 - Ermittle mit Hilfe des Adressoperators (`&`) wie die Elemente des Arrays im Speicher liegen.
@@ -16,8 +16,7 @@ Lege ein 2 dimensionales Array `feld` aus `int` Werten an.
 
 ---
 
-
-**Übung (Arbeiten mit Zeigern):**
+#### **Übung (Arbeiten mit Zeigern):**
 
 Implementiere mit Hilfe von Zeigern:
 
@@ -31,10 +30,8 @@ Implementiere mit Hilfe von Zeigern:
 
 ---
 
-**Übung (Mit Wächter):**
+#### **Übung (Mit Wächter):**
+
 Implementiere zeilen- und spaltenweises Ausgeben mit Zeigern unter Verwendung von Wächtern (Sentries).
-
----
-
 
 
