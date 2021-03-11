@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8">
 
-    {% if page.title and not page.subtitle %}
-    <title>{{ page.title }}</title>
-    {% endif %}
     {% if page.title and page.subtitle %}
     <title>{{ page.title }}|{{ page.subtitle }}</title>
     {% endif %}
