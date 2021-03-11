@@ -1,7 +1,7 @@
 ---
 title: Mehrdimensionale Arrays
 subtitle: Challenge Scheune
-tags: [challenge,2darray]
+tags: [challenge,2darray,2AHITS]
 ---
 
 > Qualifikationsbeispiel für die österreichische Informatik Olympiade 2013

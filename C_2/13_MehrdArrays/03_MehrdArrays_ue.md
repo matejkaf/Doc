@@ -1,7 +1,7 @@
 ---
 title: Mehrdimensionale Arrays
 subtitle: Übungen Summen
-tags: [assignment,c]
+tags: [assignment,c,2AHITS]
 ---
 
 #### **Übung (Zeilensumme in Array):**

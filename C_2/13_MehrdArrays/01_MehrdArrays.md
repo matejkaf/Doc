@@ -1,6 +1,6 @@
 ---
 title: Mehrdimensionale Arrays
-tags: [lecture,2AHELS,c,array]
+tags: [lecture,2AHELS,2AHITS,c,array]
 ---
 
 Vielfältige Anwendungen:
