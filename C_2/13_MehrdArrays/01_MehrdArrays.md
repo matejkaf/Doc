@@ -1,10 +1,7 @@
 ---
-title: Doc
-cmds: ['md_html.bash --small','md_html.bash']
+title: Mehrdimensionale Arrays
 tags: [lecture,2AHELS,c,array]
 ---
-
-# Mehrdimensionale Arrays
 
 Vielfältige Anwendungen:
 

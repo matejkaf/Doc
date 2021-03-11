@@ -1,9 +1,8 @@
 ---
-title: Doc
+title: Mehrdimensionale Arrays
+subtitle: Übungen Einstieg
 tags: [assignment,2AHELS,c]
 ---
-
-# Mehrdimensionale Arrays (Übungen)
 
 #### Übung (Grundlagen):
 
@@ -44,6 +43,3 @@ Schreibe Funktionen für:
 - Den Index der Zeile mit der größten Zeilensumme zurückgeben.
 - Den Index der Spalte mit der größten Spaltensumme zurückgeben.
 - Die Anzahl der Spalten ermitteln in denen alle Zahlen gleich sind.
-
----
-

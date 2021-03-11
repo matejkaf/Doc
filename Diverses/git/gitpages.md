@@ -14,9 +14,9 @@ Default theme auswählen: [Step 5 - Selected a Github pages default theme](https
 
 [How to customize your github pages blog layout in five minutes](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
 
-
-
 `title` und `description` wird übernommen.
+
+`subtitle` hinzugefügt.
 
 
 

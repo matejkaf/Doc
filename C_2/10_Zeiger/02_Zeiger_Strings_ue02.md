@@ -1,7 +1,6 @@
 ---
 title: Zeiger und Strings
 subtitle: Allgemeine Übungen
-description: Und das ist dann noch die allgemeine Beschreibung
 tags: [assignment,2AHELS,c,pointer,strings,intro]
 ---
 

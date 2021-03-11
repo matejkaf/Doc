@@ -1,6 +1,6 @@
 ---
-title: Mehrdimensionale Arrays (Übungen)
-cmds: ['md_html.bash --small']
+title: Mehrdimensionale Arrays
+subtitle: Übungen Diagonalen
 tags: [assignment,c]
 ---
 
@@ -102,15 +102,10 @@ o o o o o X
 
 ---
 
-**Übung (Diagonalen):**
+#### Übung (Diagonalen):
 
 Schreibe Funktionen für:
 - Summe der Hauptdiagonale.
 - Summe beginnend beim Element ganz links/unten plus alle Elemente in Nebenrichtung (schräg nach rechts/oben)
 - Summe einer Diagonalen in Hauptrichtung. Die Diagonale wird durch ein Element bestimmt dessen Zeilen- und Spaltenindex als Parameter vorgegeben wird.
 - Summe einer Diagonalen in Hauptrichtung. Die Diagonale wird durch ein Element bestimmt dessen Zeilen- und Spaltenindex als Parameter vorgegeben wird.
-
-
-
----
-

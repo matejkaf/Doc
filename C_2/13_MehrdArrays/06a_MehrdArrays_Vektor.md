@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Mehrdimensionale Arrays
+subtitle: Übungen Vektorrechnung
 tags: [assignment,c]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-# Vektorrechnung (Übungen)
 
 Die **Vektorrechnung** spielt vor allem für die Computergrafik eine bedeutende Rolle.
 
@@ -27,7 +26,8 @@ Um Drehungen, Verkleinerung und Vergrößerung umzusetzen werden Matrizen verwen
 
 ---
 
-**Übung (Matrizenrechnung):**
+#### Übung (Matrizenrechnung):
+
 Lege eine $3\times 3$  Matrix aus `int` Elementen an und schreibe folgende Funktionen:
 
 - `eingabe()` und  `ausgabe()`.
@@ -98,8 +98,6 @@ $$
   Analysiere die 3 Ergebnisse.
 
 - `transpose()` –  Ermittelt die transponierte Matrix. Die Transponierte ist an der Hauptdiagonale gespiegelt. Übergabeparameter ist die zu transponierende Matrix und eine Zielmatrix.
-
----
 
 
 
