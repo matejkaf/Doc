@@ -161,9 +161,6 @@ Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen
 
 ---
 
-> [!2AHITS G1 29.01.2021]
-
-
 
 ## Zählen
 
@@ -214,6 +211,7 @@ $ cut -d , -f 2 klassenkassa.csv
 # -d , ... Beistricht als delimiter (Standard: TAB)
 # -f 2 ... 2tes Feld wählen
 ```
+> [!2AHITS G1 12.03.2021]
 
 > [!2AHITS G2 05.03.2021]
 
