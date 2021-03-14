@@ -1,7 +1,7 @@
 ---
 title: Funktionen
 subtitle: NIM Spiel
-tags: [assignment, c, funktionen ]
+tags: [1AHITS,assignment, c, funktionen ]
 ---
 
 
