@@ -84,4 +84,3 @@ Beispiele:
 - $$x^{-3}=\frac{1}{x^{3}}=\frac{1}{x\cdot x\cdot x} $$
 - $$2^{-5}=\frac{1}{2^{5}}=\frac{1}{2\cdot 2\cdot 2\cdot 2\cdot 2}= \frac{1}{32}$$
 
----
