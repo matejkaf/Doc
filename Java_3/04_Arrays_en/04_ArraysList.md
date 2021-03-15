@@ -1,6 +1,7 @@
 ---
-title: Dynamic arrays in Java
-tags: [lecture,java, array]
+title: ArrayList
+subtitle: Dynamic arrays in Java
+tags: [3BHELS, lecture,java, array]
 ---
 
 With class `ArrayList` (Java library)
@@ -120,11 +121,6 @@ Extend the last exercise: Sort the list. Hint 1: Use bubblesort for sorting. Hin
 - 
 Sort words by number of occurence in descending order.
 - Sort words in alphabetical ascending order.
-
-
----
-
-
 
 
 
