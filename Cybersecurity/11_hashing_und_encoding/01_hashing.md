@@ -5,7 +5,6 @@ tags: [lecture,2AHITS_Teach]
 ---
 
 - Daten (beliebig groß) ⇨ Hashfunktion ⇨ Wert fixer Länge, z.B. 128, 256 oder 512 Bits. 
-
 - nicht umkehrbar (one way function)
 - praktisch unmöglich (durchprobieren) andere Daten zu finden die den gleichen Hashwert ergeben
 
