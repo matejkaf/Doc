@@ -18,7 +18,7 @@ Mit einem Bit lassen sich die Zahlen 0 und 1 darstellen. Kommt ein zweites Bit d
 Bei 3 Bits sind es 8 Möglichkeiten. 
 
 Mit jedem weiteren Bit verdoppelt sich die Anzahl der darstellbaren Zahlen. 
-Allgemein ergeben $n$ Bits $2^n$ (2 hoch n) darstellbare Zahlen.
+Allgemein ergeben $$n$$ Bits $$2^n$$ (2 hoch n) darstellbare Zahlen.
 
 | Bit-Anzahl | Möglichkeiten  |
 | ---------- | ---- |
@@ -92,7 +92,7 @@ $$10^{0}$$, $$10^{1}$$, $$10^{2} \ldots$$, Stellenwertigkeit
 Grund für Dezimalsystem: 10 Finger. Computer kennen nur 0 und 1 – zwei Zustände daher Zahlenbasis 2 (Binär bzw. Dual).
 
 Beispiel: 1 Byte Zahl
-$$10110101_{2}$$ = $$1\cdot 2^7+0\cdot 2^6+1\cdot 2^5+1\cdot 2^4+0\cdot 2^3+1\cdot 2^2+0\cdot 2^1+1\cdot 2^0$ = $181_{10}$$
+$$10110101_{2} = 1\cdot 2^7+0\cdot 2^6+1\cdot 2^5+1\cdot 2^4+0\cdot 2^3+1\cdot 2^2+0\cdot 2^1+1\cdot 2^0$ = 181_{10}$$
 
 Kleinste Zahl: $$00000000_{2}=0_{10}$$
 Größte Zahl: $11111111_{2}$ = $255_{10}$ = $2^{8}-1$
@@ -115,8 +115,8 @@ Schreibe die Zahlen 0–15 im Binärsystem.
 Beispiel, Dezimal nach Binär:
 
 $$
-\underset{Rest:}{}\underset{1}{181:2}&=\underset{0}{90:2}=\underset{1}{45:2}=\underset{0}{22:2}=\underset{1}{11:2}=\underset{1}{5:2}=\underset{0}{2:2}=\underset{1}{1:2}=0 \\
-&\Rightarrow 181_{10}=10110101_2
+\begin{aligned}\underset{Rest:}{}\underset{1}{181:2}&=\underset{0}{90:2}=\underset{1}{45:2}=\underset{0}{22:2}=\underset{1}{11:2}=\underset{1}{5:2}=\underset{0}{2:2}=\underset{1}{1:2}=0 \\
+\Rightarrow 181_{10}&=10110101_2\end{aligned}
 $$
 
 Wandle die folgenden Dezimalzahlen nach Binär:
@@ -272,7 +272,7 @@ Beispiel:
   1 0 1 1 0 1 0 1
 + 0 0 1 1 1 1 1 0
 Ü   1 1 1 1      
-–---------------
+-----------------
   1 1 1 1 0 1 1 1
 ```
 
@@ -282,7 +282,7 @@ Achtung auf Überschreiten der Wertebereiche:
     1 0 1 1 0 1 0 1
 +   1 0 1 1 1 1 1 0
 Ü 1   1 1 1 1      
-–-----------------
+-------------------
     1 1 1 1 0 1 1 1
 ```
 
@@ -304,7 +304,7 @@ $120_{10}=01111000_2$
     0 1 1 1 1 0 0 0
 +   1 1 1 1 1 1 1 0
 Ü 1 1 1 1 1       
-–-----------------
+-------------------
     0 1 1 1 0 1 1 0
 ```
 
@@ -471,7 +471,7 @@ unsigned char z;
 
 z=x&y;       x... 10010001 
              y... 11011000 
-             –---------- 
+             ------------- 
              z... 10010000...144
 ```
 
@@ -495,7 +495,7 @@ unsigned char z;
 
 z=x|y;       x... 10010001 
              y... 11011000 
-             –---------- 
+             ------------- 
              z... 11011001 ... 217
 ```
 
@@ -517,7 +517,7 @@ unsigned char z;
 
 z=x^y;       x... 10010001 
              y... 11011000 
-             –---------- 
+             ------------- 
              z... 01001001 ... 73
 ```
 
