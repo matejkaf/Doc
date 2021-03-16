@@ -70,18 +70,25 @@ Anmerkung: SHA-1 gilt als nicht mehr sicher, da Wege zum erzeugen einer Fälschu
 
 **Übung (SHA256 mit Online shell):**
 
-Verwende ein [Online Linux](https://bellard.org/jslinux/) oder ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl` den SHA256 Hashwert der Datei hinter dem Link `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe` zu ermitteln. Der Download der Datei geht mit dem Tool `wget`.
-
-> Hinweis zum Online Linux Terminal (aus [FAQ](https://bellard.org/jslinux/faq.html)): To copy data, just select it with the mouse and use the "Copy" contextual menu (right click). To paste data, right click on the terminal cursor to show the contextual menu and select "Paste". Alternatively, you can use the "Paste" command in the navigator global menu.
+Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl` den SHA256 Hashwert der Datei hinter dem Link `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt` zu ermitteln. Der Download der Datei geht mit dem Tool `wget`.
 
 ```bash
-$ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe
-# Anmerkung: wird durch gitpages in ein HTML Dokument gewandelt
+$ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
+
 $ openssl dgst -sha256 goethe
 
 $ openssl dgst -sha256 -binary goethe
 $ openssl dgst -sha256 -binary goethe | xxd
 ```
+
+
+
+Alternative: 
+
+[JSLinux](https://bellard.org/jslinux/)
+
+> Hinweis zum Online Linux Terminal (aus [FAQ](https://bellard.org/jslinux/faq.html)): To copy data, just select it with the mouse and use the "Copy" contextual menu (right click). To paste data, right click on the terminal cursor to show the contextual menu and select "Paste". Alternatively, you can use the "Paste" command in the navigator global menu.
+
 
 ---
 
