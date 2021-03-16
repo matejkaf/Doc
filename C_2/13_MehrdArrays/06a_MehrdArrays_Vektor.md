@@ -95,6 +95,7 @@ $$
 \begin{bmatrix} 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{bmatrix}
 \begin{bmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{bmatrix}
 $$
+
   Analysiere die 3 Ergebnisse.
 
 - `transpose()` –  Ermittelt die transponierte Matrix. Die Transponierte ist an der Hauptdiagonale gespiegelt. Übergabeparameter ist die zu transponierende Matrix und eine Zielmatrix.
