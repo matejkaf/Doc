@@ -48,7 +48,7 @@ Es sollte nicht so einfach sein Daten zu finden die den gleichen Hashwert ergebe
 
 ---
 
-**Übung (goethe im Online Hash Rechner):** Experimente mit [Online Hash Rechner](https://emn178.github.io/online-tools/sha512.html), *Text eingeben, Textdatei `goethe.txt`* [Link auf md File](https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe). Was passiert bei kleinen Änderungen im Text.
+**Übung (goethe im Online Hash Rechner):** Experimente mit [Online Hash Rechner](https://emn178.github.io/online-tools/sha512.html), [Textdatei `goethe.txt`](https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt). Was passiert bei kleinen Änderungen im Text?
 
 ---
 
@@ -74,11 +74,9 @@ Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
-
-$ openssl dgst -sha256 goethe
-
-$ openssl dgst -sha256 -binary goethe
-$ openssl dgst -sha256 -binary goethe | xxd
+$ openssl dgst -sha256 goethe.txt
+$ openssl dgst -sha256 -binary goethe.txt
+$ openssl dgst -sha256 -binary goethe.txt | xxd
 ```
 
 
