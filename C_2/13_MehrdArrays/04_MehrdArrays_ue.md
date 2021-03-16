@@ -63,8 +63,10 @@ X o o o o o       o o o X o o       o o o o o o
 ```
 
 Bei Diagonalen ist immer zu beachten, dass sie an unterschiedlichen **Rändern** beginnen bzw. enden können.
+
 Eine Diagonale in Nebenrichtung beginnt entweder in der ganz linken Spalte oder in der untersten Zeile und sie endet entweder in der ganz rechten Spalte oder in der obersten Zeile. Das Ende ist abhängig vom Startpunkt und vom Seitenverhältnis des 2D Arrays.
-Im Programm kann man das folgendermaßen berücksichtigen:
+
+Das folgende Programm gibt eine Nebendiagonale aus:
 
 ```c
 const int ZEILEN=5;
@@ -74,8 +76,6 @@ void main()
 {
 	int arr[ZEILEN][SPALTEN];
 	
-	// Nebendiagonale ausgeben
-
 	// Startpunk wählen
 	int z=3;
 	int s=0;
@@ -98,14 +98,17 @@ o o o o * o
 o o o o o X
 ```
 
- 
+ Für diese Aufgabenstellung können 2 Diagonalen verfolgt werden die jeweils vom gegebenen Punkt ausgehen. 
+
+
 
 ---
 
 #### **Übung (Diagonalen):**
 
 Schreibe Funktionen für:
-- Summe der Hauptdiagonale.
-- Summe beginnend beim Element ganz links/unten plus alle Elemente in Nebenrichtung (schräg nach rechts/oben)
-- Summe einer Diagonalen in Hauptrichtung. Die Diagonale wird durch ein Element bestimmt dessen Zeilen- und Spaltenindex als Parameter vorgegeben wird.
-- Summe einer Diagonalen in Hauptrichtung. Die Diagonale wird durch ein Element bestimmt dessen Zeilen- und Spaltenindex als Parameter vorgegeben wird.
+- `summe_hd` Summe der **Hauptdiagonale**.
+- `summe_nd` Summe beginnend beim Element **ganz links/unten** plus alle Elemente in **Nebenrichtung** (schräg nach rechts/oben)
+- `summe_hr` Summe einer **Diagonalen in Hauptrichtung**. Die Diagonale wird durch ein Element bestimmt dessen Zeilen- und Spaltenindex als Parameter vorgegeben wird.
+- `summe_nr` Summe einer **Diagonalen in Nebenrichtung**. Die Diagonale wird durch ein Element bestimmt dessen Zeilen- und Spaltenindex als Parameter vorgegeben wird.
+
