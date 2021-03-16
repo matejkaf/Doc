@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Dynamische Speicherverwaltung
+subtitle: Übungen
 tags: [assignment]
 ---
 
-# Dynamische Speicherverwaltung (Übungen)
-
-**Übung (Komplexe Zahl):**
+#### **Übung (Komplexe Zahl):**
 
 Erstelle eine Struktur für eine komplexe Zahl sowie Funktionen für die Ein- und Ausgabe.
 
@@ -17,7 +16,7 @@ Die Funktion soll eine neue komplexe Zahl erzeugen und einen Zeiger auf diese zu
 
 ---
 
-**Übung (Array aus komplexen Zahlen):**
+#### **Übung (Array aus komplexen Zahlen):**
 
 Schreibe ein Programm das die Eingabe komplexer Zahlen ermöglicht und dann die Summe aller komplexen Zahlen errechnet und ausgibt.
 
@@ -26,10 +25,13 @@ Schreibe ein Programm das die Eingabe komplexer Zahlen ermöglicht und dann die 
 
 ---
 
-**Übung (Sortieren):**
+#### **Übung (Sortieren):**
+
 Schreibe ein Programm das die Eingabe einer am Anfang einzugebenden Anzahl von komplexen Zahlen ermöglicht und diese der Größe nach sortiert wieder ausgibt.
 Nimm Bubble-Sort zum Sortieren.
 
-**Übung (Sortieren II):**
+---
+
+#### **Übung (Sortieren II):**
 
 Verwende ein Array aus Zeigern für die vorhergehende Aufgabenstellung um, das beim Sortieren notwendige, Tauschen von Elementen möglichst zu beschleunigen.

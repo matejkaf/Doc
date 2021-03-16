@@ -1,5 +1,6 @@
 ---
-title: Doc
+title: Bioinformatik Syncytin-1
+subtitle: Lösung
 tags: [solution]
 ---
 

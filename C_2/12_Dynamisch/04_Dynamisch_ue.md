@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Problem des Josephus
+subtitle: Übung
 tags: [assignment]
 ---
 
-# Problem des Josephus (Übung)
-
-**Übung (Problem des Josephus):**
+#### **Übung (Problem des Josephus):**
 
 Das Problem des [Flavius Josephus](http://de.wikipedia.org/wiki/Josephus-Problem) dieser versteckt sich 67 n. Chr. beim Kampf um die galiläische Stadt Jotapata mit 40 weiteren Männern in einer Höhle vor den Römern.\\[1ex]
 Als das Versteck verraten wurde, sicherten die Römer Josephus freies Geleit zu, wenn er das Versteck verlässt. Seinen Gefolgsleuten passte das nicht sie wollten lieber sterben, als den Römern in die Hände zu fallen. Daraufhin machte Josephus den Vorschlag eines kollektiven Suizids, in dem sich alle im Kreis aufstellen und jeder 3. durch seinen rechten Nachbarn getötet werden sollte.
@@ -44,8 +43,3 @@ struct Person
 	Person* pNext;
 };
 ```
-
----
-
-
-

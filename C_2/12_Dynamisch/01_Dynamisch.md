@@ -1,8 +1,6 @@
 ---
-title: Doc
+title: Dynamische Speicherverwaltung
 ---
-
-# Dynamische Speicherverwaltung
 
 
 ## Motivation
@@ -31,10 +29,6 @@ Schülerdaten (Matrikelnummer und Name) sollen aus einer Textdatei gelesen werde
 
 ## Array dynamischer Länge
 
-
-
-
-
 Es nicht möglich eine Variable als Länge eines Arrays zu verwenden:
 
 
@@ -48,8 +42,6 @@ int arr[n]; // !!! Compilerfehler
 
 
 Geht nicht! Die Länge eines Arrays muss ein **konstanter Wert** sein.
-
-
 
 
 
@@ -76,8 +68,6 @@ delete[] arr; // Array freigeben
 **Erinnerung:** Ein Zeiger kann wie ein Array verwendet werden.
 
 Der Speicher den `new` zur Verfügung stellt stammt aus dem global freien Speicher des Computers. Von dort ein freier Speicherblock der benötigten Größe für das laufende Programm reserviert. Man sagt **allokiert**. Ein nicht mehr benötigter Speicher muss vom Programm wieder freigegeben werden (mit `delete`).
-
-
 
 
 
@@ -148,17 +138,13 @@ heute = new Datum;
 
 Speicher wird freigegeben aber weiterhin verwendet. Der gleiche Speicherbereich kann durch `new` wieder vergeben werden. In Folge: Programmteile überschreiben sich die Daten gegenseitig.
 
-
-
 **Beispiel:**
+
 ```c++
 heute = new Datum;
 delete heute;
 heute->tag = 10; // <------<<
 ```
-
-
-
 
 **Empfehlung:**
 
@@ -170,8 +156,6 @@ delete heute;
 heute = NULL;
 heute->tag = 10; // <------<< Laufzeitfehler >>
 ```
-
-
 
 
 
@@ -218,6 +202,8 @@ void* memcpy (	void* dest, const void* src, int num );
 
 
 ### Struktur allokieren in C
+
+In C wird mit `malloc` Speicher allokiert und mit `free` wieder freigegeben.
 
 Beispiel – dynamisches Allokieren einer Struktur:
 
@@ -303,12 +289,6 @@ struct X {
 
 
 
-
-
-
-
-
-
 ## Array von Strukturen (mit Zeiger)
 
 Mit `new Punkt[3]` wird ein Array aus Strukturen angelegt. D.h. jedes Array Element enthält den kompletten Inhalt der Struktur.
@@ -330,8 +310,6 @@ for(int i=0;i<3;i++)
     punkte[i]=new Punkt;
 ```
 Es wird ein Array aus Zeigern angelegt. Ein Element im Array ist ein Zeiger auf eine Struktur. Daher muss jeder Zeiger einzeln initialisiert werden.
-
-
 
 ### Grundlagen
 
@@ -390,7 +368,7 @@ delete[] a;
 
 
 
-# Speicherbereiche
+## Speicherbereiche
 
 Der Speicher eines Programms besteht aus vier Segmenten:
 
@@ -402,13 +380,13 @@ Der Speicher eines Programms besteht aus vier Segmenten:
 
 
 
-## Code und Daten
+### Code und Daten
 Die Segmente **Code** und (globale) **Daten** werden vom **Compiler** festgelegt. 
 
 
 
 
-## Stack
+### Stack
 
 Vom Stack werden zur Laufzeit -- bei jedem Aufruf einer Funktion -- soviel Bytes reserviert wie für **Funktions-Parameter**, **lokale Variablen** und **Rücksprungadresse** benötigt wird. 
 
@@ -430,7 +408,7 @@ Insbesondere keine großen Arrays oder Strukturen verwenden.
 Besser geeignet sind dafür globale Variablen oder der Heap.
 
 
-### Stack Buffer Overflow
+#### Stack Buffer Overflow
 
 Eine Methode (Exploit) bei der Hacker Sicherheitslücken in Programmen ausnützen.
 Dabei wird insbesondere ausgenutzt, dass sich die Rücksprungadresse einer Funktion am Stack befindet.
@@ -442,7 +420,7 @@ Es wird ein Programmcode eingeschleust (meist in einem String) und dann der Stac
 
 
 
-## Heap
+### Heap
 
 Der Heap ist der freie Hauptspeicher im Computer.
 Vom Heap können zur Laufzeit des Programms Speicherblöcke angefordert (**allokiert**, mit `new`) und wieder freigegeben (`delete`) werden. 

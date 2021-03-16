@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Dynamische Speicherverwaltung
+subtitle: Übungen
 tags: [assignment]
 ---
 
-# Dynamische Speicherverwaltung (Übungen)
-
-**Übung (Array variable Länge):**
+#### **Übung (Array variable Länge):**
 
 Schreibe ein Programm, das ein `int` Array variabler Länge verwaltet.
 
@@ -42,7 +41,8 @@ Schreibe ein Programm, das ein `int` Array variabler Länge verwaltet.
 
 ---
 
-**Übung (Dynamisches Array aus int):**
+#### **Übung (Dynamisches Array aus int):**
+
 Schreibe ein Programm das die Eingabe von **beliebig vielen**, positiven Zahlen ermöglicht.
 Die Eingabe wird mit –1 abgeschlossen. Das Programm soll anschließend alle Zahlen in umgekehrter Reihenfolge ausgeben.
 
@@ -55,12 +55,10 @@ Ausbaustufen:
 
 ---
 
-**Übung (Werte löschen):**
+#### **Übung (Werte löschen):**
+
 Zusätzlich: Löschen von Elementen.
 
 - Bei Eingabe von –2 soll das letzte Element aus dem Array entfernt werden.
 - Bei Eingabe von –3 soll das erste Element aus dem Array entfernt werden.
 - Sind nach dem Löschen mehr als 5 Elemente frei so soll das dynamische Array verkleinert werden, so dass nach der Verkleinerung 3 Elemente frei sind.
-
----
-

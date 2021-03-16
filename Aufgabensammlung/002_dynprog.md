@@ -1,9 +1,7 @@
 ---
-title: Doc
+title: Dynamic Programming
 tags: []
 ---
-
-# Dynamic Programming
 
 [Quelle](https://ryanstutorials.net/programming-challenges/)
 
