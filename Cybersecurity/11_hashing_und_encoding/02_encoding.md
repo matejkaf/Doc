@@ -1,14 +1,31 @@
 ---
-title: Doc
+title: Encoding / Kodierung
+subtitle: Kryptographie
 tags: [lecture]
 ---
 
-# Encoding / Kodierung
-
 Hashwerte sind große Binärzahlen (typisch 128/256/512 Bits). Diese möchte man als Text darstellen.
-Die Art der Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
 
-Möglichkeiten:
+```bash
+$ openssl dgst -sha256 -binary goethe.txt
+��_�+�BP�c�T}�?9�+d�U�?�p�
+```
+
+Jede Art der Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
+
+Z.B. mit Hex Ziffern:
+
+```bash
+$ openssl dgst -sha256 goethe.txt
+SHA256(goethe.txt)= a911a35ff92bcd4250c063a0547dae3f1ba2b839eaf12b64c955cf3ff7e570e0
+```
+
+
+
+## Möglichkeiten
+
+Häufige Kodierungen sind
+
 - Hex (Radix-16), 1 Buchstabe = 4 Bit
   - NT: Platzbedarf
   - 1 Byte --> 2 Buchstaben
@@ -48,22 +65,23 @@ Verwende [Tabelle](https://en.wikipedia.org/wiki/Base64#Base64_table).
 
 **Übung (SHA256 mit Online shell)**
 
-Verwende ein [Online Linux](https://bellard.org/jslinux/) um mittels des CLI Tools `openssl` den SHA256 Hashwert der Datei hinter dem Link `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe` zu ermitteln. Der Download der Datei geht mit dem Tool `wget`.
+Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl` den SHA256 Hashwert der Datei hinter dem Link `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt` zu ermitteln. Der Download der Datei geht mit dem Tool `wget`.
 
 - In welchem Format ist die Standard Ausgabe?
+- Reduziere die Ausgabe auf den base16 String (Hinweis: `cut`)
 - Ermittle den Hashwert im base64 Format ([StackExchange](https://unix.stackexchange.com/questions/3675/how-can-i-get-a-base64-encoded-shax-on-the-cli))
 - Ermittle durch Kommandozeilentools die Text-Länge der beiden Kodierungsformate (Hinweis: `cut` und `wc`).
 
 ```bash
-$ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe
-# Anmerkung: wird durch gitpages in ein HTML Dokument gewandelt
+$ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
+
 $ openssl dgst -sha256 goethe
 $ openssl dgst -sha256 -binary goethe.md | openssl base64
+
 # Berechnungen mit word count (wc)
 $ openssl dgst -sha256 -binary goethe.md | openssl base64 | wc -m
 $ openssl dgst -sha256 goethe.md | cut -d ' ' -f 2 | wc -m
-
 ```
 
----
+
 

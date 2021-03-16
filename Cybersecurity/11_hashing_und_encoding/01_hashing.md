@@ -54,10 +54,10 @@ Es sollte nicht so einfach sein Daten zu finden die den gleichen Hashwert ergebe
 
 Eigenschaften:
 
-- Hashwert = Fingerabdruck der Daten
+- Hashwert = **Fingerabdruck** der Daten
 
-- Unumkehrbar – Eine Rekonstruktion der Daten aus dem Hashwert ist nicht möglich (außer durch durchprobieren – brute force attack)
-- Kollisionssicher – es ist praktisch unmöglich bei gegebenen Daten andere Daten zu finden die den gleichen Hash haben (=Kollision).
+- **Unumkehrbar** – Eine Rekonstruktion der Daten aus dem Hashwert ist nicht möglich (außer durch durchprobieren – brute force attack)
+- **Kollisionssicher** – es ist praktisch unmöglich bei gegebenen Daten andere Daten zu finden die den gleichen Hash haben (=Kollision).
 
 Anmerkung: SHA-1 gilt als nicht mehr sicher, da Wege zum erzeugen einer Fälschung gefunden wurden. 
 
@@ -86,7 +86,3 @@ Alternative:
 [JSLinux](https://bellard.org/jslinux/)
 
 > Hinweis zum Online Linux Terminal (aus [FAQ](https://bellard.org/jslinux/faq.html)): To copy data, just select it with the mouse and use the "Copy" contextual menu (right click). To paste data, right click on the terminal cursor to show the contextual menu and select "Paste". Alternatively, you can use the "Paste" command in the navigator global menu.
-
-
----
-
