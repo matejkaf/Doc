@@ -57,9 +57,7 @@ Einzelne Buchstaben werden betrachtet und entweder:
 
 ### Caesar-Chiffre
 
-- [Video – Die Caesar Verschlüsselung - Was ist eine Verschlüsselung?](https://youtu.be/DcX77qgbBZw)
-
-- [Video – Einleitung+Caesar](https://youtu.be/-nK32SkZdgY)
+[Video – Die Caesar Verschlüsselung - Was ist eine Verschlüsselung? [5:21]](https://youtu.be/DcX77qgbBZw)
 
 *Was ist der Schlüssel im Caesar Verfahren*?
 
@@ -74,18 +72,19 @@ Diese Verfahren nennt man **monoalphabetische Substition**
 Z.B. Vignère
 
 - [Video: Krypto im Advent 2015 - Vigenère-Verschlüsselung](https://youtu.be/4y4nCG8631g)
-- [Video: Kryptologie - Vigenere Code](https://youtu.be/Bc7I9tD4PuA)
-- [Video: Die Vigenère-Chiffre und der Kasiski-Test](https://youtu.be/Y6qimy9o3f4)
+- [Video: Die Vigenère-Chiffre und der Kasiski-Test [5:56]](https://youtu.be/Y6qimy9o3f4)
 
 
 
 ### Transposition-Chiffre
 
-- Scytale-Cipher (von den Spartanern verwendet?!) = Gartenzaun-Verschlüsselung. Beispiel: diezweiahitsisthierx, 5 Zaunlatten, es ergeben sich 4 Zeilen, beim Dechiffrieren muss man die Anzahl der Zeilen ausrechnen.
+- [Scytale-Cipher](https://de.wikipedia.org/wiki/Skytale) (von den Spartanern verwendet?!)
+- Gartenzaun-Verschlüsselung. [Erklärvideo Gartenzaun-Verschlüsselung [2:56]](https://youtu.be/EIJ73KApF18)
+  - Beispiel: diezweiahitsisthierx, 5 Zaunlatten, es ergeben sich 4 Zeilen, beim Dechiffrieren muss man die Anzahl der Zeilen ausrechnen.
 
 Sonstige:
 
-- [Playfair Cipher](https://youtu.be/-KjFbTK1IIw)
+- [Playfair Cipher (en) [19:17]](https://youtu.be/-KjFbTK1IIw)
 
 
 
