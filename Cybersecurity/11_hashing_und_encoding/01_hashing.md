@@ -1,18 +1,22 @@
 ---
-title: Doc
-tags: [lecture]
+title: Hashfunktionen
+subtitle: Kryptographie
+tags: [lecture,2AHITS_Teach]
 ---
 
-# Hashfunktionen
+- Daten (beliebig groß) ⇨ Hashfunktion ⇨ Wert fixer Länge, z.B. 128, 256 oder 512 Bits. 
 
-Eine Hashfunktion erhält als Eingabe eine beliebig große Menge von Bytes und ermittelt daraus einen Wert fixer Länge, z.B. 128, 256 oder 512 Bits. Diese Berechnung ist nicht umkehrbar (one way function). Außerdem ist es praktisch unmöglich andere Daten zu finden die den gleichen Hashwert ergeben.
+- nicht umkehrbar (one way function)
+- praktisch unmöglich (durchprobieren) andere Daten zu finden die den gleichen Hashwert ergeben
 
-Kryptographische Anwendung:
+## Kryptographische Anwendung
 
 - Erkennen von Fälschungen (Integrität)
 - Digitale Unterschrift (Authentizität)
 - Speichern von Passwörtern
 - Kryptowährungen (Bitcoin, SHA-256)
+
+## Umsetzung
 
 Erste Idee: 8-Bit Summe der ASCII Codes. 
 
@@ -24,7 +28,7 @@ Summe = 384%256 = 128
 
 Ist nicht umkehrbar (viele Texte können 128 ergeben)
 
-Aber: KLAUS ergibt den gleichen Hash-Code (=Hash-Kollision).
+Aber: `KLAUS` ergibt den gleichen Hash-Code (=Hash-Kollision).
 
 ```
 K  L  A  U  S
