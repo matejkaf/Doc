@@ -58,7 +58,7 @@ Eigenschaften:
 - **Unumkehrbar** – Eine Rekonstruktion der Daten aus dem Hashwert ist nicht möglich (außer durch durchprobieren – brute force attack)
 - **Kollisionssicher** – es ist praktisch unmöglich bei gegebenen Daten andere Daten zu finden die den gleichen Hash haben (=Kollision).
 
-Anmerkung: SHA-1 gilt als nicht mehr sicher, da Wege zum erzeugen einer Fälschung gefunden wurden. 
+Anmerkung: SHA-1 gilt als nicht mehr sicher, da Wege zum erzeugen einer Fälschung (=Kollision) gefunden wurden. 
 
 - 2013 theoretisch durch Mark Stevens.  
 - [2017 praktisch – Announcing the first SHA1 collision](https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html) – 1000e Jahre an CPU Rechenzeit notwendig.
