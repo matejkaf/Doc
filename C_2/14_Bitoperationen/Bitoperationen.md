@@ -38,8 +38,6 @@ Allgemein ergeben $n$ Bits $2^n$ (2 hoch n) darstellbare Zahlen.
 8 Bits werden zu einem Byte zusammengefasst. Mit einem Byte können $$2^8={256}$$ Zahlen dargestellt werden. Da auch die 0 enthalten ist, ergibt sich ein Wertebereich von $$0\ldots 255$$.
 Um größere Zahlen darzustellen werden häufig 2, 4 oder 8 Byte zusammengefasst.
 
-{
-
 *Bit-Anzahl* & *Wertebereich* & *Wertebereich*\\
 
 8 & 0\ldots $$2^{8}$$ & 0\ldots $255$\\
@@ -94,9 +92,9 @@ $$10^{0}$$, $$10^{1}$$, $$10^{2} \ldots$$, Stellenwertigkeit
 Grund für Dezimalsystem: 10 Finger. Computer kennen nur 0 und 1 – zwei Zustände daher Zahlenbasis 2 (Binär bzw. Dual).
 
 Beispiel: 1 Byte Zahl
-$10110101_{2}$ = $1\cdot 2^7+0\cdot 2^6+1\cdot 2^5+1\cdot 2^4+0\cdot 2^3+1\cdot 2^2+0\cdot 2^1+1\cdot 2^0$ = $181_{10}$
+$$10110101_{2}$$ = $$1\cdot 2^7+0\cdot 2^6+1\cdot 2^5+1\cdot 2^4+0\cdot 2^3+1\cdot 2^2+0\cdot 2^1+1\cdot 2^0$ = $181_{10}$$
 
-Kleinste Zahl: $00000000_{2}$ = $0_{10}$\\
+Kleinste Zahl: $$00000000_{2}=0_{10}$$
 Größte Zahl: $11111111_{2}$ = $255_{10}$ = $2^{8}-1$
 
 
