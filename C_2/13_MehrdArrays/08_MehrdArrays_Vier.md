@@ -1,7 +1,7 @@
 ---
 title: Mehrdimensionale Arrays
 subtitle: Vier Gewinnt
-tags: [assignment,c]
+tags: [2AHITS,assignment,c]
 ---
 
 

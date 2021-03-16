@@ -1,7 +1,7 @@
 ---
 title: Mehrdimensionale Arrays
 subtitle: Übungen Diagonalen
-tags: [assignment,c]
+tags: [2AHITS,assignment,c]
 ---
 
 **Diagonalen:**

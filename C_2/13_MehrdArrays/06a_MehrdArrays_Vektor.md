@@ -1,7 +1,7 @@
 ---
 title: Mehrdimensionale Arrays
 subtitle: Übungen Vektorrechnung
-tags: [assignment,c]
+tags: [2AHITS,assignment,c]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
