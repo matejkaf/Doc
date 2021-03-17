@@ -10,7 +10,6 @@ test01:$6$TTPymVVpspMofDYz$aDc9NwxcZEpJ.0jxxgFTnQWdDgK948wiLPjcY8iMwJPmmpQzx6kIw
 test02:$6$TzGIne3m/qFINuIB$3kchXYQ8OuZcxRKe0AZe05WX/m1E.B1jfm20bj0WnrMr4m0AoyG7yEnbVPUbEzxcryfeTt11kayOJUidoy19C/:1002:1002:,,,:/home/test02:/bin/bash
 weissman:$6$SotPZzHERU/nisH2$62EdHdS7dsHypMJVJeLAs1shDlx8/tr7FIWiN.RKM..wYMMXCV17.x5/KtEefcnEBLcvMsgwKA2hW32FewVqT0:1003:1003:Weissman,,,:/home/weissman:/bin/bash
 test03:$6$dJJVujy5gSjhsHtI$oX8PV8jl3VFUR.YBPj4PLKSe9q5/gzbWpfdWV0o0BMmtAPovsBQmwbhjQcf8iihMVXIJQWNNCGv9tsW3zAs1N/:1004:1004:,,,:/home/test03:/bin/bash
-
 ```
 
 Passwörter sind gehasht abgespeichert. 
@@ -75,4 +74,41 @@ md5 / charley
 [CrackStation](https://crackstation.net)
 
 (aus 7.3.2.4 Lab - Attacking a mySQL Database.pdf, CISCO CCNA)
+
+
+
+## Python
+
+```python
+#####################
+# https://docs.python.org/3/library/crypt.html
+#
+import crypt
+
+print("available methods")
+print(crypt.methods)
+
+print("default METHOD")
+cr = crypt.crypt("charley")
+print(cr)
+
+print("MD5 method")
+cr = crypt.crypt("charley",crypt.METHOD_MD5)
+print(cr)
+
+# MD5 breach
+breach = "$1$/5ytelKx$nhbg5/0Icyo.RO5YI6WoR1"
+cr = crypt.crypt("charleY",breach)
+print(cr) # if the pw is correct we get same hash here
+```
+
+```
+available methods
+[<crypt.METHOD_SHA512>, <crypt.METHOD_SHA256>, <crypt.METHOD_MD5>, <crypt.METHOD_CRYPT>]
+default METHOD
+$6$Jj3bPBa4b/nN8umM$GDfeqqGb2eyPRT8qs0jqOH7o6TPzBvXEjnlFWACJSF3QfYvpEtWNz6O6f8KuSfov3WioPO/pJABLC0e5lyFJ/1
+MD5 method
+$1$1dm4dxuq$Xdk3QekkfQsE3h2pC7hJH0
+$1$/5ytelKx$8h6U2zW/i.2VVIFI6yfAQ1
+```
 

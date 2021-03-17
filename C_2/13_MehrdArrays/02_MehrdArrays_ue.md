@@ -8,6 +8,8 @@ tags: [assignment,2AHELS,2AHITS,c]
 
 Lege ein zweidimensionales `int` Array mit 5 Zeilen und 7 Spalten an.
 
+Falls schon besprochen: Lösung mit Hilfe von Funktionen.
+
 - Schreibe durch verschachtelte Schleifen die Zahlen `10,11,12,...` zeilenweise in das Array. Es sollen alle Elemente einen Wert erhalten.
 
   ```
