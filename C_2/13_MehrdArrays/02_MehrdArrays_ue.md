@@ -39,6 +39,8 @@ Falls schon besprochen: Lösung mit Hilfe von Funktionen.
 
 #### **Übung (Grundlagen Funktionen):**
 
+Falls in der letzten Aufgabe bereits Funktionen verwendet wurden diese Aufgabenstellung überspringen.
+
 Lege ein 2 dimensionales `int` Array an. Definiere Anzahl der Zeilen und Spalten als globale Konstante (`ZEILEN` und `SPALTEN`). Implementiere die folgenden Funktionen:
 
 - `input()` – Werte zeilenweise ins Array eingeben.
