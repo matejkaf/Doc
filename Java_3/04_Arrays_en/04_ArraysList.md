@@ -99,7 +99,7 @@ Which calls the ArrayLists `toString` Method.
 
 #### **Exercise (Reverse input):**
 
-Write a programm that allows the input of an unlimited number of integer values. A value of –1 ends the input. Afterwards all entered numbers should be printed in reverse Order (not including –1).
+Write a programm that allows the input of an unlimited number of integer values. A value of –1 ends the input. Afterwards all entered numbers should be printed in reverse order (not including –1).
 
 ```java
 // input of one integer
