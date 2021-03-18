@@ -15,26 +15,27 @@ Es gibt sehr viele Verfahren, wir betrachten Sortieren durch Aufsteigen (**Bubbl
 
 **Beispiel:**
 
+Eingegebene Daten
 
-```
-*Teiln.* & *Zeit* \\
+| *Teiln.* | *Zeit* |
+| -------- |        |
+| 1 | 5.61 |
+| 2 | 5.98 |
+| 3 | 5.23 |
+| 4 | 6.2 |
+| 5 | 4.9 |
 
-1 & $5.61$\\
-2 & $5.98$\\
-3 & $5.23$\\
-4 & $6.2$\\
-5 & $4.9$\\
-```
 
-```
-*Teiln.* & *Zeit* \\
+Sortiert:
 
-5 & $4.9$\\
-3 & $5.23$\\
-1 & $5.61$\\
-2 & $5.98$\\
-4 & $6.2$\\
-```
+| *Teiln.* | *Zeit* |
+| -------- |        |
+| 5 | 4.9 |
+| 3 | 5.23 |
+| 1 | 5.61 |
+| 2 | 5.98 |
+| 4 | 6.2 |
+
 
 
 

@@ -75,13 +75,61 @@ Z.B. Vignère
 - [Video: Krypto im Advent 2015 - Vigenère-Verschlüsselung](https://youtu.be/4y4nCG8631g)
 - [Video: Die Vigenère-Chiffre und der Kasiski-Test [5:56]](https://youtu.be/Y6qimy9o3f4)
 
+
+
 ### Transposition-Chiffre
 
-- [Scytale-Cipher](https://de.wikipedia.org/wiki/Skytale) (von den Spartanern verwendet?!)
-- Gartenzaun-Verschlüsselung. [Erklärvideo Gartenzaun-Verschlüsselung [2:56]](https://youtu.be/EIJ73KApF18)
-  - Beispiel: diezweiahitsisthierx, 5 Zaunlatten, es ergeben sich 4 Zeilen, beim Dechiffrieren muss man die Anzahl der Zeilen ausrechnen.
+Umstellung der Reihenfolge
 
-Sonstige:
+- [Scytale-Cipher](https://de.wikipedia.org/wiki/Skytale) (von den Spartanern verwendet?!)
+
+
+
+#### Gartenzaunverschlüsselung
+
+- [Erklärvideo Gartenzaun-Verschlüsselung [2:56]](https://youtu.be/EIJ73KApF18)
+
+- [wikipedia Rail fence cipher](https://en.wikipedia.org/wiki/Rail_fence_cipher)
+
+Verschlüsselung
+
+```
+plaintext: NACHMITTAGPARK
+key: 4
+```
+
+```
+N     T     P
+ A   I T   M A
+  C M   A I   R
+   H     G     K
+--> NTPAITMACMAIRHGK
+```
+
+Entschlüsselung
+
+```
+NTPAITMACMAIRHGK
+key:4
+16 Buchstaben
+```
+
+Zuerst ZigZak zeichnen für 16 Buchstaben
+
+```
+1     1     1
+ 2   6 2   6 2
+  3 5   3 5   3
+   4     4     4
+```
+
+Daraus sieht man wie viele Buchstaben in jeder Zeile einzusetzen sind.
+
+
+
+
+
+### Playfair Cipher
 
 - [Playfair Cipher (en) [19:17]](https://youtu.be/-KjFbTK1IIw)
 
@@ -94,5 +142,6 @@ Computerunterstützt – Daten werden so verändert, dass sie nicht mehr von zuf
 Grundidee: 
 
 - XOR mit einem pseudozufälligen Bitmuster
+  - sehr gute Zufallszahlgeneratoren
 - Mathematik mit großen Primzahlen
 
