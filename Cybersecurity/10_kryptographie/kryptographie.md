@@ -1,5 +1,6 @@
 ---
-title: Doc
+title: Kryptographie
+subtitle: Grundlagen
 tags: [lecture,2AHITS_Teach]
 ---
 
@@ -73,8 +74,6 @@ Z.B. Vignère
 
 - [Video: Krypto im Advent 2015 - Vigenère-Verschlüsselung](https://youtu.be/4y4nCG8631g)
 - [Video: Die Vigenère-Chiffre und der Kasiski-Test [5:56]](https://youtu.be/Y6qimy9o3f4)
-
-
 
 ### Transposition-Chiffre
 
