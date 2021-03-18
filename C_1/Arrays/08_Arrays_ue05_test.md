@@ -65,15 +65,13 @@ print(noten, schueler, anzahl, prozent);
 ```
 Die Ausgabe soll folgendes Aussehen haben:
 
-```
-*Note* & *Anzahl* & *Prozent*\\
-
-sehr gut 		& 7 & 41.2\% \\
-gut 			& 4 & 23.5\% \\
-befriedigend 	& 1 & 5.9\% \\
-genügend 		& 2 & 11.8\% \\
-nicht genügend 	& 3 & 17.7\% \\
-```
+| *Note* | *Anzahl* | *Prozent* |
+| ------ | -------- | --------- |
+| sehr gut 		| 7 | 41.2% |
+| gut 			| 4 | 23.5% |
+| befriedigend 	| 1 | 5.9% |
+| genügend 		| 2 | 11.8% |
+| nicht genügend 	| 3 | 17.7% |
 
 ---
 #### **Übung (Eingabemöglichkeit):**

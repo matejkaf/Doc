@@ -4,10 +4,6 @@ subtitle: Übungen – Mehrere Arrays
 tags: [assignment,array,challenge]
 ---
 
-
-
-
-
 #### **Übung (Wie viele richtige):**
 
 Ein Lottotip (6 aus 45) ist als `int` Array gegeben.
