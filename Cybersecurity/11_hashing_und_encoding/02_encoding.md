@@ -1,19 +1,21 @@
 ---
-title: Encoding / Kodierung
-subtitle: Kryptographie
+title: Kryptographie
+subtitle: Encoding / Kodierung
 tags: [lecture]
 ---
 
-Hashwerte sind große Binärzahlen (typisch 128/256/512 Bits). Diese möchte man als Text darstellen.
+Hashwerte sind große Binärzahlen (typisch 128/256/512 Bits). 
+
+Binärzahlen eignen sich nicht für Darstellung und Übertragung (Email, SMS, ...)
 
 ```bash
 $ openssl dgst -sha256 -binary goethe.txt
 ��_�+�BP�c�T}�?9�+d�U�?�p�
 ```
 
-Jede Art der Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
+Es wird eine Darstellung als Text gewünscht. Jede Art der Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
 
-Z.B. mit Hex Ziffern:
+Möglichkeit – Hex (0–9,a–f):
 
 ```bash
 $ openssl dgst -sha256 goethe.txt
@@ -22,18 +24,15 @@ SHA256(goethe.txt)= a911a35ff92bcd4250c063a0547dae3f1ba2b839eaf12b64c955cf3ff7e5
 
 
 
-## Möglichkeiten
+## Encodings
 
 Häufige Kodierungen sind
 
 - Hex (Radix-16), 1 Buchstabe = 4 Bit
   - NT: Platzbedarf
-  - 1 Byte --> 2 Buchstaben
+  - 1 Byte ⟶ 2 Buchstaben
 - Base64 (Radix-64), 1 Buchstabe = 6 Bit
-  - 3 Byte --> 4 Buchstaben
-
-**Aufgabe:**
-Kodiere den Hashwert aus voriger Aufgabe (Goethe) nach Base64.
+  - 3 Byte ⟶ 4 Buchstaben
 
 ```
 Hex:
@@ -43,45 +42,7 @@ Base64:
 o2EQ5lyquYxb/aovddcx5UxY9Jbk4ec7yb33lUPwysdP6GbPoNITcnk8PcbqNvW9BAeVk/JdmR5y1/1VjxCCyQ==
 ```
 
-**Frage:** Was machen die `=` am Ende des Base64 Strings?
+Siehe [Base64 wikipedia en](https://en.wikipedia.org/wiki/Base64)
 
-[Base64 wikipedia en](https://en.wikipedia.org/wiki/Base64)
-
-3 Bytes (3*8=24 Bits) werden als 4 Buchstaben dargestellt (4*6=24).
-Wenn die Länge der Daten kein Vielfaches von 3 ist wird `=` oder `==` hinten angefügt (Padding).
-
----
-
-**Übung (Base64 kodieren):**
-Kodiere ASCII `"Nb"` als Base64.
-`'N'=0x4e`, `'b'=0x62`
-Verwende [Tabelle](https://en.wikipedia.org/wiki/Base64#Base64_table).
-
----
-
-
-
----
-
-**Übung (SHA256 mit Online shell)**
-
-Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl` den SHA256 Hashwert der Datei hinter dem Link `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt` zu ermitteln. Der Download der Datei geht mit dem Tool `wget`.
-
-- In welchem Format ist die Standard Ausgabe?
-- Reduziere die Ausgabe auf den base16 String (Hinweis: `cut`)
-- Ermittle den Hashwert im base64 Format ([StackExchange](https://unix.stackexchange.com/questions/3675/how-can-i-get-a-base64-encoded-shax-on-the-cli))
-- Ermittle durch Kommandozeilentools die Text-Länge der beiden Kodierungsformate (Hinweis: `cut` und `wc`).
-
-```bash
-$ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
-
-$ openssl dgst -sha256 goethe
-$ openssl dgst -sha256 -binary goethe.md | openssl base64
-
-# Berechnungen mit word count (wc)
-$ openssl dgst -sha256 -binary goethe.md | openssl base64 | wc -m
-$ openssl dgst -sha256 goethe.md | cut -d ' ' -f 2 | wc -m
-```
-
-
+Die `=` am Ende des Base64 Strings? 3 Bytes (3\*8=24 Bits) werden als 4 Buchstaben dargestellt (4\*6=24). Wenn die Länge der Daten kein Vielfaches von 3 ist wird `=` oder `==` hinten angefügt (Padding).
 

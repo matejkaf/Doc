@@ -1,6 +1,6 @@
 ---
-title: Hashfunktionen
-subtitle: Kryptographie
+title: Kryptographie
+subtitle: Hashfunktionen
 tags: [lecture,2AHITS_Teach]
 ---
 
