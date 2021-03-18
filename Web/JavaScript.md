@@ -1,9 +1,8 @@
 ---
-title: Doc
+title: JavaScript
+subtitle: Übersicht
 tags: [lecture,5AHELS]
 ---
-
-# JavaScript
 
 
 - [wikipedia-JavaScript](https://en.wikipedia.org/wiki/JavaScript)

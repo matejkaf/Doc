@@ -1,3 +1,10 @@
+---
+title: PHP
+subtitle: Snippets
+---
+
+
+
 # Generel
 
 ```php

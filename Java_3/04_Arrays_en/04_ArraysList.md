@@ -97,6 +97,22 @@ Which calls the ArrayLists `toString` Method.
 
 
 
+#### **Exercise (Reverse input):**
+
+Write a programm that allows the input of an unlimited number of integer values. A value of –1 ends the input. Afterwards all entered numbers should be printed in reverse Order (not including –1).
+
+```java
+// input of one integer
+Scanner scn = new Scanner(System.in);
+System.out.println("Value: ");
+int input = scn.nextInt();
+System.out.println(input);
+```
+
+
+
+---
+
 #### **Exercise (Count words):**
 
 Write a program to count word occurences. The program lets the user enter words and counts how often each word is entered. The program shall support an arbitrary amount of different words. At program start the number of different words is not known.

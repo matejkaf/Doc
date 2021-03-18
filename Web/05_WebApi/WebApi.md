@@ -1,11 +1,8 @@
 ---
-title: Doc
-tags: [lecture,]
+title: Java Script
+subtitle: Web API
+tags: [lecture]
 ---
-
-# Java Script – Web API
-
-
 
 ## Ereignisse
 

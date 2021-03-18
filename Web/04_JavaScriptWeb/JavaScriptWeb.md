@@ -1,6 +1,10 @@
+---
+title: Java Script in Websites
+---
 
 
-# Allgemein
+
+## Allgemein
 
 Von JavaScript aus kann dynamisch die Darstellung einer HTML Seite verändert werden.
 Lege 2 Dateien (`indedex.html` und `index.js` ) mit folgendem Inhalt an:
@@ -31,7 +35,7 @@ function pressed() {
 
 Skripts werden **nach** dem Laden der Webseite ausgeführt.
 
-# DOM
+## DOM
 
 Im **DOM** (Document Object Model) speichert der Web Browser alle Informationen über die Web-Seite.
 Mit der Methode `getElementById` erhält man ein JavaScript Objekt zum Zugriff auf Elemente im DOM.
@@ -97,7 +101,7 @@ para.innerHTML=str;
 
 
 
-# Element Attribute
+## Element Attribute
 
 Attribute eines Elements können über JavaScript verändert werden.
 
@@ -118,25 +122,28 @@ x.style.textAlign = "center";
 CSS Namen mit Bindestrich: aus `text-align` wird z.B. `textAlign`
 </div>
 
-\pagebreak
 
-# Aufgaben
+## Aufgaben
 
-<div class="uebung" caption="Zähler">
+#### **Übung (Klick Zähler)**
 Schreibe ein JavaScript Programm.
 Es soll ein Button angezeigt werden.
 Ein Text zählt jedes drücken des Buttons mit.
 Z.B. `Es wurde 21 mal gedrückt`
 
 Die Anzahl ist eine globale Variable.
-</div>
+
+---
 
 
-<div class="uebung" caption="Farbe">
+#### **Übung (Farbe)**
+
 Implementiere einen Button durch dessen Betätigung ein Text die Farbe hin und her wechselt.
-</div>
 
-<div class="uebung" caption="Aufzählung">
+---
+
+#### **Übung (Aufzählung)**
+
 Durch drücken eines Buttons soll eine Aufzählungsliste immer länger werden.
 Wurde z.B. der Button 3 mal gedrückt so soll die Liste so aussehen:
 
@@ -144,9 +151,10 @@ Wurde z.B. der Button 3 mal gedrückt so soll die Liste so aussehen:
 - 2
 - 3
 
-</div>
+---
 
-<div class="uebung" caption="Aufzählung">
+#### **Übung (Aufzählung II)**
+
 Wie vorher - nur soll die Liste so aussehen:
 
 - 1
@@ -162,16 +170,18 @@ for(let i=0; i<n; i++) {
 }
 ```
 
-</div>
+---
 
-<div class="uebung" caption="Münzwurf">
+#### **Übung (Münzwurf)**
+
 Schreibe ein Programm das nach drücken eines Buttons eine Münze zufällig wirft.
 Die Münz-Vorder oder -Rückseite soll als Bild angezeigt werden.
 
 Hinweis: `Math.random()` liefert eine Zufallszahl zwischen 0 und 1.
-</div>
 
-<div class="uebung" caption="Würfel">
+---
+
+#### **Übung (Würfel)**
+
 Wie vorher nur mit einem sechs-seitigen Würfel.
-</div>
 

@@ -1,11 +1,8 @@
 ---
-title: Doc
+title: Javascrip / HTML
+subtitle: Snippets
 tags: [info,5AHELS]
 ---
-
-
-
-# Snippets: Javascrip / HTML
 
 ## Readonly
 
@@ -444,8 +441,7 @@ fetch(url)
 
 ## Template Strings (ES6)
 
-Ermöglichen sogenannte *String Interpolation*,
-siehe [Template Strings](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/template_strings).
+Ermöglichen sogenannte *String Interpolation* – siehe [Template Strings](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/template_strings).
 
 ```javascript
 let x=2

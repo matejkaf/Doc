@@ -1,4 +1,11 @@
-# Variablen
+---
+title: Java Script
+subtitle: Data Processing
+---
+
+
+
+## Variablen
 
 Variablen werden mit `let` angelegt. Datentypen sind nicht notwendig.
 
@@ -19,9 +26,9 @@ let text2 = 'xyz';
 ```
 
 
-# Arrays und Objects
+## Arrays und Objects
 
-## JS Arrays
+### JS Arrays
 
 ```javascript
 let fruits = ["Banana", "Orange", "Apple", "Mango"]
@@ -47,7 +54,7 @@ Ergebnis:
   <li>9 Mangos</li>
 </ul>
 ```
-## JS Objects
+### JS Objects
 
 JavaScript Objekte sind Zusammenfassungen unterschiedlicher Werte.
 Jeder Wert kann über einen Namen angesprochen werden.
@@ -57,7 +64,7 @@ let fruit = {name:"Banana", count:3};
 console.log(fruit.count+" "+fruit.name);
 ```
 
-## JS Array + Object
+### JS Array + Object
 
 Arrays und Objects sind beliebig miteinander kombinierber
 

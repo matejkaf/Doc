@@ -1,6 +1,6 @@
 ---
 
-title: Doc
+title: OOP in C++
 ---
 
 # C++
