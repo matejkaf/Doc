@@ -22,7 +22,7 @@ int sum(int a[])
   {
     s = s+a[i];
   }
-	return s;
+  return s;
 }
 
 void main()
@@ -34,7 +34,7 @@ void main()
   int x=5;
   int n=1;
   while(x>0) {
-		n = n*2;
+    n = n*2;
     x--;
   }
   printf("%d",n);
@@ -77,7 +77,7 @@ int sum(int a[])
   {
     s = s+a[i];
   }
-	return s;
+  return s;
 }
 
 void main()
@@ -89,7 +89,7 @@ void main()
   int x=5;
   int n=1;
   while(x>0) {
-		n = n*2;
+    n = n*2;
     x--;
   }
   printf("%d",n);
