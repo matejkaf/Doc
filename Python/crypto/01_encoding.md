@@ -111,5 +111,5 @@ UTF-32 Encoding:	0x00016F1D
 
 ## Weiterführend
 
-Weiteres dazu in [Unicode in Python](https://docs.python.org/3/howto/unicode.html) oder [Skript zu Unicode](/Diverses/Unicode/unicode).
+Weiteres dazu in [Unicode in Python](https://docs.python.org/3/howto/unicode.html) oder [Skript zu Unicode](/Doc/Diverses/Unicode/unicode).
 
