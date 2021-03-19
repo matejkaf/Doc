@@ -41,7 +41,7 @@ void main()
 }
 ```
 
-Die Zahl 5 in der Bedeutung "Länge des Arrays arr" kommt im Programm mehrfach vor. Aber die Zahl 5 kann natürlich auch andere Bedeutungen haben, wie man im Programm sieht (x=5`). Um so länger ein Programm wird umso schwierger wird es die Bedeutung der Konstanten auseinanderzuhalten. 
+Die Zahl 5 in der Bedeutung "Länge des Arrays arr" kommt im Programm mehrfach vor. Aber die Zahl 5 kann natürlich auch andere Bedeutungen haben, wie man im Programm sieht (`x=5`). Um so länger ein Programm wird umso schwierger wird es die Bedeutung der Konstanten auseinanderzuhalten. 
 
 Problematisch wird zum Beispiel auch eine spätere Änderung der Array-Länge, z.B. von 5 auf 7. Dazu muss das ganze Programm nach den "richtigen" 5 durchsucht werden. Die Wahrscheinlichkeit, dass dabei Fehler passieren ist ziemlich groß.
 
