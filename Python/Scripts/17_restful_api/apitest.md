@@ -140,6 +140,237 @@ if __name__ == '__main__':
 
 
 
+## Finaler Stand
+
+```python
+from flask import Flask, render_template, jsonify, abort
+
+ratings = [{
+    'id': 1,
+    'name': u'Kößlarner',
+    'rating': 5,
+}, {
+    'id': 2,
+    'name': 'faxe',
+    'rating': 1,
+}, {
+    'id': 3,
+    'name': 'Oettinger',
+    'rating': 5,
+}, {
+    'id': 4,
+    'name': 'Stiegl',
+    'rating': 3,
+}]
+
+app = Flask(
+    __name__,
+    static_folder='static',
+    template_folder='templates',
+)
+
+
+@app.route('/')
+def index():
+    return 'Hello Flask'
+
+
+@app.route('/2')
+def template_test():
+    return render_template('template01.html', myVar=1234)
+
+
+# GET ratings
+# curl -i https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings
+@app.route('/ratings', methods=['GET'])
+def get_ratings():
+    return jsonify(ratings)
+
+
+# GET ratings single
+# curl -i https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings/2
+@app.route('/ratings/<int:rating_id>', methods=['GET'])
+def get_rating(rating_id):
+    rating = [n for n in ratings if n['id'] == rating_id]
+    assert len(rating) <= 1
+    if len(rating) == 0:
+        abort(404)
+    return jsonify(rating[0])
+
+
+from flask import make_response
+
+
+# Error Handler
+@app.errorhandler(404)
+def not_found(error):
+    return make_response(jsonify({'error': 'Not found'}), 404)
+
+
+## https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask
+
+from flask import request
+# curl --request POST --header 'Content-Type: application/json' --data '{"name": "Augustiner", "rating": 5}' https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings
+# curl --request POST --header 'Content-Type: application/json' --data '{"name": "Augustiner"}' https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings
+
+
+@app.route('/ratings', methods=['POST'])
+def create_rating():
+    if not request.json or not 'name' in request.json:
+        abort(400)
+    rating = {
+        'id': ratings[-1]['id'] + 1,
+        'name': request.json['name'],
+        'rating': request.json.get('rating', -1)
+    }
+    ratings.append(rating)
+    return jsonify(rating), 201
+
+
+# PUT
+# curl --request PUT --header 'Content-Type: application/json' --data '{"rating": 5}' https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings/4
+@app.route('/ratings/<int:rating_id>', methods=['PUT'])
+def change_rating(rating_id):
+    rating = [n for n in ratings if n['id'] == rating_id]
+    assert len(rating) <= 1
+    if len(rating) == 0:
+        abort(404)
+    rating[0]['name'] = request.json.get('name', rating[0]['name'])
+    rating[0]['rating'] = request.json.get('rating', rating[0]['rating'])
+    return jsonify(rating[0])
+
+# DELETE
+# curl --request DELETE https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings/2
+@app.route('/ratings/<int:rating_id>', methods=['DELETE'])
+def delete_rating(rating_id):
+    rating = [n for n in ratings if n['id'] == rating_id]
+    assert len(rating) <= 1
+    if len(rating) == 0:
+        abort(404)
+    ratings.remove(rating[0])
+    return jsonify(rating[0])
+
+if __name__ == '__main__':
+    app.run(
+        debug=True,
+        host='0.0.0.0',
+    )
+```
+
+
+
+## C# Client
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
+
+namespace _210312_Ratings_Client
+{
+  class Rating {
+    public int? id {get; set;}
+    public string name {get; set;}
+    public int rating {get; set;}
+    public override string ToString()
+    {
+      return $"[{id}] {name} - {rating}";
+    }
+  }
+
+  class Program
+  {
+    static async Task Main(string[] args)
+    {
+      Console.WriteLine("Connect to Ratings API Server ...");
+      var url = "https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings";
+      HttpClient client = new HttpClient();
+
+      HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
+      HttpResponseMessage response = await client.SendAsync(request);
+      System.Console.WriteLine("Response Status: "+response.StatusCode); 
+      string responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      var ratings = JsonSerializer.Deserialize<List<Rating>>(responseBody);
+      foreach (var rating in ratings)
+      {
+        System.Console.WriteLine(rating.ToString());
+      }
+
+      //
+      // Lesen eines einzelnen Elements
+      //
+      url = "https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings/3";
+      request = new HttpRequestMessage(HttpMethod.Get, url);
+      response = await client.SendAsync(request);
+      System.Console.WriteLine("Response Status: "+response.StatusCode); 
+      responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      var singleRating = JsonSerializer.Deserialize<Rating>(responseBody);
+      Console.WriteLine(singleRating);
+
+      //
+      // Neues Element einfügen
+      //
+      url = "https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings";
+      request = new HttpRequestMessage(HttpMethod.Post, url);
+      var options = new JsonSerializerOptions
+      {
+        IgnoreNullValues = true,
+        //WriteIndented = true
+      };            
+      var newRating = new Rating() {name="Augustinger", rating=5};
+      var jsonStr = JsonSerializer.Serialize<Rating>(newRating,options);
+      request.Content = new StringContent(
+        jsonStr, Encoding.UTF8, "application/json");
+
+      response = await client.SendAsync(request);
+      System.Console.WriteLine("Response Status: "+response.StatusCode); 
+      responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      singleRating = JsonSerializer.Deserialize<Rating>(responseBody);
+      Console.WriteLine(singleRating);
+
+      //
+      // Element Ändern
+      //
+      url = "https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings/4";
+      request = new HttpRequestMessage(HttpMethod.Put, url);
+      var changedRating = new Rating() {rating=5};
+      jsonStr = JsonSerializer.Serialize<Rating>(changedRating,options);
+      request.Content = new StringContent(jsonStr, Encoding.UTF8, "application/json");
+      response = await client.SendAsync(request);
+      System.Console.WriteLine("Response Status: "+response.StatusCode); 
+      responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      singleRating = JsonSerializer.Deserialize<Rating>(responseBody);
+      Console.WriteLine(singleRating);
+
+      //
+      // Element löschen
+      //
+      url = "https://FlaskTest015AHELSGrpB.htlmatejka.repl.co/ratings/2";
+      request = new HttpRequestMessage(HttpMethod.Delete, url);
+      response = await client.SendAsync(request);
+      System.Console.WriteLine("Response Status: "+response.StatusCode); 
+      responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      singleRating = JsonSerializer.Deserialize<Rating>(responseBody);
+      Console.WriteLine(singleRating);
+
+
+    }
+  }
+}
+
+```
+
+
+
 
 
 ## repl.it Hosting
