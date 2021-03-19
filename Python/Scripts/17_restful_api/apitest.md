@@ -373,6 +373,152 @@ namespace _210312_Ratings_Client
 
 
 
+
+
+## JS Client
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Ratings</h1>
+  <p>Willkommen zur Ratings Datenbank.</p>
+
+  <div id="ratingsDiv">
+
+  </div>
+
+  <hr>
+
+ <form action="" onsubmit="saveRating(this);return false">
+  <label for="ratingName">Name: </label><br>
+  <input placeholder="z.B. Gösser" type="text" id="ratingName" name="ratingName" required><br>
+  <label for="ratingRating">Rating: </label><br>
+  <input placeholder="1-5" type="number" id="ratingRating" name="ratingRating" min="1" max="5" required><br>
+ <input type="submit" value="Speichern">
+ </form>
+
+<script src="ratings.js"></script>
+</body>
+</html>
+```
+
+
+
+```js
+
+console.log('hi there')
+reloadRatings()
+
+///////////////////////////////////////////
+
+function createElement(element,innerText)
+{
+  let el = document.createElement(element)
+  el.innerText = innerText
+  return el
+}
+
+function createRow(element, list)
+{
+  let row = document.createElement('tr')
+  for( text of list )
+  {
+    row.appendChild(createElement(element,text))
+  }
+  return row
+}
+
+function processRatings(ratings)
+{
+  console.log(ratings)
+  const ratingsDiv = document.getElementById('ratingsDiv')
+  const htmlTable = document.createElement('table')
+  htmlTable.style.border='solid 1px black'
+
+  htmlTable.appendChild(createRow('th',['Name','Rating']))
+  for( rating of ratings)
+  {
+    htmlTable.appendChild(createRow('td',
+    [
+      rating['name'],
+      rating['rating']
+    ]
+    ))
+  }
+  ratingsDiv.innerHTML = ""
+  ratingsDiv.appendChild(htmlTable)
+
+/*
+  let htmlUl = document.createElement('ul')
+  for( rating of ratings)
+  {
+    console.log(rating)
+    let htmlLi = document.createElement('li')
+    htmlLi.innerText = rating['name']
+    htmlUl.appendChild(htmlLi)
+  }
+  ratingsDiv.appendChild(htmlUl)
+  */
+}
+
+function reloadRatings()
+{
+  const httpReq = new XMLHttpRequest()
+  httpReq.addEventListener("load", function() {
+    console.log('Response received')
+    console.log(this.responseText)
+    const response = JSON.parse(this.responseText)
+    processRatings(response)
+  })
+
+  const url = '/api/ratings'
+  httpReq.open('GET',url)
+  httpReq.send()
+}
+
+//
+//
+function saveRating(form)
+{
+  console.trace('saveRating')
+  postRating(
+    {
+      'name':form.elements['ratingName'].value,
+      'rating': form.elements['ratingRating'].value
+    }
+  )
+}
+
+function postRating(rating)
+{
+  console.trace('postRating')
+  console.log(rating)
+  const httpReq = new XMLHttpRequest()
+  httpReq.addEventListener("load", function() {
+    console.log('POST Response received')
+    const response = JSON.parse(this.responseText)
+    console.log(response)
+    reloadRatings()
+  })
+
+  const url = '/api/ratings/'
+  httpReq.open('POST',url)
+  httpReq.setRequestHeader("Content-Type", "application/json");
+  httpReq.send(JSON.stringify(rating))
+}
+
+```
+
+
+
+
+
 ## repl.it Hosting
 
 [Flask Tutorial](https://repl.it/talk/learn/Flask-Tutorial-Part-1-the-basics/26272)
