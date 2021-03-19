@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Encoding / Kodierung
-tags: [lecture]
+tags: [lecture,2AHITS_Teach]
 ---
 
 Hashwerte sind große Binärzahlen (typisch 128/256/512 Bits). 

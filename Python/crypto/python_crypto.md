@@ -25,3 +25,9 @@ pip install cryptography
 
 
 
+- [Python Cryptography Toolkit (pycrypto)](https://pypi.org/project/pycrypto/)
+  - [](https://stackoverflow.com/questions/12524994/encrypt-decrypt-using-pycrypto-aes-256)
+  - Scheint nicht mehr weiterentwickelt zu werden ([](https://www.reddit.com/r/Python/comments/5gn3q8/what_crypto_library_should_one_use_in_python/))
+
+- [pyca/cryptography](https://github.com/pyca/cryptography)
+

@@ -244,9 +244,23 @@ count = str1.count('l')       # Number of occurrences of a substring
 "#".join(['a','b','c'])       # build string by joining an iterable
 ```
 
-String interpolation (Python 3.6):
+String interpolation (Python ≥3.6):
 ```python
 print(f'{x*2} Test')
+```
+
+
+
+`ord` (Unicode-Zeichen ⟶ `int`–Codepoint) und `chr` (Codepoint⟶Zeichen)
+
+```python
+print(ord('5'))    # 53
+print(ord('A'))    # 65
+print(ord('$'))    # 36
+
+print(chr(97)) 		# a
+print(chr(65)) 		# A
+print(chr(1200)) 	# Ұ
 ```
 
 
@@ -580,9 +594,7 @@ print os.path.getmtime(dst2)
 
 
 
-### UTF8
-
-In python3 nicht mehr notwendig?
+### Encoding / UTF8
 
 ```python
 #! /usr/bin/env python
@@ -590,7 +602,31 @@ In python3 nicht mehr notwendig?
 
 ```
 
+In python3 nicht mehr notwendig!
 
+[str.encode](https://docs.python.org/3/library/stdtypes.html#str.encode)
+
+```python
+text = "oö aä uü z÷ |🐌|"
+text_bytes = text.encode('utf-8')
+print(text_bytes)
+```
+
+```
+b'o\xc3\xb6 a\xc3\xa4 u\xc3\xbc z\xc3\xb7 |\xf0\x9f\x90\x8c|'
+```
+
+Bytestring im UTF-8 Encoding
+
+[bytes.decode](https://docs.python.org/3/library/stdtypes.html#bytes.decode):
+
+```python
+b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')
+```
+
+```
+'蓏콯캁澽苏'
+```
 
 ### Dir Rekursion
 

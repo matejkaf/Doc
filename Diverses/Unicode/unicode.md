@@ -68,14 +68,14 @@ UTF-8 versucht maximale Kompatibilität zu erreichen. ASCII Codes <128 sind auto
 Zum Encoding:
 
 - die ersten Bits im ersten Byte kennzeichnen eindeutig die Anzahl der folgenden Bytes.
-- Bytes die auf das erste folgen beginnen mit einer anderen Bit-Sequenz (10), daher kann in einem Datenstrom von jeder Stelle aus der Beginn des nächsten Zeichens gefunden werden (self-synchronisation).
+- Bytes die auf das erste folgen beginnen mit einer anderen Bit-Sequenz (10), daher kann in einem Datenstrom von jeder Stelle aus der Beginn des nächsten Zeichens gefunden werden (**self-synchronisation**).
 
 ### UTF-16
 
 - U+0000-U+D7FF und U+E000-U+FFFF, diese codepoints werden 1:1 als 16 Bit Wert abgebildet
 - Ist der erste 16 Bit Wert im Bereich 0xD800-0xDFFF so wird durch einen nachfolgenden 16 Bit Wert erweitert. Die Erweiterung ist nur notwendig für Emoji, seltene Symbole, selten verwendete chinesische Schriftzeichen.
 
-Java und c#/.Net verwenden intern UTF-16 zur String Darstellung.
+Java und C#/.Net verwenden intern UTF-16 zur String Darstellung.
 
 Siehe [wikipedia](https://en.wikipedia.org/wiki/UTF-16)
 
@@ -89,9 +89,9 @@ In dieser Kodierung wird jedes Zeichen durch 4 Bytes dargestellt. Dies ist die e
 
 BOM = Byte Order Mark
 
-Steht am Anfang der Zeichenfolge und dient bei UTF-16 und UTF-32 um die Byte Reihenfolge zu kennzeichnen.
+Steht am Anfang der Zeichenfolge und dient bei UTF-16 und UTF-32 um die Byte Reihenfolge (Little oder Big-Endian) zu kennzeichnen. Bei Little-Endian kommt das niederwertigste Byte zuerst.
 
-Beispiel: 0x01FF (= 511 dez), wird entweder in der Reihenfolge FF 01 (little endian) oder 01 FF (big endian) angegeben. Bei little endian kommt das niederwertigste Byte zuerst.
+Beispiel: U+01FE (Ǿ) = 511 dez, wird entweder in der Reihenfolge `FF 01` (little endian) oder `01 FF` (big endian) angegeben. 
 
 In UTF-16 besteht das BOM in [Big-Endian](https://de.wikipedia.org/wiki/Byte-Reihenfolge)-Notation aus der Zweibyte-Sequenz `FE FF`, in der [Little-Endian](https://de.wikipedia.org/wiki/Byte-Reihenfolge)-Notation umgekehrt aus `FF FE`. Da das Zeichen U+FFFE als ungültig definiert ist, kann durch die Reihenfolge der zwei Bytes eindeutig die Reihenfolge der Bytes festgestellt werden. Bei UTF-32 stehen davor oder dahinter noch zwei Nullbytes, die zur Erkennung der Byte-Reihenfolge dienen.
 
@@ -158,9 +158,27 @@ System.out.println(System.getProperty("file.encoding"));
 
 ## HTML
 
+Durch ein `meta` Tag am Beginn des Dokuments
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+
 
 
 ## HTTP
+
+Der Web Server ermittelt das Encoding des HTML Dokuments z.B. durch das `meta` Tag im HTML `<head>`.
 
 ```http
 Content-Type: text/html; charset=utf-8

@@ -211,7 +211,6 @@ $ cut -d , -f 2 klassenkassa.csv
 # -d , ... Beistricht als delimiter (Standard: TAB)
 # -f 2 ... 2tes Feld wählen
 ```
-> [!2AHITS G1 12.03.2021]
 
 > [!2AHITS G2 05.03.2021]
 
@@ -236,7 +235,7 @@ Wagner,18.09.2019,20.0,Werkstatt
 
 ---
 
-**Übung (Werkstatt Einzeiler)**: Schreibe ein shell Kommand das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
+**Übung (Werkstatt Einzeiler)**: Schreibe ein shell Kommando das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
 
 ```
 20.0+20.0+20.0+20.0
@@ -253,6 +252,9 @@ Lösung:
 
 ```bash
 $ grep Werkstatt klassenkassa.csv | cut -d, -f3 | paste -s -d+
+```
+
+```
 20.0+20.0+20.0+20.0
 ```
 
@@ -272,7 +274,7 @@ echo '1+2+3' | python3 -c 'print(eval(input()))'
 
 `tr` Translate (einzelne Zeichen ersetzen/löschen)
 
-Stelle das CSV File `klassenkassa.csv` lesbarer dar (`','` durch `'\t'` - Tabulator - erstetzen ).
+Stelle das CSV File `klassenkassa.csv` lesbarer dar (`','` durch `'\t'` - Tabulator - erstetzen).
 
 ```bash
 $ cat klassenkassa.csv | tr ',' '\t'
@@ -299,6 +301,8 @@ hi there
 $ echo "hello there" | sed "s/hello/hi/" | sed "s/there/robots/"
 hi robots
 ```
+
+> [!2AHITS G1 19.03.2021]
 
 
 

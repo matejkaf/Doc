@@ -107,4 +107,9 @@ UTF-8 Encoding:	0xF0 0x96 0xBC 0x9D
 UTF-16 Encoding:	0xD81B 0xDF1D
 UTF-32 Encoding:	0x00016F1D
 
-Weiteres dazu in [Unicode in Python](https://docs.python.org/3/howto/unicode.html)
+
+
+## Weiterführend
+
+Weiteres dazu in [Unicode in Python](https://docs.python.org/3/howto/unicode.html) oder [Skript zu Unicode](/Diverses/Unicode/unicode).
+
