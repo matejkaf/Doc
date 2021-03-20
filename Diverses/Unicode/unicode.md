@@ -8,22 +8,16 @@ Unicode = *Universal Coded Character Set*
 
 > **Unicode** is a computing industry standard for the consistent encoding, representation, and handling of [text](https://en.wikipedia.org/wiki/Character_(computing)) expressed in most of the world's writing systems. [[wikipedia](https://en.wikipedia.org/wiki/Unicode)]
 
+Das Ziel von Unicode ist alle weltweit verwendeten Text-Zeichen in einem gemeinsamen Standard zu vereinen.
 
+Unicode definiert Ca. 144.000 Zeichen. Jedem Zeichen wird eine Nummer – **code point** – zugeordnet.
 
-> *The Unicode Standard* consists of a set of code charts for visual reference, an encoding method and set of standard [character encodings](https://en.wikipedia.org/wiki/Character_encoding), a set of reference [data files](https://en.wikipedia.org/wiki/Data_file), and a number of related items, such as character properties, rules for [normalization](https://en.wikipedia.org/wiki/Unicode_normalization), decomposition, [collation](https://en.wikipedia.org/wiki/Unicode_collation_algorithm), rendering, and [bidirectional](https://en.wikipedia.org/wiki/Bi-directional_text) display order (for the correct display of text containing both right-to-left scripts, such as [Arabic](https://en.wikipedia.org/wiki/Arabic_script) and [Hebrew](https://en.wikipedia.org/wiki/Hebrew_alphabet), and left-to-right scripts). [[wikipedia](https://en.wikipedia.org/wiki/Unicode)]
-
-collation = Reihenfolge (z.B. Alphabetisch)
-
-Unicode ist ein **coded character set** = Zuordnung von Nummern (genannt **code points**) auf Zeichen. 
-
-> ISO Latin-1 (ISO 8859-1) coded character set provides the Western European alphabet and symbols and their numeric representations. 
-
-Ein code point wird durch 4 Hex Ziffer angegeben: U+00F7 (÷, Divisionszeichen). Darüber hinausgehende Code Points verwenden 5 oder 6 hex Ziffern, z.B. U+1F40C (🐌) oder U+1F9B9 (🦹, Supervillain). Maximal verwendet Unicode 21 Bits.
+Ein code point wird durch 4 Hex Ziffer angegeben: U+00F7 (÷, Divisionszeichen). Darüber hinausgehende Code Points verwenden 5 bzw. 6 hex Ziffern, z.B. U+1F40C (🐌) oder U+1F9B9 (🦹, Supervillain). Maximal verwendet Unicode 21 Bits.
 
 - Die codepoints 0-127 sind identisch zum ASCII Code.
 - 128 bis codepoint 255 ist ident mit [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1) (Latin-1) für maximale Kompatibilität mit bestehendem westlichen Text.  \"Ä\" ist z.B. U+00C4.
 
-Die aktuell Version 11.0 des Standards kennt ca. 140.000 Zeichen/Symbole/Emojis in 146 Schriftsystemen.
+  > ISO Latin-1 (ISO 8859-1) coded character set provides the Western European alphabet and symbols and their numeric representations. 
 
 
 
@@ -73,15 +67,13 @@ Zum Encoding:
 ### UTF-16
 
 - U+0000-U+D7FF und U+E000-U+FFFF, diese codepoints werden 1:1 als 16 Bit Wert abgebildet
-- Ist der erste 16 Bit Wert im Bereich 0xD800-0xDFFF so wird durch einen nachfolgenden 16 Bit Wert erweitert. Die Erweiterung ist nur notwendig für Emoji, seltene Symbole, selten verwendete chinesische Schriftzeichen.
+- Ist der erste 16 Bit Wert im Bereich 0xD800-0xDFFF so wird durch einen nachfolgenden 16 Bit Wert erweitert. Die Erweiterung ist nur notwendig für Emoji, seltene Symbole sowie selten verwendete chinesische Schriftzeichen.
 
-Java und C#/.Net verwenden intern UTF-16 zur String Darstellung.
-
-Siehe [wikipedia](https://en.wikipedia.org/wiki/UTF-16)
+Java und C#/.Net verwenden intern UTF-16 zur String Darstellung. Siehe [wikipedia](https://en.wikipedia.org/wiki/UTF-16)
 
 ### UTF-32
 
-In dieser Kodierung wird jedes Zeichen durch 4 Bytes dargestellt. Dies ist die einfachste Kodierung benötigt aber am meisten Speicher. Wird eher selten verwendet.
+In dieser Kodierung wird jedes Zeichen durch 4 Bytes dargestellt. Dies ist die einfachste Kodierung, benötigt aber am meisten Speicher. Wird eher selten verwendet.
 
 
 
@@ -103,9 +95,9 @@ Die [UTF-8](https://de.wikipedia.org/wiki/UTF-8)-Kodierung des BOM besteht aus d
 
 Am Beginn der Computerei waren viele verschiedene Zeichensätze in Verwendung. Der Austausch von Texten zwischen unterschiedlichen Systemen gestaltete sich demensprechend schwierig. Der erste Schritt zur vereinheitlichung war 1963 der ASCII Code. Im ASCII Code sind Zeichen mit den code points 32–126 definiert. 
 
-Der ASCII Code ist auf 7 Bit beschränkt (Systeme zu dieser Zeit nutzten 7 Bits) und enthält die Zeichen einer englischsprachigen Tastatur. Durch den Übergang auf 8 Bit Systeme ergab sich die Möglichkeit die Codepoints 128–254 zu nutzen (z.B. für westeuropäische Zeichen, éóöä). Wieder entstanden unterschiedliche Zeichensätze die zwar alle den ASCII Code verwendeten aber sich in der oberen Hälfte unterschieden.
+Der ASCII Code ist auf **7 Bit** beschränkt (Systeme zu dieser Zeit nutzten 7 Bits) und enthält die Zeichen einer englischsprachigen Tastatur. Durch den Übergang auf **8 Bit** Systeme ergab sich die Möglichkeit die Codepoints 128–254 zu nutzen (z.B. für westeuropäische Zeichen, éóöä). Wieder entstanden unterschiedliche Zeichensätze die zwar alle den ASCII Code verwendeten aber sich in der oberen Hälfte (128–254) unterschieden.
 
-IBM nannte diese Zeichensätze Code Pages und begann diese  durchzunummerieren. Microsoft, Oracle, SAP, u.a. haben dieses Nummernschema übernommen. Besonders bekannt ist Code Page 1252. Microsoft verwendet **CP-1252** (auch Windows-1252 oder ANSI encoding genannt) für englische und die meisten westlichen Sprachvarianten von Windows. CP-1252 ist wahrscheinlich der am meisten verbreitete 8-Bit Zeichensatz.
+IBM nannte diese Zeichensätze **Code Pages** und begann diese  durchzunummerieren. Microsoft, Oracle, SAP, u.a. haben dieses Nummernschema übernommen. Besonders bekannt ist Code Page 1252. Microsoft verwendet **CP-1252** (auch Windows-1252 oder ANSI encoding genannt) für englische und die meisten westlichen Sprachvarianten von Windows. CP-1252 ist wahrscheinlich der am meisten verbreitete 8-Bit Zeichensatz.
 
 Um den von den Firmen verursachten Zeichensatz-Wildwuchs einzudämmen gab es die Arbeit an der Norm **ISO 8859** und später **Unicode**.
 
