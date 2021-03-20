@@ -35,6 +35,8 @@ Verwende `int` als Rückgabewert und mache keine Ausgaben in der Funktion (nur i
 
 #### **Übung (Passwort Eingabe):**
 
+Falls das verwendete System `getch()` unterstützt:
+
 Implementiere eine Funktion `void getpass(char str[])` die die verdeckte Eingabe eines Strings (Passwort) ermöglicht.  Verwende `getch()` zum Einlesen der einzelnen Zeichen (`getch` gibt das eingegeben Zeichen nicht am Bildschirm aus). Für jedes eingegebene Zeichen soll ein `*` ausgegeben werden. Hinweis: Die Enter Taste liefert das Zeichen `'\r'`.
 
 ---
