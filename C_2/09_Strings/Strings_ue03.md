@@ -1,9 +1,8 @@
 ---
-title: Doc
+title: Strings
+subtitle: Übungen
 tags: [c,strings,assignment]
 ---
-
-# String Aufgabenstellungen
 
 
 - Verstehe zuerst die Aufgabenstellung. 
@@ -13,11 +12,9 @@ tags: [c,strings,assignment]
 
 
 
-**Aufgaben:**
-
 ---
 
-**Übung (rightStr)**
+#### **Übung (rightStr)**
 
 Implementiere eine Funktion `rightStr`, diese kopiert vom Ende eines Strings eine gewisse Anzahl Zeichen in einen Zielstring. Der Inhalt des Zielstrings wird überschrieben. Übergabeparameter sind die beiden Strings und die Anzahl an Zeichen.
 
@@ -25,7 +22,7 @@ Implementiere eine Funktion `rightStr`, diese kopiert vom Ende eines Strings ein
 
 ---
 
-**Übung (Zeichen einfügen)**
+#### **Übung (Zeichen einfügen)**
 
 Schreibe eine Funktion `strinsert` die in einem bestehenden String ein Zeichen an einer bestimmten Stelle einfügt, die Zeichen dahinter rutschen um eins nach rechts.
 
@@ -41,14 +38,16 @@ Erweiterung/Challenge: Überprüfen ob die Einfügeposition existiert.
 
 ---
 
-**Übung (Zeichen rotieren)**
+#### **Übung (Zeichen rotieren)**
+
 Schreibe eine Funktion `strrot` die alle Zeichen eines Strings um eins nach rechts schiebt, das letzte Zeichen kommt dabei an die vorderste Stelle. Übergabeparameter ist der String.
 
 
 
 ---
 
-**Übung (String verdoppeln)**
+#### **Übung (String verdoppeln)**
+
 Schreibe eine Funktion `strdouble` die einen String verdoppelt, 
 Beispiel:`"Hallo"` $\longrightarrow$ `"HalloHallo"`.
 
@@ -58,7 +57,8 @@ Beispiel:`"Hallo"` $\longrightarrow$ `"HalloHallo"`.
 
 ---
 
-**Übung (Reverse Cat)**
+#### **Übung (Reverse Cat)**
+
 Schreibe eine Funktion `strrcat` – wie `strcat`, allerdings wird der zweite String in umgekehrter Reihenfolge an den ersten String angefügt.
 
 Übergabeparameter sind die beiden Strings.
@@ -67,12 +67,9 @@ Schreibe eine Funktion `strrcat` – wie `strcat`, allerdings wird der zweite St
 
 ---
 
-**Übung (Reverse strdouble)**
+#### **Übung (Reverse strdouble)**
 
 Schreibe eine Funktion `revstrdouble` die einen String verdoppelt und dabei umdreht, 
 Beispiel:`"Hallo"` $\longrightarrow$ `"HalloollaH"`.
 
 Übergabeparameter ist der zu verdoppelnde String.
-
----
-

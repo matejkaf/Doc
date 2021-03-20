@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Strings
+subtitle: Challenge
 tags: [c,strings,assignment,challenge]
 ---
 
-# Laufschrift (String Challenge)
-
-**Übung (Laufschrift)**
+#### **Übung (Laufschrift)**
 
 Schreibe ein Programm das eine Laufschrift am Bildschirm darstellt. Ein Text soll von links nach rechts über den Bildschirm wandern. Bei erreichen eines Rands soll der Text die Richtung wechseln. 
 

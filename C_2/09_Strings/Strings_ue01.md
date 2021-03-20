@@ -1,11 +1,10 @@
 ---
-title: Doc
+title: Strings
+subtitle: Übungen Einstieg
 tags: [c,strings,assignment]
 ---
 
-# Übungen Strings
-
-**Übung (Standard Stringfunktionen I):**
+#### **Übung (Standard Stringfunktionen I):**
 
 Implementiere folgende Stringfunktionen. 
 
@@ -16,7 +15,7 @@ Implementiere folgende Stringfunktionen.
 
 ---
 
-**Übung (Standard Stringfunktionen II):**
+#### **Übung (Standard Stringfunktionen II):**
 
 Implementiere folgende Stringfunktionen. 
 
@@ -26,8 +25,7 @@ Implementiere folgende Stringfunktionen.
 
 ---
 
-
-**Übung (Doppeldrom):**
+#### **Übung (Doppeldrom):**
 
 Ein Doppeldrom ist ein Wort das nur doppelte Buchstaben enthält, etwa `"LLaammaa"` oder `"ssaabb"`.
 Schreibe eine Funktion `istDoppeldrom` die ermittelt ob ein Wort ein Doppeldrom ist.
@@ -35,12 +33,14 @@ Verwende `int` als Rückgabewert und mache keine Ausgaben in der Funktion (nur i
 
 ---
 
-**Übung (Passwort Eingabe):**
+#### **Übung (Passwort Eingabe):**
+
 Implementiere eine Funktion `void getpass(char str[])` die die verdeckte Eingabe eines Strings (Passwort) ermöglicht.  Verwende `getch()` zum Einlesen der einzelnen Zeichen (`getch` gibt das eingegeben Zeichen nicht am Bildschirm aus). Für jedes eingegebene Zeichen soll ein `*` ausgegeben werden. Hinweis: Die Enter Taste liefert das Zeichen `'\r'`.
 
 ---
 
-**Übung (atoi – ASCII to integer):**
+#### **Übung (atoi – ASCII to integer):**
+
 Implementiere die Funktion `atoi` die einen String aus Ziffern in eine `int` Zahl wandelt. 
 Anwendung:
 
@@ -59,7 +59,7 @@ Hinweise:
 
 ---
 
-**Übung (ASCII Code Verschlüsselung):**
+#### **Übung (ASCII Code Verschlüsselung):**
 
 Eine ganz einfache Methode zur Verschlüsselung ist statt Buchstaben den ASCII Code zu schreiben.
 
@@ -82,8 +82,4 @@ AM MO
 
 Hinweis:
 Verwende nur Großbuchstaben (bei Kleinbuchstaben könnte sich ein 3-stelliger ASCII Code ergeben).
-
----
-
-
 

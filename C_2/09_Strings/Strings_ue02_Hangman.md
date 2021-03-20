@@ -1,9 +1,8 @@
 ---
-title: Doc
+title: Strings
+subtitle: Hangman
 tags: [c,strings,assignment]
 ---
-
-# Hangman
 
 Wir wollen Schritt für Schritt das Spiel "Hangman" programmieren.
 
@@ -16,8 +15,7 @@ Buchstabe:
 ===============
 ```
 
-
-**Übung (Hangman – Start):**
+#### **Übung (Hangman – Start):**
 
 Ein zu erratendes Wort wird eingegeben. 
 Danach kann man durch Drücken von Tasten Buchstaben raten. 
@@ -42,7 +40,8 @@ Wiederhole dies in einer Schleife.
 
 ---
 
-**Übung (Hangman – Wort erraten):**
+#### **Übung (Hangman – Wort erraten):**
+
 Nun muss erkannt werden ob das Wort fertig erraten wurde.
 Das Wort ist erraten wenn im String `rate` keine `'_'` Zeichen mehr sind. 
 
@@ -50,13 +49,15 @@ Tip: Schreibe dazu eine Funktion die zählt wie oft ein Zeichen vorkommt und bau
 
 ---
 
-**Übung (Hangman – Verdeckte Eingabe)**
+#### **Übung (Hangman – Verdeckte Eingabe)**
+
+Falls das verwendete System `getch()` unterstützt:
 
 Schreibe eine Funktion mit der das zu ratende Wort (verdeckt wie bei einem Passwort) eingegeben werden kann. Ergebnis im String `text`.
 
 ---
 
-**Übung (Hangman – Anzahl von Versuchen):**
+#### **Übung (Hangman – Anzahl von Versuchen):**
 
 Nach 10 erfolglosen Versuchen ist das Spiel verloren, verwende die Variable `int versuche=10`. 
 Zeige die Anzahl der noch verfügbaren Versuche an.
@@ -65,7 +66,7 @@ Tip: Zähle wie oft der eingegeben Buchstabe gefunden wurde. Bei 0 war der Versu
 
 ---
 
-**Übung (Hangman – Erweiterungen):**
+#### **Übung (Hangman – Erweiterungen):**
 
 Mögliche Erweiterungen:
 
@@ -87,9 +88,5 @@ Vorlage:
      |
  ____|____
 ```
-
----
-
-
 
 

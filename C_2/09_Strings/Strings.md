@@ -1,9 +1,8 @@
 ---
-title: Doc
+title: Strings
+subtitle: Einführung
 tags: [lecture,c,strings,intro]
 ---
-
-# Strings
 
 Für einzelne Zeichen gibt es den Datentyp `char`.
 
