@@ -10,12 +10,14 @@ Unicode = *Universal Coded Character Set*
 
 Das Ziel von Unicode ist alle weltweit verwendeten Text-Zeichen in einem gemeinsamen Standard zu vereinen.
 
-Unicode definiert Ca. 144.000 Zeichen. Jedem Zeichen wird eine Nummer – **code point** – zugeordnet.
+Unicode definiert ≈144.000 Zeichen. Jedem Zeichen wird eine Nummer – **code point** – zugeordnet.
 
-Ein code point wird durch 4 Hex Ziffer angegeben: U+00F7 (÷, Divisionszeichen). Darüber hinausgehende Code Points verwenden 5 bzw. 6 hex Ziffern, z.B. U+1F40C (🐌) oder U+1F9B9 (🦹, Supervillain). Maximal verwendet Unicode 21 Bits.
+Ein code point wird durch **4 Hex Ziffern** angegeben: U+00F7 (÷, Divisionszeichen), U+20AC (€, Euro), U+20A9 (₩, Koreanischer Won).
+
+Darüber hinausgehende Code Points verwenden 5 bzw. 6 hex Ziffern (max. 21 Bits), z.B. U+1F40C (🐌, Snail) oder U+1F9B9 (🦹, Supervillain).
 
 - Die codepoints 0-127 sind identisch zum ASCII Code.
-- 128 bis codepoint 255 ist ident mit [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1) (Latin-1) für maximale Kompatibilität mit bestehendem westlichen Text.  \"Ä\" ist z.B. U+00C4.
+- 128 bis codepoint 255 ist ident mit [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1) ("Latin-1", standard westeuropäischer Zeichensatz) für maximale Kompatibilität mit bestehendem westlichen Text.  \"Ä\" ist z.B. U+00C4.
 
   > ISO Latin-1 (ISO 8859-1) coded character set provides the Western European alphabet and symbols and their numeric representations. 
 
