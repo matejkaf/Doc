@@ -38,14 +38,13 @@ The Method `add` inserts a new element at the end of the array – the array gro
 
 ## Methods of ArrayList
 
-- 
-`get(int index)`
-- 
-`set(int index, TYPE element)`
+For `ArrayList<TYPE>`:
+
+- `get(int index)`
+- `set(int index, TYPE element)`
 - 
 `remove(int index)`
-- 
-`add(TYPE element)`
+- `add(TYPE element)`
 - 
 `add(int index, TYPE element)`
 - 
@@ -76,6 +75,13 @@ The wrapper classes are:
 - `Boolean`
 
 These classes can be used instead of the primitive data types, Java manages the conversion between both representations. From primitive datatype to Wrapper object this conversion is called boxing (e.g. `int` to `Integer`), the other way is called unboxing.
+
+```java
+int n = 42; // primitive data type
+Integer m; // object of class Integer
+m = n; // boxing – new Integer object created
+int k = 2*m // unboxing – Integer to int – on demand
+```
 
 
 
