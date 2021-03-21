@@ -103,9 +103,7 @@ IBM nannte diese Zeichensätze **Code Pages** und begann diese  durchzunummerier
 
 Um den von den Firmen verursachten Zeichensatz-Wildwuchs einzudämmen gab es die Arbeit an der Norm **ISO 8859** und später **Unicode**.
 
-> [ISO 8859](https://en.wikipedia.org/wiki/ISO_8859) is an 8-bit extension of ASCII that supports all of the ASCII code points and adds 12 more, providing 256 character combinations. LATIN1, which is officially named ISO-8859-1, is the most frequently used member of the ISO 8859 family of encodings. In addition to the ASCII characters, LATIN1 contains accented characters, other letters needed for languages of Western Europe, and some special characters. HTTP and HTML protocols are based on Unicode.
-
->  The ISO 8859 family has other members that are designed for other languages.
+> [ISO 8859](https://en.wikipedia.org/wiki/ISO_8859) is an 8-bit extension of ASCII that supports all of the ASCII code points and adds 12 more, providing 256 character combinations. LATIN1, which is officially named ISO-8859-1, is the most frequently used member of the ISO 8859 family of encodings. In addition to the ASCII characters, LATIN1 contains accented characters, other letters needed for languages of Western Europe, and some special characters.
 
 [CP-1252](https://de.wikipedia.org/wiki/Windows-1252) und ISO 8859-1 sind im wesentlichen identisch. Ein in ISO 8859-1 frei gehaltener Bereich (code points 128-159) wird durch CP-1252 jedoch für druckbare Zeichen verwendet (Euro Symbol, einige französische Zeichen). Die in ISO 8859-1 fehlenden Zeichen wurden in ISO 8859-15 ergänzt.
 

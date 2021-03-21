@@ -52,7 +52,7 @@ Spieler 2: _
 
 #### **Übung (Nim Spiel – Parameter):**
 
-Gestalte das Spiel durch Funktionsparameter variabler:
+Verschiebe den im vorherigen Beispiel programmierten Spielablauf in eine **Funktion** und mache dabei die Anzahl der Streichhölzer am Anfang und die Anzahl der Streichhölzer die maximal genommen werden dürfen **durch Parameter variabel**.
 
 ```c
 int spiele(int start, int max);

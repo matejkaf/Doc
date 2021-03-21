@@ -1,6 +1,6 @@
 ---
 title: Funktionen
-subtitle: Weitere Übungen
+subtitle: Trainingsaufgaben
 description: etwas schwieriger
 tags: [1AHITS,assignment, c, funktionen ]
 ---
@@ -22,12 +22,6 @@ Diese Aufgabenstellung kann dadurch gelöst werden, dass man die Zahl so lange d
 Bsp.: Zahl=4: `4/2=2/2=1/2=0` ... es werden 3 Bits benötigt (es waren drei Divisionen notwendig).
 
 Schreibe eine Funktion die von einem als Parameter übergebenen `int` Wert die Anzahl der Bits ermittelt und zurückgibt.
-
----
-
-#### **Übung (Quersumme):**
-
-Bei der Quersumme handelt es sich um die Summe der einzelnen Ziffern einer mehrstelligen Zahl. Beispiel: Die Quersumme von 251 ist 8, da `2 + 5 + 1 = 8`.
 
 ---
 
@@ -65,6 +59,12 @@ Hinweis: Summiere in einer Schleife in aufsteigender Reihenfolge die ungeraden Z
 
 ---
 
-#### **Übung (Prozentrechnen):**
+#### **Übung (prozentueller Zerfall):**
 
-Schreibe eine Funktion. Übergabeparameter sind 2 `double` Zahlen.  Beide Zahlen müssen positiv und die erste Zahl muss größer sein als die zweite. Die Funktion soll ermitteln wie oft von der ersten Zahl 10 Prozent abgezogen werden kann bis die zweite Zahl unterschritten wird. Diese Anzahl soll als Rückgabewert der Funktion verwendet werden. Erfüllen die beiden Zahlen nicht die Voraussetzungen so soll der Rückgabewert –1 sein.
+Schreibe eine Funktion. Übergabeparameter sind 2 `double` Zahlen.  Beide Zahlen müssen positiv und die erste Zahl muss größer sein als die zweite. Die Funktion soll ermitteln **wie oft** von der ersten Zahl 10 Prozent abgezogen werden kann bis die zweite Zahl unterschritten wird. Diese Anzahl soll als Rückgabewert der Funktion verwendet werden. Erfüllen die beiden Zahlen nicht die Voraussetzungen so soll der Rückgabewert –1 sein.
+
+---
+
+#### **Übung (Quersumme):**
+
+Bei der Quersumme handelt es sich um die Summe der einzelnen Ziffern einer mehrstelligen Zahl. Beispiel: Die Quersumme von 251 ist 8, da `2 + 5 + 1 = 8`.

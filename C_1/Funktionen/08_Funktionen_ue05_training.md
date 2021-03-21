@@ -1,6 +1,6 @@
 ---
 title: Funktionen
-subtitle: Weitere Übungen
+subtitle: Trainingsaufgaben
 tags: [1AHITS,assignment, c, funktionen ]
 ---
 
