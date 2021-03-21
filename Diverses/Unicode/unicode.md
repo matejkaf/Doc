@@ -125,22 +125,209 @@ Um den von den Firmen verursachten Zeichensatz-Wildwuchs einzudämmen gab es die
 | ISO 8859-15                                                | LATIN 9          | Western European                          |
 | ISO-8859-16                                                | LATIN 10         | Central and Eastern European              |
 
+
+
+## Python
+
+[str.encode](https://docs.python.org/3/library/stdtypes.html#str.encode)
+
+```python
+text = "oö aä uü z÷ |🐌|"
+text_bytes = text.encode('utf-8')
+print(text_bytes)
+```
+
+Bytestring im UTF-8 Encoding:
+
+```
+b'o\xc3\xb6 a\xc3\xa4 u\xc3\xbc z\xc3\xb7 |\xf0\x9f\x90\x8c|'
+```
+
+
+
+[bytes.decode](https://docs.python.org/3/library/stdtypes.html#bytes.decode):
+
+```python
+b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')
+```
+
+```
+'蓏콯캁澽苏'
+```
+
+[Liste von Encodings](https://docs.python.org/3/library/codecs.html#standard-encodings)
+
+
+
 ## MySQL
+
+- [character set](https://www.mysqltutorial.org/mysql-character-set/)
+  Beispiel: `latin1`, `utf8`
+
+- [collation](https://www.mysqltutorial.org/basic-mysql-tutorial.aspx)
+
+  Beispiel: `latin1_german1_ci`, `utf8_general_ci`
+
+  > Collations bestimmen die Sortierreihenfolgen eines SQL-Servers, beispielsweise in ORDER BY-Abfragen. Wenn eine SQL-Abfrage Textfelder auf- oder absteigend sortieren soll, ist es wichtig zu wissen, wie beispielsweise deutsche Umlaute behandelt werden sollen. Dies wird durch die verwendete Collation festgelegt. [[Quelle](https://sirmark.de/computer/mysql/mysql-collation-latin1_german1_ci-oder-latin1_german2_ci-1086.html)]
+
+  `_ci` ... case insensitive
+
+
+
+Dumps
+
+```bash
+$ mysqldump db_name  --default-character-set=utf8mb4 -uuser_name -p'my_pass' >data.sql
+
+# Import from Dump
+$ cat data.sql | mysql --default-character-set=utf8mb4 --user=user_name --password='my_pass' db_name
+```
+
+
+
+```mysql
+CREATE TABLE htl_job_user_company_matches (
+  `user_id` INT NOT NULL UNIQUE, -- datatype must match table `users`
+  `company_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`user_id`, `company_id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE,
+  FOREIGN KEY (`company_id`) REFERENCES `htl_job_company`(`id`) ON DELETE CASCADE
+) CHARACTER SET 'utf8mb4';
+```
+
+
+
+```mysql
+-- set character set and collation
+ALTER DATABASE htl_job_2019 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;
+```
+
+
+
+```mysql
+-- check encoding of table ()
+SELECT CCSA.character_set_name FROM information_schema.`TABLES` T,
+       information_schema.`COLLATION_CHARACTER_SET_APPLICABILITY` CCSA
+WHERE CCSA.collation_name = T.table_collation
+  AND T.table_schema = "htl_job_2019"
+  AND T.table_name = "htl_job_companygroup";
+
+-- or, per column
+SHOW FULL COLUMNS FROM htl_job_companygroup;
+```
+
+
+
+[Guide to UTF-8 Encoding in PHP and MySQL](https://www.toptal.com/php/a-utf-8-primer-for-php-and-mysql)
+
+[How to make MySQL handle UTF-8 properly](https://stackoverflow.com/questions/202205/how-to-make-mysql-handle-utf-8-properly)
+
+[Dumping and importing from/to MySQL in an UTF-8 safe way](https://makandracards.com/makandra/595-dumping-and-importing-from-to-mysql-in-an-utf-8-safe-way)
 
 
 
 ## C#
 
-```csharp
-// csharp StreamReader ISO-8859-1 to UTF-8
-// https://stackoverflow.com/questions/592824/c-sharp-help-reading-foreign-characters-using-streamreader
-StreamReader sr = new StreamReader(response.GetResponseStream(), System.Text.Encoding.GetEncoding("ISO-8859-1"));
+> A string is basically a sequence of characters. Each character is a Unicode character in the range U+0000 to U+FFFF.
 
+> Each code point is encoded using UTF-16 encoding
+
+
+
+### String Literale
+
+[Unicode Character “π” (U+03C0)](https://www.compart.com/en/unicode/U+03C0)
+
+[Unicode Character “𝜋” (U+1D70B)](https://www.compart.com/en/unicode/U+1D70B)
+
+```csharp
+string unicodeString = "Pi \u03a0 \u3a0 \U0001D70B";
+string unicodeString2 = "Pi 𝜋 π";
+// Achtung auf die Kodierung des Source-Files
 ```
 
+- `\uxxxx` - Unicode escape sequence for character with hex value `xxxx`
+- `\xn[n][n][n]` - Unicode escape sequence for character with hex value `nnnn` (variable length version of `\uxxxx`)
+- `\Uxxxxxxxx` - Unicode escape sequence for character with hex value `xxxxxxxx` (for generating surrogates)
+
+> Now, the Unicode coded character set contains more than 65536 characters. This means that a single `char`(`System.Char`) cannot cover every character. This leads to the use of *surrogates* where characters above U+FFFF are represented in strings as two characters. Essentially, `string` uses the UTF-16 character encoding form. Most developers may well not need to know much about this, but it's worth at least being aware of it.
+
+### Encoding Class
+
+[System.Text.Encoding Class](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding?view=netcore-3.1)
+
+### StreamReader
+
+[C# Help reading foreign characters using StreamReader](https://stackoverflow.com/questions/592824/c-sharp-help-reading-foreign-characters-using-streamreader)
+
+```csharp
+// csharp StreamReader ISO-8859-1 source (http default encoding)
+StreamReader sr = new StreamReader(
+	response.GetResponseStream(), // Http response
+  System.Text.Encoding.GetEncoding("ISO-8859-1")
+);
+```
+
+[StreamReader Constructors](https://docs.microsoft.com/en-us/dotnet/api/system.io.streamreader.-ctor?view=netcore-3.1)
+
+Daten aus Windows Quellen:
+
+```c#
+System.Text.Encoding.GetEncoding(1252);
+```
+
+Default Encoding:
+
+```c#
+System.Text.Encoding.Default;
+```
+
+Lesen einer Datei
+
+```csharp
+var fs = new FileStream(path, FileMode.Open, FileAccess.Read);
+var sr = new StreamReader(fs, Encoding.UTF8);
+string line = String.Empty;
+while ((line = sr.ReadLine()) != null)
+{
+	Console.WriteLine(line);
+}
+```
+
+Automatisches Erkennen des Encodings [[Quelle](https://stackoverflow.com/questions/3746530/auto-encoding-detect-in-c-sharp)]
+
+```csharp
+using (var reader = new StreamReader("foo.txt"))
+{
+  // Make sure you read from the file or it won't be able
+  // to guess the encoding
+  var file = reader.ReadToEnd();
+  Console.WriteLine(reader.CurrentEncoding);
+}
+```
+
+
+
+### File Class
+
+```csharp
+using System;
+using System.IO;
+using System.Text;
+
+var path = "test.txt";
+var enumLines = File.ReadLines(path, Encoding.UTF8);
+foreach (var line in enumLines)
+{
+    Console.WriteLine(line);
+}
+```
+
+
+
 ## Java
-
-
 
 ```java
 System.out.println(System.getProperty("file.encoding"));
@@ -171,6 +358,8 @@ Durch ein `meta` Tag am Beginn des Dokuments
 ## HTTP
 
 Der Web Server ermittelt das Encoding des HTML Dokuments z.B. durch das `meta` Tag im HTML `<head>`.
+
+Im HTTP Request/Response Header
 
 ```http
 Content-Type: text/html; charset=utf-8
