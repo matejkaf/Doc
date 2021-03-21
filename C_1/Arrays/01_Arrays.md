@@ -23,8 +23,6 @@ int zeit_30;
 - Mühsam zu Bearbeiten (keine Schleifen möglich).
 
 
-
-
 Als **Array**:
 
 ```c
@@ -62,9 +60,7 @@ for( i=0; i<4; i++)
 }
 ```
 
-Arrays können für alle Datentypen angelegt werden.
-
-**Beispiele:**
+Arrays können für alle Datentypen angelegt werden – Beispiele:
 
 ```c
 char zeichen[6];
@@ -72,12 +68,12 @@ int xkoo[10];
 double laenge[22];
 ```
 
+Ein Array kann beim Anlegen bereits mit Werten gefüllt werden, die Länge wird automatisch ermittelt. Beispiel:
 
-Ein Array kann beim Anlegen bereits mit Werten gefüllt werden. Beispiel:
 ```c
 int a[]={5,7,3,1};
 ```
-Die Länge muss dabei nicht angegeben werden.
+
 
 
 
