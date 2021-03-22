@@ -22,10 +22,11 @@ Beispiel:
 
 #### **Übung (Celsius nach Fahrenheit):**
 
-Schreibe eine Funktionen zur Umrechnung von Celsius nach Fahrenheit.
+Schreibe eine Funktionen zur Umrechnung von Celsius nach Fahrenheit (als Kommazahlen).
 
 ---
 
 #### **Übung (Reihe):**
 
-Schreibe eine Funktion `nsum()` zur Ermittlung der Summe der ersten n natürlichen Zahlen (1...n), n ist der Übergabeparameter.
+Schreibe eine Funktion `nsum()` zur Ermittlung der Summe der ersten n natürlichen Zahlen (1...n), n ist der Übergabeparameter. Verwende dafür eine Schleife.
+
