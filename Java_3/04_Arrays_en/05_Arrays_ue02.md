@@ -8,11 +8,23 @@ tags: [assignment]
 
 #### **Übung (Schulweg Statistik):**
 
-Du möchtest wissen wie lange du durchschnittlich für den Schulweg brauchst (in Minuten) und wie stark diese Dauer variiert. Schreibe dazu ein Programm das die Eingabe beliebig vieler `int` Werte ermöglicht. Speichere alle Werte in einer ArrayList. Ende wenn 0 eingegeben wird. Berechne anschließend den Mittelwert (auch Erwartungswert genannt) und die Standardabweichung (das ist das statistische Maß für die Streuung = Variation). Schreibe Methoden zur Berechnung beider Werte. 
+Du möchtest wissen wie lange du durchschnittlich für den Schulweg brauchst (in Minuten) und wie stark diese Dauer variiert. Schreibe dazu ein Programm das die Eingabe beliebig vieler `int` Werte ermöglicht. Speichere alle Werte in einer ArrayList. Ende wenn 0 eingegeben wird. 
+
+Berechne anschließend den Mittelwert $$\displaystyle{\bar {x}}$$ (auch Erwartungswert genannt) 
 
 $$
 {\displaystyle{\bar {x}}={\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)={\frac {x_{1}+x_{2}+\cdots +x_{n}}{n}}}
 $$
+
+
+und die Standardabweichung $$s$$ (das ist das statistische Maß für die Streuung).
+
+$$
+{s^{2}={\frac {1}{n}}\sum _{i=1}^{n}{\left(x_{i}-{\overline {x}}\right)^{2}}={\frac {1}{n}}\left(\left(x_{1}-{\overline {x}}\right)^{2}+\left(x_{2}-{\overline {x}}\right)^{2}+\dotsb +\left(x_{n}-{\overline {x}}\right)^{2}\right)}
+$$
+
+Schreibe Methoden zur Berechnung beider Werte. 
+
 
 ---
 
