@@ -4,12 +4,12 @@ subtitle: Allgemeines und Encoding
 tag: [lecture, unicode, UTF-8, UTF-16, latin1, ]
 ---
 
-**Inhalt**
+# Inhalt
 
 * TOC
 {:toc}
 
-# Allgemeines
+## Allgemeines
 
 Unicode = *Universal Coded Character Set*
 
