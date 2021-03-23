@@ -75,6 +75,8 @@ Z.B. Vignère
 - [Video: Krypto im Advent 2015 - Vigenère-Verschlüsselung](https://youtu.be/4y4nCG8631g)
 - [Video: Die Vigenère-Chiffre und der Kasiski-Test [5:56]](https://youtu.be/Y6qimy9o3f4)
 
+<img src="fig/Vigenère_square_shading.svg.png" alt="Vigenère_square_shading.svg" style="zoom:25%;" />
+
 
 
 ### Transposition-Chiffre
