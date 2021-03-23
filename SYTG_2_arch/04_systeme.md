@@ -122,7 +122,7 @@ Vergleich von Destop und Laptop Prozessoren.
 
 Für mobile Anwendungen (Handy / Android Systeme) – Samsung, Galaxy S10 5G, **1.9GHz octa-core Samsung Exynos 9820** processor. 8nm. Ca. 0,5 W bei Halblast.  [ARM Cortex®-A55](https://en.wikipedia.org/wiki/ARM_Cortex-A55). 6GB RAM
 
-IoT – Raspberry Pi 4: **Broadcom BCM2711**, Quad core Cortex-A72 (ARM v8) 64-bit SoC **1.5GHz**, 28nm. <1W. RAM: 2, 4, oder 8GB
+IoT – Raspberry Pi 4: **Broadcom BCM2711**, Quad core Cortex-A72 (ARM v8) 64-bit SoC **1.5GHz**, 16nm. <1W. RAM: 2, 4, oder 8GB
 
 Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.microchip.com/wwwproducts/en/dsPIC33CH128MP202), 128kB Flash, 20kB RAM, Dual Core, 16 Bit, **200 MHz**, Leistungsaufnahme typischer µC: 1mW-200mW, Preis: ca. 3$
 
