@@ -17,12 +17,14 @@ tags: [assignment]
 
 **Filenamen**:
 
-- Polynom.java
-- PolynomTest.java
+- `Polynom.java`
+- `PolynomTest.java`
 
-**Randbedingungen**
+**Randbedingungen**:
 
-- Die 4 Koeffizienten sind in einem Array abzuglegen.
+- Die 4 Koeffizienten sind in einem Array abzulegen, wobei $$d=$$`koeff[0]`, $$c=$$`koeff[1]`, $$b=$$`koeff[2]`, $$d=$$`koeff[3]`. Dies passt zur allgemeineren Schreibweise eines Polynoms:
+  
+  $$f(x) = x_0 \cdot x^0 + x_1 \cdot x^1 + x_2 \cdot x^2 + x_3 \cdot x^3$$
 
 ## Konstruktoren
 
@@ -35,17 +37,11 @@ Erstellen Sie folgenden Konstruktoren:
 
  
 
-## toString - Methoden
-
- 
+## toString - Methoden 
 
 Überladen Sie die `toString()`-Methode. Die Methoden sollen einen String in folgender Form ausgeben.
 
- 
-
-z.B. `+6.0*x^3+8.0*x^2-4.0*x^1+10.0`
-
- 
+ z.B.: `+6.0*x^3+8.0*x^2-4.0*x^1+10.0`
 
 **Randbedingungen:**
 - Glieder mit dem Koeffizienten 0 werden nicht ausgegeben.
@@ -61,19 +57,24 @@ z.B. `+6.0*x^3+8.0*x^2-4.0*x^1+10.0`
 ## Erweiterungen der Polynom Klasse
 
 - `public double apply(double x)`: berechnet den Wert dieses Polynoms für ein gegebenes x. z.B.: `double y = p.apply(3.0);`
-- ``public double slope(double x)`: Berechnet die Steigung des Polynoms an der Stelle x. z.B.: `double slope = p.slope(3.0);`
-- `public Polynom dx()`: liefert das nach x abgeleitete Polynom dieses Polynoms. (1. Ableitung) z.B.: `Polynom t  = p.dx();`
-- `public Polynom add(Polynom poly)`: addiert eine weiteres Polynom zu diesem Polynom und liefert die Summe als neues Polynom, wie z.B. `Polynom r = p.add(q);`
+- `public Polynom dx()`: liefert das nach x abgeleitete Polynom dieses Polynoms. (1. Ableitung) z.B.: `Polynom t  = p.dx();`. Hinweis: Diese Methode erzeugt ein neues Objekt der Klasse `Polynom` und liefert dieses als Rückgabewert.
+- `public double slope(double x)`: Berechnet die Steigung des Polynoms an der Stelle x. z.B.: `double slope = p.slope(3.0);`
+- `public Polynom add(Polynom poly)`: addiert ein weiteres Polynom zu diesem Polynom und liefert die Summe als neues Polynom, wie z.B. `Polynom r = p.add(q);`
+
+
 
 ---
-
- 
 
 - `public double zero(double leftBound, double rightBound)`: bestimmt die **erste** Nullstelle dieses Polynoms in einem gegeben Intervall $$[\text{leftBound},\text{rightBound}]$$. 
    - Die Methode geht folgendermaßen vor: Das Intervall wird in einer festen Anzahl (`final int NUMOFSTEPS=1000`) Schritte nach einem Vorzeichenwechsel abgesucht. Beim ersten Vorzeichenwechsel wird das ursprüngliche Intervall zusammengezogen auf die Grenzen des Schrittes, zwischen denen der Vorzeichenwechsel liegt. Mit den neuen Grenzen (kleineres Intervall) wird der Suchvorgang wiederholt.
    - Sobald die Intervallbreite einen kleinen, fest vorgebenen Grenzwert (z.B.: `final double EPSILON = 10E-8;`) unterschreitet, wird der Suchvorgang beendet und die Mitte des Intervalls als Approximation der Nullstelle zurückgegeben.
    - Überlegen Sie sich, wie die Methode auf ein Intervall reagieren soll, das überhaupt keine Nullstellen enthält (Stichwort: `Double.NaN`)
    - **Hinweis:** Die wiederholte Anwendung der Suche in einem Intervallen kann/soll wenn möglich als Rekursions-Funktion realisiert werden.  
+
+
+
+---
+
 - `public double max(double leftBound, double rightBound)`: sucht nach einem lokalen Maximum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich 
    tatsächlich um ein Maximum handelt. Wird kein Maximum gefunden, so liefert die Funktion den Wert `Double.NaN` zurück.
 - `public double min(double leftBound, double rightBound)`: sucht nach einem lokalen Minimum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich 
@@ -115,4 +116,9 @@ z.B. `+6.0*x^3+8.0*x^2-4.0*x^1+10.0`
 
  
 
+## Erweiterungen
 
+- Erstelle eine Methode `zero2` die Nullstellen durch fortgesetztes halbieren des Intervalls findet.
+- Erstelle eine Methode `zero3` die Nullstellen mit Hilfe der Newton Methode findet.
+
+ 
