@@ -2,19 +2,18 @@
 title: Github Pages
 ---
 
+# Inhaltsverzeichnis
+
 * TOC
 {:toc}
+
+## Inhaltsverzeichnis erstellen
+
 ```
 * TOC
 {:toc}
 My first paragraph.
 ```
-
-
-
-My first paragraph.
-
-
 
 [Markdown Guide GitHub Pages](https://www.markdownguide.org/tools/github-pages/)
 
@@ -22,7 +21,7 @@ Jekyll
 
 
 
-## Eigene Layout Einstellungen
+# Eigene Layout Einstellungen
 
 Default theme auswählen: [Step 5 - Selected a Github pages default theme](https://aregsar.com/blog/2019/how-to-setup-a-github-pages-blog-in-five-minutes/)
 
@@ -36,7 +35,7 @@ Default theme auswählen: [Step 5 - Selected a Github pages default theme](https
 
 
 
-## Links
+# Links
 
 - [Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) enthält Informationen zu Links
 
@@ -49,7 +48,7 @@ Default theme auswählen: [Step 5 - Selected a Github pages default theme](https
 
 
 
-## Math
+# Math
 
 Geht von selbst mit MathJax [[Math on GitHub Pages](https://g14n.info/2014/09/math-on-github-pages/)]
 
@@ -68,6 +67,8 @@ HTML include allerdings notwendig:
 - [How to typeset a matrix with MathJax?](https://tex.stackexchange.com/questions/43444/how-to-typeset-a-matrix-with-mathjax)
 
 
+
+# Diverse Tricks
 
 ## Erste Zeile wegbringen
 
