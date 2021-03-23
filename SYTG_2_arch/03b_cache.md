@@ -55,14 +55,6 @@ Silizium Chip (die), Intel Quad Core mit Grafik, 1,4 Mrd Transistoren, 160mm2 Fl
 
 *Soll zeigen wie viel Fläche der Cache braucht! Im Core ganz oben sollte der L2 Cache zu sehen sein, links neben dem Text "Core" ist wahrscheinlich der L1 Cache*. Chipfläche = Kosten!
 
-## CPU Guide
-
-Vergleich von Destop und Laptop Prozessoren.
-
- [CPU_Guide.pdf aus Chip 12/2020](fig/CPU_Guide.pdf) 
-
-
-
 ## Weiteres
 
 - [Video: How Smartphones Operate || Inside the Primary Processor/ System on a Chip/ Brain of your Smartphone](https://youtu.be/NKfW8ijmRQ4), Super Animationen

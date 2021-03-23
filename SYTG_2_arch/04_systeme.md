@@ -110,6 +110,16 @@ Stark vom Anwendungsfall abhängig. Faustregeln
 
 
 
+### Chip CPU Guide
+
+Vergleich von Destop und Laptop Prozessoren.
+
+ [CPU_Guide.pdf aus Chip 12/2020](fig/CPU_Guide.pdf) 
+
+
+
+## 
+
 ### Weitere CPU's
 
 Für mobile Anwendungen (Handy / Android Systeme) – Samsung, Galaxy S10 5G, **1.9GHz octa-core Samsung Exynos 9820** processor. 8nm. Ca. 0,5 W bei Halblast.  [ARM Cortex®-A55](https://en.wikipedia.org/wiki/ARM_Cortex-A55). 6GB RAM
