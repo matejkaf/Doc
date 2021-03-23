@@ -1,10 +1,8 @@
 ---
-title: Doc
-description: Cache
+title: Speicher Architektur
+subtitle: Cache
 tags: [lecture, 2AHITS_Teach]
 ---
-
-# Speicher Architektur – Cache
 
 Systeme mit geringer Taktfrequenz (ca. 100-400MHz) und wenig Speicher (kB-MB) – µC
 

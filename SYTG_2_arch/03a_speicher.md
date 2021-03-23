@@ -1,10 +1,8 @@
 ---
-title: Doc
+title: Speicher
 description: Arten von Speicher. SDRAM
 tags: [lecture, 2AHITS_Teach]
 ---
-
-# Speicher
 
 *Bild: CPU Bus Speicher (evtl. vom vorhergehenden Kapitel)*
 
