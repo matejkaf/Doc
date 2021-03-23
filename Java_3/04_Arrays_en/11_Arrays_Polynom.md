@@ -67,9 +67,9 @@ Erstellen Sie folgenden Konstruktoren:
 
 - `public double zero(double leftBound, double rightBound)`: bestimmt die **erste** Nullstelle dieses Polynoms in einem gegeben Intervall $$[\text{leftBound},\text{rightBound}]$$. 
    - Die Methode geht folgendermaßen vor: Das Intervall wird in einer festen Anzahl (`final int NUMOFSTEPS=1000`) Schritte nach einem Vorzeichenwechsel abgesucht. Beim ersten Vorzeichenwechsel wird das ursprüngliche Intervall zusammengezogen auf die Grenzen des Schrittes, zwischen denen der Vorzeichenwechsel liegt. Mit den neuen Grenzen (kleineres Intervall) wird der Suchvorgang wiederholt.
-   - Sobald die Intervallbreite einen kleinen, fest vorgebenen Grenzwert (z.B.: `final double EPSILON = 10E-8;`) unterschreitet, wird der Suchvorgang beendet und die Mitte des Intervalls als Approximation der Nullstelle zurückgegeben.
+   - Sobald die Intervallbreite einen kleinen, fest vorgebenen Grenzwert $$\epsilon$$ (z.B.: `final double EPSILON = 10E-8;`) unterschreitet, wird der Suchvorgang beendet und die Mitte des Intervalls als Approximation der Nullstelle zurückgegeben.
    - Überlegen Sie sich, wie die Methode auf ein Intervall reagieren soll, das überhaupt keine Nullstellen enthält (Stichwort: `Double.NaN`)
-   - **Hinweis:** Die wiederholte Anwendung der Suche in einem Intervallen kann/soll wenn möglich als Rekursions-Funktion realisiert werden.  
+   - **Hinweis:** Die wiederholte Anwendung der Suche in einem Intervallen kann/soll wenn möglich als Rekursions-Funktion realisiert werden.
 
 
 ---
