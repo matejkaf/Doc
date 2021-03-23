@@ -43,9 +43,9 @@ Caches können hierarchisch organisiert sein. Aktuell max. 3 Level
 
 *Evtl. ein Video das die Funktion zeigt? [Video: CPU Cache Explained - What is Cache Memory?](https://youtu.be/yi0FhRqDJfo)*
 
->   Memory is transferred from the main memory into the caches in blocks which are smaller than the cache line size. Today 64 *bits* are transferred at once and the cache line size is 64 or 128 *bytes*. This means 8 or 16 transfers per cache line are needed.
+>   Memory is transferred from the main memory into the caches in blocks which are smaller than the cache line size. Today **64 *bits*** are transferred at once and the **cache line size is 64 or 128 *bytes***. This means 8 or 16 transfers per cache line are needed.
 >
->   The DRAM chips can transfer those 64-bit blocks in burst mode. This can fill the cache line without any further commands from the memory controller and the possibly associated delays. If the processor prefetches cache lines this is probably the best way to operate. ([quelle](https://lwn.net/Articles/252125/))
+>   The DRAM chips can transfer those 64-bit blocks in **burst mode**. This can fill the cache line without any further commands from the memory controller and the possibly associated delays. If the processor prefetches cache lines this is probably the best way to operate. ([quelle](https://lwn.net/Articles/252125/))
 
 ## Processor die
 
