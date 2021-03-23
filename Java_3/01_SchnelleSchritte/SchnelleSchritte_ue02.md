@@ -5,7 +5,7 @@ cmds: ['md_html.bash','md_html.bash --small']
 tags: [None,java, array, challenge]
 ---
 
-**Übung (Sieb des Eratosthenes):**
+#### **Übung (Sieb des Eratosthenes):**
 
 Sollen gleich mehrere Primzahlen gefunden werden gibt es ein schnelles Verfahren das nach dem griechischen Mathematiker Eratosthenes von Kyrene (3. Jhdt. v. Chr.) benannt ist.
 

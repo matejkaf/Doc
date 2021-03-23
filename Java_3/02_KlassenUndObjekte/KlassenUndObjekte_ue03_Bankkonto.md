@@ -1,7 +1,7 @@
 ---
 title: Übung Bankkonto
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [assignment,java]
+tags: [assignment,java,3BHELS]
 ---
 
 

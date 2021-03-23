@@ -5,7 +5,7 @@ cmds: ['md_html.bash','md_html.bash --small']
 tags: [None,java]
 ---
 
-**Übung (Potenzieren):**
+#### **Übung (Potenzieren):**
 
 Schreibe eine Methode die einen `double` Wert `x` hoch einem `int` Wert n `berechnet`. Die Methode soll so aussehen:
 
@@ -17,13 +17,13 @@ Beachte dass `n` auch negativ sein kann.
 
 ---
 
-**Übung (Durchschnitt):**
+#### **Übung (Durchschnitt):**
 
 Schreibe eine Methode die ein Array aus `int` übergeben bekommt und den Durchschnitt dieser Werte als `double` Wert zurückgibt.
 
 ---
 
-**Übung (ABGB):**
+#### **Übung (ABGB):**
 
 Das Allgemeine Bürgerliche Gesetzbuch (ABGB) unterscheidet vier Altersstufen:
 
@@ -43,7 +43,7 @@ Der zurückgegebene String soll an das Alter und das Geschlecht angepasst sein. 
 
 ---
 
-**Übung (Monatsname):**
+#### **Übung (Monatsname):**
 
 Schreibe eine Methode:
 
@@ -55,7 +55,7 @@ die für eine Monatsnummer den entsprechenden String zurückgibt, z.B. `"Oktober
 
 ---
 
-**Übung (Zweierpotenzen):**
+#### **Übung (Zweierpotenzen):**
 
 Schreibe eine Methode die ein Array aus `int` übergeben bekommt und die Zahlenfolge `1,2,4,8,16,32,64,...` ins  Array schreibt. Es können Arrays beliebiger Länge übergeben werden. Die Methode schaut folgendermaßen aus.
 
@@ -86,7 +86,7 @@ print(a2);
 
 ---
 
-**Übung (Quadratzahlen):**
+#### **Übung (Quadratzahlen):**
 
 Prüfe die Behauptung: Jede Quadratzahl `n*n` ist immer eine Summe von ungeraden Zahlen(Bsp.:`4*4 =16=1+3+5+7`, `5*5=25=1+3+5+7+9`, usw.). 
 
@@ -96,7 +96,7 @@ Prüfe dann durch ein Programm ob die Behauptung stimmt für alle Quadratzahlen 
 
 ---
 
-**Übung (Quersumme):**
+#### **Übung (Quersumme):**
 
 Bei der Quersumme handelt es sich um die Summe der einzelnen Ziffern einer mehrstelligen Zahl. Beispiel: Die Quersumme von 251 ist 8, da 2 + 5 + 1 = 8.
 

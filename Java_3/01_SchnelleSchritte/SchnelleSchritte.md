@@ -2,7 +2,7 @@
 title: Schnelle Schritte zu Java
 description: Schneller Umstieg von C nach Java.
 cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, java ]
+tags: [lecture, java, 3BHELS ]
 ---
 
 >  C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off. [Bjarne Stroustrup – Erfinder von C++]

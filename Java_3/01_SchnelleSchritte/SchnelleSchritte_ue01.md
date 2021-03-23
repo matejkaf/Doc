@@ -1,17 +1,19 @@
 ---
-title: Übungen – Einstieg in Java
+title: Einstieg in Java
+subtitle: Übungen
 cmds: ['md_html.bash','md_html.bash --small']
 description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static public.
-tags: [assignment,java]
+tags: [assignment,java,3BHELS]
 ---
 
-**Übung (FizzBuzz):**
+#### **Übung (FizzBuzz):**
 
 Write a program that prints numbers from 1 to 100. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`.  For numbers which are multiples of both three and five print `FizzBuzz`.
 
 ---
 
-**Übung (Notenliste):**
+#### **Übung (Notenliste):**
+
 Schreibe ein Programm das aufgrund von Punkten die Note ermittelt.
 Die Ausgabe der Note soll sowohl als Zahl als auch als Text erfolgen.
 
@@ -43,7 +45,8 @@ Hinweis: die Noten als Index ins Array verwenden!
 
 
 
-**Übung (Fakultät):**
+#### **Übung (Fakultät):**
+
 Schreibe ein Programm, das die Fakultät einer Zahl berechnet und ausgibt.
 
 ```
@@ -67,7 +70,8 @@ Aufgabenstellungen:
 
 
 
-**Übung (Primzahltest):**
+#### **Übung (Primzahltest):**
+
 Eine Primzahl ist eine positive Zahl größer eins mit genau zwei natürlichen Zahlen als Teiler, der Zahl 1 und sich selbst. Die kleinsten Primzahlen sind: $2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, \ldots$
 
 Implementiere eine Methode `boolean isPrim()` die von einer als Parameter übergebenen Zahl prüft ob es sich um eine Primzahl handelt.
