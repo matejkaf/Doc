@@ -10,8 +10,11 @@ title: Github Pages
 ## Inhaltsverzeichnis erstellen
 
 ```
+**Inhalt**
+
 * TOC
 {:toc}
+
 My first paragraph.
 ```
 

@@ -5,6 +5,11 @@ description: etwas schwieriger
 tags: [1AHITS,assignment, c, funktionen ]
 ---
 
+**Inhalt**
+
+* TOC
+{:toc}
+
 #### **Übung (Summe ungerader Zahlen):**
 
 Schreibe eine Funktion `usum()` die eine untere und eine obere Grenze als Parameter übergeben bekommt (beide `int`). Die Funktion soll alle ungeraden Zahlen die sich zwischen den Grenzen befinden addieren und das Ergebnis zurückgeben. Sind die Grenzen ungerade Zahlen sind diese ebenfalls zu zählen.
