@@ -4,6 +4,13 @@ subtitle: Dynamic arrays in Java
 tags: [3BHELS, lecture,java, array]
 ---
 
+# Inhalt
+
+* TOC
+{:toc}
+
+## Dynamisches Array
+
 With class `ArrayList` (Java library)
 
 - Can "grow'' and "shrink"
