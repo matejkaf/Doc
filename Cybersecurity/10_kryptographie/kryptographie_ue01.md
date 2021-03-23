@@ -22,8 +22,4 @@ Entschlüssele "FYCXZLPVZ" mit dem Schlüssel "AHITS"
 
 ## Vignère Quadrat
 
-![Vigenère_square_shading.svg](fig/Vigenère_square_shading.svg.png)
-
-
-
-#### 
+![Vigenère_square_shading.svg](fig/Vigenere_square.png)
