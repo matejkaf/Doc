@@ -1,29 +1,35 @@
 ---
-title: Doc
+title: Systemvergleich
 description: Gegenüberstellung unterschiedlicher Systeme. Prozessoren. Zukünftige Entwicklung.
 tags: [lecture, 2AHITS_Teach]
 ---
 
-# Systemvergleich
+# Inhalt
+
+* TOC
+{:toc}
+
+## Grobe Klassifizierung
+
+- Desktop
+- Notebook
+- Tablets
 
 <img src="fig/Weltweiter Endgeraeteabsatz.jpeg" alt="Weltweiter Endgeraeteabsatz" style="zoom:50%;" />
 
-Grobe Klassifizierung
-
-- Endgeräte
-  - Desktop
-  - Notebook
-  - Tablets
-  - Smartphone (2020: ca. 1600 Mio. Stk.)
 - Server (2020: 12 Mio. Stk.)
-- IoT (RaspberryPi, Überwachungskameras, ...)
-- Embedded System (Waschmaschine, Autoelektronik, Industriesysteme)
+- Smartphone (2020: ca. 1600 Mio. Stk.)
+
+- IoT – Internet of Things (RaspberryPi, Kameras, SmartHome, Drucker, ...)
+  Im Einsatz 2020–2021: 7,74–8,74 Mio. (+1 Mio. pro Jahr)
+- Embedded Systeme (Waschmaschine, Autoelektronik, Industriesysteme, ...)
+  32/16 und 8 Bit Prozessoren, nur 8 Bit Prozessoren 2012: ca. 4500 Mio. Stück p.a.
 
 
 
 ## Server
 
-Vergleich zu Desktop
+Vergleich zu **Desktop**
 
 - Ausgelegt auf Dauerbetrieb und lange Lebensdauer. z.B. 100% Last 24/7 über 5 Jahre.
 - Hoher Stromverbrauch und aufwändige Kühlung
@@ -50,6 +56,7 @@ Flagschiff CPUs 01/2020:
 [Core i7-9700KF](https://ark.intel.com/content/www/us/en/ark/compare.html?productIds=190885)
 
 - $374,-
+- Q1'19
 - 14nm
 - 8 Cores
 - 3,6-4,9 GHz
@@ -61,6 +68,7 @@ Flagschiff CPUs 01/2020:
 [Core i7-1060G7](https://ark.intel.com/content/www/us/en/ark/compare.html?productIds=197120)
 
 - $426,-
+- Q3'19
 - 10nm
 - 4 Cores
 - 1,0-3,8 GHz
@@ -72,11 +80,24 @@ Flagschiff CPUs 01/2020:
 [Intel® Xeon® Platinum 9282 Processor](https://ark.intel.com/content/www/us/en/ark/products/194146/intel-xeon-platinum-9282-processor-77m-cache-2-60-ghz.html)
 
 - ca. $50.000,-
+- Q2'19
 - 14nm
 - 56 Cores
 - 2,6-3,8 GHz
 - 77 MB Cache
 - 400W
+
+
+
+[Intel® Xeon® Platinum 8360H Processor](https://ark.intel.com/content/www/us/en/ark/products/204089/intel-xeon-platinum-8360h-processor-33m-cache-3-00-ghz.html)
+
+- $4.200,-
+- Q3'2020
+- 14nm
+- 24 Cores
+- 3,0 GHz
+- 33 MB Cache
+- 225 W
 
 
 
@@ -95,7 +116,7 @@ Für mobile Anwendungen (Handy / Android Systeme) – Samsung, Galaxy S10 5G, **
 
 IoT – Raspberry Pi 4: **Broadcom BCM2711**, Quad core Cortex-A72 (ARM v8) 64-bit SoC **1.5GHz**, 28nm. <1W. RAM: 2, 4, oder 8GB
 
-Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.microchip.com/wwwproducts/en/dsPIC33CH128MP202), 128kB Flash, 20kB RAM, Dual Core, 16 Bit, **200 MHz**, Leistungsaufnahme typischer µC: 1mW-200mW
+Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.microchip.com/wwwproducts/en/dsPIC33CH128MP202), 128kB Flash, 20kB RAM, Dual Core, 16 Bit, **200 MHz**, Leistungsaufnahme typischer µC: 1mW-200mW, Preis: ca. 3$
 
 
 
