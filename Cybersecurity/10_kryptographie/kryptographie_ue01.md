@@ -8,9 +8,9 @@ tags: [lecture,2AHITS,2AHITS_Teach]
 
 Verschlüssle "MORGEN UM ACHT" mit dem Schlüssel "HTL"
 
-
-
 ---
+
+
 
 #### **Übung (Vignère entschlüsseln):**
 
