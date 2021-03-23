@@ -41,7 +41,7 @@ Erstellen Sie folgenden Konstruktoren:
 
 Überladen Sie die `toString()`-Methode. Die Methoden sollen einen String in folgender Form ausgeben.
 
- z.B.: `+6.0*x^3+8.0*x^2-4.0*x^1+10.0`
+ z.B.: `+6.0*x^3 + 8.0*x^2 - 4.0*x^1 + 10.0`
 
 **Randbedingungen:**
 - Glieder mit dem Koeffizienten 0 werden nicht ausgegeben.
@@ -72,49 +72,31 @@ Erstellen Sie folgenden Konstruktoren:
    - **Hinweis:** Die wiederholte Anwendung der Suche in einem Intervallen kann/soll wenn möglich als Rekursions-Funktion realisiert werden.  
 
 
-
 ---
 
 - `public double max(double leftBound, double rightBound)`: sucht nach einem lokalen Maximum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich 
    tatsächlich um ein Maximum handelt. Wird kein Maximum gefunden, so liefert die Funktion den Wert `Double.NaN` zurück.
 - `public double min(double leftBound, double rightBound)`: sucht nach einem lokalen Minimum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich 
    tatsächlich um ein Minimum handelt. Wird kein Minimum gefunden, so liefert die Funktion den Wert `Double.NaN` zurück.
-
- 
+   
 
 
 ## Testpolynome
 
- 
-
 - $$f(x) = 4 x ^3 -8x^2 -44x +48$$
   - Nullstellen  $$x_1 = -3, x_2 = 4, x_3 = 1$$
 
-
-
 <img src="fig/PolyPlot1-6489747.png" alt="PolyPlot1" style="zoom:33%;" />
-
- 
 
 - $$f(x) = x^2 +2 x -4$$
   - Nullstellen  $$x_1 = -3.236067977499789, x_2 = 1.2360679774997898$$
 
- 
-
 <img src="fig/PolyPlot2.png" alt="PolyPlot2" style="zoom:33%;" />
-
- 
 
 - $$f(x) = 0.5 x ^3 + 4.5 x^2 +4x +15.5$$
   - Nullstellen  $$x_1 = -8.48777$$, $$x_2$$ und  $$x_3$$  sind komplexe Lösungen
 
-
-
 <img src="fig/PolyPlot3.png" alt="PolyPlot3" style="zoom:33%;" />
-
-
-
- 
 
 ## Erweiterungen
 
