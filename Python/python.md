@@ -3,10 +3,10 @@ title: Python
 subtitle: Übersicht zum Nachschlagen
 ---
 
+# Inhalt
 
-
-
-
+* TOC
+{:toc}
 ## Infos
 
 - [Google's Python Class](https://developers.google.com/edu/python)
