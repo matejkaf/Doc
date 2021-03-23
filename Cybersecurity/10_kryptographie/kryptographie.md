@@ -129,8 +129,6 @@ Daraus sieht man wie viele Buchstaben in jeder Zeile einzusetzen sind.
 
 
 
-
-
 ### Playfair Cipher
 
 - [Playfair Cipher (en) [19:17]](https://youtu.be/-KjFbTK1IIw)
