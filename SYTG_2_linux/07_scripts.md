@@ -1,6 +1,6 @@
 ---
 title: Grundlagen UNIX shell
-subtitel: Shell Scripts
+subtitle: Shell Scripts
 ---
 
 Shell Scripts sind kleine Programme die durch die shell selbst ausgeführt werden. Diese sind Textdateien und enthalten shell Kommandos.

@@ -1,6 +1,6 @@
 ---
 title: Grundlagen UNIX shell
-subtitel: C Programmieren
+subtitle: C Programmieren
 tags: [2AHITS_Teach]
 ---
 

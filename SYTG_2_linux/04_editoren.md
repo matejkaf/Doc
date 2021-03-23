@@ -1,6 +1,6 @@
 ---
 title: Grundlagen UNIX shell
-subtitel: Editoren
+subtitle: Editoren
 tags: [2AHITS_Teach]
 ---
 
