@@ -96,7 +96,7 @@ Beispiel: U+01FE (Ǿ) = 511 dez, wird entweder in der Reihenfolge `FF 01` (littl
 
 In UTF-16 besteht das BOM in [Big-Endian](https://de.wikipedia.org/wiki/Byte-Reihenfolge)-Notation aus der Zweibyte-Sequenz `FE FF`, in der [Little-Endian](https://de.wikipedia.org/wiki/Byte-Reihenfolge)-Notation umgekehrt aus `FF FE`. Da das Zeichen U+FFFE als ungültig definiert ist, kann durch die Reihenfolge der zwei Bytes eindeutig die Reihenfolge der Bytes festgestellt werden. Bei UTF-32 stehen davor oder dahinter noch zwei Nullbytes, die zur Erkennung der Byte-Reihenfolge dienen.
 
-Die [UTF-8](https://de.wikipedia.org/wiki/UTF-8)-Kodierung des BOM besteht aus der Bytesequenz `EF BB BF`. Bei UTF-8 gibt es  keinen Unterschied in der Byte Reihenfolge ein BOM wird trotzdem oft verwendet um Editoren die automatische Erkennung der Kodierung zu Erleichtern.
+Die [UTF-8](https://de.wikipedia.org/wiki/UTF-8)-Kodierung des BOM besteht aus der Bytesequenz `EF BB BF`. Bei UTF-8 gibt es  keinen Unterschied in der Byte Reihenfolge ein BOM wird trotzdem oft verwendet um Editoren die automatische Erkennung der Kodierung zu erleichtern.
 
 [Quelle: wikipedia](https://de.wikipedia.org/wiki/Byte_Order_Mark)
 
