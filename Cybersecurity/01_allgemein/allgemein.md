@@ -37,6 +37,8 @@ Seit ca. Anfang der 90er Jahre
 
 # Hack(er)
 
+weibl.: [Haecksen](https://www.haecksen.org)
+
 Hacker (Alltagssprachlich/Berichterstattung): Person mit hervorragenden Computer Kenntnissen und der Fähigkeit mit Kreativität und Einfallsreichtum in Computersysteme einzudringen.
 
 Absicht:

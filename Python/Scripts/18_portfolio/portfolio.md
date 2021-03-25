@@ -39,12 +39,28 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 - Gehaltskonto: 15. des letzen Monats im Quartal Abschöpfen in ganze 1000,– >10.000,– bleiben am Konto
   
     -  1 Teil Savity / 1 Teil Hello / 1 Teil Fill Up Fond
+
+
     
 ## Fill Up Fond
 
 Wenn Aktienteil mehr als 20% vom Höchstand verliert zum Auffüllen.
 
-Aktueller Stand: **€ 0,–**
+Aktueller Stand: **€ 6.000,–** (2020/Q1)
+
+## 2020/Q1
+
+- 6.000,- von VB Sparkonto auf Hello Verrechnungskonto
+- VB (25.03.): 20.984,- + 2000,- (Arbeitnehmerveranlagung)
+  22.984,-
+  - 12.000,- Abschöpfbetrag
+    - 3000,- Savity
+    - 3000,- Hello
+    - 6000,- Fill Up
+
+Hello Verr.: 18797+6000+3000
+Hello TopZ:  85.144,-
+
 
 ## Ziel Allokation
 

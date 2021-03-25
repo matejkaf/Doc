@@ -19,11 +19,17 @@ tags: [crypto,info]
 
 ## Ladbare Libraries
 
+### Offizielle Library
+
+[Cryptography](https://cryptography.io/en/latest/)
+
+Siehe Hazardous Material // Primitives
+
 ```bash
 pip install cryptography
 ```
 
-
+### Andere Libraries
 
 - [Python Cryptography Toolkit (pycrypto)](https://pypi.org/project/pycrypto/)
   - [](https://stackoverflow.com/questions/12524994/encrypt-decrypt-using-pycrypto-aes-256)

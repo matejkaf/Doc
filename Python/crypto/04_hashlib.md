@@ -5,7 +5,7 @@ subtitle: Hashing
 
 [`hashlib` — Secure hashes and message digests](https://docs.python.org/3/library/hashlib.html)
 
-[REPLIT HashlibTest](https://repl.it/@franzmatejka/HashlibTest)
+[REPLIT HashlibTest](https://replit.com/@htlmatejka/HashlibTest)
 
 ```python
 import hashlib
@@ -30,12 +30,18 @@ hash_value_base16 = m.hexdigest()
 print(hash_value_base16)
 ```
 
-base64 Encoding
+oder Methode [`hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex) von Bytestring:
+
+```python
+print(plaintext_bytes.hex() ) # bytestring to hex-string
+```
+
+
+
+base64 Encoding ([base64 Library](https://docs.python.org/3/library/base64.html))
 
 ```python
 import base64
-
-# https://docs.python.org/3/library/base64.html
 hash_value_base64 = base64.b64encode(hash_value) # bytestring als parameter
 print(hash_value_base64) # bytestring
 ```
@@ -44,13 +50,19 @@ base16 Encoding (Variante mit base64 Library)
 
 ```python
 hash_value_base16 = base64.b16encode(hash_value)
-print(hash_value_base16) # bytestring
+print(hash_value_base16) # bytestring (hex Großbuchstaben)
 ```
 
 Decoding (Base64 String ⟶ Bytestring)
 
 ```python
 decoded = base64.b64decode(hash_value_base64)
+```
+
+Ähnlich Base16 decoding
+
+```
+decoded = base64.b16decode('000a0bff')
 ```
 
 
@@ -68,7 +80,7 @@ print(hashlib.algorithms_available)
 
 **Experiment** — sha256 Hash einer Datei in Base64 Format ermitteln.
 
-[REPLIT HashFile](https://repl.it/@franzmatejka/HashFile)
+[REPLIT HashFile](https://replit.com/@htlmatejka/HashFile)
 
 ```python
 import hashlib
