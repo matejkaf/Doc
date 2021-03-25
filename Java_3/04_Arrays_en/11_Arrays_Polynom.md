@@ -74,8 +74,7 @@ Erstellen Sie folgenden Konstruktoren:
 
 ---
 
-- `public double max(double leftBound, double rightBound)`: sucht nach einem lokalen Maximum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich 
-   tatsächlich um ein Maximum handelt. Wird kein Maximum gefunden, so liefert die Funktion den Wert `Double.NaN` zurück.
+- `public double max(double leftBound, double rightBound)`: sucht nach einem lokalen Maximum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich tatsächlich um ein Maximum handelt. Wird kein Maximum gefunden, so liefert die Funktion den Wert `Double.NaN` zurück.
 - `public double min(double leftBound, double rightBound)`: sucht nach einem lokalen Minimum im gegebenen Intervall. Überprüfen Sie mit den vorhandenen Funktionen auch, ob es sich 
    tatsächlich um ein Minimum handelt. Wird kein Minimum gefunden, so liefert die Funktion den Wert `Double.NaN` zurück.
    
