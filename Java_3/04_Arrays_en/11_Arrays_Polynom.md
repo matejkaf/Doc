@@ -1,7 +1,7 @@
 ---
 title: Arrays
 subtitle: Übung – Polynom
-tags: [assignment]
+tags: [assignment,3BHELS]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
