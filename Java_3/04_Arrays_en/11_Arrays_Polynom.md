@@ -83,18 +83,15 @@ Erstellen Sie folgenden Konstruktoren:
 
 ## Testpolynome
 
-- $$f(x) = 4 x ^3 -8x^2 -44x +48$$
-  - Nullstellen  $$x_1 = -3, x_2 = 4, x_3 = 1$$
+$$f(x) = 4 x ^3 -8x^2 -44x +48$$ – Nullstellen  $$x_1 = -3, x_2 = 4, x_3 = 1$$
 
 <img src="fig/PolyPlot1-6489747.png" alt="PolyPlot1" style="zoom:33%;" />
 
-- $$f(x) = x^2 +2 x -4$$
-  - Nullstellen  $$x_1 = -3.236067977499789, x_2 = 1.2360679774997898$$
+$$f(x) = x^2 +2 x -4$$ – Nullstellen  $$x_1 = -3.236067977499789, x_2 = 1.2360679774997898$$
 
 <img src="fig/PolyPlot2.png" alt="PolyPlot2" style="zoom:33%;" />
 
-- $$f(x) = 0.5 x ^3 + 4.5 x^2 +4x +15.5$$
-  - Nullstellen  $$x_1 = -8.48777$$, $$x_2$$ und  $$x_3$$  sind komplexe Lösungen
+$$f(x) = 0.5 x ^3 + 4.5 x^2 +4x +15.5$$ – Nullstellen  $$x_1 = -8.48777$$, $$x_2$$ und  $$x_3$$  sind komplexe Lösungen
 
 <img src="fig/PolyPlot3.png" alt="PolyPlot3" style="zoom:33%;" />
 
