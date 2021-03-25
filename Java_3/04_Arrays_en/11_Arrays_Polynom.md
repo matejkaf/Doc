@@ -22,9 +22,9 @@ tags: [assignment,3BHELS]
 
 **Randbedingungen**:
 
-- Die 4 Koeffizienten sind in einem Array abzulegen, wobei $$d=$$`koeff[0]`, $$c=$$`koeff[1]`, $$b=$$`koeff[2]`, $$d=$$`koeff[3]`. Dies passt zur allgemeineren Schreibweise eines Polynoms:
+- Die 4 Koeffizienten sind in einem Array abzulegen, wobei $$d=$$`koeff[0]`, $$c=$$`koeff[1]`, $$b=$$`koeff[2]`, $$a=$$`koeff[3]`. Dies passt zur allgemeineren Schreibweise eines Polynoms:
   
-  $$f(x) = x_0 \cdot x^0 + x_1 \cdot x^1 + x_2 \cdot x^2 + x_3 \cdot x^3$$
+  $$f(x) = a_0 \cdot x^0 + a_1 \cdot x^1 + a_2 \cdot x^2 + a_3 \cdot x^3$$
 
 ## Konstruktoren
 
