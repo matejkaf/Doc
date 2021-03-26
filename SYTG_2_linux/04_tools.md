@@ -200,11 +200,10 @@ $ wc --lines sampletextfiles/* | head -n-1 | sort --key=1 --general-numeric-sort
 
 
 
-## Cut, uniq, tac, grep
+## Cut, tac, grep
 
-- `cut` (filtert spalten)
-- `uniq` (report or filter out repeated lines in a file)
-- `tac` (concatenate and print files in reverse, cat/tac)
+- `cut` (filtert Spalten)
+- `grep` (filtert Zeilen)
 
 ```bash
 $ cut -d , -f 2 klassenkassa.csv
@@ -212,7 +211,6 @@ $ cut -d , -f 2 klassenkassa.csv
 # -f 2 ... 2tes Feld wählen
 ```
 
-> [!2AHITS G2 05.03.2021]
 
 `grep`
 
@@ -304,11 +302,13 @@ hi robots
 
 > [!2AHITS G1 19.03.2021]
 
+> [!2AHITS G2 26.03.2021]
+
 
 
 ## Weiterführend
 
-- [List of GNU Core Utilities commands](https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands)
+- [List of Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
 
 
 
