@@ -63,3 +63,33 @@ $ od -A d -t u1z shopping.txt
 
 Binärdaten
 
+Download `klassenkassa.csv`:
+
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/htl_logo.jpg
+```
+
+Was ergibt die Ausgabe mit `cat`? Analysiere die Anzeige von `xxd`, schau dir den Anfang der Datei an (`head`).
+
+ 
+
+Umlaute:
+
+```
+$ echo aäoö > test.txt
+$ cat test.txt 
+aäoö
+$ xxd test.txt 
+00000000: 61c3 a46f c3b6 0a                        a..o...
+```
+
+Kodierung ist UTF-8?
+
+`c3a4` ... ä ([Unicode](https://www.compart.com/en/unicode/U+00E4))
+
+`c3b6` ... ö ([Unicode](https://www.compart.com/en/unicode/U+00F6))
+
+
+
+`latin1.txt` Datei mit ISO 8859-1 (latin 1) Kodierung.
+
