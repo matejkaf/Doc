@@ -4,58 +4,8 @@ subtitle: Grundlegende bash Tools
 tags: [lecture, unix, shell, bash,2AHITS_Teach ]
 ---
 
-
-
-# Grundlegende Tools
-
-## Testdaten
-
-Download eines **git Repositories** 
-
-git: source control system, Verwaltung von Dateien
-
-**Zielrechner:**
-
-cygwin Installation von git:
-
-```bash
-$ cd /
-$ ./setup-x86_64.exe --no-admin -q -P git
-$ git --version
-```
-
-git Repository klonen:
-
-```bash
-$ git clone https://github.com/matejkaf/sytg2-testdata
-```
-
-Es gibt viele Repos (meist für Source Code):
-
-```bash
-$ git clone https://github.com/iryndin/10K-Most-Popular-Passwords
-```
-
-**Quellrechner:**
-
-```bash
-$ git init
-$ git add .
-$ git commit -m "start"
-$ git remote add origin https://github.com/matejkaf/sytg2-testdata.git
-$ git branch -M main
-$ git push -u origin main
-```
-
-
-
-`shopping.txt`
-
-```bash
-wget https://matejkaf.github.io/Doc/SYTG_2_linux/sytg2-testdata/shopping.txt
-```
-
-
+* TOC
+{:toc}
 
 ## Mehr über Optionen
 
@@ -77,6 +27,12 @@ $ ls -la
 ```
 
 Weiteres Beispiel für Optionen: das `head` Kommando.
+
+Datei `shopping.txt` für weitere Tests mit dem Tool `wget` downloaden:
+
+```bash
+wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping.txt
+```
 
 Head gibt die ersten 10 Zeilen einer Textdatei aus.
 
@@ -192,7 +148,18 @@ $ nl -s '. ' -w 10 shopping.txt
 
 ---
 
-**Übung (word count)**  Ermittle welches File in `sampletextfiles` aus den meisten Zeilen besteht.
+**Übung (word count)**  
+
+Lade und entpacke ein Verzeichnis `sampletextfiles`:
+
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/sampletextfiles.tar.gz
+$ tar -xzf tarfile.tar.gz
+```
+
+
+
+Ermittle welches File in `sampletextfiles` aus den meisten Zeilen besteht.
 Die Ausgabe soll bestehen aus der Zeilenanzahl gefolgt vom Dateinamen.
 
 ---

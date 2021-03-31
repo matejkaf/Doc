@@ -3,7 +3,7 @@
 
 
 
-# gzip
+## gzip
 
 Packen
 
@@ -30,11 +30,15 @@ gzip –d rockyou.txt.gz
 
 
 
-# tar
+Ganze Verzeichnisse zippen: Nicht möglich! `gzip` ist zum komprimieren einzelner Dateien gedacht. Es gibt zwar eine "rekursiv" Option `-r` aber wird dabei jede Datei im angegebenen Verzeichnis für sich komprimiert (`gzip -r myfolder`, `gunzip -r myfolder`).
+
+## tar
 
 TApe aRchive. It was used to stream many files to a tape for backups or file transfer.
 
 A tar file, often called a *tarball*, is a collection of files wrapped up in one single file for easy storage. Rather than keep track of a whole folder of files, you only need to keep track of one. Tar files are often compressed after being created, giving it the .tar.gz [file extension](https://www.howtogeek.com/356448/what-is-a-file-extension/). Technically these are TGZ files, but nearly everyone calls both .tar and .tar.gz files simple “tar files.”
+
+### uncompress tar
 
 ```bash
 # uncompress
@@ -51,11 +55,16 @@ tar -xzf tarfile.tar.gz
 
 - **-f**: specifies file input, rather than STDIN
 
-Creating a tar file is just as easy. Just replace the **-x** with a **-c** to “Create,” though I find it easier to remember by “Compress,” even though that’s -z’s job.
+### create tar
+
+Creating a tar file is just as easy. Just replace the **-x** with a **-c** to “Create”.
 
 ```bash
 # Compress a directory called 'test'
-ls | grep test
 tar -zcvf test.tar.gz test
-ls | grep test
 ```
+
+- **-z:** Uses gzip
+- **-c:** Create
+- **-v:** verbose mode
+- **-f**: specifies file input, rather than STDIN
