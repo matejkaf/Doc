@@ -93,3 +93,13 @@ Kodierung ist UTF-8?
 
 `latin1.txt` Datei mit ISO 8859-1 (latin 1) Kodierung.
 
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
+```
+
+
+
+```bash
+$ iconv -f ISO-8859-9 -t utf-8//translit file.ISO-8859-9 
+```
+
