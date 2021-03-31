@@ -1,0 +1,8 @@
+Raymond saw 2
+Bob hammer 4
+Mary rake 2
+Zoe ladder 1
+Naomi chisel 4
+Felicity mallet 5
+Sandie nail 100
+Steven shovel 1
