@@ -249,6 +249,15 @@ String interpolation (Python ≥3.6):
 print(f'{x*2} Test')
 ```
 
+Formattierung
+
+```python
+'{:02}_{}'.format(3, 'sometext')
+ordinal=2
+f'{ordinal:02}_{match.group(1)}'
+
+```
+
 
 
 `ord` (Unicode-Zeichen ⟶ `int`–Codepoint) und `chr` (Codepoint⟶Zeichen)
@@ -740,5 +749,46 @@ def getDate(str):
 for str in tests:
   print(getDate(str))
 
+```
+
+
+
+```python
+def scan_for_links(html):
+  html = html.decode('utf-8')
+  ret = {'links':[]}
+
+  regex1 = r'<a.*?</a>' # non greedy
+  regex2 = r'<a.*href=\"(https://matejkaf.github.io/)(.*)\".*>'
+
+  regex1_pattern = re.compile(regex1)
+  regex2_pattern = re.compile(regex2)
+
+  matches = regex1_pattern.finditer(html)
+  changes = []
+  for match in matches:
+    anchor = match.group()
+    match2 = regex2_pattern.search(match.group())
+    link = anchor[match2.span(1)[0]:match2.span(2)[1]]
+    ret['links'].append(link.encode('utf-8'))
+    newAnchor=anchor[:match2.span(1)[0]]+anchor[match2.span(2)[0]:]
+    changes.append([match.span(),newAnchor])
+
+  result = []
+  current = 0
+  for change in changes:
+    result.append(html[current:change[0][0]])
+    result.append(change[1])
+    current = change[0][1]
+  result.append(html[current:])
+
+  ret['line']=''.join(result).encode('utf-8')
+  return ret
+
+############
+
+print(scan_for_links(html))
+
+print(scan_for_links(b"bla bal skhfh foh"))
 ```
 

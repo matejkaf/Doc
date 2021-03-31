@@ -4,9 +4,9 @@ subtitle: Base Encoding
 description: Base16, Base64
 ---
 
-Binärdaten (in Python Bytestrings) als Text (ASCII String) darstellen.
+Binärdaten (Python Bytestrings) als Text (ASCII String) darstellen.
 
-- Hintergrund: ASCII Texte (ASCII Codes 32-126) können mit den geringsten Problemen zwischen unterschiedlichen Systemen ausgetauscht werden.
+- Hintergrund: ASCII Texte (Codes 32-126) können mit den geringsten Problemen zwischen unterschiedlichen Systemen ausgetauscht werden. Sie können in Nachrichten versendet und handschriftlich notiert werden.
 
 
 
@@ -14,7 +14,7 @@ Binärdaten (in Python Bytestrings) als Text (ASCII String) darstellen.
 
 ```python
 bytestring = b'\x0a\x31\x55\7e'
-print(plaintext_bytes.hex()) # bytestring to hex-string
+print(plaintext_bytes.hex())
 ```
 
 
@@ -36,7 +36,9 @@ b'CjFVB2U='
 
 
 
-## base64 Decoding (Base64 String ⟶ Bytestring)
+## base64 Decoding
+
+Base64 String ⟶ Bytestring
 
 ```python
 decoded_byte = base64.b64decode(base64encoded)

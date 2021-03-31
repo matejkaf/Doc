@@ -36,7 +36,7 @@ Einen Bytestring in einen **String aus Hex-Ziffern** wandeln – Methode [`hex()
 ```
 bytestr = b'\n\x0a\x09\x20\x30\x31\x50\x7E\x8F'
 print(bytestr.hex())
-print(bytestr.hex(' '))
+print(bytestr.hex(' ')) # mit Abstand
 ```
 
 ```

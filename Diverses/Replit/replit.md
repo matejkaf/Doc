@@ -4,20 +4,24 @@ title: replit.com
 
 
 
-[replit.com](https://replit.com) ist eine Web basierte Entwicklungsumgebung. Editor, Compiler und Laufzeitumgebung sind online. Es genügt ein Browser, es sind keine Installationen notwendig. Internetverbindung vorausgesetzt sind alle erstellten Programme von überall verfügbar. Auch auf Tablets und Handys ist es möglich an den Programmen (genannt REPL – read eval print loop) zu arbeiten.
+[replit.com](https://replit.com) ist eine **Web basierte Entwicklungsumgebung**. Editor, Compiler und Laufzeitumgebung sind online. Es genügt ein **Browser**, es sind keine Installationen notwendig. Internetverbindung vorausgesetzt sind alle erstellten Programme von überall verfügbar. Auch auf **Tablets und Handys** ist es möglich an den Programmen (genannt REPL – read eval print loop) zu arbeiten.
 
 ![Screenshot 2021-03-25 at 08.42.57](fig/Screenshot 2021-03-25 at 08.42.57.png)
 
 Erstellte REPL können weitergegeben werden, siehe:
 
-- [CppHelloWorld](https://replit.com/@htlmatejka/CppHelloWorld) – öffnen und starten!
+- [CppHelloWorld](https://replit.com/@htlmatejka/CppHelloWorld) – klicken und starten!
 
-Ein paar Features:
+
+
+## Ein paar Features
 
 - Jedes REPL läuft in einer eigenständigen, virtuellen Linux Umgebung.
-- Es ist möglich Dateien hochzuladen und z.B. von einem Programm aus darauf zuzugreifen
-- Mit Flask (Python) können Webserver erstellt werden, statische Webseiten, generierte Webseiten und sogar kompette RESTful APIs (todo: Link einfügen) sind möglich.
-- Einfache Spiele im Terminal sind möglich. Implementierung einer `conio.h` ähnlichen Library – siehe hier.
+- Mit Flask (Python) können Webserver erstellt werden – statische Webseiten, generierte Webseiten und sogar komplette RESTful APIs (siehe [API Server](https://replit.com/@htlmatejka/2103035AHELSGrpAAPIServer#main.py)) sind möglich.
+- Einfache Spiele im Terminal sind möglich. Implementierung einer `conio.h` ähnlichen Library – siehe [REPL Conio](https://replit.com/@htlmatejka/ReplConio).
+- Es ist möglich Dateien hochzuladen und z.B. von einem Programm aus darauf zuzugreifen.
+- Programme können ebenfalls Dateien erzeugen
+- Eine Linux Shell kann genutzt werden
 
 
 
@@ -25,13 +29,13 @@ Ein paar Features:
 
 Mit C, C++, Java und Python werden alle für FSST, SEW, AIT und teilweise SEN nötigen Programmiersprachen unterstützt. Auch C# ist möglich, dabei handelt es sich aber leider um Mono (vielleicht kommt ja einmal .NET Core).
 
-Die Schüler müssen sich nur auf replit.com anmelden. Probleme beim Installieren von Entwicklungsumgebungen und verlieren von Programmen kommen nicht mehr vor.
+Die Schüler müssen sich nur auf [replit.com](https://replit.com) anmelden. Probleme beim Installieren von Entwicklungsumgebungen und verlieren von Programmen kommen nicht mehr vor.
 
 
 
 ## Teams for education
 
-Kostenpflichtiger Dienst
+Kostenpflichtiger Dienst (finanziert der Elterverein)
 
 Schüler können zu Teams hinzugefügt werden
 
@@ -53,4 +57,24 @@ Die REPLs bleiben gespeichert und können in Ordern organisiert werden.
 
 ## Persönliches Fazit
 
-Bin ziemlich begeistert. In fast allen Klassen auf dieses Tool umgestiegen. Hat noch ein paar Macken ist aber in ständiger Entwicklung/Verbesserung.
+Bin ziemlich begeistert und in fast allen Klassen/Gruppen auf dieses Tool umgestiegen. Hat noch ein paar Macken ist aber in ständiger Entwicklung/Verbesserung.
+
+replit.com ist aus meiner Sicht ein vollständiger Ersatz für
+
+- Visual C++
+- Netbeans
+
+Außerdem sind möglich
+
+- Arbeiten mit Linux-Shell (bash Scripts)
+
+
+
+## Nachteile
+
+- Kein Debugger – aber welcher Schüler verwendet den schon
+- C# nur mit Mono
+- Kein MySQL, jedoch SQLite
+- GUI nur mit Java SWING (noch nicht gestet)
+- Pixelgrafik nur in Python
+

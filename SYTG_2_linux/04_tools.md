@@ -49,6 +49,14 @@ $ git push -u origin main
 
 
 
+`shopping.txt`
+
+```bash
+wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
+```
+
+
+
 ## Mehr über Optionen
 
 - `head`
