@@ -1,13 +1,24 @@
 ---
-title: Text- und Binärdate
+title: Text- und Binärdaten
 tags: [2AHITS_Teach]
 ---
 
+Daten können grob in 2 Klassen eingeteilt werden:
+
+- Binär-Daten – Folge von Bytewerten
+- Text-Daten – Folge von Zeichen
+
+Da jede Datenspeicherung in binärer Form erfolgt sind auch Textdaten eigentlich Binärdaten – nur werden diese speziell interpretiert.
+
+Darstellung von einem Byte Daten:
+
+- Dezimal: `120`
+- Hexadezimal: `78`
+- Buchstabe: `x` (Nr. 120 im ASCII Code)
 
 
-Daten (z.B. in Dateien) sind immer als Binärdaten abgelegt. Bei der Ausgabe auf der Konsole werden diese als Text interpretiert. Wie sehen die Binärdaten aus?
 
-Geht besser mit `xxd` (wenn installiert) [manpage](https://linux.die.net/man/1/xxd)
+`cat` zeigt Daten als Buchstaben, `xxd` als Hexadezimalzahlen ([manpage](https://linux.die.net/man/1/xxd))
 
 ```bash
 $ xxd shopping.txt 
@@ -25,11 +36,13 @@ $ xxd shopping.txt
 00000100: 6520 6261 6e61 6e61 7320 370a            e bananas 7.
 ```
 
-Wie wird Text abgespeichert? ASCII Code!
+`xxd` liefert ein sogenanntes Hexdump.
 
+  1. Spalte Offset
+  2. Daten in hex
+    3. Daten als ASCII Buchstaben (. für non-printable character)
 
-
-Verwende `od` ([manpage](https://man7.org/linux/man-pages/man1/od.1.html)) um den Inhalt einer Textdatei im ASCII Code anzuzeigen.
+Noch flexibler: `od` ([manpage](https://man7.org/linux/man-pages/man1/od.1.html))
 
 ```bash
 $ od -A x -t x1z shopping.txt
@@ -61,7 +74,7 @@ $ od -A d -t u1z shopping.txt
 
 
 
-Binärdaten
+## Binärdaten
 
 Download `htl_logo.jpg`:
 
@@ -71,9 +84,11 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/htl_logo.jpg
 
 Was ergibt die Ausgabe mit `cat`? Analysiere die Anzeige von `xxd`, schau dir den Anfang der Datei an (`head`).
 
- 
 
-Umlaute:
+
+## Sonderzeichen und UTF-8
+
+Sonderzeichen im Text, z.B. Umlaute:
 
 ```
 $ echo aäoö > test.txt
@@ -83,15 +98,33 @@ $ xxd test.txt
 00000000: 61c3 a46f c3b6 0a                        a..o...
 ```
 
-Kodierung ist UTF-8?
+UTF-8 Kodierung von Unicode
 
-`c3a4` ... ä ([Unicode](https://www.compart.com/en/unicode/U+00E4))
+`c3a4` ... ä ([Unicode U+00E4](https://www.compart.com/en/unicode/U+00E4))
 
-`c3b6` ... ö ([Unicode](https://www.compart.com/en/unicode/U+00F6))
+`c3b6` ... ö ([Unicode U+00F6](https://www.compart.com/en/unicode/U+00F6))
+
+UTF-8 braucht teilweise 2 Byte (manchmal 4) pro Zeichen, aber jedes Zeichen der Welt ist darstellbar!
+
+- Unicode: Nummerierte Zeichen
+- UTF-8: Binäre Darstellung (Encoding, Kodierung) der Unicode Nummer (=Codepoint)
+
+Es sollte immer UTF-8 verwendet werden!
+
+The power of unicode (UTF-8):
+
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/chinese.txt
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/arabic.txt
+```
 
 
 
-`latin1.txt` Datei mit ISO 8859-1 (latin 1) Kodierung.
+## Latin 1
+
+Ältere Text-Kodierungen sind eingeschränkt auf ein Byte pro Zeichen und erweitern den ASCII Code.
+
+Beispiel: `latin1.txt` Datei mit ISO 8859-1 (latin 1) Kodierung.
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
@@ -99,7 +132,9 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 
 
 
-iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html))
+## iconf
+
+iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandeln der Kodierung
 
 ```bash
 # iconv from to
@@ -107,13 +142,9 @@ $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
 # keine Änderung der Datei, Ausgabe auf stdout
 ```
 
-
-
 Test: Welche Kodierung hat ein mit Windows Notepad erzeugtes Text-File?
 
-The power of unicode (UTF-8):
 
-```bash
-$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/chinese.txt
-```
+
+
 
