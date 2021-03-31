@@ -31,7 +31,7 @@ Weiteres Beispiel für Optionen: das `head` Kommando.
 Datei `shopping.txt` für weitere Tests mit dem Tool `wget` downloaden:
 
 ```bash
-wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping.txt
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping.txt
 ```
 
 Head gibt die ersten 10 Zeilen einer Textdatei aus.
@@ -75,7 +75,7 @@ $ head --help | head -n12
 
 ---
 
-**Übung (date)**
+#### **Übung (date)**
 
 Verwende Optionen von `date` damit die Ausgabe des Datums und der Uhrzeit in der Form `30.10.20 09:15` erfolgt.
 
@@ -103,6 +103,12 @@ Erweiterung: verwende cat.
 $ cat shopping.txt | sort | tail -n5
 ```
 
+Download `shopping2.txt`:
+
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping2.txt
+```
+
 Sortiere den Inhalt von `shopping.txt` kombiniert mit `shopping2.txt`. Hinweis: `cat` kann mehr als eine Datei auf stdout ausgeben.
 
 ```bash
@@ -111,7 +117,7 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 
 ---
 
-**Übung (Sort)**
+#### **Übung (Sort)**
 
 -  Sortiere in umgekehrter Reihenfolge (Option von sort)
 -  Sortiere nach der 2ten Spalte (Obstnamen)
@@ -119,7 +125,7 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 
 ---
 
-**Übung (middle)**
+#### **Übung (middle)**
 
 Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen aus. Hinweis: die `-n` Option von `head` und `tail` erlaubt dies durch eine spezielle Angabe bei der Zeilenanzahl.
 
@@ -148,19 +154,16 @@ $ nl -s '. ' -w 10 shopping.txt
 
 ---
 
-**Übung (word count)**  
+#### **Übung (word count)**  
 
 Lade und entpacke ein Verzeichnis `sampletextfiles`:
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/sampletextfiles.tar.gz
-$ tar -xzf tarfile.tar.gz
+$ tar -xzf sampletextfiles.tar.gz
 ```
 
-
-
-Ermittle welches File in `sampletextfiles` aus den meisten Zeilen besteht.
-Die Ausgabe soll bestehen aus der Zeilenanzahl gefolgt vom Dateinamen.
+Ermittle welches File in `sampletextfiles` aus den meisten Zeilen besteht. Die Ausgabe soll bestehen aus der Zeilenanzahl gefolgt vom Dateinamen.
 
 ---
 
@@ -179,6 +182,14 @@ $ wc --lines sampletextfiles/* | head -n-1 | sort --key=1 --general-numeric-sort
 
 - `cut` (filtert Spalten)
 - `grep` (filtert Zeilen)
+
+Download `klassenkassa.csv`:
+
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/klassenkassa.csv
+```
+
+`cut`:
 
 ```bash
 $ cut -d , -f 2 klassenkassa.csv
@@ -204,11 +215,15 @@ Wagner,18.09.2019,20.0,Werkstatt
 
 ---
 
-**Übung (Anzahl Werkstatt)**: Schreibe ein shell Kommando das in `klassenkassa.csv` die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
+#### **Übung (Anzahl Werkstatt)**: 
+
+Schreibe ein shell Kommando das in `klassenkassa.csv` die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
 
 ---
 
-**Übung (Werkstatt Einzeiler)**: Schreibe ein shell Kommando das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
+#### **Übung (Werkstatt Einzeiler)**: 
+
+Schreibe ein shell Kommando das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
 
 ```
 20.0+20.0+20.0+20.0
@@ -286,13 +301,3 @@ hi robots
 - [List of Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
 
 
-
-## Übungen
-
-Verwende `od` um den Inhalt einer Textdatei im ASCII Code anzuzeigen.
-
-```bash
-$ od -A x -t x1z -v shopping.txt
-```
-
-Geht besser mit `xxd` (wenn installiert)
