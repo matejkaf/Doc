@@ -4,7 +4,8 @@ subtitle: Elemementare bash Bedienung
 tags: [lecture, unix, shell, bash,2AHITS_Teach ]
 ---
 
-
+* TOC
+{:toc}
 
 # Grundlagen der shell
 
