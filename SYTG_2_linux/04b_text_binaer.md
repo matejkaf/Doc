@@ -63,7 +63,7 @@ $ od -A d -t u1z shopping.txt
 
 Binärdaten
 
-Download `klassenkassa.csv`:
+Download `htl_logo.jpg`:
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/htl_logo.jpg
@@ -110,4 +110,10 @@ $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
 
 
 Test: Welche Kodierung hat ein mit Windows Notepad erzeugtes Text-File?
+
+The power of unicode (UTF-8):
+
+```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/chinese.txt
+```
 
