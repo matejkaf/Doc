@@ -99,7 +99,15 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 
 
 
+iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html))
+
 ```bash
-$ iconv -f ISO-8859-9 -t utf-8//translit file.ISO-8859-9 
+# iconv from to
+$ iconv -f ISO-8859-9 -t utf-8 latin1.txt
+# keine Änderung der Datei, Ausgabe auf stdout
 ```
+
+
+
+Test: Welche Kodierung hat ein mit Windows Notepad erzeugtes Text-File?
 
