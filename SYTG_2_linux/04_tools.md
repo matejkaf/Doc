@@ -13,7 +13,7 @@ tags: [lecture, unix, shell, bash,2AHITS_Teach ]
 
 Optionen die das Verhalten von Kommandos verändern werden häufig benötigt.
 
-Es gib sie in 2 Varianten: **shorthand** und **longhand**. Shorthand ist nur ein Buchstabe, longhand ist ein Wort (leichter zu merken)
+Es gibt sie in 2 Varianten: **shorthand** und **longhand**. Shorthand ist nur ein Buchstabe, longhand ist ein Wort (leichter zu merken)
 
 ```bash
 $ ls -a    # zeigt auch verborgene Dateien
