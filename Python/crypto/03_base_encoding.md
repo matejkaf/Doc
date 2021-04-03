@@ -8,7 +8,7 @@ Binärdaten (Python Bytestrings) als Text (ASCII String) darstellen.
 
 - Hintergrund: ASCII Texte (Codes 32-126) können mit den geringsten Problemen zwischen unterschiedlichen Systemen ausgetauscht werden. Sie können in Nachrichten versendet und handschriftlich notiert werden.
 
-Siehe auch [Encoding](../../Cybersecurity/02_encoding)
+Siehe auch [Encoding](../../Cybersecurity/11_hashing_und_encoding/02_encoding)
 
 ## Beispiel
 
