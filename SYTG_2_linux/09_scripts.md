@@ -340,7 +340,7 @@ done
 echo All done
 ```
 
-Wildcards
+Wildcards:
 
 ```bash
 for f in *.jpg
@@ -350,6 +350,40 @@ done
 ```
 
 Siehe auch: [Looping over a directory of files using wildcards in Bash](https://www.moreofless.co.uk/bash-shell-linux-looping-directory-files-wildcards/)
+
+Mit `seq` Tool:
+
+```bash
+for x in $(seq 1 10)
+do
+ echo "hallo $x"
+done
+```
+
+Als Einzeiler:
+
+```bash
+for x in $(seq 1 10);do echo "hallo $x";done
+```
+
+Schleife über alle durch white-space getrennte Strings:
+
+`data.txt`
+
+```
+eins zwei drei
+vier
+ende
+```
+
+```bash
+for word in $(cat data.txt)
+do
+  echo $word
+done
+```
+
+
 
 
 

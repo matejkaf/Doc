@@ -8,19 +8,18 @@ Daten können grob in 2 Klassen eingeteilt werden:
 - Binär-Daten – Folge von Bytewerten
 - Text-Daten – Folge von Zeichen
 
-Da jede Datenspeicherung in binärer Form erfolgt sind auch Textdaten eigentlich Binärdaten – nur werden diese speziell interpretiert.
+Allerdings: jede Datenspeicherung erfolgt binär, auch bei Textdaten – nur werden diese speziell interpretiert.
 
 Darstellung von einem Byte Daten:
 
 - Dezimal: `120`
 - Hexadezimal: `78`
-- Buchstabe: `x` (Nr. 120 im ASCII Code)
+- Buchstabe: `x` (Nr. 120 im 7-Bit ASCII Code)
 
-
-
-`cat` zeigt Daten als Buchstaben, `xxd` als Hexadezimalzahlen ([manpage](https://linux.die.net/man/1/xxd))
+`cat` zeigt Daten als Text, `xxd` als Hexadezimalzahlen ([manpage](https://linux.die.net/man/1/xxd))
 
 ```bash
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping.txt
 $ xxd shopping.txt 
 ```
 
@@ -38,9 +37,9 @@ $ xxd shopping.txt
 
 `xxd` liefert ein sogenanntes Hexdump.
 
-  1. Spalte Offset
+  1. Spalte Offset (hex)
   2. Daten in hex
-    3. Daten als ASCII Buchstaben (. für non-printable character)
+  3. Daten als ASCII Buchstaben (`.` für non-printable character)
 
 Noch flexibler: `od` ([manpage](https://man7.org/linux/man-pages/man1/od.1.html))
 
@@ -82,7 +81,9 @@ Download `htl_logo.jpg`:
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/htl_logo.jpg
 ```
 
-Was ergibt die Ausgabe mit `cat`? Analysiere die Anzeige von `xxd`, schau dir den Anfang der Datei an (`head`).
+- Was ergibt die Ausgabe mit `cat`? 
+- Analysiere die Anzeige von `xxd`, 
+- schau dir den Anfang der Datei an (`head`).
 
 
 
@@ -98,7 +99,7 @@ $ xxd test.txt
 00000000: 61c3 a46f c3b6 0a                        a..o...
 ```
 
-UTF-8 Kodierung von Unicode
+UTF-8 Kodierung von Unicode (=erweiterter universeller Zeichensatz)
 
 `c3a4` ... ä ([Unicode U+00E4](https://www.compart.com/en/unicode/U+00E4))
 
@@ -132,7 +133,7 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 
 
 
-## iconf
+## iconv
 
 iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandeln der Kodierung
 

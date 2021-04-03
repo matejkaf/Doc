@@ -53,5 +53,22 @@ Länge eines Bytestrings:
 
 
 
+## Dateien
 
+Bytestrings in Dateien schreiben bzw. lesen.
+
+Dazu Datei im "binary mode" öffnen.
+
+```python
+msg = b'\xe9\x87\x96s\xc6\x10\xd7^{&\xa4;O=,\xcc'
+f = open('key.bin', 'wb') # write / binary mode
+f.write(msg)
+f.close()
+```
+
+```python
+f = open('key.bin','rb')
+data_read = f.read()
+f.close()
+```
 

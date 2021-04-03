@@ -8,6 +8,34 @@ Binärdaten (Python Bytestrings) als Text (ASCII String) darstellen.
 
 - Hintergrund: ASCII Texte (Codes 32-126) können mit den geringsten Problemen zwischen unterschiedlichen Systemen ausgetauscht werden. Sie können in Nachrichten versendet und handschriftlich notiert werden.
 
+## Beispiel
+
+Ein Binärdatei mit zufälligem Inhalt erzeugen:
+
+```python
+data = os.urandom(16) # 128 random bits 
+print(data) # bytestring
+
+# write in binary file
+f = open('data.bin', 'wb') # write / binary mode
+f.write(data)
+f.close()
+```
+
+Nun eine weitere Datei – z.B. `data2.bin` anlegen und die Daten aus `data.bin` im Editor per Copy Paste in `data2.bin` kopieren. 
+
+Den Inhalt von `data2.bin` lesen und ausgeben:
+
+```python
+# read from binary file
+f = open('data.bin','rb')
+data_read = f.read()
+f.close()
+print(data_read)
+```
+
+Die Daten in beiden Dateien sind nicht gleich! Wurde beim copy-paste verändert. Copy-Paste eignet sich nicht für Binärdaten.
+
 
 
 ## Beispieldaten

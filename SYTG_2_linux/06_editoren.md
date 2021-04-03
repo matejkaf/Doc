@@ -18,7 +18,7 @@ nano ist leicht zu erlernen und zu bedienen und reicht für einfache Aufgaben au
 
 
 
-## vi /vim
+## vi / vim
 
 - Vorteil: Auf jedem System vorhanden, großer Funktionsumfang, manche Profis schwören drauf
 
