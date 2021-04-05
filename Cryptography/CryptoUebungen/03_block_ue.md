@@ -1,11 +1,10 @@
 ---
 title: Kryptographie Block Cipher (Übungen)
 description: Übungen zu Block Cipher
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [assignment, krypto ]
+tags: [5AHELS,assignment, krypto ]
 ---
 
----
+
 
 **Übung (Permutation)**
 Ein block cipher wird durch Permutation aller möglichen Werte eines Bytes definiert. Die Erzeugung der Permutation erfolgt mit Hilfe des Fisher-Yates shuffle Algorithmus. Verwende für die Klasse `Random` ein seed das aus dem Passwort per shifted sum Verfahren ermittelt wurde. 

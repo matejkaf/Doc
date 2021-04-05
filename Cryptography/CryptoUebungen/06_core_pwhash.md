@@ -1,6 +1,6 @@
 ---
 title: Passwort Hashing in .NET Core
-cmds: ['md_html.bash','md_html.bash --small']
+tags: [5AHELS,assignment]
 ---
 
 **[PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)** ("Password-Based Key Derivation Function 2") ist eine der empfohlenen Hash Funktion für Passwort Hashing – ist Teil von [rfc-2898](https://tools.ietf.org/html/rfc2898#section-5.2). 

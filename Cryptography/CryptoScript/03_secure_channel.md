@@ -1,8 +1,7 @@
 ---
 title: Secure Channel
 description: Secure Channel, MAC, Hash
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, krypto, mac ]
+tags: [5AHELS,lecture, krypto, mac ]
 ---
 
 

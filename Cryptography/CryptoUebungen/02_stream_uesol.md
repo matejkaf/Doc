@@ -1,8 +1,7 @@
 ---
 title: Kryptographie Stream Cipher (Lösung zu Übungen)
 description: Übungen zu Stream Cipher (Lösung)
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [assignment, krypto,assignment,solution ]
+tags: [5AHELS,assignment, krypto,assignment,solution ]
 ---
 
 ---

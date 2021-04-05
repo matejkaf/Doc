@@ -1,8 +1,7 @@
 ---
 title: Kryptographie
 description: Grundbegriffe der modernen Kryptographie
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, krypto ]
+tags: [5AHELS,lecture, krypto ]
 ---
 
 

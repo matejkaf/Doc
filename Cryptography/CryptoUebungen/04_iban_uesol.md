@@ -1,8 +1,7 @@
 ---
 title: Kryptographie Hashing (Übungen)
 description: Übungen zu Hashing
-cmds: ['md_html.bash --small']
-tags: [assignment, krypto,assignment,solution ]
+tags: [5AHELS,assignment, krypto,assignment,solution ]
 ---
 
 ---

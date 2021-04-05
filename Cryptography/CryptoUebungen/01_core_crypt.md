@@ -1,7 +1,6 @@
 ---
 title: Kryptographie in .NET Core
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, krypto, core, csharp ]
+tags: [5AHELS,lecture, krypto, core, csharp ]
 ---
 
 

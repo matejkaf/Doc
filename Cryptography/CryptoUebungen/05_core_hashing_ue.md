@@ -1,10 +1,9 @@
 ---
 title: Hashing in .NET Core
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [assignment]
+tags: [5AHELS,assignment]
 ---
 
----
+
 
 **Übung (Hashing in .NET Core)**
 

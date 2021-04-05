@@ -1,8 +1,10 @@
-# Symetrische Verschlüsselung
+---
+title: Symetrische Verschlüsselung
+subtitle: AES
+tags: [5AHELS,lecture]
+---
 
-Ver- und Entschlüsselung eines Texts mit AES-256.
-
-Block-cipher, 128 Bit Block Size
+Ver- und Entschlüsselung eines Texts mit AES-256, Block-cipher, 128 Bit Block Size, 256 Bit Key
 
 Mode: CBC (Cipher Block Chaining)
 

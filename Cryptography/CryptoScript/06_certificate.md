@@ -1,8 +1,7 @@
 ---
 title: Private Key Infrastructure (PKI)
 description:
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [lecture, krypto ]
+tags: [5AHELS,lecture, krypto ]
 ---
 
 Fragen bei public key crypto:
