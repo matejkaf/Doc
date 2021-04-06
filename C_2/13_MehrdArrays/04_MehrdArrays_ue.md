@@ -74,17 +74,17 @@ const int SPALTEN=3;
 
 void main()
 {
-	int arr[ZEILEN][SPALTEN];
-	
-	// Startpunk wählen
-	int z=3;
-	int s=0;
-	while(z>=0 && s<SPALTEN) // bis Endpunkt erreicht
-	{
-		printf("%d ", arr[z][s] );
-		z--;
-		s++;
-	}
+  int arr[ZEILEN][SPALTEN];
+
+  // Startpunk wählen
+  int z=3;
+  int s=0;
+  while(z>=0 && s<SPALTEN) // bis Endpunkt erreicht
+  {
+    printf("%d ", arr[z][s] );
+    z--;
+    s++;
+  }
 }
 ```
 
