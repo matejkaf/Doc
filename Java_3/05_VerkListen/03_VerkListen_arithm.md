@@ -1,6 +1,8 @@
 ---
 title: Stack
 subtitle: Auswerten arithmetischer Ausdrücke
+
+tags: [assignment]
 ---
 
 Die **Stack** Datenstruktur wird in Aufgaben der Informatik häufig benötigt. Zum Beispiel bei der Auswertung von **arithmetischen Ausdrücken**.

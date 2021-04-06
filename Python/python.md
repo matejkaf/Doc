@@ -559,6 +559,57 @@ lib.name # qualification necessary
 
 
 
+## Files
+
+Textfiles lesen
+
+```python
+f = open('path','r')
+
+contents = f.read() # all content
+
+line = f.readline()
+
+lines = f.readlines()
+for line in lines:
+  print(line)
+
+f.close()
+```
+
+```python
+f = open('path','w')
+f.write('this is a line\n')
+print('text', file=f)
+f.close()
+```
+
+- Mode `a` für append
+
+Binary Files
+
+```python
+f = open('path','rb')
+data = f.read() # bytestring
+f.close()
+
+f = open('path','wb')
+data = b'abc1234\xab\xfe'
+f.write(data)
+f.close()
+```
+
+Encoding
+
+```python
+open(fname, encoding='latin-1')
+open("t1.txt", "w", encoding="utf-8")
+```
+
+Oder als Binärdatei öffnen und `encode` `decode` verwenden.
+
+
+
 ## Short Infos
 
 - [range() und xrange()](https://www.geeksforgeeks.org/range-vs-xrange-python/) – xrange braucht weniger Speicher

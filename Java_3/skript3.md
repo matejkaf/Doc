@@ -201,6 +201,8 @@ Die Anzahl ist nun nicht mehr eine Variable. --> Getter Methode
 - Kartenspiel
 
 
+
+
 ## ArrayList selber implementieren
 
 Siehe Übungszettel.

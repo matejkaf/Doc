@@ -19,7 +19,7 @@ Das Ziel von Unicode ist alle weltweit verwendeten Text-Zeichen in einem gemeins
 
 Unicode definiert ≈144.000 Zeichen. Jedem Zeichen wird eine Nummer – **code point** – zugeordnet.
 
-Ein code point wird durch **4 Hex Ziffern** angegeben: U+00F7 (÷, Divisionszeichen), U+20AC (€, Euro), U+20A9 (₩, Koreanischer Won).
+Ein code point wird durch **4 Hex Ziffern** angegeben: U+00F7 (÷, Divisionszeichen), U+00B6 (¶, Pilcrow Sign), U+20AC (€, Euro), U+20A9 (₩, Koreanischer Won).
 
 Darüber hinausgehende Code Points (max. 21 Bits) verwenden 5 bzw. 6 hex Ziffern, z.B. U+1F40C (🐌, Snail) oder U+1F9B9 (🦹, Supervillain).
 
