@@ -1,7 +1,6 @@
 ---
 title: Arrays
 subtitle: Übungen Dynamic Array
-cmds: ['md_html.bash --small']
 tags: [assignment]
 ---
 
