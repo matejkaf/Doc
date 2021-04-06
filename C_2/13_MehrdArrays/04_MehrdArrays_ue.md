@@ -4,8 +4,6 @@ subtitle: Übungen Diagonalen
 tags: [2AHITS,assignment,c]
 ---
 
-**Diagonalen:**
-
 In einem 2D Array gibt es 2 Richtungen von Diagonalen
 
 
