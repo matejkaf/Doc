@@ -36,7 +36,7 @@ Die Schüler müssen sich nur auf [replit.com](https://replit.com) anmelden. Pro
 
 ## Teams for education
 
-Ist ein kostenpflichtiger Dienst (finanziert der Elterverein derzeit). Bei Interesse bitte Email mit dem replit Usernamen an [Franz Matejka](franz.matejka@htl-braunau.at).
+Ist ein kostenpflichtiger Dienst (finanziert der Elterverein derzeit). Bei Interesse bitte Email mit dem replit Usernamen an [Franz Matejka](mailto:franz.matejka@htl-braunau.at).
 
 Schüler können zu Teams hinzugefügt werden:
 
