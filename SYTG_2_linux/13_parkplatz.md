@@ -1,4 +1,4 @@
-# Umgebungsvariablen
+## Umgebungsvariablen
 
 *environment variables*
 
@@ -29,7 +29,9 @@ LC_CTYPE=UTF-8
 _=/usr/bin/printenv
 ```
 
-## Testdaten
+
+
+## Testdaten von git
 
 Download eines **git Repositories** 
 
@@ -70,7 +72,7 @@ $ git push -u origin main
 
 
 
-# Noch irgendwo einbauen
+## Noch irgendwo einbauen
 
 - Verborgene Dateien/Ordner (`ls -a`)
 - `.bashrc`, `.bash_profile`
@@ -79,5 +81,5 @@ $ git push -u origin main
 
 
 
-# Übungen
+## Übungen
 

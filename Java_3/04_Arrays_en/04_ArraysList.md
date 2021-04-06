@@ -18,21 +18,21 @@ With class `ArrayList` (Java library)
 - remove elements
 
 
-The class [`ArrayList`](http://download.oracle.com/javase/6/docs/api/java/util/ArrayList.html), which comes with the Java library, makes it easy to define dynamic arrays.
+The class [`ArrayList`](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html), which comes with the Java library, makes it easy to define dynamic arrays.
 
 Dynamic arrays may grow and shrink as necessary. New elements can be inserted at any time and position, also it is possible to remove elements from the array.
 
 ```java
 import java.util.ArrayList;
 public class Main {
-    public static void main(String[] args) {
-        ArrayList<String> alist = new ArrayList();
-        alist.add("Hello");
-        alist.add("World");
-        for(int i=0; i<alist.size(); i++) {
-            System.out.println(alist.get(i));
-        }
+  public static void main(String[] args) {
+    ArrayList<String> alist = new ArrayList();
+    alist.add("Hello");
+    alist.add("World");
+    for(int i=0; i<alist.size(); i++) {
+      System.out.println(alist.get(i));
     }
+  }
 }
 ```
 
@@ -145,11 +145,11 @@ Use a class `Word` which stores the word as `String` and the count as `int`. Sto
 
 #### **Exercise (Count words in sorted order):**
 
-Extend the last exercise: Sort the list. Hint 1: Use bubblesort for sorting. Hint 2: Read about the `compareTo` method of `String`.
+Extend the last exercise: Sort the list. Hint: Use bubblesort for sorting. 
 
 - 
-Sort words by number of occurence in descending order.
-- Sort words in alphabetical ascending order.
+Sort words by number of occurence in descending order. 
+- Sort words in alphabetical ascending order. Hint: Read about the `compareTo` method of `String`.
 
 
 

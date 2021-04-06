@@ -260,7 +260,7 @@ $ echo 'Ajfhl1234' | sed -E 's/^(A|B)[a-z]*([0-9]+)$/\2/'
 
 ## Anhang
 
-[Online Tester](https://regex101.com)
+[RegEx101](https://regex101.com)
 
 [sed - grymoire](https://www.grymoire.com/Unix/Sed.html)
 
