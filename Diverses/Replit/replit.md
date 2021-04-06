@@ -28,7 +28,7 @@ Erstellte REPL können weitergegeben werden, siehe:
 
 ## Mit Schülern
 
-Mit C, C++, Java und Python werden alle für FSST, SEW, AIT und teilweise SEN nötigen Programmiersprachen unterstützt. Auch C# ist möglich, dabei handelt es sich aber leider um Mono (vielleicht kommt ja einmal .NET Core).
+Mit C, C++, Java und Python werden alle für FSST, SEW, AIIT und teilweise SEN nötigen Programmiersprachen unterstützt. Auch C# ist möglich, dabei handelt es sich aber leider um Mono (vielleicht kommt ja einmal .NET Core).
 
 Die Schüler müssen sich nur auf [replit.com](https://replit.com) anmelden. Probleme beim Installieren von Entwicklungsumgebungen und verlieren von Programmen kommen nicht mehr vor.
 
