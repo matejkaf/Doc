@@ -16,12 +16,13 @@ Erstellte REPL können weitergegeben werden, siehe:
 
 ## Ein paar Features
 
+- Der Editor unterstützt Intellisense (Basis von Visual Studio Code)
 - Jedes REPL läuft in einer eigenständigen, virtuellen Linux Umgebung.
-- Mit Flask (Python) können Webserver erstellt werden – statische Webseiten, generierte Webseiten und sogar komplette RESTful APIs (siehe [API Server](https://replit.com/@htlmatejka/2103035AHELSGrpAAPIServer#main.py)) sind möglich.
+- Eine Linux Shell kann genutzt werden
 - Einfache Spiele im Terminal sind möglich. Implementierung einer `conio.h` ähnlichen Library – siehe [REPL Conio](https://replit.com/@htlmatejka/ReplConio).
 - Es ist möglich Dateien hochzuladen und z.B. von einem Programm aus darauf zuzugreifen.
 - Programme können ebenfalls Dateien erzeugen
-- Eine Linux Shell kann genutzt werden
+- Mit Flask (Python) können Webserver erstellt werden – statische Webseiten, generierte Webseiten und sogar komplette RESTful APIs (siehe [API Server](https://replit.com/@htlmatejka/2103035AHELSGrpAAPIServer#main.py)) sind möglich.
 
 
 
@@ -35,9 +36,9 @@ Die Schüler müssen sich nur auf [replit.com](https://replit.com) anmelden. Pro
 
 ## Teams for education
 
-Kostenpflichtiger Dienst (finanziert der Elterverein). Bei Interesse bitte Email mit dem replit Usernamen an [Franz Matejka](franz.matejka@htl-braunau.at)
+Ist ein kostenpflichtiger Dienst (finanziert der Elterverein derzeit). Bei Interesse bitte Email mit dem replit Usernamen an [Franz Matejka](franz.matejka@htl-braunau.at).
 
-Schüler können zu Teams hinzugefügt werden
+Schüler können zu Teams hinzugefügt werden:
 
 ![Screenshot 2021-03-25 at 09.02.44](fig/Screenshot 2021-03-25 at 09.02.44.png)
 
@@ -67,14 +68,15 @@ replit.com ist aus meiner Sicht ein vollständiger Ersatz für
 Außerdem sind möglich
 
 - Arbeiten mit Linux-Shell (bash Scripts)
+- PHP
+- WebServer in Python bzw. PHP
 
 
 
 ## Nachteile
 
+- Schüler können jederzeit in die REPLs anderer Schüler schauen
 - Kein Debugger – aber welcher Schüler verwendet den schon
 - C# nur mit Mono
 - Kein MySQL, jedoch SQLite
-- GUI nur mit Java SWING (noch nicht gestet)
-- Pixelgrafik nur in Python
 
