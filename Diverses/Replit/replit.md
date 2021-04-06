@@ -70,6 +70,7 @@ Außerdem sind möglich
 - Arbeiten mit Linux-Shell (bash Scripts)
 - PHP
 - WebServer in Python bzw. PHP
+- ...
 
 
 
