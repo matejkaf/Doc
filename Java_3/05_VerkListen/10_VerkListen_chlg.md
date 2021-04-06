@@ -1,13 +1,11 @@
 ---
-title: Doc
-tags: [assignment]
+title: Einfach verkettete Liste
+subtitle: Challenges
+tags: [assignment,challenge]
 ---
 
-# Einfach verkettete Liste (Challenges)
+#### **Übung (Broken Keyboard (a.k.a. Beiju Text), Quelle: UVa 11988):**
 
-
-
-**Übung (Broken Keyboard (a.k.a. Beiju Text), Quelle: UVa 11988):**
 Du tippst eine lange Zeile Text. Leider hat die Tastatur ein kleines Problem.  "Pos1" und die "Ende" Taste werden manchmal von selbst betätigt.
 
 Dir ist dieses Verhaltens nicht bewusst, da Du voll auf den Text konzentriert bist und gar nicht auf den Monitor schaust. Das Ergebnis ist auf chinesisch ein "Beiju" Text. Deine Aufgabe ist herauszufinden welcher Text entsteht.
@@ -21,15 +19,15 @@ Beispiele:
 
 ---
 
+#### **Übung (Sortiert Einfügen):**
 
-**Übung (Sortiert Einfügen):**
 Nimm an die Liste ist aufsteigend sortiert.
 Schreibe eine Methode `insertSort()` die einen Knoten so in die Liste einfügt, dass diese sortiert bleibt.
 
 ---
 
+#### **Übung (Einfach verkettete Liste):**
 
-**Übung (Einfach verkettete Liste):**
 Implementiere folgende Aufgabenstellung:
 
 - Schreibe eine Methode die den ersten und letzten Knoten vertauscht.
@@ -41,7 +39,8 @@ Implementiere folgende Aufgabenstellung:
 
 
 
-**Übung (Schleife feststellen):**
+#### **Übung (Schleife feststellen):**
+
 Schreibe eine Methode die feststellt ob in einer einfach verketteten Liste eine Schleife ist.
 Eine Schleife ist dann vorhanden wenn der Nachfolger eines Knotens ein Knoten ist der bereits vorher einmal in der Liste vorkam (durch einen Programmierfehler).
 Geht man durch eine Liste mit einer solchen Schleife durch, kommt man nie zum Ende sondern dreht sich im Kreis.

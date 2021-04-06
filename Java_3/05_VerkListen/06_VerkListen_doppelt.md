@@ -1,8 +1,6 @@
 ---
-title: Doc
+title: Doppelt verkettete Liste
 ---
-
-# Doppelt verkettete Liste
 
 Eine einfach verkettete Liste kann verbessert werden:
 

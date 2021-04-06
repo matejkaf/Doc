@@ -1,8 +1,6 @@
 ---
-title: Doc
+title: Stack und Queue mit Array
 ---
-
-# Stack und Queue mit Array
 
 ## Stack mit Array
 

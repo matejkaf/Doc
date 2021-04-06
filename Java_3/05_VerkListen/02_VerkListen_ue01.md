@@ -1,13 +1,10 @@
 ---
-title: Doc
+title: Einfach verkettete Liste
+subtitle: Übungen
 tags: [assignment]
 ---
 
-# Einfach verkettete Liste (Übungen)
-
-
-
-**Übung (Einfach verkettete Liste I):**
+#### **Übung (Einfach verkettete Liste I):**
 
 - Schreibe eine Klasse `Node`. In einem Knoten wird ein Buchstabe gespeichert.
 
@@ -17,11 +14,9 @@ tags: [assignment]
 
 Implementiere folgende Aufgabenstellung:
 
-- Schreibe eine Methode 
-`void prepend(Node newNode)` die einen Knoten ganz vorne einfügt. 
+- Schreibe eine Methode `void prepend(Node newNode)` die einen Knoten ganz vorne einfügt. 
 
-- Schreibe eine `toString` Methode mit der die ganze Liste ausgegeben werden kann.
-Die Buchstaben in den Knoten sollen einfach aneinander gereiht werden.
+- Schreibe eine `toString` Methode mit der die ganze Liste ausgegeben werden kann. Die Buchstaben in den Knoten sollen einfach aneinander gereiht werden.
 
 - 
 Überlade die `prepend` Methode: `prepend(char c)`.
@@ -35,21 +30,22 @@ Die Buchstaben in den Knoten sollen einfach aneinander gereiht werden.
 
 ---
 
+#### **Übung (Mock I):**
 
-
-**Übung (Mock I):**
 Folgender Quelltext soll einen neuen Knoten am Beginn einer verketten Liste einfügen.
 Überlege anhand einer Skizze was falsch ist.
+
 ```java
 node = new Node('L');
 start=node;
 node.next=start;
 ```
+
+
 ---
 
+#### **Übung (Einfach verkettete Liste II):**
 
-
-**Übung (Einfach verkettete Liste II):**
 Implementiere folgende Aufgabenstellung:
 
 - 
@@ -71,16 +67,7 @@ die den ersten Knoten aus der Liste entfernt und eine Referenz auf diesen entfer
 
 
 
-
-
-
-
-
-
-
-
-
-**Übung (Einfügeoperationen):**
+#### **Übung (Einfügeoperationen):**
 
 Hinweis: Bei verketteten Listen kann man sehr einfach **nach** einem bestehenden Knoten  
 (Referenz `node`) einen neuen Knoten einfügen.
@@ -111,45 +98,34 @@ Es gibt keinen Rückgabewert.
 
 ---
 
+#### **Übung (Einfach verkettete Liste II):**
 
-
-
-**Übung (Einfach verkettete Liste II):**
 Implementiere folgende Aufgabenstellung:
-[(a)]
 
 - 
-Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben überschreibt.
-Hinweis: Verwende die Methode `get`.
+Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben überschreibt. Hinweis: Verwende die Methode `get`.
+- Methode `set(int k, Node newNode)` die den k-ten Knoten durch einen neuen Knoten ersetzt. Hinweis: es muss die `next` Referenz des Vorgängerknotens verändert werden.
 
-- 
-Methode `set(int k, Node newNode)` die den k-ten Knoten durch einen neuen Knoten ersetzt.
-Hinweis: es muss die `next` Referenz des Vorgängerknotens verändert werden.
+
 
 
 ---
 
+#### **Übung (Suchen eines Werts):**
 
-**Übung (Suchen eines Werts):**
 Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste. 
 Der Wert soll als Parameter übergeben werden.
 Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält.
 Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
 
 
-- 
-`findFirst` –
-Es soll das erste Vorkommen des Werts gesucht werden.
-- 
-`findLast` –
-Es soll das letzte Vorkommen des Werts gesucht werden.
+- `findFirst` – Es soll das erste Vorkommen des Werts gesucht werden.
 
+- `findLast` – Es soll das letzte Vorkommen des Werts gesucht werden.
 
 ---
+#### **Übung (Mock II):**
 
-
-
-**Übung (Mock II):**
 Überlege welche Auswirkungen der folgende Quelltext auf eine verkettete Liste hat.
 
 ```java
@@ -159,12 +135,13 @@ m.next = start.next;
 start = m;
 ```
 
+
 ---
 
+#### **Übung (Erweiterungen):**
 
-**Übung (Erweiterungen):**
 Implementiere weiters:
-[(a)]
+
 - 
 Methode `removeLast` die den letzten Knoten aus der Liste entfernt.
 

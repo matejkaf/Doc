@@ -24,7 +24,7 @@ Einen Stack kann man sich daher am besten als einen Stapel vorstellen, oben wird
 
 
 
-## Übungen für Stack
+---
 
 #### **Übung (Stack für char):**
 
@@ -75,8 +75,6 @@ Ausdrücke können beliebig lang werden und die Operatoren der 4 Grundrechnung
 Diese Aufgabe kann mit 2 Stacks gelöst werden. Ein Stack speichert die Zahlen und Zwischenergebnisse (Operanden-Stack), der zweite Stack speichert die noch offenen Rechenoperationen (Operatoren-Stack). Dies ist der sogenannte **Dijkstra Algorithmus**.
 
 
-
-## Übungen – Arithmetische Ausdrücke
 
 #### **Übung (Dijkstra Auswertung):**
 

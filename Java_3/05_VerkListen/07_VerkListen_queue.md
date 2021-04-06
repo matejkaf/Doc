@@ -1,8 +1,6 @@
 ---
-title: Doc
+title: Queue
 ---
-
-# Queue
 
 Wie der Stack ist eine **Queue** ([Warteschlange](http://de.wikipedia.org/wiki/Warteschlange_%28Datenstruktur%29)) eine Datenstruktur mit nur zwei grundlegenden Operationen – es kann ein Element 
 

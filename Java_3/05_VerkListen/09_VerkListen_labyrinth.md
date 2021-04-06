@@ -1,10 +1,7 @@
 ---
-title: Doc
+title: Labyrinth
+subtitle: Wegsuche
 ---
-
-
-
-# Labyrinth
 
 Es soll der Weg durch ein Labyrinth gefunden werden.
 Von S nach Z.
