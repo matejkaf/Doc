@@ -101,19 +101,19 @@ key: 4
 ```
 
 ```
-N     T     P
- A   I T   M A
-  C M   A I   R
-   H     G     K
---> NTPAITMACMAIRHGK
+N     T     R
+ A   I T   A K
+  C M   A P  
+   H     G    
+--> NTR AITAK CMAP HG
 ```
 
 Entschlüsselung
 
 ```
-NTPAITMACMAIRHGK
+NTR AITAK CMAP HG
 key:4
-16 Buchstaben
+14 Buchstaben
 ```
 
 Zuerst ZigZak zeichnen für 16 Buchstaben
@@ -121,8 +121,8 @@ Zuerst ZigZak zeichnen für 16 Buchstaben
 ```
 1     1     1
  2   6 2   6 2
-  3 5   3 5   3
-   4     4     4
+  3 5   3 5   
+   4     4   
 ```
 
 Daraus sieht man wie viele Buchstaben in jeder Zeile einzusetzen sind.
