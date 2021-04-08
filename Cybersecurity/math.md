@@ -17,7 +17,7 @@ title: Mathematische Grundlagen
 
 [wikipedia](https://de.wikipedia.org/wiki/Gruppe_(Mathematik))
 
-Eine der bekanntesten Gruppen bildet die Menge der ganzen Zahlen $$\{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$$, die üblicherweise mit $$\Z$$ bezeichnet wird, zusammen mit der Addition.
+Eine der bekanntesten Gruppen bildet die Menge der ganzen Zahlen $$\{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$$, die üblicherweise mit $$/Z$$ bezeichnet wird, zusammen mit der Addition.
 
 Die Menge der ganzen Zahlen zusammen mit der Addition erfüllt einige grundlegende Eigenschaften:
 
@@ -114,14 +114,15 @@ Diese mathematische Schreibweise entspricht: `c=(a*b)%p`
 
 Beispiel: $$(3*4)=5\ (\text{mod}\ 7)$$
 
-Eine Potenz $a^n\ (\text{mod}\ p)$ wird mit Hilfe dieser Multiplikation definiert.
+Eine Potenz $$a^n\ (\text{mod}\ p)$$ wird mit Hilfe dieser Multiplikation definiert.
 
-Besondere Eigenschaft dieser Potenz: Nimmt man eine beliebige Zahl $g$ aus dem Zahlenbereich und berechnet $g^1, g^2, g^3, \ldots$ (immer $(\text{mod}\ p)$), so ergibt dies irgendwann 1 und die Zahlenfolge **wiederholt** sich. 
+Besondere Eigenschaft dieser Potenz: Nimmt man eine beliebige Zahl $$g$$ aus dem Zahlenbereich und berechnet $$g^1, g^2, g^3, \ldots$$ (immer $$(\text{mod}\ p)$$), so ergibt dies irgendwann 1 und die Zahlenfolge **wiederholt** sich. 
 
 Es gibt darüberhinaus **besondere Zahlen** – sogenannte **Generatoren** – die auf diese Weise **alle Zahlen** im Wertebereich erzeugen.
 
-Anders gesagt nimmt man einen solchen Generator g so ergibt sich die Sequenz $g^1, g^2, \ldots, g^{p-1}=1$ in der **alle** $p-1$ Zahlen des Zahlenbereichs vorkommen.
+Anders gesagt nimmt man einen solchen Generator g so ergibt sich die Sequenz $$g^1, g^2, \ldots, g^{p-1}=1$$ in der **alle** $p-1$ Zahlen des Zahlenbereichs vorkommen.
 
 Beispiel: $p=7, g=3$ – Ausprobieren!
 
 <iframe height="400px" width="100%" src="https://replit.com/@franzmatejka/ModulareArithmetik?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
