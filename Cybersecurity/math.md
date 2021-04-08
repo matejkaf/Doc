@@ -122,7 +122,7 @@ Es gibt darüberhinaus **besondere Zahlen** – sogenannte **Generatoren** – d
 
 Anders gesagt nimmt man einen solchen Generator g so ergibt sich die Sequenz $$g^1, g^2, \ldots, g^{p-1}=1$$ in der **alle** $p-1$ Zahlen des Zahlenbereichs vorkommen.
 
-Beispiel: $p=7, g=3$ – Ausprobieren!
+Beispiel: $$p=7, g=3$$ – Ausprobieren!
 
 <iframe height="400px" width="100%" src="https://replit.com/@franzmatejka/ModulareArithmetik?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
