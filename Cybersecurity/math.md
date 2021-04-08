@@ -81,7 +81,6 @@ Ein Körper ist eine Menge $$K$$, versehen mit zwei inneren zweistelligen Verkn�
 	- $$a\cdot\left(b+c\right) = a\cdot b+a\cdot c\,$$ für alle $$a, b, c \in K$$.
 	- $$\left(a+b\right)\cdot c = a\cdot c+b\cdot c\,$$ für alle $$a, b, c \in K$$.
 
-Einzelaufzählung der benötigten Axiome
 Ein Körper muss also folgende Einzelaxiome erfüllen:
 
 -  Additive Eigenschaften:
