@@ -1,13 +1,12 @@
 ---
-title: Doc
+title: for Schleifen
+subtitle: Drill Übungen
 tags: [assignment,1AHITS,1CHELS]
 ---
 
-# for Schleifen (Übungen)
-
 Überlege **zuerst** was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
 
-**Übung (Lesen von Schleifen):**
+#### Übung (Lesen von Schleifen)
 
 ```c++
 // (a)
@@ -73,8 +72,3 @@ for (int i = 0; i < 5; i++) {
 }
 printf("a=%d, b=%d\n", a, b);
 ```
-
----
-
-
-
