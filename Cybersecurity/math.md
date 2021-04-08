@@ -112,7 +112,9 @@ $$(a*b)=c\ (\text{mod}\ p)\quad$$
 
 Diese mathematische Schreibweise entspricht: `c=(a*b)%p`
 
-Beispiel: $$(3*4)=5\ (\text{mod}\ 7)$$
+Beispiel: 
+
+$$(3*4)=5\ (\text{mod}\ 7)$$
 
 Eine Potenz $$a^n\ (\text{mod}\ p)$$ wird mit Hilfe dieser Multiplikation definiert.
 
