@@ -44,9 +44,9 @@ Eine ''**Halbgruppe**'' $$\boldsymbol S = (S,*)$$ besteht aus einer Menge $$S$$ 
 
 $$* \colon\, S\times S \to S,\, (a,b) \mapsto a*b,$$
 
-die assoziativ ist, d.&nbsp;h. für alle $$a,b,c \in S$$ gilt
+die assoziativ ist, d.h. für alle $$a,b,c \in S$$ gilt
 
-$$a*(b*c) = (a*b)*c$$.
+$$a*(b*c) = (a*b)*c$$
 
 Eine Halbgruppe unterscheidet sich daher von einer Gruppe insofern, als die zweistellige Verknüpfung hier nicht invertierbar sein muss und nicht zwingend ein neutrales Element existiert.
 
