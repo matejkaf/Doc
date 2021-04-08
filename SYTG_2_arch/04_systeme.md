@@ -41,6 +41,15 @@ Vergleich zu **Desktop**
 
 
 
+### Speicherkonfiguration
+
+Stark vom Anwendungsfall abhängig. Faustregeln
+
+- Laptop/Desktop: 8/16 GB
+- Server: 64/128 GB oder mehr
+
+
+
 ## Prozessoren – Beispiele
 
 Vergleich von CPU's für unterschiedliche Anwendungen. Stand 2020.
@@ -48,6 +57,10 @@ Vergleich von CPU's für unterschiedliche Anwendungen. Stand 2020.
 Desktop/Notebook: [List of Intel Core i7 microprocessors](https://en.wikipedia.org/wiki/List_of_Intel_Core_i7_microprocessors)
 
 Server: [List of Intel Xeon microprocessors](https://en.wikipedia.org/wiki/List_of_Intel_Xeon_microprocessors)
+
+[heise.de: 40-Kern-Prozessoren: Intel bringt 10-Nanometer-Xeons für (Cloud-)Server](https://www.heise.de/news/40-Kern-Prozessoren-Intel-bringt-10-Nanometer-Xeons-fuer-Cloud-Server-6006157.html)
+
+
 
 Flagschiff CPUs 01/2020:
 
@@ -98,15 +111,6 @@ Flagschiff CPUs 01/2020:
 - 3,0 GHz
 - 33 MB Cache
 - 225 W
-
-
-
-### Speicherkonfiguration
-
-Stark vom Anwendungsfall abhängig. Faustregeln
-
-- Laptop/Desktop: 8/16 GB
-- Server: 64/128 GB oder mehr
 
 
 

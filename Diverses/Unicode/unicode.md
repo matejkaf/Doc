@@ -166,6 +166,24 @@ b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')
 
 
 
+```python
+f = open('latin.txt','rb')
+text = f.read()
+print(text)
+text2 = text.decode('latin-1')
+print(text2)
+print(text2.encode('utf-8'))
+
+print('--------------------')
+f = open('ansi.txt','rb')
+text = f.read()
+print(text)
+text2 = text.decode('cp1252')
+print(text2)
+```
+
+
+
 ## MySQL
 
 - [character set](https://www.mysqltutorial.org/mysql-character-set/)
@@ -240,6 +258,65 @@ SHOW FULL COLUMNS FROM htl_job_companygroup;
 > A string is basically a sequence of characters. Each character is a Unicode character in the range U+0000 to U+FFFF.
 
 > Each code point is encoded using UTF-16 encoding
+
+
+
+```csharp
+using System;
+using System.IO;
+using System.Text;
+
+namespace _210407_encoding
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      var encodings = Encoding.GetEncodings();
+      foreach (var encoding in encodings)
+      {
+        System.Console.WriteLine(encoding.Name);
+      }
+
+      // Zusätzliche Encodings muss man installieren
+      // $ dotnet add package System.Text.Encoding.CodePages
+      Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+
+      var reader = new StreamReader("latin.txt", Encoding.GetEncoding("latin1"));
+      var text = reader.ReadLine();
+      System.Console.WriteLine(text);
+
+      reader = new StreamReader("ansi.txt", Encoding.GetEncoding("Windows-1252"));
+      text = reader.ReadLine();
+      System.Console.WriteLine(text);
+
+      // in byte Array wandeln
+      byte[] data = Encoding.UTF8.GetBytes(text);
+      foreach (var d in data)
+      {
+        System.Console.Write($"{d:X2} ");
+      }
+      System.Console.WriteLine();
+      var text2 = Encoding.UTF8.GetString(data);
+      System.Console.WriteLine(text2);
+
+      // Export in latin1
+      data = Encoding.GetEncoding("latin1").GetBytes(text);
+      foreach (var d in data)
+      {
+        System.Console.Write($"{d:X2} ");
+      }
+      System.Console.WriteLine();
+      text2 = Encoding.GetEncoding("latin1").GetString(data);
+      System.Console.WriteLine(text2);
+
+
+    }
+  }
+}
+
+```
 
 
 

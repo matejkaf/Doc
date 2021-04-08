@@ -94,7 +94,7 @@ int k = 2*m // unboxing – Integer to int – on demand
 
 ## Output
 
-For ArrayList's there is an extraordinary easy why to print out the content:
+For ArrayList's there is an extraordinary easy way to print out the content:
 
 ```java
 System.out.println(alist);

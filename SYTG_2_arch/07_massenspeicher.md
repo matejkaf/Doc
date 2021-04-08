@@ -1,6 +1,20 @@
-# Massenspeicher
+---
+title: Massenspeicher
+tags: []
+---
 
-Um große Mengen von Daten (Terrabytes) zu speichern. Kostengünstige Lösung Euro/MB gesucht.
+Um große Mengen von Daten (Terrabytes) zu speichern.
+
+
+
+Abwägung:
+
+- Kosten/MB
+- Geschwindigkeit
+- Datenmenge
+- Lagerfähigkeit
+
+
 
 Technologie:
 
@@ -107,7 +121,7 @@ Nachteile:
 
 
 
-## LTO
+## LTO – Linear Tape Open
 
 Standard (HP, IBM, Quantum): [wikipedia – LTO Linear Tape-Open](https://en.wikipedia.org/wiki/Linear_Tape-Open)
 
@@ -120,13 +134,11 @@ Austauschbare Medien, "cartridge": Einloch-Kasette, die zweite Wickelrolle ist i
 - 15-30 Jahre lagerfähig, 200-300 mal beschreibbar.
 
 - Typische Zugriffszeit 50 Sekunden (variiert)
-- Speziell WORM cartridges verfügbar
+- Spezielle WORM cartridges verfügbar
 - Es gibt Laufwerke die die Bänder automatisch wechseln (backup rotation)
 
 
 
 # Optische Laufwerke
 
-Eher bedeutungslos geworden. Aktuell Blue-Ray (BD) max. 100GB Kapazität.
-
-Hätte den Vorteil der Immunität gegen Magnetfelder.
+Eher bedeutungslos geworden. Aktuell Blue-Ray (BD) max. 100GB Kapazität. Hätte den Vorteil der Immunität gegen Magnetfelder.
