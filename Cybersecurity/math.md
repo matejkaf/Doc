@@ -78,8 +78,8 @@ Ein Körper ist eine Menge $$K$$, versehen mit zwei inneren zweistelligen Verkn�
 - $$\left(K,+\right)$$ ist eine abelsche Gruppe (neutrales Element 0).
 - $$\bigl(K\setminus\{0\},\cdot\bigr)$$ ist eine abelsche Gruppe (neutrales Element 1).
 - Distributivgesetze:
-- $$a\cdot\left(b+c\right) = a\cdot b+a\cdot c\,$$ für alle $$a, b, c \in K$$.
-- $$\left(a+b\right)\cdot c = a\cdot c+b\cdot c\,$$ für alle $$a, b, c \in K$$.
+	- $$a\cdot\left(b+c\right) = a\cdot b+a\cdot c\,$$ für alle $$a, b, c \in K$$.
+	- $$\left(a+b\right)\cdot c = a\cdot c+b\cdot c\,$$ für alle $$a, b, c \in K$$.
 
 Einzelaufzählung der benötigten Axiome
 Ein Körper muss also folgende Einzelaxiome erfüllen:
@@ -102,7 +102,7 @@ Ein Körper muss also folgende Einzelaxiome erfüllen:
 
 
 
-# Modulare Arithmetik mit  Primzahlen.
+# Modulare Arithmetik mit  Primzahlen
 
 Betrachten Zahlenbereich $$1, \ldots, p-1$$, wobei $$p$$ eine **Primzahl** ist.
 
