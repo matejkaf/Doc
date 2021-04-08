@@ -115,6 +115,7 @@ Which calls the ArrayLists `toString` Method.
 Write a programm that allows the input of an unlimited number of integer values. A value of –1 ends the input. Afterwards all entered numbers should be printed in reverse order (not including –1).
 
 ```java
+import java.util.Scanner;
 // input of one integer
 Scanner scn = new Scanner(System.in);
 System.out.println("Value: ");
