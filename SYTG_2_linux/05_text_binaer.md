@@ -74,7 +74,7 @@ $ hexdump shopping.txt
 000010c
 ```
 
-Ausgabe als 2 Byte Werte (damit vertauschte Reihenfolge)
+Vorsicht: Ausgabe als 2 Byte Werte (damit vertauschte Reihenfolge)
 
 Besser (+ Buchstabenausgabe)
 
@@ -194,12 +194,22 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandeln der Kodierung
 
 ```bash
-# iconv from to
+# iconv <from> <to>
 $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
 # keine Änderung der Datei, Ausgabe auf stdout
 ```
 
-Test: Welche Kodierung hat ein mit Windows Notepad erzeugtes Text-File?
+
+
+---
+
+#### Übung (Notepad)
+
+Erzeuge mit Windows Notepad eine Textdatei (soll auch die Zeichen äüöÄÜÖß€ enthalten) speichere einmal in UTF-8 und einmal in ANSI Kodierung.
+
+- Verwende `cat` bei beiden Files
+- Analysiere den binären Inhalt beider Files
+- Konvertiere ANSI (auch code page 1252 genannt) nach utf-8 und prüfe das Ergebnis
 
 
 
