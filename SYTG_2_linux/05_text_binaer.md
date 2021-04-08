@@ -16,7 +16,19 @@ Darstellung von einem Byte Daten:
 - Hexadezimal: `78`
 - Buchstabe: `x` (Nr. 120 im 7-Bit ASCII Code)
 
-`cat` zeigt Daten als Text, `xxd` als Hexadezimalzahlen ([manpage](https://linux.die.net/man/1/xxd))
+`cat` zeigt Daten als Text
+
+Tools für binäre Anzeige
+
+-  `xxd` 
+- `hexdump`
+- `od`
+
+
+
+## xxd
+
+ ([manpage](https://linux.die.net/man/1/xxd))
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping.txt
@@ -41,7 +53,51 @@ $ xxd shopping.txt
   2. Daten in hex
   3. Daten als ASCII Buchstaben (`.` für non-printable character)
 
-Noch flexibler: `od` ([manpage](https://man7.org/linux/man-pages/man1/od.1.html))
+
+
+## hexdump
+
+[hexdump manpage](https://man7.org/linux/man-pages/man1/hexdump.1.html)
+
+```bash
+$ hexdump shopping.txt
+```
+
+```
+0000000 7246 6465 6120 7070 656c 2073 3032 530a
+0000010 7375 2079 726f 6e61 6567 2073 0a35 614d
+0000020 6b72 7720 7461 7265 656d 6c6c 6e6f 2073
+...
+00000e0 7761 6562 7272 6569 2073 3331 540a 6e6f
+00000f0 2079 616d 6172 7563 616a 3320 410a 6e6e
+0000100 2065 6162 616e 616e 2073 0a37          
+000010c
+```
+
+Ausgabe als 2 Byte Werte (damit vertauschte Reihenfolge)
+
+Besser (+ Buchstabenausgabe)
+
+```bash
+$ hexdump -C shopping.txt
+```
+
+```
+00000000  46 72 65 64 20 61 70 70  6c 65 73 20 32 30 0a 53  |Fred apples 20.S|
+00000010  75 73 79 20 6f 72 61 6e  67 65 73 20 35 0a 4d 61  |usy oranges 5.Ma|
+00000020  72 6b 20 77 61 74 65 72  6d 65 6c 6c 6f 6e 73 20  |rk watermellons |
+...
+000000e0  61 77 62 65 72 72 69 65  73 20 31 33 0a 54 6f 6e  |awberries 13.Ton|
+000000f0  79 20 6d 61 72 61 63 75  6a 61 20 33 0a 41 6e 6e  |y maracuja 3.Ann|
+00000100  65 20 62 61 6e 61 6e 61  73 20 37 0a              |e bananas 7.|
+0000010c
+```
+
+
+
+## od
+
+Noch flexibler: `od` ([manpage](https://man7.org/linux/man-pages/man1/od.1.html)) … octal dump?
 
 ```bash
 $ od -A x -t x1z shopping.txt
@@ -49,8 +105,8 @@ $ od -A x -t x1z shopping.txt
 
 - `-A x`: Offsets in hexadezimal (`-A d` für dezimal)
 - `-t`: Ausgabeformat
-  - `-t x1z` ... Hexaddezimal, 1 Byte, `z` (Zeichen als 3te Spalte ausgeben)
-  - `-t u1z` unsigned Dezimal
+  - `-t x1z` … `x` Hexaddezimal, 1 Byte, `z` (Zeichen als 3te Spalte ausgeben)
+  - `-t u1z` … `u` unsigned Dezimal
 
 ```bash
 $ od -A d -t u1z shopping.txt
