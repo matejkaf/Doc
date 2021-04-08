@@ -17,7 +17,7 @@ title: Mathematische Grundlagen
 
 [wikipedia](https://de.wikipedia.org/wiki/Gruppe_(Mathematik))
 
-Eine der bekanntesten Gruppen bildet die Menge der ganzen Zahlen $$\{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$$, die üblicherweise mit $$/Z$$ bezeichnet wird, zusammen mit der Addition.
+Eine der bekanntesten Gruppen bildet die Menge der ganzen Zahlen $$\{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$$, die üblicherweise mit $$\mathbb{Z}$$ bezeichnet wird, zusammen mit der Addition.
 
 Die Menge der ganzen Zahlen zusammen mit der Addition erfüllt einige grundlegende Eigenschaften:
 
