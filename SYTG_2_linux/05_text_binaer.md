@@ -16,9 +16,9 @@ Darstellung von einem Byte Daten:
 - Hexadezimal: `78`
 - Buchstabe: `x` (Nr. 120 im 7-Bit ASCII Code)
 
-`cat` zeigt Daten als Text
+`cat` zeigt Daten als Buchstaben
 
-Tools für binäre Anzeige
+Tools für binäre Anzeige:
 
 -  `xxd` 
 - `hexdump`
@@ -181,7 +181,7 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/arabic.txt
 
 Ältere Text-Kodierungen sind eingeschränkt auf ein Byte pro Zeichen und erweitern den ASCII Code.
 
-Beispiel: `latin1.txt` Datei mit ISO 8859-1 (latin 1) Kodierung.
+Beispiel: `latin1.txt` Datei mit ISO 8859-1 (latin-1) Kodierung.
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
@@ -194,7 +194,7 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandeln der Kodierung
 
 ```bash
-# iconv <from> <to>
+# iconv -f <from> -t <to>
 $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
 # keine Änderung der Datei, Ausgabe auf stdout
 ```
@@ -210,6 +210,7 @@ Erzeuge mit Windows Notepad eine Textdatei (soll auch die Zeichen äüöÄÜÖß
 - Verwende `cat` bei beiden Files
 - Analysiere den binären Inhalt beider Files
 - Konvertiere ANSI (auch code page 1252 genannt) nach utf-8 und prüfe das Ergebnis
+- Forschung: Was ist der Unterschied zwischen ANSI und Latin-1?
 
 
 
