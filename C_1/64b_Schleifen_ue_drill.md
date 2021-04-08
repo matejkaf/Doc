@@ -4,7 +4,7 @@ subtitle: Drill Übungen
 tags: [assignment,1AHITS,1CHELS]
 ---
 
-Überlege **zuerst** was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
+Überlege **zuerst** (im Kopf/am Papier) was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
 
 #### Übung (Lesen von Schleifen)
 
