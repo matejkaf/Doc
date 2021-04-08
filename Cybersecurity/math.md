@@ -60,11 +60,11 @@ Ein ''Ring'' $$(R, +, \,\cdot\,)$$ ist eine Menge $$R$$ mit zwei zweistelligen O
 :und
 * $$(R, \,\cdot\,)$$ ist eine Halbgruppe unter der ''Multiplikation'' $$\cdot$$ . In der gängigen Schreibung bindet $$\cdot$$ stärker als $$+$$, und wird sehr häufig sogar weggelassen.
 * Ferner gelten die Distributivgesetze
-*  $$a \cdot (b + c) = (a \cdot b) + (a \cdot c) = a b + a c$$ &nbsp; &nbsp; &nbsp; (''linke Distributivität'')
-* $$(a + b) \cdot c = (a \cdot c) + (b \cdot c) = a c + b c$$ &nbsp; &nbsp; &nbsp; (''rechte Distributivität'')
-* für alle $$a, b, c \in R$$ .
+	*  $$a \cdot (b + c) = (a \cdot b) + (a \cdot c) = a b + a c$$ &nbsp; &nbsp; &nbsp; (''linke Distributivität'')
+	* $$(a + b) \cdot c = (a \cdot c) + (b \cdot c) = a c + b c$$ &nbsp; &nbsp; &nbsp; (''rechte Distributivität'')
+	* für alle $$a, b, c \in R$$ .
 
-Ein Ring heißt ''kommutativ'', falls er bezüglich der Multiplikation [[Kommutativgesetz|kommutativ]] ist, ansonsten spricht man von einem nicht-kommutativen Ring.
+Ein Ring heißt ''kommutativ'', falls er bezüglich der Multiplikation kommutativ ist, ansonsten spricht man von einem nicht-kommutativen Ring.
 
 
 ## Körper (Field)
