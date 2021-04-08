@@ -1,6 +1,6 @@
 ---
 title: Doc
-tags: [assignment,1AHITS]
+tags: [assignment,1AHITS,1CHELS]
 ---
 
 # for Schleifen (Übungen)
@@ -9,30 +9,47 @@ tags: [assignment,1AHITS]
 
 **Übung (Lesen von Schleifen):**
 
-
-```c
-// (f)
+```c++
+// (a)
 int i;
-for(i=0 ; i<5 ; i++)
+for(i=0 ; i<7 ; i++)
 {
-     printf("%d ",i);
-}
-printf("\nEnde=%d", i);
-```
-
-```c
-// (g)
-int i;
-for(i=4 ; i>=0 ; i--)
-{
-     printf("%d ",i);
+  if(i%2!=0)
+  {
+    printf("%d ",i);
+  }
 }
 printf("\nEnde=%d", i);
 ```
 
 
 ```c
-// (h)
+// (b)
+int i;
+for(i=0 ; i<6 ; i++)
+{
+  printf("%d ",i);
+  if(i>2)
+  {
+    i++;
+  }
+}
+printf("\nEnde=%d", i);
+```
+
+```c
+// (c)
+int i;
+for(i=6 ; i>=0 ; i=i-2)
+{
+  printf("%d ",i);
+}
+printf("\nEnde=%d", i);
+```
+
+
+```c
+// (d)
 int n=65;
 int i;
 for(i=2; i>=0; i--)
@@ -45,7 +62,7 @@ printf("%d", i);
 
 
 ```c
-// (i)
+// (e)
 int tmp;
 int a = 2;
 int b = 1;      
