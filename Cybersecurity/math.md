@@ -121,7 +121,7 @@ Besondere Eigenschaft dieser Potenz: Nimmt man eine beliebige Zahl $$g$$ aus dem
 
 Es gibt darüberhinaus **besondere Zahlen** – sogenannte **Generatoren** – die auf diese Weise **alle Zahlen** im Wertebereich erzeugen.
 
-Anders gesagt nimmt man einen solchen Generator g so ergibt sich die Sequenz $$g^1, g^2, \ldots, g^{p-1}=1$$ in der **alle** $p-1$ Zahlen des Zahlenbereichs vorkommen.
+Anders gesagt nimmt man einen solchen Generator g so ergibt sich die Sequenz $$g^1, g^2, \ldots, g^{p-1}=1$$ in der **alle** $$p-1$$ Zahlen des Zahlenbereichs vorkommen.
 
 Beispiel: $$p=7, g=3$$ – Ausprobieren!
 
