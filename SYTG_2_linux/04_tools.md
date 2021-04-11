@@ -292,10 +292,6 @@ hi robots
 
 > [!2AHITS G1 19.03.2021]
 
-> [!2AHITS G2 26.03.2021]
-
-
-
 ## Weiterführend
 
 - [List of Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)

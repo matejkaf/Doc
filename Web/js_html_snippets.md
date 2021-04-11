@@ -4,6 +4,10 @@ subtitle: Snippets
 tags: [info,5AHELS]
 ---
 
+# Inhaltsverzeichnis
+
+* TOC
+{:toc}
 ## Readonly
 
 ```html
@@ -43,6 +47,8 @@ document.getElementById('submitCreateButton').style.display = '' // show
 document.getElementById('submitUpdateButton').style.display = 'none'
 ```
 
+
+
 ## DOM attribute 'class'
 
 [HTML DOM classList Property](https://www.w3schools.com/jsref/prop_element_classlist.asp)
@@ -51,6 +57,7 @@ document.getElementById('submitUpdateButton').style.display = 'none'
 element.classList.add("mystyle");
 element.classList.remove("mystyle");
 ```
+
 
 
 ## XMLHttpRequest
@@ -108,6 +115,30 @@ httpReq.send();
 
 
 
+```javascript
+function postRating(rating)
+{
+  console.trace('postRating')
+  console.log(rating)
+  const httpReq = new XMLHttpRequest()
+  httpReq.addEventListener("load", function() {
+    console.log('POST Response received')
+    const response = JSON.parse(this.responseText)
+    console.log(response)
+    reloadRatings()
+  })
+
+  const url = '/api/ratings/'
+  httpReq.open('POST',url)
+  httpReq.setRequestHeader("Content-Type", "application/json");
+  httpReq.send(JSON.stringify(rating))
+}
+```
+
+[[REPL 5AHELSGrpARatingsAPI](https://replit.com/@htlmatejka/5AHELSGrpARatingsAPI)]
+
+
+
 ## Query String encoding
 
 ```javascript
@@ -122,6 +153,7 @@ serialize = function(obj) {
 console.log(serialize({foo: "hi there", bar: "100%" }));
 // foo=hi%20there&bar=100%25
 ```
+
 
 
 ## Query String parsing
@@ -247,7 +279,7 @@ Unchecked wenn `checked` Attribut fehlt!
 foo.disabled = true
 ```
 
-Keine Daten von Radio Buttons mit `disabled`!
+Problem: Keine Daten von Radio Buttons mit `disabled`!
 Lösung: den selektierten button auf enabled lassen (alle anderen disabeln).
 
 ## Web Storage API
@@ -343,6 +375,57 @@ while ((match = regex.exec(str)) !== null) {
 Siehe [RegEx101](https://regex101.com/r/VcVBKv/1)
 
 
+
+## Dynamisches HTML
+
+- `document.createElement`
+- `appendChild`
+
+```javascript
+    tdEl = document.createElement('td')
+    tdEl.innerText = "\u22d3" // unicode codepoint
+    tdEl.style.fontSize="24px"
+    tdEl.style.textAlign="center"
+    tdEl.style.cursor="pointer"
+    tdEl.dataset.id = rating['id']  // attribute "data-id"
+    tdEl.onclick = function () { deleteClicked(this) } // this = tdEl
+    rowEl.appendChild(tdEl)
+	...
+}
+  
+function deleteClicked(tdEl)
+{
+  console.log("delete clicked")
+  let rating_id = tdEl.dataset.id
+  ...
+}
+```
+
+```javascript
+let tableEl = document.createElement('table')
+tableEl.style.border = 'solid 1px black'
+```
+
+Andere Möglichkeit zum setzen eines Click Event Handlers:
+
+```javascript
+buttonEl = document.createElement('button')
+buttonEl.innerText = 'X'
+buttonEl.setAttribute('data-id',rating['id'])
+buttonEl.addEventListener('click',function () {
+  let id = parseInt(this.getAttribute('data-id'))
+  console.log(id)
+  deleteRating(id)
+})
+
+datarow.appendChild(buttonEl)
+```
+
+
+
+
+
+
 ## ECMAScript 5
 
 ### forEach function
@@ -352,6 +435,7 @@ Siehe [RegEx101](https://regex101.com/r/VcVBKv/1)
   // Do something with currentValue or array[index]
 });
 ```
+
 
 
 ## ECMAScript 6
@@ -391,13 +475,13 @@ Zuordnung per Name.
 
 [MDN - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-## Arrow Functions
+### Arrow Functions
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 [](http://www.2ality.com/2012/04/arrow-functions.html)
 
-## Native Module Support
+### Native Module Support
 
  Webpack and Browserify 
 
@@ -414,12 +498,12 @@ export let calculateMonthlyPayment = (principal, years, rate) => {
  ```
 
 
-## Klassen
+### Klassen
 
 [](http://ccoenraets.github.io/es6-tutorial/classes/)
 
 
-## Promises
+### Promises
 
 Promises have replaced callback functions as the preferred programming style for handling asynchronous calls. 
 
@@ -439,7 +523,7 @@ fetch(url)
 `fetch` ist Ersatz für `XMLHttpRequest` (nicht von allen Browsern unterstützt).
 
 
-## Template Strings (ES6)
+### Template Strings
 
 Ermöglichen sogenannte *String Interpolation* – siehe [Template Strings](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/template_strings).
 
