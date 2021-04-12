@@ -1,6 +1,6 @@
 ---
 title: Lösungen Multithreaded Download Manager
-cmds: ['md_html.bash', 'md_html.bash --small']
+tags: [5AHELS]
 ---
 
 **Lösung (Multithreaded Download Manager)**

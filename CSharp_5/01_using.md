@@ -1,5 +1,6 @@
 ---
 title: using statement
+tags: [5AHELS]
 ---
 
 > [ms docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement): Provides a convenient syntax that ensures the correct use of [IDisposable](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable) objects.

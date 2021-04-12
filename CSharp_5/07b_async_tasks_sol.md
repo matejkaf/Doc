@@ -1,6 +1,6 @@
 ---
 title: C# Tasks (Lösuung für Aufgaben)
-tags: [solution]
+tags: [solution,5AHELS]
 ---
 
 

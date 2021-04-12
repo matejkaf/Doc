@@ -1,7 +1,6 @@
 ---
 title: C# Tasks Übungen
-cmds: ['md_html.bash', 'md_html.bash --small']
-tags: [assignment,dotnet, csharp, thread]
+tags: [assignment,dotnet, csharp, thread,5AHELS]
 ---
 
 **Übung (Primzahlen parallelisiert ermitteln)**

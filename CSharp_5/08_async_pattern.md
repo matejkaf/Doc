@@ -1,7 +1,6 @@
 ---
 title: Design Pattern für Asynchrones IO in .NET
-cmds: ['md_html.bash', 'md_html.bash --small']
-tags: [lecture,dotnet, csharp, thread, apm, eap, tap]
+tags: [lecture,dotnet, csharp, thread, apm, eap, tap,5AHELS]
 ---
 
 Historische Entwicklung (siehe [microsoft: Asynchronous programming patterns](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/)):

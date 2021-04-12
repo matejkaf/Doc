@@ -1,7 +1,6 @@
 ---
 title: C# Async Pattern Übungen
-cmds: ['md_html.bash', 'md_html.bash --small']
-tags: [assignment,dotnet, csharp, tap]
+tags: [assignment,dotnet, csharp, tap,5AHELS]
 ---
 
 **Übung (HIPASIDOC – Highly Parallel Asynchronous Image Download Compactor)**

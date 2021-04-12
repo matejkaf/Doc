@@ -1,6 +1,6 @@
 ---
 title: Delegates Anwendungen
-cmds: ['md_html.bash']
+cmds: [5AHELS]
 ---
 
 ## Anwendungen

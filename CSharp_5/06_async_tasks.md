@@ -1,7 +1,6 @@
 ---
 title: C# Tasks
-cmds: ['md_html.bash', 'md_html.bash --small']
-tags: [dotnet, csharp, thread]
+tags: [dotnet, csharp, thread,5AHELS]
 ---
 
 Klasse `Task`, aufbauend auf Thread. Höhereres Abstraktionsniveau und Performance Optimierungen.
