@@ -46,8 +46,6 @@ const static u_int8_t Base64Code[] =
 
 Rounds: 5000 default wert
 
-[siehe quickhash](https://quickhash.com)
-
 `crypt` ist die Standard UNIX Funktion zum berechnen der Hashwerte und prüfen der Passwörter.
 
 Kali Linux:

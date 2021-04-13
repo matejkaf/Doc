@@ -166,3 +166,13 @@ done
 
 ```
 
+
+
+## Web Grabber
+
+Download einer kompletten Website
+
+```bash
+$ wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://matejkaf.github.io/Doc/5AHELS.html
+```
+

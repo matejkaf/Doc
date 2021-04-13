@@ -100,6 +100,8 @@ Erstens kommt ein Angreifer dadurch zu mehr Informationen über die Passwörter 
 
 Ein "salt" (kryptographisches Salz) ist eine zufällige Zahl die vor dem Hashing an das Passwort angefügt wird. Bei jedem Ändern des Passworts wird ein neues, zufälliges salt gewählt.
 
+> *salt* should be about 16 or more bytes from a proper source, e.g. [`os.urandom()`](https://docs.python.org/3/library/os.html#os.urandom).
+
 Das gehashte PW wird gemeinsam mit dem Salt gespeichert. Das Salt ist nicht sicherheitsrelevant - es geht nur darum den brute force attack zu verlangsamen.
 
 Dieses Salt sorgt dafür, dass gleiche Passwörter sich nie auf den gleichen Hashwert abbilden.
@@ -114,6 +116,7 @@ Standard Algorithmen:
 
 - [crypt](https://en.wikipedia.org/wiki/Crypt_(C)) (UNIX)
 - [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)
+- [scrypt (RFC7914)](https://tools.ietf.org/html/rfc7914.html) – neuerer Standard (2016), berücksichtigt die ständig steigende Rechenleistung die Anfreifern zur Verfügung steht.
 
 
 

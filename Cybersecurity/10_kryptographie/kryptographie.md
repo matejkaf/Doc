@@ -4,7 +4,8 @@ subtitle: Grundlagen
 tags: [lecture,2AHITS_Teach]
 ---
 
-# Kryptographie
+* TOC
+{:toc}
 
 Geheimschrift / Verschlüsselungsverfahren
 
@@ -132,6 +133,97 @@ Daraus sieht man wie viele Buchstaben in jeder Zeile einzusetzen sind.
 ### Playfair Cipher
 
 - [Playfair Cipher (en) [19:17]](https://youtu.be/-KjFbTK1IIw)
+- [wikipedia](https://en.wikipedia.org/wiki/Playfair_cipher)
+- [A WW2 Playfair message sent after the disappearance of John F. Kennedy](https://scienceblogs.de/klausis-krypto-kolumne/2020/05/27/a-ww2-playfair-message-sent-after-the-disappearance-of-john-f-kennedy/)
+- [Online Tool](http://rumkin.com/tools/cipher/playfair.php)
+
+Wähle Schlüsselwort: "HTL IST SUPER"
+
+Bilde 5x5 Quadrat aus allen Buchstaben des Alphabets (einen wenig verwendeten Buchstaben streichen – z.B. Q oder X). 'Q' bspw. durch O ersetzen. Quadrat mit dem Schlüsselwort füllen (mehrfache Buchstaben auslassen), vervollständigen mit den fehlenden Buchstaben – in alphabetischer Reihenfolge.
+
+```
+H T L I S
+U P E R A
+B C D F G
+J K M N O
+V W X Y Z
+```
+
+Zu verschlüsselnde Nachricht:
+
+```
+TEST AM FREITAG
+```
+
+Leerzeichen weg, paarweise ordnen, mit wenig verwendeten Buchstaben (z.B. X) auffüllen
+
+```
+TE ST AM FR EI TA GX
+```
+
+= Bigramm
+
+Tritt ein Buchstabe doppelt auf so wird ein X (oder seltener Buchstabe) eingebaut
+
+```
+SAMMLUNG
+SA MM LU NG
+SA MX ML UN GX
+```
+
+### Regeln zum Verschlüsseln
+
+- Buchstaben in gleicher Zeile: mit dem jeweiligen rechten Nachbarn ersetzen (wrap around falls notwendig)
+- Buchstaben in gleicher Zeile: mit dem jeweiligen Buchstaben darunter ersetzen (wrap around falls notwendig)
+- Buchstaben bilden ein Rechteck: Buchstaben aus der gleichen Zeile/gegenüberliegende Ecke
+
+[wikipedia : Beispiel](https://en.wikipedia.org/wiki/Playfair_cipher#Example)
+
+### Beispiel
+
+```
+H T L I S
+U P E R A
+B C D F G
+J K M N O
+V W X Y Z
+```
+
+```
+TE ST AM FR EI TA GX
+```
+
+```
+LP HL EO NF RL SP DZ
+```
+
+### Eigenschaften
+
+- Sehr einfach durchführbar
+
+- Sicherer gegen Buchstaben Frequenz-Analyse
+
+  - Grund: Buchstaben werden, abhängig vom 2ten Buchstaben, immer auf unterschiedliche Buchstaben verschlüsselt.
+
+    ```
+    Beispiel für 'U':
+    UM => EJ
+    UN => RJ
+    ```
+
+  - für alle 600 Bigramme Frequenz-Analyse möglich, aber wesentlich aufwändiger
+
+
+
+#### Übung (Playfair Entschlüsseln)
+
+Schlüsselwort: `CYBERSECURITY`
+
+Q mit O ersetzten, Füllzeichen X
+
+Entschlüssele: `USIVTHHTEZ`
+
+Lösung: `SAUWETTER`
 
 
 
@@ -141,7 +233,19 @@ Computerunterstützt – Daten werden so verändert, dass sie nicht mehr von zuf
 
 Grundidee: 
 
+- Auf Bit-Ebene (nicht auf Buchstaben aufbauend)
 - XOR mit einem pseudozufälligen Bitmuster
   - sehr gute Zufallszahlgeneratoren
-- Mathematik mit großen Primzahlen
+  - geschickte Substitution / Transposition
+- Mathematik 
+  - Galois Felder
+  - (große) Primzahlen – tausende Stellen
+
+Es stehen große Rechenleistungen zur Verfügung – durch durchprobieren aller Schlüssel ist ein **knacken immer möglich** (brute force attack). Ziel – Angriff dauert lange – Ergebnis wertlos.
+
+Sicherer Zeitraum abhängig von der Länge des Schlüssels:
+
+- 64 Bit: Stunden bzw. Tage
+- 128 Bit: Jahrzehnte
+- 256 Bit: Jahrzehnte, auch mit Quantencomputern
 
