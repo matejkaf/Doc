@@ -1,6 +1,6 @@
 ---
 title: IO Bus Systeme
-tags: []
+tags: [lecture, 2AHITS_Teach]
 ---
 
 Innerhalb eines PC's gibt es für I/O unterschiedliche Bus-Systeme. Geräte sind meist nicht fest verbunden sondern werden gesteckt, entweder direkt auf die Hauptplatine oder mit Hilfe von Kabeln. Manche I/O Geräte wie Festplatten werden innerhalb des Rechnergehäuses untergebracht und meist mechanisch fixiert. Andere wiederum werden mittels längerer Kabel (Tastatur) mit dem Rechner verbunden.
