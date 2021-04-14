@@ -136,6 +136,9 @@ Daraus sieht man wie viele Buchstaben in jeder Zeile einzusetzen sind.
 - [wikipedia](https://en.wikipedia.org/wiki/Playfair_cipher)
 - [A WW2 Playfair message sent after the disappearance of John F. Kennedy](https://scienceblogs.de/klausis-krypto-kolumne/2020/05/27/a-ww2-playfair-message-sent-after-the-disappearance-of-john-f-kennedy/)
 - [Online Tool](http://rumkin.com/tools/cipher/playfair.php)
+- [REPL : PlayfairCipher](https://replit.com/@htlmatejka/PlayfairCipher) 
+
+
 
 Wähle Schlüsselwort: "HTL IST SUPER"
 
@@ -224,6 +227,8 @@ Q mit O ersetzten, Füllzeichen X
 Entschlüssele: `USIVTHHTEZ`
 
 Lösung: `SAUWETTER`
+
+
 
 
 
