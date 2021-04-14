@@ -137,7 +137,7 @@ Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.micro
 **Moore's Law** (Intel, 1975): Die Anzahl der Transistoren pro IC verdoppelt sich alle 2 Jahre (+40% p.a.).
 
 - 1972, Intel 8008 (200kHz): 3500 Transistoren
-- 2019, Intel 56-Core Xeon Platinum 9282 (2,6GHz): 8 Mrd. Transistoren
+- 2019, Intel 56-Core Xeon (2,6GHz): 8 Mrd. Transistoren
 - 47 Jahre bei 40%: Faktor 1,4^47 = 7,4 Mio.
 
 **Strukturen** am IC werden immer kleiner: Aktuell beste Technologie: 5nm ([wikipedia](https://en.wikipedia.org/wiki/5_nm_process)).
@@ -151,9 +151,9 @@ Schätzwerte für **Wachstum**:
   - Taktfrequenz stagniert seit >10 Jahren, stattdessen Multi-Core und Architekturverbesserungen.
   
 - Speicher / Festplatten
-  - 60% mehr Kapazität pro Jahr
+  - +60% Kapazität pro Jahr
 - Kosten
-  - 25% weniger pro Jahr
+  - –25% pro Jahr
 
 
 
