@@ -1,15 +1,12 @@
 ---
-title: Doc
+title: Schleifen
+subtitle: Challenges
 tags: [assignment,challenge,1AHITS,1CHELS]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-# Schleifen Challenges
-
-
-
-**Übung (Quadratzahl):**
+####  Übung (Quadratzahl)
 
 Jede Quadratzahl *n*² ist immer eine Summe der ersten *n* ungeraden Zahlen (Bsp.: $$4^2=4\times 4=1+3+5+7$$). 
 
@@ -20,7 +17,7 @@ Jede Quadratzahl *n*² ist immer eine Summe der ersten *n* ungeraden Zahlen (Bsp
 
 ---
 
-**Übung (Turmrechnen):**
+#### Übung (Turmrechnen)
 
 Mit Turmrechnen kann man seine Kopfrechen-Fertigkeit trainieren.
 
@@ -50,7 +47,7 @@ Hoehe: 5
 
 ---
 
-**Übung (Hochzahl):**
+#### Übung (Hochzahl)
 
 Eine Hochzahl ist eine Kurzschreibweise für mehrere Multiplikationen. Beispiel:
 
@@ -65,15 +62,13 @@ Berücksichtige auch dass $$a^0=1$$.
 
 ---
 
-**Übung (Reihe mit Exponent):**
+#### Übung (Reihe mit Exponent)
 
 Berechne mittels verschachtelter `for`-Schleifen:
 
 $$2^i=2^0+2^1+2^2+\cdots + 2^7 = 255$$
 
 $$1^0+2^1+3^2+4^3+5^4+6^5+7^6=126126$$
-
-
 
 ---
 
