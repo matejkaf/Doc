@@ -1,7 +1,7 @@
 ---
 title: Strings
 subtitle: Übungen
-tags: [c,strings,assignment]
+tags: [c,strings,assignment,1CHELS]
 ---
 
 
