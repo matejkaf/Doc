@@ -28,7 +28,7 @@ dk = hashlib.pbkdf2_hmac('sha256', b'password', b'salt', 100000)
 dk.hex()
 ```
 
-Generieren von 128 Bit IV und 256 Bit Key:
+Generieren von 128 Bit IV und 256 Bit Key aus einem Passwort.
 
 ```python
 salt = os.urandom(16) # random 16 byte salt

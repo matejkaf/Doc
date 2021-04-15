@@ -1,18 +1,16 @@
 ---
-title: Doc
-tags: [assignment]
+title: Lesen von Schleifen
+subtitle: Übungen
+tags: [assignment,1CHELS]
 ---
-
-# Schleifen (Übungen)
 
 Überlege zuerst was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere dann am Rechner. Gib Dir für jede richtige Antwort einen Punkt.
 
-
-**Übung (Lesen von Schleifen):**
+#### Übung (Lesen von Schleifen)
 
 
 ```c
-// (j)
+// (a)
 int i;
 int n = 1;
 for(i=10; i>0; i--)
@@ -26,7 +24,7 @@ printf("%d %d\n", i, n);
 
 
 ```c
-// (k)
+// (b)
 int i=33;
 int n=1;
 while(i>0) 
@@ -40,7 +38,7 @@ printf("\nEnde=%d", i);
 
 
 ```c
-// (l)
+// (c)
 int i;
 for( i=127; i > 0; i=i/2 )
 {
@@ -50,7 +48,7 @@ printf("Ende=%d", i);
 ```
 
 ```c
-// (m)
+// (d)
 int i = 22;
 while( i != 16 )
 {
@@ -70,7 +68,7 @@ printf("Ende=%d", i);
 
 
 ```c
-// (n)
+// (e)
 int i = 40;
 while((i  < 10) || (i >= 17))
 {
@@ -90,7 +88,7 @@ printf("Ende=%d", i);
 
 
 ```c
-// (o)
+// (f)
 int i = 13;
 while( i != 1 )
 {
@@ -107,16 +105,6 @@ while( i != 1 )
 printf("Ende=%d", i);
 // Hinweis: 9 Durchläufe
 ```
-
----
-
-
-
-
-
-
-
-
 
 
 

@@ -59,7 +59,7 @@ Decoding (Base64 String ⟶ Bytestring)
 decoded = base64.b64decode(hash_value_base64)
 ```
 
-Ähnlich Base16 decoding
+Ähnlich geht Base16 decoding
 
 ```
 decoded = base64.b16decode('000a0bff')

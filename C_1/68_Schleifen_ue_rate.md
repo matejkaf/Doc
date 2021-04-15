@@ -1,17 +1,11 @@
 ---
-title: Doc
+title: Zahlenratespiel
 tags: [assignment,1AHITS]
 ---
 
-# Zahlenratespiel
-
-... mit Schleifen
 
 
-
----
-
-**Übung (Erweitertes Zahlenratespiel):**
+#### Übung (Erweitertes Zahlenratespiel)
 
 Schreibe das Zahlenratespiel mit Hilfe von Schleifen.
 
@@ -45,7 +39,7 @@ zahl = rand()%(ende-start+1) + start;
 
 ---
 
-**Übung (Menü für Zahlenratespiel):**
+#### Übung (Menü für Zahlenratespiel)
 
 Die Erweiterung besteht darin, dass der Benutzer den Zahlenbereich (Start u. Ende) und die maximale Anzahl der Versuche selbst mit Hilfe eines **Menüs** einstellen kann. 
 Das Menü soll so aussehen:
@@ -82,7 +76,3 @@ while (1)
 	// ...
 }
 ```
-
----
-
-
