@@ -1,6 +1,6 @@
 ---
-title: Lesen von Schleifen
-subtitle: Übungen
+title: Schleifen
+subtitle: Drill Übungen
 tags: [assignment,1CHELS]
 ---
 
