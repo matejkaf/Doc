@@ -75,7 +75,7 @@ $ head --help | head -n12
 
 ---
 
-#### **Übung (date)**
+#### Übung (date)
 
 Verwende Optionen von `date` damit die Ausgabe des Datums und der Uhrzeit in der Form `30.10.20 09:15` erfolgt.
 
@@ -117,7 +117,7 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 
 ---
 
-#### **Übung (Sort)**
+#### Übung (Sort)
 
 -  Sortiere in umgekehrter Reihenfolge (Option von sort)
 -  Sortiere nach der 2ten Spalte (Obstnamen)
@@ -125,7 +125,7 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 
 ---
 
-#### **Übung (middle)**
+#### Übung (middle)
 
 Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen aus. Hinweis: die `-n` Option von `head` und `tail` erlaubt dies durch eine spezielle Angabe bei der Zeilenanzahl.
 
@@ -154,7 +154,7 @@ $ nl -s '. ' -w 10 shopping.txt
 
 ---
 
-#### **Übung (word count)**  
+#### Übung (word count)  
 
 Lade und entpacke ein Verzeichnis `sampletextfiles`:
 
@@ -215,13 +215,13 @@ Wagner,18.09.2019,20.0,Werkstatt
 
 ---
 
-#### **Übung (Anzahl Werkstatt)**: 
+#### Übung (Anzahl Werkstatt)
 
 Schreibe ein shell Kommando das in `klassenkassa.csv` die Anzahl der Einträge mit dem Text `Werkstatt` zählt.
 
 ---
 
-#### **Übung (Werkstatt Einzeiler)**: 
+#### Übung (Werkstatt Einzeiler)
 
 Schreibe ein shell Kommando das in `klassenkassa.csv` alle Beträge mit dem Text `Werkstatt`  in folgender Form als Einzeiler ausgibt:
 
@@ -290,7 +290,6 @@ $ echo "hello there" | sed "s/hello/hi/" | sed "s/there/robots/"
 hi robots
 ```
 
-> [!2AHITS G1 19.03.2021]
 
 ## Weiterführend
 

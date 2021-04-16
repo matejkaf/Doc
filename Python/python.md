@@ -654,7 +654,7 @@ print os.path.getmtime(dst2)
 
 
 
-### Encoding / UTF8
+### Encoding / UTF8 / Bytestrings
 
 ```python
 #! /usr/bin/env python
@@ -687,6 +687,36 @@ b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')
 ```
 '蓏콯캁澽苏'
 ```
+
+[Hexadezimal](https://docs.python.org/3/library/stdtypes.html#bytes.hex)
+
+```python
+data = b'o\xc3\xb6 a\xc3'
+print( data.hex() ) # Kleinbuchstaben Hex
+```
+
+```python
+# usage: hex([sep[, bytes_per_sep]])
+>>> value = b'\xf0\xf1\xf2'
+>>> value.hex('-')
+'f0-f1-f2'
+>>> value.hex('_', 2)
+'f0_f1f2'
+>>> b'UUDDLRLRAB'.hex(' ', -4)
+'55554444 4c524c52 4142'
+```
+
+
+
+
+```python
+>>> bytes.fromhex('2Ef0 F1f2  ') # ASCII whitespace ignored
+b'.\xf0\xf1\xf2'
+```
+
+
+
+
 
 ### Dir Rekursion
 

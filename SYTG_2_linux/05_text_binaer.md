@@ -3,6 +3,9 @@ title: Text- und Binärdaten
 tags: [2AHITS_Teach]
 ---
 
+* TOC
+{:toc}
+
 Daten können grob in 2 Klassen eingeteilt werden:
 
 - Binär-Daten – Folge von Bytewerten
@@ -141,7 +144,7 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/htl_logo.jpg
 - Analysiere die Anzeige von `xxd`, 
 - schau dir den Anfang der Datei an (`head`).
 
-
+> [!2AHITS G1 16.04.2021]
 
 ## Sonderzeichen und UTF-8
 
