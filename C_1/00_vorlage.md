@@ -34,6 +34,8 @@ void main()
 }
 ```
 
+
+
 ## Locale (Umlaute)
 
 Für Visual Studio Konsolen Projekt
