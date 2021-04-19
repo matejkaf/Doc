@@ -6,7 +6,7 @@ tags: [assignment,arrays,1CHELS,1AHITS]
 
 ### **Übung (Radrennen):**
 
-Bei einem Zeitfahren erreicht jeder Teilnehmer eines Radrennens eine bestimmte Zeit in Minuten (die Sekunden werden als Kommawert gespeichert). $1,5$ = 1 Minute und 30 Sekunden.\\
+Bei einem Zeitfahren erreicht jeder Teilnehmer eines Radrennens eine bestimmte Zeit in Minuten (die Sekunden werden als Kommawert gespeichert). $1,5$ = 1 Minute und 30 Sekunden.
 
 **Aufgabenstellung:**
 
@@ -60,9 +60,8 @@ Teiln.  Zeit  Zeit
 ```
 
 
-Hinweis: Folgendes Programm zeigt wie von einer Kommazahl die Nachkommastellen abgeschnitten werden können.
-Erklärung: Es wird ein sogenannter **Typ-Cast** verwendet (d.h. die Umwandlung eines Datentyps in einen anderen).
-`(int)x` wandelt den `double` Wert der Variable `x` in einen `int` Wert – dabei gehen die Nachkommastellen verloren. Der sich ergebende `int` Wert wird weiters auf die `double` Variable `ganz` zugewiesen. Hier findet ein automatischer Typ-Cast (von `int` auf `double`) statt.
+
+Hinweis: Folgendes Programm zeigt wie von einer Kommazahl die **Nachkommastellen** abgeschnitten werden können.
 
 ```c
 double x=3.14;
@@ -70,6 +69,4 @@ double ganz=(int)x;
 printf("%lf\n",ganz);
 ```
 
-
----
-
+Erklärung: Es wird ein sogenannter **Typ-Cast** verwendet (d.h. die Umwandlung eines Datentyps in einen anderen). `(int)x` wandelt den `double` Wert der Variable `x` in einen `int` Wert – dabei gehen die Nachkommastellen verloren. Der sich ergebende `int` Wert wird weiters auf die `double` Variable `ganz` zugewiesen. Hier findet ein automatischer Typ-Cast (von `int` auf `double`) statt.
