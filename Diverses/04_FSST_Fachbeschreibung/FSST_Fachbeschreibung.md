@@ -38,7 +38,7 @@ Untersuchungen zeigen, dass sich der Umfang der Software im Auto ca. alle 18 Mon
 
 100 Millionen Programmzeilen, so groß ist aktuell der Umfang der Software in einem Auto, das ist etwa doppelt so viel als für das Windows Betriebssystem notwendig ist. [6]
 
-In einer anderen Branche der sogenannten IT (Informationstechnologie) wird aktuell gerechnet, dass bis zu 85% der Gesamtkosten für Software- und Support aufgewendet werden. Nur 15% werdebfür die Hardware aufgewendet.
+In einer anderen Branche der sogenannten IT (Informationstechnologie) wird aktuell gerechnet, dass bis zu 85% der Gesamtkosten für Software- und Support aufgewendet werden. Nur 15% werden für die Hardware aufgewendet.
 [4]
 
 Auch in der Industrie werden Softwarelösungen als Entscheidend für die Zukunft angesehen.
@@ -99,8 +99,7 @@ Es ist keine aufwändige Laborausstattung notwendig, ein PC ist fast immer verf�
 
 `[1]` Christiane Brünglinghaus, Springer Professionell, 06.05.2014, Elektronik und Software beherrschen Innovationen im Auto
 
-`[2]`
-[welt.de](https://www.welt.de/motor/news/article120418644/Elektronik-Anteil-im-Auto.html)
+`[2]` [welt.de](https://www.welt.de/motor/news/article120418644/Elektronik-Anteil-im-Auto.html)
 
 `[3]` [Industrieanzeiter](http://industrieanzeiger.industrie.de/technik/fertigung/elektronik-und-software-aus-dem-baukasten/)
 

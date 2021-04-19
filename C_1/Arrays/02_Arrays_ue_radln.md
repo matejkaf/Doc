@@ -1,7 +1,7 @@
 ---
 title: Arrays
 subtitle: Übung Radrennen
-tags: [assignment,arrays,1CHELS]
+tags: [assignment,arrays,1CHELS,1AHITS]
 ---
 
 ### **Übung (Radrennen):**
