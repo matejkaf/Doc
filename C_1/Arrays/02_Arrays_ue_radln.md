@@ -4,9 +4,9 @@ subtitle: Übung Radrennen
 tags: [assignment,arrays,1CHELS,1AHITS]
 ---
 
-### **Übung (Radrennen):**
+#### Übung (Radrennen)
 
-Bei einem Zeitfahren erreicht jeder Teilnehmer eines Radrennens eine bestimmte Zeit in Minuten (die Sekunden werden als Kommawert gespeichert). $1,5$ = 1 Minute und 30 Sekunden.
+Bei einem Zeitfahren erreicht jeder Teilnehmer eines Radrennens eine bestimmte Zeit in Minuten (die Sekunden werden als Kommawert gespeichert). 1,5​ = 1 Minute und 30 Sekunden.
 
 **Aufgabenstellung:**
 
@@ -41,7 +41,7 @@ Teiln.   Zeit
 
 ---
 
-### **Übung (Radrennen Erweiterung):**
+#### Übung (Radrennen Erweiterung)
 
 Die Zeit soll auf 2 Arten ausgegeben werden: 
 
