@@ -616,7 +616,11 @@ Oder als Binärdatei öffnen und `encode` `decode` verwenden.
 - [Role of Underscore(_) in Python](https://www.datacamp.com/community/tutorials/role-underscore-python) – Schleifen Laufvariable, ...
 - [List comprehension without brackets in Python](https://stackoverflow.com/questions/9060653/list-comprehension-without-in-python)
 
+
+
 ## Snippets
+
+
 
 ### Read from standard input
 
@@ -873,3 +877,12 @@ print(scan_for_links(html))
 print(scan_for_links(b"bla bal skhfh foh"))
 ```
 
+
+
+### Minimaler Web Server
+
+Starten eines lokalen HTTP Servers:
+
+```bash
+$ python3 -m http.server 8000
+```

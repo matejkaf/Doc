@@ -1,43 +1,10 @@
-# Networking Command Line
+---
+title: Networking Command Line
+---
+
+
 
 Sammlung von Kommandozeilen Befehlen in Zusammenhang mit Netzwerk
-
-
-
-# Windows
-
-Eingestellte IP Adresse
-
-```bash
-ipconfig
-```
-
-
-
-DHCP release/renew
-
-```bash
-ipconfig /release
-ipconfig /renew
-```
-
-ARP Cache leeren
-
-```bash
- arp -d
-```
-
-Offene Verbindungen
-
-```bash
-> netstat
-```
-
-DNS Cache leeren
-
-```bash
-ipconfig /flushdns
-```
 
 
 
@@ -47,8 +14,8 @@ ipconfig /flushdns
 IP Adresse ermitteln / Interface finden
 
 ```bash
-ifconfig
-ifconfig |grep inet
+$ ifconfig
+$ ifconfig | grep inet
 ```
 
 nur Linux:
@@ -78,7 +45,7 @@ sudo ipconfig set en6 DHCP
 ARP Cache leeren (MacOS)
 
 ```bash
- arp -a -d
+arp -a -d
 ```
 
 ARP chache anzeigen (Linux)
@@ -177,53 +144,4 @@ _gateway        0.0.0.0         255.255.255.255 UH        0 0          0 enp0s3
 
 
 
-
-
-# Wireshark
-
-## Filter
-
-Use these instruction and documentation links to learn how to use Wireshark’s filters:
-
-- [Display filters](https://wiki.wireshark.org/DisplayFilters)
-
-- [Capture filters](https://wiki.wireshark.org/CaptureFilters)
-
-- [Wireshark 2.1 User’s Guide](https://www.wireshark.org/docs/wsug_html_chunked/)
-
-- [Wireshark Manual Pages](https://www.wireshark.org/docs/man-pages/)
-
-    - Manual page: [Wireshark Filters](https://www.wireshark.org/docs/man-pages/wireshark-filter.html)
-
-## Filter examples
-
-ARP/ICMP
-
-```
-arp or icmp
-```
-
-DNS
-
-```
-dns
-```
-
-DHCP
-
-```
-bootp
-```
-
-
-
-```
- tcp and ip.addr==198.246.117.106
-```
-
-
-
-```
-ftp
-```
 

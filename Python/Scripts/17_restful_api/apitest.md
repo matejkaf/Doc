@@ -530,7 +530,7 @@ Enthält das python File `import` so wird flask automatisch installiert.
 [jslinux](https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192), Geht auch in der shell von repl.it
 
 ```bash
-localhost:~# curl https://flasktest01.franzmatejka.repl.co
+$ curl https://flasktest01.franzmatejka.repl.co
 ```
 
 
