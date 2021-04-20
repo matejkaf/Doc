@@ -30,7 +30,7 @@ Was kann man machen?
 
 ### C/C++ Programmieren
 
-[C/C++ in REPL](/Doc/C_1/01_C_tidbits.md)
+[C/C++ in REPL](/Doc/C_1/01_C_tidbits)
 
 Grafik mit Allegro
 
