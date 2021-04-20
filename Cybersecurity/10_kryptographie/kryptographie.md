@@ -232,7 +232,7 @@ Lösung: `SAUWETTER`
 
 
 
-## Moderne Kryptographie
+## Vorschau: Moderne Kryptographie
 
 Computerunterstützt – Daten werden so verändert, dass sie nicht mehr von zufälligen Werten unterscheidbar sind. 
 
@@ -248,7 +248,7 @@ Grundidee:
 
 Es stehen große Rechenleistungen zur Verfügung – durch durchprobieren aller Schlüssel ist ein **knacken immer möglich** (brute force attack). Ziel – Angriff dauert lange – Ergebnis wertlos.
 
-Sicherer Zeitraum abhängig von der Länge des Schlüssels:
+Sicherer Zeitraum – abhängig von der Länge des Schlüssels:
 
 - 64 Bit: Stunden bzw. Tage
 - 128 Bit: Jahrzehnte
