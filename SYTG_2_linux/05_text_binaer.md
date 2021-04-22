@@ -181,15 +181,18 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/arabic.txt
 > [!2AHITS G2 09.04.2021]
 
 
+
 ## Latin 1
 
-Ältere Text-Kodierungen sind eingeschränkt auf ein Byte pro Zeichen und erweitern den ASCII Code.
+Ältere Text-Kodierungen sind eingeschränkt auf ein Byte pro Zeichen und erweitern den ASCII Code im Bereich 128–255. Siehe [ISO 8859-1 (latin-1)](https://de.wikipedia.org/wiki/ISO_8859-1)
 
-Beispiel: `latin1.txt` Datei mit ISO 8859-1 (latin-1) Kodierung.
+Beispiel: `latin1.txt` Datei mit ISO 8859-1 (Latin-1) Kodierung.
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 ```
+
+Vergleiche: [ISO 8859-5 (Kyrillisch)](https://de.wikipedia.org/wiki/ISO_8859-5)
 
 
 
@@ -198,25 +201,10 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/latin1.txt
 iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandeln der Kodierung
 
 ```bash
-# iconv -f <from> -t <to>
+# iconv -f <from> -t <to> <file>
 $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
-# keine Änderung der Datei, Ausgabe auf stdout
+# iconv: keine Änderung der Datei, Ausgabe auf stdout
 ```
-
-
-
----
-
-#### Übung (Notepad)
-
-Erzeuge mit Windows Notepad eine Textdatei (soll auch die Zeichen äüöÄÜÖß€ enthalten) speichere einmal in UTF-8 und einmal in ANSI Kodierung.
-
-- Verwende `cat` bei beiden Files
-- Analysiere den binären Inhalt beider Files
-- Konvertiere ANSI (auch code page 1252 genannt) nach utf-8 und prüfe das Ergebnis
-- Forschung: Was ist der Unterschied zwischen ANSI und Latin-1?
-
-
 
 
 
