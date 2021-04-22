@@ -73,9 +73,14 @@ Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
+# oder
+$ wget -O goethe.txt https://bit.ly/3aNAKZh
+#
 $ openssl dgst -sha256 goethe.txt
 $ openssl dgst -sha256 -binary goethe.txt
 $ openssl dgst -sha256 -binary goethe.txt | xxd
+
+
 ```
 
 

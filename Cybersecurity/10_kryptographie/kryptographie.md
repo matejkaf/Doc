@@ -80,6 +80,10 @@ Z.B. Vignère
 
 
 
+[REPL : VigenereCipher](https://replit.com/@htlmatejka/VigenereCipher) 
+
+
+
 ### Transposition-Chiffre
 
 Umstellung der Reihenfolge
@@ -140,9 +144,11 @@ Daraus sieht man wie viele Buchstaben in jeder Zeile einzusetzen sind.
 
 
 
-Wähle Schlüsselwort: "HTL IST SUPER"
+Wähle Schlüsselwort: "HTL IST SUPER" – bilde daraus das Playfair Quadrat
 
-Bilde 5x5 Quadrat aus allen Buchstaben des Alphabets (einen wenig verwendeten Buchstaben streichen – z.B. Q oder X). 'Q' bspw. durch O ersetzen. Quadrat mit dem Schlüsselwort füllen (mehrfache Buchstaben auslassen), vervollständigen mit den fehlenden Buchstaben – in alphabetischer Reihenfolge.
+- Bilde 5x5 Quadrat aus allen Buchstaben des Alphabets (einen wenig verwendeten Buchstaben streichen – z.B. Q oder X). 'Q' bspw. durch O ersetzen (oder auch K durch C). 
+- Quadrat mit dem Schlüsselwort füllen (mehrfache Buchstaben auslassen), 
+- vervollständigen mit den fehlenden Buchstaben – in alphabetischer Reihenfolge.
 
 ```
 H T L I S
@@ -177,8 +183,10 @@ SA MX ML UN GX
 ### Regeln zum Verschlüsseln
 
 - Buchstaben in gleicher Zeile: mit dem jeweiligen rechten Nachbarn ersetzen (wrap around falls notwendig)
-- Buchstaben in gleicher Zeile: mit dem jeweiligen Buchstaben darunter ersetzen (wrap around falls notwendig)
+- Buchstaben in gleicher Spalte: mit dem jeweiligen Buchstaben darunter ersetzen (wrap around falls notwendig)
 - Buchstaben bilden ein Rechteck: Buchstaben aus der gleichen Zeile/gegenüberliegende Ecke
+
+Entschlüsseln ist der umgekehrte Vorgang.
 
 [wikipedia : Beispiel](https://en.wikipedia.org/wiki/Playfair_cipher#Example)
 
@@ -218,20 +226,6 @@ LP HL EO NF RL SP DZ
 
 
 
-#### Übung (Playfair Entschlüsseln)
-
-Schlüsselwort: `CYBERSECURITY`
-
-Q mit O ersetzten, Füllzeichen X
-
-Entschlüssele: `USIVTHHTEZ`
-
-Lösung: `SAUWETTER`
-
-
-
-
-
 ## Vorschau: Moderne Kryptographie
 
 Computerunterstützt – Daten werden so verändert, dass sie nicht mehr von zufälligen Werten unterscheidbar sind. 
@@ -246,7 +240,7 @@ Grundidee:
   - Galois Felder
   - (große) Primzahlen – tausende Stellen
 
-Es stehen große Rechenleistungen zur Verfügung – durch durchprobieren aller Schlüssel ist ein **knacken immer möglich** (brute force attack). Ziel – Angriff dauert lange – Ergebnis wertlos.
+Es stehen große Rechenleistungen zur Verfügung – durch durchprobieren aller Schlüssel ist ein **knacken immer möglich** (brute force attack). Ziel der Verteidigung: Angriff dauert zu lange – Ergebnis wertlos.
 
 Sicherer Zeitraum – abhängig von der Länge des Schlüssels:
 
