@@ -12,5 +12,3 @@ Q mit O ersetzten, Füllzeichen X
 
 Entschlüssele: `USIVTHHTEZ`
 
-Lösung: `SAUWETTER`
-
