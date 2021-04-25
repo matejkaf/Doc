@@ -94,7 +94,7 @@ gdb:
 - `r` /  `c`  ... run / continue
 - `s` ... single-step
 - `n` ... next (step-over)
-- `f` `finish` ... step-out
+- `f`  ... finish (step-out)
 - `p <variable>` ... Variablenwert anzeigen
 - `q` beenden
 - `l` ... list program
@@ -109,16 +109,140 @@ gdb:
 
 
 
-## C Programm in der shell
+Hexdump in gdb
 
-stdin / stdout
+```c++
+char buf[100] = "\x01\x02\x03\x04String Data\xAA\xBB\xCC";
+int x = 42;
+printf("%d\n",x);
 
-Ideen:
+```
 
-- Dateiumleitung und Pipes anhand eines C Programms demonstrieren (z.B. viel Text ausgeben und in more pipen)
+```
+(gdb) x /20bx buf
+0x7ffe25c16c80: 0x01    0x02    0x03    0x04    0x53    0x74    0x72    0x69
+0x7ffe25c16c88: 0x6e    0x67    0x20    0x44    0x61    0x74    0x61    0xaa
+0x7ffe25c16c90: 0xbb    0xcc    0x00    0x00
+```
+
+`x /20x buf` selbes ergebnis (d.h. `b` byte, ist default)
+
+
+
+Siehe [stackoverflow](https://stackoverflow.com/questions/9233095/memory-dump-formatted-like-xxd-from-gdb)
+
+Binär
+
+```
+x /4t buf
+0x7ffe25c16c80: 00000001    00000010    00000011    00000100
+```
+
+Siehe [x command](https://visualgdb.com/gdbreference/commands/x)
+
+
+
+## C Programm und stdin / stdout
+
+
+- Dateiumleitung und Pipes anhand eines C Programms demonstrieren (z.B. viel Text ausgeben und in `more` pipen)
 - stdin aus einer Datei umleiten
 
-- Kommandozeilenparameter, dabei demonstrieren was qoutes und wildcards bewirken
+
+
+## Kommandozeilenparameter
+
+```c++
+int main(int argc, char *argv[]) {
+  printf("%d\n",argc);
+  for(int i=0; i<argc; i++) {
+    printf("%s\n",argv[i]);
+  }
+}
+```
 
 
 
+Werte mit `atoi`:
+
+```c++
+int data = atoi(argv[1]);
+for(int i=0; i<data; i++) {
+  printf(".");
+}
+printf(".\n");
+```
+
+
+
+Mit Quotes
+
+```bash
+$ ./main aaa bbb "ccc ddd"
+4
+./main
+aaa
+bbb
+ccc ddd
+```
+
+
+
+Mit Wildcards
+
+```bash
+$ ls *
+main  main.cpp
+$ ./main  *
+3
+./main
+main
+main.cpp
+```
+
+
+
+## Übungen
+
+#### Übung (Addieren)
+
+Schreibe ein C Programm das zwei über die Kommandozeile vorgegebene Zahlen **addiert**. 
+
+Programmaufruf in der shell:
+
+```bash
+$ ./main 3 5
+8
+```
+
+
+
+---
+
+#### Übung (Rechner)
+
+Schreibe ein C Programm das über die Kommandozeile die **4 Grundrechenarten** anbietet. 
+
+Programmaufruf in der shell:
+
+```bash
+$ ./main 3 * 5
+15
+```
+
+
+
+---
+
+#### Übung (Rechner int+float)
+
+Schreibe den Rechner so, dass dieser auch **optional mit Kommazahlen** rechnen kann.
+
+Programmaufruf in der shell:
+
+```bash
+$ ./main 2 / 4 -f
+0.5
+```
+
+**Erweiterung:** Eine Option die die Anzahl der darzustellenden Nachkommastellen bestimmt.

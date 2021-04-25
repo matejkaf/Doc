@@ -42,11 +42,11 @@ Experimente mit AWT: [REPL : JavaAWT](https://replit.com/@htlmatejka/JavaAWT)
 
 Leider kein automatisches Hinzufügen von Imports
 
-### 
 
 
 
-## Minimaler Web Server
+
+## Minimalster Web Server
 
 Repl unterstützt  keinen webbasierten Download von generierten Files.
 
@@ -61,4 +61,31 @@ download mit `wget`:
 ```bash
 $ wget https://BlockCipherKeyGenerator.htlmatejka.repl.co/key.bin
 ```
+
+
+
+## Web Server in Python
+
+Mit Flask, Hosting von statischen Dateien im Unterordner `static`.
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+  return 'Minimaler Web Server – Dateien im Ordner "static" ablegen!'
+
+app.run(debug=True, host='0.0.0.0')
+```
+
+[REPL : MinimalWebServer](https://replit.com/@htlmatejka/MinimalWebServer)
+
+[https://MinimalWebServer.htlmatejka.repl.co/static/test.html](https://MinimalWebServer.htlmatejka.repl.co/static/test.html)
+
+
+
+## .draw Files
+
+Zeichnen mit [excalidraw](https://excalidraw.com), auch im Multiplayer Mode. Dazu eine Datei mit der Endung `.draw` erstellen.
 

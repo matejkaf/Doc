@@ -1,16 +1,16 @@
 ---
 title: Kryptographie
-subtitle: Encoding Übungen
+subtitle: Encoding Übungen (Lösungen)
 tags: [solution]
 ---
 
-#### **Übung (Base64 kodieren):**
+#### Übung (Base64 kodieren)
 
 TBD
 
 ---
 
-#### **Übung (SHA256 mit openssl)**
+#### Übung (SHA256 mit openssl)
 
 ```bash
 $ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt

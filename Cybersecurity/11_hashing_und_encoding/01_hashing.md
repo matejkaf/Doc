@@ -13,7 +13,7 @@ tags: [lecture,2AHITS_Teach]
 - Erkennen von Fälschungen (Integrität)
 - Digitale Unterschrift (Authentizität)
 - Speichern von Passwörtern
-- Kryptowährungen (Bitcoin, SHA-256)
+- Kryptowährungen (Bitcoin ⇨ SHA-256)
 
 ## Umsetzung
 
@@ -41,15 +41,9 @@ Es sollte nicht so einfach sein Daten zu finden die den gleichen Hashwert ergebe
 
 *secure hash functions*, Komplexe Berechnung! Sind ziemlich gut!
 
-- historisch: MD5, SHA-1
-- **SHA2**, aktuell in Verwenung (SHA-256, SHA-512)
-- SHA3 (seit 2015), noch nicht verbreitet
-
----
-
-**Übung (goethe im Online Hash Rechner):** Experimente mit [Online Hash Rechner](https://emn178.github.io/online-tools/sha512.html), [Textdatei `goethe.txt`](https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt). Was passiert bei kleinen Änderungen im Text?
-
----
+- historisch: [MD5](https://en.wikipedia.org/wiki/MD5) (128 Bit, 16 Byte), [SHA1](https://en.wikipedia.org/wiki/SHA-1) (160 Bit, 20 Byte)
+- [**SHA2**](https://en.wikipedia.org/wiki/SHA-2), aktuell in Verwenung (SHA-256, SHA-512)
+- [SHA3](https://en.wikipedia.org/wiki/SHA-3) (seit 2015), noch nicht verbreitet (SHA3-512)
 
 Eigenschaften:
 
@@ -58,35 +52,7 @@ Eigenschaften:
 - **Unumkehrbar** – Eine Rekonstruktion der Daten aus dem Hashwert ist nicht möglich (außer durch durchprobieren – brute force attack)
 - **Kollisionssicher** – es ist praktisch unmöglich bei gegebenen Daten andere Daten zu finden die den gleichen Hash haben (=Kollision).
 
-Anmerkung: SHA-1 gilt als nicht mehr sicher, da Wege zum erzeugen einer Fälschung (=Kollision) gefunden wurden. 
+Anmerkung: **SHA-1** gilt als nicht mehr sicher, da Wege zum erzeugen einer Fälschung (=Kollision) gefunden wurden. 
 
 - 2013 theoretisch durch Mark Stevens.  
 - [2017 praktisch – Announcing the first SHA1 collision](https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html) – 1000e Jahre an CPU Rechenzeit notwendig.
-
-
-
----
-
-**Übung (SHA256 mit Online shell):**
-
-Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl` den SHA256 Hashwert der Datei hinter dem Link `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt` zu ermitteln. Der Download der Datei geht mit dem Tool `wget`.
-
-```bash
-$ wget https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt
-# oder
-$ wget -O goethe.txt https://bit.ly/3aNAKZh
-#
-$ openssl dgst -sha256 goethe.txt
-$ openssl dgst -sha256 -binary goethe.txt
-$ openssl dgst -sha256 -binary goethe.txt | xxd
-
-
-```
-
-
-
-Alternative: 
-
-[JSLinux](https://bellard.org/jslinux/)
-
-> Hinweis zum Online Linux Terminal (aus [FAQ](https://bellard.org/jslinux/faq.html)): To copy data, just select it with the mouse and use the "Copy" contextual menu (right click). To paste data, right click on the terminal cursor to show the contextual menu and select "Paste". Alternatively, you can use the "Paste" command in the navigator global menu.
