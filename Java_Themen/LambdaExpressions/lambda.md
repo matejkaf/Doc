@@ -1,4 +1,7 @@
-# Lambda Expressions und Streams
+---
+title: Lambda Expressions und Streams
+subtitle: Java 8
+---
 
 Lambda Expressions und Streams sind Erweiterungen von Java 8 (2014)
 
@@ -13,7 +16,7 @@ long countLongStrings = myList.stream().filter(element -> element.length() > 4).
 ```
 
 
-# Lambda Expressions
+## Lambda Expressions
 
 Sind Methoden die **keinen Namen** erhalten (anonym) und die sich **wie Werte** verhalten. D.h. eine Methode kann einer Variablen (z.B. bei Parameterübergabe) zugewiesen werden.
 Die Syntax der Methoden-Definition wird dabei stark vereinfacht.
@@ -99,7 +102,7 @@ testPerson(person, p  -> p.age > 40);
 ```
 
 
-# Standard Interfaces
+## Standard Interfaces
 
 Anstatt das Interface selbst zu definieren, können generische Interfaces aus `java.util.function` verwendet werden.
 Zum Beispiel das Interface `Predicate` das folgendermaßen vordefiniert ist.
@@ -126,7 +129,7 @@ Weitere Functional Interfaces in `java.util.function` siehe
 
 
 
-# Alternative zur extended for loop
+## Alternative zur extended for loop
 
 Die extended for loop (*for-each Schleife*) baut auf dem Interface `Iterable` auf, dieses wurde in Java 8 um die Methode `forEach` ([javadoc](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-)) erweitert.
 
@@ -159,9 +162,7 @@ myList.forEach(new Consumer<String>() {
 
 
 
-
-
-# Streams
+## Streams
 
 Erweiterung des `Collection` Interface.
 
@@ -208,7 +209,7 @@ htlBraunau
         .forEach(email -> emailString += email +',');
 ```
 
-# Quellen
+## Quellen
 
 - [Oracle Quick Start](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html)
 - [Oracle OO Tutorial](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)

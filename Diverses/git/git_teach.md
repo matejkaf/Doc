@@ -1,4 +1,9 @@
-# git
+---
+title: git
+---
+
+* TOC
+{:toc}
 
 **git** ist eine Software zur verteilten Versionsverwaltung.
 git ist ein Projekt von Linus Torvalds, dem "Erfinder" von Linux.
@@ -9,7 +14,7 @@ git ist ein Projekt von Linus Torvalds, dem "Erfinder" von Linux.
 - Die Versionsverwaltung hat auch die Information welche Versionen der Dateien zusammenpassen.
 
 
-# Basics
+## Basics
 
 git unterscheidet 3 Stellen in der sich eine Datei befinden kann:
 
@@ -19,7 +24,7 @@ git unterscheidet 3 Stellen in der sich eine Datei befinden kann:
   <img src="fig/areas.png" alt="git Areas" style="zoom:50%;" />
 
 
-# Getting Started
+## Getting Started
 
 [gittutorial](https://git-scm.com/docs/gittutorial)
 
@@ -36,7 +41,7 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 
-# Initialisierungen
+## Initialisierungen
 
 Ein neues **Repository** anlegen und Dateien einfügen.
 
@@ -85,7 +90,7 @@ Vorgang:
 ![add vs. commit](fig/naws3.png)
 
 
-# Änderungen
+## Änderungen
 
 Ergänzung im `index.html` File:
 
@@ -137,7 +142,7 @@ git difftool HEAD HEAD^
 ```
 
 
-# Änderungen rückgängig machen
+## Änderungen rückgängig machen
 
 Mit `git` ist es einfach Änderungen wieder rückgängig zu machen.
 Z.B. um zur letzten noch funktionierenden Version eines Programms zurückzukehren (nach dem man einen Punkt erreicht hat an dem gar nichts mehr geht).
@@ -159,7 +164,7 @@ $ git checkout -- index.html
 $ git status
 ```
 
-# Version wiederherstellen
+## Version wiederherstellen
 
 Eingecheckte Versionen lassen sich jederzeit wiederherstellen.
 
@@ -180,7 +185,7 @@ $ git checkout master index.html
 Die Bedeutung von `master` wird weiter unten erläutert.
 
 
-# Zusätzliche Files einfügen
+## Zusätzliche Files einfügen
 
 Neue Datei:
 
@@ -236,7 +241,7 @@ $ git checkout master
 ```
 
 
-# Remotes anlegen
+## Remotes anlegen
 
 Das lokale Repository kann mit einem remote Repository (git Server) verbunden werden.
 Mehrere Entwickler können damit gemeinsam an einem Projekt arbeiten.
@@ -300,7 +305,7 @@ $ git push
 Beachte die Änderungen auf github.
 
 
-# Remotes verwenden
+## Remotes verwenden
 
 Ein bestehendes remote repository laden:
 
@@ -334,7 +339,7 @@ Nun im geklonten Projekt die Änderungen übernehmen:
 git pull
 ```
 
-# Tagging
+## Tagging
 
 Mit Tags können **Versionsbezeichnungen** vergeben werden.
 
@@ -356,7 +361,7 @@ Tags müssen extra auf den Remote Server gepusht werden:
 git push origin v1.0
 ```
 
-# Branching
+## Branching
 
 Branching bedeutet, von der Hauptentwicklungslinie (`master` branch) abzuzweigen (branching).
 Dieser Branch kann unabhängig vom `master` branch bearbeitet werden.
@@ -401,7 +406,7 @@ $ git add index.html index.js
 $ git commit -m 'Diverse Erweiterungen'
 ```
 
-# Branching - Anwendung
+## Branching - Anwendung
 
 Annahme:    
 die Version am `master` Branch ist die Produktivversion (beim Kunden).
@@ -442,11 +447,11 @@ Nun weitere Änderungen z.B. in `index.html`, und commit dieser Änderungen.
 Usw.
 
 
-# Merging
+## Merging
 
 Änderungen die in unterschiedlichem Branches auseinanderlaufen werden durch merging wieder zusammengeführt.
 
-## Beispiel 1 für Merging
+### Beispiel 1 für Merging
 
 Für umfangreichere Änderungen am `master` Branch ist es besser dafür einen eigenen Branch einzuführen und diesen dann nach Abschluss mit `master` zu mergen.
 
@@ -481,7 +486,7 @@ Den Branch kann man dann löschen:
 $ git branch -d hotfix234
 ```
 
-## Beispiel 2 für Merging
+### Beispiel 2 für Merging
 
 Der Branch `working`, soll nun in das Produktivsystem (`master`) übernommen werden. Allerdings hat sich auch `master` geändert.
 
@@ -551,7 +556,7 @@ Der Branch `working` kann entfernt werden:
 $ git branch -d working
 ```
 
-# vi Basics
+## vi Basics
 
 In manchen Situation öffnet `git` den Text Editor `vi`
 
