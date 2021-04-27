@@ -1,7 +1,7 @@
 ---
 title: Dynamische Speicherverwaltung
 subtitle: Übungen
-tags: [assignment]
+tags: [assignment,2AHITS]
 ---
 
 #### Übung (Array variabler Länge)
@@ -37,4 +37,3 @@ Schreibe ein Programm, das ein `int` Array variabler Länge verwaltet.
   Wert: -1
   good bye
   ```
-  

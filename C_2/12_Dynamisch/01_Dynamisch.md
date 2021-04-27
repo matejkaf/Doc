@@ -1,5 +1,6 @@
 ---
 title: Dynamische Speicherverwaltung
+tags: [2AHITS_Teach]
 ---
 
 
