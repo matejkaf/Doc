@@ -30,7 +30,7 @@ Ethical Hacking CEHv10 (Udemi-Kurs), Eric Amberg
   - These images have a default login/password of “kali/kali” and may have pre-generated SSH host keys.
   - `kali-linux-2020.4-vbox-amd64.ova`, In Virtual Box importieren, 1024 MB Arbeitsspeicher reichen (2048 voreingestellt). USB Controller und Sound Card deaktivieren, >Import<, ca. 2min, Legt eine Kopie der ova Datei an, die ova Datei kann man dann löschen.
   - Starten in vbox
-  - root/toor – stimmt nicht mehr, das neue Login ist kali/kali
+  - Login: kali/kali
   - Darstellung kann sehr klein sein auf Retina Displays, >View>Virtual Screen 1>Scale to 200%
   
 - **Metasploitable 2** installieren – auf Ubuntu basierend, mit vielen Sicherheitslücken

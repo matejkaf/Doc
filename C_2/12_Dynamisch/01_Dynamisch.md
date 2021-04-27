@@ -58,7 +58,7 @@ scanf("%d", &n);
 arr = new int[n]; // Array allokieren
 
 for(int i=0; i<n; i++)
-    arr[i]=0;
+  arr[i]=0;
 
 delete[] arr; // Array freigeben
 ```
@@ -361,10 +361,6 @@ Und dann das Array:
 ```c
 delete[] a;
 ```
-
-
-
-
 
 
 

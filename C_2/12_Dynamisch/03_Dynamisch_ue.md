@@ -4,34 +4,14 @@ subtitle: Übungen
 tags: [assignment]
 ---
 
-#### **Übung (Komplexe Zahl):**
+#### Übung (Dynamisches Array aus int)
 
-Erstelle eine Struktur für eine komplexe Zahl sowie Funktionen für die Ein- und Ausgabe.
+Schreibe ein Programm das die Eingabe von **beliebig vielen**, positiven Zahlen ermöglicht.
+Die Eingabe wird mit –1 abgeschlossen. Das Programm soll anschließend alle Zahlen in umgekehrter Reihenfolge ausgeben.
 
-- Lege zwei komplexe Zahlen dynamisch an.
-- Summiere die beiden Zahlen in einer dritten (neuen) komplexen Zahl.
-- Implementiere für das Summieren zweier komplexer Zahlen eine Funktion.
-Die Funktion soll eine neue komplexe Zahl erzeugen und einen Zeiger auf diese zurückgeben.
-- Ermittle mit Hilfe dieser Funktion die Summe von drei komplexen Zahlen.
-
----
-
-#### **Übung (Array aus komplexen Zahlen):**
-
-Schreibe ein Programm das die Eingabe komplexer Zahlen ermöglicht und dann die Summe aller komplexen Zahlen errechnet und ausgibt.
-
-- Das Programm soll am Anfang nach der Anzahl fragen.
-- Durch ein dynamisches Array soll die Eingabge beliebig vieler Zahlen möglich sein.
-
----
-
-#### **Übung (Sortieren):**
-
-Schreibe ein Programm das die Eingabe einer am Anfang einzugebenden Anzahl von komplexen Zahlen ermöglicht und diese der Größe nach sortiert wieder ausgibt.
-Nimm Bubble-Sort zum Sortieren.
-
----
-
-#### **Übung (Sortieren II):**
-
-Verwende ein Array aus Zeigern für die vorhergehende Aufgabenstellung um, das beim Sortieren notwendige, Tauschen von Elementen möglichst zu beschleunigen.
+- **Ausbaustufe 1:** Lege für jede eingegeben Zahl ein neues, größeres Array an. Die vorhandenen Daten werden umkopiert. Das Array ist genau so groß wie die Anzahl der bereits eingegebenen Daten, es gibt keine "Reserve"-Elemente.
+- **Ausbaustufe 2:** Implementiere ein dynamisches Array mit "Reserve"-Elementen, Startgröße ist 3, bei jedem Vergrößerungsschritt wird ein Array allokiert das um 3 Elemente größer ist und die alten Daten werden umkopiert. Dazu sind 2 Längenvariablen notwendig, eine enthält die allokierte Länge des Arrays die andere die Anzahl der verwendeten Elemente.
+- **Ausbaustufe 3:** Zusätzlich: Löschen von Elementen.
+  - Bei Eingabe von –2 soll das letzte Element aus dem Array entfernt werden.
+  - Bei Eingabe von –3 soll das erste Element aus dem Array entfernt werden.
+  - Sind nach dem Löschen mehr als 5 Elemente frei so soll das dynamische Array verkleinert werden, so dass nach der Verkleinerung nur mehr 3 Elemente frei sind.

@@ -2,23 +2,50 @@
 title: Wireshark
 ---
 
-## Filter
+## KALI Linux
 
-Use these instruction and documentation links to learn how to use Wireshark’s filters:
+Kali Linux für Wireshark konfigurieren:
 
-- [Display filters](https://wiki.wireshark.org/DisplayFilters)
+Promiscuous Mode:
 
-- [Capture filters](https://wiki.wireshark.org/CaptureFilters)
+<img src="fig/image-20210427131033098.png" alt="image-20210427131033098" style="zoom:50%;" />
 
-- [Wireshark 2.1 User’s Guide](https://www.wireshark.org/docs/wsug_html_chunked/)
+### Capture Filter
 
-- [Wireshark Manual Pages](https://www.wireshark.org/docs/man-pages/)
+[Filtering while capturing](https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html)
 
-  - Manual page: [Wireshark Filters](https://www.wireshark.org/docs/man-pages/wireshark-filter.html)
+telnet to and from a particular host
 
-### Filter examples
+```
+tcp port 23 and host 10.0.0.5
+```
 
-ARP/ICMP
+Capture only traffic to or from IP address 172.18.5.4:
+
+```
+host 172.18.5.4
+```
+
+Capture traffic to or from a range of IP addresses:
+
+```
+net 192.168.0.0/24
+
+
+
+### Display Filter
+
+[Wireshark display filter syntax and reference](https://www.wireshark.org/docs/man-pages/wireshark-filter.html)
+
+[Building Display Filter Expressions](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html)
+
+http
+
+```
+tcp.port == 80
+```
+
+ARP/ICMP (Echo,...)
 
 ```
 arp or icmp
@@ -46,5 +73,25 @@ tcp and ip.addr==198.246.117.106
 
 ```
 ftp
+```
+
+
+
+Show only [SMTP]() (port 25) and [ICMP]() traffic:
+
+```plaintext
+ tcp.port eq 25 or icmp
+```
+
+Show only traffic in the LAN (192.168.x.x), between workstations and servers -- no Internet:
+
+```plaintext
+ip.src==192.168.0.0/16 and ip.dst==192.168.0.0/16
+```
+
+From and to
+
+```
+ip.addr==10.43.54.65
 ```
 

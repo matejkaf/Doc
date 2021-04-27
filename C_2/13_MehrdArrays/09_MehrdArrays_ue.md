@@ -57,7 +57,7 @@ Erweiterung:  Man kann gegen den Computer spielen. Dabei kann der Computer zufä
 
 #### **Übung (Sudoku):**
 
-Schreibe ein Programm das ermittelt ob in einem $9\times 9$ Array die [Sudoku](http://de.wikipedia.org/wiki/Sudoku) Eigenschaften erfüllt sind.
+Schreibe ein Programm das ermittelt ob in einem $$9\times 9$$ Array die [Sudoku](http://de.wikipedia.org/wiki/Sudoku) Eigenschaften erfüllt sind.
 
 ---
 
