@@ -14,8 +14,8 @@ Code-Basis:
 
 ```java
 class DynamicArray {
-	// Versteckte Implementierungsdetails – nach Außen nicht sichtbar.
-	private int n = 0; // tatsächlich verwendete Elemente
+  // Versteckte Implementierungsdetails – nach Außen nicht sichtbar.
+  private int n = 0; // tatsächlich verwendete Elemente
   private String[] arr = new String[4];
 }
 ```
