@@ -1,7 +1,7 @@
 ---
 title: Dynamische Speicherverwaltung
 subtitle: Übungen
-tags: [assignment]
+tags: [assignment,2AHITS]
 ---
 
 #### Übung (Dynamisches Array aus int)
