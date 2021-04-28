@@ -43,20 +43,9 @@ class DynamicArray {
     //            alte Daten umkopieren, Referenz arr auf das neue Array setzen
   }
   
-  void add(String s, int n) {
-    // s an Index n einfügen
-    // Anleitung: ein neues um ein Element längeres Array anlegen, 
-    //            alte Daten umkopieren dabei Platz für das neue Element lassen,
-    //            Referenz arr auf das neue Array setzen
-  }
-  
   int count() {
     // Anzahl der Elemente
     return -1;
-  }
-  
-  void remove(int n) {
-    // Element an Index n entfernen
   }
   
   String get(int n) {
@@ -65,6 +54,17 @@ class DynamicArray {
   }
   void set(int n, String s) {
     // Element an Index n überschreiben
+  }
+  
+  void add(String s, int n) {
+    // s an Index n einfügen
+    // Anleitung: ein neues um ein Element längeres Array anlegen, 
+    //            alte Daten umkopieren dabei Platz für das neue Element lassen,
+    //            Referenz arr auf das neue Array setzen
+  }
+  
+  void remove(int n) {
+    // Element an Index n entfernen
   }
 }
 ```
