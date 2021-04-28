@@ -4,7 +4,7 @@ subtitle: Dynamic Array aus Strings Variante I
 tags: [assignment,3BHELS]
 ---
 
-Erstelle eine Klasse die die Funktionen eines dynamischen Arrays (ähnlich ArrayList) zur Verfügung stellt. Es soll ein Array aus Strings verwaltet werden.
+Erstelle eine Klasse die die Funktion eines dynamischen Arrays (ähnlich ArrayList) zur Verfügung stellt. Es soll ein Array aus Strings verwaltet werden.
 
 Implementierungsdetail: Das in der Klasse enthaltene String Array soll beim Hinzufügen um ein Element verlängert und beim entfernen um ein Element verkürzt werden. Dabei wird jeweils ein neues Array in der gewünschten Länge angelegt und die bestehenden Daten umkopiert.
 
