@@ -13,7 +13,7 @@ Code-Basis:
 ```java
 class DynamicArray {
   private String[] arr = new String[];
-	// das Array ist ein verstecktes Implementierungsdetail und daher nach
+  // das Array ist ein verstecktes Implementierungsdetail und daher nach
   // außen nicht sichtbar.
 }
 ```
