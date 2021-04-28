@@ -1,12 +1,17 @@
-# Telnet
+---
+title: Sniffen eines telnet passworts
+subtitle: Cybersecurity Lab
+---
 
-test
+
+
+## Telnet
 
 Aufzeichnen einer telnet Verbindung. Erkenntnis: Username und Passwort wird im Klartext übertragen.
 
 
 
-# Konfiguration
+## Konfiguration
 
 - Kali (telnet client und wireshark): 192.168.178.64
 - Debian (telnetd): 192.168.178.69
@@ -14,17 +19,22 @@ Aufzeichnen einer telnet Verbindung. Erkenntnis: Username und Passwort wird im K
 
 
 
-# Ip Adressen ermitteln
+## Ip Adressen ermitteln
 
 ```
+# Kali
 $ ifconfig
-$ ip addr show # debian
+
+# Debian
+$ ip addr show 
+
+# Windows
 > ipconfig
 ```
 
 
 
-# Installationen
+## Installationen
 
 Kein telnet client auf **Kali** installiert
 
@@ -73,14 +83,14 @@ Nun ist telnet auf das Debian Linux System möglich.
 
 
 
-# Windows 10
+## Windows 10
 
 Telnet muss aktiviert werden. Suchen nach "Features aktivieren" (https://www.heise.de/tipps-tricks/Windows-10-Telnet-Client-aktivieren-4569277.html). "Telnet-Client".
 telnet über die Kommandozeile starten.
 
 
 
-# Kali Linux
+## Kali Linux
 
 - In den VirtualBox Netzwerkeinstellungen – **Promiscuous Mode**=Allow VMs:
 
