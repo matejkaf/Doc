@@ -30,7 +30,7 @@ int main() {
 
 Nachteil: `fgets` schreibt `\n\0` ans Ende! Auch die weitere Alternative `getline` hat das gleiche Verhalten.
 
-Für den normalen Unterricht sollte daher die Verwendung von `scanf` Vorteilhafter sein.
+Für den normalen Unterricht sollte daher die Verwendung von `scanf` vorteilhafter sein.
 
 
 
