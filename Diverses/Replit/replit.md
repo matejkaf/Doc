@@ -52,7 +52,7 @@ Auf alle in einem Team erstellte REPLs hat man Zugriff und kann den Schülern so
 
 Im Code der Schüler können Kommentare eingefügt bzw. dieser gleich direkt (auch gemeinsam mit dem Schüler) editiert werden (Multiplayer Editor).
 
-Die REPLs bleiben gespeichert und können in Ordern organisiert werden.
+Die REPLs bleiben gespeichert und können in Ordnern organisiert werden.
 
 ![image-20210325183010065](fig/image-20210325183010065.png)
 

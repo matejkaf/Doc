@@ -16,11 +16,16 @@ Was kann man machen?
 - C# Mono
 - Python
 - Python WebServer / RESTful API
+- PHP
 - Bash, bzw. allgemeines Arbeiten mit Linux Shell
 - SQLite
 - nodeJS
 
 
+
+[REPLIT Homepage](https://replit.com)
+
+[REPLIT docs](https://docs.replit.com)
 
 
 
@@ -31,6 +36,7 @@ Was kann man machen?
 - Shell Programmierung
   - wget, openssl, python, ...
   - package nachinstallieren nicht möglich, allerdings download und selber compilieren geht (siehe Allegro)
+- Geht auch auf Tablet/Handy passabel
 
 
 
@@ -38,15 +44,15 @@ Was kann man machen?
 
 [[C/C++ in REPL](/Doc/C_1/01_C_tidbits)]
 
-[[Grafik mit Allegro](https://replit.com/@htlmatejka/Allegro)]
+[[REPL : Grafik mit Allegro](https://replit.com/@htlmatejka/Allegro)]
 
 
 
 ### Java
 
-Experimente mit AWT: [[REPL : JavaAWT](https://replit.com/@htlmatejka/JavaAWT)]
+Experimente mit AWT: [[REPL : JavaAWT](https://replit.com/@htlmatejka/JavaAWT)] verwendet [VNC](https://docs.replit.com/repls/vnc)
 
-Leider kein automatisches Hinzufügen von Imports
+NT: Leider kein automatisches Hinzufügen von Imports
 
 
 
