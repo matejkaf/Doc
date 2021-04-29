@@ -1,9 +1,12 @@
-# Interfaces
+---
+title: Interfaces
+tags: [lecture]
+---
 
-<div class="definition">
-Sind "kleine" abstrakte Klassen.
-D.h. enthalten abstrakte Methoden ohne Implementierung.
-</div>
+
+
+Sind "kleine" abstrakte Klassen. D.h. enthalten abstrakte Methoden ohne Implementierung.
+
 
 Eine Klasse kann **beliebig viele** Interfaces implementieren (aber nur von **einer** Klasse erben).
 
@@ -104,9 +107,9 @@ for (int i = 0; i < a.length-1; i++) {
 }
 ```
 
-<div class="uebung" caption="Sortieren">
+Übung (Sortieren)
+
 Implementiere das Min-Sort Verfahren zur Übung einmal für ein Array aus `int` Werten.
-</div>
 
 **Schritt 2: Klasse für Schüler** 
 
@@ -123,33 +126,36 @@ class Schueler  {
 ```
 
 
-<div class="uebung" caption="Schueler Array">
-Erstelle mit den Namen aus dem unsortierten Array `names` ein Array aus `Schueler` Objekten.
-Die Katalognummern werden erst später gesetzt.
+Übung (Schueler Array)
+
+Erstelle mit den Namen aus dem unsortierten Array `names` ein Array aus `Schueler` Objekten. Die Katalognummern werden erst später gesetzt.
 
 ```java
 Schueler[] schueler = new Schueler[names.length];
 // 2do: konkrete Objekte anlegen
 ```
-</div>
+
 
 **Schritt 3: Sortieren des Schueler Arrays**
 
-<div class="uebung" caption="Schüler sortieren">
+Übung (Schüler sortieren)
+
 Schreibe eine minSort Variante für das Array aus Schueler.
 
 - Hinweis: Mit `s1.compareTo(s2) < 0` wird geprüft ob der String `s1` alphabetisch vor `s2` kommt (d.h. "kleiner" ist).
-</div>
+
 
 **Schritt 4: isSmaller**
 
 Der Sortieralgorithmus kann ganz einfach so geändert werden, dass beliebige Objekte (und nicht nur Schueler) sortiert werden können.
 
-<div class="uebung" caption="isSmaller">
-Implementiere in der Klasse Schueler eine Methode `public boolean isSmaller(Schueler p)` für den Vergleich 2er Objekte und verwende diese in der Methode minSort.
-</div>
+Übung (isSmaller)
 
-<div class="uebung" caption="Interface">
+Implementiere in der Klasse Schueler eine Methode `public boolean isSmaller(Schueler p)` für den Vergleich 2er Objekte und verwende diese in der Methode minSort.
+
+
+Übung (Interface)
+
 Implementiere nun ein Interface für die Methode isSmaller.
 
 ```java
@@ -184,7 +190,7 @@ public static void minSort(Sortable[] a) { ... }
 ```
 
 Die minSort Methode kann nun für jedes Objekt das das Interface Sortable implementiert aufgerufen werden.
-</div>
+
 
 
 
@@ -193,19 +199,22 @@ Die minSort Methode kann nun für jedes Objekt das das Interface Sortable implem
 
 **Schritt 5: Sortieren**
 
-<div class="uebung" caption="Katalognummern">
+Übung (Katalognummern)
+
 Bringe das Array `schueler` in die richtige Reihenfolge und weise danach die Katalognummern zu.
-</div>
 
 Aus dem unsortierten Array:
 
+```
 [Gianni (0), Karlik (0), Pavla (0), Micki (0), Ephrem (0), Lucy (0), Noby (0), Viola (0), Rustie (0), Melvin (0), Karisa (0), Fremont (0), Nicolas (0), Terrel (0), Tybalt (0), Marv (0), Izak (0), Austen (0), Miguela (0)]
-
+```
 
 wird ein sortiertes Array mit zugewiesenen Katalognummern:
 
+```
 [Austen (1), Ephrem (2), Fremont (3), Gianni (4), Izak (5), Karisa (6), Karlik (7), Lucy (8), Marv (9), Melvin (10), Micki (11), Miguela (12), Nicolas (13), Noby (14), Pavla (15), Rustie (16), Terrel (17), Tybalt (18), Viola (19)]
-</div>
+```
+
 
 **Schritt 5: The chaos continues**
 
@@ -218,7 +227,8 @@ int[] points = {17,24,23,18,11,14,12,11,19,19,24,17,12,19,14,19,20,21,21};
 
 Bedeutet: Die Katalognummer 4 hat 17 Punkte, die Katalognummer 15 hat 24 Punkte usw..
 
-<div class="uebung" caption="Array Ergebnisse">
+Übung (Array Ergebnisse)
+
 Erstelle ein Array `ergebnisse` aus Objekten der Klasse `Testergebnis`
 
 ```java
@@ -227,21 +237,26 @@ class Testergebnis {
     int punkte;    
 }
 ```
-</div>
 
-<div class="uebung" caption="Sortieren der Ergebnisse">
+
+Übung (Sortieren der Ergebnisse)
+
 Sortiere das Array `ergebnisse` aufsteigend nach Katalognummern, indem du das Interface `Sortable` für die Klasse `Testergbnis` implementierst, dann kann die Methode `minSort` ohne Änderung verwendet werden.
 
 aus dem unsortierten Array
 
+```
 [4 : 17P, 15 : 24P, 8 : 23P, 19 : 18P, 14 : 11P, 3 : 14P, 17 : 12P, 18 : 11P, 5 : 19P, 1 : 19P, 13 : 24P, 11 : 17P, 9 : 12P, 16 : 19P, 6 : 14P, 10 : 19P, 12 : 20P, 7 : 21P, 2 : 21P]
+```
 
 wird ein sortiertes
 
+```
 [1 : 19P, 2 : 21P, 3 : 14P, 4 : 17P, 5 : 19P, 6 : 14P, 7 : 21P, 8 : 23P, 9 : 12P, 10 : 19P, 11 : 17P, 12 : 20P, 13 : 24P, 14 : 11P, 15 : 24P, 16 : 19P, 17 : 12P, 18 : 11P, 19 : 18P]
-</div>
+```
 
-<div class="uebung" caption="Ausgabe">
+Übung (Ausgabe)
+
 Gib nun Schüler und Testergebnisse so nebeneinander aus, dass die Ergebnisse konkreten Schülern zugeordnet werden können:
 
 ```
@@ -267,4 +282,3 @@ Nicolas (13)  -->  13 : 24P
   Viola (19)  -->  19 : 18P
 ============================================================
 ```
-</div>

@@ -1,5 +1,7 @@
-
-# Polymorphismus
+---
+title: Polymorphismus
+tags: [lecture]
+---
 
 Das Überschreiben von Methoden bewirkt ein sehr interessantes und nützliches Verhalten das man als **Polymorphismus** bezeichnet.
 
@@ -90,45 +92,36 @@ Shape[] shapes = {
 };
 ```
 
-<div class='uebung' caption='Shape'>
+Übung (Shape)
 Schreibe eine `static` Funktion mit dem Namen `sumArea` die die Summe aller Flächen berechnet und zurück gibt.
-</div>
 
-
-<div class='fact'>
 Was ist der Vorteil, dass `Shape` als Basisklasse zur Verfügung steht? Hinweis: Überlege was in der Methode `sumArea` geändert werden müsste wenn es eine zusätzliche Klasse `Rectangular` gibt?
-</div>
 
-<div class="definition">
 Dieses Verhalten nennt man **Polymorphie** und tritt immer dann auf wenn man eine Referenzvariable auf eine allgemeingültige Basisklasse (`Shape`) hat und diese auf ein Objekt einer davon abgeleiteten Klasse zeigt (`Circle`). Wird eine vererbte, überschriebene Methode (`area`) aufgerufen so wird die Methode aufgerufen die zum konkreten Objekt passt.
-</div>
 
-<div class='uebung' caption='Erweiterungen in Shape'>
-ergänze in `Shape` einen `private String` für den Namen des Grafik-Objekts. Definiere zusätzlich in `Shape` eine Methode `toString` für den Namen und die Fläche.
+Übung (Erweiterungen in Shape)
+
+Ergänze in `Shape` einen `private String` für den Namen des Grafik-Objekts. Definiere zusätzlich in `Shape` eine Methode `toString` für den Namen und die Fläche.
 Wie verhält sich das im Zusammenhang mit Polymorphie?
-</div>
 
-\pagebreak
 
 # Abstrakte Klassen
 
-<div class='uebung' caption='toString'>
+Übung (toString)
+
 Erstelle ein Objekt der Klasse `Shape` und rufe die `toString` Methode auf. Was passiert?
-</div>
 
 Manche Basisklassen bei Vererbung bestehen aus Variablen und Methoden die andere, davon abgeleitet Klassen gemeinsam haben ("gemeinsamer Faktor"). Häufig ist es aber so, dass konkrete Objekte von diesen Basisklassen keinen Sinn machen. 
 
-<div class="example">
 Beispiel:
 Ein Objekt der Klasse `Shape` hat keinen Namen (es weiß ja nicht ob es ein Kreis, Rechteck oder sonstwas ist) und kann keine Fläche berechnen.
-</div>
 
-<div class="definition">
+
 Klassen können als **abstrakt** definiert werden. Abstrakte Klassen sind wie normale Klassen, aber:
 
 - von abstrakten Klassen können **keine Objekt** angelegt werden,
 - abstrakte Klassen können **abstrakte Methoden** enthalten. Diese haben keine Implementierung.
-</div>
+
 
 Das Schlüsselwor `abstract` kann bei Klassen und Methoden angewendet werden:
 
@@ -138,15 +131,16 @@ public abstract class Abstract {
 }
 ```
 
-<div class='uebung' caption='Abstract'>
+Übung (Abstract)
+
 Ändere `Shape` in eine abstrakte Klasse.
-</div>
 
 
 
-# Beispiele - Tiere
 
-Ein Tier kann gewisse Laute von sich geben, z.B.\ ein Hund: "`Wuff"'.
+# Beispiele – Tiere
+
+Ein Tier kann gewisse Laute von sich geben, z.B. ein Hund: "`Wuff"'.
 
 Von einem Tier wissen wir dass es Laute von sich geben kann, aber noch nicht genau welche.
 
@@ -197,19 +191,21 @@ Miau
 
 Von der abstrakten Klasse Tier können zwar keine Objekte angelegt werden, aber die Verwendung als Referenzvariable (wie oben) ist zulässig und in manchen Fällen ziemlich praktisch.
 
-<div class='uebung' caption='Tier'>
+Übung (Tier)
+
 Füge ein weiteres Tier hinzu.
-</div>
 
 
-<div class='uebung' caption='Tier Array'>
+Übung (Tier Array)
+
 Lege ein Array aus unterschiedlichen Tieren an.
 Gib in **einer** Schleife alle Laute dieser Tiere aus.
-</div>
 
-<div class='uebung' caption='Getränke'>
-Schreibe ein Programm das unterschiedliche Getränke in einer ArrayList verwaltet.
+---
 
+Übung (Getränke)
+
+Schreibe ein Programm das unterschiedliche Getränke in einer `ArrayList` verwaltet.
 
 - Erstelle eine Basisklasse `Getraenk` mit den abstrakten Methoden
     - `String name()`
@@ -218,14 +214,14 @@ Schreibe ein Programm das unterschiedliche Getränke in einer ArrayList verwalte
 - Leite nun von `Getraenk` einige weitere Klassen ab (z.B. `Kaffee`, `Kakao`, `Tee`, usw.) und überschreibe jeweils die Methoden `name()` und `wirkung()`. Instanziere Objekte und rufe die `toString()` Methode zum Test auf.
 - Lege ein `ArrayList<Getraenk>` an und füge einige Getränke hinzu. Gib die Wirkung aller Getränke im Array aus (in einer Schleife).
 
-</div>
+---
 
 
- 
 
 # Übungsaufgabe
 
-<div class='uebung' caption='Grafikobjekte'>
+#### Übung (Grafikobjekte)
+
 Verwende **Processing** für diese Übung
 
 Es sollen unterschiedliche Grafik-Objekte (Kreise, Rechtecke) am Bildschirm animiert werden.
@@ -249,5 +245,3 @@ Erweiterungen:
 - Objekte ändern bei Kollision die Farbe
 - Objekte können abgeschossen werden
 - Rotierende Quadrate
-
-</div>

@@ -1,8 +1,7 @@
 ---
-title: Agile SW Entwicklung
+title: Agiles SW Projektmanagement
+tags: [lecture]
 ---
-
-# Agiles SW Projektmanagement
 
 Langjährige Erfahrung hat gezeigt, dass erfolgreiche SW Entwicklung **besondere Erfordernisse** an das Projektmanagement stellt.
 Unter dem Begriff "Agil" sind eine Menge von Ideen, Methoden und Praktiken zusammengefasst die sich **in der Praxis bewährt** haben.
@@ -62,6 +61,19 @@ Die 12 Punkte des **Agile Manifestos**
     2. Test first
 8. Express requirements through scenarios (user story)
 
+
+
+# Projekt–Erfolg
+
+Agile Projekte haben laut Chaos-Report eindeutig die größten Erfolgsaussichten (Abb. 2).
+
+<img src="fig/Wasserfall.jpeg" alt="Wasserfall" style="zoom:33%;" />
+
+AINO = Agile In Name Only
+
+Eigentlich müssten echte agile Prozesse also die Frage, ob sie den anfangs geplanten Umfang geliefert haben, stets verneinen. Sie liefern etwas anderes als das, was der Kunde ursprünglich wollte, und darin liegt ein Vorteil. Sie liefern Dinge, über die der Kunde am Anfang des Projekts noch nicht nachgedacht hat.
+
+aus iX 2021
 
 # Anforderungen
 

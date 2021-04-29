@@ -22,3 +22,10 @@ Arten:
 - Was jemand tut (Dynamische Biometrie - Sprachmuster, Handschrift, ...)
 
 Multi-Faktor- Athentifizierung wenn mehr als eine Art.
+
+
+
+## Investigate:
+
+- [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) (das am wenigsten privilegierte Modell)
+- Unterschied zu Zero-Trust?

@@ -1,16 +1,20 @@
+---
+title: Vererbung
+tags: [l]
+---
+
+
 
 # Allgemein
 
-<div class="definition">
- Bei der **Vererbung** wird eine neue Klasse angelegt die den Inhalt einer bestehenden Klasse enthält.
+Bei der **Vererbung** wird eine neue Klasse angelegt die den Inhalt einer bestehenden Klasse enthält.
+
 
 Vorteile:
 
 - Wiederverwendung von bestehendem Code.
 - Software besser strukturiert.
 - Arbeitsersparnis.
-
-</div>
 
 Beispiel
 
@@ -29,15 +33,12 @@ s.name = "mayr"; // geerbt
 s.knr = 12;
 ```
 
-<div class="fact">
-
 Man sagt:
 
 - Die Klasse `Schueler` ist von der Klasse `Person` **abgeleitet**
 - `Person` ist die **Basisklasse**
 - Die Klasse `Schueler` **erbt** von `Person`
 
-</div>
 
 
 # Vererbung von Methoden
@@ -98,11 +99,9 @@ public class Schueler extends Person {
     }
 }
 ```
-<div class="definition">
 
 `toString` bekommt in der Klasse `Schueler` eine neue Bedeutung, daher **Überschreiben**.
 
-</div>
 
 Implementierung der Basisklasse aufrufen:
 Oft macht es Sinn das was die Basisklasse schon kann, in der abgeleiteten Klasse wiederzuverwenden. Dies geht mit dem Schlüsselwort `super`.
@@ -116,9 +115,7 @@ public class Schueler extends Person {
 }
 ```
 
-<div class='uebung' caption='Übungsblatt'>
 Übung 1 und Übung 2 vom Übungsblatt.
-</div>
 
 
 # Vererbungshierarchien
@@ -134,13 +131,10 @@ public class Schueler extends Person {...}
 public class OeffArb extends Schueler {...}
 ```
 
-<div class='uebung' caption='Übungsblatt'>
 Erweitere Übung 1 vom Übungsblatt.
 Lege eine Klasse für Öffentlichkeitsarbeiter an.
-</div>
 
 
-<div class='uebung' caption='Skizze'>
 Zeichne eine Klassenhierarchie aus 
 `Person`,
 `Schueler`,
@@ -149,7 +143,6 @@ Zeichne eine Klassenhierarchie aus
 `Jahrling`,
 `Maturant`,
 `Walter`.
-</div>
 
 # Konstruktoren
 
@@ -183,19 +176,14 @@ public class B extends A {
 }
 ```
 
-<div class='fact'>
 `super` wird benötigt wenn ein Konstruktor mit Parameter aufgerufen werden soll. Siehe nachfolgende Aufgabe.
-</div>
 
+Übung (Erweiterung)
 
-<div class='uebung' caption='Erweiterung'>
 Erweitere die Klasse A um eine private int Instanzvariable.
 Ergänze Konstruktoren (in beiden Klassen) mit einem Parameter um diese Instanzvariable auf einen Startwert setzen zu können.
-</div>
 
-<div class='uebung' caption='Übungsblatt'>
 Übung 3 und 4 vom Übungsblatt.
-</div>
 
 
 # Die Klasse Object
@@ -203,13 +191,10 @@ Ergänze Konstruktoren (in beiden Klassen) mit einem Parameter um diese Instanzv
 Eigentlich kann in Java **keine Klasse ohne Vererbung** angelegt werden.
 Wird das `extends` Schlüsselwort weggelassen, so erbt die Klasse automatisch von der Standard Java Klasse mit dem Namen `Object`.
 
-<div class='fact'>
 Dieser Mechanismus sorgt dafür, dass bestimmte Methoden von allen Klassen immer unterstützt werden.
 Diese Methoden sind in der Klasse `Object` vorgegeben, die Klasse `Object` ist in der Vererbungshierarchie ganz oben, sie ist die gemeinsame Basisklasse für alle anderen Klassen.
-</div>
 
-<div class='uebung' caption='Netbeans Experiment'>
-Verwende Netbeans um herauszufinden welche Methoden die Klasse `Object` unterstützt.
+Übung (Experiment)
+
+Verwende IntelliSense um herauszufinden welche Methoden die Klasse `Object` unterstützt.
 Welche Methoden sind schon bekannt?
-</div>
-

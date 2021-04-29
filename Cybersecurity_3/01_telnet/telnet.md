@@ -90,7 +90,7 @@ telnet über die Kommandozeile starten.
 
 
 
-## Kali Linux
+## Kali Linux – Wireshark
 
 - In den VirtualBox Netzwerkeinstellungen – **Promiscuous Mode**=Allow VMs:
 
@@ -98,13 +98,13 @@ telnet über die Kommandozeile starten.
 
 
 - Wireshark über die Kommandozeile starten `sudo wireshark`.
-- Filter ip.addr == 192.168.178.69
+- Display Filter ip.addr == 192.168.178.69
 - `telnet 192.168.178.69`
   - telnet muss auch auf Kali Linux gestartet werden. Sonst sieht man die Pakete nicht.
 - Passwort wird in einzelnen Buchstaben übertragen.
 - Analyze>Follow>TCP Stream
 
-![image-20201230174535381](fig/image-20201230174535381.png)
+<img src="fig/image-20201230174535381.png" alt="image-20201230174535381" style="zoom:40%;" />
 
 
 

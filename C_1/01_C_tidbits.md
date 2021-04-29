@@ -98,7 +98,7 @@ int main() {
 
 ### C
 
-Automatisch generiereter REPL Source Code
+Automatisch generierter REPL Source Code
 
 ```C
 #include <stdio.h>
@@ -119,7 +119,7 @@ clang-7 -pthread -lm -o main main.c
 
 ### C++
 
-Automatisch generiereter REPL Source Code
+Automatisch generierter REPL Source Code
 
 ```c++
 #include <iostream>
