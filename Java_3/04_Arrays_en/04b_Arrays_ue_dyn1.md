@@ -30,7 +30,7 @@ Implementiere folgende Methoden:
 
 ```java
 class DynamicArray {
-  private String[] arr = new String[];
+  private String[] arr = new String[0];
   
   public String toString() {
     // String in der Form [eins,zwei,drei]
