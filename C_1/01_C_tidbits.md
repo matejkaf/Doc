@@ -137,7 +137,7 @@ clang++-7 -pthread -std=c++17 -o main main.cpp
 
 
 
-### Anmerkungen
+### Anmerkungen zu C vs. C++
 
 C "Hello World" ist für Einsteiger etwas komplexer, weil gleich sehr viele unbekannte Schlüsselwörter vorkommen. Das C++ kann ohne Änderung der `includes` auf printf umgeschrieben werden:
 

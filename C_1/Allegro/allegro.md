@@ -13,6 +13,8 @@ subtitle: Game Programing Library
 
 ## Installieren
 
+Getestet in REPLIT
+
 ```bash
 echo "installing Allegro graphics library"
 wget https://github.com/liballeg/allegro5/releases/download/5.2.7.0/allegro-5.2.7.0.tar.gz
@@ -194,6 +196,7 @@ int main()
 
 mit Erweiterungen:
 
+- Grafik Ausgabe für 5 Sekunden
 - Tastatur Abfrage
 - Maus Koordinaten und Button
 
@@ -201,6 +204,7 @@ mit Erweiterungen:
 #include <stdio.h>
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_font.h>
+#include <allegro5/allegro_primitives.h>
 
 int main()
 {
@@ -255,6 +259,7 @@ int main()
   al_register_event_source(queue, al_get_timer_event_source(timer));
   al_register_event_source(queue, al_get_mouse_event_source());
 
+
   bool done = false;
   bool redraw = true;
   ALLEGRO_EVENT event;
@@ -262,6 +267,16 @@ int main()
   float text_y=10;
 
   al_start_timer(timer);
+
+  al_clear_to_color(al_map_rgb(0, 0, 0));
+  al_draw_line(10, 10, 100, 120, al_map_rgb(255,255,255), 4.0);
+  al_draw_filled_rectangle(100, 30, 150, 100, al_map_rgb(255,0,0));
+  al_draw_filled_circle(125, 65, 20, al_map_rgb(0,255,0));
+  al_flip_display();
+  printf("In 5sek gehts weiter\n");
+  al_rest(5.0);
+
+
 
   while(1)
   {
@@ -311,7 +326,7 @@ int main()
     if(redraw && al_is_event_queue_empty(queue))
     {
       al_clear_to_color(al_map_rgb(0, 0, 0));
-      al_draw_text(font, al_map_rgb(255, 255, 255), text_x, text_y, 0, "Hello world!");
+      al_draw_text(font, al_map_rgb(255, 255, 255), text_x, text_y, 0, "Click anywhere!");
       al_flip_display();
       redraw = false;
     }

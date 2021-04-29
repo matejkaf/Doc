@@ -6,6 +6,8 @@ title: REPLIT
 
 ## REPLIT.com
 
+Online Entwicklungsumgebung mit Editor und einer virtuellen Linux Maschine.
+
 Was kann man machen?
 
 - C/C++
@@ -13,8 +15,10 @@ Was kann man machen?
 - Java
 - C# Mono
 - Python
+- Python WebServer / RESTful API
 - Bash, bzw. allgemeines Arbeiten mit Linux Shell
 - SQLite
+- nodeJS
 
 
 
@@ -23,22 +27,24 @@ Was kann man machen?
 ## Details
 
 - Linux virtuelle Maschine
+- Editor auf Basis von VisualStudio Code mit IntelliSense
 - Shell Programmierung
-  - wget, openssl, python
+  - wget, openssl, python, ...
+  - package nachinstallieren nicht möglich, allerdings download und selber compilieren geht (siehe Allegro)
 
 
 
 ### C/C++ Programmieren
 
-[C/C++ in REPL](/Doc/C_1/01_C_tidbits)
+[[C/C++ in REPL](/Doc/C_1/01_C_tidbits)]
 
-Grafik mit Allegro
+[[Grafik mit Allegro](https://replit.com/@htlmatejka/Allegro)]
 
 
 
 ### Java
 
-Experimente mit AWT: [REPL : JavaAWT](https://replit.com/@htlmatejka/JavaAWT)
+Experimente mit AWT: [[REPL : JavaAWT](https://replit.com/@htlmatejka/JavaAWT)]
 
 Leider kein automatisches Hinzufügen von Imports
 
@@ -89,3 +95,8 @@ app.run(debug=True, host='0.0.0.0')
 
 Zeichnen mit [excalidraw](https://excalidraw.com), auch im Multiplayer Mode. Dazu eine Datei mit der Endung `.draw` erstellen.
 
+
+
+## Markdown Files
+
+Files mit der Endung `md` werden als Markdown Files interpretiert und es öffnet sich eine eigene Vorschau.
