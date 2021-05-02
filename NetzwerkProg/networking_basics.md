@@ -1,4 +1,4 @@
-# Default Gateway / Routing
+## Default Gateway / Routing
 
 Beispiel mit mehrern Routern und den Routing-Tabellen:
 
@@ -6,7 +6,7 @@ Beispiel mit mehrern Routern und den Routing-Tabellen:
 
 
 
-# Private IP addresses
+## Private IP addresses
 
 These are the private address blocks:
 
@@ -15,3 +15,12 @@ These are the private address blocks:
 
 - 192.168.0.0 /16 or 192.168.0.0 to 192.168.255.255
 
+
+
+## CIDR Notation
+
+Alternativ zu netmask
+
+192.168.100.0 /24 entspricht 255.255.255.0
+
+Zahl=Bits für Netzwerk

@@ -1,10 +1,10 @@
 ---
 title: Arrays
 subtitle: Übungen Grundlagen
-tags: [assignment,arrays,1CHELS]
+tags: [assignment,arrays,1CHELS,1AHITS]
 ---
 
-#### **Übung (Zahlenfolgen):**
+#### Übung (Zahlenfolgen)
 
 Schreibe ein Programm das mit Hilfe je einer Schleife alle Elemente eines Arrays (`int a[30]`) mit folgenden Werten füllt:
 
@@ -38,7 +38,7 @@ for(int i=0; ...)
 
 ---
 
-#### **Übung (Verschiedene Ausgaben):**
+#### Übung (Verschiedene Ausgaben)
 
 Gegeben ist das Array: `int a[]={5,2,9,4,1,7,0,8,3,6}`.
  Implementiere folgende Ausgaben:
@@ -54,7 +54,7 @@ Gegeben ist das Array: `int a[]={5,2,9,4,1,7,0,8,3,6}`.
 
 ---
 
-#### **Übung (Rotieren):**
+#### Übung (Rotieren)
 
 Lege in einem Programm ein Array aus 7 Zahlen an und setze auf beliebige Werte.
 Programmiere mit Hilfe je einer Schleife:
@@ -68,12 +68,11 @@ Das letzte Element fällt raus und soll an die erste Stelle gesetzt werden.\\
 Beispiel: `1,2,3,4,5,6,7` ⟶ `7,1,2,3,4,5,6`
 
 ---
-#### **Übung (Nur einmal):**
+#### Übung (Nur einmal)
 
 Gib ein Array aus Zahlen so aus, dass jede Zahl in der Ausgabe nur einmal vorkommt.
 
 Beispiel: `int a[]={3,2,3,5,1,2,3,5,7}`
 
 Ausgabe: `3,2,5,1,7`
-
 

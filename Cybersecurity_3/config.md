@@ -22,11 +22,23 @@ subtitle: Cybersecurity Lab
   - root/toor
   - eric/debiantest
 
+- Metasploitable
+
+  - msfadmin/msfadmin
+
   
+
+
+
+
 
 ## Netzwerk-Adressen
 
 
+
+Fritz.Box:
+
+- Metasploitable: 192.168.178.71
 
 
 
