@@ -45,8 +45,8 @@ Gegeben ist das Array: `int a[]={5,2,9,4,1,7,0,8,3,6}`.
 
 - Immer nur jedes zweite Array-Element ausgeben. D.h. alle Zahlen an ungeraden Indizes.
 - Nur die geraden Zahlen im Array ausgeben.
-- Die Anzahl der ungeraden Zahlen ermitteln
-- Die Summe der ungeraden Zahlen ermitteln
+- Die Anzahl der ungeraden Zahlen ermitteln und ausgeben.
+- Die Summe der ungeraden Zahlen ermitteln und ausgeben.
 - Für jedes Element die Differenz zum ersten Array-Element ausgeben.
 - Für jedes Element die Differenz zum letzten Array-Element ausgeben.
 - Immer die Differenz zum Vorgänger ausgeben.
