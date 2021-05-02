@@ -48,6 +48,16 @@ Code
       5 = source route failed.
 ```
 
+#### Mögliche (häufige) Situationen
+
+```
+Alice --> Router A --> Router B --> Web Server
+```
+
+- Net Unreachable: Router A findet keine Route zum Router B. Router A schickt ICMP type 3 code 0 an Alice.
+- Host Unreachable: Router B empfängt das Paket, bekommt aber kein ARP Reply vom Web Server weil dieser "down" ist. Router B schickt ICMP type 3 code 1 an Alice.
+- Port unreachable: Bei UDP – es ist keine Anwendung an den Port gebunden. Bei TCP anders: der Versuch mit einem **geschlossenen Port** eine TCP Verbindung aufzubauen wird vom Server durch ein TCP RST beendet – kein ICM destination unreachable type 3. [[wikipedia](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol#Destination_unreachable)]
+
 
 
 ### Time Exceeded (Type=11)

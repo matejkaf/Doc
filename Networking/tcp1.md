@@ -3,7 +3,7 @@ title: TCP
 subtitle: Grundlegende Begriffe und Funktionen
 ---
 
-**TCP** (Transmission Control Protocol) ist das am meisten verwendete Protokoll zum Datentransfer in Netzwerken.
+**TCP** (Transmission Control Protocol, [RFC 793 - Transmission Control Protocol](https://tools.ietf.org/html/rfc793)) ist das am meisten verwendete Protokoll zum Datentransfer in Netzwerken.
 
 Es bietet einen **verbindungsorientierten**, **gesicherten Datenstrom**. Gehen Daten am Weg verloren oder ändert sich die Reihenfolge sorgt TCP für eine Korrektur.
 
@@ -42,4 +42,6 @@ PORT     STATE SERVICE
 6000/tcp open  X11
 8009/tcp open  ajp13
 ```
+
+
 

@@ -681,3 +681,55 @@ GUI Frontend. Wird nicht mehr gewartet, daher in Kali Linux nicht mehr enthalten
 
 
 
+
+
+## SYN-Scan
+
+Quelle: [TCP 3-way handshake and port scanning](https://www.coengoedegebure.com/tcp-3-way-handshake-port-scanning/)
+
+SYN-scan is the default for Nmap port scans and is often referred to as half-open scanning, because you don't open a full TCP connection. You send a SYN packet, as if you are going to open a real connection and then wait for a response.
+
+Three possible outcomes for a port can be expected and in my lab environment I configured the Windows 7 server to respond in each of these ways. Let's check what the Nmap output looked like:
+
+![nmap_scan](fig/nmap_scan.png)
+
+The `-sS` parameter performs a SYN-scan and using the `-p` parameter, you can specify the ports to be scanned. In my lab, I had ports 22, 80 and 139 setup specially, so those are the ones I scanned.
+
+Inspecting the result in the image above, we can see that port 22 was closed, port 80 was open and port 139 was filtered. Let's see what this means and what the handshake and network traffic look like for each of these states.
+
+### Open
+
+Port 80 was found *open*. This means the server would be able to complete the full 3-way handshake for this port and allow incoming connections had we actually completed it. From a server-side that means it would reply with a SYN-ACK. If we wanted to make a connection, we should have replied with an ACK. However, doing a port scan, we're not aiming to make the full 3-way handshake so we reply with a RESET instead:
+
+![nmap_open](fig/nmap_open.png)
+
+The network traffic for this situation looks as follows:
+
+![synscan_open](fig/synscan_open.png)
+
+As we can see, the SYN and SYN-ACK are followed by a RST to the server.
+
+
+
+### Closed
+
+Nmap discovered that port 22 was *closed*. In this case, the SYN packet sent by the client was returned with a packet where both RESET and ACK flags are set, indicating the server was not listening on port 22 :
+
+![nmap_closed](fig/nmap_closed.png)
+
+Also in the network traffic we can clearly see the SYN was followed by a RST from the server:
+
+![synscan_closed](fig/synscan_closed.png)
+
+### Filtered
+
+Nmap will attempt to resend the SYN-packet if no response is received. If after several retransmissions no response is received, the port is marked as *filtered*.
+
+![nmap_filtered](fig/nmap_filtered.png)
+
+This can also be seen when inspecting the network traffic for this situation:
+
+![synscan_filtered](fig/synscan_filtered.png)
+
+Ports marked as filtered are typically behind a firewall. Even closed ports behind a firewall may be marked as filtered. Another situation in which a port is marked as filtered, is when an [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) unreachable error (type 3, code 0, 1, 2, 3, 9, 10, or 13) is received in response.
+

@@ -1,6 +1,5 @@
 ---
 title: Netwerksicherheit
-cmds: ['md_html.bash']
 ---
 
 
