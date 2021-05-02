@@ -22,7 +22,8 @@ Wird gerne in Filmen verwendet wenn es um Hacking geht ([[Nmap In The Movies](ht
 Eigene IP Adresse und Subnetz-Maske ermitteln
 
 ```bash
-$ ifconfig | grep inet                                                   inet 192.168.178.64  netmask 255.255.255.0  broadcast 192.168.178.255
+$ ifconfig | grep inet
+inet 192.168.178.64  netmask 255.255.255.0  broadcast 192.168.178.255
 ...
 ```
 
@@ -35,20 +36,20 @@ $ sudo -i
 
 
 
-## Host Discovery
+## Allgemeines
 
-Es geht darum herauszufinden welche Hosts in einem Netzwerk aktiv sind.
+nmap arbeitet in 2 Stufen die nacheinander ablaufen:
 
-Default Scan eines ganzen Subnets:
+- Host Discovery (auch Ping Scan)
+- Port Scan der aktiven Hosts
+
+Scan eines ganzen Subnets:
 
 ```bash
 $ nmap 192.168.178.0/24
 ```
 
-- Führt einen PING Scan durch um herauszufinden welche Hosts aktiv sind.
-- Als Aktiv erkannte Systeme werden einem standard Port Scan unterzogen.
-
-Das Ergebnis ist eine Liste aller gefundenen Hosts und für jeden Host die offenen Ports
+Das Ergebnis ist eine Liste aller aktiven Hosts und für jeden Host die offenen Ports
 
 Schalter `-v`: Verbose, man kann mitschauen was `nmap` macht
 
@@ -63,33 +64,6 @@ Schalter `-v`: Verbose, man kann mitschauen was `nmap` macht
 - Wenn der nmap Host im gleichen Sub-Net ist werden z.B. ausschließlich ARP Requests versandt, weil jeder Host auf eine solche Anfrage antwortet. 
 
 Option: `-sn` ... Port Scan wird unterbunden, es wird ausschließlich Host Discovery ausgeführt.
-
-```bash
-$ nmap -sn 192.168.178.0/24   
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-04-30 09:50 EDT
-Nmap scan report for fritz.box (192.168.178.1)
-Host is up (0.0023s latency).
-Nmap scan report for Ventress.fritz.box (192.168.178.21)
-Host is up (0.0043s latency).
-Nmap scan report for Beoplay-M3-28720449.fritz.box (192.168.178.22)
-Host is up (0.011s latency).
-Nmap scan report for Beoplay-M5-28186652.fritz.box (192.168.178.23)
-Host is up (0.021s latency).
-Nmap scan report for Franzs-iMac.fritz.box (192.168.178.27)
-Host is up (0.00061s latency).
-Nmap scan report for fritz.repeater (192.168.178.40)
-Host is up (0.0033s latency).
-Nmap scan report for kali.fritz.box (192.168.178.64)
-Host is up (0.000076s latency).
-Nmap scan report for FranzM1.fritz.box (192.168.178.65)
-Host is up (0.019s latency).
-Nmap done: 256 IP addresses (8 hosts up) scanned in 2.44 seconds
-
-# Im Verbose Mode sieht man, dass nmap alle 255 Hosts durchprobiert
-$ nmap -sn -v 192.168.178.0/24
-```
-
-Ausführen als root gibt mehr Möglichkeiten beim Scan und es werden mehr Informationen gesammelt, z.B. die MAC Adressen:
 
 ```bash
 $ sudo nmap -sn 192.168.178.0/24
@@ -109,7 +83,13 @@ MAC Address: AC:89:95:F5:AA:91 (AzureWave Technology)
 ...
 ```
 
-ARP Ping Scan wird nur ausgeführt wenn als root gestartet. Es scheint generell eine gute Idee zu sein nmap immer als root zu starten – z.B. aus der root shell.
+Im Verbose Mode sieht man, dass nmap alle 255 Hosts durchprobiert:
+
+```bash
+$ nmap -sn -v 192.168.178.0/24
+```
+
+
 
 #### Ping Scan Optionen
 
@@ -447,13 +427,190 @@ $ nmap -f -f
 $ nmap -S <Absender IP>
 ```
 
-Ablenkungsmanöver der keine Antwort empfangen werden kann.
+Ablenkungsmanöver – da keine Antwort empfangen werden kann.
 
 
 
 #### Verlangsamen des Scans
 
-2do
+```bash
+$ nmap -T sneaky
+```
+
+Vermeidet, dass IDS und IPS Systeme den Scan erkennen weil die einzelnen Pakete zeitlich weit auseinanderliegen.
+
+
+
+## Ausgabe Optionen
+
+Im Textformat in Datei schreiben:
+
+```bash
+$ nmap -oN nmap-results.txt 192.168.178.71
+```
+
+Grepable Output (`-oG`)
+
+```bash
+$ nmap -oG nmap-results.grep 192.168.178.71
+```
+
+Ausgabe in einem durch Linux Tools (grep, cut, ...) lesbaren Format. Jeder Host in einer Zeile, Felder durch `'\t'` getrennt, (siehe [Grepable Output (-oG)](https://nmap.org/book/output-formats-grepable-output.html))
+
+
+Als XML Datei (empfohlen):
+
+```bash
+$ nmap -oX nmap-result.xml -sV -O --webxml 192.168.178.71
+#
+$ firefox nmap-result.xml
+```
+
+`--webxml` wenn man sich die Datei im Browser anzeigen lassen will (stellt xsl richtig).
+
+
+
+## NMAP Scripting Engine (NSE)
+
+Erweiterungen von nmap in Lua Scripts.
+
+In `/usr/share/nmap/scripts`
+
+Eine Auswahl besonders nützlicher Skripte ausführen:
+
+```bash
+$ nmap -sC -F
+
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-05-02 05:29 EDT
+Nmap scan report for 192.168.178.71
+Host is up (0.00092s latency).
+Not shown: 82 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.178.64
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh
+| ssh-hostkey: 
+|   1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)
+|_  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)
+23/tcp   open  telnet
+25/tcp   open  smtp
+|_smtp-commands: metasploitable.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+|_ssl-date: 2021-05-01T12:28:18+00:00; -21h01m36s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|_    SSL2_RC4_128_EXPORT40_WITH_MD5
+53/tcp   open  domain
+| dns-nsid: 
+|_  bind.version: 9.4.2
+80/tcp   open  http
+|_http-title: Metasploitable2 - Linux
+111/tcp  open  rpcbind
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/udp   nfs
+|   100005  1,2,3      35315/udp   mountd
+|   100005  1,2,3      47436/tcp   mountd
+|   100021  1,3,4      33844/tcp   nlockmgr
+|   100021  1,3,4      52127/udp   nlockmgr
+|   100024  1          40012/tcp   status
+|_  100024  1          53330/udp   status
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+513/tcp  open  login
+514/tcp  open  shell
+2049/tcp open  nfs
+2121/tcp open  ccproxy-ftp
+3306/tcp open  mysql
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.0.51a-3ubuntu5
+|   Thread ID: 15
+|   Capabilities flags: 43564
+|   Some Capabilities: SupportsTransactions, SupportsCompression, LongColumnFlag, Support41Auth, Speaks41ProtocolNew, SwitchToSSLAfterHandshake, ConnectWithDatabase
+|   Status: Autocommit
+|_  Salt: y-sz0z8E3nR08h&!o0>(
+5432/tcp open  postgresql
+|_ssl-date: 2021-05-01T12:28:00+00:00; -21h01m36s from scanner time.
+5900/tcp open  vnc
+| vnc-info: 
+|   Protocol version: 3.3
+|   Security types: 
+|_    VNC Authentication (2)
+6000/tcp open  X11
+8009/tcp open  ajp13
+|_ajp-methods: Failed to get a valid response for the OPTION request
+MAC Address: 08:00:27:04:0A:09 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+|_clock-skew: mean: -20h01m35s, deviation: 2h00m00s, median: -21h01m36s
+|_nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.20-Debian)
+|   Computer name: metasploitable
+|   NetBIOS computer name: 
+|   Domain name: localdomain
+|   FQDN: metasploitable.localdomain
+|_  System time: 2021-05-01T08:27:59-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Nmap done: 1 IP address (1 host up) scanned in 46.75 seconds
+```
+
+`-F` nur die 100 wichtigsten Ports. Dauert ein wenig länger wegen der Skript-Ausführung.
+
+Einzelnes Starten von Skripts:
+
+```bash
+$ nmap --script http-title,mysql-info
+```
+
+Die Skripte sind eine Fundgrube an Informationen. [Liste der Skripte](https://nmap.org/nsedoc/)
+
+Die erhaltenen Informationen können Hinweise auf mögliche Schwachstellen bietet sind allerdings kein Vulnerability-Scanning.
+
+
+
+## Best Practice
+
+Die `-A` Option beinhaltet:  `-sV` Dienst- und Versionerkennung, `-O` Betriebssystemerkennung, `-sC` Standard Skripte und traceroute und einige Timer Optimierungen.
+
+Durchführen eines ersten Scans:
+
+```bash
+$ wget -A -T4 -F -v <Ziel>
+```
+
+`-T4` ... Moderate Beschleunigung des Scans
+
+`-F` ... 100 wichtigste Port
+
+`-v` ... Verbose
 
 
 
@@ -474,10 +631,6 @@ $ nmap scanme.nmap.org
 
 
 
-`-v` ... Verbose Mode
-
-
-
 HOST DISCOVERY:
 
   `-sL`: List Scan - simply list targets to scan
@@ -486,14 +639,16 @@ HOST DISCOVERY:
   `-PS/PA/PU/PY[portlist]`: TCP SYN/ACK, UDP or SCTP discovery to given ports
   `-PE/PP/PM`: ICMP echo, timestamp, and netmask request discovery probes
 
-
-
 SCAN TECHNIQUES:
   `-sS/sT/sA/sW/sM`: TCP SYN/Connect()/ACK/Window/Maimon scans
   `-sU`: UDP Scan
   `-sN/sF/sX`: TCP Null, FIN, and Xmas scans
 
+SERVICE/VERSION DETECTION:
+  `-sV: Probe open ports to determine service/version info
 
+OS DETECTION:
+  `-O`: Enable OS detection
 
 PORT SPECIFICATION AND SCAN ORDER:
   `-p <port ranges>`: Only scan specified ports
@@ -502,13 +657,21 @@ PORT SPECIFICATION AND SCAN ORDER:
   `-F`: Fast mode - Scan fewer ports than the default scan
   `-p-`: scan all Ports
 
-
+TIMING AND PERFORMANCE:
+  `-T<0-5>`: Set timing template (higher is faster), 3=Standard
+  `-T paranoid|sneaky|polite|normal|aggressive|insane`: Set a timing template
 
 OUTPUT:
 
 `--reason`: Display the reason a port is in a particular state
 
+`-v` ... Verbose Mode
 
+
+
+## Zenmap
+
+GUI Frontend. Wird nicht mehr gewartet, daher in Kali Linux nicht mehr enthalten.
 
 
 

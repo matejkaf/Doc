@@ -7,6 +7,8 @@ subtitle: Grundlegende Begriffe und Funktionen
 
 Es bietet einen **verbindungsorientierten**, **gesicherten Datenstrom**. Gehen Daten am Weg verloren oder ändert sich die Reihenfolge sorgt TCP für eine Korrektur.
 
+TCP ist ein Layer 4 **Transport Layer** Protokoll. TCP PDU's nennt man **Segmente** diese werden in IP Paketen transportiert, und diese wiederum in Ethernet Frames.
+
 Geräte die in einem Netzwerk per TCP erreichbar sind werden **Host** genannt. Anwendungen auf diesen Hosts binden sich zu **Ports**. Jeder Host hat die Ports 1–65535 (**Portnummern**).
 
 Jeder Host hat eine eindeutige **IP Adresse**. Eine IP Adresse ist ein 32 Bit Wert, eine Portnummer hat 16 Bit.
