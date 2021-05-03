@@ -26,12 +26,12 @@ int a[30];
 ////////////////////////////////////////////
 for(...)
 {
-	// 1, 2, 3, 4, ..., 29, 30 ins Array schreiben
+  // 1, 2, 3, 4, ..., 29, 30 ins Array schreiben
 }
 for(int i=0; i<30; i++)
 {
-	// Ausgabe für Beispiel (a)
-	printf("%d, ", a[i]);
+  // Ausgabe für Beispiel (a)
+  printf("%d, ", a[i]);
 }
 printf("\n");
 
@@ -44,8 +44,8 @@ printf("\n");
 
 for(int i=0; i<30; i++)
 {
-	// Ausgabe für Beispiel (b)
-	printf("%d, ", a[i]);
+  // Ausgabe für Beispiel (b)
+  printf("%d, ", a[i]);
 }
 printf("\n");
 
@@ -58,8 +58,8 @@ printf("\n");
 
 for(int i=0; i<30; i++)
 {
-	// Ausgabe für Beispiel (c)
-	printf("%d, ", a[i]);
+  // Ausgabe für Beispiel (c)
+  printf("%d, ", a[i]);
 }
 printf("\n");
 
@@ -72,8 +72,8 @@ printf("\n");
 
 for(int i=0; i<30; i++)
 {
-	// Ausgabe für Beispiel (d)
-	printf("%d, ", a[i]);
+  // Ausgabe für Beispiel (d)
+  printf("%d, ", a[i]);
 }
 printf("\n");
 
