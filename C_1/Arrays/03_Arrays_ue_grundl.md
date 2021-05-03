@@ -13,25 +13,71 @@ Schreibe ein Programm das mit Hilfe je einer Schleife alle Elemente eines Arrays
 - 1, 3, 5, 7, ...
 - 0, 1, 3, 6, 10, 15, 21, ...
 
-Die Werte sollen genau in dieser Reihenfolge im Array stehen.
-Die Ausgabe des Arrays dient zur Kontrolle.
+Die Werte sollen genau in dieser Reihenfolge im Array stehen. Die Ausgabe des Arrays dient zur Kontrolle.
 
 
 Hinweis: Um Fehler zu vermeiden ist es wichtig, dass die **Ausgabe in einer eigenen Schleife** geschieht.
 ```c
 int a[30];
-for(int i=0; ...)
+
+
+////////////////////////////////////////////
+// Beispiel (a)
+////////////////////////////////////////////
+for(...)
 {
-	// Beispiel (a)
-	// Schleife für Array Initialisierung
+	// 1, 2, 3, 4, ..., 29, 30 ins Array schreiben
 }
-for(int i=0; ...)
+for(int i=0; i<30; i++)
 {
 	// Ausgabe für Beispiel (a)
 	printf("%d, ", a[i]);
 }
-// Hier weiter mit Beispiel (b), usw.
-// ...
+printf("\n");
+
+
+////////////////////////////////////////////
+// Beispiel (b)
+////////////////////////////////////////////
+
+// 30, 29, 28, ..., 2, 1 ins Array schreiben
+
+for(int i=0; i<30; i++)
+{
+	// Ausgabe für Beispiel (b)
+	printf("%d, ", a[i]);
+}
+printf("\n");
+
+
+////////////////////////////////////////////
+// Beispiel (c)
+////////////////////////////////////////////
+
+// 1, 3, 5, 7, ...  ins Array schreiben
+
+for(int i=0; i<30; i++)
+{
+	// Ausgabe für Beispiel (c)
+	printf("%d, ", a[i]);
+}
+printf("\n");
+
+
+////////////////////////////////////////////
+// Beispiel (d)
+////////////////////////////////////////////
+
+// 0, 1, 3, 6, 10, 15, 21, ... ins Array schreiben
+
+for(int i=0; i<30; i++)
+{
+	// Ausgabe für Beispiel (d)
+	printf("%d, ", a[i]);
+}
+printf("\n");
+
+
 ```
 
 
