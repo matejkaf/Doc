@@ -6,11 +6,11 @@ tags: [lecture,2AHITS_Teach]
 
 - Daten (beliebig groß) ⇨ Hashfunktion ⇨ Wert fixer Länge, z.B. 128, 256 oder 512 Bits. 
 - nicht umkehrbar (one way function)
-- praktisch unmöglich (durchprobieren) andere Daten zu finden die den gleichen Hashwert ergeben
+- praktisch unmöglich andere Daten zu finden die den gleichen Hashwert ergeben
 
 ## Kryptographische Anwendung
 
-- Erkennen von Fälschungen (Integrität)
+- Erkennen von Fälschungen (Integrität einer Nachricht)
 - Digitale Unterschrift (Authentizität)
 - Speichern von Passwörtern
 - Kryptowährungen (Bitcoin ⇨ SHA-256)
@@ -39,7 +39,7 @@ Es sollte nicht so einfach sein Daten zu finden die den gleichen Hashwert ergebe
 
 ## Sichere Hash Funktionen
 
-*secure hash functions*, Komplexe Berechnung! Sind ziemlich gut!
+*secure hash functions*, Komplexe Mathematik – sind ziemlich gut!
 
 - historisch: [MD5](https://en.wikipedia.org/wiki/MD5) (128 Bit, 16 Byte), [SHA1](https://en.wikipedia.org/wiki/SHA-1) (160 Bit, 20 Byte)
 - [**SHA2**](https://en.wikipedia.org/wiki/SHA-2), aktuell in Verwenung (SHA-256, SHA-512)
