@@ -5,12 +5,12 @@ tags: [lecture, 2AHITS_Teach]
 
 Innerhalb eines PC's gibt es für I/O unterschiedliche Bus-Systeme. Geräte sind meist nicht fest verbunden sondern werden gesteckt, entweder direkt auf die Hauptplatine oder mit Hilfe von Kabeln. Manche I/O Geräte wie Festplatten werden innerhalb des Rechnergehäuses untergebracht und meist mechanisch fixiert. Andere wiederum werden mittels längerer Kabel (Tastatur) mit dem Rechner verbunden.
 
-Innerhalb des Gehäuses :
+I/O Busse innerhalb des Gehäuses:
 
--   PCIe
--   SATA
+-   PCIe (direkt am Motherboard)
+-   SATA (per Kabel)
 
-Außerhalb/Externe Kabel:
+I/O Busse außerhalb (Kabel):
 
 -   DisplayPort
 -   USB
@@ -64,8 +64,8 @@ Typische Anwendungen:
 
 -   Slots auf dem Motherboard in den die Karten gesteckt werden
 -   Universalanschluss für alle Arten von Erweiterungskarten (inkl. Grafikkarten)
--   Daten werden in Lanes übertragen (bei aktuellem PCI 3.0 ca. 1GB/s pro Lane)
--   Mit jeder PCIe Version verdoppelt sich die Lane-Datenrate
+-   Daten werden seriell in Lanes übertragen (bei PCI 3.0 ca. 1GB/s pro Lane)
+-   Mit jeder PCIe Version verdoppelt sich die Lane-Datenrate [[wikipedia](https://de.wikipedia.org/wiki/PCI_Express)]
 -   Höhere Datenraten durch mehr Lanes (=längere Slots), 1x, 2x, 4x, 8x, 16x
 -   In längere Slots (z.B. 16x) können kürzere Karten (z.B. 1x) gesteckt werden
 -   Wenn mechanisch möglich sind längere Karten in kürzeren Slots auch OK
@@ -78,13 +78,13 @@ Serial AT Attachment
 
 [Video: SATA 3 - SERIAL ATA | WAS IST SATA III (3) ? COMPUTER BASICS DEUTSCH HD](https://youtu.be/T-6z8tCcR38), [wikipedia](https://en.wikipedia.org/wiki/Serial_ATA)
 
-Zum Anschluss von Massenspeichern: Festplatten, SSD's, DVD Laufwerke
+Zum Anschluss von Massenspeichern: Festplatten (HDD), SSD's, DVD Laufwerke
 
-AT: von 1984 IBM AT wurde de facto Industriestandard. "Advanced Technology"
+AT "Advanced Technology": 1984 von IBM, wurde de facto Industriestandard. 
 
 Aktuell: SATA revision 3.0 (6 Gbit/s, 600 MB/s, Serial ATA-600)
 
-hot plugging fähig
+hot plugging fähig – Geräte können im Betrieb an- und abgesteckt werden (wenn die SW das unterstützt)
 
 
 
@@ -94,7 +94,7 @@ Serial Attached SCSI. [wikipedia SAS](https://en.wikipedia.org/wiki/Serial_Attac
 
 Aktuell: SAS-4 (22,5 Gbit/s)
 
-SAS ist Performanter und ist technologisch fortschrittlicher als SATA. Ist aber viel teurer und wird daher nur im Server Bereich eingesetzt.
+SAS ist performanter und ist technologisch fortschrittlicher als SATA. Ist aber **viel teurer** und wird daher nur im **Server** Bereich eingesetzt.
 
 
 
@@ -110,7 +110,7 @@ Historie der Grafikschnittstellen
   - 2009 Erweiterung um 100Mbps Ethernet Kanal
   - 2017: 4K@120Hz, 8K@60Hz
   - Fernseher, Beamer
-- DisplayPort (2006) – Video, Audio, USB
+- [DisplayPort](https://en.wikipedia.org/wiki/DisplayPort) (2006) – Video, Audio, USB
   - Multi Monitor, daisy chain
   - 2016: 8K@60Hz
   - Computer, Monitore
