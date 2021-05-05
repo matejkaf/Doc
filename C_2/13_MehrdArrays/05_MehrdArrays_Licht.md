@@ -1,7 +1,7 @@
 ---
 title: Mehrdimensionale Arrays
 subtitle: Übung Lichtreflexion
-tags: [assignment,c]
+tags: [assignment,c,2AHITS]
 ---
 
 #### **Übung (Licht Reflexion):**
