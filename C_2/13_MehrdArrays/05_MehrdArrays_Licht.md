@@ -7,7 +7,7 @@ tags: [assignment,c,2AHITS]
 #### **Übung (Licht Reflexion):**
 
 Schreibe ein Programm das die Reflexion eines schrägen Lichtstrahls verfolgt.
-Der Lichtstrahl beginnt an einem eingebbaren Spalten-Index in der obersten Zeile und geht schräg nach rechts unten. An jeder Grenze wird der Strahl im Winkel von 45 Grad reflektiert.
+Der Lichtstrahl beginnt an einem eingebbaren Spalten-Index in der obersten Zeile und geht schräg nach rechts unten. An jeder Grenze wird der Strahl im Winkel von 45 Grad reflektiert. Landet der Lichtstrahl genau in einer Ecke, nimmt dieser den gleichen Weg wieder zurück.
 
 
 ```c
