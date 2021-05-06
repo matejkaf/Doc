@@ -11,7 +11,7 @@ Der Lichtstrahl beginnt an einem eingebbaren Spalten-Index in der obersten Zeile
 
 
 ```c
-char field[15][20] = 
+char field[15][20+1] = //+1 wegen \0
 {
 	"....................",
 	"....................",

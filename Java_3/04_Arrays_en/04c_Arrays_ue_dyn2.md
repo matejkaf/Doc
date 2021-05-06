@@ -30,8 +30,10 @@ Implementiere folgende Methoden:
 
 ```java
 class DynamicArray {
-  private String[] arr = new String[];
-  
+  // Versteckte Implementierungsdetails – nach Außen nicht sichtbar.
+  private int n = 0; // tatsächlich verwendete Elemente
+  private String[] arr = new String[4];  
+
   public String toString() {
     // String in der Form [eins,zwei,drei]
     return "";
