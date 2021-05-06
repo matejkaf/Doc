@@ -6,7 +6,7 @@ tags: [assignment,3BHELS]
 
 Erstelle eine Klasse die die Funktion eines dynamischen Arrays (ähnlich ArrayList) zur Verfügung stellt. Es soll ein Array aus Strings verwaltet werden.
 
-Implementierungsdetail: Das enthaltene Array enthält mehr Elemente als gerade benötigt werden. Beim Hinzufügen eines neuen Strings werden zuerst diese **freien Elemente** aufgebraucht, ehe das Array vergrößert wird. In einer zusätzlichen Variable `n` merkt man sich die Anzahl der tatsächlich verwendeten Elemente im Array. Soll ein neues Element eingefügt werden und es sind die freien Element aufgebraucht  – wenn also `n` die Größe des Arrays erreicht hat – wird das Array **verdoppelt**.
+Implementierungsdetail: Das enthaltene Array enthält mehr Elemente als gerade benötigt werden. Beim Hinzufügen eines neuen Strings werden zuerst diese **freien Elemente** aufgebraucht, ehe das Array vergrößert wird. In einer zusätzlichen Variable `len` merkt man sich die Anzahl der tatsächlich verwendeten Elemente im Array. Soll ein neues Element eingefügt werden und es sind die freien Element aufgebraucht  – wenn also `n` die Größe des Arrays erreicht hat – wird das Array **verdoppelt**.
 
 Diese Variante hat den **Vorteil**, dass das aufwände Neuanlegen des Arrays viel seltener vorkommt.
 
@@ -15,8 +15,8 @@ Code-Basis:
 ```java
 class DynamicArray {
   // Versteckte Implementierungsdetails – nach Außen nicht sichtbar.
-  private int n = 0; // tatsächlich verwendete Elemente
-  private String[] arr = new String[4];
+  private int len = 0; // tatsächlich verwendete Elemente
+  private String[] arr = new String[2];
 }
 ```
 
@@ -31,8 +31,8 @@ Implementiere folgende Methoden:
 ```java
 class DynamicArray {
   // Versteckte Implementierungsdetails – nach Außen nicht sichtbar.
-  private int n = 0; // tatsächlich verwendete Elemente
-  private String[] arr = new String[4];  
+  private int len = 0; // tatsächlich verwendete Elemente
+  private String[] arr = new String[2];  
 
   public String toString() {
     // String in der Form [eins,zwei,drei]

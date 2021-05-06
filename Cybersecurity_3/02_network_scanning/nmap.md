@@ -608,7 +608,7 @@ $ wget -A -T4 -F -v <Ziel>
 
 `-T4` ... Moderate Beschleunigung des Scans
 
-`-F` ... 100 wichtigste Port
+`-F` ... 100 wichtigste Ports
 
 `-v` ... Verbose
 

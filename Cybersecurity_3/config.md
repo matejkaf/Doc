@@ -38,6 +38,7 @@ subtitle: Cybersecurity Lab
 
 Fritz.Box:
 
+- Kali: 192.168.178
 - Metasploitable: 192.168.178.71
 
 
