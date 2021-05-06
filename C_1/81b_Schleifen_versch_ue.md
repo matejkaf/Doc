@@ -8,7 +8,7 @@ tags: [assignment,1CHELS]
 
 Schreibe ein Programm das die 6 Zahlen eines Lottotips ("6 aus 45") zufällig ermittelt und hintereinander ausgibt. Danach wird der Benutzer gefragt ob ein weiterer Lottotip gewünscht ist.
 
-Zur Erinnerung – Umgang mit Zufallszahlen
+Zur Erinnerung – Umgang mit Zufallszahlen:
 
 ```c++
 #include <iostream>

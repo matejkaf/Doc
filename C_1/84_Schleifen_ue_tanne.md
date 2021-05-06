@@ -1,15 +1,11 @@
 ---
-title: Doc
+title: Schleifen
+subtitle: Übung Tanne
 cmds: ['md_html.bash --small']
 tags: [assignment]
 ---
 
-# Schleifen (Übungen)
-
-
-
-
-**Übung (Tanne):**
+#### Übung (Tanne)
 
 Entwickle ein Programm, das einen Tannenbaum aus Sternchen `*` ausgibt:
 
@@ -63,9 +59,9 @@ Dann müssen die Variablen `leerz` und `sterne` verändert und ein einzelnes `\n
 
 ---
 
-**Übung (Tannenbaum schmücken):**
+#### Übung (Tannenbaum schmücken)
+
 Wir wollen den Baum mit Christbaumkugeln schmücken.  Dazu soll mit einer Wahrscheinlichkeit von 20% statt einem Sternchen ein kleines `o` ausgegeben werden. Die Wahrscheinlichkeit kann durch eine Zufallszahl zwischen 0 und 99 erzeugt werden. Ist die Zufallszahl kleiner als 20 so wird ein kleines o andernfalls ein Sternchen ausgegeben. Experimentiere mit unterschiedlichen Wahrscheinlichkeiten.
 
 ---
-
 

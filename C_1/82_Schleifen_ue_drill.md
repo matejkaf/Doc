@@ -1,15 +1,12 @@
 ---
-title: Doc
-cmds: ['md_html.bash --small']
+title: Schleifen
+subtitle: Drill Übungen
 tags: [assignment]
 ---
 
-# Schleifen (Übungen)
+#### Übung (Lesen von Schleifen)
 
 Überlege zuerst was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere dann am Rechner. 
-
-
-**Übung (Lesen von Schleifen III):**
 
 
 ```c
@@ -139,12 +136,4 @@ while (i<3)
     i++;
 }
 ```
-
-
----
-
-
-
-
-
 

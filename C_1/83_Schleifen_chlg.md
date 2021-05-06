@@ -75,5 +75,3 @@ Folgende Regeln werden dabei verwendet:
 - Alle Noten ≤3 und Notendurchschnitt ≤2.0: Mit gutem Erfolg bestanden
 
 Das Programm fragt am Ende ob wiederholt werden soll.
-
----
