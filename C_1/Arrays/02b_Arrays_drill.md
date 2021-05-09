@@ -14,6 +14,7 @@ int arr[7];
 for(int i=0; i<7; i++) {
   arr[i] = 50-(2*i+1);
 }
+// Inhalt von arr?
 ```
 
 ```c++
@@ -23,6 +24,7 @@ arr[0] = 1;
 for(int i=1; i<7; i++) {
   arr[i] = arr[i-1]*2;
 }
+// Inhalt von arr?
 ```
 
 ```c++
@@ -33,6 +35,7 @@ for(int i=0; i<6; i++) {
     a[i+1] = a[i+1] + 3;
   }
 }
+// Inhalt von a?
 ```
 
 ```c++
@@ -49,6 +52,7 @@ while(i<j) {
   i++;
   j--;
 }
+// Inhalt von a?
 ```
 
 ```c++
@@ -58,9 +62,9 @@ int p = 7;
 int g = 3;
 int j = g;
 for(int i=0; i<p-1; i++) {
-  printf("%d\n",j);
   arr[j-1] = i+1;
   j = (j * g)%p;
 }
+// Inhalt von arr?
 ```
 
