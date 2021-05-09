@@ -7,7 +7,7 @@ subtitle: Exploit Framework
 
 msf – Metasploit Framework + shellcode Archiv
 
-In Ruby geschriebene opensource Plattform entwickeln testen und anwenden von Exploit Code.
+In Ruby geschriebene opensource Plattform – entwickeln testen und anwenden von Exploit Code.
 
 Bedienung über die Kommandozeile.
 
@@ -37,17 +37,15 @@ $ msfdb init
 
 Diese 3 Befehle sind nur einmalig notwendig.
 
+
+
+## msf Erste Schritte
+
 Starten von msf:
 
 ```bash
 $ msfconsole
 ```
-
-
-
-
-
-## msf Erste Schritte
 
 ```
 msf6 > db_status

@@ -28,6 +28,8 @@ subtitle: Cybersecurity Lab
 
   
 
+Idee: user / resu bzw. root / toor verwenden.
+
 
 
 
