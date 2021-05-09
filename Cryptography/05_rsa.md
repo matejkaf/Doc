@@ -4,6 +4,8 @@ description:
 tags: [5AHELS,lecture, krypto ]
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 *shared secret key* Verschlüsselungssysteme haben zur Voraussetzung, dass beide Kommunikationspartner über den gleichen Schlüssel verfügen (*shared symetric key*) und diesen geheim halten. Die große Problematik ist Angriffe im Moment des Schlüsselaustauschs zu verhindern.
 
 **Public-key cryptography** ist eine innovative Idee aus den 1970er Jahren die einen solchen Angriff unmöglich macht. 
@@ -98,63 +100,63 @@ Ein weiteres gängiges Verfahren für die Digitale Signatur ist **DSA** (Digital
 
 RSA verwendet wie DH Modulo Multiplikationen.
 
-Im ersten Schritt werden 2 große **Primzahlen** $p$ und $q$ zufällig gewählt.  $p$  und $q$ sollten ungefähr gleich groß sein.
+Im ersten Schritt werden 2 große **Primzahlen** $$p$$ und $$q$$ zufällig gewählt.  $$p$$  und $$q$$ sollten ungefähr gleich groß sein.
 
-- $n=p*q$ ist der **Modulus** der Multiplikationen ($n$ ist keine Primzahl).
+- $$n=p*q$$ ist der **Modulus** der Multiplikationen ($$n$$ ist keine Primzahl).
 
-- Eine Zahl $e$, der **Exponenent**, wird gewählt. Häufig 65537, 17, 5 oder 3.
+- Eine Zahl $$e$$, der **Exponenent**, wird gewählt. Häufig 65537, 17, 5 oder 3.
 
-- Das Paar $(n,e)$ ist der **public key**.
+- Das Paar $$(n,e)$$ ist der **public key**.
 
-Nun wird das kleinste gemeinsame Vielfache $t$ von $p-1$ und $q-1$ bestimmt.
+Nun wird das kleinste gemeinsame Vielfache $$t$$ von $$p-1$$ und $$q-1$$ bestimmt.
 
-$t=\text{kgV}(p-1,q-1)$
+$$t=\text{kgV}(p-1,q-1)$$
 
-Dieses $t$ hat die Eigenschaft: $x^t=1\ (\text{mod}\ n)$, für beliebiges $x$. [1]
+Dieses $$t$$ hat die Eigenschaft: $$x^t=1\ (\text{mod}\ n)$$, für beliebiges $$x$$. [1]
 
-Eine Zahl $d$ wird ermittelt, so dass gilt:
+Eine Zahl $$d$$ wird ermittelt, so dass gilt:
 
-$e*d=1\ (\text{mod}\ t)$
+$$e*d=1\ (\text{mod}\ t)$$
 
-Bedeutet: $d$ ist das inverse zu $e$ modulo $t$. 
+Bedeutet: $$d$$ ist das inverse zu $$e$$ modulo $$t$$. 
 
-Anders: $e*d=k*t+1$ für ein bestimmtes $k$. [2]
+Anders: $$e*d=k*t+1$$ für ein bestimmtes $$k$$. [2]
 
 
-$d$ ist der **private key** (wird gemeinsam mit $p$, $q$ und $t$ geheim gehalten).
+$$d$$ ist der **private key** (wird gemeinsam mit $$p$$, $$q$$ und $$t$$ geheim gehalten).
 
 Verschlüsselung:
-Die Nachricht $m$ wird als Zahl dargestellt (z.B. 128/256 bits).
+Die Nachricht $$m$$ wird als Zahl dargestellt (z.B. 128/256 bits).
 
-Ciphertext: $c=m^e\  (\text{mod}\ n)$
+Ciphertext: $$c=m^e\  (\text{mod}\ n)$$
 
-Entschlüsselung: $c^d\  (\text{mod}\ n)$ ergibt $m$
+Entschlüsselung: $$c^d\  (\text{mod}\ n)$$ ergibt $$m$$
 
-Beweis (alles $\text{mod}\ n$):
+Beweis (alles $$\text{mod}\ n$$):
 
-$c^d=(m^e)^d=m^{ed}$
+$$c^d=(m^e)^d=m^{ed}$$
 
-Durch [2] ist $e*d=k*t+1$.
+Durch [2] ist $$e*d=k*t+1$$.
 
-$m^{ed}=m^{kt+1}=(m^t)^k*m$
+$$m^{ed}=m^{kt+1}=(m^t)^k*m$$
 
-Wegen [1] ist $m^t=1$
+Wegen [1] ist $$m^t=1$$
 
-$(m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)$
+$$(m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)$$
 
-- Geheimhaltung: Ist einem Angreifer nur eine Zahl $d$, $p$, $q$ oder $t$ bekannt so wäre ein entschlüsseln möglich.
-- Gängige Größe für $n$: 4096 Bits.
+- Geheimhaltung: Ist einem Angreifer nur eine Zahl $$d$$, $$p$$, $$q$$ oder $$t$$ bekannt so wäre ein entschlüsseln möglich.
+- Gängige Größe für $$n$$: 4096 Bits.
 
 
 
 
 # Kryptografische Stärke
 
-Ergibt sich aus der Tatsache, dass es sehr **leicht** ist 2 Zahlen zu **multiplizieren** $n=p*q$, es aber ungleich **schwieriger** ist aus dem $n$ die beiden **Faktoren** wieder herauszurechnen (siehe [Integer factorization](https://en.wikipedia.org/wiki/Integer_factorization)). $n$ ist ein wesentlicher Teil des public key, gelänge es einem Angreifer $p$ oder $q$ zu ermitteln wäre die Verschlüsselung gebrochen. Die Sicherheit des RSA Verfahrens ergibt sich aus der Tatsache dass diese Faktorisierung nur unter riesigem Rechenaufwand möglich ist.
+Ergibt sich aus der Tatsache, dass es sehr **leicht** ist 2 Zahlen zu **multiplizieren** $$n=p*q$$, es aber ungleich **schwieriger** ist aus dem $$n$$ die beiden **Faktoren** wieder herauszurechnen (siehe [Integer factorization](https://en.wikipedia.org/wiki/Integer_factorization)). $$n$$ ist ein wesentlicher Teil des public key, gelänge es einem Angreifer $$p$$ oder $$q$$ zu ermitteln wäre die Verschlüsselung gebrochen. Die Sicherheit des RSA Verfahrens ergibt sich aus der Tatsache dass diese Faktorisierung nur unter riesigem Rechenaufwand möglich ist.
 
 Beispiel: [RSA-768](https://en.wikipedia.org/wiki/RSA_numbers#RSA-768) (Zahl mit 232 Stellen faktorisieren). CPU-Zeit: 2000 Jahre
 
-D.h. wählt man $n$ groß genug und gibt dieses öffentlich bekannt, hält $p$ und $q$ aber geheim, so ist es einem Angreifer praktisch unmöglich $p$ und $q$ herauszufinden.
+D.h. wählt man $$n$$ groß genug und gibt dieses öffentlich bekannt, hält $$p$$ und $$q$$ aber geheim, so ist es einem Angreifer praktisch unmöglich $$p$$ und $$q$$ herauszufinden.
 
 Da es theoretisch mit genug Rechenpower und Zeit möglich sein könnte, dass eine Faktorisierung gelingt sind **RSA Keys** in der Praxis mit einem **Ablaufdatum** versehen (einige Jahre).
 
