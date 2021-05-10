@@ -60,10 +60,10 @@ while(i<j) {
 int e[6];
 int p = 7;
 int g = 3;
-int j = g;
+int k = g;
 for(int i=0; i<p-1; i++) {
-  e[j-1] = i+1;
-  j = (j * g)%p;
+  e[k-1] = i+1;
+  k = (k * g)%p;
 }
 // Inhalt von e?
 ```
