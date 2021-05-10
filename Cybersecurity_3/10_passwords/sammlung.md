@@ -223,3 +223,16 @@ Erkenntnis: gehashte Passwörter von Alice und Bob sind nicht identisch! --> Gru
 
 
 
+Wie kommt man an die Passwort Hashes? – root Rechte sind notwendig für `/etc/shadow`
+
+- root Rechte vorhanden, Hashes sind aber noch nicht die Passwörter
+- Exploit bietet eine root shell
+- Privilegien-Eskalation, normaler User, Schwachstelle ausnutzen um root Rechte zu erhalten
+- Backdoors oder Trojaner (Bind- oder Reverse-Shell)
+
+![image-20210509182920118](fig/image-20210509182920118.png)
+
+
+
+### Angriffsvektoren auf gehashte Passwörter:
+
