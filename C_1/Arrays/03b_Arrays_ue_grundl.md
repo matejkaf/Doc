@@ -1,6 +1,6 @@
 ---
 title: Arrays
-subtitle: Übungen Grundlagen
+subtitle: Übungen Verschiedene Ausgaben
 tags: [assignment,arrays,1CHELS,1AHITS]
 ---
 

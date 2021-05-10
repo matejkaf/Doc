@@ -41,7 +41,7 @@ Sortiert:
 
 ---
 
-#### **Übung (Vorübung – Paare ausgeben):**
+#### Übung (Vorübung – Paare ausgeben)
 
 Lege in einem Programm folgendes Array an.
 
@@ -63,7 +63,7 @@ für jedes Paar ob es sich in richtiger (aufsteigend oder gleich) bzw.\ falscher
 
 ---
 
-#### **Übung (Vorübung – Paare vertauschen):**
+#### Übung (Vorübung – Paare vertauschen)
 
 Bubble Phase: Vertausche alle Paare die sich nicht in der richtigen Reihenfolge befinden.
 
@@ -86,7 +86,7 @@ ___
 
 ---
 
-#### **Übung (Bubble-Sort am Papier):**
+#### Übung (Bubble-Sort am Papier)
 
 Beim **Bubble-Sort Algorithmus** wird das paarweise prüfen und vertauschen (von ganz vorne beginnend) immer wieder wiederholt.
 Beendet wird das sortieren dann wenn bei einem kompletten Durchlauf kein Vertauschen mehr notwendig war.
@@ -101,7 +101,7 @@ Führe den Algorithmus auf Papier für das Beispiel Array aus.
 
 ---
 
-#### **Übung (Bubble-Sort):**
+#### Übung (Bubble-Sort)
 
 Implementiere eine Funktion die ein übergebenes Array in sortierte Reihenfolge bringt.
 Hilfestellung/Grundgerüst:
@@ -125,7 +125,7 @@ void bubble_sort(int a[], int n)
 
 ---
 
-#### **Übung (Radrennen – sortierte Ergebnisliste):**
+#### Übung (Radrennen – sortierte Ergebnisliste)
 
 Gib die Radrennen Teilnehmernummern in der nach Zeit sortierten Reihenfolge aus.
 

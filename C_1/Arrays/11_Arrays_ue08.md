@@ -4,7 +4,7 @@ subtitle: Übungen – Mehrere Arrays
 tags: [assignment,array,challenge]
 ---
 
-#### **Übung (Wie viele richtige):**
+#### Übung (Wie viele richtige)
 
 Ein Lottotip (6 aus 45) ist als `int` Array gegeben.
 
@@ -15,7 +15,7 @@ Schreibe eine Programm das ermittelt wie viele richtige Zahlen getippt wurden.
 
 ---
 
-#### **Übung (Mehrere Arrays I):**
+#### Übung (Mehrere Arrays I)
 
 Lege 2 Arrays gleicher Länge an und initialisiere diese mit selbstgewählten Werten.
 Implementiere jeder der folgenden Aufgaben in einer Funktion.
@@ -28,7 +28,7 @@ Implementiere jeder der folgenden Aufgaben in einer Funktion.
 
 
 ---
-#### **Übung (Mehrere Arrays II):**
+#### Übung (Mehrere Arrays II)
 
 Aufgabenstellung wie in Übung .
 
@@ -39,6 +39,6 @@ Aufgabenstellung wie in Übung .
 
 
 ---
-#### **Übung (Merge):**
+#### Übung (Merge)
 
 Gegeben sind zwei, in aufsteigender Reihenfolge sortierte, Arrays (können unterschiedlich lang sein). Lege ein weiteres Array (Array3) mit so vielen Elementen an, wie Array1 und Array2 in Summe haben. Schreibe eine Funktion die die Daten aus beiden Arrays in das Array3 kopiert so, dass auch das dritte Array sortiert ist.

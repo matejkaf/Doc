@@ -6,7 +6,7 @@ tags: [assignment,array]
 
 
 
-#### **Übung (Lotto Tip):** 
+#### Übung (Lotto Tip)
 
 Schreibe ein Programm das hilft Lotto ("6 aus 45") zu spielen.
 
@@ -23,7 +23,7 @@ Die Lottozahlen sollen in einem Array gespeichert werden.
 
 ---
 
-#### **Übung (Lotto Tip – Erweiterungen):** 
+#### Übung (Lotto Tip – Erweiterungen)
 
 Erweitere das Programm aus Übung .
 
@@ -35,5 +35,4 @@ Die Funktion muss die von `tip` zufällig ermittelten Zahlen mit jenen Zahlen au
 Beispiel: Für `tip[]={27,16,37,33,42,2};` ergeben sich 3 Richtige.
 - Führe eine Statistik (Anzahl 6 Richtige, Anzahl 5 Richtige, ...).
 - Ermittle durch Probieren wie viele Tips notwendig sind um 6 Richtige zu erhalten.
-
 

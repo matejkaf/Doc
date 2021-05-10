@@ -16,7 +16,7 @@ Selection-Sort ist ungefähr **doppelt so schnell wie Bubble-Sort**.
 
 ---
 
-#### **Übung (Selection-Sort):**
+#### Übung (Selection-Sort)
 
 Implementiere Selection-Sort in einer Funktion.
 
@@ -24,7 +24,7 @@ Implementiere Selection-Sort in einer Funktion.
 
 ---
 
-#### **Übung (Radrennen Deluxe):**
+#### Übung (Radrennen Deluxe)
 
 Schreibe ein Programm das mit Hilfe eines Menüs das Erfassen und Auswerten der bei einem Radrennen erreichten Zeiten erlaubt. Das Menü soll so aussehen:
 
@@ -38,7 +38,3 @@ b ... Beenden
 ```
 
 Der Anwender kann die Menüpunkte in beliebiger Reihenfolge wählen. Die Zeiten werden einzeln erfasst, die Reihenfolge entspricht der Startnummer. Wie viele Zeiten insgesamt eingegeben werden ist vorab nicht bekannt, es können allerdings nicht mehr als 500 sein.
-
----
-
-

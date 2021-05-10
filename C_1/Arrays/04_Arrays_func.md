@@ -55,6 +55,7 @@ void print(int a[])
 ```
 
 
+
 ## Schreiben in Arrays
 
 Überschreibt man ein Element eines an eine Funktion übergebenen Arrays so wirkt sich die Änderung im Original Array aus.
@@ -94,16 +95,18 @@ void main()
 	int c[2]={7,9};
 	int b=11;
 
-	tuwas(c,b);
+	tuwas(c,b,c);
 
 	printf("%d %d %d\n",c[0],c[1],b);
 }
 
-int tuwas(int c[], int b);
+int tuwas(int c[], int b, int d[]);
 {
 	c[0]++;
 	c[1]++;
 	b++;
+  d[0]++;
+  d[1]++;
 }
 ```
 
