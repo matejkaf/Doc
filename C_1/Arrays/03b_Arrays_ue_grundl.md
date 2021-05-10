@@ -17,3 +17,4 @@ Gegeben ist das Array: `int a[]={5,2,9,4,1,7,0,8,3,6}`.
 - Für jedes Element die Differenz zum letzten Array-Element ausgeben.
 - Ausgabe des Ergebnisses wenn von jedem Element dessen Vorgänger subtrahiert wird.
 - Wie vorher aber: Nachfolger subtrahieren.
+
