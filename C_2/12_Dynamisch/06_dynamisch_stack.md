@@ -1,6 +1,6 @@
 ---
 title: Dynamische Speicherverwaltung
-subtitle: Übungen
+subtitle: Übungen Stack
 tags: [assignment]
 ---
 
