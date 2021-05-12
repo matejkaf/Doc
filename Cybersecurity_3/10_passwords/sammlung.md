@@ -236,3 +236,56 @@ Wie kommt man an die Passwort Hashes? – root Rechte sind notwendig für `/etc/
 
 ### Angriffsvektoren auf gehashte Passwörter:
 
+Ermitteln des original Passworts aus dem Hashwert. Offline Angriff, 
+
+**brute force**
+
+![image-20210510171238347](fig/image-20210510171238347.png)
+
+[Quelle](https://de.wikipedia.org/wiki/Passwort#Ausprobieren_von_Passwörtern)
+
+Wörterbuch-Angriff (**dictionary attack**)
+
+Wichtig: Langsame Hash Algorithmen (rounds), PBKDF2, bcrypt
+
+Wörterbuch siehe [Openwall](https://www.openwall.com/wordlists/)
+
+Passwörter aus breaches, z.b. rockyou.txt, Sammlung auf github: [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords)
+
+[Taking Password Cracking to the Next Level](https://cryptokait.com/2020/09/02/taking-password-cracking-to-the-next-level/)
+
+ 
+
+**Rainbow-Tables** (2003) beschleunigt den Brute Force Angriff wesentlich.
+
+**Pass the Hash** (PTH) – Hash Injection
+
+
+
+## Pass the Hash
+
+Bei LM und NTLM authentifizierungen (Lanmanager, NT Lanmanager). Werden ohne Salt berechnet. [[wikipedia](https://en.wikipedia.org/wiki/Pass_the_hash)]
+
+
+
+## Wortlisten erstellen
+
+Kali `/usr/share/wordlists`
+
+Tool `crunch`: zum erstellen einer brute-force liste
+
+Alle Wörter von Länge 4 bis 6 aus bestimmten Buchstaben zusammengesetzt:
+
+```bash
+$ crunch 4 6 abcdefg123456789! -o crunchlist.txt
+```
+
+Siehe auch `/usr/share/crunch/charset.lst `
+
+```bash
+$ crunch 4 8 -f /usr/share/crunch/charset.lst mixalpha-numeric-all-sv -o  crunch2.txt
+```
+
+Achtung 84 PB! (Peta Byte)
+
+Siehe `man crunch` – eher komplex in der Bedienung.

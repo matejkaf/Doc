@@ -30,6 +30,10 @@ subtitle: Cybersecurity Lab
 
 Idee: user / resu bzw. root / toor verwenden.
 
+Oder: kali / kali, debian/debian
+
+
+
 
 
 
@@ -40,7 +44,7 @@ Idee: user / resu bzw. root / toor verwenden.
 
 Fritz.Box:
 
-- Kali: 192.168.178
+- Kali: 192.168.178.?
 - Metasploitable: 192.168.178.71
 
 

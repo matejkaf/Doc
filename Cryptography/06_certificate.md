@@ -14,7 +14,7 @@ Lösung:
 - **Zertifikate**, und
 - **Public key infrastructure** (PKI)
 
-# Zertifikat
+## Zertifikat
 
 Ein Zertifikat ist ein elektronisches Dokument dass den public key des sogenannten **subject** enthält. Der **issuer** (certification authority = CA) bestätigt durch digitale Unterschrift (mit private key verschlüsselter Hash) die Identität des subject. 
 
@@ -34,7 +34,7 @@ Dem root certificate wird immer vertraut, der Sicherheit des root trust store ko
 
 
 
-# X.509
+## X.509
 
 Das Format eines Zertifikats ist im **Standard X.509** definiert.
 
@@ -50,7 +50,7 @@ Felder:
 
 
 
-# Beispiel Zertifikat
+## Beispiel Zertifikat
 
 für `www.example.org`
 
@@ -150,7 +150,7 @@ wDSiIIWIWJiJGbEeIO0TIFwEVWTOnbNl/faPXpk5IRXicapqiII=
 
 
 
-# Revocation
+## Revocation
 
 Noch gültige Zertifikate können für ungültig erklärt (**revoked**) werden. Dafür ist eine online Kommunikation notwendig.
 
@@ -160,7 +160,7 @@ Noch gültige Zertifikate können für ungültig erklärt (**revoked**) werden. 
 
 
 
-# Ablauf Zertifikaterstellung
+## Ablauf Zertifikaterstellung
 
 Wie kommt man zu einem eigenen Zertifikat?
 
@@ -173,7 +173,7 @@ Der Vorgang kann z.B. mit Hilfe des Tools `openssh` durchgeführt werden. Für T
 
 
 
-# Zertifikat mit eigenem root CA
+## Zertifikat mit eigenem root CA
 
 Mit dem Tool `openssl`
 

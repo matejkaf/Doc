@@ -17,7 +17,6 @@ Die zu unterschreibenden Daten werden **zuerst gehasht** (z.B. SHA256) und dann 
 Diese digitale Signatur wird den Daten angefügt.
 
 ![](img/Digital_Signature_diagram.png)
-\ 
 
 Beispiel für Größenordnungen:
 

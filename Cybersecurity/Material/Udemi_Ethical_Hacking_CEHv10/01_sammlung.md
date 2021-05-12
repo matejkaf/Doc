@@ -25,13 +25,31 @@ Ethical Hacking CEHv10 (Udemi-Kurs), Eric Amberg
   
 - **Kali Linux**
   - [](https://www.kali.org)
-  - Kali Linux 64-bit VirtualBox, OVA Datei – Vorteil ist Vorkonfiguriert
+  
+  - Kali Linux 64-bit VirtualBox, OVA Datei – Vorteil: ist vorkonfiguriert
+  
   - ca. 4 GB!
+  
   - These images have a default login/password of “kali/kali” and may have pre-generated SSH host keys.
+  
   - `kali-linux-2020.4-vbox-amd64.ova`, In Virtual Box importieren, 1024 MB Arbeitsspeicher reichen (2048 voreingestellt). USB Controller und Sound Card deaktivieren, >Import<, ca. 2min, Legt eine Kopie der ova Datei an, die ova Datei kann man dann löschen.
+  
   - Starten in vbox
+  
   - Login: kali/kali
+  
   - Darstellung kann sehr klein sein auf Retina Displays, >View>Virtual Screen 1>Scale to 200%
+  
+  - Verwenden einer deutschen Tastatur
+  
+    ```bash
+    $ setxkbmap -layout de
+    # bis zum nächsten Booten!
+    ```
+    
+    Über GUI: auf Kali Symbol klicken. "Keyboard" eintippen, Layout ... Add ... German (Austria) ... English entfernen ... System Reboot
+    
+    
   
 - **Metasploitable 2** installieren – auf Ubuntu basierend, mit vielen Sicherheitslücken
 

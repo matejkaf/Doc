@@ -1,9 +1,11 @@
 ---
 title: SEW – Wiederholung
-tags: [c, klasse_1]
+tags: [lecture]
 ---
 
-# Übersicht
+
+
+## Übersicht
 
 ```c
 #include <conio.h>
@@ -25,11 +27,11 @@ void main()
 
 
 
-# Aufgaben
+## Aufgaben
 
 
 
-**Übung Schleife (Zahlenfolge):**
+#### Übung Schleife (Zahlenfolge)
 
 Schreibe ein Programm, welches mittels einer Schleife folgende Zahlenfolge ausgibt: 
 
@@ -45,7 +47,7 @@ Implementiere 2 Lösungen einmal mit `while` und einmal mit `for`.
 
 
 
-**Übung Funktion (Summe ungerader Zahlen):**
+#### Übung Funktion (Summe ungerader Zahlen)
 
 Schreibe eine Funktion `usum()` die eine untere und eine obere Grenze als Parameter übergeben bekommt (beide `int`). Die Funktion soll alle ungeraden Zahlen die sich zwischen den Grenzen befinden addieren und das Ergebnis zurückgeben. Sind die Grenzen ungerade Zahlen sind diese ebenfalls zu zählen.
 
@@ -53,7 +55,7 @@ Schreibe eine Funktion `usum()` die eine untere und eine obere Grenze als Parame
 
 
 
-**Übung Array:**
+#### Übung Array
 
 Lege im Hauptprogramm ein Array aus 20 `int` Elementen mit zufälligen Werten an, für Zufallszahlen siehe folgendes Grundgerüst
 
@@ -76,8 +78,3 @@ An alle zu implementierenden Funktionen wird das Array als Parameter übergeben.
 - Schreibe eine Funktion `min` die den kleinsten Wert im Array sucht und zurückgibt.
 - Schreibe eine Funktion `min_index` die die Indexposition des kleinsten Werts im Array sucht und zurückgibt.
 - Schreibe eine Funktion `count_in_limits` die eine obere und untere Grenze als Parameter übergeben bekommt und ermittelt wie viele Arrayelemente es gibt deren Werte sich innerhalb dieser Grenze befinden.
-
----
-
-
-

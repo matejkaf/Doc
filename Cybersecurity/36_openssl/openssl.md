@@ -1,6 +1,7 @@
-# openssl
-
-Kommandozeilentool für Kryptographie.
+---
+title: openssl
+subtitle: Kommandozeilentool für Kryptographie
+---
 
 
 
@@ -37,7 +38,7 @@ $ openssl dgst -sha512 goethe.txt
 SHA512(goethe.txt)= a36110e65caab98c5bfdaa2f75d731e54c58f496e4e1e73bc9bdf79543f0cac74fe866cfa0d21372793c3dc6ea36f5bd04079593f25d991e72d7fd558f1082c9
 ```
 
-Ausgabe erfolgt im hex Format.
+Ausgabe erfolgt im hex Format:
 
 ```bash
 $ openssl dgst -sha512 -out goethe.txt.sha512 goethe.txt

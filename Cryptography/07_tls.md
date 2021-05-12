@@ -6,7 +6,7 @@ tags: [5AHELS,lecture, krypto ]
 
 
 
-# TLS / HTTPS
+## TLS / HTTPS
 
 TLS (Transport Layer Security) ist ein standardisiertes Kommunikations-Protokoll das Browser und Web-Server zum gesichterten Datenaustausch verwenden. Es bietet einen **sicheren Kanal** mit **authenticity**, **integrity** und **confidentiality**.
 
@@ -20,7 +20,7 @@ Die sogenannte **Cipher Suite** legt fest, welche Kombination aus vier Methoden 
 
 
 
-# Handshake
+## Handshake
 
 Der Handshake findet vor dem eigentlichen Datenaustausch statt. Dabei wird die **cipher suite** ausgehandelt und der Client **authentifiziert** den Server. 
 
@@ -68,7 +68,7 @@ Siehe auch: [The SSL/TLS Handshake: an Overview](https://www.ssl.com/article/ssl
 
 
 
-# Authentifizierung
+## Authentifizierung
 
 - Ist in TLS optional. 
 - Der Server wird aber meist authentifiziert. 
@@ -77,7 +77,7 @@ Siehe auch: [The SSL/TLS Handshake: an Overview](https://www.ssl.com/article/ssl
 
 
 
-# Key exchange
+## Key exchange
 
 Beliebt: RSA, DHE_RSA, ECDH_RSA
 
@@ -90,7 +90,7 @@ Beliebt: RSA, DHE_RSA, ECDH_RSA
 
 
 
-# Cipher Suite
+## Cipher Suite
 
 Das TLS Protokoll ist sehr flexibel, es werden die unterschiedlichsten Kombination von kryptografischen Mechanismen unterstützt. Welche das konkret sind wird durch die Cipher-Suite festgelegt.
 
@@ -107,7 +107,7 @@ Der Client schlägt eine Liste von Suites vor – bevorzugte Suites zuerst. Der 
 
 
 
-# TLS Record protocol
+## TLS Record protocol
 
 Sichert den Datenaustausch mit Hilfe der im Handshake ausgetauschten keys. Das record protocol ist verantwortlich für das Verschlüsseln, sichern der Integrität und Authentizität.
 
@@ -117,7 +117,7 @@ Je nach verwendeter cipher suite sieht dieses Protokoll unterschiedlich aus. Fü
 
 
 
-# Bemerkungen
+## Bemerkungen
 
 TLS ist sehr offen für Erweiterungen. Dies ist auch notwendig da immer wieder **neue Angriffsmöglichkeiten** bekannt werden und eine Änderung notwendig machen.
 
@@ -133,9 +133,8 @@ SHA-1 als Hash in Zertifikaten gilt nicht mehr als sicher (siehe [Google Securit
 
 
 
-# Quellen
+## Quellen
 
 - Buch: *Bulletproof SSL and TLS*, Ivan Ristic
 - Buch: *Cryptography Engineering*, Niels Ferguson, Bruce Schneier, Tadayoshi Kohno
-
 

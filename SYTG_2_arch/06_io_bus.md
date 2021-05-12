@@ -5,29 +5,24 @@ tags: [lecture, 2AHITS_Teach]
 
 * TOC
 {:toc}
-I/O Busse innerhalb des Gehäuses:
+- I/O Busse innerhalb des Gehäuses:
+  - **PCIe** (direkt am Motherboard), (3.0, x4) 32 Gbit/s
+    (Peripheral Component Interconnect Express ): Desktop Motherboard hat typischerweise 2-4 PCIe Steckplätze. Darauf gesteckt werden können Grafikkarten, Festplattenkontroller, Netzwerk-Interface-karten (NIC), etc.
+  - **SATA** (per Kabel), (rev 3.0) 6 Gbit/s
+    Typisch 6-8 auf Motherboard, für Festplatten.
 
--   PCIe (direkt am Motherboard)
--   SATA (per Kabel)
-
-I/O Busse außerhalb (Kabel):
-
--   DisplayPort
--   USB
--   Ethernet LAN
--   Thunderbolt (=PCIe+DisplayPort+USB)
+- I/O Busse außerhalb (Kabel):
+  - **DisplayPort**, (1.3) 32 Gbit/s
+    Zum Anschluss von bis zu 3 Stk. 4K Monitoren in daisy chain
+  - **USB**, (2.0) 0,5 Gbit/s / (3.0) 5 Gbit/s
+    (Universal Serial Bus) zum Anschluss diverser Peripheriekomponenten (Tastatur, Maus, Webcam, Mic, Lautsprecher, Externe Festplatten, USB Sticks, ...)
+  - **Ethernet** LAN, 1 Gbit/s, Netzwerk
+  - **Thunderbolt** (=PCIe+DisplayPort+USB) / (3) 40 Gbit/s
+    Universal-Anschluss, kombiniert DisplayPort (damit auch USB) und PCIe. Zusätzlich Netzteil Anschluss möglich ("Power Delivery", z.B. Laptop). Verwendet USB-C Stecker. Ziel: ein Anschluss für alles
 
 Außer PCIe sind alle **hot plugging** fähig, d.h. Geräte können im Betrieb hinzugefügt und entfernt werden.
 
-Vergleich der Datenraten (ungefähre Best-Werte, bei aktueller HW)
 
--   PCIe (3.0, x4) 32 Gbit/s
--   Serial ATA (rev 3.0) 6 Gbit/s
--   DisplayPort (1.3) 32 Gbit/s
--   USB (2.0) 0,5 Gbit/s 
--   USB (3.0) 5 Gbit/s
--   Ethernet 1 Gbit/s
--   Thunderbolt (3) 40 Gbit/s
 
 Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-prime-z490-a-a2284654.html?hloc=at&hloc=de)):
 
@@ -47,15 +42,6 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 
 
-Typische Anwendungen:
-
--   **PCIe** (Peripheral Component Interconnect Express ): Desktop Motherboard hat typischerweise 2-4 PCIe Steckplätze. Darauf gesteckt werden können Grafikkarten, Festplattenkontroller, Netzwerk-Interface-karten (NIC), etc.
--   **Serial ATA** (SATA): Typisch 6-8 auf Motherboard, für Festplatten.
--   **DisplayPort** (DP). Zum Anschluss von bis zu 3 Stk. 4K Monitoren in daisy chain
--   **USB** (Universal Serial Bus) zum Anschluss diverser Peripheriekomponenten (Tastatur, Maus, Webcam, Mic, Lautsprecher, Externe Festplatten, USB Sticks, ...)
--   **Ethernet**, Netzwerk/LAN Anschluss
--   **Thunderbolt**: Universal-Anschluss, kombiniert DisplayPort (damit auch USB) und PCIe. Zusätzlich Netzteil Anschluss möglich ("Power Delivery", z.B. Laptop). Verwendet USB-C Stecker. Ziel: ein Anschluss für alles
-
 
 
 ## PCIe
@@ -67,8 +53,8 @@ Typische Anwendungen:
 -   Slots auf dem Motherboard in den die Karten gesteckt werden
 -   Universalanschluss für alle Arten von Erweiterungskarten (inkl. Grafikkarten)
 -   Daten werden seriell in Lanes übertragen (bei PCI 3.0 ca. 1GB/s pro Lane)
--   Mit jeder PCIe Version verdoppelt sich die Lane-Datenrate [[wikipedia](https://de.wikipedia.org/wiki/PCI_Express)]
 -   Höhere Datenraten durch mehr Lanes (=längere Slots), 1x, 2x, 4x, 8x, 16x
+-   Mit jeder PCIe Version verdoppelt sich die Lane-Datenrate [[wikipedia](https://de.wikipedia.org/wiki/PCI_Express)]
 -   In längere Slots (z.B. 16x) können kürzere Karten (z.B. 1x) gesteckt werden
 -   Wenn mechanisch möglich sind längere Karten in kürzeren Slots auch OK
 
@@ -88,7 +74,7 @@ AT "Advanced Technology": 1984 von IBM, wurde de facto Industriestandard.
 
 Aktuell: SATA revision 3.0 (6 Gbit/s, 600 MB/s, Serial ATA-600)
 
-hot plugging fähig – Geräte können im Betrieb an- und abgesteckt werden (wenn die SW das unterstützt)
+hot plugging fähig – Geräte können im Betrieb an- und abgesteckt werden – wenn die SW das unterstützt
 
 
 
@@ -130,28 +116,23 @@ Historie der Grafikschnittstellen
 
 [wikipedia (en)](https://en.wikipedia.org/wiki/USB)
 
-Zum Verbinden aller möglicher Arten von Peripherie Geräten.
+Universal Serial Bus (seit 1996). Zum Verbinden aller möglicher Arten von Peripherie Geräten.
 
-90er: viele unterschiedliche Schnittstellen an einem PC, USB aus dem Bestreben der Vereinheitlichung entstanden (eine Schnittstelle für alles).
-
-Universal Serial Bus (seit 1996)
+80er/90er: viele unterschiedliche Schnittstellen an einem PC, USB aus dem Bestreben der Vereinheitlichung entstanden (eine Schnittstelle für alles).
 
 Bisher 4 Versionen (aktuell USB 3)
 
-- Geschwindigkeitssteigerungen
+- USB1 (1996): 12 Mbit/s 
 
-  - USB1 (1996): 12 Mbit/s 
-  - USB2 (2001): 480 Mbit/s
-  - USB 3.0 (2011) : 5.0 Gbit/s 
-    - USB3 Ports sind innen blau
-  - USB 3.1 (2014) 10 Gbit/s 
-    - USB-C Buchsen
-    - [derStandard: USB-C: Der einheitliche Anschluss ist zum Albtraum für die Nutzer geworden](https://www.derstandard.at/story/2000120074369/usb-c-der-einheitliche-anschluss-ist-zum-albtraum-fuer-die)
-  - USB 3.2 (2017): 20 Gbit/s (bei USB-C)
-  - USB4 (2019): 40 Gbit/s
-    - USB 4 ist im wesentlichen Thunderbolt 3 (rückwärtskompatibel mit USB 3.2 and USB 2.0)
-
-  
+- USB2 (2001): 480 Mbit/s
+- USB 3.0 (2011) : 5.0 Gbit/s 
+  - USB3 Ports sind innen blau
+- USB 3.1 (2014) 10 Gbit/s 
+  - USB-C Buchsen
+  - [derStandard: USB-C: Der einheitliche Anschluss ist zum Albtraum für die Nutzer geworden](https://www.derstandard.at/story/2000120074369/usb-c-der-einheitliche-anschluss-ist-zum-albtraum-fuer-die)
+- USB 3.2 (2017): 20 Gbit/s (bei USB-C)
+- USB4 (2019): 40 Gbit/s
+  - USB 4 ist im wesentlichen Thunderbolt 3 (rückwärtskompatibel mit USB 3.2 and USB 2.0)
 
 [wikipedia : USB Steckverbinder](https://en.wikipedia.org/wiki/USB#Receptacle_(socket)_identification)
 
@@ -165,19 +146,11 @@ Spannungsversorgung: USB kann in allen Versionen angeschlossene Geräte versorge
 
 ### USB Battery charging
 
-[THE BASICS OF USB BATTERY CHARGING](https://www.maximintegrated.com/en/design/technical-documents/tutorials/4/4803.html)
-
-USB hat sich als Standard zum laden von Akkus entwicklet. Es gibt Ladegeräte mit USB Buchse die nur Spannungsversorgung liefert aber keine Daten.
-
-Mehr als 100mA liefert ein USB Port nur dann wenn das Gerät (per Datenkommunikation) das anfordert.
-
-Die **battery charging specification** von USB ermöglicht die Versorgung mit bis zu 1,5A ohne dass dazu eine digitale Kommunikation notwendig wäre.
+Normalerweise: Mehr als 100mA muss per Datenkommunikation angefordert werden. Ladegeräte ohne Datenkommunikation ermöglicht die **USB battery charging specification** eine Versorgung mit bis zu 1,5A (7,5W). [[THE BASICS OF USB BATTERY CHARGING](https://www.maximintegrated.com/en/design/technical-documents/tutorials/4/4803.html)]
 
 ### USB Power Delivery (USB-PD)
 
-Erlaubt die Versorgung in beiden Richtungen, d.h. auch der Host (z.B. Laptop) kann geladen werden. Mit Typ-C Stecker, bis zu 100 W. Chip im Kabel begrenzt Strom (d.h. nicht jedes Kabel ist geeignet).
-
-[USB-PD - USB Power Delivery](https://www.elektronik-kompendium.de/sites/com/1809251.htm)
+Erlaubt die Versorgung in beiden Richtungen, d.h. auch der Host (z.B. Laptop) kann geladen werden. Mit Typ-C Stecker, bis zu 100 W. Chip im Kabel begrenzt Strom (d.h. nicht jedes Kabel ist geeignet). [[USB-PD - USB Power Delivery](https://www.elektronik-kompendium.de/sites/com/1809251.htm)]
 
 
 
@@ -191,7 +164,7 @@ Quelle: [wikipedia](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
 [10GBASE-T](https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T)
 
-[2.5GBASE-T_and_5GBASE-T)](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
+[2.5GBASE-T_and_5GBASE-T](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
 > The intermediate speeds became relevant around 2014 as it became clear that it would not be possible to run 10GBASE-T over the Cat5e cable that had been used for the wiring in many buildings but that, with the development of fast WiFi protocols such as IEEE 802.11ac, there was a significant demand for cheap uplink faster than 1000BASE-T offered. IEEE 802.3bz will also support Power over Ethernet, which has generally not been available at 10GBASE-T.
 
