@@ -4,6 +4,8 @@ subtitle: Übungen
 tags: [assignment,2AHITS]
 ---
 
+BLA
+
 #### Übung (Dynamisches Array aus int)
 
 Schreibe ein Programm das die Eingabe von **beliebig vielen**, positiven Zahlen ermöglicht.
