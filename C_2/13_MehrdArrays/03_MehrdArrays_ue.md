@@ -4,7 +4,7 @@ subtitle: Übungen Summen
 tags: [assignment,c,2AHITS]
 ---
 
-#### **Übung (Zeilensumme in Array):**
+#### Übung (Zeilensumme in Array)
 
 Schreibe eine Funktion die alle Zeilensummen berechnet und diese in ein Array schreibt.
 Es ist in der Funktion keine Ausgabe erlaubt, diese muss im Hauptprogramm stattfinden.
@@ -25,7 +25,7 @@ int sum_z[ZEILEN];	// Zeilensummen
 
 ---
 
-#### **Übung (Spaltensumme in Array):**
+#### Übung (Spaltensumme in Array)
 
 Wie Übung vorher aber Funktion für die Spaltensummen.
 
