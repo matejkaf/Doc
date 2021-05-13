@@ -12,6 +12,7 @@ subtitle: Cybersecurity Lab
 
 - Kali
   - kali/kali
+  - `sudo -i`
   
 - Ubuntu
   - root/toor
@@ -25,7 +26,8 @@ subtitle: Cybersecurity Lab
 - Metasploitable
 
   - msfadmin/msfadmin
-
+  - `sudo -i`
+  
   
 
 Idee: user / resu bzw. root / toor verwenden.

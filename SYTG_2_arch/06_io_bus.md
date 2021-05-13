@@ -64,9 +64,7 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 [wikipedia : Serial ATA](https://de.wikipedia.org/wiki/Serial_ATA)
 
-Serial AT Attachment
-
-[Video: SATA 3 - SERIAL ATA | WAS IST SATA III (3) ? COMPUTER BASICS DEUTSCH HD](https://youtu.be/T-6z8tCcR38), [wikipedia](https://en.wikipedia.org/wiki/Serial_ATA)
+Serial AT Attachment, [Video: SATA 3 - SERIAL ATA](https://youtu.be/T-6z8tCcR38)
 
 Zum Anschluss von Massenspeichern: Festplatten (HDD), SSD's, DVD Laufwerke
 
