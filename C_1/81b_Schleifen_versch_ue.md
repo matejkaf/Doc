@@ -39,7 +39,7 @@ int main() {
 
 #### Übung (Lottoschein Generator)
 
-Der Lottotip-Generator soll nun mehrere Lottotips (Anzahl ist Benutzereingabe) für einen Lottoschein untereinander ausgeben. Der Benutzer wird am Ende gefragt ob der Vorgang wiederholt werden soll.
+Der Lottotip-Generator soll nun mehrere Lottotips (Anzahl ist Benutzereingabe) für einen Lottoschein untereinander ausgeben. Wie vorher besteht jeder Lottotip aus 6 zufälligen Zahlen aus dem Wertebereich 1–45. Der Benutzer wird am Ende gefragt ob der Vorgang wiederholt werden soll.
 
 
 

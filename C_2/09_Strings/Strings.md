@@ -1,7 +1,7 @@
 ---
 title: Strings
 subtitle: Einführung
-tags: [lecture,c,strings,intro]
+tags: [lecture,c,strings,intro,1CHELS]
 ---
 
 Für einzelne Zeichen gibt es den Datentyp `char`.
@@ -94,7 +94,7 @@ Häufig sucht man das **Ende** eines Strings. Schreibe ein Programm das den Inde
 ---
 
 
-Strings sind Arrays daher gilt **call by reference**:
+Strings sind Arrays daher gilt **call by reference** wenn diese an eine Funktion übergeben werden:
 
 ```c
 void change(char str[]);
@@ -116,7 +116,7 @@ void change(char str[])
 
 ## ASCII Code
 
-Ein Computer kann **nur Zahlen** speichern. Um Buchstaben darzustellen gibt es eine Übereinkunft [den ASCII-Code Standard](http://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) die Zahlen auf Buchstaben zuordnet. 
+Ein Computer kann **nur Zahlen** speichern. Um Buchstaben darzustellen gibt es eine Übereinkunft den [ASCII-Code Standard](http://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) die Zahlen auf Buchstaben zuordnet. 
 
 Beispiel, der String `"abc0123"` steht im Speicher als Folge von Zahlen:
 

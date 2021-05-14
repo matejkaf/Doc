@@ -4,19 +4,19 @@ subtitle: Übungen
 tags: [c,strings,assignment]
 ---
 
-#### **Übung (searchlast):**
+#### Übung (searchlast)
 
 Schreibe eine Funktion die ein Zeichen in einem String sucht. Rückgabewert ist der Index des Zeichens bzw. `-1` wenn des Zeichen nicht gefunden wurde. Kommt das Zeichen mehrfach vor soll die Position des letzten Zeichens genommen werden.
 
 ---
 
-#### **Übung (strrevcpy):**
+#### Übung (strrevcpy)
 
 Kopiert alle Zeichen eines Strings in umgekehrter Reihenfolge in einen zweiten String.
 
 ---
 
-#### **Übung (String umdrehen):**
+#### Übung (String umdrehen)
 
 Schreibe eine Funktion `void reverseStr(char s[])` die einen übergebenen String umdreht.
 
@@ -26,32 +26,32 @@ Hinweis: Es ist nur ein Parameter erlaubt und es darf kein lokales Array als Zwi
 
 ---
 
-#### **Übung (strtrimright):**
+#### Übung (strtrimright)
 
 Entfernt alle Leerzeichen am Ende eines Strings.
 Hinweis: `'\0'` muss nach vor verschoben werden.
 
 ---
 
-#### **Übung (strtrimleft):**
+#### Übung (strtrimleft)
 
 Entfernt alle Leerzeichen am Anfang eines Strings.
 
 ---
 
-#### **Übung (strdel):**
+#### Übung (strdel)
 
 Entfernt ein Zeichen an einer bestimmten Position aus einem String.
 
 ---
 
-#### **Übung (strremchr):**
+#### Übung (strremchr)
 
 Alle Vorkommen eines bestimmten Zeichens aus dem String löschen.
 
 ---
 
-#### **Übung (Leerzeichen reduzieren):**
+#### Übung (Leerzeichen reduzieren)
 
 Schreibe eine Funktion `strtrred` das alle mehrfach hintereinander vorkommenden Leerzeichen aus einem String entfernt.\
 Beispiel: 
@@ -65,7 +65,7 @@ In der Funktion soll kein weiterer String angelegt werden, sondern es wird direk
 
 ---
 
-#### **Übung (Suche erstes Zeichen aus mehreren):**
+#### Übung (Suche erstes Zeichen aus mehreren)
 
 Schreibe eine Funktion `strcspn` (get span until character in string) mit 2 Strings `s1` und `s2` als Parameter.
 Die Funktion sucht in s1 das erste Vorkommen von irgendeinem der Zeichen in `s2`.
@@ -82,7 +82,7 @@ strcspn("Hallo Welt", "cde");
 
 ---
 
-#### **Übung (Caesar):**
+#### Übung (Caesar)
 
 Die Caesar Methode ist eine einfache Verschlüsselung. Dabei wird jeder Buchstabe eines Texts um eine gewisse Anzahl von Stellen im Alphabet verschoben. Sender und Empfänger der Nachricht müssen die Anzahl der Verschiebungen wissen (26 Möglichkeiten). Beispiel: Verschiebung=5, `"d"` $\longrightarrow$ `"i"`, `"w"` $\longrightarrow$ `"b"`. Verwende nur Kleinbuchstaben (auch keine Leerzeichen).
 
@@ -90,7 +90,7 @@ Programmiere Funktionen für die Ver- und Entschlüsselung.
 
 ---
 
-#### **Übung (Vergleichen):**
+#### Übung (Vergleichen)
 
 Schreibe eine Funktion `int compare(char s1[], char s2[])` zum Vergleichen zweier Strings.
 Rückgabewert: 1 – die Strings sind identisch, 0 – andernfalls.
@@ -99,7 +99,7 @@ Achtung die Strings können unterschiedlich lang sein.
 
 ---
 
-#### **Übung (Suchen):**
+#### Übung (Suchen)
 
 Implementiere eine Funktion `int find(char s1[], char s2[])` die einen String `s2` in `s1` sucht (z.B.: suchen eines Worts in einem Satz). 
 
@@ -107,7 +107,7 @@ Rückgabewert `-1` wenn nicht gefunden, ansonsten der Index des ersten übereins
 
 ---
 
-#### **Übung (Zeichen Statistik):**
+#### Übung (Zeichen Statistik)
 
 Schreibe ein Programm, das die Anzahl der Selbstlaute eines Textes ermittelt und in folgender Form am Bildschirm ausgibt:
 
@@ -129,7 +129,7 @@ Die Ausgabe des Balkens soll mit Hilfe einer Funktion realisiert werden. Die Bal
 
 ---
 
-#### **Übung (Weitere Stringfunktionen):**
+#### Übung (Weitere Stringfunktionen)
 
 Weitere Übungsmöglichkeiten für String-Funktionen. Keinen String als Zwischenspeicher anlegen. Falls eine Veränderung gefragt ist, soll diese im übergebenen String stattfinden und nicht in einen weiteren String kopiert werden!
 
@@ -149,7 +149,7 @@ Weitere Übungsmöglichkeiten für String-Funktionen. Keinen String als Zwischen
 
 ---
 
-#### **Übung (Weitere Stringfunktionen II):**
+#### Übung (Weitere Stringfunktionen II)
 
 Noch mehr Übungsmöglichkeiten für String-Funktionen. Keinen String als Zwischenspeicher anlegen.
 Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfinden und nicht in einen weiteren String kopiert werden!
@@ -165,14 +165,13 @@ Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfinde
 
 ---
 
-#### **Übung (Weitere Stringfunktionen III):**
+#### Übung (Weitere Stringfunktionen III)
 
 Für Unermüdliche:
 
 - `ispalindrom` – prüft ob ein Wort ein [Palindrom](http://de.wikipedia.org/wiki/Palindrom) ist (Leerzeichen und Groß-/Kleinschreibung sollen ignoriert werden). Beispiele: Otto, Rentner, Lagerregal, Reittier, Rotor.
 - `strRightAlign` – Text innerhalb einer gegebenen Feldbreite rechtsbündig machen.
 - `strCenterAlign` – Text innerhalb einer gegebenen Feldbreite zentrieren.
-
 
 
 
