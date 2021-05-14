@@ -272,6 +272,8 @@ Bei LM und NTLM authentifizierungen (Lanmanager, NT Lanmanager). Werden ohne Sal
 
 Kali `/usr/share/wordlists`
 
+### Crunch
+
 Tool `crunch`: zum erstellen einer brute-force liste
 
 Alle Wörter von Länge 4 bis 6 aus bestimmten Buchstaben zusammengesetzt:
@@ -289,3 +291,192 @@ $ crunch 4 8 -f /usr/share/crunch/charset.lst mixalpha-numeric-all-sv -o  crunch
 Achtung 84 PB! (Peta Byte)
 
 Siehe `man crunch` – eher komplex in der Bedienung.
+
+
+
+### Cewl
+
+`cewl`: Passwort Profiling
+
+```bash
+$ cewl https://cbt-24.de -m 6 -d 3 -w cbt24.cewl 
+# -m <laenge> Minimale Wortlänge
+# -d <tiefe> Maximale Tiefe der verfolgten Links (Default: 2)
+# -w <datei> Output Datei
+
+
+# HTL Braunau liefert eine leere Datei!?
+$ cewl https://www.htl-braunau.at -m 6 -d 3 -w htl.cewl 
+
+$ cewl https://www.br-automation.com/de/ -m 6 -d 3 -w br.cewl 
+$ wc -l br.cewl
+# Anzahl der Zeilen in der Datei
+
+
+```
+
+Erstellt eine Wortliste aus Begriffen die auf der Website gefunden werden. Hintergrund: Mitarbeiter einer Firma verwenden gerne Passwörter die Begriffe aus ihrem beruflichem Umfeld enthalten.
+
+
+
+### John the Ripper
+
+`john` (aus dem Projekt Openwall)
+
+Oft werden Passwörter **mutiert**, d.h. Sonderzeichen und Ziffern eingebaut sowie Groß-/Kleinschreibung verändert.
+
+Konfigurationsdatei – in der Mutationsregeln definiert sind:  `/etc/john/john.conf`
+
+Anwendung:
+
+```bash
+$ more test.txt 
+braunau
+htl
+gundula
+$ john --wordlist=test.txt --rules --stdout >test-mutated.txt
+...
+Gundula1
+htlhtl
+uanuarb
+aludnug
+1braunau
+1htl
+1gundula
+BRAUNAU
+HTL
+GUNDULA
+...
+Gundula4
+Braunau6
+Htl6
+Gundula6
+Braunau8
+Htl8
+Gundula8
+Braunau.
+Htl.
+Gundula.
+Braunau?
+Htl?
+Gundula?
+Braunau0
+..
+```
+
+Eigene Regel in der Konfigurationsdatei ergänzen:
+
+```bash
+$ sudo -i
+$ nano /etc/john/john.conf
+```
+
+```
+...
+# Wordlist mode rules
+[List.Rules:Wordlist]
+# Try words as they are
+:
+# Lowercase every pure alphanumeric word
+-c >3 !?X l Q
+...
+...
+# Ziffer am Anfang^ und Ende$ des Wortes
+^[0-9]$[0-9]
+```
+
+
+
+```bash
+$ john --wordlist=test.txt --rules --stdout >test-mutated.txt
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+448p 0:00:00:00 100.00% (2021-05-13 05:16) 8960p/s 9gundula9
+
+#########################
+$ tail test-mutated.txt 
+9gundula6
+9braunau7
+9htl7
+9gundula7
+9braunau8
+9htl8
+9gundula8
+9braunau9
+9htl9
+9gundula9
+
+```
+
+
+
+Man kann im conf File auch eine eigene Sektion hinzufügen:
+
+```
+[List.Rules:TwoDigits]
+# Ziffer am Anfang^ und Ende$ des Wortes
+^[0-9]$[0-9]
+```
+
+Nur diese Regel ausführen:
+
+```bash
+$ john --wordlist=test.txt --rules=TwoDigits --stdout >test-mutated.txt | more
+```
+
+
+
+## L0ftCrack
+
+Kostenpflichtig. Windows Tool zum password cracking.
+
+Aus dem Hash das Passwort wiederherstellen.
+
+Audit/Pentesting: Prüfen ob verwendete Passwörter sicher sind bzw. unsichere Passwörter finden.
+
+
+
+## John the Ripper
+
+Video 145
+
+Ist auch ein cracking tool.
+
+[John the Ripper password cracker](https://www.openwall.com/john/)
+
+john braucht viel (CPU) Leistung (VM daher eher zu wenig).
+
+
+
+## Cain & Abel
+
+Frei, für Windows
+
+
+
+## Online Angriffe
+
+![image-20210513152634580](fig/image-20210513152634580.png)
+
+Oft wird nur eine begrenzte Anzahl von Anmeldungen erlaubt, dann wird der Account gesperrt.
+
+**Medusa**:
+
+Video 148, z.B. Angriff auf Mail SMTP
+
+**THC Hydra**:
+
+Video 149, ähnlich zu Medusa, hat einen Wizard
+
+
+
+## Verteidigung
+
+![image-20210513154229928](fig/image-20210513154229928.png)
+
+![image-20210513154407566](fig/image-20210513154407566.png)
+
+
+
+
+

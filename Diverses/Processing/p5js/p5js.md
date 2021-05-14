@@ -1,3 +1,7 @@
+---
+title: p5js (Processing)
+---
+
 
 
 # Allgemein
@@ -134,3 +138,72 @@ function draw() {
   }
 }
 ```
+
+
+
+# Vector
+
+[p5.Vector Reference](https://p5js.org/reference/#/p5.Vector)
+
+```js
+
+class SpaceShip {
+
+  constructor(x, y) {
+    this.pos = createVector(x,y)
+    this.velocity = createVector(1.0,0.5)
+    this.acceleration = createVector(0.05,0.05)
+  }
+
+  update() {
+    this.pos.add(this.velocity)
+  }
+
+  display() {
+    fill(30, 100, 100)
+    noStroke()
+    ellipse(this.pos.x, this.pos.y, 20, 20)
+  }
+
+  processKey() {
+    if (keyCode == RIGHT_ARROW) {
+      this.velocity.x += this.acceleration.x;
+    }
+    else if (keyCode == DOWN_ARROW) {
+      this.velocity.y += this.acceleration.y;
+    }
+    else if (keyCode == LEFT_ARROW) {
+      this.velocity.x -= this.acceleration.x;
+    }
+    else if (keyCode == UP_ARROW) {
+      this.velocity.y -= this.acceleration.y;
+    }
+    else if (key == ' ') {
+      this.velocity.set(0,0)
+    }
+  }
+}
+
+let funnyShip
+
+function setup() {
+  createCanvas(640, 480)
+  funnyShip = new SpaceShip(40, 30)
+}
+
+function draw() {
+  background(200)
+  funnyShip.display()
+  funnyShip.update()
+  if(keyIsPressed) {
+    funnyShip.processKey()
+  }
+}
+```
+
+# 2D Transformations
+
+[Tutorial](https://processing.org/tutorials/transform2d/)
+
+Statt `pushMatrix` und `popMatrix` : `push` und `pop` verwenden (Speichern zusätzliche den style)
+

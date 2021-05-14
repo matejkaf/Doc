@@ -14,15 +14,17 @@ Zur Erinnerung – Umgang mit Zufallszahlen:
 #include <iostream>
 
 int main() {
-  srand(time(NULL));
   int z;
 
-  // rand() liefert einen großen Bereich an möglichen Werten
+  // seed-random – nur einmal am Anfang des Programms notwendig
+  srand(time(NULL)); 
+
+  // rand() liefert einen großen Bereich (0,..,RAND_MAX) an möglichen Werten
   z = rand();
   printf("(%d-%d): %d\n",0,RAND_MAX,z);
 
   // Durch den Restoperator (Modulo, %) kann dies eingeschränkt werden
-  z = rand()%10;
+  z = rand()%10; // Rest der Division durch 10 ergibt 0,..,9
   printf("(0-9): %d\n",z);
 
   // Und so sind bestimmte Bereiche möglich

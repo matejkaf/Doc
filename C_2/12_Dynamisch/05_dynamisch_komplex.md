@@ -6,13 +6,15 @@ tags: [assignment]
 
 #### Übung (Komplexe Zahl)
 
-Erstelle eine Struktur für eine komplexe Zahl sowie Funktionen für die Ein- und Ausgabe.
+Erstelle eine Struktur für eine komplexe Zahl sowie Funktionen für die Ein- und Ausgabe einer Komplexen Zahl (Parameter als Zeiger).
 
 - Lege zwei komplexe Zahlen dynamisch an.
 - Summiere die beiden Zahlen in einer dritten (neuen) komplexen Zahl.
 - Implementiere für das Summieren zweier komplexer Zahlen eine Funktion.
 Die Funktion soll eine neue komplexe Zahl erzeugen und einen Zeiger auf diese zurückgeben.
 - Ermittle mit Hilfe dieser Funktion die Summe von drei komplexen Zahlen.
+
+
 
 ---
 
