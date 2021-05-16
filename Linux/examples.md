@@ -1,6 +1,9 @@
-# Beispiele für bash
+---
+title: Beispiel für bash - Scripts
+---
 
-
+* TOC
+{:toc}
 
 ## Welche shell läuft?
 

@@ -1,4 +1,11 @@
-# Permissions
+---
+title: Linux File Permissions
+---
+
+* TOC
+{:toc}
+
+## Quellen
 
 - [Ryans Tutorials Linux Tutorial - 8. Permissions](https://ryanstutorials.net/linuxtutorial/permissions.php)
 - [Unix / Linux - File Permission / Access Modes](https://www.tutorialspoint.com/unix/unix-file-permission.htm)
@@ -101,17 +108,47 @@ Oktale Schreibweise
 $ chmod 755 myfile.txt
 # das selbe wie:
 $ chmod u=rwx,g=rx,o=rx myfile.txt
-
 ```
 
 ### owner / group
 
-- `chown`: change owner
-- `chgrp`: change group
-
 Ein File/Directory hat genau einen owner (User) und gehört zu genau einer Gruppe.
 
 Ein User kann zu mehreren Gruppen gehören.
+
+#### change owner
+
+Ändert den owner und die Gruppe einer Datei oder eines Verzeichnisses.
+
+Syntax:
+
+```
+chown user file/dir
+chown user:group file/dir
+chown :group file/dir
+```
+
+Letzte Variante setzt nur die Gruppe.
+
+Rekursive Änderungen `-R` mit mehr Ausgaben `--verbose`
+
+```bash
+$ chown -R --verbose linoxide:www-data /var/www/html
+```
+
+
+
+#### change group
+
+`chgrp`: change group
+
+```bash
+$ chgrp group file.txt
+```
+
+
+
+
 
 
 ## Arbeiten mit Gruppen
@@ -125,7 +162,7 @@ htluser sudo
 
 How to set the group that new files will be created with?
 
-You can change the default group for all files created in a particular directory by setting the setgid flag on the directory (`chmod g+s _dir_`). New files in the directory will then be created with the group of the directory (set using `chgrp <group> <dir>`). This applies to any program that creates files in the directory.
+You can change the default group for all files created in a particular directory by setting the **setgid flag** on the directory (`chmod g+s _dir_`). New files in the directory will then be created with the group of the directory (set using `chgrp <group> <dir>`). This applies to any program that creates files in the directory.
 
 Note that this is automagically inherited for new subdirectories (as of Linux 3.10), however, if sub-directories were already present, this change won't be applied to them (use the -R flag for that).
 

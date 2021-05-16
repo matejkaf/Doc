@@ -207,3 +207,5 @@ function draw() {
 
 Statt `pushMatrix` und `popMatrix` : `push` und `pop` verwenden (Speichern zusätzliche den style)
 
+Die tatsächlichen Koordinaten bei der aktuellen Transformation ausrechnen: [p5js-screenPosition](https://github.com/bohnacker/p5js-screenPosition)
+

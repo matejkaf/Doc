@@ -1,6 +1,10 @@
-# Input/Output Redirection in the Shell
+---
+title: Input/Output Redirection in the Shell
+---
 
-[Gabe Berke-Williams](https://thoughtbot.com/blog/authors/gabe-berke-williams) 
+
+
+[Quelle: Gabe Berke-Williams](https://thoughtbot.com/blog/authors/gabe-berke-williams) 
 
  August 3, 2015 UPDATED ON March 23, 2019
 

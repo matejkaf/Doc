@@ -1,3 +1,7 @@
+---
+title: Kompression mit gzip und tar
+---
+
 - Archiving: Combines multiple files into one, which eliminates the overhead in individual files and makes the files easier to transmit.
 - Compression: Makes the files smaller by removing redundant information.
 

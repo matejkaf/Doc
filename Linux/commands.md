@@ -1,5 +1,11 @@
+---
+title: Linux Kommandos
+---
 
-# small tools
+* TOC
+{:toc}
+
+## small tools
 
 `history` - zeigt die shell History an (shell built in)
 
@@ -19,7 +25,7 @@
 
 `hostname`
 
-`alias` - liste alle Alias
+`alias` - listet alle Alias
 
 `uname` - Systeminformation
 
@@ -35,7 +41,7 @@
 
 
 
-# ls
+## ls
 
 ```bash
 # -l Lang Format
@@ -66,7 +72,7 @@ $ ls --full-time
 
 ```
 
-# man
+## man
 
 Suche in man pages mit `/`, `n` für next.
 
@@ -74,7 +80,24 @@ Suche nach man pages: `man -f passwd`. Shows different sections. `man 5 passwd`.
 
 `man -k copy` : searches both the names and descriptions of the man pages for a keyword
 
-# cp
+
+
+
+
+## file
+
+```bash
+$ file etc.txt 
+etc.txt: ASCII text
+```
+
+Linux ist "extensionless" d.h. Dateiendungen sind ohne Bedeutung. 
+
+> In other systems such as Windows the extension is important and the system uses it to determine what type of file it is. Under Linux the system actually ignores the extension and looks inside the file to determine what type of file it is.
+
+
+
+## cp
 
 ```bash
 $ cp [source] [destination]
@@ -85,7 +108,7 @@ $ cp [source] [destination]
 
 ```
 
-# mv (move, rename)
+## mv (move, rename)
 
 ```bash
 $ mv [source] [destination]
@@ -95,7 +118,7 @@ $ mv [source] [destination]
 
 Verschiebt auch Directories.
 
-# rm
+## rm
 
 ```bash
 $ rm -i * # ask 
@@ -103,7 +126,7 @@ $ rm -r # delete directory
 $ rmdir # delete directory (if empty)
 ```
 
-# grep
+## grep
 
 Mit filename (`-H`) und Zeilennummer (`-n`)
 ```bash
@@ -115,7 +138,7 @@ Rekursiv (`-r`) + ignore case  (`-i`)
 $ grep -rin searchstring *
 ```
 
-# ps
+## ps
 
 Zeige Prozesse
 
@@ -134,7 +157,7 @@ $ sudo ps –ejH
 # nicht BSD/macOS
 ```
 
-# mount / umount
+## mount / umount
 
 ```bash
 # list mounted file systems
@@ -152,7 +175,7 @@ $ sudo umount /dev/sdb1
 
 
 
-# seq
+## seq
 
 ```bash
 $ seq -w 01 10
@@ -178,7 +201,7 @@ done
 
 
 
-# xxd – hexdump
+## xxd – hexdump
 
 ```bash
 $ xxd backuptoonedrive.bash 
@@ -198,7 +221,7 @@ Tool kann auch in der Gegenrichtung agieren.
 
 
 
-# chmod
+## chmod
 
 [ask ubuntu](https://askubuntu.com/questions/932713/what-is-the-difference-between-chmod-x-and-chmod-755)
 

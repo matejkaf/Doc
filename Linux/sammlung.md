@@ -19,42 +19,9 @@
 
 
 
-# Logfiles
-
-[12 Critical Linux Log Files You Must be Monitoring](https://www.eurovps.com/blog/important-linux-log-files-you-must-be-monitoring/)
-
-
-Bsp. ubuntu docker container
-
-```bash
-root@2569fd4b293f:/# cd /var/log
-root@2569fd4b293f:/var/log# tail dpkg.log 
-2019-08-07 13:03:31 status unpacked procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 status unpacked procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 status unpacked procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 status unpacked procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 status unpacked procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 status half-configured procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 status installed procps:amd64 2:3.3.12-3ubuntu1.1
-2019-08-07 13:03:31 trigproc libc-bin:amd64 2.27-3ubuntu1 <none>
-2019-08-07 13:03:31 status half-configured libc-bin:amd64 2.27-3ubuntu1
-2019-08-07 13:03:31 status installed libc-bin:amd64 2.27-3ubuntu1
-```
-
 
 
 # Tidbits
-
-
-
-## `file` Kommando:
-
-```bash
-$ file etc.txt 
-etc.txt: ASCII text
-```
-Linux ist "extensionless" d.h. Dateiendungen sind ohne Bedeutung. 
-> In other systems such as Windows the extension is important and the system uses it to determine what type of file it is. Under Linux the system actually ignores the extension and looks inside the file to determine what type of file it is.
 
 
 
@@ -99,79 +66,6 @@ echo "Hello, $(whoami)."
 
 `.bash_profile` is executed for login shells, while `.bashrc` is executed for interactive non-login shells.
 When you login (type username and password) via console, either sitting at the machine, or remotely via ssh: .bash_profile is executed to configure your shell before the initial command prompt.
-
-
-
-# User Verwaltung
-
-[[Add and Manage User Accounts in Ubuntu 18.04 LTS](https://vitux.com/add-and-manage-user-accounts-in-ubuntu-18-04-lts/)]
-```bash
-$ sudo adduser
-```
-
-
-```bash
-$ adduser htltest
-Adding user `htltest' ...
-Adding new group `htltest' (1000) ...
-Adding new user `htltest' (1000) with group `htltest' ...
-Creating home directory `/home/htltest' ...
-Copying files from `/etc/skel' ...
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-Changing the user information for htltest
-Enter the new value, or press ENTER for the default
-	Full Name []: Test HTL
-	Room Number []: 
-	Work Phone []: 
-	Home Phone []: 
-	Other []: 
-Is the information correct? [Y/n] Y
-```
-
-Alle User auflisten:
-```bash
-awk -F':' '$2 ~ "\$" {print $1}' /etc/shadow
-```
-
-Zwischen User wechseln (innerhalb des gleichen Terminals) 
-[[How to switch between users on one terminal?](https://unix.stackexchange.com/questions/3568/how-to-switch-between-users-on-one-terminal)]
-
-Test
-```bash
-$ whoami
-user1
-$ su -l user2
-Password:
-$ whoami
-user2
-$ exit
-logout
-```
-
-Normale User dürfen nicht alles:
-
-```bash
-$ ls /root
-# ls: cannot open directory '/root': Permission denied
-$ ls -dl /root
-# drwx------ 1 root root 4096 Oct 26 08:25 /root
-```
-
-Super user (root) Rechte einräumen (`sudo` darf aufgerufen werden):
-
-```bash
-# add 'htltest' to group 'sudo' (option: -aG)
-$ usermod -aG sudo htltest
-$ groups htltest
-```
-
-Eine neue Gruppe erzeugen
-
-```bash
-$ groupadd Group_Name
-```
 
 
 

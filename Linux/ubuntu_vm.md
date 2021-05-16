@@ -1,8 +1,13 @@
+---
+title: Ubuntu
+---
+
+
+
 # VM Ware
 
 Fusion 11.5
 
-VmWare Fusion (Schöppl Peter, 4AHELS) - HJ29K-0X314-J8HD3-0A2UH-3MJL5
 
 
 # Ubuntu
