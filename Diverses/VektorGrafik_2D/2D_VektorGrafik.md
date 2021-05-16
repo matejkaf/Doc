@@ -282,7 +282,7 @@ daraus:
 
 
 $$
-{\displaystyle \varphi =\arccos {\frac {{\vec {v}}\cdot {\vec {w}}}{|{\vec {v}}||{\vec {w}}|}}}
+\displaystyle \varphi = \arccos {\frac {{\vec {v}}\cdot {\vec {w}}}{|{\vec {v}}||{\vec {w}}|}}
 $$
 
 
