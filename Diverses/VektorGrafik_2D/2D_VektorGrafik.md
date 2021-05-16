@@ -286,8 +286,7 @@ $$
 ## Matrix
 
 Eine Matrix ist eine rechteckige Anordnung von Zahlen in Zeilen und Spalten. 
-Beispiele (2$\times$2, 3$\times$2, 3$\times$4 Matrix):
-
+Beispiele (2$$\times$$2, 3$$\times$$2, 3$$\times$$4 Matrix):
 $$
 %
 \left[
