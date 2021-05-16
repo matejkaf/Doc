@@ -319,6 +319,8 @@ $$
 \right] 
 %
 $$
+
+
 Implementierung: durch ein 2-dimensionales Array.
 
 Ein **Vektor** ist der Spezialfall einer **Matrix** die nur aus einer Spalte besteht. Man spricht daher auch von einem **Spaltenvektor**.
