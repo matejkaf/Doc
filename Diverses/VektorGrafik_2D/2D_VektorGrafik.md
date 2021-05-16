@@ -250,7 +250,6 @@ Die Multiplikation eines Vektors mit einem Vektor (das sogenannte **innere Produ
 $$
 \vec{v}\cdot \vec{w} =
 \left[
-
 \begin{smallmatrix}
  a \\
  b
@@ -270,13 +269,18 @@ Das Ergebnis ist ein **Skalar**.
 Grafische Interpretation von $$\vec{v}\cdot \vec{w}$$: Rechtwinkelige Projektion des Vektor $$\vec{v}$$ auf $$\vec{w}$$, dann wird die Länge der Projektion mit der Länge von $$\vec{w}$$ multipliziert.
 
 Der Winkel $$\varphi$$ zwischen den Vektoren läßt sich mit folgender Formel über das innere Produkt berechnen:
+
+
 $$
 {\displaystyle {\vec {v}}\cdot {\vec {w}}=|{\vec {v}}|\,|{\vec {w}}|\,\cos \sphericalangle ({\vec {v}},{\vec {w}})}
 $$
 daraus:
+
+
 $$
 {\displaystyle \varphi =\arccos {\frac {{\vec {v}}\cdot {\vec {w}}}{|{\vec {v}}||{\vec {w}}|}}}
 $$
+
 
 
 ## Matrix
@@ -578,7 +582,6 @@ Programmiere alle Transformationen mit homogenen Koordinaten.
 
 
 ## Komposition
-
 
 Der Vorteil alle Transformationen als Matrix darstellen zu können liegt darin, dass mehrere Transformationsmatrizen durch Multiplikation zu einer einzigen zusammengefasst werden können.
 Wenn die Transformation auf mehrere Punkte gleichzeitig angewendet werden soll, ergibt dies eine wesentliche Vereinfachung.
