@@ -46,8 +46,6 @@ $$
 \vec{v} = \left[ \begin{array}{c} 3 \\ 2 \end{array} \right]
 $$
 
-
-
 Kleinbuchstaben mit einem Pfeil kennzeichnen Vektoren.
 
 Vektor bzw. Punkt sind vom Informationsgehalt her gleich. In beiden Fällen sind es beispielsweise 2 Zahlen. Ob es ein Vektor (Richtung und Länge) oder ein Punkt (x und y) ist ergibt sich aus der Verwendung. Oft spricht man von einem Positionsvektor und einem Richtungsvektor wenn diese Unterscheidung wichtig ist.
@@ -75,10 +73,6 @@ $$
 \left[ \begin{array}{c} \lambda\; x \\ \lambda\; y \end{array} \right]
 $$
 
-
-
-
-
 Spezialfälle: $$\lambda=-1$$ (Vorzeichenumkehr) und $$\lambda=1/\rho$$ (Division).
 
 Grafische Interpretation: Verkürzen/Verlängern eines Vektors (Skalieren).
@@ -105,8 +99,6 @@ Durch Umstellen:
 $$
 B=C-A
 $$
-
-
 
 Grafische Interpretation: Endpunkt (C) minus Startpunkt (A) ergibt den Richtungsvektor der von A nach C geht.
 
@@ -142,8 +134,6 @@ $$
 \lVert \vec{v} \rVert = \sqrt{v^2_x + v^2_y}
 $$
 
-
-
 Einen Vektor dessen Norm 1 ist ($$\lVert \vec{v} \rVert =1$$) nennt man **Einheitsvektor**. Jeder Vektor kann auf einen Einheitsvektor normiert werden:
 
 $$
@@ -156,8 +146,6 @@ $$
 \vec{e}_1 = \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] \quad und \quad
 \vec{e}_2 = \left[ \begin{array}{c} 0 \\ 1 \end{array} \right]
 $$
-
-
 
 Ein Vektor kann dann auch so geschrieben werden (Linearkombination aus den Einheitsvektoren $$e_1$$ und $$e_2$$)
 
@@ -179,8 +167,6 @@ $$
 \overrightarrow{AB} = B - A
 $$
 
-
-
 Diesen Vektor normieren:
 
 $$
@@ -200,22 +186,16 @@ $$
 X = A + \lambda\, \vec{v}_{\circ}
 $$
 
-
-
 **Verbindungsvektor** von $$\vec{P}$$ nach $$\vec{Q}$$
 $$
 \vec{v}=
 \vec{Q}-\vec{P}
 $$
 
-
-
 **Abstand** ist die Norm des Verbindungsvektors
 $$
 \lVert \overline{PQ} \rVert = {\lVert \vec{v} \rVert}
 $$
-
-
 
 
 Die **Parameterdarstellung** der Strecke $$\overline{PQ}$$
@@ -227,15 +207,11 @@ $$
 
 
 
-
-
 ---
 
 #### Übung (Planets)
 
 Simuliere die Umkreisung eines Satelliten um die Erde.
-
-
 
 Formelsammlung:
 $$
@@ -267,8 +243,6 @@ Erweiterung: Simuliere die Bahn mehrerer sich gegenseitig anziehenden Planeten.
 
 
 ## Multiplikation von Vektoren
-
-
 
 
 Die Multiplikation eines Vektors mit einem Vektor (das sogenannte **innere Produkt**) ist definiert:
@@ -306,8 +280,6 @@ $$
 
 
 ## Matrix
-
-
 
 Eine Matrix ist eine rechteckige Anordnung von Zahlen in Zeilen und Spalten. 
 Beispiele (2$\times$2, 3$\times$2, 3$\times$4 Matrix):
@@ -370,12 +342,8 @@ $$
  a\cdot x + b\cdot y \\
  c\cdot x + d\cdot y \\
 \end{matrix} 
-\right] 
+\right]
 $$
-
-
-
-
 
 
 D.h. Das innere Produkt 
@@ -475,8 +443,6 @@ Implementiere Matrix mal Vektor und Matrix mal Matrix für $2\times 1$ Vektoren 
 
 ## Transformationen
 
-
-
 In diesem Kapitel soll die Frage beantwortet werden welche praktische Bedeutung Matrizen in der Computergrafik haben.
 
 Wendet man eine Matrix $$T$$ auf einen Punkt $$P$$ an so entsteht ein neuer Punkt $$P'$$. 
@@ -484,11 +450,11 @@ Dies nennt man Transformation, die je nach Aussehen der Matrix unterschiedliche 
 
 Einheitsmatrix
 $$
-	E_2 =
+E_2 =
     \left[\begin{matrix}
         1 & 0 \\
         0 & 1 \\
-    \end{matrix} \right] 
+    \end{matrix} \right]
 $$
 
 
@@ -543,8 +509,6 @@ $$
         b & 1 \\
     \end{matrix} \right] 
 $$
-
-
 
 
 
@@ -614,8 +578,6 @@ Programmiere alle Transformationen mit homogenen Koordinaten.
 
 
 ## Komposition
-
-
 
 
 Der Vorteil alle Transformationen als Matrix darstellen zu können liegt darin, dass mehrere Transformationsmatrizen durch Multiplikation zu einer einzigen zusammengefasst werden können.
