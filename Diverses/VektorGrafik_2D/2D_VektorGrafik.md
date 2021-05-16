@@ -264,6 +264,8 @@ $$
 \right] 
 = a \cdot c + b \cdot d
 $$
+
+
 Das Ergebnis ist ein **Skalar**.
 
 Grafische Interpretation von $$\vec{v}\cdot \vec{w}$$: Rechtwinkelige Projektion des Vektor $$\vec{v}$$ auf $$\vec{w}$$, dann wird die Länge der Projektion mit der Länge von $$\vec{w}$$ multipliziert.
@@ -274,6 +276,8 @@ Der Winkel $$\varphi$$ zwischen den Vektoren läßt sich mit folgender Formel ü
 $$
 {\displaystyle {\vec {v}}\cdot {\vec {w}}=|{\vec {v}}|\,|{\vec {w}}|\,\cos \sphericalangle ({\vec {v}},{\vec {w}})}
 $$
+
+
 daraus:
 
 
