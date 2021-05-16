@@ -3,6 +3,7 @@ title: Vektorgeometrie
 subtitle: Grundlagen der 2D Computergrafik
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Vektorgeometrie (auch [Analytische Geometrie](http://de.wikipedia.org/wiki/Analytische_Geometrie)), ist das mathematische Werkzeug für Berechnungen im 2 bzw. 3-dimensionalem Raum und Grundlage der Computergrafik.
 
@@ -844,7 +845,7 @@ $$
 $$
 
 
-	
+​	
 
 
 Inneres Produkt, zwei Vektoren orthogonal zueinander:
