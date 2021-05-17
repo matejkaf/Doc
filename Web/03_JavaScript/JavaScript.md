@@ -1,17 +1,17 @@
-# Quellen
+---
+title: JavaScript
+subtitle: Übersicht
+tags: [lecture,5AHELS]
+---
 
 
 - [wikipedia-JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [MDN Learn JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 - [mozilla developer network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-# JavaScript
-
-<div class="definition">
 JavaScript ist entstanden um HTML dynamisch zu machen.
 D.h. Web Seiten nach dem Laden zu ändern, z.B. um auf Benutzerinteraktionen zu reagieren.
 JavaScript wurde nur auf der Client Seite (im Web-Browser) verwendet.
-</div>
 
 Der aktuelle Trend geht dahin, JavaScript nicht nur auf der Client Seite (im Web-Browser) zu verwenden sondern auch auf der Server Seite.
 Damit steht durchgehend die gleiche Programmiersprache zur Verfügung.
@@ -24,7 +24,7 @@ JavaScript ist unter dem Namen **ECMAScript** standardisiert.
 
 Laut [dieser Tabelle](https://kangax.github.io/compat-table/es6/) unterstützen die wichtigsten Browser (Chrome, Firefox, Safari, Edge) in ihrer aktuellen Version (Dezember 2016) fast den vollständigen ECMAScript 6 (=ECMAScript 2015) Standard.
 
-# Im Browser
+## Im Browser
 
 Der Standardweg ein JavaScript Programm anzulegen ist als Teil einer HTML Seite. Öffnet der Browser dieses HTML Dokument so wird das enthaltene JavaScript Programm automatisch gestartet.
 
@@ -62,7 +62,7 @@ Ein weitere Möglichkeit ist das Einbinden eines externen JavaScript Files.
 Das `<script>` Tag kann sowohl in `<body>` als auch in `<head>` stehen.
 Bei sehr umfangreichn Webseiten stehen die `<script>` Tags am Ende des `<body>` Tags um die Ladezeit zu beschleunigen.
 
-# Die Sprache
+## Die Sprache
 JavaScript ist sehr ähnlich zu C und Java.
 
 Anlegen von Variablen mit `let`:
@@ -100,9 +100,9 @@ x = "Test";
 ```
 
 
-# Kontrollstrukturen
+## Kontrollstrukturen
 
-## if / else
+### if / else
 ```javascript
 if (expr) {
   //statements;
@@ -112,7 +112,7 @@ if (expr) {
   //statements;
 }
 ```
-## Switch
+### Switch
 
 ```javascript
 switch(expr) {
@@ -125,7 +125,7 @@ switch(expr) {
 }
 ```
 
-## while Schleife
+### while Schleife
 
 ```javascript
 let i=0;
@@ -135,7 +135,7 @@ while(i<10) {
 }
 ```
 
-## for Schleife
+### for Schleife
 
 ```javascript
 for(let i=0; i<10; i++) {
@@ -144,7 +144,7 @@ for(let i=0; i<10; i++) {
 ```
 
 
-# Funktionen
+## Funktionen
 
 Funktionen können an beliebiger Stelle definiert werden.
 
@@ -170,7 +170,7 @@ console.log(x + '+' + y  + '=' + add(x,y));
 ```
 
 
-# Strings
+## Strings
 
 Strings werden mit `+` zu einem neuen String zusammengefügt.
 
@@ -223,7 +223,7 @@ let z = parseInt("10011",2);
 Strings in JavaScript werden aus Unicode (UTF-16) Zeichen gebildet.
 
 
-## String Methoden
+### String Methoden
 
 Strings sind (wie in Java) *immutable* Objekte, d.h. im Inhalt nicht veränderbar.
 Alle String-Methoden erzeugen daher neue Strings.
@@ -286,7 +286,7 @@ txt.split(","); // Split on commas
 
 
 
-# Arrays
+## Arrays
 
 ```javascript
 let arr = [3,5,7,9];
@@ -311,7 +311,7 @@ for(let x of arr) {
 }
 ```
 
-## Array Methoden
+### Array Methoden
 
 `push` zum Hinzufügen eines neuen Elements.
 
@@ -372,7 +372,7 @@ Die Parameter sind Index start-end (der end Index ist nicht dabei)
 Komplette Liste von Array Funktionen im [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
-# JavaScript Objekte
+## JavaScript Objekte
 
 JavaScript Objekte sind Container für benannte Werte (Schlüssel/Wert Paare, *key/value pairs*):
 
@@ -442,7 +442,7 @@ for (let key in obj) {
 }
 ```
 
-# Datentypen, undefined und null
+## Datentypen, undefined und null
 
 JavaScript hat folgende eingebaute Typen:
 
@@ -490,7 +490,7 @@ if( value ) {
 ist.
 
 
-# var, let und const
+## var, let und const
 
 Eine mit `var` deklarierte Variable ist innerhalb der gesamten Funktion sichtbar.
 
@@ -535,7 +535,7 @@ pi=3.1  // error !
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 
-# Laufzeitauswertung
+## Laufzeitauswertung
 
 JavaScript kann Programmausdrücke auch zur Laufzeit auswerten:
 
@@ -549,7 +549,7 @@ let res = a + b + c;
 [eval auf w3schools](http://www.w3schools.com/jsref/jsref_eval.asp)
 
 
-# Functional Programming
+## Functional Programming
 
 *functions in javascript are first class objects*
 
@@ -637,7 +637,7 @@ let filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 
 
 
-# OOP in JavaScript
+## OOP in JavaScript
 
 Funktionen sind in JavaScript Objekte.
 

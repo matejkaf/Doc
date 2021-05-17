@@ -5,6 +5,9 @@ subtitle: Snippets
 
 
 
+* TOC
+{:toc}
+
 # Generel
 
 ```php
@@ -487,6 +490,3 @@ ini_set('display_startup_errors', TRUE);
 ```php
 file_put_contents('php://stderr', print_r($foo, TRUE))
 ```
-
-
-# 
