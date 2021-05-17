@@ -35,7 +35,7 @@ Was ist im obigen Beispiel zu ändern wenn die Ausgabe der Summe **nicht** in de
 
 
 
-**Beispiel** – Schreibe eine Funktion `print` die den Inhalt eines Arrays ausgibt.
+**Beispiel** – Schreibe eine Funktion `print` die den Inhalt eines Arrays mittels Schleife ausgibt.
 
 **Lösung:**
 
