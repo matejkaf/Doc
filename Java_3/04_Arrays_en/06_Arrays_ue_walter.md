@@ -28,5 +28,5 @@ Walter will wissen ob manche Klassen besonders schlimm sind.
 
 - Ergänze dass auch die Klassenbezeichnung pro Schüler verwaltet wird.
 
-Schreibe eine Methode `printAmountByClass()` in der Klasse `WaltersListe` die pro Klasse die Summe der offenen Beträge ausgibt.
+- Schreibe eine Methode `printAmountByClass()` in der Klasse `WaltersListe` die pro Klasse die Summe der offenen Beträge ausgibt.
 
