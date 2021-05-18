@@ -1,7 +1,7 @@
 ---
 title: Dynamische Speicherverwaltung
 subtitle: Übung Speicherbedarf von Strukturen
-tags: [assignment]
+tags: [assignment,2AHITS]
 ---
 
 #### Hintergrundwissen

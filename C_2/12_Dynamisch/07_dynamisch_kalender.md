@@ -1,10 +1,8 @@
 ---
 title: Dynamische Speicherverwaltung
-subtitle: Übunge Kalender
+subtitle: Übung Kalender
 tags: [assignment,2AHITS]
 ---
-
-
 
 #### Übung (Schularbeitenkalender)
 
