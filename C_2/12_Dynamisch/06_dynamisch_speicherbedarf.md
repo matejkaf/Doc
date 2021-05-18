@@ -4,11 +4,9 @@ subtitle: Übung Speicherbedarf von Strukturen
 tags: [assignment]
 ---
 
+#### Hintergrundwissen
 
-
-#### Übung (Speicherbedarf von Strukturen)
-
-Hintergrundwissen: Der `sizeof` Operator ermittelt die (Byte) Größen von Variablen, Datentypen und Strukturen.
+Der `sizeof` Operator ermittelt die (Byte) Größen von Variablen, Datentypen und Strukturen.
 
 ```c++
 struct Complex {
@@ -34,35 +32,50 @@ int main() {
 }
 ```
 
-Aufgabenstellung: Ermittle mittels `sizeof()` die Größe der folgenden Strukturen. Welche Schlussfolgerungen ziehst Du aus dem Ergebnis?
+---
 
-```c
+#### Übung (Speicherbedarf von Strukturen)
+
+Schätze zuerst den Speicherbedarf der Strukturen. Verwende anschließend ein Programm mit  `sizeof()` um die Größe der Strukturen zu ermitteln. Welche Schlussfolgerungen ziehst Du aus dem Ergebnis? Mache ein paar Experimente um deine Hypothese zu überprüfen.
+
+
+
+```c++
 struct Test1 {
-  int a;
+  char a;
   char b;
-  char c;
 };
 ```
 
-
-
-```c
+```c++
 struct Test2 {
+  int a;
+  int b;
+};
+```
+
+```c
+struct Test3 {
+  int a;
+  char b;
+  char c;
+};
+```
+
+```c
+struct Test4 {
   char b;
   int a;
   char c;
 };
 ```
 
-
-
 ```c
-struct Test3{
-  int a;
+struct Test5 {
   char b;
   char c;
   char d;
-  char e;
+  int a;
 };
 ```
 
