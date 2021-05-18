@@ -3,6 +3,8 @@ title: Dynamische Speicherverwaltung
 tags: [2AHITS_Teach,2AHITS]
 ---
 
+* TOC
+{:toc}
 
 ## Motivation
 
@@ -146,19 +148,46 @@ heute->tag = 10; // <------<< Laufzeitfehler >>
 
 ## Speicherbereiche
 
-Der Speicher eines Programms besteht aus **vier Segmenten**:
+Der Speicher eines gestarteten Programms besteht aus **vier Segmenten**:
 
 
 - **Code** Das Programm in Maschinensprache
 - **Daten** Globale Variable
 - **Stack** Lokale Variable und Parameter von Funktionen
-- **Heap** Bei Bedarf verfügbarer Speicher (`new`)
+- **Heap** Bei Bedarf verfügbarer/allokierbarer Speicher (`new`)
 
-
+Siehe [[Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program/)]
 
 ### Code und Daten
 Die Segmente **Code** und (globale) **Daten** werden vom **Compiler** festgelegt. 
 
+Konkret sind es 3 Bereiche:
+
+- text ... Programm
+- data ... initialisierte globale Daten
+- bss ... uninitialisierte globale Daten (*block started by symbol*)
+
+Linux `size` command zeigt die Größen dieser Bereiche an [[size:manpage](https://linux.die.net/man/1/size)] [[Linux size Command Tutorial for Beginners](https://www.howtoforge.com/linux-size-command/)]. Werte in Bytes.
+
+```bash
+$ size main
+   text    data     bss     dec     hex filename
+   1910     648 1024032 1026590   faa1e main
+```
+
+- dec = text+data+bss
+
+- hex ... Hexwert von dec
+
+---
+
+#### Übung (Speicher Segmente)
+
+Teste anhand eines C Programms mit **globalen Variablen** ohne bzw. mit Startwert.
+
+Was passiert beim Anlegen von **lokalen Variablen**?
+
+---
 
 
 
@@ -182,21 +211,98 @@ Die Größe des Stacks ist **begrenzt** (Windows: 4 MB) und kann, während das P
 - Insbesondere keine großen Arrays oder Strukturen verwenden. 
 - Besser geeignet sind dafür globale Variablen oder der Heap.
 
+---
+
+#### Übung (Stackgröße ermitteln)
+
+Schreibe ein Programm mit dem die ungefähre Größe des Stacks ermittelt werden kann.
+Anleitung: Mache eine Funktion die als lokale Variable ein `char` Array mit 1024 Elementen (=1 kByte) anlegt. Diese Funktion hat einen Parameter – die Aufruftiefe – gib diese in der Funktion aus und rufe dann die Funktion in der Funktion wieder auf (= Rekursion) – übergib dabei die Aufruftiefe plus eins.
+
+Experimentiere weiters ob sich an diesem zur Verfügung stehenden Stack Speicher etwas ändert wenn große globale Variablen verwendet werden:
+
+```c++
+char gdata[1024*1000]; // 1000 kB = 1 MB
+```
+
+---
+
+#### Linux
+
+Mit `ulimit` können die unterschiedlichen Begrenzungen angezeigt (und verändert) werden.
+
+```bash
+$ ulimit -a
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 104244
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 5242
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 4096
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) unlimited
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+```
+
+Nur die Stacksize:
+
+```bash
+$ ulimit -s
+8192
+```
+
+Stacksize ändern
+
+```bash
+$ ulimit -s 2000
+```
 
 
-#### Stack Buffer Overflow (shell code)
 
-Eine Methode (Exploit) bei der Hacker Sicherheitslücken in Programmen ausnützen. Dabei wird insbesondere ausgenutzt, dass sich die Rücksprungadresse einer Funktion am Stack befindet.
-Es wird ein Programmcode eingeschleust (meist in einem String) und dann der Stack so geschickt zum überlaufen gebracht, dass sich die Rücksprungadresse auf dem Stack so verändert, dass das eingeschleuste Programm aufgerufen wird.
+#### Stack Buffer Overflow
+
+Eine Methode (Exploit) bei der Hacker Sicherheitslücken (Vulnerabilities) in Programmen ausnützen. Dabei wird insbesondere ausgenutzt, dass sich die Rücksprungadresse einer Funktion am Stack befindet.
+Es wird ein Programmcode eingeschleust (meist in einem String) und dann die Daten Stack so geschickt zum überlaufen gebracht, dass sich dadurch die Rücksprungadresse auf dem Stack so verändert, dass das eingeschleuste Programm am Stack ausgeführt wird. Häufig stellt der eingschleuste Code eine shell für den Angreifer zur Verfügung weshalb dies als [shellcode](https://en.wikipedia.org/wiki/Shellcode) bezeichnet wird.
 
 [wikipedia – stack buffer overflow](http://en.wikipedia.org/wiki/Stack_buffer_overflow)
-
-[www.safemode.org – Writing shell code](http://www.safemode.org/files/zillion/shellcode/doc/Writing_shellcode.html)
 
 
 
 ### Heap
 
-Der Heap ist der freie Hauptspeicher im Computer. Vom Heap können zur Laufzeit des Programms Speicherblöcke angefordert (**allokiert**, mit `new`) und wieder freigegeben (`delete`) werden.  Die Verwaltung erfolgt durch das Betriebssystem.
+Der Heap sind jene Speicherbereiche die zur Laufzeit vom Programm angefordert (**allokiert**, mit `new`) und wieder freigegeben (`delete`) werden. Die Zuteilung erfolgt aus dem freien Hauptspeicher des Computers die Verwaltung erfolgt durch das Betriebssystem.
 
-Alle gerade laufenden Programme teilen sich den Heap, wenn ein Programm den ganzen Platz für sich beansprucht hat das negative Auswirkungen. Ein Programm soll daher gerade soviel Speicher in Anspruch nehmen wie für die aktuellen Aufgaben notwendig sind.
+Alle gerade laufenden Programme teilen sich den freien Hauptspeicher für den Heap, wenn ein Programm den ganzen Platz für sich beansprucht hat das negative Auswirkungen. Ein Programm soll daher gerade soviel Speicher in Anspruch nehmen wie für die aktuellen Aufgaben notwendig sind und den Speicher wieder freigeben sobald dieser nicht mehr benötigt wird.
+
+
+
+### Speichermap (memory map)
+
+[[Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program/)]
+
+![img](fig/page1-234px-Program_memory_layout.pdf.jpg)
+
+Heap und Stack sind von den Speicheradressen her sehr weit voneinander entfernt.
+
+```c++
+int x=386835;
+int* q=&x;
+printf("Stack: %p\n", q);
+int* p = new int;
+printf("Heap: %p\n", p);
+printf("Distanz: %ld GB", (q-p)/1024/1024/1024 );
+```
+
+```
+Stack: 0x7fff33d944dc
+Heap:       0x1632280
+Distanz: 32767 GB
+```
+
+Der Raum zwischen stack und heap wird aber nicht komplett durch physikalischen Speicher belegt. Die gezeigte memory map ist der virtuelle Speicherraum des Prozesses.
