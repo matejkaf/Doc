@@ -4,9 +4,12 @@ subtitle: C Programmieren
 tags: [2AHITS_Teach]
 ---
 
-## Installation
+* TOC
+{:toc}
 
-### Cygwin
+# Installation
+
+## Cygwin
 
 ```bash
 $ ./setup-x86_64.exe --no-admin -q -P "gcc-g++"
@@ -14,7 +17,7 @@ $ ./setup-x86_64.exe --no-admin -q -P "gcc-g++"
 
 
 
-### Ubuntu
+## Ubuntu
 
 Installieren [[How to Install GCC Compiler on Ubuntu 18.04](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/)]:
 
@@ -28,7 +31,7 @@ $ apt install build-essential
 
 
 
-## Replit.com
+# Replit.com
 
 `C++` REPL. 
 
@@ -49,7 +52,7 @@ $ ./program
 
 
 
-## Unix / Linux generell
+# Unix / Linux generell
 
 Installation testen:
 
@@ -82,16 +85,16 @@ $ ./hello
 
 
 
-## C Programm und stdin / stdout
+# C Programm und stdin / stdout
 
 
-- stdin aus einer Datei umleiten
+- stdin aus einer Datei ins Programm umleiten
 - [!2AHITS Grp2 07.05.2021]
 - Dateiumleitung und Pipes anhand eines C Programms demonstrieren (z.B. viel Text ausgeben und in `more` pipen)
 
 
 
-## Kommandozeilenparameter
+# Kommandozeilenparameter
 
 ```c++
 int main(int argc, char *argv[]) {
@@ -143,9 +146,29 @@ main
 main.cpp
 ```
 
+Optionen erkennen, z.B. Anzahl der Zeilen die ein Programm ausgeben soll.
+
+```bash
+$ ./main -n 20
+```
+
+Default: 10
+
+```c++
+char nrLinesOption[] = "-n";
+int nrLines = 10;  
+if( strcmp(nrLinesOption,argv[1]) == 0 ) {
+  nrLines=atoi(argv[2]);
+}
+
+for(int i=0;i<nrLines;i++) {
+  printf("line %d\n", i);
+}
+```
 
 
-## Übungen
+
+# Übungen
 
 #### Übung (Addieren)
 
@@ -192,7 +215,7 @@ $ ./main 2 / 4 -f
 
 
 
-## GNU Debugger (gdb)
+# GNU Debugger (gdb)
 
 ```bash
 # -g ... compile with debugging flags, for use with gdb

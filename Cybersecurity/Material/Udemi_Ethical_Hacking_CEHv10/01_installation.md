@@ -100,6 +100,7 @@ Ethical Hacking CEHv10 (Udemi-Kurs), Eric Amberg
   
 - Aktuelles Windows 10
   - Direkt herunterladen: [](https://www.microsoft.com/de-de/software-download/windows10ISO)
+    - 5,9 GB `Win10_20H2_v2_German_x64.iso`
     - Oder: **Media Creation Tool**: Unter Windows installieren. Damit kann eine ISO Datei für das aktuell installierte Windows erstellt werden.
   - 1024 MB, 50 GB
   - Keinen Produkt-Key, Windows 10 Pro, 
@@ -114,7 +115,7 @@ Ethical Hacking CEHv10 (Udemi-Kurs), Eric Amberg
   - Windows Server 2012R2
   - Google: "evaluate windows server 2012 r2", Läuft 180 Tage, 
   - ISO Format auswählen, Als Daten kann man irgendwas eingeben
-  - 4,6 GB Download
+  - 4,6 GB Download (`W2K12R2.iso`)
   - vbox neue VM "W2K12R2", Windows 2012
   - 2048MB Empfehlenswert
   - ... Datacenter ... mit grafischer ...
@@ -208,7 +209,7 @@ Ethical Hacking CEHv10 (Udemi-Kurs), Eric Amberg
     # iface eth0 inet static
     # address 192.168.1.206
     # netmask 255.255.255.0
-    # gateway 192.168.1.254 (auskommentieren damit Metsploitable nicht raus kann)
+    # # gateway 192.168.1.254 (auskommentieren damit Metsploitable nicht raus kann)
     sudo ifdown eth0
     sudo ifup eth0
     ifconfig

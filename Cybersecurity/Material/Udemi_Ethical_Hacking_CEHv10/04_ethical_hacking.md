@@ -84,5 +84,5 @@ Footprinting: Welches OS, Welche Dienste, offene Ports. Geht automatisch mit Exp
 
 
 
-
+![Die Cyber-Killchain](fig/Die Cyber-Killchain.jpeg)
 

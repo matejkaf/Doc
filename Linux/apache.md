@@ -1,3 +1,45 @@
+---
+title: Apache Web Server
+---
+
+
+
+# Basic Usage
+
+Kopieren in das Document root Verzeichnis des Apache Webservers
+
+```bash
+$ cp data.txt /var/www/html/
+$ cd /var/www/html/
+$ ls
+```
+
+Webserver starten:
+
+```bash
+$ service apache2 start
+```
+
+Prüfen ob der Server läuft:
+
+```bash
+$ ps -ax
+```
+
+Ist an Port gebunden?:
+
+```bash
+$ netstat -tlpn | grep 80
+```
+
+Webserver stoppen:
+
+```bash
+$ service apache stop
+```
+
+
+
 # Ubuntu Setup
 
 [Install and Configure Apache](https://tutorials.ubuntu.com/tutorial/install-and-configure-apache#0)
@@ -39,12 +81,18 @@ wget -O - http://localhost/myhtml/index.html
 # -O -   write content to stdout (creates file otherwise)
 ```
 
+
+
 # PHP
 
 ```bash
 $ touch phptest.php
 $ nano phptest.php
 ```
+
+
+
+
 
 <!DOCTYPE html>
 <html>
@@ -64,11 +112,12 @@ $ sudo apt install php
 $ wget -O - http://localhost/myhtml/phptest.php
 ```
 
+
+
 # mysql
 
 ```bash
 $ sudo apt install php-mysql
-
 $ sudo service apache2 restart
 ```
 

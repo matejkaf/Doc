@@ -60,19 +60,41 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 
 
+![image-20210519124352924](fig/image-20210519124352924.png)
+
+
+
 ## SATA
 
-[wikipedia : Serial ATA](https://de.wikipedia.org/wiki/Serial_ATA)
+[Video: SATA 3 - SERIAL ATA](https://youtu.be/T-6z8tCcR38), [wikipedia : Serial ATA](https://de.wikipedia.org/wiki/Serial_ATA)
 
-Serial AT Attachment, [Video: SATA 3 - SERIAL ATA](https://youtu.be/T-6z8tCcR38)
+Serial AT Attachment. Weiterentwicklung von **ATA** "Advanced Technology Attachment": 80er von IBM, wurde de facto Industriestandard. 
 
 Zum Anschluss von Massenspeichern: Festplatten (HDD), SSD's, DVD Laufwerke
-
-AT "Advanced Technology": 1984 von IBM, wurde de facto Industriestandard. 
 
 Aktuell: SATA revision 3.0 (6 Gbit/s, 600 MB/s, Serial ATA-600)
 
 hot plugging fähig – Geräte können im Betrieb an- und abgesteckt werden – wenn die SW das unterstützt
+
+Für HDD Bandbreiten (ca. 200 MB/s) ist SATA-III ausreichend für aktuelle SSD nicht mehr!  Z.B.: WDS250G3X0C, Lesen: 3100MB/s, Schreiben: 1600MB/s. Es gibt keinen Nachfolgestandard (SATA Express ist gescheitert).
+
+
+
+## M.2
+
+[[wikipedia](https://de.wikipedia.org/wiki/M.2)]
+
+Schnittstelle zum Anschluss von schnellen SSDs
+
+Zugriff erfolgt über PCIe (4.0 4x = 7,9 GB/s) oder SATA-III
+
+> Vom M.2-Standard werden folgende drei Bussysteme unterstützt: PCI Express (bis 4.0), SATA Revision 3.x und USB 3.0. Es gibt M.2-Varianten mit bis zu vier PCI-Express-Lanes (bis zu 4 × 16 GT/s), einem SATA Revision 3.x (6 Gbit/s) und/oder einem USB-3.0-Port (5 Gbit/s) – alles über einen Anschluss. Damit kann man sowohl PCI-Express als auch SATA-Speicher per M.2 anschließen. An jedem Port können beide Bussysteme auch parallel genutzt werden. [[wikipedia](https://de.wikipedia.org/wiki/M.2)]
+
+
+
+M.2-Steckplatz für Karten mit 42, 60, 80 oder 110 mm Länge (rechts am Bildrand, mit „163006“ beschriftet):
+
+![img](fig/M.2_steckplatz_auf_einer_hauptplatine_IMGP5340_smial_wp.jpg)
 
 
 
@@ -88,7 +110,7 @@ SAS ist performanter und ist technologisch fortschrittlicher als SATA. Ist aber 
 
 ## DisplayPort
 
-[HDMI, DisplayPort, DVI, VGA, Thunderbolt - Video Port Comparison](https://youtu.be/iFO3EiQbNJ8)
+[Video: HDMI, DisplayPort, DVI, VGA, Thunderbolt - Video Port Comparison](https://youtu.be/iFO3EiQbNJ8)
 
 Historie der Grafikschnittstellen
 

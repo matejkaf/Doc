@@ -22,7 +22,7 @@
     - EM Abstrahlung
   - Man-in-the-middle
 
-- Angriffsszenarien der kryptoanalyse
+- Angriffsszenarien der Kryptoanalyse
 
   - Known Ciphertext
   - Probable Plaintext
@@ -38,8 +38,6 @@
   - Meet in the Middle (3DES)
 
 - Heartbleed (openSSL) erklärt, Poodle
-
-- 
 
   
 

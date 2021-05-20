@@ -27,7 +27,7 @@ Technologie:
 
 Anschlussarten:
 
-- Intern (SATA, SAS)
+- Intern (SATA, SAS, M.2)
 - Extern (USB)
 
 
@@ -45,7 +45,7 @@ Sich drehende feste Scheiben, sind magnetisch beschichtet. Ein Schreib-Lesekopf 
 Vorteile:
 
 - Große Datenmengen (**16 TB**) auf kompaktem Raum
-- Kostengünstig
+- Kostengünstig pro MB
 
 Nachteile:
 
@@ -60,11 +60,11 @@ Nachteile:
 
 Technische Daten:
 
-- Formfaktor: 2,5" (Laptop) vs. 3,5" (ca. Durchmesser der Scheiben)
+- **Formfaktor** (ca. ⌀ der Scheiben): 2,5" (für Laptop) vs. 3,5"
 
-- Drehzahl 5400 / 7200 min⁻¹ (auch 15000 im Serverbereich) – bestimmt die Datenrate
-  - Beispiel: Western Digital Black WD6003FZBX 7200 min⁻¹: 201 MB/s [[Quelle](https://de.wikipedia.org/wiki/Festplattenlaufwerk#Geschwindigkeit)]
-- Latenz: 5-15ms mittlere Zugriffszeit (Positionierung des Schreib-Lesekopfs + Warten auf die Daten), 
+- Drehzahl 5400 oder 7200 min⁻¹ (auch 15000 im Serverbereich) – bestimmt die **Datenrate**
+  - Beispiel: Western Digital WD6003FZBX 7200 min⁻¹: 201 MB/s [[Quelle](https://de.wikipedia.org/wiki/Festplattenlaufwerk#Geschwindigkeit)]
+- **Latenz**: 5-15ms mittlere Zugriffszeit (Positionierung des Schreib-Lesekopfs + Warten auf die Daten), 
 
 Daten werden in Tracks und darin in Sektoren (meist 512 Bytes) gespeichert.
 
@@ -78,16 +78,19 @@ Daten werden in Tracks und darin in Sektoren (meist 512 Bytes) gespeichert.
 
 [wikipedia](https://en.wikipedia.org/wiki/Solid-state_drive)
 
-Solid State Disk, verwendet Halbleiter Technologie (meist NAND-Flash), enthält keine bewegten Teile.
+Solid State Disk, verwenden Halbleiter Technologie (meist NAND-Flash), enthält keine bewegten Teile.
 
-Im Vergleich zu HDD: schneller, kürzere Zugriffszeit, kleinere Bauform, geringerer Stromverbrauch, unempfindlich gegen Erschütterung, geräuschlos.
+Im Vergleich zu HDD: schneller (ca. 10x Datendurchsatz), kürzere Zugriffszeit (x100), kleinere Bauform, geringerer Stromverbrauch, unempfindlich gegen Erschütterung, geräuschlos.
 
-Aber: teuer!
+- Datenrate – [[geizhals](https://geizhals.at/western-digital-wd-black-sn750-nvme-ssd-250gb-wds250g3x0c-00sjg0-wdbrpg2500anc-wrsn-a1969729.html?hloc=at)] Western Digital NVMe SSD 250GB, M.2 (WDS250G3X0C) **Lesen: 3100MB/s, Schreiben: 1600MB/s**
+- Latenz: <0,1 ms
+- Aktuell max: ca. **2 TB**
 
-Aktuell: **2 TB**
+
 
 Nachteile:
 
+- teuer – pro Megabyte
 - begrenzt Lagerfähig, Datenverlust nach ca. einem Jahr
 - Flash wird in Blöcken gelöscht und wiederbeschrieben. Dies nutzt die Blöcke ab. 10.000-100.000 sind aktuelle Herstellerangaben. Untersuchungen legen nahe, dass SSD Festplatten trotzdem 10 Jahre Einsatz aushalten.
 

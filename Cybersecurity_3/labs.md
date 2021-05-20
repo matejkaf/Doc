@@ -1,8 +1,15 @@
 
 
+2h alle 2 Wochen (wie SYTG im II. Jahr)
+
+D.h. 15-17 Termine pro Gruppe
+
+
+
 
 
 - Rücksetzen des Passworts auf Debian Linux (Boot Menü Editor Hack)
+- Banner Grabbing mit telnet und netcat
 - KALI Linux und Wireshark: einen Ping auf einen anderen Rechner aufzeichnen
   - Bridged Mode
 - KALI Linux und Wireshark: Aufzeichnen einer HTTP Verbindung

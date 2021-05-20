@@ -89,7 +89,7 @@ $ ip addr show # neuerer und besserer Befehl
 
 ## KALI
 
-### GUI Neztwerkkonfiguration
+GUI Netzwerkkonfiguration
 
 Rechte obere Ecke Symbol in der Form einer Netzwerkbuchse
 
@@ -102,13 +102,30 @@ Rechte obere Ecke Symbol in der Form einer Netzwerkbuchse
 
 ## Debian
 
-### GUI Neztwerkkonfiguration
+GUI Neztwerkkonfiguration
 
 Rechte obere Ecke Netzwerksymbol. 
 
 - "Kabelgebunden verbunden" >> LAN-Einstellungen
 - Zahnrad-Symbol >> IPv4
 - evtl. Verbindung beenden und wieder starten (Schalter neben Zahnrad-Symbol)
+
+
+
+## Metasploitable
+
+```bash
+cd /etc/network
+ls
+sudo nano interfaces
+# iface eth0 inet static
+# address 192.168.1.206
+# netmask 255.255.255.0
+# # gateway 192.168.1.254 (auskommentieren damit Metsploitable nicht raus kann)
+sudo ifdown eth0
+sudo ifup eth0
+ifconfig
+```
 
 
 
