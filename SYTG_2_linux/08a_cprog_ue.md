@@ -43,7 +43,7 @@ Schreibe den Rechner so, dass dieser auch **optional mit Kommazahlen** rechnen k
 Programmaufruf in der shell:
 
 ```bash
-$ ./main 2 / 4 -f
+$ ./main 4.25 / 8.5  -f
 0.5
 ```
 
