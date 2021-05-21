@@ -44,9 +44,20 @@ echo Hello World
 
 ## Variablen
 
-### special Variables
+```bash
+#!/bin/bash
+# A simple variable example
+myvariable=Hello
+anothervar=Fred
+echo $myvariable $anothervar
+echo
+sampledir=/etc
+ls $sampledir
+```
 
-Command line arguments (`$1`, `$2`)
+
+
+## Special Variables
 
 - `$0` - The name of the Bash script.
 - `$1`- `$9` - The first 9 arguments to the Bash script. (As mentioned above.)
@@ -60,16 +71,7 @@ Command line arguments (`$1`, `$2`)
 - `$RANDOM` - Returns a different random number each time is it referred to.
 - `$LINENO` - Returns the current line number in the Bash script.
 
-```bash
-#!/bin/bash
-# A simple variable example
-myvariable=Hello
-anothervar=Fred
-echo $myvariable $anothervar
-echo
-sampledir=/etc
-ls $sampledir
-```
+
 
 ## Quotes
 
@@ -83,7 +85,7 @@ echo $myvar
 
 Es gibt einfache (single quotes) und doppelte Hochkomma (double quotes).
 
-- Single quotes: wird 1:1 übernommen
+- Single quotes: Inhalt wird 1:1 übernommen
 - Double quotes: Variablen werden eingesetzt (variable substitution)
 
 Beispiel:
@@ -126,6 +128,8 @@ echo There are $myvar entries in the directory $mydir
 ```
 
 [Look at](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php#activities)
+
+
 
 
 ## User input - read
@@ -183,6 +187,8 @@ Hinweis: Es gibt auch `let`  und `expr` mit ähnlicher Syntax.
 
 Aufgabe:
 - Skript das zufällige Zahlen erzeugt (`$RANDOM`)
+
+
 
 
 ## test Kommando

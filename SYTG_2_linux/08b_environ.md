@@ -3,6 +3,8 @@ title: Umgebungsvariablen
 subtitle: environment variables
 ---
 
+Liefern Informationen über das System und die shell.
+
 ```bash
 $ printenv
 ```
@@ -24,27 +26,34 @@ LC_CTYPE=UTF-8
 _=/usr/bin/printenv
 ```
 
-
-
 ```bash
 $ echo $SHELL
+...
 $ echo $PATH
+...
 $ echo $PS1
+...
 ```
 
 
+
+# shell Prompt
 
 Beschreibung des Prompt wird in `$PS1` gespeichert. [[Syntax](https://wiki.ubuntuusers.de/Bash/Prompt/)]
 
 ```bash
 $ PS1='> '
-# aktuelle Uhrzeit
+# aktuelle Uhrzeit:
 $ PS1='\t $'
 $ PS1='\d $'
 # Arbeitsverzeichnis: \w (lang) oder \W (kurz)
 ```
 
-Anfügen an die PATH Variable
+
+
+# PATH
+
+Die PATH Variable bestimmt wo nach ausführbaren Programmen gesucht wird.
 
 ```bash
 $ pwd
@@ -60,7 +69,7 @@ $ PATH=$PATH:$(pwd)
 
 
 
-C Programm schreiben,
+Beispiel für PATH: C Programm schreiben,
 
 - muss mit `./main` aufgerufen werden
 - `PATH` so ändern, dass das nicht mehr notwendig ist
@@ -68,7 +77,7 @@ C Programm schreiben,
 
 
 
-
+# C Programm Umgebungsvariablen lesen
 
 ```c++
 #include <stdio.h>

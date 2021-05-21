@@ -14,10 +14,12 @@ Das ist ein Text. **FETT**
 *kursiv*
 ```
 
+Markdown ist eine Möglichkeit Formatierungen in Plaintext auszudrücken.
+
 Vorteile:
 
 - Sehr einfach zu verwenden
-- Schon in der rohen textuellen Form gut zu lesen
+- Schon in der Plaintext Form gut zu lesen
 - Für einfache Dokumentationsaufgaben ausreichend (statt z.B. Word)
 - In viele Formate wandelbar (HTML, PDF, ...)
 - Viele Editoren unterstützen markdown (teilweise auch mit preview)
@@ -32,7 +34,7 @@ Elemente von markdown: [wiki](https://de.wikipedia.org/wiki/Markdown)
 
 - pandoc (geht unter cygwin ?)
 
-- [markdown_py](https://python-markdown.github.io) – unter REPLIT verfügbar (testen!). Wandelt nach HTML Code.
+- [markdown_py](https://python-markdown.github.io) – unter REPLIT verfügbar. Wandelt nach HTML Code.
 
   ```bash
   $ markdown_py test.md >test.html
@@ -44,8 +46,6 @@ Elemente von markdown: [wiki](https://de.wikipedia.org/wiki/Markdown)
   <p>Das ist ein Text. <strong>FETT</strong>
   <em>kursiv</em></p>
   ```
-
-  
 
 - Typora
 

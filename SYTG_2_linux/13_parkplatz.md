@@ -46,9 +46,4 @@ $ git push -u origin main
 - Verborgene Dateien/Ordner (`ls -a`)
 - `.bashrc`, `.bash_profile`
   - z.B. Command Prompt ändern
-- Bedeutung der Linux System Directories (`/etc`, ...)
-
-
-
-## Übungen
-
+- Bedeutung der Linux System Directories (`/etc`, `/usr` (UNIX System Resources) ...)

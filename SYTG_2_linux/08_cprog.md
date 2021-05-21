@@ -33,7 +33,7 @@ $ apt install build-essential
 
 # Replit.com
 
-`C++` REPL. 
+`C++` REPL
 
 ```c++
 #include <iostream>
@@ -82,6 +82,25 @@ $ ./hello
 ```
 
 
+
+# Rückgabewert von main
+
+```c++
+int main() {
+  printf("Hello World!\n");
+  return 10; // exit status, 0 ... kein Fehler, 
+}
+```
+
+```bash
+$ g++ main.cpp -o programm
+$ ./programm 
+Hello World!
+$ echo $?
+3
+```
+
+[!2AHITS Grp1 21.05.2021]
 
 
 
@@ -167,51 +186,6 @@ for(int i=0;i<nrLines;i++) {
 ```
 
 
-
-# Übungen
-
-#### Übung (Addieren)
-
-Schreibe ein C Programm das zwei über die Kommandozeile vorgegebene Zahlen **addiert**. 
-
-Programmaufruf in der shell:
-
-```bash
-$ ./main 3 5
-8
-```
-
-
-
----
-
-#### Übung (Rechner)
-
-Schreibe ein C Programm das über die Kommandozeile die **4 Grundrechenarten** anbietet. 
-
-Programmaufruf in der shell:
-
-```bash
-$ ./main 3 * 5
-15
-```
-
-
-
----
-
-#### Übung (Rechner int+float)
-
-Schreibe den Rechner so, dass dieser auch **optional mit Kommazahlen** rechnen kann.
-
-Programmaufruf in der shell:
-
-```bash
-$ ./main 2 / 4 -f
-0.5
-```
-
-**Erweiterung:** Eine Option die die Anzahl der darzustellenden Nachkommastellen bestimmt.
 
 
 
