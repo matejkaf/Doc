@@ -3,11 +3,15 @@ title: Grundlagen UNIX shell
 subtitle: Shell Scripts
 ---
 
-Shell Scripts sind kleine Programme die durch die shell selbst ausgeführt werden. Diese sind Textdateien und enthalten shell Kommandos.
+**Scripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegeben Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
+
+Shell Kommandos können in Textdateien geschrieben und dann ausgeführt werden.
 
 Ein shell script kann jedes shell Kommando enthalten. Umgekehrt kann jeder Teil eines Scripts auch direkt in der shell ausgeführt werden.
 
-## Hello World Script
+
+
+# Hello World Script
 
 
 Erstellen eines einfachen shell scripts
@@ -24,7 +28,7 @@ $
 
 - shebang (`#!`)
 - eXecution flag
-- warum `./` (`echo $PATH`)
+- warum `./`? siehe `echo $PATH`!
 
 Inhalte des scripts:
 
@@ -37,12 +41,13 @@ Kommentare
 
 ```bash
 #!/bin/sh
-
 # Say Hello to the world
 echo Hello World
 ```
 
-## Variablen
+
+
+# Variablen
 
 ```bash
 #!/bin/bash
@@ -57,23 +62,9 @@ ls $sampledir
 
 
 
-## Special Variables
-
-- `$0` - The name of the Bash script.
-- `$1`- `$9` - The first 9 arguments to the Bash script. (As mentioned above.)
-- `$#` - How many arguments were passed to the Bash script.
-- `$@` - All the arguments supplied to the Bash script.
-- `$?` - The exit status of the most recently run process.
-- `$$` - The process ID of the current script.
-- `$USER` - The username of the user running the script.
-- `$HOSTNAME` - The hostname of the machine the script is running on.
-- `$SECONDS` - The number of seconds since the script was started.
-- `$RANDOM` - Returns a different random number each time is it referred to.
-- `$LINENO` - Returns the current line number in the Bash script.
 
 
-
-## Quotes
+# Quotes
 
 Leerzeichen dienen oft als Trenner zwischen mehreren Teilen eines Kommandos.
 Daher Variablenwerte mit Hochkomma definieren wenn diese Leerzeichen enthalten
@@ -111,7 +102,7 @@ echo ${name}_001
 
 
 
-## Command substitution
+# Command substitution
 
 Die Ausgabe eines Kommandos kann als Wert für eine Variable verwendet werden.
 
@@ -132,7 +123,7 @@ echo There are $myvar entries in the directory $mydir
 
 
 
-## User input - read
+# User input - read
 
 ```bash
 echo Hello, who am I talking to?
@@ -153,7 +144,7 @@ echo Thankyou $uservar we now have your login details
 
 
 
-## Arithmetic
+# Arithmetic
 
 [Bash Scripting Tutorial - 4. ArithmeticTutorial Sections ](https://ryanstutorials.net/bash-scripting-tutorial/bash-arithmetic.php)
 
@@ -191,7 +182,7 @@ Aufgabe:
 
 
 
-## test Kommando
+# test Kommando
 
 Zeigt im exit status (`$?`) das Ergebnis von Vergleichen. Grundlage für if Anweisungen in scripts.
 
@@ -240,7 +231,7 @@ Aufgaben:
 
 
 
-## if statement
+# if statement
 
 [Bash Scripting Tutorial - 5. If Statements](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
 
@@ -301,11 +292,11 @@ Aufgaben:
 
 
 
-## Schleifen
+# Schleifen
 
 [Bash Scripting Tutorial - 6. Loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
 
-### while
+## while
 
 ```bash
 #!/bin/bash
@@ -319,7 +310,7 @@ done
 echo All done
 ```
 
-### for
+## for
 
 Listen – Text mit Leerzeichen getrennt
 
@@ -393,7 +384,7 @@ done
 
 
 
-## Quellen
+# Quellen
 
 -   [Ryans Tutorials – Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
 

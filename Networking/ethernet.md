@@ -4,7 +4,7 @@ title: Ethernet
 
 
 
-## Frame
+# Frame
 
 ![img](fig/1280px-Ethernet_Type_II_Frame_format.svg.png)
 

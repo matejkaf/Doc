@@ -37,7 +37,7 @@ Dieses Verhalten wird beim ARP cache poisoning ausgenutzt.
 
 ## ARP Cache
 
-Jeder neu in den ARP Cache aufgenommene Eintrag erhält eine zufällig gewählte Lebensdauer zwischen **15 und 45 Sekunden** zugewiesen [[serverfault 2018](https://serverfault.com/a/924165)]. Dies gilt in neueren Systemen früher verwendete Werte sind 60 Sekunden in Linux und 2 Minuten in Windows [[superuser 2018](https://superuser.com/a/1345151)]. Die Zeit wird jedesmal neu gestartet wenn der ARP Eintrag verwendet wird.
+Jeder neu in den ARP Cache aufgenommene Eintrag erhält eine zufällig gewählte Lebensdauer zwischen **15 und 45 Sekunden** zugewiesen [[serverfault 2018](https://serverfault.com/a/924165)]. Dies gilt in neueren Systemen, früher verwendete Werte sind 60 Sekunden in Linux und 2 Minuten in Windows [[superuser 2018](https://superuser.com/a/1345151)]. Die Zeit wird jedesmal neu gestartet wenn der ARP Eintrag verwendet wird.
 
 
 

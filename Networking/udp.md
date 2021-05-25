@@ -1,10 +1,9 @@
 ---
 title: UDP
+subtitle: User Datagram Protocol
 ---
 
-User Datagram Protocol
-
-## UDP Header
+# UDP Header
 
 32 Bit in der Breite
 

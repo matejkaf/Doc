@@ -1,24 +1,21 @@
 ---
 title: Networking Command Line
+subtitle: Linux
 ---
-
-
 
 Sammlung von Kommandozeilen Befehlen in Zusammenhang mit Netzwerk
 
 
+# IP Adresse
 
-
-# MacOS / Linux
-
-IP Adresse ermitteln / Interface finden
+**IP Adresse** ermitteln / Interface finden
 
 ```bash
 $ ifconfig
 $ ifconfig | grep inet
 ```
 
-nur Linux:
+Neuere Linux Distributionen:
 
 ```bash
 ip a
@@ -26,15 +23,17 @@ ip a
 ip address
 ```
 
-DHCP aktuelle Einstellungen (auch Linux?)
+
+
+# DHCP
+
+**DHCP** aktuelle Einstellungen (auch Linux?):
 
 ```bash
 ipconfig getpacket en6
 ```
 
-
-
-DHCP release/renew
+**DHCP** release/renew:
 
 ```bash
 sudo ipconfig set en6 DHCP
@@ -42,19 +41,15 @@ sudo ipconfig set en6 DHCP
 
 
 
-ARP Cache leeren (MacOS)
+# ARP
 
-```bash
-arp -a -d
-```
-
-ARP chache anzeigen (Linux)
+**ARP** chache anzeigen:
 
 ```bash
 arp -n
 ```
 
-ARP cache leeren (Linux)
+**ARP** cache leeren:
 
 ```bash
 ip -s -s neigh flush all
@@ -62,20 +57,15 @@ ip -s -s neigh flush all
 
 
 
-DNS cache leeren
+# DNS
+
+**DNS** cache leeren:
 
 ```bash
-# macOS
-sudo killall -HUP mDNSResponder
-
-# ubuntu
 sudo systemd-resolve --flush-caches
 ```
 
-
-
-
-DNS
+**DNS**:
 
 ```bash
 $ nslookup orf.at
@@ -98,27 +88,7 @@ Name:	orf.at
 - Warum `Non-authoritative answer`?
 - Warum mehrere IP Adressen?
 
-
-
-netstat
-
-```bash
-$ netstat
-
-$ netstat -tunap
-# nicht BSD/macOS
-# -t TCP
-# -u UDP
-# -n numerical addresses instead of symbolic host, port, user
-# -a shows also listening sockets
-# -p PID using this socket
-```
-
-
-
-DNS Server ermitteln
-
-At the terminal prompt, enter cat /etc/resolv.conf to determine the DNS server. 
+**DNS Server** ermitteln
 
 ```bash
 $ cat /etc/resolv.conf 
@@ -128,10 +98,37 @@ nameserver 192.168.1.1
 
 
 
+# netstat – open Sockets
+
+[[manpage : netstat](https://linux.die.net/man/8/netstat)]
+
+Prüfen ob ein Serverprozess an einen Port **gebunden** ist:
+
+```bash
+$ netstat -tlpn | grep 80
+# displays a list of open sockets
+# -t ... TCP
+# -l ... Show only listening sockets. 
+# -p ... Show the PID and name of the program to which each socket belongs.
+# -n ... Show numerical addresses instead of [...] symbolic host [...]
+```
+
+Übersicht über alle offenen Kommunikationskanäle (TCP und UDP):
+
+```bash
+$ netstat -tunap
+# -t TCP
+# -u UDP
+# -n numerical addresses instead of symbolic host, port, user
+# -a shows also listening sockets
+# -p PID using this socket
+```
+
 Default gateway ermitteln (display the IP routing table )
 
 ```bash
 $ netstat -r
+# -r, Display the kernel routing tables.
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 default         _gateway        0.0.0.0         UG        0 0          0 enp0s3
@@ -141,7 +138,17 @@ _gateway        0.0.0.0         255.255.255.255 UH        0 0          0 enp0s3
 
 
 
+# macOS
 
+ARP Cache leeren (MacOS)
 
+```bash
+arp -a -d
+```
 
+DNS cache leeren
+
+```bash
+sudo killall -HUP mDNSResponder
+```
 

@@ -8,7 +8,7 @@ subtitle: Windows
 Eingestellte IP Adresse
 
 ```bash
-ipconfig
+C:> ipconfig
 ```
 
 
@@ -16,26 +16,26 @@ ipconfig
 DHCP release/renew
 
 ```bash
-ipconfig /release
-ipconfig /renew
+C:> ipconfig /release
+C:> ipconfig /renew
 ```
 
 ARP Cache leeren
 
 ```bash
- arp -d
+C:> arp -d
 ```
 
 Offene Verbindungen
 
 ```bash
-> netstat
+C:> netstat
 ```
 
 DNS Cache leeren
 
 ```bash
-ipconfig /flushdns
+C:> ipconfig /flushdns
 ```
 
 

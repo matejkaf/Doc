@@ -21,6 +21,6 @@ These are the private address blocks:
 
 Alternativ zu netmask
 
-192.168.100.0 /24 entspricht 255.255.255.0
+192.168.100.0/24 entspricht 255.255.255.0
 
 Zahl=Bits für Netzwerk

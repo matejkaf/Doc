@@ -2,7 +2,7 @@
 title: IP
 ---
 
-## IP Header
+# IP Header
 
 32 Bit in der Breite
 
