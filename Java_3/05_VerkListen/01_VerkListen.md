@@ -99,7 +99,7 @@ Alle Daten und Methoden die für eine verkettete Liste notwendig sind werden in 
 
 Es soll ein neuer Knoten angelegt und dieser am Anfang der Liste eingefügt werden.
 
-*Skizze + Quelltext.*
+
 
 
 ### Liste abarbeiten
