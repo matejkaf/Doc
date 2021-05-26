@@ -26,17 +26,17 @@ Außer PCIe sind alle **hot plugging** fähig, d.h. Geräte können im Betrieb h
 
 Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-prime-z490-a-a2284654.html?hloc=at&hloc=de)):
 
-![2284654-n9](io/2284654-n9.jpg)
+<img src="io/2284654-n9.jpg" alt="2284654-n9" style="zoom:33%;" />
 
 
 
-![2284654-n5](io/2284654-n5-2230265.jpg)
+<img src="io/2284654-n5-2230265.jpg" alt="2284654-n5" style="zoom:33%;" />
 
 
 
 
 
-![image-20200615161048854](io/image-20200615161048854.png)
+<img src="io/image-20200615161048854.png" alt="image-20200615161048854" style="zoom:33%;" />
 
 
 
@@ -52,7 +52,7 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 -   Slots auf dem Motherboard in den die Karten gesteckt werden
 -   Universalanschluss für alle Arten von Erweiterungskarten (inkl. Grafikkarten)
--   Daten werden seriell in Lanes übertragen (bei PCI 3.0 ca. 1GB/s pro Lane)
+-   Daten werden seriell in Lanes übertragen (bei PCI 3.0 ca. 1GByte/s pro Lane)
 -   Höhere Datenraten durch mehr Lanes (=längere Slots), 1x, 2x, 4x, 8x, 16x
 -   Mit jeder PCIe Version verdoppelt sich die Lane-Datenrate [[wikipedia](https://de.wikipedia.org/wiki/PCI_Express)]
 -   In längere Slots (z.B. 16x) können kürzere Karten (z.B. 1x) gesteckt werden
@@ -60,7 +60,9 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 
 
-<img src="fig/image-20210519124352924.png" alt="image-20210519124352924" style="zoom:33%;" />
+Angeben in M/GByte/s:
+
+<img src="fig/image-20210519124352924.png" alt="image-20210519124352924" style="zoom:20%;" />
 
 
 
@@ -72,11 +74,13 @@ Serial AT Attachment. Weiterentwicklung von **ATA** "Advanced Technology Attachm
 
 Zum Anschluss von Massenspeichern: Festplatten (HDD), SSD's, DVD Laufwerke
 
-Aktuell: SATA revision 3.0 (6 Gbit/s, 600 MB/s, Serial ATA-600)
+Aktuell: SATA revision 3.0 (6 Gbit/s, 600 MByte/s, Serial ATA-600)
 
 hot plugging fähig – Geräte können im Betrieb an- und abgesteckt werden – wenn die SW das unterstützt
 
-Für HDD Bandbreiten (ca. 200 MB/s) ist SATA-III ausreichend für aktuelle SSD nicht mehr!  Z.B.: WDS250G3X0C, Lesen: 3100MB/s, Schreiben: 1600MB/s. Es gibt keinen Nachfolgestandard (SATA Express ist gescheitert).
+Für HDD Bandbreiten (ca. 200 MByte/s) ist SATA-III ausreichend für aktuelle SSD nicht mehr!  Z.B.: WDS250G3X0C, Lesen: 3100MByte/s, Schreiben: 1600MByte/s. 
+
+Es gibt keinen Nachfolgestandard (SATA Express ist gescheitert).
 
 
 
@@ -105,6 +109,29 @@ Serial Attached SCSI. [wikipedia SAS](https://en.wikipedia.org/wiki/Serial_Attac
 Aktuell: SAS-4 (22,5 Gbit/s)
 
 SAS ist performanter und ist technologisch fortschrittlicher als SATA. Ist aber **viel teurer** und wird daher nur im **Server** Bereich eingesetzt.
+
+## U.2
+
+Für 2,5-Zoll Server SSD
+
+- SATA
+- SAS, und
+- PCIe 3.0 x4
+
+<img src="fig/U.2port-780x470.jpg" alt="U.2-Port" style="zoom:80%;" />
+
+<img src="fig/OCZ_Z6300_NVMe_flash_SSD%2C_U.2_(SFF-8639)_form-factor.jpg" alt="img" style="zoom:33%;" />
+
+Vorteile:
+
+- U.2-SSD haben Gehäuse, dient als Kühlkörper, M.2 schlechte Kühlung – Leistung muss gedrosselt werden.
+- Platzsparender – die SSD wird nicht am Motherboard montiert
+- Hot-Swap bzw. bessere Erreichbarkeit der SSDs (Server Front).
+- Größeres Gehäuse daher größere Speicherkapazität pro SSD möglich (aktuell x4)
+
+[[Quelle](https://basic-tutorials.de/der-m-2-slot-was-ist-er-und-wie-kann-ich-ihn-nutzen/2/)]
+
+Weiterentwicklung (2020): U.3
 
 
 
@@ -178,7 +205,7 @@ Erlaubt die Versorgung in beiden Richtungen, d.h. auch der Host (z.B. Laptop) ka
 
 Siehe Netzwerktechnik.
 
-![image-20200729100349461](io/image-20200729100349461.png)
+<img src="io/image-20200729100349461.png" alt="image-20200729100349461" style="zoom:50%;" />
 
 Quelle: [wikipedia](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
