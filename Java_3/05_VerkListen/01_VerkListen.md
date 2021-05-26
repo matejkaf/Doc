@@ -1,6 +1,6 @@
 ---
 title: Verkettete Listen
-tags: [lecture]
+tags: [lecture,3BHELS]
 ---
 
 >  Was eine guten Meister macht: Wissen, Können und Wollen. (Deutsches Sprichwort)
@@ -112,7 +112,6 @@ Alle Knoten sollen "`besucht"' werden. Zum Beispiel um alle Daten in den Knoten 
 - solange weitergehen (`n = n.next`) 
 	
 	- ... bis Ende der Liste erreicht.
-	
 
 
 
@@ -135,7 +134,6 @@ while (n!=null) {
 #### Erstes Element entnehmen
 
 Der erste Knoten soll aus der Liste entnommen werden. Spezialfall berücksichtigen: Liste ist leer.
-
 
 
 
