@@ -6,7 +6,7 @@ tags: [lecture,3BHELS]
 >  Was eine guten Meister macht: Wissen, Können und Wollen. (Deutsches Sprichwort)
 
 
-## Datenstrukturen
+# Datenstrukturen
 Datenstrukturen speichern **zusammengehörige Datenobjekte**.
 
 Z.B. alle Schüler einer Klasse, alle Lieferungen an einen bestimmten Kunden.
@@ -19,27 +19,31 @@ Z.B. alle Schüler einer Klasse, alle Lieferungen an einen bestimmten Kunden.
 - Suchen
 - Anzahl
 
-**Arrays** und **Listen** sind Datenstrukturen. Eine Datenstruktur beschreibt die Art der Datenspeicherung (z.B.: Anordnung im Speicher).
+**dynamische Arrays** und **Listen** sind Datenstrukturen. Eine Datenstruktur beschreibt die Art der Datenspeicherung (z.B.: Anordnung im Speicher).
 
 
 
-## Listen vs. Arrays
+# Listen vs. dynamische-Arrays
 
 **Arrays**
 
 
-- Fixe Größe
-- Kein Hinzufügen / Löschen
-- Einfach und schnell
+- Relativ Einfach
+- Index-Zugriff sehr schnell
+- Nachteil: umkopieren bei
+
+  - einfügen/löschen und 
+  - bei Größenänderung
+
+
 
 **Listen**
 
 
-- Flexible Größe
-- Einfaches Hinzufügen / Löschen
+- Schnelles Hinzufügen / Entfernen
 - Ein wenig aufwendiger 
 
-Listen sind **flexibler** als Arrays und spielen in der Informatik schon sehr lange eine wichtige Rolle. 
+Listen sind **flexibler** als (dynamische) Arrays und spielen in der Informatik schon sehr lange eine wichtige Rolle. 
 
 
 In der **Programmiersprache LISP** (List Processor) sind Listen sogar das zentrale Element. LISP wurde 1956 von John~McCarty entwickelt und ist bis heute in Verwendung.
@@ -47,27 +51,22 @@ In der **Programmiersprache LISP** (List Processor) sind Listen sogar das zentra
 
 
 
-## Verkettete Liste
+# Verkettete Liste
 
-Eine verkettete Liste ist eine Menge von aneinandergereihten Elementen (=**Knoten**). 
+Eine verkettete Liste ist eine Menge von aneinandergereihten Elementen (**Knoten**, engl. *node*). 
 
-Bei einer verketteten Liste wird bei jedem Knoten ein Verweis auf den folgenden Knoten mit abgespeichert. 
+Ein Knoten enthält die zu speichernden **Daten** und den **Verweis** auf den **nächsten** Knoten.
 
 Bei Listen sind die Knoten daher beliebig im Speicher verteilt und müssen nicht wie bei Arrays hintereinander abgespeichert sein.
-
-Eine Liste besteht aus einzelnen **Knoten** (engl.\ node).
-Ein Knoten enthält die zu speichernden Daten und den Verweis auf den **nächsten** Knoten.
-
-
 
 **Beispiel:**
 
 ![image-20210118141910929](fig/image-20210118141910929.png)
 
-Jeder Knoten enthält hier einen Buchstaben und einen Verweis auf den folgenden Knoten. Die Knoten können daher im Speicher durcheinander sein.
 
 
-### Implementierung
+
+## Implementierung
 
 Klasse `Node` für einen Knoten der einen Buchstaben speichert.
 
@@ -78,7 +77,7 @@ public class Node {
 }
 ```
 
-### Anfang und Ende
+## Anfang und Ende
 Eine Liste hat einen Anfang und ein Ende.
 
 - Anfang: Spezielle `start` Referenz.
@@ -89,49 +88,33 @@ Eine Liste kann auch leer sein.
 
 
 
-### Listenoperationen
+## Listenoperationen
 
-#### Eine Klasse List
+### Eine Klasse List
 
 Alle Daten und Methoden die für eine verkettete Liste notwendig sind werden in einer eigenen Klasse List zusammengefasst.
 
 
-#### Einfügen am Anfang
+### Einfügen am Anfang
 
 Es soll ein neuer Knoten angelegt und dieser am Anfang der Liste eingefügt werden.
 
 *Skizze + Quelltext.*
 
 
-#### Liste abarbeiten
+### Liste abarbeiten
 
-Alle Knoten sollen "`besucht"' werden. Zum Beispiel um alle Daten in den Knoten auszugeben.
+Alle Knoten sollen "besucht" werden. Zum Beispiel um alle Daten in den Knoten auszugeben.
 
 
 - `Node n = start` – Erster Knoten
 - solange weitergehen (`n = n.next`) 
 	
 	- ... bis Ende der Liste erreicht.
+	
+	
 
-
-
----
-
-**Übung (Ausgabe):** Schreibe ein Programm, das die Ausgabe aller `data` Variablen in der verketteten Liste ermöglicht.
-
-```java
-Node n=start;
-while (n!=null) {
-    System.out.println(n.data);
-    n = n.next;
-}
-```
-
----
-
-
-
-#### Erstes Element entnehmen
+### Erstes Element entnehmen
 
 Der erste Knoten soll aus der Liste entnommen werden. Spezialfall berücksichtigen: Liste ist leer.
 
