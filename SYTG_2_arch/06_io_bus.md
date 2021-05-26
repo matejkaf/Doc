@@ -60,7 +60,7 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 
 
-![image-20210519124352924](fig/image-20210519124352924.png)
+<img src="fig/image-20210519124352924.png" alt="image-20210519124352924" style="zoom:33%;" />
 
 
 
@@ -94,9 +94,9 @@ Zugriff erfolgt über PCIe (4.0 4x = 7,9 GB/s) oder SATA-III
 
 M.2-Steckplatz für Karten mit 42, 60, 80 oder 110 mm Länge (rechts am Bildrand, mit „163006“ beschriftet):
 
-![img](fig/M.2_steckplatz_auf_einer_hauptplatine_IMGP5340_smial_wp.jpg)
+<img src="fig/M.2_steckplatz_auf_einer_hauptplatine_IMGP5340_smial_wp.jpg" alt="img" style="zoom:20%;" />
 
-
+<img src="fig/71HgI3Ibe2L._AC_SL1500_.jpg" alt="img" style="zoom:50%;" />
 
 ## SAS
 
