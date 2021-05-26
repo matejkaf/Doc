@@ -4,12 +4,11 @@ subtitle: Übungen
 tags: [assignment,3BHELS]
 ---
 
-#### **Übung (Einfach verkettete Liste I):**
+#### Übung (Einfach verkettete Liste I)
 
 - Schreibe eine Klasse `Node`. In einem Knoten wird ein Buchstabe gespeichert.
 
-- Schreibe eine Klasse `List`.
-  Diese Klasse enthält die Start Referenz auf die verkettete Liste.
+- Schreibe eine Klasse `List`. Diese Klasse enthält die Start Referenz auf die verkettete Liste.
   Alle Methoden die mit dieser Liste arbeiten werden in dieser Klasse implementiert
 
 Implementiere folgende Aufgabenstellung:
@@ -30,7 +29,7 @@ Implementiere folgende Aufgabenstellung:
 
 ---
 
-#### **Übung (Mock I):**
+#### Übung (Mock I)
 
 Folgender Quelltext soll einen neuen Knoten am Beginn einer verketten Liste einfügen.
 Überlege anhand einer Skizze was falsch ist.
@@ -42,35 +41,33 @@ node.next=start;
 ```
 
 
+
+
 ---
 
-#### **Übung (Einfach verkettete Liste II):**
+#### Übung (Einfach verkettete Liste II)
 
 Implementiere folgende Aufgabenstellung:
 
 - 
 Schreibe eine Methode `count` mit der ermittelt werden kann wie viele Knoten sich in der Liste befinden.
-
-- 
-Ergänze eine Methode `get(int k)` die eine Referenz auf den `k`-ten Knoten zurückgibt.
-Der vorderste Knoten soll die Nummer 0 haben.\\
-Beispiel (`k=2`): `Node n=liste.get(2);`\\
+- Ergänze eine Methode `get(int k)` die eine Referenz auf den `k`-ten Knoten zurückgibt.
+Der vorderste Knoten soll die Nummer 0 haben.
+Beispiel (`k=2`): `Node n=liste.get(2);`
 Der Rückgabewert soll `null` sein, wenn die Stelle `k` nach dem Ende der Liste liegt.
-
-- 
-Schreibe eine Methode 
+- Schreibe eine Methode 
 `removeFirst()`,
 die den ersten Knoten aus der Liste entfernt und eine Referenz auf diesen entfernten Knoten zurückliefert.
 
 
+
+
 ---
 
+#### Übung (Einfügeoperationen)
 
+Hinweis: Bei verketteten Listen kann man sehr einfach **nach** einem bestehenden Knoten (gegeben durch eine Referenz `node`) einen neuen Knoten einfügen.
 
-#### **Übung (Einfügeoperationen):**
-
-Hinweis: Bei verketteten Listen kann man sehr einfach **nach** einem bestehenden Knoten  
-(Referenz `node`) einen neuen Knoten einfügen.
 Beispiel: Einfügen nach Position 1.
 
 ```java
@@ -82,14 +79,12 @@ node.next = newNode;
 
 Aufgabenstellungen:
 
-- 
-Schreibe eine Methode `insert` mit deren Hilfe ein neuer Knoten an beliebiger Stelle eingefügt wird.
-Übergabeparameter sind die Knotennnummer $k$ und eine Referenz auf den einzufügenden Knoten.
-Der neu eingefügte Knoten nimmt die Position $k$ ein.
-$k=0$ ist die Positionsnummer des vordersten Knotens (Achtung: $k=0$ ist ein Edge-Case).
+- Schreibe eine Methode `insert` mit deren Hilfe ein neuer Knoten an beliebiger Stelle eingefügt wird.
+Übergabeparameter sind die Knotennnummer k und eine Referenz auf den einzufügenden Knoten.
+Der neu eingefügte Knoten nimmt die Position k ein.
+k=0 ist die Positionsnummer des vordersten Knotens (Achtung: k=0 ist ein Edge-Case).
 
-- 
-Die Methode 
+- Die Methode 
 `append(Node newNode)` soll einen Knoten ans Ende der Liste anfügen.
 Beachte den Fall, dass die Liste leer ist.
 Es gibt keinen Rückgabewert.
@@ -98,7 +93,7 @@ Es gibt keinen Rückgabewert.
 
 ---
 
-#### **Übung (Einfach verkettete Liste II):**
+#### Übung (Einfach verkettete Liste II)
 
 Implementiere folgende Aufgabenstellung:
 
@@ -111,20 +106,18 @@ Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben ü
 
 ---
 
-#### **Übung (Suchen eines Werts):**
+#### Übung (Suchen eines Werts)
 
-Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste. 
-Der Wert soll als Parameter übergeben werden.
-Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält.
-Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
+Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert soll als Parameter übergeben werden. Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält. Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
 
 
 - `findFirst` – Es soll das erste Vorkommen des Werts gesucht werden.
-
 - `findLast` – Es soll das letzte Vorkommen des Werts gesucht werden.
 
+
+
 ---
-#### **Übung (Mock II):**
+#### Übung (Mock II)
 
 Überlege welche Auswirkungen der folgende Quelltext auf eine verkettete Liste hat.
 
@@ -136,9 +129,11 @@ start = m;
 ```
 
 
+
+
 ---
 
-#### **Übung (Erweiterungen):**
+#### Übung (Erweiterungen)
 
 Implementiere weiters:
 
@@ -146,20 +141,10 @@ Implementiere weiters:
 Methode `removeLast` die den letzten Knoten aus der Liste entfernt.
 
 - 
-Schreibe eine Methode `remove(char c)` mit der ein Knoten mit einem bestimmten Wert aus der Liste gelöscht werden kann.
-Die Methode soll `false` liefern falls der Wert nicht gefunden wurde, andernfalls `true`. Es soll nur das erste Vorkommen des Werts gesucht werden.
+Schreibe eine Methode `remove(char c)` mit der ein Knoten mit einem bestimmten Wert aus der Liste gelöscht werden kann. Die Methode soll `false` liefern falls der Wert nicht gefunden wurde, andernfalls `true`. Es soll nur das erste Vorkommen des Werts gesucht werden.
 
 - 
-Optimiere die `append` Methode so, dass diese in einem Schritt (ohne Suchen des Endes) durchgeführt werden kann.
-Hinweis: Führe zusätzlich zu `start` eine Referenz `end` mit die immer auf den letzten Knoten verweist.
+Optimiere die `append` Methode so, dass diese in einem Schritt (ohne Suchen des Endes) durchgeführt werden kann. Hinweis: Führe zusätzlich zu `start` eine Referenz `end` mit die immer auf den letzten Knoten verweist.
 
 - 
 Schreibe eine Methode die die Liste alphabetisch sortiert.
-
-
----
-
-
-
-
-
