@@ -1,6 +1,14 @@
+---
+title: Windows
+---
+
+* TOC
+{:toc}
+
 # Downloads
 
-[Get a Windows 10 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+- [Get a Windows 10 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+-  [ISO vom aktuellen Windows](https://www.microsoft.com/de-de/software-download/windows10ISO)
 
 
 
@@ -100,37 +108,6 @@ Start  > Settings  > Update & Security  > Windows Security > Virus & threat prot
 
 Switch **Real-time protection** to **Off**. Note that scheduled scans will continue to run. However, files that are downloaded or installed will not be scanned until the next scheduled scan.
 
-
-
-# Windows Firewall
-
-## Deaktivieren – kurzfristig
-
-Start > Control Panel (Systemsteuerung) > System and Security > Windows Firewall
-
-Oder über CLI:
-
-```
-C:> control firewall.cpl
-```
-
-- Select **Turn Windows Firewall on or off** on the left side of the screen.
-- Select the bubble next to **Turn off Windows Firewall (not recommended)**.
-- Select **OK** to save the changes.
-
-
-
-Oder Beschreibung von [Microsoft](https://support.microsoft.com/en-us/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f):
-
-To turn Microsoft Defender Firewall on or off:
-
-1. Select the **Start** button > **Settings** (Einstellungen) > **Update & Security** > **Windows Security** and then **Firewall & network protection**. [Open Windows Security settings](ms-settings:windowsdefender?activationSource=SMC-IA-4028544)
-2. Select a network profile.
-3. Under Microsoft Defender **Firewall**, switch the setting to **On**. If your device is connected to a network, network policy settings might prevent you from completing these steps. For more info, contact your administrator.
-4. To turn it off, switch the setting to **Off**. Turning off Microsoft Defender Firewall could make your device (and network, if you have one) more vulnerable to unauthorized access. If there's an app you need to use that's being blocked, you can allow it through the firewall, instead of turning the firewall off.
-
-
-
 Hinweis: Der Defender aktiviert sich nach gewisser Zeit wieder von selbst.
 
 
@@ -156,5 +133,42 @@ Gruppenrichtlinien Verwaltungseditor
   
 
 - Einstellungen (Zahnrad) öffnen > Update und Sicherheit
+
 - Windows Defender
+
 - Echtzeit Schutz ist disabled und aktiviert sich nicht wieder nach einer gewissen Zeit.
+
+
+
+# Windows Firewall
+
+Hinweis: Ein Windows 10 System reagiert auch nicht auf PING (in der Firewall deaktiviert).
+
+
+
+## Deaktivieren
+
+Start > Control Panel (Systemsteuerung) > System and Security > Windows Firewall
+
+Oder öffnen über CLI:
+
+```
+C:> control firewall.cpl
+```
+
+- Select **Turn Windows Firewall on or off** on the left side of the screen.
+- Select the bubble next to **Turn off Windows Firewall (not recommended)**.
+- Select **OK** to save the changes.
+
+
+
+Oder Beschreibung von [Microsoft](https://support.microsoft.com/en-us/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f):
+
+To turn Microsoft Defender Firewall on or off:
+
+1. Select the **Start** button > **Settings** (Einstellungen) > **Update & Security** > **Windows Security** and then **Firewall & network protection**. [Open Windows Security settings](ms-settings:windowsdefender?activationSource=SMC-IA-4028544)
+2. Select a network profile.
+3. Under Microsoft Defender **Firewall**, switch the setting to **On**. If your device is connected to a network, network policy settings might prevent you from completing these steps. For more info, contact your administrator.
+4. To turn it off, switch the setting to **Off**. Turning off Microsoft Defender Firewall could make your device (and network, if you have one) more vulnerable to unauthorized access. If there's an app you need to use that's being blocked, you can allow it through the firewall, instead of turning the firewall off.
+
+
