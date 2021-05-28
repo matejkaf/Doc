@@ -104,11 +104,31 @@ $ echo $?
 
 
 
+# Arbeiten mit $?
+
+Beispiel bash Script für Compiler Start und ausführen des Programms wenn keine Fehler aufgetreten sind.
+
+```bash
+echo "Compiler wird gestartet"
+g++ hello.cpp -o hello
+# Compilevorgang fehlerfrei?
+if [ $? -eq 0 ]
+then
+  ./hello
+  echo $?  # exit status von hello
+else
+  echo "Compiler Fehler: $?"
+fi
+```
+
+
+
+
+
 # C Programm und stdin / stdout
 
 
 - stdin aus einer Datei ins Programm umleiten
-- [!2AHITS Grp2 07.05.2021]
 - Dateiumleitung und Pipes anhand eines C Programms demonstrieren (z.B. viel Text ausgeben und in `more` pipen)
 
 
@@ -124,7 +144,32 @@ int main(int argc, char *argv[]) {
 }
 ```
 
+Mit Quotes
 
+```bash
+$ ./main aaa bbb "ccc ddd eee"
+4
+./main
+aaa
+bbb
+ccc ddd eee
+```
+
+Mit Wildcards
+
+```bash
+$ ls *
+main  main.cpp
+$ ./main  *
+3
+./main
+main
+main.cpp
+```
+
+
+
+[!2AHITS Grp2 28.05.2021]
 
 Werte mit `atoi`:
 
@@ -139,31 +184,6 @@ printf(".\n");
 ```
 
 
-
-Mit Quotes
-
-```bash
-$ ./main aaa bbb "ccc ddd"
-4
-./main
-aaa
-bbb
-ccc ddd
-```
-
-
-
-Mit Wildcards
-
-```bash
-$ ls *
-main  main.cpp
-$ ./main  *
-3
-./main
-main
-main.cpp
-```
 
 Optionen erkennen, z.B. Anzahl der Zeilen die ein Programm ausgeben soll.
 

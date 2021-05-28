@@ -47,5 +47,7 @@ $ ./main 4.25 / 8.5  -f
 0.5
 ```
 
+Die Option steht zur Vereinfachung immer am Ende.
+
 **Erweiterung:** Eine Option die die Anzahl der darzustellenden Nachkommastellen bestimmt.
 
