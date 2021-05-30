@@ -316,7 +316,7 @@ Description:
 
 Excel Datei mit dem Makro erstellen. Siehe [Excel Backdoor Makro](excel_backdoor_makro)
 
-Weiter mit 
+Weiter mit:
 
 ```
 agents
@@ -376,6 +376,8 @@ agents
 
 
 # launcher_bat Test 29.05.2021
+
+Batchfile das unter Windows in der Kommandozeile gestartet werden kann und eine Reverse Shell öffnet.
 
 [Infos](https://null-byte.wonderhowto.com/how-to/use-powershell-empire-getting-started-with-post-exploitation-windows-hosts-0178664/)
 
