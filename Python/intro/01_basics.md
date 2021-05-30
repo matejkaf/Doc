@@ -83,7 +83,7 @@ i=1
 # kein i++ i--
 i+=1 # i=i+1
 i-=1 # i=i+1
-
+2**8 # 2^8=256
 ```
 
 
@@ -148,6 +148,16 @@ abs = value if value>=0 else -value
 # signum
 value = -42
 sgn = -1 if value<0 else 0 if value==0 else 1
+```
+
+**Boolsche Operatoren**: `and`, `or`, `not`
+
+```python
+a = 200
+b = 33
+c = 500
+if not (a > b and c > a) or b==34:
+  print("weird condition is True")
 ```
 
 

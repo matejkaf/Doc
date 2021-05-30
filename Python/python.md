@@ -232,6 +232,8 @@ str10 = str1 * 3              # Repetition
 str11 = str1.lower()          # Lowercase
 str12 = str1.upper()          # Uppercase
 str13 = str1.rstrip()         # Strip right (trailing) whitespace
+str13b = str1.lstrip()        # Strip left (leading) whitespace
+str13c = str1.strip()         # lstrip+rstrip
 str14 = str1.replace('l','h') # Replacement
 list15 = str1.split('l')      # Splitting
 if str1 == str2: print "Equ"  # Equality test
@@ -466,6 +468,16 @@ conditional expression (like ternary operator)
 
 ```python
 result = x if a > b else y
+```
+
+Boolsche Operatoren: `and`, `or`, `not`
+
+```python
+a = 200
+b = 33
+c = 500
+if not (a > b and c > a) or b==34:
+  print("weird condition is True")
 ```
 
 

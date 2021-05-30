@@ -104,7 +104,9 @@ $ echo $?
 
 
 
-# Arbeiten mit $?
+# Arbeiten mit `$?`
+
+shell scripts sind Dateien mit shell Befehlen. Auch Variablen, if-Anweisungen und Schleifen sind möglich.
 
 Beispiel bash Script für Compiler Start und ausführen des Programms wenn keine Fehler aufgetreten sind.
 
