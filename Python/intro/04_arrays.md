@@ -71,7 +71,7 @@ for i, el in enumerate(a):
 
 
 
-# `in` Test
+# in Test
 
 `in` testet ob ein Wert in einer Liste enthalten ist, liefert `True`/`False`:
 
@@ -104,9 +104,9 @@ Element an Index entfernen
 ```python
 list=['a','bb','b','c','d','e']
 el=list.pop(1)	## return = entferntes Element
-print(el)		## bb
+print(el)				## bb
 el=list.pop()		## vorderstes Element entfernen
-print(el)		## a
+print(el)				## a
 ```
 
 Siehe [docs.python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) – alle List Methoden (`append`, `extend`, `insert`, `remove`, `pop`, `clear`, `index`, `count`, `sort`, `reverse`, `copy`)
@@ -148,11 +148,11 @@ Slices sind Kopien
 von und bis können weggelassen werden.
 
 ```python
->>> a[3:]				## bis zum Ende
+>>> a[3:]			## bis zum Ende
 [4, 5, 6, 7, 8]
->>> a[:4]				## vom Anfang
+>>> a[:4]			## vom Anfang
 [1, 2, 3, 4]
->>> a[:]				## komplette Kopie
+>>> a[:]			## komplette Kopie
 [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
