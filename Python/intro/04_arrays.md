@@ -36,6 +36,18 @@ print(colors)
 
 
 
+# Liste aufbauen
+
+Häufig wird mit einer leeren Liste `[]` gestartet und `append()` verwendet um Elemente anzufügen:
+
+```
+  list = []          ## Start as the empty list
+  list.append('a')   ## Use append() to add elements
+  list.append('b')
+```
+
+
+
 # Schleife
 
 Schleife über alle Elemente in einer Liste:
@@ -52,6 +64,18 @@ Zuätzlicher Index mit `enumerate`:
 a=[11,22,33,44]
 for i, el in enumerate(a):
   print(f'{i} : {el}')
+```
+
+
+
+# `in` Test
+
+`in` testet ob ein Wert in einer Liste enthalten ist, liefert `True`/`False`:
+
+```python
+list = ['larry', 'curly', 'moe']
+if 'curly' in list:
+  print 'yay'
 ```
 
 
