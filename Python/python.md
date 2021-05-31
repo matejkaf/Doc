@@ -289,6 +289,13 @@ for el in a:
 len(a) # list length
 ```
 
+```python
+a[-1] # letztes Element
+a[-2] # vorletztes Element
+```
+
+
+
 List Methoden:
 
 ```python
@@ -306,10 +313,6 @@ print(list)  ## ['xxx', 'moe', 'shemp', 'yyy', 'zzz']
 Slices:
 
 ```python
-a[-1] # letztes Element
-a[-2] # vorletztes Element
-
-# slices
 a[von:bis]
 a[1:-1]
 # slices sind immer Kopien

@@ -1,7 +1,88 @@
 ---
-title: Arrays
+title: Listen (Arrays)
 subtitle: Python Einführung
 ---
+
+Arrays in Python werden Listen (*list*) genannt und sind wesentlich flexibler als Arrays in C oder Java, aber ähnlich zu verwenden [[docs.python](https://docs.python.org/3/tutorial/introduction.html#lists)].
+
+Eine Liste definieren:
+
+```python
+colors = ['red', 'blue', 'green']
+```
+
+  Zugriff per Index:
+
+```python
+print(colors[0])    ## red
+print(colors[2])    ## green
+colors[0]='Red'
+
+colors[-1] # green – letztes Element
+colors[-2] # blue – vorletztes Element
+```
+
+Länge einer Liste:
+
+```python
+print(len(colors))  ## Länge = 3
+```
+
+Ganze Liste ausgeben:
+
+```python
+print(colors)
+```
+
+
+
+# Schleife
+
+Schleife über alle Elemente in einer Liste:
+
+```python
+a=[1,2,3,4]
+for el in a:
+  print(el)
+```
+
+Zuätzlicher Index mit `enumerate`:
+
+```python
+a=[11,22,33,44]
+for i, el in enumerate(a):
+  print(f'{i} : {el}')
+```
+
+
+
+# List Methoden
+
+Neues Element am Ende anfügen:
+
+```python
+l=[3,4,5]
+l.append(42)
+```
+
+Neues Element an Index einfügen:
+
+```python
+l=['zwei','drei']
+l.insert(0,'eins')
+```
+
+Element an Index entfernen
+
+```python
+list=['a','bb','b','c','d','e']
+el=list.pop(1)	## return = entferntes Element
+print(el)		## bb
+el=list.pop()		## vorderstes Element entfernen
+print(el)		## a
+```
+
+Siehe [docs.python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) – alle List Methoden (`append`, `extend`, `insert`, `remove`, `pop`, `clear`, `index`, `count`, `sort`, `reverse`, `copy`)
 
 
 
@@ -12,6 +93,7 @@ Teilt einen String aufgrund eines Trennzeichens in mehrere Substrings. Das Ergeb
 ```python
 csv_str="Mustermann,42,mm@test.com"
 csv_data=csv_str.split(',')
+print(csv_data)		## ['Mustermann', '42', 'mm@test.com']
 ```
 
 
@@ -20,5 +102,59 @@ csv_data=csv_str.split(',')
 
 ```python
 "_".join(['a','b','c'])		# a_b_c
+```
+
+
+
+# Slices
+
+Syntax `[von:bis]` – der bis Index ist nicht dabei.
+
+```python
+>>> a=[1,2,3,4,5,6,7,8]
+>>> a[1:-1]
+[2, 3, 4, 5, 6, 7]
+```
+
+Slices sind Kopien
+
+von und bis können weggelassen werden.
+
+```python
+>>> a[3:]				## bis zum Ende
+[4, 5, 6, 7, 8]
+>>> a[:4]				## vom Anfang
+[1, 2, 3, 4]
+>>> a[:]				## komplette Kopie
+[1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+Slices ersetzen:
+
+```python
+# Slice der Länge 2 durch eine Liste aus 3 Elementen ersetzen:
+>>> a[1:3] = [11,22,33]
+>>> a
+[1, 11, 22, 33, 4, 5, 6, 7, 8]
+```
+
+Slices löschen:
+
+```python
+>>> a
+[1, 11, 22, 33, 4, 5, 6, 7, 8]
+>>> a[4:7]=[]
+>>> a
+[1, 11, 22, 33, 7, 8]
+```
+
+Einfügen mit Slices:
+
+```python
+>>> a
+[1, 11, 22, 33, 7, 8]
+>>> a[2:2]=[555,666]
+>>> a
+[1, 11, 555, 666, 22, 33, 7, 8]
 ```
 
