@@ -17,7 +17,10 @@ colors = ['red', 'blue', 'green']
 print(colors[0])    ## red
 print(colors[2])    ## green
 colors[0]='Red'
+```
 
+```python
+Negative Indices:
 colors[-1] # green – letztes Element
 colors[-2] # blue – vorletztes Element
 ```
