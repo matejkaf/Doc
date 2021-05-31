@@ -101,9 +101,11 @@ else:
   print("Geht")
 ```
 
-Beachte: In Python keine `{}` sondern `:` und einrücken!
+---
 
-Welche Programmzeilen in einem Block zusammengehören ergibt sich durch die Einrückungstiefe
+**Beachte**: In Python keine `{}` sondern `:` und einrücken! Welche Programmzeilen in einem Block zusammengehören ergibt sich durch die Einrückungstiefe.
+
+---
 
 Beispiel:
 
