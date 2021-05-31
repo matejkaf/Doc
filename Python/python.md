@@ -369,7 +369,7 @@ dict['o'] = 'omega'
 
 print(dict)  ## {'a': 'alpha', 'o': 'omega', 'g': 'gamma'}
 
-print dict['a']     ## Simple lookup, returns 'alpha'
+print(dict['a'])     ## Simple lookup, returns 'alpha'
 dict['a'] = 6       ## Put new key/value into dict
 'a' in dict         ## True
 ## print dict['z']                  ## Throws KeyError
@@ -382,18 +382,18 @@ print dict.get('z')  ## None (instead of KeyError)
 ## By default, iterating over a dict iterates over its keys.
 ## Note that the keys are in a random order.
 for key in dict: 
-  print key
-  ## prints a g o
+  print(key)
+## prints a g o
 
 ## Exactly the same as above
 for key in dict.keys(): 
-  print key
+  print(key)
 
 ## Get the .keys() list:
-print dict.keys()  ## ['a', 'o', 'g']
+print(dict.keys())  ## ['a', 'o', 'g']
 
 ## Likewise, there's a .values() list of values
-print dict.values()  ## ['alpha', 'omega', 'gamma']
+print(dict.values())  ## ['alpha', 'omega', 'gamma']
 
 ## Common case -- loop over the keys in sorted order,
 ## accessing each key/value
@@ -408,7 +408,7 @@ print dict.items()  ##  [('a', 'alpha'), ('o', 'omega'), ('g', 'gamma')]
 ## pair on each iteration.
 for k, v in dict.items(): 
   print(f"{k} => {v}")
-  ## a > alpha    o > omega     g > gamma
+  ## a => alpha    o => omega     g => gamma
 ```
 
 
