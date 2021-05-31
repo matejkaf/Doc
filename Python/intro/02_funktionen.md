@@ -3,7 +3,7 @@ title: Funktionen
 subtitle: Python Einführung
 ---
 
-Functions in Python are defined like this:
+Funktionen in Python werden so definiert:
 
 ```python
 # Defines a "repeat" function that takes 2 arguments.

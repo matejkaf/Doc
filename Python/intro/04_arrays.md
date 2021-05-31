@@ -43,10 +43,10 @@ print(colors)
 
 Häufig wird mit einer leeren Liste `[]` gestartet und `append()` verwendet um Elemente anzufügen:
 
-```
-  list = []          ## Start as the empty list
-  list.append('a')   ## Use append() to add elements
-  list.append('b')
+```python
+list = []          ## Start as the empty list
+list.append('a')   ## Use append() to add elements
+list.append('b')
 ```
 
 
@@ -135,7 +135,7 @@ print(csv_data)		## ['Mustermann', '42', 'mm@test.com']
 
 # Slices
 
-Syntax `[von:bis]` – der bis Index ist nicht dabei.
+Syntax `[von:bis]` – der `bis` Index ist nicht dabei.
 
 ```python
 >>> a=[1,2,3,4,5,6,7,8]

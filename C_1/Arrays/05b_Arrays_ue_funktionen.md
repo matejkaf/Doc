@@ -38,8 +38,8 @@ Wie vorher – es ist aber **erlaubt das erste Element** vor der Schleife auf ei
 ```c
 void folgee(int a[])
 {
-	int i; // einzig erlaubte Variable !
-	a[0] = ...; 
+  int i; // einzig erlaubte Variable !
+  a[0] = ...; 
   // Hinweis: mit a[i-1] kann auf das Vorgängerelement zugegriffen werden
 }
 ```
@@ -60,10 +60,10 @@ Wie vorher – es ist aber **erlaubt die ersten zwei Elemente** vor der Schleife
 ```c
 void folgeg(int a[])
 {
-	int i; // einzig erlaubte Variable !
-	a[0] = ...;
-	a[1] = ...;
-	...
+  int i; // einzig erlaubte Variable !
+  a[0] = ...;
+  a[1] = ...;
+  ...
 }
 ```
 
