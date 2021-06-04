@@ -6,7 +6,10 @@ tags: [5AHELS,lecture, krypto ]
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
 </script>
-*shared secret key* Verschlüsselungssysteme haben zur Voraussetzung, dass beide Kommunikationspartner über den gleichen Schlüssel verfügen (*shared symetric key*) und diesen geheim halten. Die große Problematik ist Angriffe im Moment des Schlüsselaustauschs zu verhindern.
+
+* TOC
+{:toc}
+Bei symetrischer Verschlüsselung muss ein Schlüssel ausgetauscht werden. Dieser Schlüsselaustausch ist angreifbar.
 
 **Public-key cryptography** ist eine innovative Idee aus den 1970er Jahren die einen solchen Angriff unmöglich macht. 
 
@@ -48,7 +51,7 @@ Ablauf: Alice will an Bob eine verschlüsselte Nachricht schicken.
 
 Aufgrund des **extremen Rechenaufwands** (rechnen mit Zahlen die tausende Stellen haben können) wird RSA nicht zum verschlüsseln der gesamten Kommunikation verwendet.
 
-Stattdessen generiert Alice einen **shared secret key** (für stream- oder block-cipher) und schickt diesen mit dem public key verschlüsselt an Bob.  Bob und Alice verwenden dann weiters eine stream- oder block-cipher für die weitere Kommunikation.
+Stattdessen generiert Alice einen **shared secret key** (für stream- oder block-cipher) und schickt diesen mit dem public key verschlüsselt an Bob.  Bob und Alice verwenden dann weiters eine stream- oder block-cipher für die weitere Kommunikation. Dies wird hybride Verschlüsselung genannt.
 
 
 
@@ -132,7 +135,7 @@ $$
 Dieses $$t$$ hat für beliebiges $$x$$ die Eigenschaft : 
 $$
 \begin{equation}
-	x^t=1\ (\text{mod}\ n) \quad \text{[Formel 1]}
+	x^t=1\ (\text{mod}\ n) \quad\quad \text{(Formel 1)}
 \end{equation}
 $$
 
@@ -142,7 +145,7 @@ e*d=1\ (\text{mod}\ t)
 $$
 Bedeutet: $$d$$ ist das modulare Inverse zu $$e$$ mit Modul $$t$$. Siehe [Erweiterter euklidischer Algorithmus](https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus).
 
-Anders: $$e*d=k*t+1$$ für ein bestimmtes $$k$$. [Formel 2]
+Anders: $$e*d=k*t+1$$ für ein bestimmtes $$k$$. (Formel 2)
 
 
 $$d$$ ist der **private key** (wird gemeinsam mit $$p$$, $$q$$ und $$t$$ geheim gehalten).
@@ -157,15 +160,21 @@ $$
 
 Beweis (alles $$\text{mod}\ n$$):
 
-$$c^d=(m^e)^d=m^{ed}$$
+$$
+c^d=(m^e)^d=m^{ed}
+$$
 
-Durch [2] ist $$e*d=k*t+1$$.
+Durch [Formel 2] ist $$e*d=k*t+1$$:
 
-$$m^{ed}=m^{kt+1}=(m^t)^k*m$$
+$$
+m^{ed}=m^{kt+1}=(m^t)^k*m
+$$
 
-Wegen [1] ist $$m^t=1$$
+Wegen [Formel 1] ist $$m^t=1$$:
 
-$$(m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)$$
+$$
+(m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)
+$$
 
 - Geheimhaltung: Ist einem Angreifer nur eine Zahl $$d$$, $$p$$, $$q$$ oder $$t$$ bekannt so wäre ein entschlüsseln möglich.
 - Gängige Größen für $$n$$: 2048/4096 Bits.
