@@ -14,7 +14,7 @@ Anwendung:
 
 
 
-## PBKDF2
+# PBKDF2
 
 [Python : hashlib#key-derivation](https://docs.python.org/3/library/hashlib.html#key-derivation)
 
@@ -48,7 +48,7 @@ Zum Entschlüsseln wird Salt benötigt. Da dieses nicht sicherheitsrelevant ist 
 
 
 
-## Crypt
+# Crypt
 
 Unix Passwörter
 
@@ -87,7 +87,7 @@ else:
 
 An `crypt.crypt` kann als zweiter Parameter der komplette verschüsselte Passwort (`$6$...$...`) übergeben werden. Durch `hmac.compare_digest(a, b)` ([Library : hmac](https://docs.python.org/3/library/hmac.html)) statt `==` werden sidechannel (timing) Angriffe verhindert.
 
-### Rounds
+## Rounds
 
 Um einen brute force Angriff zu erschweren wird wiederholt gehasht. Default bei crypt ist 5000. Mit `crypt.mksalt` können die Runden definiert werden, diese werden in der Form `$6$rounds=10000$...` in den gehashten Passwort-String geschrieben.
 

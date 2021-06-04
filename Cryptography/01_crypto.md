@@ -121,8 +121,8 @@ Bei Übereinstimmung kann Bob sich sicher sein, dass m von Alice stammt.
 XOR ist eine **umkehrbare boolsche Funktion** und daher für die  Ver- und Entschlüsselung eine geeignete und intensiv verwendete Basis. Dabei ist die Umkehrfunktion von XOR wiederum XOR:
 
 Beispiel - Bitfolge A wird mit G verschlüsselt. 
-$B=A \oplus G$
-$B \oplus G=(A \oplus G) \oplus G=A \oplus (G \oplus G)=A \oplus 0=A$
+$$B=A \oplus G$$
+$$B \oplus G=(A \oplus G) \oplus G=A \oplus (G \oplus G)=A \oplus 0=A$$
 
 
 

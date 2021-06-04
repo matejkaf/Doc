@@ -4,6 +4,10 @@ subtitle: Encoding / Kodierung
 tags: [lecture,2AHITS_Teach]
 ---
 
+
+
+# Motivation
+
 Hashwerte sind große Binärzahlen (typisch 128/256/512 Bits). 
 
 Binärdaten eignen sich nicht direkt für Darstellung und Übertragung (Email, SMS, ...)
@@ -11,18 +15,19 @@ Binärdaten eignen sich nicht direkt für Darstellung und Übertragung (Email, S
 Beispiel  [[REPL:BinaryIsNotTextSave](https://replit.com/@htlmatejka/BinaryIsNotTextSave)]:
 
 ```bash
+$ wget `https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt`
 $ openssl dgst -sha256 -binary goethe.txt
 ��_�+�BP�c�T}�?9�+d�U�?�p�
-# sollten 32 Bytes sein, sind aber nur 26 !?
+# sollten 32 Bytes sein, sind aber nur 26 Zeichen !?
 ```
 
-Einschub: Warum können Binärdaten nicht als Text übertragen werden. Binärdaten bestehen aus einer Folge von Bytes. Jedes Byte kann einen Wert von 0...255 haben – nicht jedes dieser Werte entspricht einem druckbaren Zeichen [[siehe REPL:BinaryIsNotTextSave](https://replit.com/@htlmatejka/BinaryIsNotTextSave)]
+Einschub: Warum können Binärdaten nicht als Text übertragen werden? Binärdaten bestehen aus einer Folge von Bytes. Jedes Byte kann einen Wert von 0...255 haben – nicht jedes dieser Werte entspricht einem druckbaren Zeichen [[siehe REPL:BinaryIsNotTextSave](https://replit.com/@htlmatejka/BinaryIsNotTextSave)]
 
-Es wird eine Darstellung als Text gewünscht. Jede Art der Darstellung von Daten/Information nennt man **Kodierung** (engl. Encoding).
+Es wird eine Darstellung als Text gewünscht. Jede Art der Darstellung (bzw. Umwandeln in ein anderes Format) von Daten/Information nennt man **Kodierung** (engl. Encoding).
 
 
 
-## Hex Encoding
+# Hex Encoding
 
 - auch Radix-16
 - 1 Buchstabe = 4 Bit (1 Byte ⟶ 2 Buchstaben)
@@ -37,7 +42,7 @@ NT: doppelter Platzbedarf (100%) im Vergleich zu Binär
 
 
 
-## Base64
+# Base64
 
 - auch Radix-64, 
 - 1 Buchstabe = 6 Bit
@@ -55,8 +60,6 @@ Base64:
 o2EQ5lyquYxb/aovddcx5UxY9Jbk4ec7yb33lUPwysdP6GbPoNITcnk8PcbqNvW9BAeVk/JdmR5y1/1VjxCCyQ==
 ```
 
-Padding:
-
-Die `=` am Ende des Base64 Strings. 3 Bytes (3\*8=24 Bits) werden als 4 Buchstaben dargestellt (4\*6=24). Wenn die Länge der Daten kein Vielfaches von 3 ist wird `=` oder `==` hinten angefügt. Die Länge eines Base64 Strings ist daher immer ein Vielfaches von 4.
+Padding: Die `=` am Ende des Base64 Strings. 3 Bytes (3\*8=24 Bits) werden als 4 Buchstaben dargestellt (4\*6=24). Wenn die Länge der Daten kein Vielfaches von 3 ist wird `=` oder `==` hinten angefügt. Die Länge eines Base64 Strings ist daher immer ein Vielfaches von 4.
 
 Siehe [Base64 wikipedia en](https://en.wikipedia.org/wiki/Base64)

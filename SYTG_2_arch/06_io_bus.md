@@ -183,6 +183,10 @@ Bisher 4 Versionen (aktuell USB 3)
 
 [wikipedia : USB Steckverbinder](https://en.wikipedia.org/wiki/USB#Receptacle_(socket)_identification)
 
+Achtung bei USB3: Namensverwirrung
+
+![image-20210531181725940](fig/image-20210531181725940.png)
+
 Spannungsversorgung: USB kann in allen Versionen angeschlossene Geräte versorgen (5 Volt).
 
 - USB1: 100mA (0,5W)

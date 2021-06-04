@@ -1,6 +1,6 @@
 ---
-title: Kryptographie in Python
-subtitle: Hashing
+title: Hashing
+subtitle: Kryptographie in Python
 ---
 
 [`hashlib` — Secure hashes and message digests](https://docs.python.org/3/library/hashlib.html)

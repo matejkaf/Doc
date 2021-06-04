@@ -1,6 +1,6 @@
 ---
-title: Kryptographie in Python
-subtitle: Bytestrings
+title: Bytestrings
+subtitle: Kryptographie in Python
 ---
 
 Kryptographische Operationen nehmen größtenteils Bytestrings als Input und Output.
@@ -53,7 +53,7 @@ Länge eines Bytestrings:
 
 
 
-## Dateien
+# Dateien
 
 Bytestrings in Dateien schreiben bzw. lesen.
 

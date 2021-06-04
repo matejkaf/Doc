@@ -4,7 +4,13 @@ description:
 tags: [5AHELS,lecture, krypto ]
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+window.MathJax = {
+  tex: {
+    tags: 'ams'
+  }
+};
+</script>
 
 *shared secret key* Verschlüsselungssysteme haben zur Voraussetzung, dass beide Kommunikationspartner über den gleichen Schlüssel verfügen (*shared symetric key*) und diesen geheim halten. Die große Problematik ist Angriffe im Moment des Schlüsselaustauschs zu verhindern.
 
@@ -106,31 +112,51 @@ Im ersten Schritt werden 2 große **Primzahlen** $$p$$ und $$q$$ zufällig gewä
 
 - Eine Zahl $$e$$, der **Exponenent**, wird gewählt. Häufig 65537, 17, 5 oder 3.
 
+  - > $$e$$ is often statically set to $$65537=2^{16}+1$$ for encryption speed (since there are only two set bits in that number). [[*](https://crypto.stackexchange.com/a/1449)]
+
 - Das Paar $$(n,e)$$ ist der **public key**.
 
-Nun wird das kleinste gemeinsame Vielfache $$t$$ von $$p-1$$ und $$q-1$$ bestimmt.
 
-$$t=\text{kgV}(p-1,q-1)$$
 
-Dieses $$t$$ hat die Eigenschaft: $$x^t=1\ (\text{mod}\ n)$$, für beliebiges $$x$$. [1]
+## Verschlüsselung
+
+Die Nachricht $$m$$ wird als Zahl dargestellt (z.B. 128/256 bits).
+
+Ciphertext: 
+$$
+c=m^e\  (\text{mod}\ n)
+$$
+
+## Private Key
+
+Es wird das kleinste gemeinsame Vielfache $$t$$ von $$p-1$$ und $$q-1$$ bestimmt.
+
+$$
+t=\text{kgV}(p-1,q-1)
+$$
+
+Dieses $$t$$ hat für beliebiges $$x$$ die Eigenschaft : 
+$$
+x^t=1\ (\text{mod}\ n) \quad \text{[Formel 1]}
+$$
 
 Eine Zahl $$d$$ wird ermittelt, so dass gilt:
+$$
+e*d=1\ (\text{mod}\ t)
+$$
+Bedeutet: $$d$$ ist das modulare Inverse zu $$e$$ mit Modul $$t$$. Siehe [Erweiterter euklidischer Algorithmus](https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus).
 
-$$e*d=1\ (\text{mod}\ t)$$
-
-Bedeutet: $$d$$ ist das inverse zu $$e$$ modulo $$t$$. 
-
-Anders: $$e*d=k*t+1$$ für ein bestimmtes $$k$$. [2]
+Anders: $$e*d=k*t+1$$ für ein bestimmtes $$k$$. [Formel 2]
 
 
 $$d$$ ist der **private key** (wird gemeinsam mit $$p$$, $$q$$ und $$t$$ geheim gehalten).
 
-Verschlüsselung:
-Die Nachricht $$m$$ wird als Zahl dargestellt (z.B. 128/256 bits).
 
-Ciphertext: $$c=m^e\  (\text{mod}\ n)$$
 
-Entschlüsselung: $$c^d\  (\text{mod}\ n)$$ ergibt $$m$$
+## Entschlüsselung
+$$
+c^d\  (\text{mod}\ n)=m
+$$
 
 Beweis (alles $$\text{mod}\ n$$):
 
@@ -145,7 +171,7 @@ Wegen [1] ist $$m^t=1$$
 $$(m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)$$
 
 - Geheimhaltung: Ist einem Angreifer nur eine Zahl $$d$$, $$p$$, $$q$$ oder $$t$$ bekannt so wäre ein entschlüsseln möglich.
-- Gängige Größe für $$n$$: 4096 Bits.
+- Gängige Größen für $$n$$: 2048/4096 Bits.
 
 
 
@@ -154,7 +180,10 @@ $$(m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)$$
 
 Ergibt sich aus der Tatsache, dass es sehr **leicht** ist 2 Zahlen zu **multiplizieren** $$n=p*q$$, es aber ungleich **schwieriger** ist aus dem $$n$$ die beiden **Faktoren** wieder herauszurechnen (siehe [Integer factorization](https://en.wikipedia.org/wiki/Integer_factorization)). $$n$$ ist ein wesentlicher Teil des public key, gelänge es einem Angreifer $$p$$ oder $$q$$ zu ermitteln wäre die Verschlüsselung gebrochen. Die Sicherheit des RSA Verfahrens ergibt sich aus der Tatsache dass diese Faktorisierung nur unter riesigem Rechenaufwand möglich ist.
 
-Beispiel: [RSA-768](https://en.wikipedia.org/wiki/RSA_numbers#RSA-768) (Zahl mit 232 Stellen faktorisieren). CPU-Zeit: 2000 Jahre
+Beispiel: 
+
+- [RSA-768](https://en.wikipedia.org/wiki/RSA_numbers#RSA-768) (768 Bit Zahl mit 232 Stellen faktorisieren). 2009. CPU-Zeit: 2000 Jahre. 2016 wird auch der diskrete Logarithmus berechnet.
+- [RSA-240](https://en.wikipedia.org/wiki/RSA_numbers#RSA-240) (795 Bit Zahl 240 Stellen), November 2019 [[*](https://www.heise.de/security/meldung/Forscher-vermelden-neuen-Rekord-beim-Knacken-von-RSA-4603700.html)], etwa 900 CPU-Kern-Jahre auf 2.1 GHz Xeons Gold, Diskreter Logarithmus wurde auch berechnet. Algorithmus ist 3-mal schneller als bei RSA-768 (HW Verbesserungen herausgerechnet)!
 
 D.h. wählt man $$n$$ groß genug und gibt dieses öffentlich bekannt, hält $$p$$ und $$q$$ aber geheim, so ist es einem Angreifer praktisch unmöglich $$p$$ und $$q$$ herauszufinden.
 

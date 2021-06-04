@@ -56,7 +56,7 @@ $ xxd shopping.txt
   2. Daten in hex
   3. Daten als ASCII Buchstaben (`.` für non-printable character)
 
-
+Hinweis: `xxd` kann auch verwendet werden um hex Daten in binär zu wandeln.
 
 ## hexdump
 

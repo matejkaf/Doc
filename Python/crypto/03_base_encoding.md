@@ -1,6 +1,6 @@
 ---
-title: Kryptographie in Python
-subtitle: Base Encoding
+title: Base Encoding
+subtitle: Kryptographie in Python
 description: Base16, Base64
 ---
 
@@ -10,7 +10,7 @@ Binärdaten (Python Bytestrings) als Text (ASCII String) darstellen.
 
 Siehe auch [Encoding](../../Cybersecurity/11_hashing_und_encoding/02_encoding)
 
-## Beispiel
+# Beispiel
 
 Ein Binärdatei mit zufälligem Inhalt erzeugen:
 
@@ -40,7 +40,7 @@ Die Daten in beiden Dateien sind nicht gleich! Wurde beim copy-paste verändert.
 
 
 
-## Beispieldaten
+# Beispieldaten
 
 ```python
 bytestring = b'\x0a\x31\x55\7e'
@@ -49,7 +49,7 @@ print(plaintext_bytes.hex())
 
 
 
-## base64 Encoding
+# base64 Encoding
 
 ([base64 Library](https://docs.python.org/3/library/base64.html))
 
@@ -66,7 +66,7 @@ b'CjFVB2U='
 
 
 
-## base64 Decoding
+# base64 Decoding
 
 Base64 String ⟶ Bytestring
 
@@ -81,7 +81,7 @@ b'\n1U\x07e'
 
 
 
-## base16 Encoding
+# base16 Encoding
 
 ```python
 base16encoded = base64.b16encode(input_byte)
@@ -94,7 +94,7 @@ b'0A31550765'
 
 
 
-## Base16 Decoding
+# Base16 Decoding
 
 ```
 decoded_byte = base64.b16decode(base16encoded)

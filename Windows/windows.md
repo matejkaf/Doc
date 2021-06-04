@@ -24,6 +24,14 @@ title: Windows
 
 
 
+## en/de
+
+Control Panel = Systemsteuerung
+
+Settings = Einstellungen (Zahnrad)
+
+
+
 # Arbeiten mit Filesystem im Datei Explorer
 
 
@@ -93,6 +101,23 @@ Windows 7 und 8.1:
 3. Wählen Sie unter **Erweiterte Einstellungen** Ausgeblendete Dateien, Ordner und Laufwerke anzeigen und dann OK aus.
 
 
+
+# IP Adressen
+
+Kontrollieren bzw. statische IP Adressen setzen
+
+**To set a static IP address in Windows 7, 8, and 10:**
+
+1. Click **Start Menu** > **Control Panel** > **Network and Sharing Center** or **Network and Internet > Network and Sharing Center.**
+2. Click **Change adapter settings**.
+3. Right-click on **Wi-Fi** or **Local Area Connection.**
+4. Click **Properties**.
+5. Select **Internet Protocol Version 4 (TCP/IPv4)**.
+6. Click **Properties**. 
+7. Select **Use the following IP address**.
+8. Enter the **IP address**, **Subnet mask**, **Default gateway**, and **DNS server**.
+9. Click **OK**.
+   Your computer displays a static IP address.
 
 # Windows Defender
 
@@ -170,5 +195,4 @@ To turn Microsoft Defender Firewall on or off:
 2. Select a network profile.
 3. Under Microsoft Defender **Firewall**, switch the setting to **On**. If your device is connected to a network, network policy settings might prevent you from completing these steps. For more info, contact your administrator.
 4. To turn it off, switch the setting to **Off**. Turning off Microsoft Defender Firewall could make your device (and network, if you have one) more vulnerable to unauthorized access. If there's an app you need to use that's being blocked, you can allow it through the firewall, instead of turning the firewall off.
-
 

@@ -14,7 +14,7 @@ Verschlüsseln eines Texts mittels AES block cipher mit Mode CBC (Cipher Block C
 
 - [[REPL:BlockCipher](https://replit.com/@htlmatejka/BlockCipher#main.py)]
 
-## Verschlüsseln
+# Verschlüsseln
 
 Verschlüsseln einer Nachricht die ein Vielfaches von 16 Bytes (AES Block length) lang ist.
 
@@ -37,19 +37,21 @@ print(ciphertext.hex(' '))
 ee 50 a1 6d e6 77 c1 1a 85 36 44 a0 4f 9e 85 9c
 ```
 
-Nach Aufruf von `finalize` kann das `encryptor` nicht mehr weiter verwendet werden.
+Nach Aufruf von `finalize` kann `encryptor` nicht mehr weiter verwendet werden.
 
 
 
-## Padding
+# Padding
 
-Die plaintext Daten müssen ein Vielfaches von 16 Byte (128 Bits) sein. Falls nicht wird ein Padding am Ende ergänzt.
+Die plaintext Daten müssen ein Vielfaches von 16 Byte (128 Bits) sein. Falls nicht muss ein Padding am Ende ergänzt werden.
 
 Unterschiedliche Möglichkeiten, z.B. [PKCS#7](https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS#5_and_PKCS#7).
 
-Die Nachricht wird durch angefügte Füllbytes auf ein Vielfaches von 128 Bit (16 Byte) erweitert. Die Padding Bytes haben den Wert der Padding Länge, d.h. es gibt immer ein padding – sind die Daten ein Vielfaches von 16 Bytes so wird ein Padding der Länge 16 mit Wert `\x10` verwendet.
+**PKCS#7**: Die Nachricht wird durch angefügte Füllbytes auf ein Vielfaches von 128 Bit (16 Byte) erweitert. Die Padding Bytes haben den Wert der Padding Länge. Es gibt immer ein padding – sind die Daten ein Vielfaches von 16 Bytes so wird ein Padding der Länge 16 mit Wert `\x10` verwendet.
 
-### Verschlüsseln mit Padding
+
+
+## Verschlüsseln mit Padding
 
 ```python
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
@@ -67,7 +69,7 @@ ciphertext = encryptor.update(plaintext_padded) + encryptor.finalize()
 print(ciphertext.hex())
 ```
 
-### Entschlüsseln mit Padding
+## Entschlüsseln mit Padding
 
 ```python
 # decrypt
@@ -85,12 +87,12 @@ print(plaintext)
 
 
 
-## Simulation einer Datenübertragung
+# Simulation einer Datenübertragung
 
 - Key Generator: erzeugt einen 256 Bit Key und speichert diesen in einer Datei `key.bin` – diese muss auf sicherem Weg mit Sender und Empfänger geteilt werden.
 - Sender ...
 
-### Key Generator
+## Key Generator
 
 Speichern eines gemeinsamen Schlüssels (shared secret key) in eine Datei `key.bin`
 
@@ -135,7 +137,7 @@ $ wget https://BlockCipherKeyGenerator.htlmatejka.repl.co/key.bin
 
 [stackoverflow:One line ftp server in python](https://stackoverflow.com/a/4994745)
 
-### Sender
+## Sender
 
 Die Verschlüsselung erfolgt mit AES und Mode CBC. Für CBC ist ein 128 Bit Initialization Vector (IV) notwendig. Dies soll eine zufällige Zahl sein, ist aber nicht geheim, d.h. kann mit den verschlüsselten Daten mitgeschickt werden.
 
@@ -191,7 +193,7 @@ print(data)
 
 Programm "Sender" speichert in eine Datei `encrypted.bin` aus der Programm "Empfänger" liest.
 
-### Empfänger
+## Empfänger
 
 ```python
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes

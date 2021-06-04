@@ -5,7 +5,7 @@ subtitle: hash-based message authentication code
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-## Allgemeines
+# Allgemeines
 
 [wikipedia : HMAC](https://en.wikipedia.org/wiki/HMAC)
 
@@ -21,7 +21,43 @@ Auf der Empfängerseite muss der für die HMAC Berechnung verwendet Schlüssel b
 
 Da einem Angreifer der Schlüssel K nicht zur Verfügung steht kann die Nachricht nicht unerkannt verfälscht werden.
 
-## Python
+
+
+# Definition
+
+[Quelle: wikipedia](https://en.wikipedia.org/wiki/HMAC#Definition)
+
+$$\begin{align}
+  \operatorname{HMAC}(K, m) &= \operatorname{H}\Bigl(\bigl(K' \oplus opad\bigr) \parallel 
+\operatorname{H} \bigl(\left(K' \oplus ipad\right) \parallel m\bigr)\Bigr) \\
+                         K' &= \begin{cases}
+                                 \operatorname{H}\left(K\right) & K\text{ is larger than block size} \\
+                                 K                              & \text{otherwise}
+                                \end{cases}
+\end{align}$$
+
+- H is a cryptographic hash function
+-  ''m'' is the message to be authenticated
+- ''K'' is the secret key
+- $$K'$$ is a block-sized key derived from the secret key, ''K''; either by padding to the right with 0s up to the block size, or by hashing down to less than or equal to the block size first and then padding to the right with zeros
+- ‖ denotes concatenation
+- ⊕ denotes bitwise exclusive or (XOR)
+- ''opad'' is the block-sized outer padding, consisting of repeated bytes valued 0x5c
+- ''ipad'' is the block-sized inner padding, consisting of repeated bytes valued 0x36
+
+
+
+**Block size** ([siehe Tabelle](https://en.wikipedia.org/wiki/Secure_Hash_Algorithms)): 
+
+- SHA-256: 512 Bit
+- SHA-512: 1024 Bit
+- SHA3-256: 1088 Bit
+
+Bei der Hashwertberechnung werden die Input Daten in einzelnen chunks in block size Größe verarbeitet. Diese ist unterschiedlich zur Größe des finalen Hashwerts. [[*](https://stackoverflow.com/a/51335622)]
+
+
+
+# Python
 
 [Library : `hmac`](https://docs.python.org/3/library/hmac.html#module-hmac) — Keyed-Hashing for Message Authentication
 

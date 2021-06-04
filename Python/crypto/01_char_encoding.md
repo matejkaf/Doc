@@ -1,18 +1,18 @@
 ---
-title: Kryptographie in Python
-subtitle: Encoding und Bytestrings
+title: Encoding und Bytestrings
+subtitle: Kryptographie in Python
 ---
 
 Python unterscheidet zwischen Strings und Bytestrings. 
 
 String ⇨ Encoding ⇨ Bytestring ⇨ Decoding ⇨ String
 
-- Ein String ist eine Folge von Zeichen
+- Ein String ist eine Folge von Zeichen (Unicode Codepoints)
 - Ein Bytestring ist eine Folge von Bytewerten
 
 
 
-## Encoding
+# Encoding
 
 In python3 sind alle **Strings** Sequenzen von Buchstaben aus dem Unicode Zeichensatz (dieser enthält alle bekannten Zeichen und Symbole).
 
@@ -65,7 +65,7 @@ b'\xff\xfe\x00\x00o\x00\x00\x00\xf6\x00\x00\x00 \x00\x00\x00a\x00\x00\x00\xe4\x0
 
 
 
-## Decoding
+# Decoding
 
 Decoding eines Bytestrings mit [bytes.decode](https://docs.python.org/3/library/stdtypes.html#bytes.decode):
 
@@ -79,7 +79,7 @@ b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')
 
 
 
-## Encoding Beispiele
+# Encoding Beispiele
 
 [Unicode Character “a” (U+0061)](https://www.compart.com/en/unicode/U+0061)
 
@@ -109,7 +109,7 @@ UTF-32 Encoding:	0x00016F1D
 
 
 
-## Weiterführend
+# Weiterführend
 
 Weiteres dazu in [Unicode in Python](https://docs.python.org/3/howto/unicode.html) oder [Skript zu Unicode](/Doc/Diverses/Unicode/unicode).
 

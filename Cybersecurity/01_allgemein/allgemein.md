@@ -51,6 +51,14 @@ Aber auch: Tüftler der kreativ mit Technik spielt, z.B. um Geräten Funktionen 
 
 Ein Hack kann daher auch eine besonders kreative und originelle Lösung eines Problems sein. Siehe "Lifehacks".
 
+> Def: Hack /hak/ (noun) -
+>
+> 1. A clever, unintended exploitation of a system which: a) subverts the rules or norms of that system, b) at the expense of some other part of that system.
+>
+> 2. Something that a system allows, but that is unintended and unanticipated by its designers.
+>
+> Hacking is not cheating. It’s following the rules, but subverting their intent. It’s unintended. It’s an exploitation. It’s “gaming the system.” Caper movies ([Gauner Filme]) are filled with hacks. MacGyver was a hacker. Hacks are clever, but not the same as innovations.
+
 
 
 # Die Gegenspieler

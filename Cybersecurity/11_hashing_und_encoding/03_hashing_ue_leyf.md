@@ -13,9 +13,7 @@ $ wget -O goethe.txt https://bit.ly/3aNAKZh
 #
 $ openssl dgst -sha256 goethe.txt
 $ openssl dgst -sha256 -binary goethe.txt
-$ openssl dgst -sha256 -binary goethe.txt | xxd
-
-
+$ openssl dgst -sha256 -binary goethe.txt | xxd -p
 ```
 
 

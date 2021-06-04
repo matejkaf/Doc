@@ -6,10 +6,13 @@ tags: [lecture,2AHITS_Teach]
 
 * TOC
 {:toc}
-
 Geheimschrift / Verschlüsselungsverfahren
 
+---
+
 Information widerstandsfähig gegen unbefugtes Lesen und Manipulation machen.
+
+---
 
 
 

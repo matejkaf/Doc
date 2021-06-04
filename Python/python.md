@@ -3,11 +3,9 @@ title: Python
 subtitle: Übersicht zum Nachschlagen
 ---
 
-# Inhalt
-
 * TOC
 {:toc}
-## Infos
+# Infos
 
 - [Google's Python Class](https://developers.google.com/edu/python)
 - [docs.python.org](https://docs.python.org/3/)
@@ -15,21 +13,23 @@ subtitle: Übersicht zum Nachschlagen
 - [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
 - [w3schools](https://www.w3schools.com/python/default.asp)
 
-## Interesting
+
+
+# Interesting
 
 - Python mit Turtle [repl.it](https://repl.it/@franzmatejka/DesertedGummyLivecd#main.py)
 
 
 
-## Allgemein
+# V2 vs. V3
 
-V2 vs. V3
+V2 wird seit 01.01.2020 nicht mehr gewartet. 
 
-V2 wird seit 01.01.2020 nicht mehr gewartet. macOS und Linux (Ubuntu, Kali, Raspbian,...): beide Versionen sind im Standard Umfang enthalten.
+macOS und Linux (Ubuntu, Kali, Raspbian,...): beide Versionen sind im Standard Umfang enthalten.
 
 
 
-## PIP
+# PIP
 
 ```bash
 sudo python3 -m pip install python-frontmatter
@@ -37,7 +37,7 @@ sudo python3 -m pip install python-frontmatter
 
 
 
-## Command Line
+# Command Line
 
 ```bash
 $ python --help
@@ -132,7 +132,7 @@ $ ./hallo.py
 
 
 
-## Basics
+# Basics
 
 Keine Klammern, Einrückung wesentlich.
 
@@ -172,7 +172,7 @@ val = input("Enter your value: ")
 
 
 
-## Variable
+# Variable
 
 ```python
 # Multi assignment
@@ -209,7 +209,7 @@ v = float("3.14")
 
 
 
-## Strings
+# Strings
 
 [wikibooks Python Programming/Strings](https://en.wikibooks.org/wiki/Python_Programming/Strings#split,_splitlines)
 
@@ -276,7 +276,7 @@ print(chr(1200)) 	# Ұ
 
 
 
-## Array / List
+# Array / List
 
 [Google for Education](https://developers.google.com/edu/python/lists)
 
@@ -354,7 +354,7 @@ filter(), map(), reduce()
 
 
 
-## Dictionary
+# Dictionary
 
 [Google edu: Python Dict and File](https://developers.google.com/edu/python/dict-files)
 
@@ -432,7 +432,7 @@ pprint.pprint(params)
 
 
 
-## Parallel Assignment
+# Parallel Assignment
 
 ```python
 # Fibonacci
@@ -444,7 +444,7 @@ while b < 10:
 
 
 
-## Control flow  
+# Control flow  
 
 
 ```python
@@ -485,7 +485,7 @@ if not (a > b and c > a) or b==34:
 
 
 
-## Funktionen
+# Funktionen
 
 ```python
 def fib2(n): # return Fibonacci series up to n
@@ -509,7 +509,7 @@ def foo():
 
 
 
-## Klassen
+# Klassen
 
 [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
 
@@ -553,7 +553,7 @@ def staticmethod():
 
 
 
-## import / main
+# import / main
 
 ```python
 # lib.py
@@ -574,7 +574,7 @@ lib.name # qualification necessary
 
 
 
-## Files
+# Files
 
 Textfiles lesen
 
@@ -625,7 +625,7 @@ Oder als Binärdatei öffnen und `encode` `decode` verwenden.
 
 
 
-## Short Infos
+# Short Infos
 
 - [range() und xrange()](https://www.geeksforgeeks.org/range-vs-xrange-python/) – xrange braucht weniger Speicher
 - [Role of Underscore(_) in Python](https://www.datacamp.com/community/tutorials/role-underscore-python) – Schleifen Laufvariable, ...
@@ -633,11 +633,11 @@ Oder als Binärdatei öffnen und `encode` `decode` verwenden.
 
 
 
-## Snippets
+# Snippets
 
 
 
-### Read from standard input
+## Read from standard input
 
 [stackoverflow - How do you read from stdin?](https://stackoverflow.com/questions/1450393/how-do-you-read-from-stdin)
 
@@ -649,7 +649,7 @@ for line in sys.stdin:
 
 
 
-### Copy files
+## Copy files
 
 ```python
 #! /usr/bin/env python
@@ -673,7 +673,7 @@ print os.path.getmtime(dst2)
 
 
 
-### Encoding / UTF8 / Bytestrings
+## Encoding / UTF8 / Bytestrings
 
 ```python
 #! /usr/bin/env python
@@ -737,7 +737,7 @@ b'.\xf0\xf1\xf2'
 
 
 
-### Dir Rekursion
+## Dir Rekursion
 
 Rekursiver Scan von Verzeichnissen
 
@@ -771,7 +771,7 @@ def dirrec(src,pattern='*'):
 
 
 
-### datetime
+## datetime
 
 [Python doc](https://docs.python.org/3/library/datetime.html)
 
@@ -799,7 +799,7 @@ print(getDateEu('01.10.2020')>=getDateEu('22.11.2020'))
 print(getDateEu('01.10.2020')>=getDateEu('01.10.2020'))
 ```
 
-### random
+## random
 
 ```python
 import random
@@ -809,7 +809,7 @@ print(random.randrange(1, 10))
 
 
 
-### Kommandozeilen Argument
+## Kommandozeilen Argument
 
 ```python
 import sys
@@ -822,7 +822,13 @@ x = " ".join(sys.argv[1:])
 
 
 
-### Regular Expressions
+## Regular Expressions
+
+[docs.python Referenz](https://docs.python.org/3/library/re.html)
+
+[docs.python HOWTO](https://docs.python.org/3/howto/regex.html#regex-howto)
+
+[regex101](https://regex101.com)
 
 ```python
 import re
@@ -894,10 +900,21 @@ print(scan_for_links(b"bla bal skhfh foh"))
 
 
 
-### Minimaler Web Server
+## Minimaler Web Server
 
 Starten eines lokalen HTTP Servers:
 
 ```bash
 $ python3 -m http.server 8000
 ```
+
+
+
+## Inplace Editing
+
+```python
+import fileinput
+for line in fileinput.input(file_name, inplace=1):
+  sys.stdout.write(line)
+```
+
