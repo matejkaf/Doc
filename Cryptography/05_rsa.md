@@ -11,7 +11,6 @@ window.MathJax = {
   }
 };
 </script>
-
 *shared secret key* Verschlüsselungssysteme haben zur Voraussetzung, dass beide Kommunikationspartner über den gleichen Schlüssel verfügen (*shared symetric key*) und diesen geheim halten. Die große Problematik ist Angriffe im Moment des Schlüsselaustauschs zu verhindern.
 
 **Public-key cryptography** ist eine innovative Idee aus den 1970er Jahren die einen solchen Angriff unmöglich macht. 
@@ -137,7 +136,9 @@ $$
 
 Dieses $$t$$ hat für beliebiges $$x$$ die Eigenschaft : 
 $$
-x^t=1\ (\text{mod}\ n) \quad \text{[Formel 1]}
+\begin{equation}
+	x^t=1\ (\text{mod}\ n) \quad \text{[Formel 1]}
+\end{equation}
 $$
 
 Eine Zahl $$d$$ wird ermittelt, so dass gilt:
@@ -154,6 +155,7 @@ $$d$$ ist der **private key** (wird gemeinsam mit $$p$$, $$q$$ und $$t$$ geheim 
 
 
 ## Entschlüsselung
+
 $$
 c^d\  (\text{mod}\ n)=m
 $$
