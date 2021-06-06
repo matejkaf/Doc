@@ -1,7 +1,7 @@
 ---
-title: Arrays
-subtitle: Globale Konstanten
-tags: [lecture,arrays]
+title: Globale benannte Konstanten
+subtitle: Arrays
+tags: [lecture,arrays,1AHITS]
 ---
 
 Folgendes Programm verwendet ein Array der Länge 5, ermöglicht eine Eingabe und summiert alle Elemente im Array.
@@ -31,6 +31,8 @@ void main()
   input(arr);
   int erg = sum(arr);
   printf("Summe= %d",erg);
+  
+  // folgender Code berechnet 2^5
   int x=5;
   int n=1;
   while(x>0) {
