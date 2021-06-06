@@ -4,7 +4,7 @@ subtitle: Challenge Geburtstagsparadoxon
 tags: [assignment,array,challenge]
 ---
 
-### Übung (Geburtstagsparadoxon)
+#### Übung (Geburtstagsparadoxon)
 
 Beantworte die Fragestellung:  Wie wahrscheinlich ist es, dass in einer Schulklasse mit 36 Schülern zwei davon am gleichen Tag Geburtstag haben?
 
@@ -24,6 +24,6 @@ Wiederhole das Zufallsexperiment einige Male (weitere Schleife) und berechne aus
 
 ---
 
-### Übung (Geburtstagsparadoxon)
+#### Übung (Geburtstagsparadoxon)
 
 Die Fragestellung ist ähnlich zur vorhergehenden Übung. Wie viele Personen muss man nehmen damit jeder mögliche Geburtstag mindestens einmal vorhanden ist?

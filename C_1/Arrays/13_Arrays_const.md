@@ -25,7 +25,7 @@ int sum(int a[])
   return s;
 }
 
-void main()
+int main()
 {
   int arr[5];
   input(arr);
@@ -82,7 +82,7 @@ int sum(int a[])
   return s;
 }
 
-void main()
+int main()
 {
   int arr[LAENGE];
   input(arr);

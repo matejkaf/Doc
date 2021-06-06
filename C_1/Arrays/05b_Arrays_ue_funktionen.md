@@ -4,6 +4,12 @@ subtitle: Übungen Funktionen – Zahlenfolgen
 tags: [assignment, arrays,1CHELS,1AHITS]
 ---
 
+Verwende für folgende Übungen **globale benannte Konstanten** – wenn du diese schon kennst.
+
+
+
+---
+
 #### Übung (Zahlenfolgen a–d)
 
 Schreibe ein Programm das mit Hilfe einer Schleife alle Elemente eines Arrays (`int a[30]`) mit vorgegebenen Werten füllt und dann das Array ausgibt. Implementiere für jede Zahlenfolge eine eigene Funktion (`folgea` – `folged`). **Einschränkung:** Es darf innerhalb der Funktionen nur **eine einzige** lokale Variable (als Schleifen-Laufvariable) definiert werden! 
@@ -70,4 +76,5 @@ void folgeg(int a[])
 Folge g:
 
 - (g) `0, 1, 1, 2, 3, 5, 8, 13, 21, ...`
+  Jede Zahl ist die Summe der zwei vorherigen.
 

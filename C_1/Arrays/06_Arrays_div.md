@@ -6,7 +6,7 @@ tags: [lecture,arrays,1CHELS]
 
 
 
-## Index Wertebereich
+# Index Wertebereich
 
 Auf den Wertebereich des Index achten.
 
@@ -19,7 +19,7 @@ Sehr häufiger Programmierfehler!
 
 
 
-## Arraylänge als Parameter
+# Arraylänge als Parameter
 
 
 Funktionen für Arrays sind flexibler anwendbar wenn auch die Array-Länge mit übergeben wird.
