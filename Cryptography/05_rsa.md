@@ -121,7 +121,7 @@ Die Nachricht $$m$$ wird als Zahl dargestellt (z.B. 128/256 bits).
 
 Ciphertext: 
 $$
-c=m^e\  (\text{mod}\ n)
+c=m^e\  \pmod n
 $$
 
 ## Private Key
@@ -135,13 +135,13 @@ $$
 Dieses $$t$$ hat für beliebiges $$x$$ die Eigenschaft : 
 $$
 \begin{equation}
-	x^t=1\ (\text{mod}\ n) \quad\quad \text{(Formel 1)}
+	x^t=1\ \pmod n \quad\quad \text{(Formel 1)}
 \end{equation}
 $$
 
 Eine Zahl $$d$$ wird ermittelt, so dass gilt:
 $$
-e*d=1\ (\text{mod}\ t)
+e*d=1 \pmod t
 $$
 Bedeutet: $$d$$ ist das modulare Inverse zu $$e$$ mit Modul $$t$$. Siehe [Erweiterter euklidischer Algorithmus](https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus).
 
@@ -178,6 +178,12 @@ $$
 
 - Geheimhaltung: Ist einem Angreifer nur eine Zahl $$d$$, $$p$$, $$q$$ oder $$t$$ bekannt so wäre ein entschlüsseln möglich.
 - Gängige Größen für $$n$$: 2048/4096 Bits.
+
+
+
+Für einen etwas einacheren Zugang – mit konkreten Zahlen – siehe `RSA.pdf`. Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
+
+
 
 
 

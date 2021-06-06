@@ -98,43 +98,137 @@ Ein Körper muss also folgende Einzelaxiome erfüllen:
 
 
 
+# Modulare Arithmetik
+
+## Grundlagen
+
+Wir rechnen mit natürlichen Zahlen und begrenzen den Wertebereich, z.B. auf den Bereich $$0,\ldots,11$$. Wir stellen uns die Zahlen in einem Kreis angeordent vor, so dass auf 11 wieder die 0 folgt, wie bei einer Uhr.
+
+Wir können in diesem Wertebereich **addieren** und **multiplizieren**.
+
+Beispiele:
+$$
+9+5=14 \rightarrow (14-12)=2
+$$
+oder
+$$
+9+11=20 \rightarrow (20-12)=8
+$$
+Multiplikation
+$$
+7 \cdot 5=35 \rightarrow (35-2\cdot 12)=11
+$$
+oder
+$$
+4 \cdot 9=36 \rightarrow (36-3\cdot 12)=0
+$$
+Allgemein wird das Ergbnis immer Modulo 12 gerechnet, d.h. der Rest der Division durch 12 verwendet. 12 wird als **Modulus** bezeichnet. Es gibt dafür eine eigene Schreibweise:
+$$
+9+5=2 \pmod {12}
+$$
 
 
-# Modulare Arithmetik mit  Primzahlen
+$$
+4 \cdot 9=0 \pmod {12}
+$$
+**Subtraktion** ist möglich, aber anders als gewohnt. **Division** geht im allgemeinen nicht, außer der Modulus ist eine Primzahl, dann kann der erweiterte euklidische Algorithmus angewendet werden.
+
+**Potenzieren** ist möglich, da dies nur eine andere Schreibweise der Multiplikation ist:
+$$
+3^4=3\cdot 3\cdot 3\cdot 3
+$$
+daher ist
+$$
+3^4 = 9 \pmod {12}
+$$
+Weil
+$$
+3^4=81 \rightarrow (81-6*12)=9
+$$
+Man kommt aber auch auf das gleiche Ergebnis wenn man $$3\cdot 3\cdot 3\cdot 3$$ in einzelnen Schritten ausführt und nach jedem Schritt Modulo gerechnet wird:
+
+$$
+3\cdot 3 = 9 \pmod {12}
+$$
+
+$$
+9\cdot 3 = 3 \pmod {12}
+$$
+
+und final
+
+$$
+3\cdot 3 = 9 \pmod {12}
+$$
+
+
+
+**Übungsaufgaben:**
+
+- $$9+13=? \pmod {17}$$
+- $$11\cdot 5=? \pmod {13}$$
+- $$9^3=? \pmod {12}$$
+- $$11^3=? \pmod {17}$$
+
+
+
+## Modulare Arithmetik mit Primzahlen
+
+Es ergeben sich interessante Eigenschaften wenn man als Modulus eine Primzahl wählt.
 
 Betrachten Zahlenbereich $$1, \ldots, p-1$$, wobei $$p$$ eine **Primzahl** ist.
 
-Multiplikation von a mit b modulo p:
+Multiplikation von $$a$$ mit $$b$$ modulo $$p$$:
 
-$$(a*b)=c\ (\text{mod}\ p)$$
+$$
+(a*b)=c \pmod p
+$$
 
 Diese mathematische Schreibweise entspricht: `c=(a*b)%p`
 
 Beispiel: 
 
-$$(3*4)=5\ (\text{mod}\ 7)$$
+$$
+(3*4)=5 \pmod 7
+$$
 
-Eine Potenz $$a^n\ (\text{mod}\ p)$$ wird mit Hilfe dieser Multiplikation definiert.
+Eine Potenz $$a^n\pmod p$$ wird mit Hilfe dieser Multiplikation definiert.
 
-Besondere Eigenschaft dieser Potenz: Nimmt man eine beliebige Zahl $$g$$ aus dem Zahlenbereich und berechnet $$g^1, g^2, g^3, \ldots$$ (immer $$(\text{mod}\ p)$$), so ergibt dies irgendwann 1 und die Zahlenfolge **wiederholt** sich. 
+Es gilt der kleine Satz von Fermat:
+$$
+a^{p-1}=1 \pmod {p}
+$$
+
+
+Besondere Eigenschaft dieser Potenz: Nimmt man eine beliebige Zahl $$g$$ aus dem Zahlenbereich und berechnet $$g^1, g^2, g^3, \ldots$$ (immer $$\pmod p$$), so ergibt dies irgendwann $$1$$ und die Zahlenfolge **wiederholt** sich.
 
 Es gibt darüberhinaus **besondere Zahlen** – sogenannte **Generatoren** – die auf diese Weise **alle Zahlen** im Wertebereich erzeugen.
 
-Anders gesagt nimmt man einen solchen Generator g so ergibt sich die Sequenz $$g^1, g^2, \ldots, g^{p-1}=1$$ in der **alle** $$p-1$$ Zahlen des Zahlenbereichs vorkommen.
+Anders gesagt nimmt man einen solchen Generator $$g$$ so ergibt sich die Sequenz $$g^1, g^2, \ldots, g^{p-1}=1$$ in der **alle** $$p-1$$ Zahlen des Zahlenbereichs vorkommen.
 
 Beispiel: $$p=7, g=3$$ – Ausprobieren!
 
 <iframe height="400px" width="100%" src="https://replit.com/@franzmatejka/ModulareArithmetik?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+Generatoren sind eine Grundlage des Diffie-Hellman Key-Exchange Verfahrens.
+
+Aufgabe: Finde einen Generator für $$p=17$$.
 
 
-# Intuition
 
-Annäherung an Restklassen.
+## Modulare $$p\cdot q$$ Arithmetik
 
-Habe natürliche Zahlen im Computer, es gibt kein Inverses für die Multiplikation (dafür bräuchte man rationale Zahlen = Brüche).
+Nimmt man das Produkt zweier Primzahlen als Modulus, d.h $$\pmod {p\cdot q}$$
 
-Wie kann man im Computer das Inverse für die Multiplikation finden?
+So gilt nach dem Satz von Euler-Fermat:
+$$
+a^{(p-1) (q-1)} = 1 \pmod {p\cdot q}
+$$
+Diese Formal ist für den RSA Verschlüsselungs Algorithmus von Bedeutung.
+
+
+
+Aufgabe: Überprüfe diese Aussage für $$p=5$$ und $$q=17$$.
 
 
 
@@ -146,7 +240,7 @@ Sei $$p$$ eine natürliche Zahl. Man kann beim Addieren und Multiplizieren von g
 
 Ist etwa $$p = 3$$, so wird nicht mehr zwischen 2 und 5 unterschieden! Das kann auch in der folgenden Form ausgedrückt werden:
 
-$$(a*b)=c\ (\text{mod}\ p)$$
+$$(a\cdot b)=c \pmod p$$
 
 gesprochen: ''5 ist gleich 2 modulo 3''. 
 
@@ -180,9 +274,9 @@ Genau dasselbe kann mit jeder natürlichen Zahl $$p$$ gemacht werden, was zur Me
 
 Beispiel: Die Restklasse von 0 modulo 2 ist die Menge der geraden Zahlen. Die Restklasse von 1 modulo 2 ist die Menge der ungeraden Zahlen.
 
-
-
 Falls $$p$$ eine Primzahl ist, kann innerhalb dieser Menge sogar dividiert werden. (Sie hat dann die Struktur eines Körpers).
+
+
 
 # RSA
 
@@ -196,7 +290,7 @@ Falls $$p$$ eine Primzahl ist, kann innerhalb dieser Menge sogar dividiert werde
 
 [[Quelle](http://www.austromath.at/medienvielfalt/materialien/krypto/lernpfad/index.htm)]
 
-Der Satz von Euler verallgemeinert den kleinen Fermatschen Satz und wird deshalb auch Satz von Euler-Fermat genannt. Zur Erinnerung - der kleine Fermat besagt (wenn $$p$$ einer Primzahl und $$a$$ eine ganze Zahl):
+Der Satz von Euler verallgemeinert den kleinen Fermatschen Satz und wird deshalb auch Satz von Euler-Fermat genannt. Zur Erinnerung - der **kleine Fermat** besagt (wenn $$p$$ einer Primzahl und $$a$$ eine ganze Zahl):
 
 $$
 a^{p-1}=1 \pmod p
@@ -204,17 +298,19 @@ $$
 
 **Satz von Euler**: Sind $$a$$ und $$n$$ zwei natürliche teilerfremde Zahlen, dann gilt:
 
-$$a^{\varphi (n)} = 1 \pmod n$$
+$$
+a^{\varphi (n)} = 1 \pmod n
+$$
 
-- $$\varphi (n)$$ ist die Anzahl der zu $$n$$ teilerfremden natürlichen Zahlen (die Anzahl aller Zahlen $$\le  n$$, deren größter gemeinsamer Teiler mit $$n$$ gleich 1 ist).
+$$\varphi (n)$$ ist die Anzahl der zu $$n$$ teilerfremden natürlichen Zahlen (die Anzahl aller Zahlen $$\le  n$$, deren größter gemeinsamer Teiler mit $$n$$ gleich 1 ist).
 
 - Beispiele:
 
   - $$\varphi (12)=4$$, teilerfremde Zahlen sind $${1, 5, 7, 11}$$
   
-- $$\varphi (13)=12$$, alle Zahlen von 1 bis 12 sind teilerfremd, da 13 eine Primzahl ist (kleiner Fermat)
+  - $$\varphi (13)=12$$, alle Zahlen von 1 bis 12 sind teilerfremd, da 13 eine Primzahl ist (kleiner Fermat)
   - $$\varphi (14)=6$$, teilerfremde Zahlen sind $${1, 3, 5, 9, 11, 13}$$
-
+  
 - Zu einer Primzahl $$p$$ sind alle Zahlen von $$1, \ldots, p - 1$$ teilerfremd - daraus folgt: $$\varphi (p)= p - 1$$.
 
 - Für prime Moduln $$p$$ geht der Satz von Euler daher in den kleinen Satz von Fermat über.

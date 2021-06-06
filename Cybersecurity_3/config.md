@@ -6,9 +6,9 @@ subtitle: Cybersecurity Lab
 * TOC
 {:toc}
 
-## Überblick
+# Überblick
 
-### Passwörter
+## Passwörter
 
 - Kali
   - kali/kali
@@ -40,7 +40,7 @@ Oder: kali / kali, debian/debian
 
 
 
-## Netzwerk-Adressen
+# Netzwerk-Adressen
 
 
 
@@ -51,25 +51,25 @@ Fritz.Box:
 
 
 
-## Virtual Box
+# Virtual Box
 
-### NAT
+## NAT
 
 VirtualBox hat einen internen DHCP Server der aus 10.0.2.0/24 eine IP Adresse zuweist. Zugriff auf das Internet ist möglich. VMs können nicht untereinander kommunizieren.
 
-### Bridged / Netzwerkbrücke
+## Bridged / Netzwerkbrücke
 
 Virtual Box verbindet die VM mit einer Bridge (ein in Software implementierter Switch). Die VM wird dadurch ein "echter" Teilnehmer im Netzwerk. Die VMs können untereinander kommunizieren und sind auch vom Netzwerk aus erreichbar.
 
-### Internal Network
+## Internal Network
 
 Netzwerk das nur die VMs untereinander verbindet. Keine Verbindung nach außen. Um die IP Adressen muss man sich selber kümmern (z.B. statisch). Interne Netze haben einen Namen.
 
 
 
-## Netzwerkkonfiguration – Linux
+# Netzwerkkonfiguration – Linux
 
-### Check der Netzwerkkonfiguration
+## Check der Netzwerkkonfiguration
 
 Überprüfen der Neztwerkkonfiguration (IP Adressen, ...)
 
@@ -89,7 +89,7 @@ $ ip addr show # neuerer und besserer Befehl
 
 
 
-### KALI
+## KALI
 
 GUI Netzwerkkonfiguration
 
@@ -102,7 +102,7 @@ Rechte obere Ecke Symbol in der Form einer Netzwerkbuchse
 
 Änderungen werden erst übernommen wenn man Disconnected und wieder Connected (Netzwerksymbol)
 
-### Debian
+## Debian
 
 GUI Netzwerkkonfiguration
 
@@ -114,7 +114,7 @@ Rechte obere Ecke Netzwerksymbol.
 
 
 
-### Metasploitable
+## Metasploitable
 
 ```bash
 cd /etc/network
@@ -131,11 +131,37 @@ ifconfig
 
 
 
+# Netzwerkkonfiguration – Windows
+
+## Check der Netzwerkkonfiguration
+
+Überprüfen der Neztwerkkonfiguration (IP Adressen, ...)
+
+```
+C:> ipconfig
+```
+
+## Statische IP
+
+Click rechts unten auf Netzwerksymbol
+
+![image-20210604182932998](fig/image-20210604182932998.png)
+
+![image-20210604183221959](fig/image-20210604183221959.png)
+
+ Adapteroptionen ändern / Adapter auswählen![image-20210604183335168](fig/image-20210604183335168.png)
+
+Eigenschaften:
+
+![image-20210604183354604](fig/image-20210604183354604.png)
+
+
+
 # Installation
 
 ## Kali Linux
 
-- [](https://www.kali.org)
+- [Download](https://www.kali.org)
 
 - Kali Linux 64-bit VirtualBox, OVA Datei – Vorteil: ist vorkonfiguriert
 
@@ -161,11 +187,12 @@ ifconfig
   Über GUI: auf Kali Symbol klicken. "Keyboard" eintippen, Layout ... Add ... German (Austria) ... English entfernen ... System Reboot
 
 
+
 ## Metasploitable 2
 
 installieren – auf Ubuntu basierend, mit vielen Sicherheitslücken
 
-  - Download: https://sourceforge.net/projects/metasploitable/files/Metasploitable2/, ca. 900MB
+  - [Download](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/), ca. 900MB
   - zip File, Enthält einen Ordner mit einer vmware VM, diesen Ordner in den vbox Ordner verschieben
   - `Metasploitable.vmdk` ist die virtuelle Festplatte, diese ist in einer neuen vbox VM einzubinden
   - vbox
