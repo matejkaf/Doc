@@ -44,7 +44,7 @@ Beispiel Motherboard (ASUS Prime Z490-A, [geizhals](https://geizhals.at/asus-pri
 
 
 
-## PCIe
+# PCIe
 
 [wikipedia : PCI Express](https://de.wikipedia.org/wiki/PCI_Express)
 
@@ -66,7 +66,7 @@ Angeben in M/GByte/s:
 
 
 
-## SATA
+# SATA
 
 [Video: SATA 3 - SERIAL ATA](https://youtu.be/T-6z8tCcR38), [wikipedia : Serial ATA](https://de.wikipedia.org/wiki/Serial_ATA)
 
@@ -84,7 +84,7 @@ Es gibt keinen Nachfolgestandard (SATA Express ist gescheitert).
 
 
 
-## M.2
+# M.2
 
 [[wikipedia](https://de.wikipedia.org/wiki/M.2)]
 
@@ -102,7 +102,9 @@ M.2-Steckplatz für Karten mit 42, 60, 80 oder 110 mm Länge (rechts am Bildrand
 
 <img src="fig/71HgI3Ibe2L._AC_SL1500_.jpg" alt="img" style="zoom:50%;" />
 
-## SAS
+
+
+# SAS
 
 Serial Attached SCSI. [wikipedia SAS](https://en.wikipedia.org/wiki/Serial_Attached_SCSI). Alternative zu SATA in Servern. [SAS vs SATA: What's the Difference?](https://store.hp.com/us/en/tech-takes/sas-vs-sata)
 
@@ -110,7 +112,9 @@ Aktuell: SAS-4 (22,5 Gbit/s)
 
 SAS ist performanter und ist technologisch fortschrittlicher als SATA. Ist aber **viel teurer** und wird daher nur im **Server** Bereich eingesetzt.
 
-## U.2
+
+
+# U.2
 
 Für 2,5-Zoll Server SSD
 
@@ -125,7 +129,7 @@ Für 2,5-Zoll Server SSD
 Vorteile:
 
 - U.2-SSD haben Gehäuse, dient als Kühlkörper, M.2 schlechte Kühlung – Leistung muss gedrosselt werden.
-- Platzsparender – die SSD wird nicht am Motherboard montiert
+- Platzsparender am Motherboard (M.1 direkt am Motherboard montiert)
 - Hot-Swap bzw. bessere Erreichbarkeit der SSDs (Server Front).
 - Größeres Gehäuse daher größere Speicherkapazität pro SSD möglich (aktuell x4)
 
@@ -135,7 +139,7 @@ Weiterentwicklung (2020): U.3
 
 
 
-## DisplayPort
+# DisplayPort
 
 [Video: HDMI, DisplayPort, DVI, VGA, Thunderbolt - Video Port Comparison](https://youtu.be/iFO3EiQbNJ8)
 
@@ -159,7 +163,7 @@ Historie der Grafikschnittstellen
 
 
 
-## USB
+# USB
 
 [wikipedia (en)](https://en.wikipedia.org/wiki/USB)
 
@@ -187,7 +191,7 @@ Achtung bei USB3: Namensverwirrung
 
 ![image-20210531181725940](fig/image-20210531181725940.png)
 
-### Spannungsversorgung
+## Spannungsversorgung
 
 USB kann in allen Versionen angeschlossene Geräte versorgen (5 Volt).
 
@@ -197,17 +201,17 @@ USB kann in allen Versionen angeschlossene Geräte versorgen (5 Volt).
 
 100 mA immer verfügbar – mehr per USB Datenkommunikation anzufordern.
 
-### USB Battery charging
+## USB Battery charging
 
 Ladegeräte ohne Datenkommunikation ermöglicht die **USB battery charging specification** eine Versorgung mit bis zu 1,5A (7,5W). [[THE BASICS OF USB BATTERY CHARGING](https://www.maximintegrated.com/en/design/technical-documents/tutorials/4/4803.html)]
 
-### USB Power Delivery (USB-PD)
+## USB Power Delivery (USB-PD)
 
 Erlaubt die Versorgung in beiden Richtungen, d.h. auch der USB-Host (z.B. Laptop) kann geladen werden. Mit Typ-C Stecker, bis zu 100 W. Chip im Kabel begrenzt Strom (d.h. nicht jedes Kabel ist geeignet). [[USB-PD - USB Power Delivery](https://www.elektronik-kompendium.de/sites/com/1809251.htm)]
 
 
 
-## Ethernet LAN
+# Ethernet LAN
 
 Siehe Netzwerktechnik.
 
@@ -225,7 +229,7 @@ Quelle: [wikipedia](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
 
 
-## Thunderbolt
+# Thunderbolt
 
 Thunderbolt-3, USB-C Stecker. 
 
@@ -239,7 +243,7 @@ USB PD: max. 100W (source or sink)
 
 
 
-## Kompatibilität
+# Kompatibilität
 
 Eine der grundlegenden Designprinzipien der Computerarchitektur ist die **Modularität**, d.h. das man unterschiedliche Komponenten miteinander verbinden kann. Wenn man als Anwender davon ausgehen kann, dass das grundsätzlich funktioniert auch bei unterschiedlichen Herstellern und Alter der Komponenten spricht man von **Kompatibilität**. Kompatibilität wird erreicht indem sich Hersteller an gemeinsame Standards halten und diese Standards (z.B. USB) selbst eine größtmögliche Kompatibilität gewährleisten (was meist mit relativ viel Aufwand verbunden ist).
 
