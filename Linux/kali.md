@@ -55,6 +55,8 @@ Mit dem nicht root User kann vscode verwendet werden
 $ code <file or directory to open>
 ```
 
+
+
 # .NET core installieren
 
 
@@ -65,6 +67,7 @@ $ code <file or directory to open>
 Eigentlich allgemein UNIX/Linux
 
 [Kali Linux commands](https://techsomebite.wordpress.com/2015/10/21/kali-linux-commands/)
+
 
 
 # Email versenden
@@ -90,5 +93,17 @@ Starting with **Kali 2020.1**, there is no longer a superuser account and the **
 ```bash
 # So wird man root user unter KALI Linux
 $ sudo su -
+# oder
+$ sudo -i
+```
+
+
+
+# Keyboard
+
+Deutsches Layout – bis zum nächsten Reboot
+
+```bash
+$ sudo setxkbmap -layout de
 ```
 

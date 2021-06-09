@@ -94,3 +94,9 @@ From and to
 ip.addr==10.43.54.65
 ```
 
+Eine IP Adresse komplett ausblenden
+
+```
+not ip.addr==10.43.54.65
+```
+

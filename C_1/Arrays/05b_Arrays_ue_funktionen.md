@@ -4,7 +4,7 @@ subtitle: Übungen Funktionen – Zahlenfolgen
 tags: [assignment, arrays,1CHELS,1AHITS]
 ---
 
-Verwende für folgende Übungen **globale benannte Konstanten** – wenn du diese schon kennst.
+Verwende für folgende Übungen **globale benannte Konstanten** für die Array Länge (30) – wenn du diese schon kennst.
 
 
 

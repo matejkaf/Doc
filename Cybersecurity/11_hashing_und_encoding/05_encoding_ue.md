@@ -1,13 +1,14 @@
 ---
 title: Kryptographie
 subtitle: Encoding Übungen
-tags: [assignment,2AHITS_Teach]
+tags: [assignment,2AHITS_Teach,2AHITS]
 ---
 
 #### Übung (Base64 kodieren)
 
-Kodiere ASCII `"Nb"` als Base64. Verwende [Tabelle](https://en.wikipedia.org/wiki/Base64#Base64_table).
-`'N'=0x4e`, `'b'=0x62`
+Kodiere `4e62` (ASCII `"Nb"`, `'N'=0x4e`, `'b'=0x62`) als Base64. Verwende diese [Tabelle](https://en.wikipedia.org/wiki/Base64#Base64_table).
+
+
 
 ---
 

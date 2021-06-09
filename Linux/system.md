@@ -58,11 +58,13 @@ BUG_REPORT_URL="https://bugs.archlinux.org/"
 
 ## Keyboard
 
-[ArchLinux](https://wiki.archlinux.org/index.php/Linux_console/Keyboard_configuration)
+[ArchLinux](https://wiki.archlinux.org/index.php/Linux_console/Keyboard_configuration), Kali, wahrscheinlich auch Debian
 
 Layouts (CISCO cyberops VM)
 
 ```bash
+$ sudo setxkbmap -layout de
+# oder
 $ sudo setxkbmap -layout de -variant mac
 # bis zum nächsten reboot
 ```

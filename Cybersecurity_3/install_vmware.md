@@ -2,25 +2,25 @@
 
 # Kali
 
+- Windows: 7-zip Installation notwendig
 - `kali-linux-2021.1-vmware-amd64.7z` entpacken
-
-- An die gewünschte Stelle bewegen
-- Mit Drag and Drop in VmWare ziehen
+- Mac: An die gewünschte Stelle bewegen und mit Drag and Drop in VmWare ziehen
+- Windows: unter `Dokumente` einen Ordner `Virtual Machines` anlegen und Dateien (ganzen Ordner) reinkopieren
+- Import an existing VM / Open a virtual Machine
 - Anzahl der Cores anpassen
-- 
-
-
-
-- Import an existing VM
-- 
 
 
 
 # Windows 10
 
+- Ausgangspunkt ISO Datei
 - Kein Easy install
-- Legacy BIOS (UEFI geht am Mac nicht)
-- Disable Side Channel Mitigations
+- Mac: 
+  - Legacy BIOS (UEFI geht am Mac nicht)
+  - Disable Side Channel Mitigations
+- Windows Host:
+  - "Edit virtual machine settings" >> CD/DVD >> Use ISO image File
+  - Starten, gleich rein klicken und eine Taste drücken (sonst kein Boot von ISO Datei)
 - "Ich habe keinen Product Key"
 - Windows 10 Pro
 - Benutzerdefiniert ...

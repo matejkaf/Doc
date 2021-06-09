@@ -8,11 +8,11 @@ D.h. 15-17 Termine pro Gruppe
 
 ---
 
-- Eigene Malware schreiben, BAT Datei auf Windows, sehr einfach, siehe "Amberg Video 174 Eine eigene Malware schreiben"
+- Eigene Malware schreiben, BAT Datei mit Schleife auf Windows, sehr einfach, siehe "Amberg Video 174 Eine eigene Malware schreiben"
 - Malware `.exe` unter Windows als Bild tarnen. Durch Tausch des Icons wie ein Bild aussehen lassen. `Ulaub.jpg.exe`. [[Beschreibung](https://www.makeuseof.com/tag/customize-icon-windows/)] – allerdings nur für shortcut. Mittels eigenem Tool: [[How to Modify the Icon of an EXE File](https://www.howtogeek.com/75983/stupid-geek-tricks-how-to-modify-the-icon-of-an-.exe-file/)]. Eventuell auch versteckte Dateien. Verwenden von Auto-Start. Registry?
 - Rücksetzen des Passworts auf Debian Linux (Boot Menü Editor Hack)
 - Banner Grabbing mit telnet und netcat
-- KALI Linux und Wireshark: einen Ping auf einen anderen Rechner aufzeichnen
+- KALI Linux und **Wireshark**: einen **Ping** auf einen anderen Rechner aufzeichnen
   - Bridged Mode
 - KALI Linux und Wireshark: Aufzeichnen einer HTTP Verbindung
 - Mittracen einer telnet Verbindung. Passwort wird im Klartext übertragen

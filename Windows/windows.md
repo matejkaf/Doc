@@ -8,7 +8,7 @@ title: Windows
 # Downloads
 
 - [Get a Windows 10 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
--  [ISO vom aktuellen Windows](https://www.microsoft.com/de-de/software-download/windows10ISO)
+-  [ISO vom aktuellen Windows](https://www.microsoft.com/de-de/software-download/windows10ISO) – nur Verfügbar wenn das OS nicht Windows ist.
 
 
 
@@ -67,7 +67,7 @@ Drücken Sie „Win“ + „R“ und geben Sie den Befehl **shell:startup** ein.
 
 # Task Manager
 
-Ctl-Alt-Del
+Ctrl-Alt-Del
 
 
 
