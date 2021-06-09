@@ -163,7 +163,7 @@ Historie der Grafikschnittstellen
 
 [wikipedia (en)](https://en.wikipedia.org/wiki/USB)
 
-Universal Serial Bus (seit 1996). Zum Verbinden aller möglicher Arten von Peripherie Geräten.
+Universal Serial Bus (seit 1996). Für verschiedenste Peripherie Geräte.
 
 80er/90er: viele unterschiedliche Schnittstellen an einem PC, USB aus dem Bestreben der Vereinheitlichung entstanden (eine Schnittstelle für alles).
 
@@ -179,7 +179,7 @@ Bisher 4 Versionen (aktuell USB 3)
   - [derStandard: USB-C: Der einheitliche Anschluss ist zum Albtraum für die Nutzer geworden](https://www.derstandard.at/story/2000120074369/usb-c-der-einheitliche-anschluss-ist-zum-albtraum-fuer-die)
 - USB 3.2 (2017): 20 Gbit/s (bei USB-C)
 - USB4 (2019): 40 Gbit/s
-  - USB 4 ist im wesentlichen Thunderbolt 3 (rückwärtskompatibel mit USB 3.2 and USB 2.0)
+  - USB 4 ist im wesentlichen Thunderbolt 3 und rückwärtskompatibel mit USB 3.2 and USB 2.0
 
 [wikipedia : USB Steckverbinder](https://en.wikipedia.org/wiki/USB#Receptacle_(socket)_identification)
 
@@ -187,21 +187,23 @@ Achtung bei USB3: Namensverwirrung
 
 ![image-20210531181725940](fig/image-20210531181725940.png)
 
-Spannungsversorgung: USB kann in allen Versionen angeschlossene Geräte versorgen (5 Volt).
+### Spannungsversorgung
+
+USB kann in allen Versionen angeschlossene Geräte versorgen (5 Volt).
 
 - USB1: 100mA (0,5W)
 - USB2: 500mA (2,5W) – z.B. für externe Festplatten
 - USB3: 900mA (4,5W)
 
-
+100 mA immer verfügbar – mehr per USB Datenkommunikation anzufordern.
 
 ### USB Battery charging
 
-Normalerweise: Mehr als 100mA muss per Datenkommunikation angefordert werden. Ladegeräte ohne Datenkommunikation ermöglicht die **USB battery charging specification** eine Versorgung mit bis zu 1,5A (7,5W). [[THE BASICS OF USB BATTERY CHARGING](https://www.maximintegrated.com/en/design/technical-documents/tutorials/4/4803.html)]
+Ladegeräte ohne Datenkommunikation ermöglicht die **USB battery charging specification** eine Versorgung mit bis zu 1,5A (7,5W). [[THE BASICS OF USB BATTERY CHARGING](https://www.maximintegrated.com/en/design/technical-documents/tutorials/4/4803.html)]
 
 ### USB Power Delivery (USB-PD)
 
-Erlaubt die Versorgung in beiden Richtungen, d.h. auch der Host (z.B. Laptop) kann geladen werden. Mit Typ-C Stecker, bis zu 100 W. Chip im Kabel begrenzt Strom (d.h. nicht jedes Kabel ist geeignet). [[USB-PD - USB Power Delivery](https://www.elektronik-kompendium.de/sites/com/1809251.htm)]
+Erlaubt die Versorgung in beiden Richtungen, d.h. auch der USB-Host (z.B. Laptop) kann geladen werden. Mit Typ-C Stecker, bis zu 100 W. Chip im Kabel begrenzt Strom (d.h. nicht jedes Kabel ist geeignet). [[USB-PD - USB Power Delivery](https://www.elektronik-kompendium.de/sites/com/1809251.htm)]
 
 
 
@@ -213,11 +215,11 @@ Siehe Netzwerktechnik.
 
 Quelle: [wikipedia](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
-[10GBASE-T](https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T)
+- [10GBASE-T](https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T)
 
-[2.5GBASE-T_and_5GBASE-T](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
+- [2.5GBASE-T_and_5GBASE-T](https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T)
 
-> The intermediate speeds became relevant around 2014 as it became clear that it would not be possible to run 10GBASE-T over the Cat5e cable that had been used for the wiring in many buildings but that, with the development of fast WiFi protocols such as IEEE 802.11ac, there was a significant demand for cheap uplink faster than 1000BASE-T offered. IEEE 802.3bz will also support Power over Ethernet, which has generally not been available at 10GBASE-T.
+> The intermediate speeds became relevant around 2014 as it became clear that it would **not** be possible to run **10GBASE-T over the Cat5e** cable that had been used for the wiring in many buildings but that, with the development of fast WiFi protocols such as IEEE 802.11ac, there was a significant demand for cheap uplink faster than 1000BASE-T offered. IEEE 802.3bz will also support Power over Ethernet, which has generally not been available at 10GBASE-T.
 
 
 

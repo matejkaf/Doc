@@ -18,5 +18,5 @@ Verwende ein Bash [replit](https://replit.com) um mittels des CLI Tools `openssl
 
 - Reduziere die Standard Ausgabe auf den base16 String (Hinweis: `cut`)
 - Ermittle den Hashwert im base64 Format ([StackExchange](https://unix.stackexchange.com/questions/3675/how-can-i-get-a-base64-encoded-shax-on-the-cli))
-- Ermittle durch Kommandozeilentools die Text-Länge der beiden Kodierungsformate (Hinweis: `cut` und `wc`).
+- Ermittle durch Kommandozeilentools die Text-Länge (Anzahl der Buchstaben) der beiden Kodierungsformate (Hinweis: `cut` und `wc`).
 
