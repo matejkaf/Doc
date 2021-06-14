@@ -23,7 +23,7 @@ Schreibe dafür die Klassen:
   - Tag
   - Monat
   - Konstruktor und `toString` Methode
-  - Methode `boolean istVor(Datum d)` in  der Klasse `Kalender` die überprüft ob das lokale Datumsobjekt vor dem übergebenen Datumsobjekt ist.
+  - Methode `boolean istVor(Datum d)` in  der Klasse `Datum` die überprüft ob das lokale Datumsobjekt vor dem übergebenen Datumsobjekt ist.
 - `KalenderEintrag`, enthält
   - Objekt der Klasse `Datum`
   - Kategorie
