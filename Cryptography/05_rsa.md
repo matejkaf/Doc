@@ -132,12 +132,14 @@ $$
 t=\text{kgV}(p-1,q-1)
 $$
 
-Dieses $$t$$ hat für beliebiges $$x$$ die Eigenschaft : 
+Dieses $$t$$ hat für beliebiges $$x$$ die Eigenschaft: 
 $$
 \begin{equation}
 	x^t=1\ \pmod n \quad\quad \text{(Formel 1)}
 \end{equation}
 $$
+
+>  Anmerkung: Nach Euler-Fermat wäre $$t=(p-1)(q-1)$$ aber das kgv ist auch OK (siehe `doc/t_kgv_beweis_wolfgang.png`), wahrscheinlich um die Zahl klein zu halten.
 
 Eine Zahl $$d$$ wird ermittelt, so dass gilt:
 $$
@@ -181,7 +183,7 @@ $$
 
 
 
-Für einen etwas einacheren Zugang – mit konkreten Zahlen – siehe `RSA.pdf`. Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
+Für einen etwas einacheren Zugang – mit konkreten Zahlen – siehe `doc/RSA.pdf`. Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
 
 
 

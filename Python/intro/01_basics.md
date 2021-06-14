@@ -3,7 +3,7 @@ title: Basics
 subtitle: Python Einführung
 ---
 
-Python ist ein Skriptsprache, d.h. der Quelltext wird direkt durch einen Interpreter ausgeführt und nicht compiliert.
+Die Programmiersprache Python ist ein **Skriptsprache**, d.h. der Quelltext wird direkt durch einen **Interpreter** ausgeführt und nicht compiliert. Python ist **einfach** aber trotzdem sehr **mächtig**.
 
 Beispiel:
 
@@ -12,13 +12,13 @@ Beispiel:
 print("Hallo Welt")
 ```
 
-Dieses Skript wird durch das Programm `python` ausgeführt:
+Dieses Skript wird durch das Programm `python` (=Interpreter) ausgeführt:
 
 ```bash
 $ python hello.py
 ```
 
-Python hat auch einen interaktiven Modus (eignet sich zum schnell ausprobieren):
+Python hat auch einen **interaktiven Modus** (eignet sich zum schnell ausprobieren):
 
 ```python
 $ python

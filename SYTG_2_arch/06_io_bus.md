@@ -176,9 +176,9 @@ Bisher 4 Versionen (aktuell USB 3)
 - USB1 (1996): 12 Mbit/s 
 
 - USB2 (2001): 480 Mbit/s
-- USB 3.0 (2011) : 5.0 Gbit/s 
-  - USB3 Ports sind innen blau
-- USB 3.1 (2014) 10 Gbit/s 
+- USB 3.0 (2011) : 5.0 Gbit/s (*SuperSpeed USB* (SS))
+  - USB3 Ports sind innen blau (meist)
+- USB 3.1 (2014) 10 Gbit/s (*SuperSpeed+*)
   - USB-C Buchsen
   - [derStandard: USB-C: Der einheitliche Anschluss ist zum Albtraum für die Nutzer geworden](https://www.derstandard.at/story/2000120074369/usb-c-der-einheitliche-anschluss-ist-zum-albtraum-fuer-die)
 - USB 3.2 (2017): 20 Gbit/s (bei USB-C)

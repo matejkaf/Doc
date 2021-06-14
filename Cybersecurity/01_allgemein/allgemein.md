@@ -61,6 +61,10 @@ Ein Hack kann daher auch eine besonders kreative und originelle Lösung eines Pr
 
 
 
+> Gaining unauthorized access. Now, what we mean by hacking is being able to gain access to a system that you're not supposed to have access to. [[Zaid Sabih](https://www.udemy.com/user/zaidsabih/)]
+
+
+
 # Die Gegenspieler
 
 threat actors
@@ -76,12 +80,10 @@ engl. MEECES: money, ego, entertainment, cause, entrance, and status
 
 Hacker: 
 
-- Black-Hat (Cybercrime), technisch sehr versiert und gut organisiert
-- White-Hat, (Ethical Hacker, Security Analyst, Penetration Tester – im Auftrag von Firmen)
-- Gray-Hat (Neugier, technisches Interesse)
+- Black-Hat (Cybercrime), technisch sehr versierte und gut organisierte Kriminelle
+- White-Hat (Ethical Hacker, Security Analyst, Penetration Tester) – haben die Erlaubnis zum "hacken" (im Auftrag von Firmen) – suchen Schwachstellen.
+- Gray-Hat (Neugier, technisches Interesse), machen nichts kaputt, verlangen kein Geld, informieren vielleicht die Admins, ist aber illegal
 - Script Kiddie (wenig Kenntnisse, nutzt fertige Tools)
-
-Ethical Hacking – Penetration Testing (pentest, Schwachstellen suchen)
 
 
 

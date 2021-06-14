@@ -104,13 +104,8 @@ $ python hallo.py
 
 Mit shebang `#!`
 
-```bash
-$ which python
-/usr/bin/python
-```
-
 ```python
-#!/usr/bin/python
+#!/usr/bin/env python3
 for i in range(10):
 	print(str(i) + " Hallo")
 ```
@@ -622,6 +617,17 @@ open("t1.txt", "w", encoding="utf-8")
 ```
 
 Oder als Binärdatei öffnen und `encode` `decode` verwenden.
+
+
+
+## with
+
+File wird automatisch geschlossen – auch bei Exceptions
+
+```python
+with open('file_path', 'w') as file:
+  file.write('hello world !')
+```
 
 
 

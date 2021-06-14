@@ -20,7 +20,7 @@
   - Disable Side Channel Mitigations
 - Windows Host:
   - "Edit virtual machine settings" >> CD/DVD >> Use ISO image File
-  - Starten, gleich rein klicken und eine Taste drücken (sonst kein Boot von ISO Datei)
+  - Starten – gleich rein klicken und eine Taste drücken (sonst kein Boot von ISO Datei)
 - "Ich habe keinen Product Key"
 - Windows 10 Pro
 - Benutzerdefiniert ...

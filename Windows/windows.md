@@ -108,7 +108,7 @@ Kontrollieren bzw. statische IP Adressen setzen
 
 **To set a static IP address in Windows 7, 8, and 10:**
 
-1. Click **Start Menu** > **Control Panel** > **Network and Sharing Center** or **Network and Internet > Network and Sharing Center.**
+1. Click **Start Menu** > **Control Panel** > **Network and Sharing Center** or **Network and Internet > Network and Sharing Center (Netzwerkstatus und -aufgaben anzeigen).**
 2. Click **Change adapter settings**.
 3. Right-click on **Wi-Fi** or **Local Area Connection.**
 4. Click **Properties**.
@@ -195,4 +195,20 @@ To turn Microsoft Defender Firewall on or off:
 2. Select a network profile.
 3. Under Microsoft Defender **Firewall**, switch the setting to **On**. If your device is connected to a network, network policy settings might prevent you from completing these steps. For more info, contact your administrator.
 4. To turn it off, switch the setting to **Off**. Turning off Microsoft Defender Firewall could make your device (and network, if you have one) more vulnerable to unauthorized access. If there's an app you need to use that's being blocked, you can allow it through the firewall, instead of turning the firewall off.
+
+
+
+# Netzwerkfreigabe
+
+[support.microsoft.com](https://support.microsoft.com/de-de/windows/dateifreigabe-über-ein-netzwerk-in-windows-10-b58704b2-f53a-4b82-7bc1-80f9994725bf)
+
+Rechtsklick auf Ordner >> Eigenschaften >> Tab Freigabe 
+
+Rechnernamen feststellen: Datei-Explorer >> Rechtsklick auf "Dieser PC" >> Eigenschaften
+
+HTLPC-R83-101
+
+smb://HTLPC-R83-101/
+
+Scheint in der Schule nicht zu funktionieren
 

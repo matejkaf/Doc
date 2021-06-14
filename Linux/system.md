@@ -5,7 +5,7 @@ title: Linux System Kommandos
 * TOC
 {:toc}
 
-## Shutdown/ Reboot
+# Shutdown/ Reboot
 
 ```bash
 $ sudo shutdown -h now
@@ -14,7 +14,7 @@ $ sudo reboot
 
 
 
-## Root Rechte
+# Root Rechte
 
 Mit [substitute user](https://man7.org/linux/man-pages/man1/su.1.html):
 
@@ -37,12 +37,14 @@ $ sudo -i
 
 
 
-## System Informationen
+# System Informationen
 
 ```bash
 $ uname -a
 Linux secOps 4.15.15-1-ARCH #1 SMP PREEMPT Sat Mar 31 23:59:25 UTC 2018 x86_64 GNU/Linux
-#
+```
+
+```bash
 $ cat /etc/*release
 NAME="Arch Linux"
 PRETTY_NAME="Arch Linux"
@@ -54,13 +56,20 @@ SUPPORT_URL="https://bbs.archlinux.org/"
 BUG_REPORT_URL="https://bugs.archlinux.org/"
 ```
 
+```bash
+$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 7.04
+Release:        7.04
+Codename:       feisty
+```
 
 
-## Keyboard
+
+# Keyboard
 
 [ArchLinux](https://wiki.archlinux.org/index.php/Linux_console/Keyboard_configuration), Kali, wahrscheinlich auch Debian
-
-Layouts (CISCO cyberops VM)
 
 ```bash
 $ sudo setxkbmap -layout de
@@ -69,5 +78,17 @@ $ sudo setxkbmap -layout de -variant mac
 # bis zum nächsten reboot
 ```
 
+Dauerhaft konfigurieren
 
+1. Öffnen eines Terminalfensters
+
+2. Eingabe von `sudo nano /etc/default/keyboard`
+
+3. Ersetzen von `XKBLAYOUT="us"` durch `XKBLAUOUT="de"`
+
+4. Speichern mit STRG+O >> Enter
+
+5. Nano beenden mit STRG+X
+
+6. Neustart des Systems
 

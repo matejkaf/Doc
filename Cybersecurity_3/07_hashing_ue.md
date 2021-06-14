@@ -80,7 +80,9 @@ $ cat hash_calc | tr -d [:space:] | xxd
 00000030: 6266 3165 6333 6366 3837 3035 3764 6162  bf1ec3cf87057dab
 # Das entfernt auch das 0x0a newline am Ende
 
+#
 # Verbesserte Version
+#
 $ openssl dgst -sha256 putty.exe | cut -d '=' -f 2  | tr -d [:space:] > hash_calc
 $ wget -q -O - https://the.earth.li/~sgtatham/putty/latest/sha256sums | grep w64/putty.exe$ | cut -d ' ' -f 1  | tr -d [:space:] > hash_read
 $ diff hash_read hash_calc
@@ -92,7 +94,7 @@ $ cmp -s hash_read hash_calc
 # exit status 0 ... gleich, 1 ... ungleich
 $ echo $?                                                                                                      0
 
-# exit status in if verarbeiten
+# exit status von cmp in if verarbeiten
 $ if [[ $? = 0 ]]; then
     echo "Files are the same (HASH OK)"
 else
@@ -107,3 +109,4 @@ Das ganze dann noch in einem Skript schreiben.
 
 Die Links als Variablen machen, falls sich diese einmal ändern.
 
+Idee: Eine Version von putty.exe mit Trojaner besorgen.

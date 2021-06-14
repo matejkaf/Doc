@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [c,strings,assignment]
 ---
 
-#### Übung (searchlast)
+#### Übung (searchlast) {#searchlast}
 
 Schreibe eine Funktion die ein Zeichen in einem String sucht. Rückgabewert ist der Index des Zeichens bzw. `-1` wenn des Zeichen nicht gefunden wurde. Kommt das Zeichen mehrfach vor soll die Position des letzten Zeichens genommen werden.
 
@@ -28,8 +28,7 @@ Hinweis: Es ist nur ein Parameter erlaubt und es darf kein lokales Array als Zwi
 
 #### Übung (strtrimright)
 
-Entfernt alle Leerzeichen am Ende eines Strings.
-Hinweis: `'\0'` muss nach vor verschoben werden.
+Entfernt alle Leerzeichen am Ende eines Strings. Hinweis: `'\0'` muss nach vor verschoben werden.
 
 ---
 
@@ -48,6 +47,18 @@ Entfernt ein Zeichen an einer bestimmten Position aus einem String.
 #### Übung (strremchr)
 
 Alle Vorkommen eines bestimmten Zeichens aus dem String löschen.
+
+---
+
+#### Übung (count distinct)
+
+Schreibe eine Funktion die die Anzahl unterschiedlicher Buchstaben in einem String ermittelt.
+
+---
+
+#### Übung (most distinct char)
+
+Ermittle den am häufigst vorkommenden Buchstaben. Kommen dabei mehrere gleich häufig vor soll der vorderste Buchstabe gewählt werden.
 
 ---
 
