@@ -24,6 +24,7 @@ Wiederhole das Zufallsexperiment einige Male (weitere Schleife) und berechne aus
 
 ---
 
-#### Übung (Geburtstagsparadoxon)
+#### Übung (Geburtstagsparadoxon II)
 
-Die Fragestellung ist ähnlich zur vorhergehenden Übung. Wie viele Personen muss man nehmen damit jeder mögliche Geburtstag mindestens einmal vorhanden ist?
+Die Fragestellung ist ähnlich zur vorhergehenden Übung. Wie viele Personen muss man nehmen damit jeder mögliche Geburtstag (alle 365 Tage des Jahres) mindestens einmal vorhanden ist?
+
