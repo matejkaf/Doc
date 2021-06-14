@@ -7,10 +7,10 @@ tags: [assignment,arrays,challenge]
 
 # Selection Sort
 
-Bei diesem Verfahren wird jener Index gesucht an der die größte Zahl vorkommt. Dann wird der Wert an dieser Stelle mit der letzten Stelle vertauscht. Damit steht die größte Zahl ganz am Ende des Arrays.
-Im zweiten Durchlauf wird der größte Wert vom ersten bis zum vorletzten Element gesucht, dieser tauscht dann den Platz mit der vorletzten Stelle. Mit jedem Durchlauf wird eine Stelle weniger geprüft. 
-
 Selection-Sort ist ungefähr **doppelt so schnell wie Bubble-Sort**.
+
+Bei Selection-Sort wird jener Index gesucht an der die größte Zahl vorkommt. Dann wird der Wert an dieser Stelle mit der letzten Stelle vertauscht. Damit steht die größte Zahl ganz am Ende des Arrays.
+Im zweiten Durchlauf wird der größte Wert vom ersten bis zum vorletzten Element gesucht, dieser tauscht dann den Platz mit der vorletzten Stelle. Mit jedem Durchlauf wird eine Stelle weniger geprüft, so lange bis nur mehr eine Stelle (die vorderste) überbleibt.
 
 
 
