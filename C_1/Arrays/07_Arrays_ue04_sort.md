@@ -10,12 +10,9 @@ tags: [assignment,arrays,1AHITS]
 
 **Lösung:** Die Ergebnisse werden in **aufsteigender Reihenfolge sortiert**.
 
-**Sortier-Algorithmen:** 
-Es gibt sehr viele Verfahren, wir betrachten Sortieren durch Aufsteigen (**Bubble-Sort**). Dies ist das am einfachsten zu implementierende Sortierverfahren.
+**Sortier-Algorithmen:** Es gibt sehr viele Verfahren, wir betrachten Sortieren durch Aufsteigen (**Bubble-Sort**). Dies ist das am einfachsten zu implementierende Sortierverfahren.
 
 **Beispiel:**
-
-Eingegebene Daten
 
 | *Teiln.* | *Zeit* |
 | -------- |        |
@@ -43,13 +40,12 @@ Sortiert:
 
 #### Übung (Vorübung – Paare ausgeben)
 
-Lege in einem Programm folgendes Array an.
+Lege in einem Programm folgendes `int` Array an.
 
 ```c
 int a[]={5,9,3,1,7,0};
 ```
-Gib das Array Paarweise (beginnend von links) aus und zusätzlich
-für jedes Paar ob es sich in richtiger (aufsteigend oder gleich) bzw.\ falscher (absteigend) Reihenfolge befindet.
+Gib das Array Paarweise (beginnend von links) aus und zusätzlich für jedes Paar ob es sich in richtiger (aufsteigend oder gleich) bzw. falscher (absteigend) Reihenfolge befindet.
 
 ```
 5 9 richtig
@@ -88,8 +84,7 @@ ___
 
 #### Übung (Bubble-Sort am Papier)
 
-Beim **Bubble-Sort Algorithmus** wird das paarweise prüfen und vertauschen (von ganz vorne beginnend) immer wieder wiederholt.
-Beendet wird das sortieren dann wenn bei einem kompletten Durchlauf kein Vertauschen mehr notwendig war.
+Beim **Bubble-Sort Algorithmus** wird das paarweise prüfen und vertauschen (von ganz vorne beginnend) immer wieder wiederholt. Beendet wird das sortieren dann wenn bei einem kompletten Durchlauf kein Vertauschen mehr notwendig war.
 
 Führe den Algorithmus auf Papier für das Beispiel Array aus.
 
@@ -104,6 +99,7 @@ Führe den Algorithmus auf Papier für das Beispiel Array aus.
 #### Übung (Bubble-Sort)
 
 Implementiere eine Funktion die ein übergebenes Array in sortierte Reihenfolge bringt.
+
 Hilfestellung/Grundgerüst:
 
 ```c
