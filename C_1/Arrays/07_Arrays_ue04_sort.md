@@ -106,14 +106,14 @@ Hilfestellung/Grundgerüst:
 // n = länge des Arrays
 void bubble_sort(int a[], int n)
 {
-	int sortiert=0;
-	while( sortiert==0 )
-	{
-		sortiert=1;
-		// Hier:
-		// Schleife für die Bubble Phase
-		// sortiert=0 falls dabei Vertauschen notwendig
-	}
+  int sortiert=0;
+  while( sortiert==0 )
+  {
+    sortiert=1;
+    // Hier:
+    // Schleife für die Bubble Phase
+    // sortiert=0 falls dabei Vertauschen notwendig
+  }
 }
 ```
 
