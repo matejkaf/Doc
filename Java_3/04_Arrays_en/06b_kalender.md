@@ -1,11 +1,12 @@
 ---
 title: ArrayList
 subtitle: Übung Kalender
+tags: [3BHELS]
 ---
 
 
 
-Schreibe ein Programm das Kalendereinträge mit Datum (Monat + Tag) einem beliebigen Text (z.B. Mathematik) und einer Kategorie in verwalten kann.
+Schreibe ein Programm das **Kalendereinträge** mit **Datum** (Monat + Tag) einem beliebigen Text (z.B. Mathematik) und einer Kategorie in verwalten kann.
 
 Kategorien:
 
@@ -36,6 +37,6 @@ Implementiere in der Klasse `Kalender`:
 - Methode `print` die alle Einträge ausgibt
 - Methode `boolean istVor(Kalender k)` in  der Klasse `Kalender` die überprüft ob das lokale Kalenderobjekt vor dem übergebenen Kalenderobjekt ist.
 - Methode `print` mit Parametern Tag, Monat. Diese gibt alle Einträge aus die nach dem übergebenen Datum sind. Verwende dazu die vorher implementierte Methode `istVor`.
-- Methode `delete(kategorie)`
-- 
+- Method `count` die als Parameter eine Kategorie und ein `Datum` übergeben bekommt. Die Methode soll zählen wie viele Einträge dieser Kategorie nach dem übergebenen Datum vorhanden sind. Der Rückgabewert der Methode gibt diese Anzahl an.
+- Methode `delete(kategorie)`: entfernt alle Einträge der angegebenen Kategorie aus der Liste.
 - Methode `print`mit Parametern Tag, Monat, Kategorie und Text. Die Parameter definieren Filter. Für Tag, Monat und Kategorie ist eine exakte Übereinstimmung notwendig. Bei Text genügt es, dass dieser enthalten ist. Wildcards können mit –1 bzw mit * definiert werden.
