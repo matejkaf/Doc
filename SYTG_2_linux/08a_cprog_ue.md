@@ -30,11 +30,17 @@ Programmaufruf in der shell:
 ```bash
 $ ./main 3 + 5
 8
+$ ./main 3 - 5
+-2
 $ ./main 3 "*" 5
 15
+$ ./main 7 / 5
+1
 ```
 
-Achtung: Bei der Multiplikation müssen Quotes verwendet werden `"*"` ansonsten 
+Achtung: Bei der Multiplikation müssen Quotes verwendet werden `"*"` ansonsten wird der Stern von der shell als Wildcard interpretiert.
+
+
 
 ---
 
