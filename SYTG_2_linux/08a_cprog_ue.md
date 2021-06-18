@@ -28,11 +28,13 @@ Schreibe ein C Programm das über die Kommandozeile die **4 Grundrechenarten** a
 Programmaufruf in der shell:
 
 ```bash
-$ ./main 3 * 5
+$ ./main 3 + 5
+8
+$ ./main 3 "*" 5
 15
 ```
 
-
+Achtung: Bei der Multiplikation müssen Quotes verwendet werden `"*"` ansonsten 
 
 ---
 
@@ -45,9 +47,13 @@ Programmaufruf in der shell:
 ```bash
 $ ./main 4.25 / 8.5  -f
 0.5
+$ ./main 4 / 8
+0
 ```
 
-Die Option steht zur Vereinfachung immer am Ende.
+Die Option `-f` steht zur Vereinfachung immer am Ende.
+
+**Hinweis:** Verwende `atof` (liefert `float`) statt `atoi`.
 
 **Erweiterung:** Eine Option die die Anzahl der darzustellenden Nachkommastellen bestimmt.
 

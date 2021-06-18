@@ -100,8 +100,6 @@ $ echo $?
 3
 ```
 
-[!2AHITS Grp1 21.05.2021]
-
 
 
 # Arbeiten mit `$?`
@@ -132,6 +130,8 @@ fi
 
 - stdin aus einer Datei ins Programm umleiten
 - Dateiumleitung und Pipes anhand eines C Programms demonstrieren (z.B. viel Text ausgeben und in `more` pipen)
+
+[!2AHITS Grp1 21.05.2021]
 
 
 

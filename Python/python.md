@@ -206,7 +206,7 @@ v = float("3.14")
 
 # Strings
 
-[wikibooks Python Programming/Strings](https://en.wikibooks.org/wiki/Python_Programming/Strings#split,_splitlines)
+[wikibooks Python Programming/Strings](https://en.wikibooks.org/wiki/Python_Programming/String)
 
 strings sind nicht änderbar (wie Java).
 
@@ -216,32 +216,50 @@ str2 = 'Hello'                # Single quotes do the same
 str3 = "Hello\tworld\n"       # One with a tab and a newline
 str4 = str1 + " world"        # Concatenation
 str5 = str1 + str(4)          # Concatenation with a number
+
 str6 = str1[2]                # 3rd character
 str6a = str1[-1]              # Last character
 #str1[0] = "M"                # No way; strings are immutable
+
 for char in str1: print char  # For each character
-str7 = str1[1:]               # Without the 1st character
+
+  str7 = str1[1:]               # Without the 1st character
 str8 = str1[:-1]              # Without the last character
 str9 = str1[1:4]              # Substring: 2nd to 4th character
+
 str10 = str1 * 3              # Repetition
+
 str11 = str1.lower()          # Lowercase
 str12 = str1.upper()          # Uppercase
 str13 = str1.rstrip()         # Strip right (trailing) whitespace
 str13b = str1.lstrip()        # Strip left (leading) whitespace
 str13c = str1.strip()         # lstrip+rstrip
 str14 = str1.replace('l','h') # Replacement
+
 list15 = str1.split('l')      # Splitting
+
 if str1 == str2: print "Equ"  # Equality test
 if "el" in str1: print "In"   # Substring test
 if "el" not in str1: print "X"   # Substring test
+
 length = len(str1)            # Length
+
 pos1 = str1.find('llo')       # Index of substring or -1
 pos2 = str1.rfind('l')        # Index of substring, from the right
 count = str1.count('l')       # Number of occurrences of a substring
+
 "#".join(['a','b','c'])       # build string by joining an iterable
 ```
 
+```python
+txt = "Thank you\nfor the music\nWelcome to the jungle"
+x = txt.splitlines() # array of strings
+```
+
+
+
 String interpolation (Python ≥3.6):
+
 ```python
 print(f'{x*2} Test')
 ```
@@ -815,7 +833,7 @@ print(random.randrange(1, 10))
 
 
 
-## Kommandozeilen Argument
+## Kommandozeilen Argumente
 
 ```python
 import sys
@@ -825,6 +843,48 @@ sys.argv[1:] # Nur die Argumente
 x = " ".join(sys.argv[1:])
 
 ```
+
+[argparse](https://docs.python.org/3/library/argparse.html)
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description='Tool Description.')
+
+# positional arguments
+parser.add_argument("fileName", help="file name")
+
+# options, if not set value ist "None"
+parser.add_argument("--fromdate", help="from date")
+
+# True/False values
+#    option present: True
+#    option missing: False
+parser.add_argument("--boolTest", help="boolean test", action="store_true")
+
+# shorthand with default value and specific type
+parser.add_argument("-n", "--number", help="a number (default: 5)", default=5, type=int)
+
+args = parser.parse_args()
+
+#access arguments
+print(args)
+print(args.fileName)
+
+if args.boolTest:
+  print("is True")
+else:
+  print("is NOT True")
+
+# test if an optional argument is set
+if(args.fromdate):
+  print(f"set to '{args.fromdate}''")
+  print(type(args.fromdate)) # always string!
+```
+
+Links
+
+- [argparse:type](https://docs.python.org/3/library/argparse.html#type)
 
 
 

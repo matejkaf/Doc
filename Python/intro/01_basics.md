@@ -15,15 +15,40 @@ print("Hallo Welt")
 Dieses Skript wird durch das Programm `python` (=Interpreter) ausgeführt:
 
 ```bash
-$ python hello.py
+$ python3 hello.py
 ```
 
-Python hat auch einen **interaktiven Modus** (eignet sich zum schnell ausprobieren):
+Python hat auch einen **interaktiven Modus** (eignet sich zum schnell ausprobieren), mit `exit()` wird beendet:
 
 ```python
-$ python
+$ python3
 >>> 3+4
 7
+>>> exit()
+$
+```
+
+Das Starten eines Skripts läßt sich (unter Linux) noch weiter vereinfachen durch eine sogenannte **shebang** (`#!`) Zeile:
+
+```python
+#! /usr/bin/env python3
+print("Hallo Welt")
+```
+
+Zusätzlich muss das eXecutable flag des Skript Files gesetzt werden:
+
+```sh
+$ ls -l main.py
+-rw-r--r-- 1 runner runner 851 Jun 16 16:24 main.py
+$ chmod u+x main.py  # _u_ser / _g_roup / _o_thers / _a_ll
+$ ls -l main.py
+-rwxr--r-- 1 runner runner 851 Jun 16 16:24 main.py
+```
+
+Der `python3` Interpreter wird durch die shell gestartet:
+
+```python
+$ ./main.py
 ```
 
 
@@ -88,98 +113,16 @@ i-=1 # i=i+1
 
 
 
-# if Anweisung
+# Module
+
+Um die Bestandteile eines Moduls zu verwenden ist dieses zuerst zu importieren, dann verwendet man den Modulnamen um auf die enthaltenen Elemente zuzugreifen, dies können Variablen oder Funktionen sein.
 
 ```python
-str = input("Wert eingeben: ")
-val = int(str)
-if val>100:
-  print("Ohhh")
-  print("Wow")
-else:
-  print("Naja")
-  print("Geht")
-```
+import math
+r=5.0
+a=r*r*math.pi
+print(a)
 
----
-
-**Beachte**: In Python keine `{}` sondern `:` und einrücken! Welche Programmzeilen in einem Block zusammengehören ergibt sich durch die Einrückungstiefe.
-
----
-
-Beispiel:
-
-```python
-str = input("Wert eingeben: ")
-val = int(str)
-if val>100:
-  print("Ohhh")
-  if val>200:
-    print("Wow")
-    if val>300:
-      print("UiUiii")
-  else:
-    print("200 nicht erreicht")
-```
-
-`elif`: (else if)
-
-```python
-if x < 0:
-  x = 0
-  print 'Negative changed to zero'
-elif x == 0:
-  print 'Zero'
-else:
-  print 'More'
-```
-
-**conditional** expression
-
-```python
-result = x if a > b else y
-```
-
-```python
-# Absolutwert
-value = -500
-abs = value if value>=0 else -value
-```
-
-```python
-# signum
-value = -42
-sgn = -1 if value<0 else 0 if value==0 else 1
-```
-
-**Boolsche Operatoren**: `and`, `or`, `not`
-
-```python
-a = 200
-b = 33
-c = 500
-if not (a > b and c > a) or b==34:
-  print("weird condition is True")
-```
-
-
-
-# while
-
-```python
-i=0
-while i<10:
-  print("Hallo Welt")
-  i+=1
-```
-
-
-
-# for
-
-```python
-for i in range(10):
-  print(i)
-# 0,..,9
+print( math.gcd(54,24) ) # greatest common divisor
 ```
 
