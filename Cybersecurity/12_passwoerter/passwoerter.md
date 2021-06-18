@@ -34,6 +34,12 @@ Beispiel – Linux Passwort File:
 matejka:$6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.:1000:1000:Franz MATEJKA,,,:/home/matejka:/bin/bash
 ```
 
+```
+Username:Password:UID:GID:Info:Home:Shell
+```
+
+
+
 **Passwort festlegen**: Legt ein Benutzer erstmalig sein Passwort fest wir dieses gehasht und der Hashwert im Passwort-File gespeichert. Der Klartext wird nicht länger als notwendig gespeichert.
 
 **Passwort prüfen**: Benutzer gibt Name und Passwort ein. Der Hashwert des eingegebenen Passworts wird mit dem gespeicherten Hashwert verglichen – ist dieser gleich ist der Benutzer authentifiziert.

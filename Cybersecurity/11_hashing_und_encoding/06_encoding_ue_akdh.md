@@ -48,7 +48,7 @@ $ openssl dgst -sha256 -binary goethe.md | xxd -p | tr -d '\n'
 # Hex mit cut
 $ openssl dgst -sha256 goethe.md | cut -d ' ' -f 2
 
-# Base64
+# mit base64 tool
 $ openssl dgst -sha256 -binary goethe.md | base64 
 
 # Berechnungen mit word count (wc)

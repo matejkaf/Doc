@@ -44,6 +44,8 @@ Achtung: Bei der Multiplikation müssen Quotes verwendet werden `"*"` ansonsten 
 
 ---
 
+Optionale Aufgabenstellung:
+
 #### Übung (Rechner int+float)
 
 Schreibe den Rechner so, dass dieser auch **optional mit Kommazahlen** rechnen kann.
