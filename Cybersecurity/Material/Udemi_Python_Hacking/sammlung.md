@@ -264,3 +264,57 @@ Für information gathering
 
 Info: es gibt ein nmap Modul für Python
 
+Scan mit [netdiscover](https://manpages.debian.org/unstable/netdiscover/netdiscover.8.en.html) (simpler ARP Scanner)
+
+```bash
+$ netdiscover -r 10.0.2.1/24 
+```
+
+![image-20210618115905093](fig/image-20210618115905093.png)
+
+`netdiscover` hat unter Kali 2021.1 nicht funktioniert (es werden keine Hosts angezeigt). Mit nmap kann das gleiche erreicht werden:
+
+```bash
+$ nmap -sn -PR 192.168.178.75/24
+# -sn  ... nur PING scan (kein PORT scan)
+# -PR  ... ARP Scan
+```
+
+
+
+Offizielle VM von Windows installieren [[*](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)]. 
+
+![image-20210618121307942](fig/image-20210618121307942.png)
+
+## ARP
+
+![image-20210618161548329](fig/image-20210618161548329.png)
+
+
+
+![image-20210618161608662](fig/image-20210618161608662.png)
+
+![image-20210618161617185](fig/image-20210618161617185.png)
+
+
+
+![image-20210618161656614](fig/image-20210618161656614.png)
+
+
+
+## Scapy
+
+Python modul.
+
+```python
+import scapy.all as scapy
+scapy.arping("10.0.0.2")
+scapy.arping("10.0.0.1/24") # complete subnet
+```
+
+![image-20210618173511680](fig/image-20210618173511680.png)
+
+
+
+![image-20210618173803063](fig/image-20210618173803063.png)
+

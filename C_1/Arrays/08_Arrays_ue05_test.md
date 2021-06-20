@@ -6,13 +6,9 @@ tags: [assignment,array,1CHELS]
 
 Folgende Übungen bilden eine aufeinander aufbauende Aufgabenstellung.
 
----
-
-#### Übung (Testnoten)
-
 Schreibe ein Programm das ein Testergebnis analysieren kann.
 
-Die Noten sind in einem int Array gespeichert, dieses ist 36 (maximale Schüleranzahl) groß. Da nicht jede Klasse/Gruppe 36 Schüler hat gibt eine weitere Variable (`schueler`) an wie viele Schüler am Test teilgenommen haben. Über die Anzahl der Schüler hinausgehende Elemente im Array haben keine Bedeutung und müssen ignoriert werden.
+Die Noten sind in einem `int` Array gespeichert, dieses ist 36 Elemente (=maximale Schüleranzahl einer Klasse) groß. Da nicht jede Klasse/Gruppe 36 Schüler hat, gibt eine weitere Variable (`schueler`) an wie viele Schüler am Test teilgenommen haben. Über die Anzahl der Schüler hinausgehende Elemente im Array haben keine Bedeutung und müssen ignoriert werden.
 
 ```c
 int noten[36]={5,3,4,2,1,5,2,1,1,1,2,5,1,2,4,1,1};
@@ -27,17 +23,22 @@ Erstelle ein Programmgrundgerüst mit obigen Programmzeilen.
 
 ---
 
-#### Übung (Anzahl ermitteln)
+#### Übung (Anzahl einer Note ermitteln)
 
-Schreibe eine Funktion die die Anzahl einer bestimmten Note ermittelt.
+Schreibe eine Funktion die die Anzahl einer bestimmten Note ermittelt. Die betrachtete Note wird als Wert eines Parameter übergeben.
+
+```c++
+int get_anzahl(int noten[], int anz_schueler, int gesuchte_note);
+```
 
 Anwendungsbeispiel:
 ```c
 // ermittle Anzahl der 3er
+//...
 anzahl[2] = get_anzahl(noten, schueler, 3); 
+//...
 ```
-Rufe diese Funktion in einer Schleife auf um alle Werte des Arrays `anzahl` zu ermitteln.
-In `anzahl[0]` soll die Anzahl der 1er, in `anzahl[1]` die Anzahl der 2er, usw. stehen.
+Rufe diese Funktion in einer Schleife auf um **alle Werte** des Arrays `anzahl` zu ermitteln. In `anzahl[0]` soll die Anzahl der 1er, in `anzahl[1]` die Anzahl der 2er, usw. stehen.
 
 
 
@@ -45,7 +46,8 @@ In `anzahl[0]` soll die Anzahl der 1er, in `anzahl[1]` die Anzahl der 2er, usw. 
 
 #### Übung (Prozent ermitteln)
 
-Schreibe eine Funktion die aufgrund der Anzahl der Noten und der Gesamtzahl der Schüler alle Prozentzahlen ermittelt und in das Array `prozent` schreibt.
+Schreibe eine Funktion die aufgrund der Anzahl der einzelnen Noten und der Gesamtzahl der Schüler alle Prozentzahlen ermittelt und in das Array `prozent` schreibt.
+
 Die Funktion soll so aufgerufen werden:
 
 ```c
@@ -63,7 +65,7 @@ Schreibe eine Funktion die das Ergebnis ausgibt. Der Aufruf soll so aussehen:
 ```c
 print(noten, schueler, anzahl, prozent);
 ```
-Die Ausgabe soll folgendes Aussehen haben:
+Die Ausgabe soll ähnlich aussehen wie die folgende Tabelle:
 
 | *Note* | *Anzahl* | *Prozent* |
 | ------ | -------- | --------- |
@@ -85,7 +87,7 @@ Erweiterung: Die Noten können eingegeben werden. Abschluss durch Eingabe von 0.
 ---
 #### Übung (Balkendiagramm)
 
-Stelle die Notenanteile in einem horizontalen Balkendiagramm dar:
+Stelle die Notenanteile in einem horizontalen "Balkendiagramm" dar:
 
 ```
 1er *******

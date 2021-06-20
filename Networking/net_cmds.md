@@ -155,6 +155,18 @@ $ ifconfig eth0 up
 
 
 
+# Default gateway
+
+```bash
+$ route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.178.1   0.0.0.0         UG    100    0        0 eth0
+192.168.178.0   0.0.0.0         255.255.255.0   U     100    0        0 eth0
+```
+
+
+
 # netstat – open Sockets
 
 [[manpage : netstat](https://linux.die.net/man/8/netstat)]

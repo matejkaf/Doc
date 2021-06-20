@@ -95,13 +95,15 @@ $ nmap -sn -v 192.168.178.0/24
 
 Ping Scan komplett deaktivieren: `-Pn`, in diesem Fall werden die Ports auch dann gescannt wenn der Host nicht als aktiv erkannt wurde.
 
-ICMP Echo Request (Typ 8): `nmap` Option: `-PE`
+- ARP Scan `-PR`
 
-ICMP Timestamp Request (Typ 13):  `nmap` Option: `-PP`
+- ICMP Typ 8 Echo Request (`-PE`)
 
-TCP SYN auf Port 443 (https):  `nmap` Option: `-PS443`
+- ICMPTyp 13 Timestamp Request (`-PP`)
 
-TCP ACK auf Port 80 (http):  `nmap` Option: `-PA80`
+- TCP SYN auf Port 443 – https (`-PS443`)
+
+- TCP ACK auf Port 80 – http (`-PA80`)
 
 Nur DNS reverse look-up (=list scan): `-sL`, nmap versucht alle angegebenen IP Adressen in Host-Namen aufzulösen, über DNS.
 
