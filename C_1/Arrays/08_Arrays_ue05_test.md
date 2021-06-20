@@ -6,7 +6,15 @@ tags: [assignment,array,1CHELS]
 
 Folgende Übungen bilden eine aufeinander aufbauende Aufgabenstellung.
 
-Schreibe ein Programm das ein Testergebnis analysieren kann.
+Schreibe ein Programm das ein Testergebnis analysieren kann, d.h. wie viele Schüler haben 1er, wie viele 2er und so weiter ("Notenspiegel"). Ausgegeben werden soll die jeweilige **Anzahl** und der **Prozentanteil**. Die Ausgabe soll ähnlich aussehen wie die folgende Tabelle:
+
+| *Note*         | *Anzahl* | *Prozent* |
+| -------------- | -------- | --------- |
+| sehr gut       | 7        | 41.2%     |
+| gut            | 4        | 23.5%     |
+| befriedigend   | 1        | 5.9%      |
+| genügend       | 2        | 11.8%     |
+| nicht genügend | 3        | 17.7%     |
 
 Die Noten sind in einem `int` Array gespeichert, dieses ist 36 Elemente (=maximale Schüleranzahl einer Klasse) groß. Da nicht jede Klasse/Gruppe 36 Schüler hat, gibt eine weitere Variable (`schueler`) an wie viele Schüler am Test teilgenommen haben. Über die Anzahl der Schüler hinausgehende Elemente im Array haben keine Bedeutung und müssen ignoriert werden.
 
