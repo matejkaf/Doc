@@ -45,3 +45,13 @@ Jeder neu in den ARP Cache aufgenommene Eintrag erhält eine zufällig gewählte
 
 ARP wird in 802.3 und 802.11 gleichermaßen verwendet
 
+
+
+# Interna
+
+ARP ist ein [Ethernet Frame](./ethernet) mit EtherType 0x0806. 
+
+[RFC826](https://datatracker.ietf.org/doc/html/rfc826), [wikipedia](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
+
+![image-20210621102357067](fig/image-20210621102357067.png)
+

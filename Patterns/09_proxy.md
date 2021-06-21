@@ -26,7 +26,7 @@ tags: [5AHELS, lecture, patterns ]
 
 > a layer between the user interface code and database logic
 
-- [![img](fig/Protection Proxy.png)](https://sites.google.com/site/designpatternswiki/SecurityDesignPatterns/protection-proxy/Protection Proxy.png?attredirects=0)
+![Protection Proxy](fig/Protection Proxy-4197596.png)
 
 
 
