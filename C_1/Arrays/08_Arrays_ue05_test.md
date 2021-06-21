@@ -1,7 +1,7 @@
 ---
 title: Arrays
 subtitle: Übung Testnoten
-tags: [assignment,array,1CHELS]
+tags: [assignment,array,1CHELS,1AHITS]
 ---
 
 Folgende Übungen bilden eine aufeinander aufbauende Aufgabenstellung.

@@ -53,5 +53,9 @@ ARP ist ein [Ethernet Frame](./ethernet) mit EtherType 0x0806.
 
 [RFC826](https://datatracker.ietf.org/doc/html/rfc826), [wikipedia](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
 
-![image-20210621102357067](fig/image-20210621102357067.png)
+<img src="fig/image-20210621102357067.png" alt="image-20210621102357067" style="zoom:33%;" />
+
+
+
+
 
