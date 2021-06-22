@@ -984,3 +984,21 @@ for line in fileinput.input(file_name, inplace=1):
   sys.stdout.write(line)
 ```
 
+
+
+## Tuple/List unpacking
+
+```python
+def foo():
+  return [1,2]
+
+def bar():
+  return (1,2)
+
+# unpacking list
+eins,zwei = foo()
+
+# unpacking tuple
+eins,zwei = bar()
+```
+
