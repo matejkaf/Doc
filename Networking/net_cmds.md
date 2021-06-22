@@ -3,6 +3,9 @@ title: Networking Command Line
 subtitle: Linux
 ---
 
+* TOC
+{:toc}
+
 Sammlung von Kommandozeilen Befehlen in Zusammenhang mit Netzwerk
 
 
@@ -69,32 +72,53 @@ $ ifconfig <interface> dhcp start
 
 # DHCP
 
-**DHCP** aktuelle Einstellungen (auch Linux?):
+**DHCP** aktuelle Einstellungen:
+
+`ipconfig` ist evtl. extra zu installieren
 
 ```bash
-ipconfig getpacket en6
+$ ipconfig getpacket en6
 ```
 
 **DHCP** release/renew:
 
 ```bash
-sudo ipconfig set en6 DHCP
+$ sudo ipconfig set en6 DHCP
 ```
 
 
 
 # ARP
 
-**ARP** chache anzeigen:
+**ARP** cache anzeigen:
+
+```sh
+$ arp   
+Address                  HWtype  HWaddress           Flags Mask            Iface
+fritz.box                ether   e0:28:6d:7b:fa:91   C                     eth0
+```
+
+`-n`, `--numeric` ... shows numerical addresses instead of trying to determine symbolic host, port or user names:
 
 ```bash
-arp -n
+$ arp -n
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.178.1            ether   e0:28:6d:7b:fa:91   C                     eth0
 ```
+
+`-a` ... Use alternate BSD style output format (with no fixed columns):
+
+```sh
+$ arp -a
+fritz.box (192.168.178.1) at e0:28:6d:7b:fa:91 [ether] on eth0
+```
+
+
 
 **ARP** cache leeren:
 
 ```bash
-ip -s -s neigh flush all
+$ ip -s -s neigh flush all
 ```
 
 
@@ -219,5 +243,33 @@ DNS cache leeren
 
 ```bash
 sudo killall -HUP mDNSResponder
+```
+
+
+
+# IP Forwarding
+
+[How to Disable/Enable IP forwarding in Linux](https://linuxconfig.org/how-to-turn-on-off-ip-forwarding-in-linux)
+
+> It may be necessary to configure IP forwarding on a [Linux system](https://linuxconfig.org/linux-download) in certain scenarios. If the Linux server is acting as a firewall, router, or NAT device, it will need to be capable of forwarding packets that are meant for other destinations (other than itself)
+
+Forwarding wird gesteuert durch das File `/proc/sys/net/ipv4/ip_forward`
+
+Enthält 0 (forwarding off) oder 1 (forwarding on)
+
+Aktuelle Zustand abfragen:
+
+```sh
+$ cat /proc/sys/net/ipv4/ip_forward
+0
+```
+
+Forwarding Ein- bzw. Ausschalten:
+
+```sh
+# forwarding on
+$ echo 1 > /proc/sys/net/ipv4/ip_forward
+# forwarding off
+$ echo 0 > /proc/sys/net/ipv4/ip_forward
 ```
 

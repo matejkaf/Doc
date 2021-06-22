@@ -16,6 +16,8 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 [[tcpdump manpage](http://manpages.ubuntu.com/manpages/precise/en/man8/tcpdump.8.html)] [[pcap-filter](http://manpages.ubuntu.com/manpages/precise/en/man7/pcap-filter.7.html)]
 
+# Ethernet
+
 ```sh
 $ tcpdump -eni eth0 ether host 00:0c:29:97:77:0a
 #   -e Print the link-level header on each dump line.
@@ -30,6 +32,8 @@ $ tcpdump -eni eth0 ether host 00:0c:29:97:77:0a
 ```
 
 Obiges zeigt alle Ethernet Frames von oder zu einer MAC Adresse.
+
+# ARP
 
 Nur ARP Pakete:
 
@@ -70,4 +74,29 @@ Request who-has 192.168.178.28 tell 192.168.178.81, length 28
 06:16:52.258716 00:0c:29:97:77:0a > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: 
 [...]
 ```
+
+
+
+# http/https
+
+```sh
+tcpdump -nX port 80
+
+tcpdump -nX port 443
+```
+
+-n     Don't convert addresses (i.e., host addresses, port numbers, etc.) to names.
+-X     When parsing and printing, in addition to printing the headers of each packet, print the  data  of
+       each  packet (minus its link level header) in hex and ASCII.  This is very handy for analysing new
+       protocols.
+
+
+
+Oder
+
+```
+tcpdump -nA port 80
+```
+
+-A     Print each packet (minus its link level header) in ASCII.  Handy for capturing web pages.
 
