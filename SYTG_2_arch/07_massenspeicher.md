@@ -99,6 +99,46 @@ Nachteile:
 
 
 
+# RAID
+
+**Redundant Array of Independent Disks**
+
+Fehlertoleranz / *fault tolerance*: Kein Datenverlust wenn eine Festplatte kaputt geht – durch mehrere, zusammengeschaltete Festplatten.
+
+Standard Level (der RAID Level sagt nichts über die Anzahl der Festplatten aus):
+
+- RAID 0: Kein Ausfallschutz nur mehr Speicher und Performance
+
+  <img src="fig/390px-RAID_0.svg.png" alt="img" style="zoom:33%;" />
+
+- RAID 1: mindestens 2 Platten (meist genau 2), Daten werden gespiegelt, höhere Read-Performance, gleiche Write Performance, alle bis auf eine Platte dürfen ausfallen
+
+  <img src="fig/390px-RAID_1.svg.png" alt="img" style="zoom:33%;" />
+  
+- RAID 2, 3 und 4 selten bis gar nicht verwendet
+
+- RAID 5: höhere Read-Performance, gleiche Write Performance. Bessere Speichernutzung als RAID 1. Daten werden auf mehrere Platten verteilt. Daten auf einer Platte können von zusätzlichen Daten (parity) die auf die anderen Platten verteilt sind wiederhergestellt werden. Mindestens 3 Festplatten. Parity benötigt ein Platte, d.h. bei 5 Platten wird ein fünftel für Parity verwendet. Eine Festplatte darf ausfallen.
+
+  <img src="fig/800px-RAID_5.svg.png" alt="img" style="zoom:33%;" />
+
+- RAID 6: Wie RAID 5 nur wird doppelt so viel parity gespeichert. Mindestens 4 Festplatten, 2 dürfen ausfallen. Parity benötigt zwei Platten, d.h. bei 5 Platten werden zwei fünftel für Parity verwendet. 
+
+  <img src="fig/1024px-RAID_6.svg.png" alt="img" style="zoom:33%;" />
+
+Hybrid: 
+
+- RAID 10 (auch RAID 1+0) ist RAID 0 kombiniert mit RAID 1. Read and write performance ist erhöht, jedoch steht nur der halbe Platz zur Verfügung (wie bei RAID 1). Mindestens 4 Platten. Gut für Anwendungen die hohe in-/out Datenraten erfordern bei gleichzeitiger Ausfallsicherheit (z.B. Datenbanken)
+
+  <img src="fig/768px-RAID_10_01.svg.png" alt="img" style="zoom:33%;" />
+
+[Seagate RAID Capacity Calculator](https://www.seagate.com/gb/en/internal-hard-drives/raid-calculator/)
+
+[wikipedia RAID](https://en.wikipedia.org/wiki/RAID)
+
+[YouTube: What is RAID 0, 1, 5, & 10?](https://youtu.be/U-OCdTeZLac)
+
+
+
 # Bänder (Tape)
 
 Für den professionellen Bereich.
