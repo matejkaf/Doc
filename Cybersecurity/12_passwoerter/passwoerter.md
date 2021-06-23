@@ -51,10 +51,10 @@ Username:Password:UID:GID:Info:Home:Shell
 Möglichkeit um in den Besitz von Passwörtern zu kommen 
 
 - **Erraten** (*password guessing*) – selten erfolgreiche
-- **Erfragen**, social engineering ("this is  technical support calling, please help me, this is very urgent, your computer was hacked ... please tell me your password")
+- **Erfragen**, social engineering ("this is  technical support calling, please be kind and help me, this is very urgent, your computer was hacked ... please tell me your password")
 - **Phishing** (gefälschte Login Seiten)
-- **Keylogger** (Hardware, Malware, side channel attack)
-- **Passwort** File stehlen (password breach) und Passwörter knacken
+- **Keylogger** (Hardware, Malware, *side channel attack*)
+- **Passwort** File stehlen (*password breach*) und Passwörter knacken (*password cracking*)
 
 
 
