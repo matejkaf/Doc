@@ -17,7 +17,7 @@ Abwägung:
 
 Technologie:
 
-- Festplatte (Harddisk)
+- HDD (Harddisk, Festplatte)
 - Flash
   - SSD (Solid State Disk)
   - Speicherkarten (Kameras), USB-Stick
