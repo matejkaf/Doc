@@ -3,8 +3,8 @@ title: ARP
 subtitle: Address Resolution Protocol
 ---
 
-Das ARP – **Address Resolution Protocol** –  dient dazu Link Layer Adressen aufgrund von Network Layer Adressen zu finden.
-
+* TOC
+{:toc}
 Beschreibung: 
 
 - Host A will **an Host B** ein IP Paket schicken. 
@@ -27,21 +27,23 @@ Der ARP Vorgang muss nur beim ersten Kommunikationsversuch durchgeführt werden,
 
 
 
-## Gratuitous ARP Reply
+# Gratuitous ARP Reply
 
 Zur Beschleunigung: neues Gerät im Netzwerk kann ein gratuitous (de: grundlos) ARP Reply als broadcast schicken. Damit lernen alle Hosts die das empfangen die MAC und IP Adresse dieses Geräts.
 
 Dieses Verhalten wird beim ARP cache poisoning ausgenutzt.
 
+Bzw. kein Host prüft die Plausibilität empfangener ARP Replies, diese werden einfach übernommen und der ARP Cache entsprechend upgedatet.
 
 
-## ARP Cache
+
+# ARP Cache
 
 Jeder neu in den ARP Cache aufgenommene Eintrag erhält eine zufällig gewählte Lebensdauer zwischen **15 und 45 Sekunden** zugewiesen [[serverfault 2018](https://serverfault.com/a/924165)]. Dies gilt in neueren Systemen, früher verwendete Werte sind 60 Sekunden in Linux und 2 Minuten in Windows [[superuser 2018](https://superuser.com/a/1345151)]. Die Zeit wird jedesmal neu gestartet wenn der ARP Eintrag verwendet wird.
 
 
 
-## ARP und WLAN
+# ARP und WLAN
 
 ARP wird in 802.3 und 802.11 gleichermaßen verwendet
 
