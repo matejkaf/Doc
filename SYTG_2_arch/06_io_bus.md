@@ -18,7 +18,7 @@ tags: [lecture, 2AHITS_Teach]
     (Universal Serial Bus) zum Anschluss diverser Peripheriekomponenten (Tastatur, Maus, Webcam, Mic, Lautsprecher, Externe Festplatten, USB Sticks, ...)
   - **Ethernet** LAN, **1 Gbit/s**, Netzwerk
   - **Thunderbolt** (=PCIe+DisplayPort+USB) / (3) **40 Gbit/s**
-    Universal-Anschluss, kombiniert DisplayPort (damit auch USB) und PCIe. Zusätzlich Netzteil Anschluss möglich ("Power Delivery", z.B. Laptop). Verwendet USB-C Stecker. Ziel: ein Anschluss für alles
+    Universal-Anschluss, USB-C Stecker, kombiniert DisplayPort (damit auch USB) und PCIe. Zusätzlich Netzteil Anschluss möglich ("Power Delivery", z.B. Laptop). Ziel: ein Anschluss für alles
 
 Außer PCIe sind alle **hot plugging** fähig, d.h. Geräte können im Betrieb hinzugefügt und entfernt werden.
 

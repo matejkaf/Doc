@@ -1,5 +1,6 @@
 ---
 title: Massenspeicher
+subtitle: HDD, SSD, Magnetbänder, Optische Laufwerke
 tags: [lecture, 2AHITS_Teach]
 ---
 
