@@ -11,7 +11,7 @@ Abwägung:
 - Kosten/MB
 - Geschwindigkeit
 - Datenmenge
-- Lagerfähigkeit
+- Lebensdauer / Lagerfähigkeit
 
 
 
