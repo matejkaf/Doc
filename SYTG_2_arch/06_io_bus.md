@@ -6,18 +6,18 @@ tags: [lecture, 2AHITS_Teach]
 * TOC
 {:toc}
 - I/O Busse innerhalb des Gehäuses:
-  - **PCIe** (direkt am Motherboard), (3.0, x4) 32 Gbit/s
-    (Peripheral Component Interconnect Express ): Desktop Motherboard hat typischerweise 2-4 PCIe Steckplätze. Darauf gesteckt werden können Grafikkarten, Festplattenkontroller, Netzwerk-Interface-karten (NIC), etc.
-  - **SATA** (per Kabel), (rev 3.0) 6 Gbit/s
+  - **PCIe** (direkt am Motherboard), (3.0, x4) **32 Gbit/s**
+    (Peripheral Component Interconnect Express ): Desktop Motherboard hat typischerweise 2-4 PCIe Steckplätze. Für Grafikkarten, Festplattenkontroller, Netzwerk-Interface-karten (NIC), etc.
+  - **SATA** (per Kabel), (rev 3.0) **6 Gbit/s**
     Typisch 6-8 auf Motherboard, für Festplatten.
 
 - I/O Busse außerhalb (Kabel):
-  - **DisplayPort**, (1.3) 32 Gbit/s
+  - **DisplayPort**, (1.3) **32 Gbit/s**
     Zum Anschluss von bis zu 3 Stk. 4K Monitoren in daisy chain
-  - **USB**, (2.0) 0,5 Gbit/s / (3.0) 5 Gbit/s
+  - **USB**, (2.0) 0,5 Gbit/s / (3.0) **5 Gbit/s**
     (Universal Serial Bus) zum Anschluss diverser Peripheriekomponenten (Tastatur, Maus, Webcam, Mic, Lautsprecher, Externe Festplatten, USB Sticks, ...)
-  - **Ethernet** LAN, 1 Gbit/s, Netzwerk
-  - **Thunderbolt** (=PCIe+DisplayPort+USB) / (3) 40 Gbit/s
+  - **Ethernet** LAN, **1 Gbit/s**, Netzwerk
+  - **Thunderbolt** (=PCIe+DisplayPort+USB) / (3) **40 Gbit/s**
     Universal-Anschluss, kombiniert DisplayPort (damit auch USB) und PCIe. Zusätzlich Netzteil Anschluss möglich ("Power Delivery", z.B. Laptop). Verwendet USB-C Stecker. Ziel: ein Anschluss für alles
 
 Außer PCIe sind alle **hot plugging** fähig, d.h. Geräte können im Betrieb hinzugefügt und entfernt werden.
