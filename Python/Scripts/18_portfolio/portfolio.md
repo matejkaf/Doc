@@ -40,13 +40,27 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
   
     -  1 Teil Savity / 1 Teil Hello / 1 Teil Fill Up Fond
 
+ 
 
-    
+
+
 ## Fill Up Fond
 
 Wenn Aktienteil mehr als 20% vom Höchstand verliert zum Auffüllen.
 
 Aktueller Stand: **€ 6.000,–** (2020/Q1)
+
+
+
+## 2021/Q2
+
+- Savity Konservativ dazugekommen. Für ein Jahr
+  - 1000,- mtl. (Sparplan)
+  - 3000,- pro Quartal
+  - =2*12.000,- = 24.000,-
+- Hello! reduktion auf +3.000,- pro Quartal
+
+
 
 ## 2020/Q1
 
@@ -60,6 +74,9 @@ Aktueller Stand: **€ 6.000,–** (2020/Q1)
 
 Hello Verr.: 18797+6000+3000
 Hello TopZ:  85.144,-
+
+
+
 
 
 ## Ziel Allokation

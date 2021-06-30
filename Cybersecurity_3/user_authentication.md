@@ -1,16 +1,26 @@
-# Bentzer Authentifikation
+---
+title: Benutzer Authentifizierung
+subtitle: Cybersecurity
+---
 
-- User Identifizieren (Wer sind sie?)
-- User Authentifizieren (Zeigen sie ihren Ausweis!)
-- Autorisierung (Sie dürfen (nicht) rein)
+- **Identifizieren** (Wer sind sie?)
+- **Authentifizieren** (Zeigen sie ihren Ausweis!)
+- **Autorisierung** / access control (Sie dürfen (nicht) rein)
+  - kann auch selektiv sein (hier OK, da drüben nicht)
 
-ToDo: Stallings - S65 Table 3.1
+Stallings - S65 Table 3.1:
+
+![image-20210628185034878](fig/image-20210628185034878.png)
+
+
 
 ## Identifikation
 
 - Username
 - Nummer
 - Email Adresse
+
+
 
 ## Authentifikation
 

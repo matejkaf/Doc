@@ -234,7 +234,7 @@ Target a block from a resolved domain name:
 
 ```
 
-Kommandos können mittel TAB vervollständigt werden.
+Kommandos können mittels TAB vervollständigt werden.
 
 ```
 msf6 > workspace -a lab

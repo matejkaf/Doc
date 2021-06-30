@@ -1,6 +1,6 @@
-ITS1 in der 3AHITS
+# ITS1 in der 3AHITS
 
-- 2h ganze Klasse
+- 2h ganze Klasse, und
 - 2h mit wöchentlichem Gruppenwechsel (parallel zu INSY)
 
 ---
@@ -18,3 +18,5 @@ Stoff:
 
 Themenübersicht:
 
+- Markdown
+- 

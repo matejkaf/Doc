@@ -29,7 +29,7 @@ Tools für binäre Anzeige:
 
 
 
-## xxd
+# xxd
 
  ([manpage](https://linux.die.net/man/1/xxd))
 
@@ -58,7 +58,7 @@ $ xxd shopping.txt
 
 Hinweis: `xxd` kann auch verwendet werden um hex Daten in binär zu wandeln.
 
-## hexdump
+# hexdump
 
 [hexdump manpage](https://man7.org/linux/man-pages/man1/hexdump.1.html)
 
@@ -98,7 +98,7 @@ $ hexdump -C shopping.txt
 
 
 
-## od
+# od
 
 Noch flexibler: `od` ([manpage](https://man7.org/linux/man-pages/man1/od.1.html)) … octal dump?
 
@@ -132,7 +132,7 @@ $ od -A d -t u1z shopping.txt
 
 
 
-## Binärdaten
+# Binärdaten
 
 Download `htl_logo.jpg`:
 
@@ -144,9 +144,9 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/htl_logo.jpg
 - Analysiere die Anzeige von `xxd`, 
 - schau dir den Anfang der Datei an (`head`).
 
-> [!2AHITS G1 16.04.2021]
 
-## Sonderzeichen und UTF-8
+
+# Sonderzeichen und UTF-8
 
 Sonderzeichen im Text, z.B. Umlaute:
 
@@ -182,7 +182,7 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/arabic.txt
 
 
 
-## Latin 1
+# Latin 1
 
 Ältere Text-Kodierungen sind eingeschränkt auf ein Byte pro Zeichen und erweitern den ASCII Code im Bereich 128–255. Siehe [ISO 8859-1 (latin-1)](https://de.wikipedia.org/wiki/ISO_8859-1)
 
@@ -196,7 +196,7 @@ Vergleiche: [ISO 8859-5 (Kyrillisch)](https://de.wikipedia.org/wiki/ISO_8859-5)
 
 
 
-## iconv
+# iconv
 
 iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandeln der Kodierung
 
@@ -205,6 +205,5 @@ iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandel
 $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
 # iconv: keine Änderung der Datei, Ausgabe auf stdout
 ```
-
 
 

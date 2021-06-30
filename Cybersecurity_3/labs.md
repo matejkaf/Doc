@@ -17,6 +17,7 @@ D.h. 15-17 Termine pro Gruppe
 - KALI Linux und Wireshark: Aufzeichnen einer HTTP Verbindung
 - Mittracen einer telnet Verbindung. Passwort wird im Klartext übertragen
 - OpenVAS (siehe Videos Eric Amberg)
+- Linux File Permissions, Beispiel: Apache `/var/www/html` (owner ist `root`)
 - Python: Passwort Cracker, von einer Person ist bekannt, dass sie einen Frauennamen sowie das Geburtsjahr als Passwort verwendet.
 - **Excel Makrovirus** erstellen: Siehe "Amberg Video 177 Einen Makro-Virus mit Empire erstellen"
 - **Trojaner** erstellen, putty.exe als Carrier Application, msfvenom erzeugt Wrapper, Opfer Windows 7, "Amberg Video 179. Einen Trojaner selbst erstellen".

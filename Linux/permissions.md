@@ -12,6 +12,8 @@ title: Linux File Permissions
 - [Unix file types](https://en.wikipedia.org/wiki/Unix_file_types)
 - [What do the fields in ls -al output mean?](https://unix.stackexchange.com/questions/103114/what-do-the-fields-in-ls-al-output-mean)
 
+
+
 ## Basics
 
 ```bash
@@ -89,16 +91,84 @@ allows the affected user to enter the directory (make this directory your workin
 
 **Interesting case**: If you have write + execute permissions on a directory, you can {delete,rename} items living within even if you don't have write perimission on those items. (use sticky bit to prevent this).
 
+```sh
+# user: root
+$ chmod o-r www
+$ ls -l
+drwxr-x--x  3 root root  4096 Feb 23 05:13 www
+```
+
+`r` flag für User `kali` ist nicht gesetzt daher kann der Inhalt des Directories nicht angezeigt werden:
+
+```sh
+# user: kali
+$ cd /var
+$ ls www
+ls: cannot open directory 'www': Permission denied
+```
+
+Aber da das `x` Flag gesetzt ist, kann das Directory durch den User `kali` betreten werden, d.h. das Working Directory kann `www` sein:
+
+
+```sh
+# user: kali
+$ cd www                                                                                                                                                                                      $ ls    
+ls: cannot open directory '.': Permission denied
+
+```
+
+In weitere Unterverzeichnis kann weiter gewechselt werden:
+
+
+```sh
+# user: kali
+$ cd html                                                                                                                                                                                     $ ls                                                                                                                                                                                        index.html  index.nginx-debian.html
+```
+
+`r` Flag gesetzt, `x` Flag gelöscht
+
+
+```sh
+# user: root
+$ chmod o+r www
+$ chmod o-x www
+```
+
+
+```sh
+# user: kali
+
+$ ls www
+ls: cannot access 'www/html': Permission denied
+html
+# Fehlermeldung aber dir Inhalt wird angezeigt
+
+# working directory kann nicht gesetzt werden
+$ cd www
+cd: permission denied: www
+
+# Weitere subdirs sind nicht erreichbar
+$ cd www/html
+cd: permission denied: www/html
+
+$ ls www/html
+ls: cannot access 'www/html': Permission denied
+```
+
+
+
 
 
 ## Permissions Ändern
 
+### file permissions
+
 `chmod`
 
 ```bash
-$ chmod o=rw myfile.txt
-$ chmod g-r myfile.txt
-$ chmod u+x myfile.txt 
+$ chmod o=rw myfile.txt # o ... other
+$ chmod g-r myfile.txt  # g ... group
+$ chmod u+x myfile.txt  # u ... user
 $ chmod +x myfile.txt 
 ```
 
@@ -110,11 +180,15 @@ $ chmod 755 myfile.txt
 $ chmod u=rwx,g=rx,o=rx myfile.txt
 ```
 
+
+
 ### owner / group
 
 Ein File/Directory hat genau einen owner (User) und gehört zu genau einer Gruppe.
 
 Ein User kann zu mehreren Gruppen gehören.
+
+
 
 #### change owner
 
@@ -227,18 +301,32 @@ $ cat file.txt
 
 ## Advanced Directory Permission Flags
 
-[**Linux File Permission Confusion**](https://www.hackinglinuxexposed.com/articles/20030417.html)
+- [Linux File Permission Confusion](https://www.hackinglinuxexposed.com/articles/20030417.html)
 
-[**Linux File Permission Confusion pt 2**](https://www.hackinglinuxexposed.com/articles/20030424.html)
+- [Linux File Permission Confusion pt 2](https://www.hackinglinuxexposed.com/articles/20030424.html)
+
+- [How to use special permissions: the setuid, setgid and sticky bits](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits)
+
+
 
 ### Sticky Bit
 
-The **sticky bit** (Anzeige anstatt others `x`: `T`, or `t` if the execute bit is set for others) states that files and directories within that directory may only be deleted or renamed by their owner (or root). 
-So what do you do when you need to allow write permissions on a directory for a group of people, but don't want to let them delete each other's files? That's the purpose of the "sticky" bit, `t` which you can apply to a directory[[2\]](https://www.hackinglinuxexposed.com/articles/20030424.html#footnote-2). When this bit is set, a user can only delete files if they are the owner. This is most common in directories like `/tmp`:
+The **sticky bit** () states that files and directories within that directory may only be deleted or renamed by their owner (or root). 
+
+So what do you do when you need to allow write permissions on a directory for a group of people, but don't want to let them delete each other's files? That's the purpose of the "sticky" bit, `t` which you can apply to a directory. When this bit is set, a user can only delete files if they are the owner. This is most common in directories like `/tmp`:
 
 ```bash
 $ ls -ld /tmp
   drwxrwxrwt    4 root     root         4096 Jan 22 16:43 /tmp
+#          |
+#          +-- t = sticky + x
+#              T = sticky (execute bit not set)
+```
+
+While to apply the sticky bit: 
+
+```sh
+$ chmod o+t test
 ```
 
 
@@ -250,8 +338,15 @@ If you set the sgid bit on a directory, any files created in that directory will
 ```bash
 $ cd /path/to/some/sgid_directory; ls -ld .
   drwxrwsrwt    2 root     fuzzies      4096 Oct 13  9:52 .
-  # Note the 's' in group's execute field above 
-  # (small s: x is set, large S: x is cleared).
+#       |
+#       +-- s = sgid + x
+#           S = sgid (execute bit not set)
+```
+
+Set the `setgid` bit on a directory:
+
+```bash
+$ chmod g+s test
 ```
 
 
@@ -267,30 +362,17 @@ An example of an executable with the setuid permission set is `passwd`, the util
 ```bash
 ls -l /bin/passwd
 -rwsr-xr-x. 1 root root 27768 Feb 11  2017 /bin/passwd
+#  |
+#  +-- s = setuid + x
+#      S = setuid (execute bit not set)
 ```
 
 How to identify the `setuid` bit? As you surely have noticed looking at the output of the command above, the `setuid` bit is represented by an `s` in place of the `x` of the executable bit. The `s`implies that the executable bit is set, otherwise you would see a capital `S`. This happens when the `setuid` or `setgid` bits are set, but the executable bit is not, showing the user an inconsistency: the `setuid` and `setgit` bits have no effect if the executable bit is not set. The setuid bit has no effect on directories.
 
-Quelle: [How to use special permissions: the setuid, setgid and sticky bits](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits)
-
-### Setzen der speziellen Bits
-
-Set the `setgid` bit on the directory:
-
-```bash
-$ chmod g+s test
-```
-
 To apply the `setuid`
 
-```
+```sh
 $ chmod u+s file
-```
-
-While to apply the sticky bit: 
-
-```
-$ chmod o+t test
 ```
 
 
@@ -306,9 +388,10 @@ Admin/super user/root legt einen Ordner `projects` an in dem befinden sich weite
 
 - User: Alice, Bob
 - User: Carol, Dan
-
 - Gruppe: math
 - Gruppe: sew
+
+
 
 ## 2do
 

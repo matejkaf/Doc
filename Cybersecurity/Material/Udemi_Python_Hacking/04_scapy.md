@@ -228,6 +228,8 @@ print("[+] unanswered packets")
 print(unanswered.summary())
 ```
 
+
+
 ```
 [+] unanswered packets
 Ether / ARP who has 192.168.178.0 says 192.168.178.81
@@ -241,238 +243,7 @@ Ether / ARP who has 192.168.178.8 says 192.168.178.81
 Ether / ARP who has 192.168.178.9 says 192.168.178.81
 Ether / ARP who has 192.168.178.10 says 192.168.178.81
 Ether / ARP who has 192.168.178.11 says 192.168.178.81
-Ether / ARP who has 192.168.178.12 says 192.168.178.81
-Ether / ARP who has 192.168.178.13 says 192.168.178.81
-Ether / ARP who has 192.168.178.14 says 192.168.178.81
-Ether / ARP who has 192.168.178.15 says 192.168.178.81
-Ether / ARP who has 192.168.178.16 says 192.168.178.81
-Ether / ARP who has 192.168.178.17 says 192.168.178.81
-Ether / ARP who has 192.168.178.18 says 192.168.178.81
-Ether / ARP who has 192.168.178.19 says 192.168.178.81
-Ether / ARP who has 192.168.178.20 says 192.168.178.81
-Ether / ARP who has 192.168.178.24 says 192.168.178.81
-Ether / ARP who has 192.168.178.25 says 192.168.178.81
-Ether / ARP who has 192.168.178.26 says 192.168.178.81
-Ether / ARP who has 192.168.178.28 says 192.168.178.81
-Ether / ARP who has 192.168.178.29 says 192.168.178.81
-Ether / ARP who has 192.168.178.30 says 192.168.178.81
-Ether / ARP who has 192.168.178.31 says 192.168.178.81
-Ether / ARP who has 192.168.178.32 says 192.168.178.81
-Ether / ARP who has 192.168.178.33 says 192.168.178.81
-Ether / ARP who has 192.168.178.34 says 192.168.178.81
-Ether / ARP who has 192.168.178.35 says 192.168.178.81
-Ether / ARP who has 192.168.178.36 says 192.168.178.81
-Ether / ARP who has 192.168.178.37 says 192.168.178.81
-Ether / ARP who has 192.168.178.38 says 192.168.178.81
-Ether / ARP who has 192.168.178.39 says 192.168.178.81
-Ether / ARP who has 192.168.178.41 says 192.168.178.81
-Ether / ARP who has 192.168.178.42 says 192.168.178.81
-Ether / ARP who has 192.168.178.43 says 192.168.178.81
-Ether / ARP who has 192.168.178.44 says 192.168.178.81
-Ether / ARP who has 192.168.178.45 says 192.168.178.81
-Ether / ARP who has 192.168.178.46 says 192.168.178.81
-Ether / ARP who has 192.168.178.47 says 192.168.178.81
-Ether / ARP who has 192.168.178.48 says 192.168.178.81
-Ether / ARP who has 192.168.178.49 says 192.168.178.81
-Ether / ARP who has 192.168.178.50 says 192.168.178.81
-Ether / ARP who has 192.168.178.51 says 192.168.178.81
-Ether / ARP who has 192.168.178.52 says 192.168.178.81
-Ether / ARP who has 192.168.178.53 says 192.168.178.81
-Ether / ARP who has 192.168.178.54 says 192.168.178.81
-Ether / ARP who has 192.168.178.55 says 192.168.178.81
-Ether / ARP who has 192.168.178.56 says 192.168.178.81
-Ether / ARP who has 192.168.178.57 says 192.168.178.81
-Ether / ARP who has 192.168.178.60 says 192.168.178.81
-Ether / ARP who has 192.168.178.61 says 192.168.178.81
-Ether / ARP who has 192.168.178.62 says 192.168.178.81
-Ether / ARP who has 192.168.178.63 says 192.168.178.81
-Ether / ARP who has 192.168.178.64 says 192.168.178.81
-Ether / ARP who has 192.168.178.65 says 192.168.178.81
-Ether / ARP who has 192.168.178.66 says 192.168.178.81
-Ether / ARP who has 192.168.178.67 says 192.168.178.81
-Ether / ARP who has 192.168.178.68 says 192.168.178.81
-Ether / ARP who has 192.168.178.69 says 192.168.178.81
-Ether / ARP who has 192.168.178.70 says 192.168.178.81
-Ether / ARP who has 192.168.178.71 says 192.168.178.81
-Ether / ARP who has 192.168.178.72 says 192.168.178.81
-Ether / ARP who has 192.168.178.73 says 192.168.178.81
-Ether / ARP who has 192.168.178.74 says 192.168.178.81
-Ether / ARP who has 192.168.178.75 says 192.168.178.81
-Ether / ARP who has 192.168.178.76 says 192.168.178.81
-Ether / ARP who has 192.168.178.77 says 192.168.178.81
-Ether / ARP who has 192.168.178.78 says 192.168.178.81
-Ether / ARP who has 192.168.178.79 says 192.168.178.81
-Ether / ARP who has 192.168.178.80 says 192.168.178.81
-Ether / ARP who has 192.168.178.81 says 192.168.178.81
-Ether / ARP who has 192.168.178.82 says 192.168.178.81
-Ether / ARP who has 192.168.178.83 says 192.168.178.81
-Ether / ARP who has 192.168.178.84 says 192.168.178.81
-Ether / ARP who has 192.168.178.85 says 192.168.178.81
-Ether / ARP who has 192.168.178.86 says 192.168.178.81
-Ether / ARP who has 192.168.178.87 says 192.168.178.81
-Ether / ARP who has 192.168.178.88 says 192.168.178.81
-Ether / ARP who has 192.168.178.89 says 192.168.178.81
-Ether / ARP who has 192.168.178.90 says 192.168.178.81
-Ether / ARP who has 192.168.178.91 says 192.168.178.81
-Ether / ARP who has 192.168.178.92 says 192.168.178.81
-Ether / ARP who has 192.168.178.93 says 192.168.178.81
-Ether / ARP who has 192.168.178.94 says 192.168.178.81
-Ether / ARP who has 192.168.178.95 says 192.168.178.81
-Ether / ARP who has 192.168.178.96 says 192.168.178.81
-Ether / ARP who has 192.168.178.97 says 192.168.178.81
-Ether / ARP who has 192.168.178.98 says 192.168.178.81
-Ether / ARP who has 192.168.178.99 says 192.168.178.81
-Ether / ARP who has 192.168.178.100 says 192.168.178.81
-Ether / ARP who has 192.168.178.101 says 192.168.178.81
-Ether / ARP who has 192.168.178.102 says 192.168.178.81
-Ether / ARP who has 192.168.178.103 says 192.168.178.81
-Ether / ARP who has 192.168.178.104 says 192.168.178.81
-Ether / ARP who has 192.168.178.105 says 192.168.178.81
-Ether / ARP who has 192.168.178.106 says 192.168.178.81
-Ether / ARP who has 192.168.178.107 says 192.168.178.81
-Ether / ARP who has 192.168.178.108 says 192.168.178.81
-Ether / ARP who has 192.168.178.109 says 192.168.178.81
-Ether / ARP who has 192.168.178.110 says 192.168.178.81
-Ether / ARP who has 192.168.178.111 says 192.168.178.81
-Ether / ARP who has 192.168.178.112 says 192.168.178.81
-Ether / ARP who has 192.168.178.113 says 192.168.178.81
-Ether / ARP who has 192.168.178.114 says 192.168.178.81
-Ether / ARP who has 192.168.178.115 says 192.168.178.81
-Ether / ARP who has 192.168.178.116 says 192.168.178.81
-Ether / ARP who has 192.168.178.117 says 192.168.178.81
-Ether / ARP who has 192.168.178.118 says 192.168.178.81
-Ether / ARP who has 192.168.178.119 says 192.168.178.81
-Ether / ARP who has 192.168.178.120 says 192.168.178.81
-Ether / ARP who has 192.168.178.121 says 192.168.178.81
-Ether / ARP who has 192.168.178.122 says 192.168.178.81
-Ether / ARP who has 192.168.178.123 says 192.168.178.81
-Ether / ARP who has 192.168.178.124 says 192.168.178.81
-Ether / ARP who has 192.168.178.125 says 192.168.178.81
-Ether / ARP who has 192.168.178.126 says 192.168.178.81
-Ether / ARP who has 192.168.178.127 says 192.168.178.81
-Ether / ARP who has 192.168.178.128 says 192.168.178.81
-Ether / ARP who has 192.168.178.129 says 192.168.178.81
-Ether / ARP who has 192.168.178.130 says 192.168.178.81
-Ether / ARP who has 192.168.178.131 says 192.168.178.81
-Ether / ARP who has 192.168.178.132 says 192.168.178.81
-Ether / ARP who has 192.168.178.133 says 192.168.178.81
-Ether / ARP who has 192.168.178.134 says 192.168.178.81
-Ether / ARP who has 192.168.178.135 says 192.168.178.81
-Ether / ARP who has 192.168.178.136 says 192.168.178.81
-Ether / ARP who has 192.168.178.137 says 192.168.178.81
-Ether / ARP who has 192.168.178.138 says 192.168.178.81
-Ether / ARP who has 192.168.178.139 says 192.168.178.81
-Ether / ARP who has 192.168.178.140 says 192.168.178.81
-Ether / ARP who has 192.168.178.141 says 192.168.178.81
-Ether / ARP who has 192.168.178.142 says 192.168.178.81
-Ether / ARP who has 192.168.178.143 says 192.168.178.81
-Ether / ARP who has 192.168.178.144 says 192.168.178.81
-Ether / ARP who has 192.168.178.145 says 192.168.178.81
-Ether / ARP who has 192.168.178.146 says 192.168.178.81
-Ether / ARP who has 192.168.178.147 says 192.168.178.81
-Ether / ARP who has 192.168.178.148 says 192.168.178.81
-Ether / ARP who has 192.168.178.149 says 192.168.178.81
-Ether / ARP who has 192.168.178.150 says 192.168.178.81
-Ether / ARP who has 192.168.178.151 says 192.168.178.81
-Ether / ARP who has 192.168.178.152 says 192.168.178.81
-Ether / ARP who has 192.168.178.153 says 192.168.178.81
-Ether / ARP who has 192.168.178.154 says 192.168.178.81
-Ether / ARP who has 192.168.178.155 says 192.168.178.81
-Ether / ARP who has 192.168.178.156 says 192.168.178.81
-Ether / ARP who has 192.168.178.157 says 192.168.178.81
-Ether / ARP who has 192.168.178.158 says 192.168.178.81
-Ether / ARP who has 192.168.178.159 says 192.168.178.81
-Ether / ARP who has 192.168.178.160 says 192.168.178.81
-Ether / ARP who has 192.168.178.161 says 192.168.178.81
-Ether / ARP who has 192.168.178.162 says 192.168.178.81
-Ether / ARP who has 192.168.178.163 says 192.168.178.81
-Ether / ARP who has 192.168.178.164 says 192.168.178.81
-Ether / ARP who has 192.168.178.165 says 192.168.178.81
-Ether / ARP who has 192.168.178.166 says 192.168.178.81
-Ether / ARP who has 192.168.178.167 says 192.168.178.81
-Ether / ARP who has 192.168.178.168 says 192.168.178.81
-Ether / ARP who has 192.168.178.169 says 192.168.178.81
-Ether / ARP who has 192.168.178.170 says 192.168.178.81
-Ether / ARP who has 192.168.178.171 says 192.168.178.81
-Ether / ARP who has 192.168.178.172 says 192.168.178.81
-Ether / ARP who has 192.168.178.173 says 192.168.178.81
-Ether / ARP who has 192.168.178.174 says 192.168.178.81
-Ether / ARP who has 192.168.178.175 says 192.168.178.81
-Ether / ARP who has 192.168.178.176 says 192.168.178.81
-Ether / ARP who has 192.168.178.177 says 192.168.178.81
-Ether / ARP who has 192.168.178.178 says 192.168.178.81
-Ether / ARP who has 192.168.178.179 says 192.168.178.81
-Ether / ARP who has 192.168.178.180 says 192.168.178.81
-Ether / ARP who has 192.168.178.181 says 192.168.178.81
-Ether / ARP who has 192.168.178.182 says 192.168.178.81
-Ether / ARP who has 192.168.178.183 says 192.168.178.81
-Ether / ARP who has 192.168.178.184 says 192.168.178.81
-Ether / ARP who has 192.168.178.185 says 192.168.178.81
-Ether / ARP who has 192.168.178.186 says 192.168.178.81
-Ether / ARP who has 192.168.178.187 says 192.168.178.81
-Ether / ARP who has 192.168.178.188 says 192.168.178.81
-Ether / ARP who has 192.168.178.189 says 192.168.178.81
-Ether / ARP who has 192.168.178.190 says 192.168.178.81
-Ether / ARP who has 192.168.178.191 says 192.168.178.81
-Ether / ARP who has 192.168.178.192 says 192.168.178.81
-Ether / ARP who has 192.168.178.193 says 192.168.178.81
-Ether / ARP who has 192.168.178.194 says 192.168.178.81
-Ether / ARP who has 192.168.178.195 says 192.168.178.81
-Ether / ARP who has 192.168.178.196 says 192.168.178.81
-Ether / ARP who has 192.168.178.197 says 192.168.178.81
-Ether / ARP who has 192.168.178.198 says 192.168.178.81
-Ether / ARP who has 192.168.178.199 says 192.168.178.81
-Ether / ARP who has 192.168.178.200 says 192.168.178.81
-Ether / ARP who has 192.168.178.201 says 192.168.178.81
-Ether / ARP who has 192.168.178.202 says 192.168.178.81
-Ether / ARP who has 192.168.178.203 says 192.168.178.81
-Ether / ARP who has 192.168.178.204 says 192.168.178.81
-Ether / ARP who has 192.168.178.205 says 192.168.178.81
-Ether / ARP who has 192.168.178.206 says 192.168.178.81
-Ether / ARP who has 192.168.178.207 says 192.168.178.81
-Ether / ARP who has 192.168.178.208 says 192.168.178.81
-Ether / ARP who has 192.168.178.209 says 192.168.178.81
-Ether / ARP who has 192.168.178.210 says 192.168.178.81
-Ether / ARP who has 192.168.178.211 says 192.168.178.81
-Ether / ARP who has 192.168.178.212 says 192.168.178.81
-Ether / ARP who has 192.168.178.213 says 192.168.178.81
-Ether / ARP who has 192.168.178.214 says 192.168.178.81
-Ether / ARP who has 192.168.178.215 says 192.168.178.81
-Ether / ARP who has 192.168.178.216 says 192.168.178.81
-Ether / ARP who has 192.168.178.217 says 192.168.178.81
-Ether / ARP who has 192.168.178.218 says 192.168.178.81
-Ether / ARP who has 192.168.178.219 says 192.168.178.81
-Ether / ARP who has 192.168.178.220 says 192.168.178.81
-Ether / ARP who has 192.168.178.221 says 192.168.178.81
-Ether / ARP who has 192.168.178.222 says 192.168.178.81
-Ether / ARP who has 192.168.178.223 says 192.168.178.81
-Ether / ARP who has 192.168.178.224 says 192.168.178.81
-Ether / ARP who has 192.168.178.225 says 192.168.178.81
-Ether / ARP who has 192.168.178.226 says 192.168.178.81
-Ether / ARP who has 192.168.178.227 says 192.168.178.81
-Ether / ARP who has 192.168.178.228 says 192.168.178.81
-Ether / ARP who has 192.168.178.229 says 192.168.178.81
-Ether / ARP who has 192.168.178.230 says 192.168.178.81
-Ether / ARP who has 192.168.178.231 says 192.168.178.81
-Ether / ARP who has 192.168.178.232 says 192.168.178.81
-Ether / ARP who has 192.168.178.233 says 192.168.178.81
-Ether / ARP who has 192.168.178.234 says 192.168.178.81
-Ether / ARP who has 192.168.178.235 says 192.168.178.81
-Ether / ARP who has 192.168.178.236 says 192.168.178.81
-Ether / ARP who has 192.168.178.237 says 192.168.178.81
-Ether / ARP who has 192.168.178.238 says 192.168.178.81
-Ether / ARP who has 192.168.178.239 says 192.168.178.81
-Ether / ARP who has 192.168.178.240 says 192.168.178.81
-Ether / ARP who has 192.168.178.241 says 192.168.178.81
-Ether / ARP who has 192.168.178.242 says 192.168.178.81
-Ether / ARP who has 192.168.178.243 says 192.168.178.81
-Ether / ARP who has 192.168.178.244 says 192.168.178.81
-Ether / ARP who has 192.168.178.245 says 192.168.178.81
-Ether / ARP who has 192.168.178.246 says 192.168.178.81
-Ether / ARP who has 192.168.178.247 says 192.168.178.81
-Ether / ARP who has 192.168.178.248 says 192.168.178.81
-Ether / ARP who has 192.168.178.249 says 192.168.178.81
-Ether / ARP who has 192.168.178.250 says 192.168.178.81
+[...]
 Ether / ARP who has 192.168.178.251 says 192.168.178.81
 Ether / ARP who has 192.168.178.252 says 192.168.178.81
 Ether / ARP who has 192.168.178.253 says 192.168.178.81
@@ -587,6 +358,35 @@ answered_list, _ = scapy.srp(arp_request_ether, timeout=1, verbose=False)
 
 
 Ergebnis des Scans in eine Datenstruktur schreiben und Programm in mehrere kleinere Funktionen aufteilen. Jede Funktion erfüllt nur eine einzige Aufgabe.
+
+```python
+import scapy.all as scapy
+
+def scan(ip):
+	""" Return a client list {"ip:"...,"mac":...} """
+  arp_request = scapy.ARP(pdst=ip)
+  broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
+  arp_request_ether = broadcast/arp_request
+  answered_list, _ = scapy.srp(arp_request_ether, timeout=1, verbose=False) 
+  clients_list = []
+  for answer in answered_list:
+    arp_request,arp_response=answer[0],answer[1]
+    target_client={"ip":arp_response.psrc, "mac":arp_response.hwsrc}
+    clients_list.append(target_client)
+    return clients_list
+
+def print_clients(client_list):
+  """ Print IP and MAC of clients """
+  print("IP\t\t\tMAC Address\n------------------------------------------")
+  for target_client in client_list:
+    print(f"{target_client['ip']}\t\t{target_client['mac']}")
+    print("------------------------------------------")
+
+
+
+clients_list = scan("192.168.178.81/24")
+print_clients(clients_list)
+```
 
 
 

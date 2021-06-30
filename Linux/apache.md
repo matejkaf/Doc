@@ -40,6 +40,12 @@ $ service apache stop
 
 
 
+# Kali Setup
+
+Ist bereits installiert
+
+
+
 # Ubuntu Setup
 
 [Install and Configure Apache](https://tutorials.ubuntu.com/tutorial/install-and-configure-apache#0)
@@ -49,7 +55,7 @@ $ sudo apt update
 $ sudo apt install apache2
 ```
 
-[Test](http://localhost/)
+[http://localhost/](http://localhost/)
 
 ```bash
 $ cd /var/www/html/
@@ -93,7 +99,7 @@ $ nano phptest.php
 
 
 
-
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -104,9 +110,13 @@ echo "My first PHP script!";
 
 </body>
 </html>
+```
+
+
 
 ```bash
 $ wget -O - http://localhost/myhtml/phptest.php
+# -O - ... output to stdout
 $ sudo apt install php
 # check install
 $ wget -O - http://localhost/myhtml/phptest.php

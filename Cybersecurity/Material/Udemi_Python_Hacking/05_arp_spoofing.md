@@ -242,5 +242,39 @@ Die Kommunikation wird aufgezeichnet. Achtung auch auf gecachte Seiten.
 
 Auch wenn die Daten verschlüsselt sind, sind manche Informationen trotzdem informativ und manipulierbar.
 
+# Python
+
+![image-20210624104323604](fig/image-20210624104323604.png)
 
 
+
+![image-20210624104133413](fig/image-20210624104133413.png)
+
+`scapy.ARP` setzt die Source MAC Adresse automatisch auf die eigene MAC Adresse.
+
+
+
+Verschönern der Ausgabe 
+
+- Anzahl der Packets immer auf gleicher Zeile – `\r`
+- bei Abbruch mit `^C`: Schönere Ausgabe
+
+![image-20210624110228453](fig/image-20210624110228453.png)
+
+
+
+# Restore
+
+Ausgangszustand wiederherstellen.
+
+![image-20210624115747504](fig/image-20210624115747504.png)
+
+In diesem Beispiel:
+
+`10.0.2.7` Windows
+
+`10.0.2.1` Router
+
+mit `restore("10.0.2.7","10.0.2.1")` wird die ARP Tabelle der Windows Maschine repariert.
+
+![image-20210624120037152](fig/image-20210624120037152.png)

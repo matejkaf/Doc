@@ -7,7 +7,7 @@ tags: [lecture, unix, shell, bash,2AHITS_Teach ]
 * TOC
 {:toc}
 
-## Mehr über Optionen
+# Mehr über Optionen
 
 - `head`
 
@@ -87,7 +87,7 @@ Systeme können sich bei den Optionen unterscheiden. Gibt unterschiedliche Stand
 
 
 
-## Filter
+# Filter
 
 - `head` / `tail` / `sort`
 
@@ -132,7 +132,7 @@ Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen
 ---
 
 
-## Zählen
+# Zählen
 
 - `nl`: number lines
 
@@ -178,7 +178,7 @@ $ wc --lines sampletextfiles/* | head -n-1 | sort --key=1 --general-numeric-sort
 
 
 
-## Cut, tac, grep
+# Cut, tac, grep
 
 - `cut` (filtert Spalten)
 - `grep` (filtert Zeilen)
@@ -258,7 +258,7 @@ echo '1+2+3' | python3 -c 'print(eval(input()))'
 
 
 
-## Translate
+# Translate
 
 `tr` Translate (einzelne Zeichen ersetzen/löschen)
 
@@ -272,7 +272,7 @@ Mehr Beispiele siehe [tr command in Unix/Linux with examples](https://www.geeksf
 
 
 
-## sed (stream editor)
+# sed (stream editor)
 
 [Sed Command in Linux/Unix with examples](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
 
@@ -291,8 +291,7 @@ hi robots
 ```
 
 
-## Weiterführend
+# Weiterführend
 
 - [List of Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands)
-
 

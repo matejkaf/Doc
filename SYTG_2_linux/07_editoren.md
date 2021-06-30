@@ -18,7 +18,7 @@ nano ist leicht zu erlernen und zu bedienen und reicht für einfache Aufgaben au
 
 
 
-## vi / vim
+# vi / vim
 
 - Vorteil: Auf jedem System vorhanden, großer Funktionsumfang, manche Profis schwören drauf
 
@@ -29,7 +29,7 @@ nano ist leicht zu erlernen und zu bedienen und reicht für einfache Aufgaben au
 
 
 
-### Bedienungsbasics
+## Bedienungsbasics
 
 2 Modi
 
@@ -61,7 +61,7 @@ Cursor bewegen, Cut,Copy, Paste (wie?)
 
 
 
-### VI Editing commands
+## VI Editing commands
 
 [Quelle](https://www.guru99.com/the-vi-editor.html)
 
@@ -86,7 +86,7 @@ Cursor bewegen, Cut,Copy, Paste (wie?)
 - S - Substitute entire line and begin to insert at the beginning of the line
 - ~ - Change case of individual character
 
-### Vi editor command keys
+## Vi editor command keys
 
 [Quelle](https://kb.iu.edu/d/afdc)
 
@@ -130,7 +130,7 @@ Cursor bewegen, Cut,Copy, Paste (wie?)
 
 
 
-## nano
+# nano
 
 Leichter bedienbar als vi. Muss manchmal nachinstalliert werden.
 
@@ -140,7 +140,7 @@ Ausprobieren in [JSLinux](https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg
 
 
 
-## Visual Studio Code
+# Visual Studio Code
 
 Installieren unter Windows: [User Installer](https://code.visualstudio.com/download) verwenden (kein Admin Acount notwendig).
 

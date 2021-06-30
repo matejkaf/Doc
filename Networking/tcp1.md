@@ -19,7 +19,7 @@ Will ein **Client** mit einer **Server-Anwendung** Daten austauschen ist zuerst 
 
 Ports eines Hosts mit einer daran gebundenen Anwendung werden als **offene Ports** bezeichnet, alle anderen Ports sind geschlossen.
 
-Beispiel – Offene TCP Ports eines Hosts mit Metasploit:
+Beispiel – Offene TCP Ports eines Hosts mit Metasploit (`nmap`):
 
 ```
 PORT     STATE SERVICE

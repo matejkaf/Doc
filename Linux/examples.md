@@ -171,7 +171,7 @@ done
 
 
 
-## Web Grabber
+## wget – Web Grabber
 
 Download einer kompletten Website
 

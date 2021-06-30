@@ -49,9 +49,9 @@ ARP wird in 802.3 und 802.11 gleichermaßen verwendet
 
 
 
-# Interna
+# Protokoll
 
-ARP ist ein [Ethernet Frame](./ethernet) mit EtherType 0x0806. 
+ARP ist  ein Layer 3 Pxrotokoll (wie IP), verwendet einen [Ethernet Frame](./ethernet) mit EtherType 0x0806. 
 
 [RFC826](https://datatracker.ietf.org/doc/html/rfc826), [wikipedia](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
 
@@ -60,4 +60,22 @@ ARP ist ein [Ethernet Frame](./ethernet) mit EtherType 0x0806.
 
 
 
+
+```
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|             HWTYPE            |             PTYPE             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|     HWLEN     |      PLEN     |               OP              |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|             HWSRC             |              PSRC             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|             HWDST             |              PDST             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                             Fig. ARP
+```
+
+[Scapy](https://scapy.readthedocs.io/en/latest/api/scapy.layers.l2.html#scapy.layers.l2.ARP)
 

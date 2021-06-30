@@ -119,7 +119,11 @@ Kontrollieren bzw. statische IP Adressen setzen
 9. Click **OK**.
    Your computer displays a static IP address.
 
-# Windows Defender
+
+
+# Windows Defender AntiVirus
+
+[ct: Windows Defender deaktivieren - so klappt's](https://www.heise.de/tipps-tricks/Windows-Defender-deaktivieren-so-klappt-s-4030040.html)
 
 ## Deaktivieren
 
@@ -139,7 +143,7 @@ Hinweis: Der Defender aktiviert sich nach gewisser Zeit wieder von selbst.
 
 ## Deaktivieren – dauerhaft
 
-Nachhaltig die Echtzeitschutzfunktion von Windows Defender
+Nachhaltig die Echtzeitschutzfunktion von Windows Defender deaktivieren
 
 Gruppenrichtlinien Verwaltungseditor
 
@@ -165,6 +169,31 @@ Gruppenrichtlinien Verwaltungseditor
 
 
 
+# Windows Smartscreen
+
+## Edge
+
+... > Einstellungen > Datenschutz, Suche und Dienste
+
+Sicherheit (fast ganz unten)
+
+- Microsoft Defender Smartscreen – Off
+- Potenziell unerwünschte Apps blockieren – Off
+
+
+
+## App Start
+
+In den Eigenschaften der EXE Datei. (ausprobieren).
+
+
+
+## How to disable Windows Defender SmartScreen
+
+Start  >> Settings/Einstellungen >> Windows Security/Sicherheit  >> App- & Browsersteuerung >> Zuverlässigkeitsbasierter Schutz
+
+
+
 # Windows Firewall
 
 Hinweis: Ein Windows 10 System reagiert auch nicht auf PING (in der Firewall deaktiviert).
@@ -173,28 +202,13 @@ Hinweis: Ein Windows 10 System reagiert auch nicht auf PING (in der Firewall dea
 
 ## Deaktivieren
 
-Start > Control Panel (Systemsteuerung) > System and Security > Windows Firewall
+Start  > Settings/Einstellungen > Windows Security/Sicherheit > Firewall & network protection/Firewall & Netzwerkschutz
 
-Oder öffnen über CLI:
+Es werden 3 Arten von Netzwerk-Profilen angezeigt, nur eines sollte aktiv sein (z.B. öffentliches Netzwerk)
 
-```
-C:> control firewall.cpl
-```
-
-- Select **Turn Windows Firewall on or off** on the left side of the screen.
-- Select the bubble next to **Turn off Windows Firewall (not recommended)**.
-- Select **OK** to save the changes.
+Auf den Profilnamen  (z.B. öffentliches Netzwerk) klicken > Schieber auf "aus" bewegen
 
 
-
-Oder Beschreibung von [Microsoft](https://support.microsoft.com/en-us/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f):
-
-To turn Microsoft Defender Firewall on or off:
-
-1. Select the **Start** button > **Settings** (Einstellungen) > **Update & Security** > **Windows Security** and then **Firewall & network protection**. [Open Windows Security settings](ms-settings:windowsdefender?activationSource=SMC-IA-4028544)
-2. Select a network profile.
-3. Under Microsoft Defender **Firewall**, switch the setting to **On**. If your device is connected to a network, network policy settings might prevent you from completing these steps. For more info, contact your administrator.
-4. To turn it off, switch the setting to **Off**. Turning off Microsoft Defender Firewall could make your device (and network, if you have one) more vulnerable to unauthorized access. If there's an app you need to use that's being blocked, you can allow it through the firewall, instead of turning the firewall off.
 
 
 
