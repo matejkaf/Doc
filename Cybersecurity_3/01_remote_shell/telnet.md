@@ -13,9 +13,9 @@ Aufzeichnen einer telnet Verbindung. Erkenntnis: Username und Passwort wird im K
 
 ## Konfiguration
 
-- Kali (telnet client und wireshark): 192.168.178.64
-- Debian (telnetd): 192.168.178.69
-- Win10 (telnet client): 192.168.178.67
+- Kali (telnet client und wireshark)
+- Win10 (telnet client)
+- Metasploitable (telnet server läuft)
 
 
 
@@ -34,17 +34,20 @@ $ ip addr show
 
 
 
-## Installationen
+# Installationen
 
-Kein telnet client auf **Kali** installiert
+## Kali
+
+Sollte installiert sein – falls nicht
 
 ```bash
-# basic telnet client using the TELNET protocol
-$ sudo apt-get update
-$ sudo apt-get install telnet
+$ sudo apt update
+$ sudo apt install telnet
 ```
 
-`telnet: Unable to connect to remote host: Connection refused`
+
+
+## Debian
 
 telnet demon auf **Debian** installieren und starten
 
@@ -84,6 +87,8 @@ Nun ist telnet auf das Debian Linux System möglich.
 
 
 ## Windows 10
+
+Für telnet client in der Kommandozeile:
 
 Telnet muss aktiviert werden. Suchen nach "Features aktivieren" (https://www.heise.de/tipps-tricks/Windows-10-Telnet-Client-aktivieren-4569277.html). "Telnet-Client".
 telnet über die Kommandozeile starten.

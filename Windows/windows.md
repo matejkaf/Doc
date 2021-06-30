@@ -147,7 +147,7 @@ Nachhaltig die Echtzeitschutzfunktion von Windows Defender deaktivieren
 
 Gruppenrichtlinien Verwaltungseditor
 
-- Suche nach gpedit.msc
+- Suche nach gpedit.msc und öffnen
 
 - ![image-20210525104330316](fig/image-20210525104330316.png)
 
@@ -158,8 +158,6 @@ Gruppenrichtlinien Verwaltungseditor
   ```
   C:> gpupdate /force
   ```
-
-  
 
 - Einstellungen (Zahnrad) öffnen > Update und Sicherheit
 

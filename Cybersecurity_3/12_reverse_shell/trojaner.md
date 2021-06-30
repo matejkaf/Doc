@@ -26,7 +26,7 @@ $ netstat -tlpn | grep 80
 
 # Windows
 
-- Windows Defender dauerhaft deaktivieren
+- Windows Defender (ev. dauerhaft) deaktivieren
 - Windows Firewall kann aktiv bleiben
 
 
@@ -66,7 +66,7 @@ $ msfconsole -r msf_macro.rc
 
 Dann `mp_tcp_rev_shell_8080.exe` unter Windows starten. Dabei schlägt SmartScreen an:
 
-<img src="fig/image-20210629115555741.png" alt="image-20210629115555741" style="zoom:33%;" />
+ <img src="fig/image-20210629115555741.png" alt="image-20210629115555741" style="zoom:33%;" />
 
 Auf trotzdem ausführen klicken.
 
@@ -446,5 +446,5 @@ meterpreter > screenshot
 Screenshot saved to: /root/QMnwJkYX.jpeg
 ```
 
-Im Browser (Kali) öffnen: `http://localhost:8080/QMnwJkYX.jpeg`
+Im Kali File Explorer öffnen (Bild kann angezeigt werden)
 
