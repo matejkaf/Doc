@@ -53,3 +53,10 @@ Aufgrund des **Rechenaufwands** sieht die Praxis wieder etwas anders aus. Die zu
 
 Ein weiteres gängiges Verfahren für die Digitale Signatur ist **DSA** (Digital Signature Algorithm) dies kann nur für digitale Signatur aber **nicht zum Verschlüsseln** verwendet werden.
 
+
+
+# openSSL
+
+[link](/Doc/Linux/openssl#rsa-encryptiondecrytion)
+
+
