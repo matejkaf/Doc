@@ -85,8 +85,8 @@ tcpdump -nX port 80
 tcpdump -nX port 443
 ```
 
--n     Don't convert addresses (i.e., host addresses, port numbers, etc.) to names.
--X     When parsing and printing, in addition to printing the headers of each packet, print the  data  of
+`-n`     Don't convert addresses (i.e., host addresses, port numbers, etc.) to names.
+`-X`     When parsing and printing, in addition to printing the headers of each packet, print the  data  of
        each  packet (minus its link level header) in hex and ASCII.  This is very handy for analysing new
        protocols.
 
@@ -98,5 +98,18 @@ Oder
 tcpdump -nA port 80
 ```
 
--A     Print each packet (minus its link level header) in ASCII.  Handy for capturing web pages.
+`-A`     Print each packet (minus its link level header) in ASCII.  Handy for capturing web pages.
 
+
+
+# telnet
+
+```sh
+$ tcpdump -i <your interface> host <src/dst IP> and port 23
+```
+
+```sh
+$ tcpdump -tnAi eth0 dst host 192.168.178.76 and port 23
+```
+
+​    -t     Don't print a timestamp on each dump line.

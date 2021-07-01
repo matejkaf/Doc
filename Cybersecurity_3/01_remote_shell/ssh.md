@@ -16,5 +16,5 @@ SSH Client:
 - Linux Shell: `ssh user@host`
 - Windows:
   -  `putty.exe`
-  - Ab Windows 10 Version 1709 (Oktober 2017) integriert, siehe [[ct : SSH unter Windows 10 nutzen](https://www.heise.de/tipps-tricks/SSH-unter-Windows-10-nutzen-4224757.html)], über die Powershell aufrufbar.
+  - Ab Windows 10 Version 1709 (Oktober 2017) integriert, siehe [[ct : SSH unter Windows 10 nutzen](https://www.heise.de/tipps-tricks/SSH-unter-Windows-10-nutzen-4224757.html)], über Kommandozeile aufrufbar.
 

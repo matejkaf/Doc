@@ -48,7 +48,9 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 
 Wenn Aktienteil mehr als 20% vom Höchstand verliert zum Auffüllen.
 
-Aktueller Stand: **€ 6.000,–** (2020/Q1)
+Aktueller Stand: 
+**€ 6.000,–** (2020/Q1)
+**€ 9.000,–** (2020/Q2)
 
 
 
@@ -60,6 +62,17 @@ Aktueller Stand: **€ 6.000,–** (2020/Q1)
   - =2*12.000,- = 24.000,-
 - Hello! reduktion auf +3.000,- pro Quartal
 
+Girokonto: 21.400,- (inkl. 6000,- von Dadat)
+1750,- über Sparplan 21400-1750=19650
+bleiben 9.000,-
+3000 --> Savity Konservativ
+3000 --> Hello
+3000 --> Fill Up Fond
+
+Kauf:
+'Welt' : 3000,
+'Faktor' : 2500,
+'Emerging Markets' : 3000,
 
 
 ## 2020/Q1
