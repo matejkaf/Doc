@@ -17,7 +17,7 @@ Die Verfahren sind sehr symetrisch – d.h. Die Mechanismen für die Verschlüss
 
 Um längere Nachrichten (> 16 Bytes) zu Verschlüsseln werden die Daten in Blöcke aufgeteilt und einzeln per block cipher verschlüsselt. Um dabei die Angriffsmöglichkeiten gering zu halten existieren unterschiedliche Verfahren die als **block cipher modes** bezeichnet werden.
 
-![image-20201112105732350](fig/image-20201112105732350.png)
+<img src="fig/image-20201112105732350.png" alt="image-20201112105732350" style="zoom: 33%;" />
 
 
 
@@ -97,7 +97,7 @@ Die Mechanismen nach denen dies passiert nennt man *block cipher mode*.
 
 Mit dem ECB (Electronic Code Book) mode wird jeder entstandene Block mit dem gleichen Schlüssel verschlüsselt. 
 
-<img src="fig/image-20201112105912926.png" alt="image-20201112105912926" style="zoom:50%;" />
+<img src="fig/image-20201112105912926.png" alt="image-20201112105912926" style="zoom:33%;" />
 
 Dies ergibt jedoch ein **unsicheres** Verfahren, da dadurch die Struktur der verschlüsselten Daten nicht verschleiert wird. Selber plaintext ergibt gleichen ciphertext, ein Angreifer lernt dadurch etwas über den Inhalt. 
 
@@ -115,7 +115,7 @@ Gute block modes, haben dieses Problem nicht. Beispiele:
 
 ## Cipher Block Chaining Mode (CBC)
 
-<img src="fig/image-20201112110005595.png" alt="image-20201112110005595" style="zoom:50%;" />
+<img src="fig/image-20201112110005595.png" alt="image-20201112110005595" style="zoom:33%;" />
 
 Wahl des IV (Initialisation Vector)?  Wichtige Eigenschaft: IV Wert darf sich nicht wiederholen und soll für einen Angreifer unvorhersagbar sein.:
 
@@ -126,7 +126,7 @@ Wahl des IV (Initialisation Vector)?  Wichtige Eigenschaft: IV Wert darf sich ni
 
 ## Output Feedback Mode (OFB)
 
-<img src="fig/image-20201112110117565.png" alt="image-20201112110117565" style="zoom:50%;" />
+<img src="fig/image-20201112110117565.png" alt="image-20201112110117565" style="zoom:33%;" />
 
 
 
@@ -136,9 +136,9 @@ Mittels nonce und einem counter wird ein **key stream** für eine stream cipher 
 
 Hintergrund: jede block cipher ist ein PRNG (pseudo random number generator).
 
-<img src="fig/image-20201112110246647.png" alt="image-20201112110246647" style="zoom:50%;" />
+<img src="fig/image-20201112110246647.png" alt="image-20201112110246647" style="zoom:33%;" />
 
-<img src="fig/image-20201112110217751.png" alt="image-20201112110217751" style="zoom:50%;" />
+<img src="fig/image-20201112110217751.png" alt="image-20201112110217751" style="zoom:33%;" />
 
 ## Welcher Mode
 
