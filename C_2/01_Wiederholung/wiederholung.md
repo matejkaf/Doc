@@ -1,8 +1,7 @@
 ---
 title: SEW – Wiederholung
-tags: [lecture]
+tags: [lecture,C_2]
 ---
-
 
 
 ## Übersicht
