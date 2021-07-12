@@ -3,7 +3,8 @@ title: Metasploit
 subtitle: Exploit Framework
 ---
 
-
+* TOC
+{:toc}
 
 msf – Metasploit Framework + shellcode Archiv
 
@@ -15,7 +16,7 @@ Sehr Umfangreich!
 
 
 
-## msf einrichten
+# PostgreSQL einrichten
 
 Starten der Datenbank PostgreSQL notwendig für "Workspaces" und abspeichern der Ergebnisse.
 
@@ -39,7 +40,7 @@ Diese 3 Befehle sind nur einmalig notwendig.
 
 
 
-## msf Erste Schritte
+# msf Erste Schritte
 
 Starten von msf:
 
@@ -333,7 +334,7 @@ msf6 auxiliary(scanner/ssh/ssh_version) > set rhosts 192.168.178.71
 rhosts => 192.168.178.71
 ```
 
-Mit `run` oder `exploit` wird das Modul ausgeführt.
+Mit `run` (oder `exploit`) wird das Modul ausgeführt.
 
 ```
 msf6 auxiliary(scanner/ssh/ssh_version) > run
@@ -376,15 +377,7 @@ Alle Informationen (z.B. run weiterer Module) akkumulieren sich in der Datenbank
 
 
 
-
-
-```
-
-```
-
-
-
-## nmap in msf
+# nmap in msf
 
 `db_nmap` kann genauso aufgerufen werden wie `nmap` alleine. Die Ergebnisse werden in der Datenbank gespeichert. 
 
@@ -421,7 +414,7 @@ address         mac                name                           os_name   os_f
 
 
 
-## Kommando Kurzübersicht
+# Kommando Kurzübersicht
 
 Suchen
 
@@ -438,13 +431,15 @@ use <modulename>
 show info
 show options
 set <parameter> <value>
+run/exploit
 ```
 
 
 
-Datenbank:
+Nmap/Datenbank:
 
 ```
+db_nmap
 hosts
 services
 ```
@@ -460,7 +455,9 @@ exit
 
 
 
-## TODO
+
+
+# TODO
 
 
 

@@ -73,6 +73,8 @@ str = f"{math.pi:.3f}"
 print("π auf 3 Kommastellen: {str}")
 ```
 
+
+
 # Strings vergleichen
 
 ```python

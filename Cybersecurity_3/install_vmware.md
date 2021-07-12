@@ -38,3 +38,8 @@
 
 VmWare Tools installieren
 
+
+
+# Metasploitable
+
+Entpacken und in Ordner `Virtual Machines` kopieren.

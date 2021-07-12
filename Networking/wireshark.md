@@ -64,7 +64,7 @@ DHCP
 bootp
 ```
 
-TCP von und zu IP Adresse
+TCP von und zu/von IP Adresse
 
 ```
 tcp and ip.addr==198.246.117.106
@@ -76,10 +76,18 @@ FTP
 ftp
 ```
 
-Show only SMTP (port 25) and ICMP traffic:
+Telnet
+
+```
+ip.addr==10.0.0.123 and tcp.port==23
+```
+
+
+
+Show only SMTP (port 25) and ICMP traffic :
 
 ```plaintext
- tcp.port eq 25 or icmp
+ tcp.port==25 or icmp
 ```
 
 Show only traffic in the Subnet (192.168.x.x):

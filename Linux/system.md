@@ -92,3 +92,9 @@ Dauerhaft konfigurieren
 
 6. Neustart des Systems
 
+Metasploitable:
+
+```sh
+$ loadkeys de
+```
+

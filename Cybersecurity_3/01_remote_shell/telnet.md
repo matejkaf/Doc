@@ -5,13 +5,13 @@ subtitle: Cybersecurity Lab
 
 
 
-## Telnet
+# Telnet
 
 Aufzeichnen einer telnet Verbindung. Erkenntnis: Username und Passwort wird im Klartext übertragen.
 
 
 
-## Konfiguration
+# Konfiguration
 
 - Metasploitable (bringt telnet server mit)
 
@@ -21,9 +21,17 @@ Aufzeichnen einer telnet Verbindung. Erkenntnis: Username und Passwort wird im K
 
   
 
+# User anlegen
+
+Unter metasploit einen user `alice` anlegen, pass: `alice1234`.
+
+```sh
+$ adduser alice
+```
 
 
-## Ip Adressen ermitteln
+
+# Ip Adressen ermitteln
 
 ```
 # Kali
@@ -103,7 +111,7 @@ telnet über die Kommandozeile starten.
 
 
 
-## Kali Linux – Wireshark
+# Kali Linux – Wireshark
 
 - In den VirtualBox Netzwerkeinstellungen – **Promiscuous Mode**=Allow VMs:
 
@@ -111,11 +119,11 @@ telnet über die Kommandozeile starten.
 
 
 - Wireshark über die Kommandozeile starten `sudo wireshark`.
-- Display Filter ip.addr == 192.168.178.69
-- `telnet 192.168.178.69`
-  - telnet muss auch auf Kali Linux gestartet werden. Sonst sieht man die Pakete nicht.
+- Display Filter: `ip.addr==10.0.0.123 and tcp.port==23 `
+- `telnet 10.0.0.123`
+  - MacOS: telnet muss auch auf Kali Linux gestartet werden. Sonst sieht man die Pakete nicht. Kein Promiscuous Mode?
 - Passwort wird in einzelnen Buchstaben übertragen.
-- Analyze>Follow>TCP Stream
+- Analyze>Follow>TCP Stream (oder rechte Maustaste auf Packet: Follow>TCP Stream)
 
 <img src="fig/image-20201230174535381.png" alt="image-20201230174535381" style="zoom:40%;" />
 

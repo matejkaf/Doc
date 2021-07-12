@@ -1,9 +1,11 @@
 ---
 title: Moderne Kryptographie
-subtitle: Ü
+subtitle: Übersicht
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+Schnellübersicht Stream- und Block-Cipher
 
 # Moderne Kryptographie
 
@@ -25,12 +27,12 @@ ciphertext gleiche Anzahl Bits wie plaintext
 
 # Stream-Cipher
 
-- Idee: One-Time-Pad (zufällig gewählter Bit-String so lang wie plaintext = key), ciphertext=plaintext XOR otpad, absolut sicher aber nicht praktikabel.
+- Idee: **One-Time-Pad** ( = key, zufällig gewählter Bit-String so lang wie plaintext), ciphertext=plaintext XOR otpad, absolut sicher aber nicht praktikabel.
 - Stream-Cipher: Annäherung an One-Time-Pad
   - Wähle eine Start-Bitfolge $$K_0$$ (128 bzw. 256 Bits) als seed
   - $$K_0$$ ist der symmetrische Schlüssel (shared secret key)
   - $$K_1=\text{R}(K_0)$$, $$K_2=\text{R}(K_1)$$, usw.
-    - R (r) ist ein besonders guter Pseudo-Zufallszahlengenerator (vgl. `srand` und `rand`). Ergebnis lässt sich für einen Beobachter nicht von einer wirklich zufälligen Bitfolge unterscheiden.
+    - R (random) ist ein besonders guter Pseudo-Zufallszahlengenerator (vgl. `srand` und `rand`). Ergebnis lässt sich für einen Beobachter nicht von einer wirklich zufälligen Bitfolge unterscheiden.
   - Schlüssel werden aneinandergefügt $$K_0 \mathbin\Vert K_1 \mathbin\Vert K_2 \mathbin\Vert K_3 \mathbin\Vert \ldots$$ dann XOR mit plaintext
 
 
@@ -40,7 +42,7 @@ ciphertext gleiche Anzahl Bits wie plaintext
 Häufigst verwendet.
 
 - Älter: DES, Triple-DES, Data Encryption Standard
-- A: **AES**, Advanced Encryption Standard
+- Aktuell: **AES**, Advanced Encryption Standard
 
 plaintext wird in 128 Bit lange Blöcke zerteilt, aus diesen plus dem key (128 oder 256 Bits) entstehen 128 Bit ciphertext.
 $$
@@ -49,7 +51,7 @@ $$
 
 - $$P_i$$ ... $$i$$-ter 128 Bit Plaintextblock
 
-- $$\text{E}(K,P_i)$$ ... EnVerschlüsselungsfunktion
+- $$\text{E}(K,P_i)$$ ... Encrypt, Verschlüsselungsfunktion
 
 - $$K$$ ... Key (128 oder 256 Bit)
 
