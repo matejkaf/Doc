@@ -112,5 +112,5 @@ Hacker:
 
 
 
-<script src="Doc/present.js" type="text/javascript"></script>
+<script src="/Doc/present.js" type="text/javascript"></script>
 
