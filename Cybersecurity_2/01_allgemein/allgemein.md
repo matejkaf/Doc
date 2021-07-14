@@ -41,13 +41,17 @@ weibl.: [Haecksen](https://www.haecksen.org)
 
 Hacker (Alltagssprachlich/Berichterstattung): Person mit hervorragenden Computer Kenntnissen und der Fähigkeit mit Kreativität und Einfallsreichtum in Computersysteme einzudringen.
 
+> ... what we mean by hacking is being able to gain access to a system that you're not supposed to have access to. [[Zaid Sabih](https://www.udemy.com/user/zaidsabih/)]
+
 Absicht:
 
 - Neugier
 - bereichern
 - System sicherer machen
 
-Aber auch: Tüftler der kreativ mit Technik spielt, z.B. um Geräten Funktionen zu entlocken für die diese nie vorgesehen waren. "Ein Hacker ist jemand, der versucht einen Weg zu finden, wie man mit einer Kaffeemaschine Toast zubereiten kann" [Wau Holland (CCC – Chaos Computer Club)]
+Aber auch: Tüftler der kreativ mit Technik spielt, z.B. um Geräten Funktionen zu entlocken für die diese nie vorgesehen waren. 
+
+> "Ein Hacker ist jemand, der versucht einen Weg zu finden, wie man mit einer Kaffeemaschine Toast zubereiten kann" [Wau Holland (CCC – Chaos Computer Club)]
 
 Ein Hack kann daher auch eine besonders kreative und originelle Lösung eines Problems sein. Siehe "Lifehacks".
 
@@ -58,10 +62,6 @@ Ein Hack kann daher auch eine besonders kreative und originelle Lösung eines Pr
 > 2. Something that a system allows, but that is unintended and unanticipated by its designers.
 >
 > Hacking is not cheating. It’s following the rules, but subverting their intent. It’s unintended. It’s an exploitation. It’s “gaming the system.” Caper movies ([Gauner Filme]) are filled with hacks. MacGyver was a hacker. Hacks are clever, but not the same as innovations.
-
-
-
-> Gaining unauthorized access. Now, what we mean by hacking is being able to gain access to a system that you're not supposed to have access to. [[Zaid Sabih](https://www.udemy.com/user/zaidsabih/)]
 
 
 
@@ -111,4 +111,6 @@ Hacker:
 - ...
 
 
+
+<script src="Doc/present.js" type="text/javascript"></script>
 
