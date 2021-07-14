@@ -5,8 +5,6 @@ description:
 tags: [lecture, krypto ]
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-</script>
 # Math
 
 RSA verwendet Modulo Multiplikationen.
@@ -110,4 +108,9 @@ Beispiel:
 D.h. wählt man $$n$$ groß genug und gibt dieses öffentlich bekannt, hält $$p$$ und $$q$$ aber geheim, so ist es einem Angreifer praktisch unmöglich $$p$$ und $$q$$ herauszufinden.
 
 Da es theoretisch mit genug Rechenpower und Zeit möglich sein könnte, dass eine Faktorisierung gelingt sind **RSA Keys** in der Praxis mit einem **Ablaufdatum** versehen (einige Jahre).
+
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
 
