@@ -1,4 +1,12 @@
-console.log("test")
+// F.Matejka 14.07.2021
+// Version 1
+//
+// Präsentationsmodus für aus md generierte
+// HTML Seiten
+// Taste "p" 2x zum aktivieren
+// Leertaste zum Anyeigen des nächsten HTML Elements
+// Backspace für zurück
+
 let position = 0
 let presentation_mode = false
 let hot_key = 'p'
@@ -10,7 +18,6 @@ document.addEventListener('keydown', keydownHandler);
 function keydownHandler(e) {
   if (!presentation_mode) {
     if (e.key == hot_key) {
-      console.log(e.key)
       if (hot_key_pressed) {
         hot_key_pressed = false
         presentation_mode = true
@@ -23,13 +30,13 @@ function keydownHandler(e) {
   } else {
     // in presentation mode
     if (e.key == ' ') {
-      console.log("Space")
+      // Space
       let element_to_show = setVisibilityOnElementNr(position,"visible")
       position++
       scrollIfNecessary(element_to_show)
       e.preventDefault() // no scrolling by space
     } else if (event.keyCode==8) {
-      console.log("backspace")
+      // backspace
       if(position>0) {
         position--
         setVisibilityOnElementNr(position,"hidden")
@@ -80,7 +87,7 @@ function isElementInViewport(el)
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
