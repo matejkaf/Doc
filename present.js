@@ -24,15 +24,15 @@ function keydownHandler(e) {
     // in presentation mode
     if (e.key == ' ') {
       console.log("Space")
-      position++
       let element_to_show = setVisibilityOnElementNr(position,"visible")
+      position++
       scrollIfNecessary(element_to_show)
       e.preventDefault() // no scrolling by space
     } else if (event.keyCode==8) {
       console.log("backspace")
       if(position>0) {
-        setVisibilityOnElementNr(position,"hidden")
         position--
+        setVisibilityOnElementNr(position,"hidden")
         scrollIfNecessary(getElementNr(position))
       }
       e.preventDefault()
