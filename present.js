@@ -35,7 +35,7 @@ function keydownHandler(e) {
       position++
       scrollIfNecessary(element_to_show)
       e.preventDefault() // no scrolling by space
-    } else if (event.keyCode==8) {
+    } else if (e.keyCode==8) {
       // backspace
       if(position>0) {
         position--
