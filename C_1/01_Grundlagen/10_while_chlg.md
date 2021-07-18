@@ -4,7 +4,7 @@ subtitle: Übungen (Challenge)
 tags: [assignment,challenge,C_1]
 ---
 
-**Übung (Zahlenfolge auf und ab):**
+#### Übung (Zahlenfolge auf und ab)
 
 Schreibe ein Programm das von einem Startwert zu einem Endwert (beides Eingaben) zählen kann. Das Programm soll sowohl aufwärts als auch abwärts zählen können. Abwärts zählt das Programm dann wenn der Startwert größer ist als der Endwert.
 
@@ -13,7 +13,7 @@ Schreibe ein Programm das von einem Startwert zu einem Endwert (beides Eingaben)
 
 ---
 
-**Übung (Summe mit Start und Ende):**
+#### Übung (Summe mit Start und Ende)
 Schreibe ein Programm das alle Zahlen beginnend bei einem Startwert bis zu einem Endwert addiert. Start- und Endwert können eingegeben werden. Das Endergebnis soll ausgegeben werden.
 
 Beispiel: Es wurde 6 (Start) und 10 (Ende) eingegeben:
@@ -39,7 +39,7 @@ Startwert und Endwert wurden vom Benutzer eingegeben.
 
 ---
 
-**Übung (Summe auch umgekehrt):**
+#### Übung (Summe auch umgekehrt)
 Sorge dafür, dass das Programm aus Übung  auch dann funktioniert wenn Start- und Endwert vertauscht sind. Beispiel:
 
 ```
@@ -49,6 +49,3 @@ Endwert: 6
 ```
 
 Startwert und Endwert wurden vom Benutzer eingegeben.
-
----
-

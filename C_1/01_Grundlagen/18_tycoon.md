@@ -4,8 +4,7 @@ subtitle: Ein Spiel
 tags: [assignment,C_1]
 ---
 
-
-**Übung (Würstl Tycoon):**
+#### Übung (Würstl Tycoon)
 Stell dir vor, du hast soeben ein Würstelstandl gepachtet. Die Aufgabe ist ein Spiel zu programmieren, das den Geschäftsablauf Tag für Tag simuliert (=nachspielt). Das folgende Programm berechnet eine zufälligen Nachfrage nach Würstel pro Tag und gibt diese am Bildschirm aus.
 
 Aufgabe: Kopiere den Code in ein eigenes Programm und probiere es aus.
@@ -43,7 +42,7 @@ void main()
 
 ---
 
-**Übung (Einnahmen und Ausgaben):**
+#### Übung (Einnahmen und Ausgaben)
 Ergänze das Programm um die folgenden Variablen:
 
 ```c
@@ -60,7 +59,7 @@ Berücksichtige, dass du immer auf die maximale Nachfrage vorbereitet sein musst
 
 ---
 
-**Übung (Konto):**
+#### Übung (Konto)
 Du beginnst mit einem Startkapital von EUR 200.
 
 ```c
@@ -72,7 +71,8 @@ Berechne den neuen Kontostand nach jedem Tag (=ein Schleifendurchlauf) indem du 
 
 ---
 
-**Übung (Wirbelsturm):**
+#### Übung (Wirbelsturm)
+
 Du befindest dich in einem wunderschönen Land, in dem du obendrein keine Steuern zahlen musst.  Allerdings wird deine Würstelbude immer wieder von Wirbelstürmen heimgesucht. Ein **Wirbelsturm** kommt im Schnitt alle 3 Wochen. Ergebnis: Keine Nachfrage und 50 Euro Reparaturkosten, das Programm meldet: `Oje, ein Wirbelsturm`
 
 Hinweis: Im **Schnitt alle 3 Wochen** bedeutet einmal in 21 Tagen. Dies soll zufällig passieren, d.h. an jedem Tag besteht eine Chance von 1:21, dass das Ereignis eintritt. Im Programm erstellt man dafür für jeden Tag eine neue Zufallszahl 0–20 (21 Zahlen). Da jede Zahl gleich wahrscheinlich ist und jedes Mal eine andere Zufallszahl erstellt wird, kann im Programm immer auf einen fixen Wert (z.B. 0) abgefragt werden. Stimmen zufällige Zahl und fixer Wert überein so ist das Ereignis für diesen Tag eingetreten.
@@ -100,7 +100,8 @@ printf(" ***********************************\n\n");
 
 ---
 
-**Übung (Bauoption – Vordach):**
+#### Übung (Bauoption – Vordach)
+
 Diese Erweiterung steht ab 400 Euro oder mehr am Konto zur Verfügung.
 Das Vordach kostet einmalig 150 Euro. Die Kunden sind gegen Sonne und Regen geschützt, das eröht die Nachfrage um 50%. Ein Vordach kann nur einmal gebaut werden und wirkt sich ab dem folgenden Tag aus. 
 
@@ -116,7 +117,8 @@ int vordach = 0; // auf 1 wenn gekauft
 
 ---
 
-**Übung (Bauoption – Werbeplakat):**
+#### Übung (Bauoption – Werbeplakat)
+
 Ab 500 Euro am Konto kann ein Werbeplakat gebucht werden. Ein Plakat kostet einmalig EUR 100 und EUR 10 Miete für jeden Tag. Es erhöht die Nachfrage um 50%. Es kann mehrere Plakate geben, pro Tag kann aber nur ein weiteres Plakat gekauft werden.
 
 ```c
@@ -127,7 +129,8 @@ int plakate = 0; // Anzahl der gemieteten Werbeplakate
 
 ---
 
-**Übung (Los Metallichaos):**
+#### Übung (Los Metallichaos)
+
 Leider gibt es eine Jugendbande (es sind die Los Metallichaos – in deinem Land gibt es keine HTL). Die **Los Metallichaos** schlagen im Schnitt alle 4 Wochen zu. Ergebnis: 50% deines Kontos werden geraubt, das Programm meldet:
 `Uups, die Los Metallichaos waren da`
 
@@ -135,7 +138,8 @@ Leider gibt es eine Jugendbande (es sind die Los Metallichaos – in deinem Land
 
 ---
 
-**Übung (Bauoption – Miniküche):**
+#### Übung (Bauoption – Miniküche)
+
 Ab 800 Euro am Konto ist es möglich auf eine Miniküche aufzurüsten. EUR 250 Einmalzahlung, Betriebskosten EUR 20 laufend pro Tag. Du verkaufst dann Grillwürstel mit Pommes und Salat. Verkaufspreis: EUR 5, Einkaufspreis: EUR 2.  Eine Miniküche kann nur einmal gekauft werden und wirkt sich ab dem folgenden Tag aus.
 
 ```c
@@ -143,11 +147,14 @@ int kueche = 0; // auf 1 wenn gekauft
 ```
 
 
+
+
 ---
 
+#### Übung (Übersicht am Ende)
 
-**Übung (Übersicht am Ende):**
 Am Ende, bevor das Programm endgültig aussteigt, zeigt es noch eine Übersicht. Zum Beispiel:
+
 ```
 Kontostand:     720 Euro
 Wirbelstürme:   3  Reparatur: 150 Euro
@@ -164,7 +171,7 @@ Achte auf eine "schöne" Formatierung der Ausgabe.
 
 ---
 
-**Übung (Weitere Ausbaustufen):**
+#### Übung (Weitere Ausbaustufen)
 
 Erweiterungsmöglichkeiten:
 
@@ -176,9 +183,3 @@ Leider ist dieser aber nicht immer erfolgreich.
 - Bei einem Kontostand von mehr als EUR~1000 könnte die **Mafia** auf dich aufmerksam werden. Das Gute daran: Sie halten dir die Los Metallichaos vom Leib. Der Preis: Die Schutzgelder sind höher als der Schaden durch die Los Metallichaos. Gut du kannst natürlich die Polizei einschalten (das kostet auf deiner Insel natürlich Geld), aber vielleicht ist die korrupt? 
 - Es gibt auch den **Fussball-Verein** El Equipo Divino, der einen Sponsor sucht (da spielen übrigens einige der Los Metallichaos mit). 
 - Und so weiter und so fort.
-
-
-
----
-
-

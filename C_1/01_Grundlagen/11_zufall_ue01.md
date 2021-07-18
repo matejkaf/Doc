@@ -4,8 +4,7 @@ subtitle: Übungen
 tags: [assignment,C_1]
 ---
 
-
-**Übung (Zufallszahl)**
+#### Übung (Zufallszahl)
 
 Ermittle eine zufällige Zahl im Bereich 15–17. Starte das Programm häufig genug um festzustellen, dass tatsächlich alle diese Zahlen vorkommen und es auch keine Ausreißer gibt.
 
@@ -13,7 +12,7 @@ Ermittle eine zufällige Zahl im Bereich 15–17. Starte das Programm häufig ge
 
 ---
 
-**Übung (Würfel)**
+#### Übung (Würfel)
 
 Schreibe ein Programm das 10 zufällige Würfe eines Würfels mit 6 Seiten simuliert. Das Programm soll dazu 10 zufällige Zahlen von 1–6 ausgibt. Verwende eine Schleife die 10 Mal durchläuft.
 
@@ -21,7 +20,7 @@ Schreibe ein Programm das 10 zufällige Würfe eines Würfels mit 6 Seiten simul
 
 ---
 
-**Übung (Lottozahlen):**
+#### Übung (Lottozahlen)
 
 Beim Lotto "6 aus 45" werden 6 zufällige Zahlen von 1–45 gezogen. Schreibe eine Schleife die diese 6 Zahlen ermittelt und ausgibt.
 

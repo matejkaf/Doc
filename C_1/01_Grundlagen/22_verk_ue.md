@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [assignment,C_1]
 ---
 
-**Übung (Verketten)**
+#### Übung (Verketten)
 
 Einteilung Körpergrößen in 4 Stufen:
 
@@ -17,7 +17,7 @@ Schreibe ein Programm das nach Eingabe der Körpergrößen die entsprechende Stu
 
 ---
 
-**Übung (Notenermittlung):**
+#### Übung (Notenermittlung)
 Noten werden häufig über erreichte Prozent ermittelt. Ein Schüler kann zwischen 0 und 100% erreichen. Unter 50% ist die Note negativ. Darüber werden die Noten 1–4 in Schritten von 12,5% vergeben. Z.B. Ab 50% und unter 62,5% ist die Note ein genügend.
 
 Schreibe ein Programm das die Eingabe der Prozent als Kommazahl ermöglicht. Gib danach aus ob die Note **negativ oder positiv** ist. Ist die Noten positiv so gibt zusätzlich die erzielte **Note** aus.
@@ -30,7 +30,7 @@ Löse mit Hilfe **verketteter if-Anweisungen** (keine logischen Operatoren verwe
 
 ---
 
-**Übung (Alter):**
+#### Übung (Alter)
 Das Allgemeine Bürgerliche Gesetzbuch (ABGB) unterscheidet vier Altersstufen:
 
 - bis 6 Jahre ist man **Kind**,
@@ -44,8 +44,3 @@ Aufgaben:
 - **Erweiterung:** zusätzlich kann das Geschlecht eingegeben werden (1 für weiblich und 2 für männlich).
 Die Ausgabe soll dann geschlechtsspezifisch erfolgen: 
 `mündige Minderjährige` bzw.\ `mündiger Minderjähriger`.
-
-
-
----
-

@@ -206,7 +206,7 @@ Für `printf` und `scanf`:  `%lf`
 
 #### Übung (Währungsrechner)
 
-Schreibe ein Programm, das **Amerikanische Dollar in Euro** umrechnen kann. Mit Ein- und Ausgabe.
+Schreibe ein Programm, das **amerikanische Dollar in Euro** umrechnen kann. Mit Ein- und Ausgabe.
 
 ---
 
@@ -214,7 +214,7 @@ Schreibe ein Programm, das **Amerikanische Dollar in Euro** umrechnen kann. Mit 
 
 # Übungsblatt 1
 
-
+[Übungsblatt 1](04_Anfang_ue01)
 
 
 # Formatierte Ausgabe
@@ -252,7 +252,7 @@ Ausgabe:  `x=  33.35` – es wird gerundet!
 
 # Übungsblatt 2
 
-
+[Übungsblatt 2](05_Anfang_ue02)
 
 
 # Ganzzahlige Division

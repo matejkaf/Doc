@@ -4,7 +4,8 @@ subtitle: Übungen
 tags: [assignment,C_1]
 ---
 
-**Übung (Vergleichen III):**
+#### Übung (Vergleichen III)
+
 Schreibe ein Programm, das 3 Werte x, y und z einliest und mit Hilfe von **logischen Operatoren** überprüft:
 
 - ob x, y und z alle gleich sind,
@@ -17,7 +18,7 @@ Gib für jeden Fall einen entsprechenden Text aus.
 
 ---
 
-**Übung (Testnote)**
+#### Übung (Testnote)
 
 Die bei einem Test erreichten Punkte ergeben wie folgt eine Note:
 

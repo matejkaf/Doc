@@ -3,7 +3,7 @@ title: Verschachteln von if Anweisungen
 tags: [lecture,C_1]
 ---
 
-# Verschachteln von if Anweisungen
+
 
 Aufgabe: Eingabe der Körpergrößen und Einteilung in 4 Stufen:
 
@@ -41,7 +41,6 @@ else
 	}
 }
 ```
-
 
 
 

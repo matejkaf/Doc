@@ -7,7 +7,7 @@ tags: [assignment,C_1]
 
 Überlege **zuerst** was folgende Programmausschnitte (exakt!) ausgeben, kontrolliere **dann** am Rechner. Wie viele hattest du richtig?
 
-**Übung (Lesen von Schleifen I):**
+#### Übung (Lesen von Schleifen I)
 
 
 ```c
@@ -68,8 +68,3 @@ while(i>=0)
 	printf("%d %d\n", i, n);
 }
 ```
-
----
-
-
-
