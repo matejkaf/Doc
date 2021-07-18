@@ -4,6 +4,8 @@ subtitle: C Grundlagen
 tags: [lecture,C_1]
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 Programmieren von Computern (Programmiersprache C)
 
 Programmierkenntnisse sind eine wichtige Voraussetzung für einen Job in der IT Branche.
@@ -102,17 +104,22 @@ Links vom Gleichheitszeichen: nur Variable.
 
 
 
-**Übung (Schreibe als Ausdruck):**
+#### Übung (Schreibe als Ausdruck)
+$$
+\frac{(x+y)\cdot 2-5}{3-x}
+$$
 
-- $\frac{(x+y)\cdot 2-5}{3-x}$
-- $\frac{1}{x-y}-\frac{x+5}{2\cdot (x-5)}$
+
+$$
+\frac{1}{x-y}-\frac{x+5}{2\cdot (x-5)}
+$$
 
 ---
 
 
-**Übung (Schreibe als Formel):**
+#### Übung (Schreibe als Formel)
 
--  `z=((x+y)*2-5)/3;`
+- `z=((x+y)*2-5)/3;`
 - `4-(a/(c-3));`
 
 ---
@@ -167,7 +174,8 @@ printf("Laenge eingeben: ");
 scanf("%d",&laenge);
 ```
 
-**Übung (Addieren):**
+#### Übung (Addieren)
+
 Schreibe ein Programm (mit Benutzerführung) bei dem zwei Zahlen eingegeben und addiert werden.
 Ablauf:
 
@@ -195,7 +203,7 @@ Für `printf` und `scanf`:  `%lf`
 
 ---
 
-**Übung (Währungsrechner):**
+#### Übung (Währungsrechner)
 
 Schreibe ein Programm, das **Amerikanische Dollar in Euro** umrechnen kann. Mit Ein- und Ausgabe.
 
@@ -235,6 +243,7 @@ Ein Vorzeichen, 3 Vorkommastellen und 2 Nachkommastellen – Ausgabebreite?
 double x=33.346
 printf("x=%7.2");
 ```
+
 Ausgabe:  `x=  33.35` – es wird gerundet!
 
 
@@ -266,18 +275,17 @@ Was ist die (ganzzahlige) Division genau?
 12 / 5
 ```
 
-gesucht sind ganze Zahlen q (Quotient) und r (Rest): 
+gesucht sind ganze Zahlen $$q$$ (Quotient) und $$r$$ (Rest): 
+$$
+12=q \cdot 5 + r
+$$
 
-
-```
-12=q * 5 + r
-```
 
 
 
 ---
 
-**Übung (Ermittle q und r):**
+#### Übung (Ermittle q und r)
 
 - 17 / 7
 - 12 / 3
@@ -295,7 +303,7 @@ Im Programm:
 
 ---
 
-**Übung (Modulo):**
+#### Übung (Modulo)
 
 Was steht in der `int` Variable `x`.
 
@@ -309,7 +317,7 @@ Was steht in der `int` Variable `x`.
 ---
 
 
-**Übung (Zeit):**
+#### Übung (Zeit)
 
 Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder ausgibt.
 
@@ -318,6 +326,8 @@ Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder au
 
 
 # Automatische Typwandlungen
+
+*todo: Besseren Platz suchen*
 
 Wenn man in einer Berechnung `int` und `double` mischt so wird automatisch mit `double` gerechnet.
 
@@ -328,5 +338,5 @@ b = a/10; // ergibt 1.0
 b = a/10.0; // ergibt 1.2
 ```
 
-*todo: Besseren Platz suchen*
+
 

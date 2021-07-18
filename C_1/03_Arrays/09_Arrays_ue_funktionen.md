@@ -4,7 +4,18 @@ subtitle: Übungen Funktionen – Zahlenfolgen
 tags: [assignment,arrays,C_1]
 ---
 
-Verwende für folgende Übungen **globale benannte Konstanten** für die Array Länge (30) – wenn du diese schon kennst.
+Verwende für folgende Übungen **globale benannte Konstanten** für die Array Länge (30) – wenn du diese schon kennst. Also z.B.:
+
+```c++
+const int ARRAY_LEN=30;
+
+int main()
+{
+  // ...
+}
+```
+
+
 
 
 
