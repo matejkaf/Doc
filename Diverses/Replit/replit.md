@@ -77,7 +77,6 @@ Außerdem sind möglich
 ## Nachteile
 
 - Schüler können jederzeit in die REPLs anderer Schüler schauen
-- Kein Debugger – aber welcher Schüler verwendet den schon
 - C# nur mit Mono
 - Kein MySQL, jedoch SQLite
 

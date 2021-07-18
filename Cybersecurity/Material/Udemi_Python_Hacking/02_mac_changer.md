@@ -1,40 +1,3 @@
-Learn Python and Ethical Hacking From Scratch  (Udemi-Kurs, Zaid Sabih)
-
-Das Tool `terminator` stellt ein vertikal und horizontal splitbares Terminal zur Verfügung (mit rechter Maustaste).
-
-```bash
-$ apt install terminator
-```
-
-[Liste von Linux Kommandos](https://www.mediacollege.com/linux/command/linux-command.html)
-
- [explainshell.com](https://explainshell.com/explain?cmd=ls+-al) – analysiert Kommandozeilen (z.B. die Bedeutung der Optionen)
-
-Kali Linux – Leafpad
-
-```python
-#!/usr/bin/env python3
-print("Hello World")
-```
-
-
-
-## pycharm
-
-Python IDE
-
-- Download
-- Ordner nach `/opt` verschieben
-- `pycharm..../bin/pycharm.sh` aus dem Terminal starten
-
-
-
-## VSCode
-
-[](https://code.visualstudio.com/docs/setup/linux)
-
-
-
 # Section 2: Writing a MAC Address Changer - Python Basics
 
 Ändern der MAC Adresse:
@@ -140,11 +103,8 @@ Erweiterung: Keine Eingabe sondern Argumente über die Kommandozeile.
 
 ```python
 import optparse
-
 parser = optparse.OptionParser()
 # naming convention = everything starting with a capital letter ist a class
-
-
 ```
 
 > *Deprecated since version 3.2:* The [`optparse`](https://docs.python.org/3/library/optparse.html#module-optparse) module is deprecated and will not be developed further; development will continue with the [`argparse`](https://docs.python.org/3/library/argparse.html#module-argparse) module.
@@ -182,78 +142,3 @@ Return Werte:
 
 
 ![image-20210616175211488](fig/image-20210616175211488.png)
-
-
-
-# Section 3: MAC Changer - Algorithm Design
-
-Stdout eines mit `subprocess.run` gestarteten Programms – siehe [*](https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess). 
-
-```python
-import subprocess
-run_ret = subprocess.run("ls -l", shell=True, capture_output=True)
-print(run_ret.stdout)
-```
-
-```
-b'total 4\n-rw-r--r-- 1 runner runner 107 Jun 17 12:13 main.py\n'
-```
-
-
-
-`capture_output=True` muss angegeben werden damit `.stdout` einen Wert enthält
-
-Mit `encoding` bzw. `subprocess.check_output`:
-
-```python
-import subprocess
-run_ret = subprocess.run("ls -l", shell=True, capture_output=True, encoding="utf8")
-print(run_ret.stdout)
-
-result = subprocess.check_output(["ls","-l"],encoding="utf8")
-print(result)
-```
-
-```
-total 4
--rw-r--r-- 1 runner runner 200 Jun 17 12:23 main.py
-
-total 4
--rw-r--r-- 1 runner runner 200 Jun 17 12:23 main.py
-```
-
-## Regex
-
-Regular expression
-
-[pythex](https://pythex.org/)
-
-Suchen nach Mustern in großen Mengen Text
-
-![image-20210617144339927](fig/image-20210617144339927.png)
-
-
-
-## Cleanup
-
-Ermitteln der MAC Adresse in einer Funktion
-
-![image-20210617152727617](fig/image-20210617152727617.png)
-
-
-
-## Validation
-
-![image-20210617152931241](fig/image-20210617152931241.png)
-
-
-
-## Python3
-
-`subprocess.check_output` liefert einen Bytestring. Lösung im Video:
-
-```
-str(ifconfig_result)
-```
-
-

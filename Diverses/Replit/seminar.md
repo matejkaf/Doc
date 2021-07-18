@@ -52,7 +52,7 @@ Was kann man machen?
 
 Experimente mit AWT: [[REPL : JavaAWT](https://replit.com/@htlmatejka/JavaAWT)] verwendet [VNC](https://docs.replit.com/repls/vnc)
 
-NT: Leider kein automatisches Hinzufügen von Imports
+Auch automatisches Hinzufügen von Imports funktioniert
 
 
 
