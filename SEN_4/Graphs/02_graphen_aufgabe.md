@@ -35,7 +35,8 @@ Erstelle ein C# API (Application Programming Interface) zum Arbeiten mit Graphen
         ```
 
     -   Teste mit folgendem Graphen:
-        <img src="/Users/matejkafr/Documents/Htl/2019_Local/4AHELS_SEN/DistanceLearning/04_Graphs/img/graph_01.png" alt="graph_01" style="zoom:30%;" />
+        
+        <img src="img/graph_01.png" alt="graph_01" style="zoom:33%;" />
 
 
 

@@ -13,7 +13,7 @@ Erweitere das C# API (Application Programming Interface) für Graphen.
 
 Für Tests kann der folgende Graph verwendet werden (`graph02.txt`):
 
-<img src="/Users/matejkafr/Documents/Htl/2019_Local/4AHELS_SEN/DistanceLearning/04_Graphs/img/graph_02.png" alt="graph_02" style="zoom:25%;" />
+<img src="img/graph_02.png" alt="graph_02" style="zoom:25%;" />
 
 **Abzugeben:** 
 

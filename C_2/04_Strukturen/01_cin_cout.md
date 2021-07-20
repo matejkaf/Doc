@@ -7,7 +7,7 @@ tags: [lecture,C_2]
 
 # Ausgabe
 
-Siehe [wikibooks](https://de.wikibooks.org/wiki/C%2B%2B-Programmierung:_Einfache_Ein-_und_Ausgabe)
+Siehe [wikibooks](https://de.wikibooks.org/wiki/C++-Programmierung/_Einführung_in_C++/_Einfache_Ein-_und_Ausgabe)
 
 ```c++
 //...
