@@ -14,7 +14,7 @@ Kodiere `4e62` (ASCII `"Nb"`, `'N'=0x4e`, `'b'=0x62`) als Base64. Verwende diese
 
 #### Übung (SHA256 mit CyberChef)
 
-Verwende [CyberChef](https://gchq.github.io/CyberChef/) um den SHA256 Hashwert von [goethe.txt](https://matejkaf.github.io/Doc/Cybersecurity/11_hashing_und_encoding/goethe.txt) in Hex und Base64 zu berechnen. 
+Verwende [CyberChef](https://gchq.github.io/CyberChef/) um den SHA256 Hashwert von [goethe.txt](goethe.txt) in Hex und Base64 zu berechnen. 
 
 
 
