@@ -5,7 +5,7 @@ tags: [assignment,challenge]
 
 # Challenges – 𝜋 Funktionen
 
-**Übung (Berechne 𝜋 nach Leibnitz):**
+#### Übung (Berechne 𝜋 nach Leibnitz)
 
 Die Zahl 𝜋 kann mit einer vom Mathematiker Gottfried Wilhelm Leibniz herausgefundenen Formel berechnet werden: 
 
@@ -13,7 +13,7 @@ Schreibe eine Funktion `double mypi(int n)`, die 𝜋 mit n Gliedern nach dieser
 
 ---
 
-**Übung (Berechne 𝜋 nach Wallis):**
+#### Übung (Berechne 𝜋 nach Wallis)
 
 Nach dem Mathematiker John Wallis gibt es noch eine andere Formel für 𝜋.
 Schreibe eine Funktion `double mypiWallis(int n)`, die $\pi$ mit $n$ Gliedern nach dieser Formel berechnet. Finde heraus wie groß n sein muss damit 𝜋 auf 3 Kommastellen genau ist.
@@ -22,7 +22,7 @@ Schreibe eine Funktion `double mypiWallis(int n)`, die $\pi$ mit $n$ Gliedern na
 ---
 
 
-**Übung (𝜋 Berechnen mit Monte-Carlo-Methode):**
+#### Übung (𝜋 Berechnen mit Monte-Carlo-Methode)
 
 Die Kreiszahl 𝜋 (3,14159265...) kann man mittels Zufallszahlen ermittelt werden. Dies nennt man eine Monte-Carlo-Methode.
 

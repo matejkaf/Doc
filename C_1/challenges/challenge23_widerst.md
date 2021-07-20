@@ -5,7 +5,7 @@ tags: [assignment,challenge]
 
 # Challenges – Arrays – Widerstände
 
-**Übung (Widerstände):**
+#### Übung (Widerstände)
 
 Die Werte von passiven Widerständen werden nicht in jedem beliebigen Wert produziert, sondern nur in bestimmten Abstufungen. Diese Abstufungen sind normiert und werden als E-Reihe bezeichnet. 
 

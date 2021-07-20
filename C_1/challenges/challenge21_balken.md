@@ -5,7 +5,7 @@ tags: [assignment,challenge]
 
 # Challenges – Arrays – Balkendiagramme
 
-**Übung (Balkendiagramm):**
+#### Übung (Balkendiagramm)
 
 Schreibe ein Programm mit dem horizontale Balkendiagramme ausgegeben werden können.
 Die Länge der Balken sind in einem Array vorgegeben:
@@ -34,7 +34,7 @@ Implementiere `zeigeBalken()`.
 
 ---
 
-**Übung (Vertikales Balkendiagramm):**
+#### Übung (Vertikales Balkendiagramm)
 Schreibe ein Programm, das wie in der letzten Übung ein Balkendiagramm zeichnet, nur sollen jetzt die Balken vertikal sein.
 
 ```

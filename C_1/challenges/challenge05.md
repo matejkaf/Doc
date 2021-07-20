@@ -1,11 +1,12 @@
 ---
-title: Doc
+title: Übungen
+subtitle: Schleifen Challenges
 tags: [assignment,challenge]
 ---
 
-# Challenges – Schleifen
 
-**Übung (Ungerade Zahlen bis Grenze addieren):**
+
+#### Übung (Ungerade Zahlen bis Grenze addieren)
 
 Schreibe ein Programm. Der Anwender soll eine Zahl n eingeben. 
 Ermittle nun **wie viele** aufsteigende ungerade Zahlen (bei 1 beginnend) addiert werden müssen bis die Summe größer oder gleich n ist.
@@ -15,21 +16,21 @@ Beispiel: n=26, Die Summe 1+3+5+7+9 ergibt 25 das ist noch zu wenig, erst 1+3+5+
 ---
 
 
-**Übung (Rauf- und runter):**
+#### Übung (Rauf- und runter)
 
 Schreibe ein Programm, welches von 1 bis 10 hochzählt und danach wieder zu 1 herunterzählt. Das Programm darf nur **eine einzige** Schleife enthalten.
 
 ---
 
 
-**Übung (Fibonacci):**
+#### Übung (Fibonacci)
 
 Schreibe ein Programm das die sogenannten Fibonacci-Zahlen bis zu einer einzugebenden Höchstgrenze am Bildschirm ausgibt. Eine Fibonacci-Zahl wird als Summe der beiden vorhergehenden Fibonacci-Zahlen gebildet. Die erste und die zweite Fibonacci-Zahl sind gleich eins. Zahlenfolge: 1 1 2 3 5 8 13 21 ...
 
 ---
 
 
-**Übung (Bits):**
+#### Übung (Bits)
 
 Schreibe ein Programm das die Eingabe einer ganzen Zahl erfordert. Halbiere diese Zahl so lange bis 0 herauskommt. Zähle mit wie oft das halbieren erforderlich war und gib diese Anzahl aus.
 
@@ -46,13 +47,13 @@ Teste:
 
 
 
-**Übung (Ziffernsumme):**
+#### Übung (Ziffernsumme)
 
 Schreibe ein Programm, das von einer eingegeben `int` Zahl die Ziffernsumme ermittelt. Für 4711 ist diese zum Beispiel 13.
 
 ---
 
-**Übung (Raute):**
+#### Übung (Raute)
 Stelle eine Raute (nennt man auch Rhombus) dar. Die Breite der Raute wird eingegeben, damit es sich auf ein einzelnes Sternchen an der Spitze ausgeht, muss die Breite eine ungerade Zahl sein, prüfe das bei der Eingabe.
 
 ```
@@ -83,7 +84,7 @@ Breite: 7
 ---
 
 
-**Übung (Geburtstagsparty):**
+#### Übung (Geburtstagsparty)
 
 Familie Müller ist zu einer Geburtstagsfeier eingeladen. Leider können sich die Familienmitglieder (Anton, Berta, Claus und Doris) nicht einigen, wer hingeht und wer nicht. In einer gemeinsamen Diskussion kann man sich jedoch auf die folgenden Grundsätze verständigen:
 
@@ -105,14 +106,14 @@ Tipp:
 ---
 
 
-**Übung (Radioaktiver Zerfall):**
+#### Übung (Radioaktiver Zerfall)
 
 Die Halbwertszeit eines radioaktiven Stoffes ist die Zeitspanne die vergehen muss bis nur mehr die Hälfte der ursprünglichen Masse "`strahlt"'. Ermittle wie lange es dauert bis die Strahlung auf unter 1% des Ursprungwerts abgefallen ist. Nimm als Beispiel die folgenden Halbwertszeiten:
 Plutonium 24110 Jahre / Caesium 30 Jahre / Radon 3,8 Tage (Quelle: [wikipedia: Halbwertszeit](http://de.wikipedia.org/wiki/Halbwertszeit)).
 
 ---
 
-**Übung (Millionär):**
+#### Übung (Millionär)
 Schreibe ein Programm, welches errechnet, nach wie vielen Jahren man Millionär geworden  
 ist, wenn man einen beliebigen Betrag zu einem bestimmten Zinssatz verzinst. Programmiere dazu eine Schleife, die beendet wird, wenn die Bedingung (Millionär) erfüllt wird.
 
@@ -120,7 +121,7 @@ Beispiel: Ermittle wie lange es dauert bis du Millionär geworden bist wenn du E
 
 ---
 
-**Übung (Zinstabelle):**
+#### Übung (Zinstabelle)
 
 Es werden 1000 Euro auf ein Konto gelegt das mit 5% pro Jahr verzinst wird. Die Wertentwicklung soll für 10 Jahre, mit Hilfe einer Schleife, dargestellt werden. Ausgabe:
 
@@ -149,26 +150,26 @@ Ergänze eine Option (mit einem Menü) die ermittelt wie viele Jahre das Kapital
 
 
 
-**Übung (Dual):**
+#### Übung (Dual)
 
 Schreibe ein Programm, welches einen 1-Byte-Wert (0..255) in eine `int`-Variable von der Tastatur einliest und als Dualzahl in Textform ausgibt. Überlege wie Du die Werte der einzelnen Bits ermitteln kannst!
 Beispiel: Eingabe: 150 → Ausgabe 10010110
 
 ---
 
-**Übung (Primzahl):**
+#### Übung (Primzahl)
 
 Schreibe ein Programm, dass eine positive, ganze Zahl einliest und ermittelt ob diese eine Primzahl ist. Eine Primzahl ist eine Zahl die durch genau 2 Zahlen teilbar ist: durch 1 und sich selbst.
 Ermittle weiters die Anzahl der Primzahlen zwischen 2 und 10000.
 
 ---
 
-**Übung (Primfaktoren):**
+#### Übung (Primfaktoren)
 Schreibe ein Programm, dass eine positive, ganze Zahl einliest und diese in ihre Primfaktoren zerlegt.
 
 ---
 
-**Übung (Primitive pythagoreische Tripel):**
+#### Übung (Primitive pythagoreische Tripel)
 
 Ein Pythagoreisches Tripel ([wikipedia: Pythagoreisches Tripel](https://de.wikipedia.org/wiki/Pythagoreisches_Tripel)) sind natürliche Zahlen a, b und c die die Formel des Pythagoras erfüllen:
 a²+b²=c²

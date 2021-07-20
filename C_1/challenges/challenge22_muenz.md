@@ -6,7 +6,7 @@ tags: [assignment,challenge]
 # Challenges – Arrays – Münzen werfen
 
 
-**Übung (Münzwürfe – Bernoulli Experiment):**
+#### Übung (Münzwürfe – Bernoulli Experiment)
 
 Wenn Du eine Münze wirfst so erhältst Du "Kopf" oder "Zahl", mit jeweils gleicher Wahrscheinlichkeit. Stell Dir vor Du wirfst die Münze 20 Mal und zählst wie oft "Kopf" auftritt, dies wird zwischen 0 und 20 sein (21 Möglichkeiten).
 

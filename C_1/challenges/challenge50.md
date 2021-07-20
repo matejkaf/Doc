@@ -5,7 +5,7 @@ tags: [assignment,challenge]
 
 # Challenges – Advent Programming Contest
 
-**Übung (Distributing the Presents):**
+#### Übung (Distributing the Presents)
 
 Every year Santa Claus faces the challenge of delivering all Christmas presents on time. Therefore to speed up the process, this year he wants to take the shortest possible trip to deliver all the presents.
 
@@ -32,7 +32,7 @@ Quelle: Advent Programming Contest
 
 ---
 
-**Übung (Order the Presents):**
+#### Übung (Order the Presents)
 
 Kids are always excited about big Christmas presents. Write a program that helps finding the biggest present.
 

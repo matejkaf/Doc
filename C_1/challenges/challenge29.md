@@ -6,7 +6,7 @@ tags: [assignment,challenge]
 # Challenges – Arrays
 
 
-**Übung (Stock span problem):**
+#### Übung (Stock span problem)
 
 Gegeben ist ein Array aus Aktienkursen (jedes Element entspricht dem Kurs an einem Tag). Es soll ein zweites Array der gleichen Länge erstellt werden, dabei ist für jeden Tag gefragt an wie vielen Tagen vorher (durchgehend) der Aktienkurs kleiner oder gleich war. Dabei wird der betrachtete Tag mitgezählt.
 
@@ -16,7 +16,7 @@ Die Spanne der ersten Tages ist immer 1.
 
 ---
 
-**Übung (Prozentrechnung II):**
+#### Übung (Prozentrechnung II)
 
 Es sollen von einer Folge positiver ganzer Zahlen deren Verhältnis zur größten in der Folge enthaltenen Zahl dargestellt werden.  Dabei ist diese größte Zahl 100%. Die Prozente der weiteren Zahlen sind zu berechnen (Kommazahlen!).
 
@@ -28,14 +28,14 @@ Beispiel: -4, 6, 1, 2, -1$ ⟶ 0%, 100%, 50%, 60%, 30%
 
 ---
 
-**Übung (Gleiche Zahlen in Reihe):**
+#### Übung (Gleiche Zahlen in Reihe)
 
 Schreibe eine Funktion die ermittelt wie viele gleiche Zahlen direkt hintereinander in einem `int` Array vorkommen. Der Rückgabewert soll die maximale Anzahl von gleichen Zahlen in Reihe sein.
 Beispiel: Für 5, 5, 2, 2, 3, 5, 5, 5, 2 ⟶ 3 (da die Zahl 5 dreimal hintereinander vorkommt)
 
 ---
 
-**Übung (Häufigste Zahl):**
+#### Übung (Häufigste Zahl)
 
 Schreibe eine Funktion die ermittelt welche Zahl am häufigsten in einem Array vorkommt.
 
@@ -43,7 +43,7 @@ Beispiel: 3,7,5,7,3,1,3,5 ⟶ 3.
 
 ---
 
-**Übung (Unterschiedliche Zahlen sortiert):**
+#### Übung (Unterschiedliche Zahlen sortiert)
 
 Gegeben ist ein sortiertes Array, ermittle die Anzahl der unterschiedlichen Zahlen.
 
@@ -51,7 +51,7 @@ Beispiel: 0,0,2,2,2,2,5,5,7,8,8 ⟶ 5.
 
 ---
 
-**Übung (Unterschiedliche Zahlen unsortiert):**
+#### Übung (Unterschiedliche Zahlen unsortiert)
 
 Schreibe eine Funktion die die Anzahl unterschiedlicher Zahlen in einem Array ermittelt.
 
@@ -59,7 +59,7 @@ Beispiel: 3,7,5,7,3,1,3,5 ⟶ 4.
 
 ---
 
-**Übung (Größter Abstand):**
+#### Übung (Größter Abstand)
 
 Schreibe eine Funktion die jenes Paar gleicher Zahlen im Array sucht, dass den größten Abstand voneinander hat.
 Die Funktion soll den Abstand zurückgeben.
@@ -68,7 +68,7 @@ Beispiel: 3,7,5,7,3,1,3,5 ⟶ 6 (der Abstand der beiden 3er).
 
 ---
 
-**Übung (Genaues Vorkommen):**
+#### Übung (Genaues Vorkommen)
 
 Schreibe eine Funktion die von einem Array ermittelt wie viele Zahlen darin genau 2-mal vorkommen.
 
@@ -78,7 +78,7 @@ Erweiterung: Die Anzahl der Vorkommen kann auch angegeben werden (z.B. 3-mal, 4-
 
 ---
 
-**Übung (Größte Zahl):**
+#### Übung (Größte Zahl)
 
 Schreibe eine Funktion die in einem Array die zweitgrößte Zahl findet. 
 Erweiterung: ermittle die n-größte Zahl.
@@ -86,7 +86,7 @@ Erweiterung: ermittle die n-größte Zahl.
 ---
 
 
-**Übung (Index auf Index I):**
+#### Übung (Index auf Index I)
 
 Auf Papier:
 Welche Werte enthält das Array `a` nach dem Durchlauf folgenden Programms:
@@ -101,7 +101,7 @@ for(i=0;i<99;i++)
 
 ---
 
-**Übung (Index auf Index II):**
+#### Übung (Index auf Index II)
 
 Auf Papier:
 Welche Werte enthalten die Arrays `a`, `b` und `c` nach dem Durchlauf folgenden Programms:
@@ -126,7 +126,7 @@ for(i=0;i<5;i++)
 
 ---
 
-**Übung (Das d`Hondtsche Verfahren):**
+#### Übung (Das d`Hondtsche Verfahren)
 
 Dient zur Verteilung von Sitzen im Parlament (Mandate). Ausgangspunkt ist die Liste mit der Anzahl von Stimmen pro Partei und die Anzahl der zu vergebenden Mandate. Es wird immer ein Mandat vergeben und zwar an die Partei mit den meisten Stimmen in der Liste. Danach wird die Anzahl der erzielten Stimmen für diese Partei durch zwei geteilt. Es entsteht eine neue Liste die wieder nach dem Maximum durchsucht wird. Das wird solange wiederholt bis alle Mandate vergeben sind. Fällt das Maximum mehrfach auf die gleiche Partei so wird die Anzahl der Ausgangsstimmen für diese Partei weiters durch 3, dann durch 4, usw. geteilt.
 
@@ -150,7 +150,7 @@ Programmiere das d`Hondtsche Verfahren. Stimmenverteilung, Anzahl der Parteien u
 
 ---
 
-**Übung (Rotieren):**
+#### Übung (Rotieren)
 
 Lege in einem Programm ein Array aus 7 Zahlen an und setze auf beliebige Werte.
 

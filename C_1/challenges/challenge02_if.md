@@ -1,11 +1,12 @@
 ---
-title: Doc
+title: Übungen
+subtitle: if Challenges
 tags: [assignment,challenge]
 ---
 
-# Challenges – if Anweisung
 
-**Übung (Dreieck):**
+
+#### Übung (Dreieck)
 
 Schreibe ein Programm, das die 3 ganzzahligen Seitenlängen eines Dreiecks einliest und bestimmt:
 
@@ -17,7 +18,7 @@ Beispiel: a=3, b=4, c=5 ist rechtwinkelig weil gilt 3²+4²=5².
 ---
 
 
-**Übung (Gültiges Dreieck):**
+#### Übung (Gültiges Dreieck)
 
 Drei Seitenlängen beschreiben nicht immer ein Dreieck.
 Z.B.: a=3, b=2, c=7.
@@ -41,7 +42,7 @@ Daher ist es nicht möglich, dass es ein rechtwinkeliges Dreieck mit ganzzahlige
 
 ---
 
-**Übung (Schaltjahr):**
+#### Übung (Schaltjahr)
 Schreibe ein Programm das von einer eingegebenen Jahreszahl (`int`) ermittelt ob dies ein Schaltjahr ist.
 
 - Ein Jahr ist (meistens) ein Schaltjahr, wenn die Jahreszahl durch 4 teilbar ist (z.B. 2012). 

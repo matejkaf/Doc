@@ -5,7 +5,7 @@ tags: [assignment,challenge]
 
 # Challenges – Strings
 
-**Übung (Passwortabfrage):**
+#### Übung (Passwortabfrage)
 
 Schreibe ein Programm, das eine Passwortabfrage durchführt.
 Das Passwort heißt: `PASSWORT`+`.
@@ -20,7 +20,7 @@ Zum Beispiel genau zwei `S`.
 
 ---
 
-**Übung (Alphabet komplett):**
+#### Übung (Alphabet komplett)
 Schreibe ein Programm das prüft ob ein (langer) String alle Kleinbuchstaben des lateinischen Alphabets enthält.
 Die ASCII Codes der Kleinbuchstaben: 97--122.
 
@@ -42,7 +42,7 @@ Damit ist einfach festzustellen ob dieses Zeichen bereits einmal eingegeben wurd
 
 ---
 
-**Übung (Ziffern zählen):**
+#### Übung (Ziffern zählen)
 
 Schreibe eine Funktion die in einem String für jede Ziffer (von 0 -- 9) bestimmt wie oft diese darin vorkommt.
 Die Funktion soll einen String und ein `int` Array aus 10 Elementen übergeben bekommen.

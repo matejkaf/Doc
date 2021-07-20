@@ -179,3 +179,31 @@ Download einer kompletten Website
 $ wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://matejkaf.github.io/Doc/5AHELS.html
 ```
 
+
+
+## sed
+
+In Markdown file alle
+
+```
+**Übung (Zeitrechnung):**
+```
+
+in
+
+```
+#### Übung (Zeitrechnung)
+```
+
+wandeln:
+
+```sh
+$ gsed -r "s/\*\*(Übung.*):\*\*/#### \1/" challenge01.md >challenge01_.md
+```
+
+Oder inplace mit `-i`
+
+```sh
+$ gsed -i -r "s/\*\*(Übung.*):\*\*/#### \1/" challenge01.md
+```
+

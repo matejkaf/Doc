@@ -1,11 +1,12 @@
 ---
-title: Doc
+title: Übungen
+subtitle: if Challenges
 tags: [assignment,challenge]
 ---
 
-# Challenges – if Anweisung
 
-**Übung (Schaltjahr II):**
+
+#### Übung (Schaltjahr II)
 
 Verwende nur eine einzige `if` Bedingung (mit `&&` und `||`) um festzustellen ob ein Jahr ein Schaltjahr ist.
 
@@ -15,7 +16,7 @@ Verwende nur eine einzige `if` Bedingung (mit `&&` und `||`) um festzustellen ob
 
 ---
 
-**Übung (Sortieren):**
+#### Übung (Sortieren)
 
 Schreibe ein Programm das 3 Zahlen einliest und der Größe nach sortiert wieder ausgibt.
 
@@ -29,14 +30,14 @@ da die größten Zahlen wie Blasen in einer Flüssigkeit nach oben schweben.
 
 ---
 
-**Übung (Teilbar II):**
+#### Übung (Teilbar II)
 Schreibe ein Programm, das von einer eingegeben Zahl (`int`) prüft ob diese durch eine weitere eingebene Zahl dividierbar ist (ohne Rest). Verwende dabei nicht den Modulo Operator (`%`).
 
 *Hinweis:* Um den Rest zu ermitteln braucht man nicht unbedingt den Modulo Operator.
 
 ---
 
-**Übung (Alter genau berechnen):**
+#### Übung (Alter genau berechnen)
 
 Nach Eingabe des Geburtsdatums soll das Alter exakt ausgerechnet werden.
 Das folgende Programm zeigt die Ermittlung des aktuellen Datums.
@@ -60,14 +61,13 @@ int main()
 
 ---
 
-**Übung (Schneidende Geraden):**
+#### Übung (Schneidende Geraden)
 
 Lese die x und y Koordinaten der Endpunkte zweier horizontaler oder vertikaler Strecken ein und prüfe ob sich diese schneiden. Prüfe auch ob es sich wirklich um horizontale oder vertikale Strecken handelt.
 
 *Hinweis:* Die Verallgemeinerung auf Strecken in beliebiger Lage ist ein relativ schwieriges Problem aus der analytischen Geometrie!
 
 ---
-
 
 
 

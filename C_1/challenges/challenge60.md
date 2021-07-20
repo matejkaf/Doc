@@ -6,14 +6,14 @@ tags: [assignment,challenge]
 # Challenges – Zeiger
 
 
-**Übung (Prüfe auf sortiert):**
+#### Übung (Prüfe auf sortiert)
 
 Lege ein Array aus `int` an, z.B.\ \lstinline$int a[]={3,4,6,9,1}$ und schreibe ein Programm das prüft ob dieses Array aufsteigend sortiert ist. Verwende ausschließlich Zeiger.
 
 ---
 
 
-**Übung (Zwei Arrays verschmelzen):**
+#### Übung (Zwei Arrays verschmelzen)
 
 Schreibe eine Funktion `merge()` die als Parameter 3 Arrays (`a1`, `a2`, `a3`) übergeben bekommt. 
 Alle Elemente von `a1` und `a2` sollen so nach `a3` kopiert werden, dass `a3` ebenfalls aufsteigend sortiert ist.
@@ -27,7 +27,7 @@ int a3[9];
 ---
 
 
-**Übung (Increment und Decrement):**
+#### Übung (Increment und Decrement)
 
 Der `++` Operator hat 2 Auswirkungen. Zum einen wird der Wert einer Variable verändert.
 ```c
@@ -55,7 +55,7 @@ Selbes gilt auch für den `--` Operator.
 
 
 
-**Übung (Zeigerkonstrukte):**
+#### Übung (Zeigerkonstrukte)
 
 Finde heraus was folgende Konstrukte machen.
 *Hinweis:*
@@ -74,7 +74,7 @@ Finde heraus was folgende Konstrukte machen.
 
 
 
-**Übung (Substring Suche):**
+#### Übung (Substring Suche)
 
 Implementiere folgende String Funktion unter ausschließlicher Verwendung von Zeigern.
 

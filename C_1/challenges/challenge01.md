@@ -1,11 +1,12 @@
 ---
-title: Doc
+title: Übungen
+subtitle: Challenges
 tags: [assignment,challenge]
 ---
 
-# Challenges
 
-**Übung (Datum formatieren):**
+
+#### Übung (Datum formatieren)
 
 Schreibe ein Programm, welches die 3 Werte eines Datums (Tag, Monat, Jahr) einliest und im Format TT.MM.JJ wieder ausgibt (Bsp.: 03.07.98). 
 Das Jahr soll als komplette Jahreszahl (4-stellig) eingegeben aber 2-stellig wieder ausgegeben werden (Bsp.: 2009 → 09).
@@ -14,7 +15,7 @@ Das Jahr soll als komplette Jahreszahl (4-stellig) eingegeben aber 2-stellig wie
 
 
 
-**Übung (Runden):**
+#### Übung (Runden)
 
 Schreibe ein Programm, dass eine Zahl n (Datentyp `int`) auf das nächstliegende Vielfache von 100 rundet. Beispiele:  149→100, $150→200$.
 
@@ -23,7 +24,7 @@ Hinweis: Probiere was bei einer Division durch 100 passiert.
 ---
 
 
-**Übung (Zeitrechnung):**
+#### Übung (Zeitrechnung)
 
 Schreibe ein Programm, das eine Anzahl von Sekunden einliest und in die Anzahl von Tagen, Stunden, Minuten und Sekunden umrechnet und ausgibt. Teste das Programm mit verschiedenen Eingabewerten.
 Beispiele:
@@ -34,7 +35,7 @@ Beispiele:
 
 ---
 
-**Übung (Geometrie -- Punkteabstand):**
+#### Übung (Geometrie -- Punkteabstand)
 
 Schreibe ein Programm, das die *x* und *y* Koordinaten zweier Punkte einliest und deren Abstand ausgibt. Hinweis: verwende den Satz des Pythagoras. 
 
@@ -42,7 +43,7 @@ Die Quadratwurzel kann mit der Funktion `sqrt()` aus der Bibliothek `math.h` ber
 
 ---
 
-**Übung (Quadratwurzel):**
+#### Übung (Quadratwurzel)
 Die Wurzel w einer Zahl x
 
 w = √x

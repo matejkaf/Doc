@@ -5,7 +5,7 @@ tags: [assignment,challenge]
 
 # Challenges – Arrays – Sieb des Eratosthenes
 
-**Übung (Sieb des Eratosthenes):**
+#### Übung (Sieb des Eratosthenes)
 
 Eine Primzahl ist eine natürliche Zahl größer als eins, die nur durch sich selbst und durch 1 ganzzahlig teilbar ist. Die kleinsten Primzahlen sind:
 
