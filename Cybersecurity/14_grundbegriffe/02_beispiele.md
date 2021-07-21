@@ -48,7 +48,7 @@ distributed denial of service attack.
 
 [5 Most Famous DDoS Attacks](https://www.a10networks.com/blog/5-most-famous-ddos-attacks/)
 
-<img src="/Users/matejkafr/Documents/Htl/Doc/Cybersecurity/01_allgemein/fig/botnet.png" alt="botnet" style="zoom: 50%;" />
+<img src="/Users/matejkafr/Documents/Htl/Doc/Cybersecurity_2/01_allgemein/fig/botnet.png" alt="botnet" style="zoom: 50%;" />
 
 Quelle: [What Is a DDoS Attack? (Hint: It Involves Zombies & Traffic Jams)](https://www.thesslstore.com/blog/what-is-a-ddos-attack/)
 
