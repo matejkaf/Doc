@@ -124,7 +124,7 @@ Für 2,5-Zoll Server SSD
 
 <img src="fig/U.2port-780x470.jpg" alt="U.2-Port" style="zoom:80%;" />
 
-<img src="fig/OCZ_Z6300_NVMe_flash_SSD%2C_U.2_(SFF-8639)_form-factor.jpg" alt="img" style="zoom:33%;" />
+<img src="fig/OCZ_Z6300_NVMe_flash_SSD.jpg" alt="img" style="zoom:33%;" />
 
 Vorteile:
 
