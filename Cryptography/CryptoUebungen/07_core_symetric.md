@@ -15,7 +15,7 @@ Bei CBC notwendig: IV (Initialization Vector)
 - Ist nicht geheim
 - Niemals wiederverwenden (innerhalb einer Session)
 
-![CBC_encryption](fig/CBC_encryption.svg)
+![CBC_encryption](fig/CBC_encryption.svg.png)
 
 ```csharp
 using System;
@@ -99,5 +99,4 @@ namespace crypt03sym
     }
 }
 ```
-
 
