@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Encoding Übungen (Lösungen)
-tags: [solution,2AHITS_Teach]
+tags: [solution,Cybersecurity_2]
 ---
 
 

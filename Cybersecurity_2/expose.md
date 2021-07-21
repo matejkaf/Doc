@@ -1,8 +1,6 @@
 # Original Lehrplan
 
-Siehe `Lehrplan.png`
-
-
+![Lehrplan](Lehrplan.png)
 
  # Expose Lehrinhalte
 
@@ -49,5 +47,4 @@ Siehe `Lehrplan.png`
 - white hat / ethical hacking
 - härten
 - system logging (Aggregation, Normalization, and Enrichment [](https://securosis.com/blog/understanding-and-selecting-siem-lm-aggregation-normalization-and-enrichmen)), LM ... Log Management, SIEM ... Security information and event management, LMS Log Management Systems
-
 

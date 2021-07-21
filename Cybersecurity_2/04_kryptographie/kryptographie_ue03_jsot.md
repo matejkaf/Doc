@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Playfair Verschlüsselung Übungen
-tags: [lecture,2AHITS_Teach]
+tags: [lecture,Cybersecurity_2]
 ---
 
 #### Übung (Playfair Entschlüsseln)

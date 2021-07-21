@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Encoding Übungen
-tags: [assignment,2AHITS_Teach,2AHITS]
+tags: [assignment,Cybersecurity_2]
 ---
 
 #### Übung (Base64 kodieren)

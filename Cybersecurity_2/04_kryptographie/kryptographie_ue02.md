@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Gartenzaun Verschlüsselung Übungen
-tags: [lecture,2AHITS,2AHITS_Teach]
+tags: [lecture,Cybersecurity_2]
 ---
 
 #### **Übung (Gartenzaun Verschlüsselung):**

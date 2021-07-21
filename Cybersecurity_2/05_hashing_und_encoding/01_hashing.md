@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Hashfunktionen
-tags: [lecture,2AHITS_Teach]
+tags: [lecture,Cybersecurity_2]
 ---
 
 - Daten (beliebig groß) ⇨ Hashfunktion ⇨ Wert fixer Länge, z.B. 128, 256 oder 512 Bits. 

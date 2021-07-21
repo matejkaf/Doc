@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Hashfunktionen Übungen
-tags: [lecture,2AHITS,2AHITS_Teach]
+tags: [lecture,Cybersecurity_2]
 ---
 
 #### Übung (goethe im Online Hash Rechner)

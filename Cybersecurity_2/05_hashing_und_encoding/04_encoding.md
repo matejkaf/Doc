@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 subtitle: Encoding / Kodierung
-tags: [lecture,2AHITS_Teach]
+tags: [lecture,Cybersecurity_2]
 ---
 
 

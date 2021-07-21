@@ -1,7 +1,8 @@
 ---
 title: Kryptographie
 subtitle: Vignère Übung
-tags: [lecture,2AHITS,2AHITS_Teach]
+tags: [lecture,Cybersecurity_2]
+
 ---
 
 #### **Übung (Vignère verschlüsseln):**

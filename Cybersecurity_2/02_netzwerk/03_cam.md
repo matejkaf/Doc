@@ -1,5 +1,7 @@
 ---
 title: CAM Overflow
+subtitle: Cybersecurity
+tags: [Cybersecurity_2]
 ---
 
 Netzwerk Switches verbinden Hosts untereinander. Ein Switch hat eine gewisse Anzahl von Ports (8,16,32,...) an denen Hosts (oder weitere Switches) angeschlossen werden. Die Verkabelung ist sternförmig zum Switch. Jeder  Host sendet Frames zum Switch und dieser leitet die Frames weiter. Für jeden Port merkt sich ein Switch die Source-MAC-Adressen der von dort empfangen Frames. Dies wird gespeichert in der **SAT** (source address table), oder auch genannt **CAM** (content addressable memory).

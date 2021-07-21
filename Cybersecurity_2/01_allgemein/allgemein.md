@@ -1,6 +1,6 @@
 ---
 title: Cybersecurity
-cmds: ['md_html.bash']
+tags: [Cybersecurity_2]
 ---
 
 * TOC
