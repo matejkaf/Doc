@@ -135,8 +135,6 @@ function postRating(rating)
 }
 ```
 
-[[REPL 5AHELSGrpARatingsAPI](https://replit.com/@htlmatejka/5AHELSGrpARatingsAPI)]
-
 
 
 ## Query String encoding

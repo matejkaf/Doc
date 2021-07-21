@@ -153,8 +153,6 @@ Tweet (gekürzt).
 
 Kommentar
 
-Request ([Quelle](https://www.instagram.com/developer/endpoints/comments/)):
-
 ```url
 https://api.instagram.com/v1/media/{media-id}/comments?access_token=ACCESS-TOKEN
 ```
@@ -913,5 +911,5 @@ https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast
   }
  }
  }
- ```
+```
 

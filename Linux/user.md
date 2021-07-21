@@ -90,7 +90,7 @@ $ grep 'myuser' /etc/passwd
 
 > This security feature keeps encrypted passwords safe from unauthorized users and password cracking programs.
 
-`/etc/shadow` ist ein File mit äußerst eingeschränkten Userrechten, nur für root lesbar. Enthält zusätzliche Informationen zum Passwort [[/etc/shadow file in Linux Explained with Examples](/etc/shadow file in Linux Explained with Examples)].
+`/etc/shadow` ist ein File mit äußerst eingeschränkten Userrechten, nur für root lesbar. Enthält zusätzliche Informationen zum Passwort.
 
 ```bash
 $ cat /etc/shadow

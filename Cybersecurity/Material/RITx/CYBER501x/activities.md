@@ -104,7 +104,7 @@ Use nslookup to find the server names and IP addresses asked for in the question
 
 Review the instructions for configuring the advanced settings on Windows Firewall. Then complete the additional activities.
 
-[Using Windows Firewall with Advanced Security](https://www.howtogeek.com/school/windows-network-security/lesson5/all/), How-To Geek
+Using Windows Firewall with Advanced Security `https://www.howtogeek.com/school/windows-network-security/lesson5/all/`, How-To Geek
 
 
 

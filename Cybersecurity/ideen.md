@@ -73,8 +73,6 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 
 [http reques header Cookie](https://developer.mozilla.org/de/docs/Web/HTTP/Headers/Cookie)
 
-[http response header Set-Cookie](https://developer.mozilla.org/de/docs/Web/HTTP/Headers/Set-Cookie)
-
 
 
 

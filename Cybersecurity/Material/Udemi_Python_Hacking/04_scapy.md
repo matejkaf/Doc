@@ -38,8 +38,6 @@ Offizielle VM von Windows installieren [[*](https://developer.microsoft.com/en-u
 
 
 
-![image-20210618161608662](fig/image-20210618161608662.png)
-
 ![image-20210618161617185](fig/image-20210618161617185.png)
 
 

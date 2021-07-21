@@ -1,7 +1,6 @@
 # Quellen
 
 - [socket.io](https://socket.io)
-- [HACKINTOSHRAO](https://hackintoshrao.com/2014/01/23/sending-data-to-the-node-js-server-using-websockets/)
 
 # Client
 

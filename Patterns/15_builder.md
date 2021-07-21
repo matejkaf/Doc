@@ -6,7 +6,8 @@ tags: [5AHELS, lecture, patterns ]
 
 - [refactoring.guru](https://refactoring.guru/design-patterns/builder)
 - [Beispiel - 8 design patterns that every developer should know](http://www.thedevpiece.com/design-patterns-that-every-developer-should-know/)
-- [The builder pattern in practice](https://jlordiales.me/2012/12/13/the-builder-pattern-in-practice/)
+
+  
 
 
 

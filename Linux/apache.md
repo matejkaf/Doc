@@ -55,7 +55,7 @@ $ sudo apt update
 $ sudo apt install apache2
 ```
 
-[http://localhost/](http://localhost/)
+Test: `http://localhost/`
 
 ```bash
 $ cd /var/www/html/

@@ -105,6 +105,6 @@ Es ist keine aufw√§ndige Laborausstattung notwendig, ein PC ist fast immer verf√
 
 `[4]` [elektroniknet.de](http://www.elektroniknet.de/embedded/software-macht-den-unterschied-128347.html)
 
-`[5]` [pc.de](http://pc.de/dies-und-das/preises-autos-elektronik-900)
+`[5]` pc.de
 
 `[6]` [visualcapitalist.com](http://www.visualcapitalist.com/millions-lines-of-code/)

@@ -22,7 +22,7 @@ Erstellte REPL können weitergegeben werden, siehe:
 - Einfache Spiele im Terminal sind möglich. Implementierung einer `conio.h` ähnlichen Library – siehe [REPL Conio](https://replit.com/@htlmatejka/ReplConio).
 - Es ist möglich Dateien hochzuladen und z.B. von einem Programm aus darauf zuzugreifen.
 - Programme können ebenfalls Dateien erzeugen
-- Mit Flask (Python) können Webserver erstellt werden – statische Webseiten, generierte Webseiten und sogar komplette RESTful APIs (siehe [API Server](https://replit.com/@htlmatejka/2103035AHELSGrpAAPIServer#main.py)) sind möglich.
+- Mit Flask (Python) können Webserver erstellt werden – statische Webseiten, generierte Webseiten und sogar komplette RESTful APIs sind möglich.
 
 
 

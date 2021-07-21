@@ -4,7 +4,7 @@
 
 **Remember:** Watch this Demo video. Seeing me complete the activity first will help you understand each of the steps.
 
-- [The TCP Three-Way Handshake Demo](https://courses.edx.org/courses/course-v1:RITx+CYBER504x+3T2018/jump_to_id/ 0c4605e0316b4a8b9bbc5868292caa62)
+- The TCP Three-Way Handshake Demo: `https://courses.edx.org/courses/course-v1:RITx+CYBER504x+3T2018/jump_to_id/ 0c4605e0316b4a8b9bbc5868292caa62`
 
 **System:** During this activity, you’ll use the Kali VM and Wireshark as you did in the packet sniffing exercises in Unit 1.
 

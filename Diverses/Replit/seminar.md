@@ -42,7 +42,7 @@ Was kann man machen?
 
 ### C/C++ Programmieren
 
-[[C/C++ in REPL](/Doc/C_1/01_C_tidbits)]
+[[C/C++ in REPL](/Doc/C_1/01_Grundlagen/02_C_tidbits)]
 
 [[REPL : Grafik mit Allegro](https://replit.com/@htlmatejka/Allegro)]
 

@@ -23,7 +23,7 @@ subtitle: Kryptographischer Ablauf und Übungsaufgabe
 
 Die Aufgabe enthält ein Java Programm das den Ablauf nachstellt und alle lokalen Dateien verschlüsselt. Es ist eine zu entschlüsselnde Datei gegeben und das `pem` File mit dem globalen privaten RSA Schlüssel.
 
-[Übungsaufgabe](https://exercises.itsi.rocks/crypto/index.html)
+Übungsaufgabe `https://exercises.itsi.rocks/crypto/index.html` (Link nicht mehr aktiv)
 
 
 

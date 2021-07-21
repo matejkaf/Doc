@@ -206,8 +206,6 @@ v = float("3.14")
 
 # Strings
 
-[wikibooks Python Programming/Strings](https://en.wikibooks.org/wiki/Python_Programming/String)
-
 strings sind nicht änderbar (wie Java).
 
 ```python

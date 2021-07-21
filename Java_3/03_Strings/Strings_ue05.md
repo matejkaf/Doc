@@ -61,7 +61,7 @@ Ein fix im Programm vorgegebener String soll ohne darin enthaltene Leerzeichen i
 
 #### **Übung (Count words):**
 
-From [Link](https://wiki.engr.illinois.edu/display/cs125/Sample+Exams) – Write a complete Java program that processes user input lines. 
+Write a complete Java program that processes user input lines. 
 
 Your program should ignore any lines until it reads the line with exactly the text `"START"` in uppercase with no other preceding or trailing characters. Once START has been read, count the number of subsequent lines that include the character sequence `"salad"` in upper- or lower-case or any mixture (for example the line `"Ho;MySaLADer!"` counts as a matching line). When your program reads a line that is exactly the text `"END"` in uppercase with no other preceding or trailing characters, output the count of the matching salad lines and exit. Do not read any additional lines. Assume there will always be a valid `"START"` and a later `"END"` line. 
 

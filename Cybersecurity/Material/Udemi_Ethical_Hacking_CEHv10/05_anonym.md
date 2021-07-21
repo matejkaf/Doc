@@ -69,7 +69,6 @@
 
 - VPN Kaskadierung
 
-  - <img src="fig/image-20201228171935578.png" alt="image-20201228171935578" style="zoom:50%;" />
   - Mögliche Verschleierung:
     ![image-20201228172151101](fig/image-20201228172151101.png)
   - VPNs in Ländern die wenig Informationen ausliefern.

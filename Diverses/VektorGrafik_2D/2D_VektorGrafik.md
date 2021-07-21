@@ -876,5 +876,3 @@ $$
 
 Ausführliches Tutorial: [Link](http://chortle.ccsu.edu/vectorlessons/vectorIndex.html)
 
-Ein paar Details [Link](http://www.jimbrooks.org/web/opengl/tutorials/)
-

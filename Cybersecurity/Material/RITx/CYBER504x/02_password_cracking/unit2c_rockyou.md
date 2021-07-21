@@ -12,7 +12,7 @@
 
 #### Downloads
 
-- rockyou.txt is included in the Kali VM downloaded in Unit 1. [Instructions for installing Kali VM.](https://courses.edx.org/jump_to_id/af99a11f64b3400883bc6f9f82e8fa87)
+- rockyou.txt is included in the Kali VM downloaded in Unit 1. Instructions for installing Kali VM `https://courses.edx.org/jump_to_id/af99a11f64b3400883bc6f9f82e8fa87`
 
 #### Goal
 
