@@ -1,7 +1,7 @@
 ---
 title: Grundlagen UNIX shell
 subtitle: C Programmieren
-tags: [2AHITS_Teach]
+tags: [SYTG_2_Linux]
 ---
 
 * TOC
@@ -202,7 +202,6 @@ for(int i=0;i<nrLines;i++) {
   printf("line %d\n", i);
 }
 ```
-
 
 
 

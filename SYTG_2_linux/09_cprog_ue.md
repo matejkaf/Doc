@@ -1,7 +1,7 @@
 ---
 title: Grundlagen UNIX shell
 subtitle: C Programmieren – Übungen
-tags: [2AHITS_Teach]
+tags: [SYTG_2_Linux]
 ---
 
 

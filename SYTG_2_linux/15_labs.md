@@ -10,3 +10,4 @@ Viele Cyber Angriffe haben als erste Ziel am Opfersystem eine shell zu starten. 
 Aufgabenstellung: Erstelle, compiliere und starte ein C Programm ("Hello World"), ohne einen Editor zu verwenden, ausschließlich in der shell, nur unter Verwendung von Linux Kommandos (`echo` und Dateiumleitung).
 
 Ändere das Programm ohne einen Editor zu verwenden auf einen anderen Ausgabetext – verwende dafür `sed`.
+

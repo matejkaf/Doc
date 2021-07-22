@@ -1,7 +1,7 @@
 ---
 title: Grundlagen UNIX shell
 subtitle: Markdown
-tags: [lecture,2AHITS_Teach]
+tags: [lecture,SYTG_2_Linux]
 ---
 
 Einfache Auszeichnungssprache (markup language) für plain-text Files. Dateiendung `.md`

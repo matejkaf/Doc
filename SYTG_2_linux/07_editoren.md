@@ -1,7 +1,7 @@
 ---
 title: Grundlagen UNIX shell
 subtitle: Editoren
-tags: [2AHITS_Teach]
+tags: [SYTG_2_Linux]
 ---
 
 Editoren die im Terminal verwendet werden können:

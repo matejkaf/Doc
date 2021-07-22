@@ -1,7 +1,7 @@
 ---
 title: Text- und Binärdaten
 subtitle: Übungen
-tags: [assignment,2AHITS,2AHITS_Teach]
+tags: [assignment,SYTG_2_Linux]
 ---
 
 #### Übung (Notepad)

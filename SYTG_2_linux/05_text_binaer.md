@@ -1,6 +1,6 @@
 ---
 title: Text- und Binärdaten
-tags: [2AHITS_Teach]
+tags: [SYTG_2_Linux]
 ---
 
 * TOC
@@ -205,5 +205,4 @@ iconv ([manpage](https://man7.org/linux/man-pages/man1/iconv.1.html)) zum Wandel
 $ iconv -f ISO-8859-9 -t utf-8 latin1.txt
 # iconv: keine Änderung der Datei, Ausgabe auf stdout
 ```
-
 
