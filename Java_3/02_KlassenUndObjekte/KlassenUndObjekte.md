@@ -1,7 +1,6 @@
 ---
 title: Klassen und Objekte
 description: Erste Einführung in Klassen und Objekte. Methoden, Konstruktor, this, this(), toString
-cmds: ['md_html.bash','md_html.bash --small']
 tags: [lecture,java, klasse,3BHELS]
 ---
 
@@ -10,6 +9,15 @@ tags: [lecture,java, klasse,3BHELS]
 **Objekt-orientierte Programmierung** (OOP): Kernkonzept in Java.
 
 Der Basisbaustein des OOP ist die **Klasse**.
+
+- Zur Organisation von Programmen
+
+- Zusammenfassung von Funktionen und Variablen
+  - besser lesbar
+  - besser wiederverwendbar
+  - separiert die Implementierung von der Verwendung (encapsulation)
+  - einfacher zu erweitern
+  - einfacher zu warten
 
 Beispiel: Klasse `Schule` mit **Instanzvariablen** `schueler`, `lehrer`, und `name`.
 
@@ -24,8 +32,7 @@ class Schule {
 
 Eine Klasse ist eine Beschreibung – aber noch **kein Speicher** für die Variablen.
 
-Eine Klasse ist mit einem Bauplan für ein Haus vergleichbar. Dieser beschreibt welche Räume es gibt und wie groß diese sind.
-Nach diesem Bauplan kann ein konkretes Haus gebaut werden.
+Eine Klasse ist mit einem Bauplan für ein Haus vergleichbar. Dieser beschreibt welche Räume es gibt und wie groß diese sind. Nach diesem Bauplan kann ein konkretes Haus gebaut werden.
 
 In Java wird der Bauplan Klasse durch das Schlüsselwort `new` einem konkreten Speicherplatz zugewiesen und als Objekt bezeichnet. Begriffe: Die "Klasse wird instanziert" oder "ein Objekt angelegt".
 

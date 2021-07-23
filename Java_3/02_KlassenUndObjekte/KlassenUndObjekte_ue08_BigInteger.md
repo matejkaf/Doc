@@ -1,6 +1,5 @@
 ---
 title: Übung Fakultät mit BigInteger
-cmds: ['md_html.bash','md_html.bash --small']
 tags: [assignment,java, oop]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Einstieg in Java
 subtitle: Übungen
-cmds: ['md_html.bash','md_html.bash --small']
 description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static public.
 tags: [assignment,java,3BHELS]
 ---
@@ -79,5 +78,4 @@ Implementiere eine Methode `boolean isPrim()` die von einer als Parameter überg
 Überprüfe damit: Es gibt 1229 Primzahlen von 2--10000.
 
 ---
-
 

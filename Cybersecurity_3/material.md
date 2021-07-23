@@ -2,6 +2,10 @@
 
 ![Die Cyber-Killchain](fig/Die Cyber-Killchain.jpeg)
 
+post exploitation: Nachdem man sich dauerhaften Zugang zum System geschaffen hat.
+
+
+
 
 
 # Amberg Video 211 – Prozesse überprüfen

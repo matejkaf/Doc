@@ -1,6 +1,5 @@
 ---
 title: Übung Klasse für Getränkeautomat
-cmds: ['md_html.bash','md_html.bash --small']
 tags: [assignment,oop]
 ---
 
@@ -55,7 +54,6 @@ Weitere Anforderungen:
 
 
 ---
-
 
 
 

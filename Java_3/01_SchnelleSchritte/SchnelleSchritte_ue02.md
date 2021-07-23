@@ -1,8 +1,7 @@
 ---
 title: Sieb des Eratosthenes
 description: Sieb des Eratosthenes in Java implementieren. 
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [None,java, array, challenge]
+tags: [assignment,java, array, challenge]
 ---
 
 #### **Übung (Sieb des Eratosthenes):**

@@ -1,8 +1,7 @@
 ---
 title: Basics in Java
 description: Weitere Übungen in Java. 
-cmds: ['md_html.bash','md_html.bash --small']
-tags: [None,java]
+tags: [assignment,java]
 ---
 
 #### **Übung (Potenzieren):**

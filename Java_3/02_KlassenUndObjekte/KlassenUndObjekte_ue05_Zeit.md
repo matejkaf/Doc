@@ -1,6 +1,5 @@
 ---
 title: Übung Klasse für Uhrzeit
-cmds: ['md_html.bash','md_html.bash --small']
 tags: [assignment,java]
 ---
 
@@ -40,7 +39,6 @@ Die Umschaltung zwischen den Modi geschieht durch die Methoden `setTo12()` bzw. 
 Unmittelbar nach der Instanzierung soll der 24 Stunden Modus verwendet werden.
 
 ---
-
 
 
 

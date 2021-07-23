@@ -1,7 +1,6 @@
 ---
 title: Schnelle Schritte zu Java
 description: Schneller Umstieg von C nach Java.
-cmds: ['md_html.bash','md_html.bash --small']
 tags: [lecture, java, 3BHELS ]
 ---
 
