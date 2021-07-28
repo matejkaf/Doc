@@ -19,7 +19,11 @@ Der Basisbaustein des OOP ist die **Klasse**.
   - einfacher zu erweitern
   - einfacher zu warten
 
-Beispiel: Klasse `Schule` mit **Instanzvariablen** `schueler`, `lehrer`, und `name`.
+
+
+# Beispiel
+
+Klasse `Schule` mit **Instanzvariablen** `schueler`, `lehrer`, und `name`.
 
 ```java
 class Schule {
@@ -152,7 +156,8 @@ Definieren wie Java Source Code aussehen soll.
 - Klassennamen: **Substantive**, 
 - Methodennamen: **Verben**. 
 - *camel-cased* Bezeichner: `maxValue`, `getNextElement`.
-- Öffnende Klammer steht **nicht** auf einer eigenen Zeile ([egyptian braces](https://blog.codinghorror.com/content/images/uploads/2012/07/6a0120a85dcdae970b016768a17a2a970b-800wi.jpg)). 
+- Öffnende Klammer steht **nicht** auf einer eigenen Zeile (=*egyptian braces*). 
+  ![img](fig/6a0120a85dcdae970b016768a17a2a970b-800wi.jpg)
 
 
 ```java
@@ -163,7 +168,7 @@ if(a==3) {
 }
 ```
 
-statt\hspace*{\fill}
+statt:
 
 ```java
 if(a==3) 
