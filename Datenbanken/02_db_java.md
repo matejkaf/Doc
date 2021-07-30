@@ -21,7 +21,7 @@ Package `java.sql` and classes:
 
 Get an object of class `Connection`:
 
-```c
+```java
 String url="jdbc:mysql://localhost:3306/htl_test";
 String user="root"; 
 String pass="";
@@ -50,7 +50,7 @@ An SQL statement is associated with an object of class `Statement`.
 
 Execute a `SELECT` query:
 
-```c
+```java
 Statement stmt = con.createStatement();
 String query = "SELECT * FROM Books";
 ResultSet rs = stmt.executeQuery(query);
@@ -59,7 +59,7 @@ ResultSet rs = stmt.executeQuery(query);
 \pause
 The `ResultSet` Object gives access to the retrieved data:
 
-```c
+```java
 while(rs.next()) {
     name=rs.getString("Author");
     System.out.println(name);
@@ -77,7 +77,7 @@ The result set gives the possibility to process one row at a time.
 SQL statements which **change** the table content (`INSERT`, `UPDATE`, `DELETE`, \ldots) are processed using the method
 executeUpdate()} 
 
-```c
+```java
 // SQL insert command
 String strSQL = "INSERT INTO Books ...";
 int rowsEffected = stmt.executeUpdate(strSQL);

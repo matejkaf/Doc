@@ -136,16 +136,16 @@ A database consists of files, where the data gets stored. Access is managed by t
 
 ## Create / delete a table
 
-```c
+```sql
 CREATE TABLE table_name (column_title data_type, ...);
 ```
 
-```c
+```sql
 DROP TABLE table_name;
 ```
 
 Example
-```c
+```sql
 CREATE TABLE Books (
     Id INT,
     Title VARCHAR(40),
@@ -162,22 +162,22 @@ CREATE TABLE Books (
 
 ## Insert rows
 
-```c
+```sql
 INSERT INTO table_name
 VALUES (value1,value2,value3,...);
 ```
 
-```c
+```sql
 INSERT INTO table_name (column1,column2,column3,...)
 VALUES (value1,value2,value3,...);
 ```
 
-```c
+```sql
 INSERT INTO ... VALUES (...) , (...) , ...;
 ```
 
 Example
-```c
+```sql
 INSERT INTO Books VALUES
 	(1,'Learning SQL',2009,'Jon Doe'),
 	(2,'Print something',1452,'Johannes Gutenberg'),
@@ -190,16 +190,16 @@ Database storage is **persistent** stored on a hard disk.
 
 ## Query (Show content)
 All rows:
-```c
+```sql
 SELECT * FROM table_name;
 ```
 
 With condition:
-```c
+```sql
 SELECT * FROM Books WHERE Id=2;
 ```
 
-```c
+```sql
 SELECT * FROM Books WHERE Publ>2000;
 ```
 
@@ -208,14 +208,14 @@ SELECT * FROM Books WHERE Publ>2000;
 ## Change or delete
 
 **Change**
-```c
+```sql
 UPDATE Books
 SET Title='bla', Author='xyz', ...
 WHERE Id=123;
 ```
 
 **Delete a row**
-```c
+```sql
 DELETE FROM table_name WHERE condition;
 ```
 
@@ -228,7 +228,7 @@ Special value for a field. Meaning: the field has no value.
 
 
 Example:
-```c
+```sql
 INSERT INTO Books (Id,Title) SET (4,'War and Peace');
 ```
 All other fields are set to `NULL`.
@@ -237,11 +237,11 @@ All other fields are set to `NULL`.
 
 Query for NULL values
 
-```c
+```sql
 SELECT * FROM Books WHERE Publ IS NULL;
 ```
 
-```c
+```sql
 SELECT * FROM Books WHERE Publ IS NOT NULL;
 ```
 
@@ -293,7 +293,7 @@ OK:
 Most often it makes sense to introduce an additional field as key additionally to all the data fields. This field is frequently called `Id` (for Identifier) and of data type `INT`.
 
 Example
-```c
+```sql
 CREATE TABLE Books (
     Id INT NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (Id),
@@ -309,7 +309,6 @@ CREATE TABLE Books (
 - `NOT NULL` ⟶ must have a value.
 - `PRIMARY KEY(field name)` ⟶ defines the key.
 - `AUTO_INCREMENT` ⟶ value automatically generated (if set to NULL). 
-
 
 
 

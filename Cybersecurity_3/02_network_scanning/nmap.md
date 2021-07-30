@@ -3,6 +3,8 @@ title: Netzwerk Scanning
 subtitle: Das Tool nmap
 ---
 
+* TOC
+{:toc}
 [Nmap: the Network Mapper - Free Security Scanner](https://nmap.org)
 
 Dieses Tool dient dazu aktive Hosts in Netzwerken zu ermitteln (**Host Discovery**) und diese weiters auf angebotene Dienste zu durchforsten (**Port Scan**). nmap erzeugt dafür eine große Menge an Netzwerk Paketen und wertet die Rückantworten aus.
@@ -17,7 +19,7 @@ Wird gerne in Filmen verwendet wenn es um Hacking geht ([[Nmap In The Movies](ht
 
 
 
-## Vorbereitendes
+# Vorbereitendes
 
 Eigene IP Adresse und Subnetz-Maske ermitteln
 
@@ -36,7 +38,7 @@ $ sudo -i
 
 
 
-## Allgemeines
+# Allgemeines
 
 nmap arbeitet in 2 Stufen die nacheinander ablaufen:
 
@@ -55,7 +57,7 @@ Schalter `-v`: Verbose, man kann mitschauen was `nmap` macht
 
 
 
-### Ping Scan
+## Ping Scan
 
 **Host Discovery** wird durch den sogenannte **Ping Scan** erledigt. 
 
@@ -91,7 +93,7 @@ $ nmap -sn -v 192.168.178.0/24
 
 
 
-#### Ping Scan Optionen
+### Ping Scan Optionen
 
 Ping Scan komplett deaktivieren: `-Pn`, in diesem Fall werden die Ports auch dann gescannt wenn der Host nicht als aktiv erkannt wurde.
 
@@ -110,7 +112,7 @@ Nur DNS reverse look-up (=list scan): `-sL`, nmap versucht alle angegebenen IP A
 Beispiel für `scanme.nmap.org`:
 
 ```bash
-# nmap -sL 45.33.32.0/24
+$ nmap -sL 45.33.32.0/24
 ```
 
 UDP Scan an Port 40125: `-PU`. Dies ist ein selten bis kaum benutzter Port – d.h. nicht an einen Server Prozess gebunden. Das System antwortet dann standardmäßig mit ICMP Typ 3 "destination unreachable" code 3 "port unreachable". Aus dem erhalten einer Antwort kann NMAP schließen dass das System aktiv ist. 
@@ -121,7 +123,7 @@ Angeben der UDP Portnummer: `-PU53` , `-PU3,67,161`. Wenn vorhanden werden nmap-
 
 
 
-## Port Scan
+# Port Scan
 
 Nach dem PING Scan erfolgt der Port Scan.
 
@@ -133,7 +135,7 @@ Verschieden Port Scan Typen
 
 
 
-### TCP SYN Scan
+## TCP SYN Scan
 
 Das ist der Standard Port Scan, wenn root Rechte vorhanden. Hinweis: Für einen SYN Scan braucht nmap root Rechte da raw pakete erzeugt werden müssen.
 
@@ -147,7 +149,7 @@ Normaler 3-way Handshake:
 
 ![Lightbox](fig/TCP-connection-1.png)
 
-### UDP Scan
+## UDP Scan
 
 mit eingeschränkte Ports
 
@@ -179,7 +181,7 @@ Damit kann z.B. verfiziert werden dass in Metasploitable der Port 69 offen ist. 
 
 
 
-### Gescannte Ports festlegen
+## Gescannte Ports festlegen
 
 Standardmäßig scannt nmap die 1000 am häufigst verwendeten Ports, siehe `/usr/share/nmap/nmap-services`
 
@@ -290,7 +292,7 @@ $ nmap -p 22,25,80  192.168.178.71
 
 
 
-### Besondere Portscans
+## Besondere Portscans
 
  ```bash
  # nmap -sA
@@ -321,7 +323,7 @@ Besonderer Scan: TCP-IDLE-Scan `-sI` (auch IP ID Scan), nutzt Fragment Identific
 
 
 
-### Dienst- und Versions–Erkennung
+## Dienst- und Versions–Erkennung
 
 Mit `-sV`:
 
@@ -368,7 +370,7 @@ nmap nutzt zuerst **Banner Grabbing** um Bezeichnung und Version von Diensten zu
 
 
 
-### OS-Erkennung
+## OS-Erkennung
 
 ```bash
 $ nmap -O 192.168.178.71
@@ -397,9 +399,9 @@ Durch TCP IP Stack fingerprinting, d.h. durch spezielle Eigenheiten der TCP und 
 
 
 
-### Firewalls, IDS-Vermeidung
+## Firewalls, IDS-Vermeidung
 
-#### Fragmentierung
+### Fragmentierung
 
 ```bash
 $ nmap -f
@@ -415,7 +417,7 @@ $ nmap -f -f
 
 
 
-#### Decoy Scan
+### Decoy Scan
 
 `-D`
 
@@ -423,7 +425,7 @@ $ nmap -f -f
 
 
 
-#### Spoofen der Absenderadresse
+### Spoofen der Absenderadresse
 
 ```bash
 $ nmap -S <Absender IP>
@@ -433,7 +435,7 @@ Ablenkungsmanöver – da keine Antwort empfangen werden kann.
 
 
 
-#### Verlangsamen des Scans
+### Verlangsamen des Scans
 
 ```bash
 $ nmap -T sneaky
@@ -443,7 +445,7 @@ Vermeidet, dass IDS und IPS Systeme den Scan erkennen weil die einzelnen Pakete 
 
 
 
-## Ausgabe Optionen
+# Ausgabe Optionen
 
 Im Textformat in Datei schreiben:
 
@@ -472,7 +474,7 @@ $ firefox nmap-result.xml
 
 
 
-## NMAP Scripting Engine (NSE)
+# NMAP Scripting Engine (NSE)
 
 Erweiterungen von nmap in Lua Scripts.
 
@@ -598,25 +600,7 @@ Die erhaltenen Informationen können Hinweise auf mögliche Schwachstellen biete
 
 
 
-## Best Practice
-
-Die `-A` Option beinhaltet:  `-sV` Dienst- und Versionerkennung, `-O` Betriebssystemerkennung, `-sC` Standard Skripte und traceroute und einige Timer Optimierungen.
-
-Durchführen eines ersten Scans:
-
-```bash
-$ wget -A -T4 -F -v <Ziel>
-```
-
-`-T4` ... Moderate Beschleunigung des Scans
-
-`-F` ... 100 wichtigste Ports
-
-`-v` ... Verbose
-
-
-
-## Kurzübersicht
+# Kurzübersicht Benutzung
 
 Default Scan eines ganzen Subnets (CIDR Notation):
 
@@ -631,7 +615,31 @@ $ nmap 192.168.178.100
 $ nmap scanme.nmap.org
 ```
 
+Nur ARP Scan im lokalen Netzwerk (ohne Port Scan):
 
+```sh
+$ nmap -sn -PR 192.168.178.75
+# -sn  ... nur PING scan (kein PORT scan)
+# -PR  ... ARP Scan
+```
+
+Schneller erster Scan:
+
+```bash
+$ nmap -A -T4 -F -v <Ziel>
+```
+
+- `-A` Option beinhaltet:  `-sV` Dienst- und Versionerkennung, `-O` Betriebssystemerkennung, `-sC` Standard Skripte und `traceroute` und einige Timer Optimierungen.
+
+- `-T4` ... Moderate Beschleunigung des Scans (Timeouts)
+
+- `-F` ... 100 häufigste Ports
+
+- `-v` ... Verbose
+
+
+
+## Optionen
 
 HOST DISCOVERY:
 
@@ -647,7 +655,7 @@ SCAN TECHNIQUES:
   `-sN/sF/sX`: TCP Null, FIN, and Xmas scans
 
 SERVICE/VERSION DETECTION:
-  `-sV: Probe open ports to determine service/version info
+  `-sV`: Probe open ports to determine service/version info
 
 OS DETECTION:
   `-O`: Enable OS detection
@@ -665,27 +673,26 @@ TIMING AND PERFORMANCE:
 
 OUTPUT:
 
-`--reason`: Display the reason a port is in a particular state
-
+`--reason`: Display the reason a port is in a particular state  
 `-v` ... Verbose Mode
 
 
 
-## Zenmap
-
-GUI Frontend. Wird nicht mehr gewartet, daher in Kali Linux nicht mehr enthalten.
 
 
+# Zenmap
 
-## Quellen
+GUI Frontend – Wird nicht mehr gewartet, daher in Kali Linux nicht mehr enthalten.
+
+
+
+# Quellen
 
 [Tutorial](https://hackertarget.com/nmap-tutorial/)
 
 
 
-
-
-## SYN-Scan
+# SYN-Scan
 
 Quelle: [TCP 3-way handshake and port scanning](https://www.coengoedegebure.com/tcp-3-way-handshake-port-scanning/)
 
@@ -699,7 +706,7 @@ The `-sS` parameter performs a SYN-scan and using the `-p` parameter, you can sp
 
 Inspecting the result in the image above, we can see that port 22 was closed, port 80 was open and port 139 was filtered. Let's see what this means and what the handshake and network traffic look like for each of these states.
 
-### Open
+## Open
 
 Port 80 was found *open*. This means the server would be able to complete the full 3-way handshake for this port and allow incoming connections had we actually completed it. From a server-side that means it would reply with a SYN-ACK. If we wanted to make a connection, we should have replied with an ACK. However, doing a port scan, we're not aiming to make the full 3-way handshake so we reply with a RESET instead:
 
@@ -713,7 +720,7 @@ As we can see, the SYN and SYN-ACK are followed by a RST to the server.
 
 
 
-### Closed
+## Closed
 
 Nmap discovered that port 22 was *closed*. In this case, the SYN packet sent by the client was returned with a packet where both RESET and ACK flags are set, indicating the server was not listening on port 22 :
 
@@ -723,7 +730,7 @@ Also in the network traffic we can clearly see the SYN was followed by a RST fro
 
 ![synscan_closed](fig/synscan_closed.png)
 
-### Filtered
+## Filtered
 
 Nmap will attempt to resend the SYN-packet if no response is received. If after several retransmissions no response is received, the port is marked as *filtered*.
 
