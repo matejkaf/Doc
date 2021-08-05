@@ -1,6 +1,6 @@
 ---
 title: Passwörter
-tags: [lecture,2AHITS_Teach]
+tags: [lecture]
 ---
 
 
@@ -26,7 +26,12 @@ Aus technischer Sicht:
 
 ## Passwörter speichern
 
-Es wird nicht dass Passwort gespeichert sondern dessen Hashwert. Fällt dieser Hashwert in unbefugte Hände ist dieser erst einmal nutzlos. Erinnerung: Aus einem Hashwert können nicht die ursprünglichen Daten rekonstruiert werden.
+Es wird nicht dass Passwort gespeichert sondern dessen Hashwert. Eigenschaften:
+
+- das Passwort kann daraus nicht wiederhergestellt werden.
+- prüfen ob Passwort gültig.
+
+Fällt dieser Hashwert in unbefugte Hände ist dieser erst einmal nutzlos. 
 
 Beispiel – Linux Passwort File:
 

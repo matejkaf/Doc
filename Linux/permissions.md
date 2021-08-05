@@ -4,17 +4,7 @@ title: Linux File Permissions
 
 * TOC
 {:toc}
-
-## Quellen
-
-- [Ryans Tutorials Linux Tutorial - 8. Permissions](https://ryanstutorials.net/linuxtutorial/permissions.php)
-- [Unix / Linux - File Permission / Access Modes](https://www.tutorialspoint.com/unix/unix-file-permission.htm)
-- [Unix file types](https://en.wikipedia.org/wiki/Unix_file_types)
-- [What do the fields in ls -al output mean?](https://unix.stackexchange.com/questions/103114/what-do-the-fields-in-ls-al-output-mean)
-
-
-
-## Basics
+# Basics
 
 ```bash
 $ pwd
@@ -29,10 +19,10 @@ drwxr-xr-x 2 htluser htluser 4096 Nov  3 09:38 mydir
 
 10 permission Flags
 
-- 1x directory
+- 1x directory/file
 - 3x file owner permissions
 - 3x group permissions
-- 3x permissions für alle Anderen
+- 3x permissions für alle Anderen (other)
 
 ```
 -rw-r--r-- 1 htluser htluser    0 Nov  3 09:37 myfile.txt
@@ -51,48 +41,67 @@ directory
  owner
 ```
 
+Ein File/Directory hat genau einen owner (User) und gehört zu genau einer Gruppe. Ein User kann zu beliebig vielen Gruppen gehören. Die group permissions gelten wenn ein User nicht der owner ist aber zur Gruppe des Files gehört.
+
 Siehe auch:  [tutorialspoint](https://www.tutorialspoint.com/unix/unix-file-permission.htm)
 
-## File Access Modes
-
-The permissions of a file are the first line of defense in the security of a Unix system. The basic building blocks of Unix permissions are the **read**, **write**, and **execute** permissions, which have been described below −
-
-### Read
-
-Grants the capability to read, i.e., view the contents of the file.
-
-### Write
-
-Grants the capability to modify, or remove the content of the file.
-
-### Execute
-
-User with execute permissions can run a file as a program.
+<img src="fig/permissions.png" alt="permissions" style="zoom:40%;" />
 
 
 
-## Directory Access Modes
+# File Access Modes
 
-Directory access modes are listed and organized in the same manner as any other file. There are a few differences that need to be mentioned.
+- **Read**: erlaubt lesen, z.B. Inhalt eines Files anzeigen
 
-[**Linux File Permission Confusion pt 2**](https://www.hackinglinuxexposed.com/articles/20030424.html)
+- **Write**: erlaubt schreiben, z.B. eine Zeile in einer Textdatei löschen.
 
-### Read
+- **eXecute**: erlaubt ein File als Programm zu starten
 
-allows the affected user to list the files within the directory.
 
-### Write
 
-allows the affected user to create, rename, or delete files within the directory, and modify the directory's attributes. If you don't have execute perms, then write perms are meaningless.
+## chmod
 
-### Execute
+```bash
+$ chmod o=rw myfile.txt # o ... other
+$ chmod g-r myfile.txt  # g ... group
+$ chmod u+x myfile.txt  # u ... user
+$ chmod +x myfile.txt 
+```
 
-allows the affected user to enter the directory (make this directory your working directory), and access files and directories inside. Ist `x` gesetzt `r` aber nicht so kann man zwar den Inhalt des Directories nicht anzeigen aber in ein Subdir darin wechseln (wenn man weiß wie dieses heißt).
+Oktale Schreibweise
 
-**Interesting case**: If you have write + execute permissions on a directory, you can {delete,rename} items living within even if you don't have write perimission on those items. (use sticky bit to prevent this).
+```bash
+$ chmod 755 myfile.txt
+# das selbe wie:
+$ chmod u=rwx,g=rx,o=rx myfile.txt
+```
+
+`rwx` sind 3 Bits (0–7 = Oktalzahl)
+
+Beispiel: `r-x`=`101`=5
+
+
+
+# Directory Access Modes
+
+Ähnlich wie Files, [[Linux File Permission Confusion pt 2](https://www.hackinglinuxexposed.com/articles/20030424.html)]
+
+**Read**: Directory kann angezeigt werden
+
+**Write**: erlaubt erzeugen, umbennen und löschen von Files sowie das Ändern der directory permissions. Allerdings: ohne execution Rechte sind die Write Rechte bedeutungslos.
+
+**Execute**: Setzen als Arbeitsverzeichnis (`cd`) erlaubt, sowie der Zugriff auf darin befindliche Files und Directories. Ist `x` gesetzt, `r` aber nicht so kann man zwar den Inhalt des Directories nicht anzeigen aber in ein Subdir darin wechseln geht (wenn man weiß wie dieses heißt).
+
+**Spezialfall**: Bei write + execute permissions auf ein Directory können Elemente daring gelöscht/umbenannt werden auch wenn keine write permission auf diese Elemente besteht. Das sticky bit kann verwendet werden um dass zu verhindern.
+
+## Beispiele
+
+Anhand des `/var/www` (Apache Web-Server) Verzeichnisses
 
 ```sh
 # user: root
+$ cd /var
+# remove read permission for other
 $ chmod o-r www
 $ ls -l
 drwxr-x--x  3 root root  4096 Feb 23 05:13 www
@@ -107,14 +116,13 @@ $ ls www
 ls: cannot open directory 'www': Permission denied
 ```
 
-Aber da das `x` Flag gesetzt ist, kann das Directory durch den User `kali` betreten werden, d.h. das Working Directory kann `www` sein:
+Aber, da das `x` Flag gesetzt ist, kann das Directory durch den User `kali` betreten werden, d.h. das Working Directory kann `www` sein:
 
 
 ```sh
 # user: kali
 $ cd www                                                                                                                                                                                      $ ls    
 ls: cannot open directory '.': Permission denied
-
 ```
 
 In weitere Unterverzeichnis kann weiter gewechselt werden:
@@ -125,7 +133,7 @@ In weitere Unterverzeichnis kann weiter gewechselt werden:
 $ cd html                                                                                                                                                                                     $ ls                                                                                                                                                                                        index.html  index.nginx-debian.html
 ```
 
-`r` Flag gesetzt, `x` Flag gelöscht
+Nun `r` Flag gesetzt, `x` Flag gelöscht:
 
 
 ```sh
@@ -141,7 +149,7 @@ $ chmod o-x www
 $ ls www
 ls: cannot access 'www/html': Permission denied
 html
-# Fehlermeldung aber dir Inhalt wird angezeigt
+# Fehlermeldung aber der Inhalt wird angezeigt
 
 # working directory kann nicht gesetzt werden
 $ cd www
@@ -159,62 +167,35 @@ ls: cannot access 'www/html': Permission denied
 
 
 
-## Permissions Ändern
+# change owner/group
 
-### file permissions
+Ändert den owner bzw. die Gruppe einer Datei oder eines Verzeichnisses.
 
-`chmod`
-
-```bash
-$ chmod o=rw myfile.txt # o ... other
-$ chmod g-r myfile.txt  # g ... group
-$ chmod u+x myfile.txt  # u ... user
-$ chmod +x myfile.txt 
-```
-
-Oktale Schreibweise
-
-```bash
-$ chmod 755 myfile.txt
-# das selbe wie:
-$ chmod u=rwx,g=rx,o=rx myfile.txt
-```
-
-
-
-### owner / group
-
-Ein File/Directory hat genau einen owner (User) und gehört zu genau einer Gruppe.
-
-Ein User kann zu mehreren Gruppen gehören.
-
-
-
-#### change owner
-
-Ändert den owner und die Gruppe einer Datei oder eines Verzeichnisses.
-
-Syntax:
+owner ändern:
 
 ```
 chown user file/dir
+```
+
+owner und Gruppe ändern:
+
+```
 chown user:group file/dir
+```
+
+Gruppe ändern:
+
+```
 chown :group file/dir
 ```
 
-Letzte Variante setzt nur die Gruppe.
-
-Rekursive Änderungen `-R` mit mehr Ausgaben `--verbose`
+Rekursive Änderungen `-R` (bei Directories werden alle weiteren Unterverzeichnisse und Dateien mitgeändert), mehr Ausgaben `--verbose`
 
 ```bash
 $ chown -R --verbose linoxide:www-data /var/www/html
 ```
 
-
-
-#### change group
-
-`chgrp`: change group
+Mit dem Befehl `chgrp` (change group) kann die Gruppe geändert werden:
 
 ```bash
 $ chgrp group file.txt
@@ -222,28 +203,33 @@ $ chgrp group file.txt
 
 
 
+# User und Gruppen
 
+Als welcher User bin ich eingeloggt:
 
-
-## Arbeiten mit Gruppen
-
-Zeige die Gruppen zu denen der aktuell eingeloggte User gehört:
-
-```bash
-$ groups
-htluser sudo
+```sh
+$ whoami
+matejkafr
 ```
 
-How to set the group that new files will be created with?
+Zu welchen Gruppen gehöre ich:
 
-You can change the default group for all files created in a particular directory by setting the **setgid flag** on the directory (`chmod g+s _dir_`). New files in the directory will then be created with the group of the directory (set using `chgrp <group> <dir>`). This applies to any program that creates files in the directory.
+```sh
+$ id
+uid=501(matejkafr) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),701(com.apple.sharepoint.group.1),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
+```
 
-Note that this is automagically inherited for new subdirectories (as of Linux 3.10), however, if sub-directories were already present, this change won't be applied to them (use the -R flag for that).
+uid ... user ID
 
-If the setgid flag is not set, then the default group will be set to the current group id of the creating process. If you want to execute a particular command (or set of commands) with the changed group, use the command `sg <group> <command>`.
+gid ... group ID (Primary Group ID des Users)
 
+groups ... supplementary group IDs. Zusätzliche Gruppen für Zugriffsrechten auf Files/Directories
 
-### Beispiel
+[[GID, current, primary, supplementary, effective and real group IDs?](https://unix.stackexchange.com/a/18203)]
+
+Erzeugt ein User ein neues File/Directory so erhält dieses als Gruppenzuordnung die Primary Group des Users.
+
+## Beispiel
 
 ```bash
 # logged in as user 'htluser'
@@ -299,6 +285,8 @@ $ cat file.txt
 
 
 
+
+
 ## Advanced Directory Permission Flags
 
 - [Linux File Permission Confusion](https://www.hackinglinuxexposed.com/articles/20030417.html)
@@ -314,6 +302,8 @@ $ cat file.txt
 The **sticky bit** () states that files and directories within that directory may only be deleted or renamed by their owner (or root). 
 
 So what do you do when you need to allow write permissions on a directory for a group of people, but don't want to let them delete each other's files? That's the purpose of the "sticky" bit, `t` which you can apply to a directory. When this bit is set, a user can only delete files if they are the owner. This is most common in directories like `/tmp`:
+
+Anzeige statt other-execution Permission
 
 ```bash
 $ ls -ld /tmp
@@ -334,6 +324,8 @@ $ chmod o+t test
 ### Set group id bit
 
 If you set the sgid bit on a directory, any files created in that directory will have their group ownership set to the directory's group owner.
+
+Anzeige statt group-execution Permission
 
 ```bash
 $ cd /path/to/some/sgid_directory; ls -ld .
@@ -359,6 +351,8 @@ When the `setuid` bit is used, the behavior described above it's modified so tha
 
 An example of an executable with the setuid permission set is `passwd`, the utility we can use to change our login password. We can verify that by using the `ls` command: 
 
+Anzeige statt owner-execution Permission
+
 ```bash
 ls -l /bin/passwd
 -rwsr-xr-x. 1 root root 27768 Feb 11  2017 /bin/passwd
@@ -377,11 +371,11 @@ $ chmod u+s file
 
 
 
-### Aufgabe
+# Aufgabe
 
 Wie sollte man die permissions des eigenen Homedirectories setzen damit niemand spionieren kann?
 
-## Aufgabe
+# Aufgabe
 
 Idee:
 Admin/super user/root legt einen Ordner `projects` an in dem befinden sich weitere Projektordner die unterschiedlichen Gruppen zugeordnet sind.
@@ -393,8 +387,16 @@ Admin/super user/root legt einen Ordner `projects` an in dem befinden sich weite
 
 
 
-## 2do
+# 2do
 
 - ACL (access control lists)
     - [Access Control Lists(ACL) in Linux](https://www.geeksforgeeks.org/access-control-listsacl-linux/)
     - [FilePermissionsACLs](https://help.ubuntu.com/community/FilePermissionsACLs)
+
+# Quellen
+
+- [Ryans Tutorials Linux Tutorial - 8. Permissions](https://ryanstutorials.net/linuxtutorial/permissions.php)
+- [Unix / Linux - File Permission / Access Modes](https://www.tutorialspoint.com/unix/unix-file-permission.htm)
+- [Unix file types](https://en.wikipedia.org/wiki/Unix_file_types)
+- [What do the fields in ls -al output mean?](https://unix.stackexchange.com/questions/103114/what-do-the-fields-in-ls-al-output-mean)
+
