@@ -17,11 +17,13 @@ Zentrales Element der Computersicherheit.
 - Speicherbereiche
 - Geräte
 
-## Unterscheidung
 
-**Authentication** (Authentifizierung): Überprüfung der Identität eines Nutzers (Username/Passwort)
 
-**Authorisation** (Autorisierung): Die Zuerkennung von Rechten zu bestimmten Resourcen (z.B. Datei) und Nutzungsarten (z.B.: lesen/schreiben)
+Unterscheidung:
+
+- **Authentication** (Authentifizierung): Identität feststellen (Username/Passwort)
+
+- **Authorisation** (Autorisierung): Die Zuerkennung von Rechten zu bestimmten Resourcen (z.B. Datei) und Nutzungsarten (z.B.: lesen/schreiben)
 
 **Authentifizierung** bestimmt ob ein User überhaupt Zugang zum System hat. Durch die **Autorisierung** stehen diesem User dann bestimmte Resourcen offen oder es wird der Zugang verwehrt.
 

@@ -1,112 +1,37 @@
+---
+title: Cracking von Passwörtern
+---
 
+Knacke die folgenden Passwörter
 
-# Hands On: Passwort Cracking
-
-Kali Linux Passwort File, für "john the ripper" mit `unshadow` erzeugt.
-
-```
-matejka:$6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.:1000:1000:Franz MATEJKA,,,:/home/matejka:/bin/bash
-test01:$6$TTPymVVpspMofDYz$aDc9NwxcZEpJ.0jxxgFTnQWdDgK948wiLPjcY8iMwJPmmpQzx6kIwe74mjLvvvMJ41I0B9B7vyx56vOR04mLU0:1001:1001:Test,,,:/home/test01:/bin/bash
-test02:$6$TzGIne3m/qFINuIB$3kchXYQ8OuZcxRKe0AZe05WX/m1E.B1jfm20bj0WnrMr4m0AoyG7yEnbVPUbEzxcryfeTt11kayOJUidoy19C/:1002:1002:,,,:/home/test02:/bin/bash
-weissman:$6$SotPZzHERU/nisH2$62EdHdS7dsHypMJVJeLAs1shDlx8/tr7FIWiN.RKM..wYMMXCV17.x5/KtEefcnEBLcvMsgwKA2hW32FewVqT0:1003:1003:Weissman,,,:/home/weissman:/bin/bash
-test03:$6$dJJVujy5gSjhsHtI$oX8PV8jl3VFUR.YBPj4PLKSe9q5/gzbWpfdWV0o0BMmtAPovsBQmwbhjQcf8iihMVXIJQWNNCGv9tsW3zAs1N/:1004:1004:,,,:/home/test03:/bin/bash
-```
-
-Passwörter sind gehasht abgespeichert. 
-
-Encoding des Hash Strings:
+(1) Variation des User Namens:
 
 ```
-$6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.
+user: test
+$6$KI8/NC0B5e0e/QRQ$f85wgSQK/E4XlE3M/cT1OqdQCkcChLvrv2XSvprCEiQbBRc/mJueUmTBZKvFxI1DDQl3DCDuBJ02.9ZqNN/wJ0
 ```
 
-dreiteilig: hash_algorithm, hash_salt, and hash_data
+Mit john mangling rules
 
-`Algorithmus: $6$` = SHA-512 / crypt (sha512crypt)
-
-Salt: `Y.6vLGlD1cGsutIg`
-
-Hash: `Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.`
-
-> Unix stores password hashes computed with [crypt](https://en.wikipedia.org/wiki/Crypt_(C)) in the [`/etc/passwd` file](https://en.wikipedia.org/wiki/Passwd#Password_file) using radix-64 encoding called B64. It uses a mostly-alphanumeric set of characters, plus `.` and `/`. Its 64-character set is "`./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`". Padding is not used. 
->
-> (From [wikipedia Base64](https://en.wikipedia.org/wiki/Base64).)
-
-
-
-```c
-// von
-// http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/lib/libc/crypt/bcrypt.c?rev=1.27&content-type=text/x-cvsweb-markup
-const static u_int8_t Base64Code[] =
-"./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+(2) Aus Standard Wordlist von john:
 
 ```
-
-
-
-Rounds: 5000 default wert
-
-`crypt` ist die Standard UNIX Funktion zum berechnen der Hashwerte und prüfen der Passwörter.
-
-Kali Linux:
-
-```bash
-# mkpasswd verwenden um Hash-Wert zu berechnen:
-$ mkpasswd --method=sha512crypt --salt=Y.6vLGlD1cGsutIg franz
-$6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.
-
-# show all hashing methods
-mkpasswd --method=help --salt=Y.6vLGlD1cGsutIg franz
+$6$CwtsW1oDR7UZsa8i$8cB4rAkJI.vMWVsIflGQz.HhV656qkUOIdq/BJyr5FY1oxMwLJBcwD70pNk9a/sRF0D4DiRctTvBoUn.rkjQ21
 ```
 
-
-
-
-
-# CrackStation
-
-md5 / charley
-
-`8d3533d75ae2c3966d7e0d4fcc69216b`
-
-[CrackStation](https://crackstation.net)
-
-(aus 7.3.2.4 Lab - Attacking a mySQL Database.pdf, CISCO CCNA)
-
-
-
-## Python
-
-```python
-#####################
-# https://docs.python.org/3/library/crypt.html
-#
-import crypt
-
-print("available methods")
-print(crypt.methods)
-
-print("default METHOD")
-cr = crypt.crypt("charley")
-print(cr)
-
-print("MD5 method")
-cr = crypt.crypt("charley",crypt.METHOD_MD5)
-print(cr)
-
-# MD5 breach
-breach = "$1$/5ytelKx$nhbg5/0Icyo.RO5YI6WoR1"
-cr = crypt.crypt("charleY",breach)
-print(cr) # if the pw is correct we get same hash here
-```
+(3) Kombination aus 3 Fächernamen der 3AHITS (Großbuchstaben)
 
 ```
-available methods
-[<crypt.METHOD_SHA512>, <crypt.METHOD_SHA256>, <crypt.METHOD_MD5>, <crypt.METHOD_CRYPT>]
-default METHOD
-$6$Jj3bPBa4b/nN8umM$GDfeqqGb2eyPRT8qs0jqOH7o6TPzBvXEjnlFWACJSF3QfYvpEtWNz6O6f8KuSfov3WioPO/pJABLC0e5lyFJ/1
-MD5 method
-$1$1dm4dxuq$Xdk3QekkfQsE3h2pC7hJH0
-$1$/5ytelKx$8h6U2zW/i.2VVIFI6yfAQ1
+$6$VAlQ3ADpbU//qXIG$ZLipbq02jR0LTBQWI5z0J407U0ZiEjg9qUJSWz3K60UZxzUkRpZV5Oq93kfYyrW5QnFa7Zqh6XhnEsN1A.Xky0
 ```
+
+Mit crunch
+
+(4) Ergebnisse von "shoulder surfing": 5 stelliges Passwort, 4 Kleinbuchstaben die sich mit der linken Hand mit geringer Bewegung tippen lassen (auf der Tastatur: asdf + Zeile darunter + 1 Taste jeweils nach rechts) und eine Ziffer ist dabei.
+
+```
+$6$c30aorWIR3zu3Q1b$zkLBnz/niLmokGH/vTyq6nJZtt.PJ9RYwSZZqlZlvy5Ont598rxFn4S2A8onz6mUHbZEzmeMRkkLPfaqb2eb6.
+```
+
+Auch mit crunch
 

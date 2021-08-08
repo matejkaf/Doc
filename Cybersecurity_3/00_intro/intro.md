@@ -19,4 +19,6 @@ Stoff:
 Themenübersicht:
 
 - Markdown
-- 
+- Remote Shells
+- Passwörter und cracking
+

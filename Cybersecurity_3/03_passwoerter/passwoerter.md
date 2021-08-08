@@ -3,9 +3,10 @@ title: Passwörter
 tags: [lecture]
 ---
 
+* TOC
+{:toc}
 
-
-## Allgemein
+# Allgemein
 
 Ein Passwort ist eine geheime Zeichenfolge die zusätzlich zu einem Benutzernamen verwendet wird um die Identität einer Person zu bestätigen (engl. credentials). Benutzername/Passwort ist die **häufigste** Methode zur **Authentifizierung**.
 
@@ -24,7 +25,17 @@ Aus technischer Sicht:
 
 
 
-## Passwörter speichern
+## Weitere Möglichkeiten
+
+
+
+![image-20210507113617340](fig/image-20210507113617340.png)
+
+Zusätzliche Sicherheit: Zwei-Faktor-Authentifizierung
+
+
+
+# Passwörter speichern
 
 Es wird nicht dass Passwort gespeichert sondern dessen Hashwert. Eigenschaften:
 
@@ -51,7 +62,7 @@ Username:Password:UID:GID:Info:Home:Shell
 
 
 
-## Angriffe
+# Angriffe
 
 Möglichkeit um in den Besitz von Passwörtern zu kommen 
 
@@ -63,7 +74,7 @@ Möglichkeit um in den Besitz von Passwörtern zu kommen
 
 
 
-## Password Breach
+# Password Breach
 
 Passwort Datei wird gestohlen. Kommt häufig vor und betrifft sehr viele Benutzerdaten
 
@@ -87,9 +98,9 @@ Es gibt mehrere Möglichkeiten:
 
 Um diese Angriffe zu beschleunigen wird häufig die Rechenleistung von Grafikkarten genutzt.
 
-### Verteidigung
+# Verteidigung
 
-Das PW cracking muss sehr zeitintensiv sein. Die wird durch 3 Maßnahmen erreicht
+Das PW cracking muss sehr zeitintensiv sein. Dies wird durch 3 Maßnahmen erreicht
 
 - Password Complexity
   - Langes Passwort
@@ -98,17 +109,27 @@ Das PW cracking muss sehr zeitintensiv sein. Die wird durch 3 Maßnahmen erreich
 - Key stretching
 - Salting
 
-### Key stretching
+## Key stretching
 
 Den Vorgang aus dem Text eines Passworts einen Hashwert zu erzeugen nennt sich **key derivation**. Wenn dabei die Hash Funktion viele Male (1000-100000x, Runden, rounds) hinereinander angewendet wird so bezeichnet man das als **key stretching**. Dadurch wird die Anfälligkeit (vulnerability) gegen einen brute force Angriff reduziert weil die Berechnung eines einzelnen Hashwerts viel aufwändiger wird.
 
 Die Anzahl der Wiederholungen wird so gewählt, dass man die bestmögliche HW Ausstattung eines Angreifers annimmt und dafür die key derivation eine bestimmte Mindestzeit in Anspruch nehmen soll (z.B. 10 ms). Da sich die HW ständig verbessert steigert sich auch die Rundenzahl mit der Zeit.
 
-### Salt
+## Salt
 
 Wählen zwei unterschiedliche Nutzer das gleiche Passwort so ergibt sich auch der gleiche Hashwert. 
 
-Erstens kommt ein Angreifer dadurch zu mehr Informationen über die Passwörter als man preisgeben möchte. Zweitens ist dadurch eine sehr fortgeschrittene Verbesserung des brute-force-attacks möglich – sogenannte rainbow-tables. Dabei werden riesige Mengen von Hashwerten vorberechnet und die key derivation enorm beschleunigt, dadurch können mehr Hashwerte pro Sekunde berechnet werden und die Erfolgswahrscheinlichkeit eines Angriffs verbessert sich wesentlich.
+```
+alice : mypass123 -> 3AF9
+bob   : mypass123 -> 3AF9
+```
+
+Nachteile:
+
+- Information für einen Angreifer
+- Angriff per rainbow-tables möglich. Enorme beschleunigung des brute-force-attacks. Hashwerte werden vorberechnet (riesige Tabellen)
+
+Lösung: 
 
 Ein "salt" (kryptographisches Salz) ist eine zufällige Zahl die vor dem Hashing an das Passwort angefügt wird. Bei jedem Ändern des Passworts wird ein neues, zufälliges salt gewählt.
 
@@ -120,9 +141,11 @@ Dieses Salt sorgt dafür, dass gleiche Passwörter sich nie auf den gleichen Has
 
 
 
-### Salted key stretching
+## Salted key stretching
 
-[!TODO: hier die Grafik (Notability) einfügen]
+Aktuell Stand der Technik
+
+![image-20210805104509738](fig/image-20210805104509738.png)
 
 Standard Algorithmen:
 
@@ -132,23 +155,56 @@ Standard Algorithmen:
 
 
 
-## Technische Details
+# Technische Details – Linux
 
 Passwörter werden **nicht im Klartext gespeichert** sondern gehasht und "salted" (gesalzen ;-).
 
-Beispiel - Kali Linux Passwort File:
+
+
+Zusätzlich wichtig: Passwort File vor unauthorisiertem Zugriff schützen (Schreib/Lese Rechte!).
+
+Unter Linux sind 2 Files beteiligt:
+
+- `/etc/password` und
+- `/etc/shadow`
+
+```sh
+# ls -l /etc/passwd /etc/shadow
+-rw-r--r-- 1 root root   3042 Feb 23 05:38 /etc/passwd
+-rw-r----- 1 root shadow 1577 Feb 23 05:38 /etc/shadow
+```
+
+Zeile in passwd:
+
+```
+kali:x:1000:1000:Kali,,,:/home/kali:/usr/bin/zsh
+```
+
+`:x:` bedeutet, dass der Passwort-Hash in der `shadow` Datei ist:
+
+```
+kali:$y$j9T$h.cekCfg097LWvTwVtk8T0$fcGogK/pi581lOUbxBwtEzH7l/zKL0atAeu9DV.BW86:18681:0:99999:7:::
+```
+
+- `$y$`: yescrypt
+- `j9T`: Parameter für yescrypt
+- `h.cekCfg097LWvTwVtk8T0`: Salt
+- `pi581lOUbxBwtEzH7l/zKL0atAeu9DV.BW86`: PW Hash
+
+yescrypt existiert erst seit 2015 [[*](https://www.password-hashing.net/submissions/specs/yescrypt-v2.pdf)]
+
+
+
+Beispiel (SHA-512) – bis vor kurzem in Kali Linux verwendet (passwd mittels unshadow):
 
 ```
 matejka:$6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.:1000:1000:Franz MATEJKA,,,:/home/matejka:/bin/bash
 ```
 
-- `$6$`: Verwendeter Hash Algorithmus (`$6$`=SHA-512)
+- `$6$`: Verwendeter Hash Algorithmus (`$6$`=crypt mit SHA-512)
 - `Y.6vLGlD1cGsutIg`: Salt, Radix-64
 - `Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.`: Passwort-Hash, Radix-64
 
+Radix-64 ≠ Base64
+
 *Default 5000 rounds*
-
-Zusätzlich wichtig: Passwort File vor unauthorisiertem Zugriff schützen (Schreib/Lese Rechte!).
-
-
-

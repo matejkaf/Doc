@@ -68,7 +68,7 @@ import hmac
 pwline = 'matejka:$6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.:1000:1000:Franz MATEJKA,,,:/home/matejka:/bin/bash'
 pw_elements = pwline.split(':')
 salt_and_hash = pw_elements[1]
-salt = salt_and_hash[:salt_and_hash.rfind('$')]
+salt = salt_and_hash[:salt_and_hash.rfind('$')] # $6$Y.6vLGlD1cGsutIg
 
 password = getpass.getpass(prompt='Password: ') # franz
 #password = 'franz'
