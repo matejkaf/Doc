@@ -1,7 +1,11 @@
 # ITS1 in der 3AHITS
 
+
+
 - 2h ganze Klasse, und
 - 2h mit wöchentlichem Gruppenwechsel (parallel zu INSY)
+
+
 
 ---
 
@@ -21,4 +25,5 @@ Themenübersicht:
 - Markdown
 - Remote Shells
 - Passwörter und cracking
+- Zugriffskontrolle (access permissions)
 

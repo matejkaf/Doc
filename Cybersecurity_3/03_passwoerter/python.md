@@ -39,3 +39,11 @@ $1$1dm4dxuq$Xdk3QekkfQsE3h2pC7hJH0
 $1$/5ytelKx$8h6U2zW/i.2VVIFI6yfAQ1
 ```
 
+
+
+## yescrypt
+
+Recherche nicht erfolgreich (08.08.2021)
+
+[[1](https://bugs.python.org/issue44309)]
+

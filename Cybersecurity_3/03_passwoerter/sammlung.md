@@ -372,5 +372,7 @@ Das Ziel ist einen Passwort Hash Algorithmus zu entwickeln der für jede eingese
 
 Speicherzugriffe sind zumindest annähernd vergleichbar schnell (für den Zweck) auf unterschiedlichen Plattformen, während Rechenoperationen sich mit spezieller HW extrem beschleunigen lassen. Neuere Hash-Algorithmen (scrypt, yescrypt) sind daher **memory hard**, d.h. benötigen relativ viel Speicher und Zugriffe auf diesen, sodass es weniger ausmacht ob die ausführende Hardware eine CPU, eine GPU oder ein FPGA/ASIC ist. [[Memory-hard function](https://en.wikipedia.org/wiki/Memory-hard_function)]
 
-
+> ```
+> yescrypt. It is considered stronger as SHA512 or blowfish and as strong as argon2 for crypt() purpose. The hashing method was developed by the author of the blowfish crypt method, and was based on scrypt. It is supported on most Linux distributions, that ship with libxcrypt as a replacement for the glibc crypt library: Fedora, Debian, Ubuntu, OpenSUSE and many others.
+> ```
 
