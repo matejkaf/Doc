@@ -86,6 +86,17 @@ find . -mindepth 2 -type f  -name "*.mp4" -print -exec mv {} . \;
 
 
 
+## Alle Verzeichnisse löschen
+
+[remove all directories (and contents) but not files in pwd](https://superuser.com/a/713745)
+
+```sh
+$ gfind -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
+# GNU find!
+```
+
+
+
 ## Filtern nach Dateigröße
 
 ```bash
