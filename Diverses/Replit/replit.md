@@ -5,6 +5,28 @@ subtitle: Web Entwicklungsumgebung
 
 
 
+# News
+
+- [Debugging](https://blog.replit.com/multiplayer-debugging) wird nun unterstützt!
+
+- > You can now embed `.draw` files in markdown as if they were images: `![my cool drawing](art.draw)`.
+
+- [Status page](https://status.replit.com)
+
+- 
+
+-   > Python **replit.web**: 
+  >
+  > ```python
+  > from replit import web
+  > ```
+  > A flask based web server that connects to Replit with ease! Authenticate your users with Repl Auth. Store information with Repl DB. Combine it all together with a web server and you have entire websites that can be constructed with 12 lines of code (just like in the image above)! So don't wait, [learn how to build your own website in this YouTube video](http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlC9-2BLbB94KKTsleCUP5vBNTIBmXmNJsLG0s5z4o0JDwQyKsUF-2Fw9EpX-2FmqLp3r5ngw-3D-3DkfIP_zKt1wg0aG1ov-2B8JCwzoaVQW10bsacuLz2uK9Xmc71t-2BnNKK2ar1od7p9SpJWLa4GRk5d5V96mCGMjW-2FzKzNDQoG2xuUsWvLkod-2BbR3y2Sn1b1zdqdYg91fpxUGi-2FdTFHm2iKObJkFBrQvkH3duqNz2bTJESMRh1OcaUj2oqbi1JcjYJhLJrba8HOol1aGTYhw0lO9Rylhvnkg-2BAMCtUmHqDvOb3G8mP7jsG-2BAFgP01xRsD3j6J0eU0yAO8vydpw1FhmrNzi16umT-2ByVDf-2FP8PRJncqpv4KlX1afcKzbWRn11EJjMkZF-2FFxXVcUGIXLX97T7t3OCVcqDP-2B5aFwkdrk72yngZJcDs-2F1tk1UtHRTeOuvs4g4BYw7Xs9YAYYEBT0p7Iv-2Fe-2FYXrUk7VedGzSJ664QMDMrt0If1TYCofArgxR-2BMgeRFT-2FdLLjp-2BxgzFBq1NjQcla3KVlbgfZBFKtntLzcpdesci1e2TtjV7Ll5yFs-3D).  
+  > Siehe auch [hier](https://replit-py.readthedocs.io/en/latest/web_tutorial.html)
+  
+  
+
+# Allgemein
+
 [replit.com](https://replit.com) ist eine **Web basierte Entwicklungsumgebung**. Editor, Compiler und Laufzeitumgebung (virtuelle Linux Maschine) sind online. Es genügt ein **Browser**, es sind keine Installationen notwendig. Internetverbindung vorausgesetzt sind alle erstellten Programme von überall verfügbar. Auch auf **Tablets und Handys** ist es möglich an den Programmen (genannt REPL – read eval print loop) zu arbeiten.
 
 ![Screenshot 2021-03-25 at 08.42.57](fig/Screenshot 2021-03-25 at 08.42.57.png)

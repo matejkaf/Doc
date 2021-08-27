@@ -5,10 +5,13 @@ title: Windows
 * TOC
 {:toc}
 
-# Downloads
+# Downloads / Install
 
-- [Get a Windows 10 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+- [Get a Windows 10 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) – mit Visual Studio
 -  [ISO vom aktuellen Windows](https://www.microsoft.com/de-de/software-download/windows10ISO) – nur Verfügbar wenn das OS nicht Windows ist.
+- [Virtual Machines – Test IE11 and Microsoft Edge Legacy using free Windows 10 virtual machines you download and manage locally](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+  -  user: IEUser
+  -  pass: Passw0rd!
 
 
 

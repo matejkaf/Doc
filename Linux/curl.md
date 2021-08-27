@@ -1,11 +1,11 @@
 ---
-title: Doc
-tags: [5AHELS, lecture]
+title: cURL
+tags: [lecture]
 ---
 
-# cURL
+cURL = client URL
 
-=client URL
+> curl is used in command lines or scripts to transfer data
 
 Tool für die Kommandozeile zum Absetzen von http Requests und Anzeige der http Response.
 [curl Homepage](https://curl.haxx.se)
@@ -16,22 +16,32 @@ Grundlegende Verwendung:
 curl http://httpbin.org/ip
 ```
 
-Hinweis:
-Für Tests eines http clients dient [http://httpbin.org](http://httpbin.org)
+Hinweis – Für Tests eines http clients: [http://httpbin.org](http://httpbin.org)
 
-## Mehr Informationen anzeigen
 
-`-i`, `--include`:  
-Zeigt den Header der http Response an.
+
+## Allgemeine Optionen
+
+`-i`, `--include`: Zeigt den Header der http Response an.
 
 ```bash
 curl --include http://httpbin.org/ip
 ```
 
-`-v`, `--verbose`:   
-Zeigt Details über den Verbindungsaufbau, den http request header und den http response header.
+`-v`, `--verbose`: Zeigt Details über den Verbindungsaufbau, den http request header und den http response header.
 
-## http request header Feld
+`--header`: Zeigt nur den Header
+
+`--silent`: Keine Fortschrittsanzeige
+
+```sh
+$ curl --head --silent google.com | grep 'Content-Length' | cut -d ' ' -f 2
+219
+```
+
+
+
+# http request header Feld
 
 `-H`, `--header`:  
 Setzt ein request header field. Mehrfach anwendbar. Beispiel:
@@ -40,7 +50,9 @@ Setzt ein request header field. Mehrfach anwendbar. Beispiel:
 curl --header 'Accept:application/json' http://httpbin.org/headers
 ```
 
-## http Methode
+
+
+# http Methode
 
 `-X`, `--request`  
 Bestimmt die http Request Methode

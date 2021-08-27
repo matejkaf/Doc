@@ -57,7 +57,7 @@ Restart networking service
 $ sudo systemctl restart networking.service
 
 # For pre-systemd hosts
-sudo /etc/init.d/networking restart
+$ sudo /etc/init.d/networking restart
 ```
 
 DHCP wieder aktivieren [[*]](https://docs.oracle.com/cd/E19683-01/806-4075/dhcp-overview-21/index.html):
@@ -179,7 +179,9 @@ $ ifconfig eth0 up
 
 
 
-# Default gateway
+# Default Gateway / Routing Table
+
+Linux:
 
 ```bash
 $ route -n
@@ -187,6 +189,12 @@ Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.178.1   0.0.0.0         UG    100    0        0 eth0
 192.168.178.0   0.0.0.0         255.255.255.0   U     100    0        0 eth0
+```
+
+macOS & Linux
+
+```sh
+$ netstat -rn
 ```
 
 

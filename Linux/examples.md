@@ -1,5 +1,5 @@
 ---
-title: Beispiel für bash - Scripts
+title: Beispiele für bash Scripts
 ---
 
 * TOC
@@ -218,3 +218,13 @@ Oder inplace mit `-i`
 $ gsed -i -r "s/\*\*(Übung.*):\*\*/#### \1/" challenge01.md
 ```
 
+
+
+## cURL
+
+Länge einer Website
+
+```sh
+$ curl --head --silent google.com | grep 'Content-Length' | cut -d ' ' -f 2
+219
+```

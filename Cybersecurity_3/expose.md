@@ -34,6 +34,10 @@
 
 
 
+- Cyber-Killchain
+  - gaining-access
+  - information gathering (network scan, `netdiscover`, `nmap`)
+
 # Lager
 
 2h alle 2 Wochen (wie SYTG im II. Jahr)

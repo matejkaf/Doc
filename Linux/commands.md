@@ -21,15 +21,17 @@ title: Linux Kommandos
 
 `whoami` - loggin name
 
+`id` – Login/Group id
+
 `which` - zeigt pfad eines Tools
 
 `hostname`
 
 `alias` - listet alle Alias
 
-`uname` - Systeminformation
+`uname` - Systeminformation (`uname -a`)
 
-`clear`
+`clear` (auch Ctrl L)
 
 `ascii` Zeige ASCII Tabelle (immer installiert? Nicht macOS)
 
@@ -38,6 +40,10 @@ title: Linux Kommandos
 `touch`
 
 `mkdir`
+
+`tee` – read from standard input and write to standard output and files
+
+
 
 
 

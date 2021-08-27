@@ -255,6 +255,19 @@ $ ls lib[^cg].a
 libm.a
 ```
 
+Curly Braces Expansion:
+
+```sh
+$ ls -l image.{jpg,png}
+$ mv *{.py,.sh} <folder>
+```
+
+```sh
+$ mkdir test{0..9}
+$ ls
+test0	test1	test2	test3	test4	test5	test6	test7	test8	test9
+```
+
 
 
 ## stdin / stdout

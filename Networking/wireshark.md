@@ -6,9 +6,11 @@ title: Wireshark
 
 Kali Linux für Wireshark konfigurieren:
 
-Promiscuous Mode:
+Promiscuous Mode in VirtualBox:
 
 <img src="fig/image-20210427131033098.png" alt="image-20210427131033098" style="zoom:50%;" />
+
+
 
 # Capture Filter
 
@@ -36,14 +38,18 @@ net 192.168.0.0/24
 
 # Display Filter
 
-[Wireshark display filter syntax and reference](https://www.wireshark.org/docs/man-pages/wireshark-filter.html)
+- [Wireshark display filter syntax and reference](https://www.wireshark.org/docs/man-pages/wireshark-filter.html)
 
-[Building Display Filter Expressions](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html)
+- [Building Display Filter Expressions](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html)
 
-http
+HTTP
 
 ```
-tcp.port == 80
+http
+```
+
+```
+tcp.port==80
 ```
 
 ARP/ICMP (Echo,...)
@@ -64,7 +70,13 @@ DHCP
 bootp
 ```
 
-TCP von und zu/von IP Adresse
+von und zu IP Adresse
+
+```
+ip.addr==198.246.117.106
+```
+
+TCP + von und zu IP Adresse
 
 ```
 tcp and ip.addr==198.246.117.106
@@ -79,18 +91,16 @@ ftp
 Telnet
 
 ```
-ip.addr==10.0.0.123 and tcp.port==23
+tcp.port==23
 ```
 
-
-
-Show only SMTP (port 25) and ICMP traffic :
+SMTP (port 25) und ICMP traffic :
 
 ```plaintext
- tcp.port==25 or icmp
+tcp.port==25 or icmp
 ```
 
-Show only traffic in the Subnet (192.168.x.x):
+Show only traffic within Subnet (192.168.x.x):
 
 ```plaintext
 ip.src==192.168.0.0/16 and ip.dst==192.168.0.0/16

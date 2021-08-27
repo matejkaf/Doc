@@ -602,40 +602,81 @@ Die erhaltenen Informationen können Hinweise auf mögliche Schwachstellen biete
 
 # Kurzübersicht Benutzung
 
-Default Scan eines ganzen Subnets (CIDR Notation):
+Optionen:
+
+- `-sn`  ... nur PING scan (kein PORT scan)
+- `-PR`  ... nur ARP Scan
+- `-A` Option beinhaltet: 
+  -  `-sV` Dienst- und Versionerkennung, 
+  - `-O` Betriebssystemerkennung, 
+  - `-sC` Standard Skripte und 
+  - `traceroute` und 
+  - einige Timer Optimierungen.
+- `-T4` ... Moderate Beschleunigung des Scans (Timeouts)
+- `-F` ... 100 häufigste Ports
+- `-v` ... Verbose
+
+
+
+**Default Scan** eines Subnets (CIDR Notation):
 
 ```bash
 $ nmap 192.168.178.0/24
 ```
 
-Scan eines einzelnen Hosts:
+Scan eines **einzelnen** Hosts:
 
 ```bash
 $ nmap 192.168.178.100
 $ nmap scanme.nmap.org
 ```
 
-Nur ARP Scan im lokalen Netzwerk (ohne Port Scan):
+Einfacher **Ping Scan** (ohne Port Scan):
+
+```sh
+$ nmap -sn 192.168.178.0/24
+```
+
+Nur **ARP Scan** im lokalen Netzwerk (ohne Port Scan):
 
 ```sh
 $ nmap -sn -PR 192.168.178.75
-# -sn  ... nur PING scan (kein PORT scan)
-# -PR  ... ARP Scan
 ```
 
-Schneller erster Scan:
+**Schneller** Scan, Timeout Optimierung, 100 häufigste Ports:
+
+```sh
+$ nmap -T4 -F <Ziel>
+```
+
+Schneller erster Scan **mit Scripts**:
 
 ```bash
 $ nmap -A -T4 -F -v <Ziel>
 ```
 
-- `-A` Option beinhaltet:  `-sV` Dienst- und Versionerkennung, `-O` Betriebssystemerkennung, `-sC` Standard Skripte und `traceroute` und einige Timer Optimierungen.
 
-- `-T4` ... Moderate Beschleunigung des Scans (Timeouts)
 
-- `-F` ... 100 häufigste Ports
+# Zenmap scanning profiles
 
-- `-v` ... Verbose
+Zenmap ist (war) eine GUI für nmap. Im aktuellen Kali nicht mehr enthalten. 
+
+> As zenmap was not being maintained upstream any longer we had to drop the package.
+
+[[*](https://www.oreilly.com/library/view/nmap-network-exploration/9781786467454/c2f2fbd2-1f60-461e-8bcf-437882bf72f6.xhtml)]
+
+The predefined Zenmap scanning profiles help newcomers familiarize themselves with Nmap. I recommend you to analyze them to understand the scanning techniques available in Nmap, along with some useful combinations of its options:
+
+- Intense scan: `nmap -T4 -A -v`
+- Intense scan plus UDP: `nmap -sS -sU -T4 -A -v`
+- Intense scan, all TCP ports: `nmap -p 1-65535 -T4 -A -v`
+- Intense scan, no ping: `nmap -T4 -A -v -Pn`
+- Ping scan: `nmap -sn`
+- Quick scan: `nmap -T4 -F`
+- Quick scan plus: `nmap -sV -T4 -O -F -version-light`
+- Quick traceroute: `nmap -sn -traceroute`
+- Regular scan: `nmap`
+- Slow comprehensive scan: `nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script default or discovery and safe`
 
 
 
@@ -686,9 +727,10 @@ GUI Frontend – Wird nicht mehr gewartet, daher in Kali Linux nicht mehr enthal
 
 
 
-# Quellen
+# Quellen / Material
 
-[Tutorial](https://hackertarget.com/nmap-tutorial/)
+- [Tutorial](https://hackertarget.com/nmap-tutorial/)
+- [tryhackme.com Room "CC: Pen Testing"](https://tryhackme.com/room/ccpentesting) 
 
 
 

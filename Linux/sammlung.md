@@ -1,5 +1,6 @@
 # Arbeiten mit der Unix Shell
 
+- [the missing semester of your cs education 2020](https://missing.csail.mit.edu/2020/)
 - [Ryans Tutorials - Linux Tutorial](https://ryanstutorials.net/linuxtutorial/)
 - [Ryans Tutorials - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
 - [30 Bash Script Examples](https://linuxhint.com/30_bash_script_examples/)
@@ -9,7 +10,6 @@
 - [Sh - the Bourne Shell](http://www.grymoire.com/Unix/Sh.html)
 - [shellscript.sh](https://www.shellscript.sh/)
 - [Bash variables and command substitution](http://www.compciv.org/topics/bash/variables-and-substitution/)
-
 - Standard Tools
     - [Basic UNIX Commands List](https://www.tipsandtricks-hq.com/basic-unix-commands-list-366)
     - [The 15 Essential UNIX commands](https://www.petefreitag.com/item/426.cfm)

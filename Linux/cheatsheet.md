@@ -2,9 +2,17 @@
 title: Cheat Sheet der Linux Befehle
 ---
 
+* TOC
+{:toc}
+## Allgemein
+
+### bash keyboard shortcuts
+
+[Cheatsheet: Productivity-boosting Bash shortcuts](https://blog.ssdnodes.com/blog/cheatsheet-bash-shortcuts/)
 
 
-**root** Rechte erlangen
+
+### **root** shell
 
 ```sh
 $ sudo -i
@@ -12,21 +20,23 @@ $ sudo -i
 
 
 
-**Tastaturlayout** einstellen (Kali, Ubuntu, ...)
+### **Tastaturlayout** einstellen
 
 ```sh
+# Kali, Ubuntu, ... 
 $ setxkbmap -layout de
 ```
 
-Metasploitable:
+
 
 ```sh
+# Metasploitable
 $ loadkeys de
 ```
 
 
 
-**Shutdown**
+### **Shutdown**
 
 ```sh
 $ shutdown -h now
@@ -34,7 +44,11 @@ $ shutdown -h now
 
 
 
-IP Adresse
+## Netzwerk
+
+
+
+### **IP Adresse**
 
 ```sh
 $ ifconfig [eth0]
@@ -43,9 +57,42 @@ $ ip a
 
 
 
-Default Gateway
+### **Default Gateway**
 
 ```sh
 $ route -n
 ```
+
+
+
+### **ARP** cache (geht auch unter Windows)
+
+```sh
+arp -a -n
+# `-a` ... Use alternate BSD style output format (with no fixed columns)
+# `-n`, `--numeric` ... shows numerical addresses instead of trying to determine symbolic host, port or user names
+```
+
+
+
+### **Apache** Webserver
+
+```sh
+$ service apache2 start
+$ cd /var/www/html
+```
+
+
+
+## vi
+
+`i` → Insert mode, `ESC` → Command mode
+
+- `o` neue Zeile darunter + INSERT Mode
+- `$` end of line, `A` +INSERT Mode
+- `^` oder `_`  beginning (first non-whitespace), `I` +INSERT Mode
+- `0` (zero) start of line
+- `:w` speichern
+- `:q` beenden, `:wq` speichern und beenden
+- `:q!` beenden (Änderungen verwerfen)
 
