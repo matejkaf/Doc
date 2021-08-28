@@ -38,7 +38,7 @@ void main()
 
 ## Locale (Umlaute)
 
-Für Visual Studio Konsolen Projekt
+Für Visual Studio Konsolen Projekt unter Windows
 
 ```c
 #include <locale.h>
@@ -56,5 +56,20 @@ In Visual Studio
 
 ```c++
 #pragma warning(disable:4996)
+```
+
+
+
+## Wartezeit
+
+Linux (bzw. Replit)
+
+```c++
+#include<unistd.h>
+
+int main() 
+{
+	usleep(3 * 1000000000); //sleeps for 3 seconds  
+}
 ```
 
