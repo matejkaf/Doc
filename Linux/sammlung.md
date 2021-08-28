@@ -1,5 +1,5 @@
 ---
-title: Sammlung: Arbeiten mit der Unix Shell
+title: Sammlung – Arbeiten mit der Unix Shell
 ---
 
 - [the missing semester of your cs education 2020](https://missing.csail.mit.edu/2020/)
