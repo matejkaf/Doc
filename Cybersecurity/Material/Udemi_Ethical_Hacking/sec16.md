@@ -28,3 +28,45 @@ Icon kann angegeben werden (z.B.: www.iconarchive.com). Wollen aber Preview des 
 
 ![image-20210827162638446](fig/image-20210827162638446.png)
 
+
+
+**Video 85** – Problem: es ist immer noch ein exe File. 
+
+right to left override character (Unicode U+202D)
+
+```sh
+$ sudo apt install gnome-characters
+```
+
+
+
+## Email Spoofing
+
+**Video 86** – Spoofing Emails - Setting Up an SMTP Server
+
+Die Frage ist wie bekommt man den Trojaner auf das Ziel. Erste Möglichkeit durch eine Fake Email.
+
+Freie WebSites gibt es, aber diese sind nicht geeignet da blacklistet wil viel Spam davon gesendet wird.
+
+[SMTP Server](https://www.sendinblue.com/)
+
+Video 87
+
+sendmail verwenden:
+
+![image-20210828101007587](fig/image-20210828101007587.png)
+
+
+
+Video 88
+
+Wenn ein webhosting zur Verfügung steht. (Frei stellen kein Email senden zur Verfügung)
+
+Senden der Email mit PHP.
+
+
+
+## BeEF Framework
+
+Video 89
+

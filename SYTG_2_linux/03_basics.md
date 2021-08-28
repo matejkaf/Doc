@@ -6,11 +6,6 @@ tags: [lecture, unix, shell, bash,SYTG_2_Linux ]
 
 * TOC
 {:toc}
-
-# Grundlagen der shell
-
-
-
 > was ist eine shell, Command-Prompt, `date`, Optionen, Argumente, `echo`
 
 Eine shell (Kommandozeile, Terminal) ist eine textorientierte Schnittstelle zum Computersystem.
@@ -27,7 +22,7 @@ Thu Oct 24 13:33:20 UTC 2019
 
 
 
-## Optionen
+# Optionen
 
 Folgen (durch Leerzeichen getrennt) auf den Befehl.
 
@@ -53,7 +48,7 @@ Auch google: `man date` möglich
 
 
 
-## Argumente
+# Argumente
 
 Auf Befehle können Argumente folgen die vom Befehl verarbeitet werden.
 
@@ -68,13 +63,13 @@ Optionen und Argumente koennen gemeinsam verwendet werden.
 
 
 
-## History
+# History
 
 Mit den Pfeil-rauf und runter Tasten hat man Zugriff auf bereits vorher ausgeführte Befehle.
 
 
 
-## Filesystem
+# Filesystem
 
 > Navigation im File System, mit `cd`, `ls`, `pwd`. Neue Verzeichnisse mit `mkdir` anlegen. Absolute und relative Pfade.
 
@@ -175,7 +170,7 @@ $ pwd
 
 
 
-## Weitere file Kommandos
+# Weitere file Kommandos
 
 Files und Ordner löschen.
 
@@ -184,7 +179,7 @@ Files und Ordner löschen.
 Nicht leere Verzeichnisse löschen:
 
 ```bash
-rm -r
+$ rm -r <dir_path>
 ```
 
 Dateien kopieren
@@ -207,7 +202,7 @@ $ mv hallo.txt mydir
 
 
 
-## Wildcards
+# Wildcards
 
 Um mehrere Files auf einmal anzugeben
 
@@ -270,7 +265,7 @@ test0	test1	test2	test3	test4	test5	test6	test7	test8	test9
 
 
 
-## stdin / stdout
+# stdin / stdout
 
 > `cat`, Umleitung stdout `>` und `>>`, Umleitung stdin `<`
 
@@ -348,7 +343,7 @@ $ cat hallo.txt
 
 
 
-## Pipes
+# Pipes
 
 > `ls -l`, `more`, Pipes, `less`
 
@@ -395,7 +390,7 @@ Hinweis: Der Befehl `less` ist ähnlich wie `more` aber mit zusätzlichen Funkti
 
 
 
-## Quotes
+# Quotes
 
 Leerzeichen trennen für die shell unterschiedliche Komponenten der Befehlszeile. Möchte man das nicht so haben, z.B. bei Datei- und Ordnernamen mit Leerzeichen, sind Hochkommas zu verwenden (single oder double quotes).
 

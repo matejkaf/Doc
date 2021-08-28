@@ -178,7 +178,7 @@ $ wc --lines sampletextfiles/* | head -n-1 | sort --key=1 --general-numeric-sort
 
 
 
-# Cut, tac, grep
+# Cut und grep
 
 - `cut` (filtert Spalten)
 - `grep` (filtert Zeilen)
@@ -254,7 +254,7 @@ Erweiterung: Auswerten eines arithmetischen Ausdrucks mit python:
 echo '1+2+3' | python3 -c 'print(eval(input()))'
 ```
 
-> [!TODO] Das tatsächlich summieren der Werte wäre ein Beispiel für AWK
+> [!TODO] Das tatsächlich summieren der Werte wäre auch ein Beispiel für AWK
 
 
 
