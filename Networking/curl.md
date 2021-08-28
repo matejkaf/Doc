@@ -68,3 +68,16 @@ Daten für POST.
 ```bash
 curl --request POST --header 'Content-Type: application/json' --data '{"name": "Max Mustermann", "grade": "3"}' http://httpbin.org/post
 ```
+
+
+
+# FTP
+
+```sh
+# list a directory
+curl "ftp://$host/html/adb/" --user "$user:$pass"
+
+# upload a file
+curl -T test.html "ftp://$host/html/adb/" --user "$user:$pass"
+```
+
