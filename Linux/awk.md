@@ -1,4 +1,12 @@
+---
+title: AWK
+---
+
+
+
 # AWK
+
+Insbesondere zum verarbeiten von in Spalten organisierten Daten.
 
 Verdoppelt jede Zeile:
 
@@ -37,6 +45,23 @@ Susy oranges 12
 ```
 
 Hinweis: Ausführung nur wenn `$0` die regex `/oranges/` matched
+
+```sh
+$ awk 'BEGIN {count=0} /oranges/ {print $0;count=count+$3} END {print count, "oranges"}'  shopping.txt
+```
+
+Mit exaktem Zugriff auf die Spalte in der "oranges" steht:
+
+```sh
+$ awk 'BEGIN {sum=0} $2 == "oranges" {count=$3;print count;sum+=count} END {print "Summe=" sum}' shopping.txt
+```
+
+```
+5
+9
+12
+Summe=26
+```
 
 Arbeiten mit Daten die über mehrere Zeilen verteilt sind, siehe `dev/awk/shopping2.txt`.
 
