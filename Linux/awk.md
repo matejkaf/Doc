@@ -22,7 +22,7 @@ $ awk '{print $0;print $0}' shopping.txt
 $ awk '{print $1 " " $3}' shopping.txt
 ```
 
-Wenn nicht durch Leerzeichen getrennt: Setze den field seperator auf Komma (`-F,`)
+Wenn nicht durch Leerzeichen getrennt: Setze den *field seperator* auf Komma (`-F,`)
 
 ```bash
 $ awk -F, '{print $1 " " $3}' klassenkassa.csv
@@ -52,6 +52,8 @@ $ awk 'BEGIN {count=0} /oranges/ {print $0;count=count+$3} END {print count, "or
 
 Mit exaktem Zugriff auf die Spalte in der "oranges" steht:
 
+> Awk will execute a code block only if the preceding boolean expression evaluates to true
+
 ```sh
 $ awk 'BEGIN {sum=0} $2 == "oranges" {count=$3;print count;sum+=count} END {print "Summe=" sum}' shopping.txt
 ```
@@ -62,6 +64,8 @@ $ awk 'BEGIN {sum=0} $2 == "oranges" {count=$3;print count;sum+=count} END {prin
 12
 Summe=26
 ```
+
+Auch regular expressions sind möglich: `$5 ~ /root/ { print $3 }`
 
 Arbeiten mit Daten die über mehrere Zeilen verteilt sind, siehe `dev/awk/shopping2.txt`.
 
@@ -81,6 +85,14 @@ $ gawk '/name/ {name=$2;getline;fruit=$2;getline;count=$2;if(fruit=="oranges") p
 
 
 # Testdateien
+
+```sh
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping.txt
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/shopping2.txt
+$ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/klassenkassa.csv
+```
+
+
 
 `klassenkassa.csv`
 
