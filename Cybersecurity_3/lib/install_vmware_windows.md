@@ -1,18 +1,17 @@
-
-
-# Kali
-
-- `kali-linux-2021.1-vmware-amd64.7z` entpacken (Windows: 7-zip Installation notwendig)
-- Mac: An die gewünschte Stelle bewegen und mit Drag and Drop in VmWare ziehen
-- Windows: unter `Dokumente` einen Ordner `Virtual Machines` anlegen und Dateien (ganzen Ordner) reinkopieren
-- Import an existing VM / Open a virtual Machine
-- Anzahl der Cores anpassen
+---
+title: Installation von Windows 10 auf VmWare Workstation
+---
 
 
 
-# Windows 10
+# Fertige VM
 
-- Ausgangspunkt ISO Datei
+[Download](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+
+
+
+# Von ISO Datei
+
 - Kein Easy install
 - Mac: 
   - Legacy BIOS (UEFI geht am Mac nicht)
@@ -36,11 +35,3 @@
 
 
 VmWare Tools installieren
-
-Alternative: [Download](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) der fertigen VM.
-
-
-
-# Metasploitable
-
-Entpacken und in Ordner `Virtual Machines` kopieren.

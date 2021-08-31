@@ -143,7 +143,7 @@ Port states:
 
 Firewalls filter ports
 
-Scanning Tool: nmap
+Scanning Tool: `nmap`
 
 
 ### Is Port Scanning Legal? (3:57)
@@ -481,3 +481,4 @@ cain and abel
 
 abel: windows service
 cain: grafische oberfläche (für ARP spoofing, sniffing und password extraction)
+
