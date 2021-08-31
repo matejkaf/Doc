@@ -1,8 +1,22 @@
 ---
 title: Virtuelle Maschinen installieren
+subtitle: Übung
+tags: [assignment]
 ---
 
 #### Übung (Kali)
 
-Starte den VmWare Player und installiere Kali Linux. [Anleitung](../lib/install_vmware_kali)
+Installiere Kali Linux im VmWare Player. [Anleitung](../lib/install_vmware_kali)
+
+
+
+#### Übung (Metasploitable)
+
+Installiere Metasploitable im VmWare Player.
+
+
+
+#### Übung (NAT/Bridged)
+
+Starte die Kali VM und vergleiche die Ausgabe von `ifconfig eth0` sowie `route -n`  in NAT und Bridged Mode.
 

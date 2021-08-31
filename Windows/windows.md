@@ -227,3 +227,14 @@ smb://HTLPC-R83-101/
 
 Scheint in der Schule nicht zu funktionieren
 
+
+
+# telnet
+
+Windows 10 – **telnet client** in der Kommandozeile:
+
+Telnet muss aktiviert werden. Suchen nach "Features aktivieren" (https://www.heise.de/tipps-tricks/Windows-10-Telnet-Client-aktivieren-4569277.html). "Telnet-Client".
+telnet über die Kommandozeile starten.
+
+<img src="fig/image-20210701111240706.png" alt="image-20210701111240706" style="zoom:33%;" />
+
