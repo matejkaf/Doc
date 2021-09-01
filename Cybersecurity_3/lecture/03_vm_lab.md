@@ -14,9 +14,9 @@ Jeweils als virtuelle Maschine
 
 # Linux Netzwerk
 
-Netwerkkonfiguration wird häufig benötigt
+Netwerkkonfiguration wird häufig benötigt:
 
-`ifconfig` für IP Adresse, netmask und MAC Adresse:
+- `ifconfig` für IP Adresse, netmask und MAC Adresse:
 
 ```sh
 $ ifconfig eth0      
@@ -25,7 +25,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ...
 ```
 
-`route` für Default Gateway:
+- `route` für Default Gateway:
 
 
 ```sh
@@ -34,5 +34,15 @@ Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.126.1   0.0.0.0         UG    100    0        0 eth0
 192.168.126.0   0.0.0.0         255.255.255.0   U     100    0        0 eth0
+```
+
+
+
+# Shutdown
+
+Aus der Kommandozeile:
+
+```sh
+$ shutdown -h now
 ```
 

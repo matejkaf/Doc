@@ -5,7 +5,9 @@ subtitle: Cyber-Killchain
 
 APT (**Advanced Persistent Threat**). Zielgerichteter Angriff auf ein Ziel (Firma, Behörde, ...). Kann Monate bzw. Jahre andauern.
 
-Vorgehen der Angreifer kann in Phasen gegliedert werden. Ein **IT-Sicherheitskonzep** sollte Maßnahmen gegen Aktionen in jeder Phase enthalten. 
+Vorgehen der Angreifer kann in Phasen gegliedert werden. Ein **IT-Sicherheitskonzep** sollte Maßnahmen gegen Aktionen in jeder Phase enthalten.
+
+
 
 # Variante 1 (nach Eric Amberg)
 

@@ -31,5 +31,18 @@ Achtung: telnet ist völlig unsicher und sollte in Produktivsystemen nicht zum E
 
 # SSH
 
-Verwendet kryptographische Methoden um die Verbindung abzusichern.
+Kryptografisches Netzwerkprotokoll für remote shell Zugriff, sehr sicher, Ersatz für Telnet.
 
+- Passwörter und Datenverkehr verschlüsselt  (Vertraulichkeit)
+- Manipulationsschutz (Integrität)
+
+Port 22/TCP
+
+SSH Server: Läuft als Dienst (demon) auf dem System auf dem man sich Remote einloggen will.
+
+SSH Client:
+
+- Linux Shell: `ssh user@host`
+- Windows:
+  -  `putty.exe`
+  -  Ab Windows 10 Version 1709 (Oktober 2017) integriert, siehe [[ct : SSH unter Windows 10 nutzen](https://www.heise.de/tipps-tricks/SSH-unter-Windows-10-nutzen-4224757.html)], über Kommandozeile aufrufbar.

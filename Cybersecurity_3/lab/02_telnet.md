@@ -10,7 +10,7 @@ tags: [assignment]
 
 Voraussetzung: Kali VM
 
-Öffne unter Kali Linux ein Terminal und teste ob `telnet` installiert 
+Öffne unter Kali Linux ein Terminal und teste ob `telnet` installiert ist:
 
 ```sh
 $ telnet
@@ -98,3 +98,26 @@ $ ifconfig
 ...
 ```
 
+
+
+---
+
+#### Übung (telnet password sniffing)
+
+Beim Sniffing werden am Netzwerk gesendete Daten mitgelesen. Wir verwenden dazu das unter Kali installierte Programm "wireshark".
+
+- Starte wireshark
+
+- Starte die Aufzeichnung auf der Netzwerkschnittstelle `eth0`
+
+- Wiederhole das telnet Login von Kali auf Metasploitable
+
+- Kannst du die Kommunikation in der Wireshark Aufzeichnung finden?
+
+- Setze Display Filter auf: `ip.addr==<Metasp_IP> and tcp.port==23 `
+
+- Suche die Buchstaben des Passworts in den einzelnen Paketen
+
+- Verwende Menüpunkt: Analyze>Follow>TCP Stream (oder rechte Maustaste auf Packet: Follow>TCP Stream)
+
+![image-20210831165152236](fig/image-20210831165152236.png)

@@ -4,6 +4,8 @@ subtitle: Übung
 tags: [assignment]
 ---
 
+[Häufig benötigte Linux Befehle](../../Linux/cheatsheet)
+
 #### Übung (Kali)
 
 Installiere Kali Linux im VmWare Player. [Anleitung](../lib/install_vmware_kali)

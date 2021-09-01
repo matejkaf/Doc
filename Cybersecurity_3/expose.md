@@ -44,8 +44,6 @@
 
 D.h. 15-17 Termine pro Gruppe
 
-
-
 ---
 
 - Eigene Malware schreiben, BAT Datei mit Schleife auf Windows, sehr einfach, siehe "Amberg Video 174 Eine eigene Malware schreiben"
@@ -57,7 +55,6 @@ D.h. 15-17 Termine pro Gruppe
 - KALI Linux und **Wireshark**: Mittracen einer **telnet** Verbindung. Passwort wird im Klartext übertragen
 - OpenVAS (siehe Videos Eric Amberg)
 - Linux File Permissions, Beispiel: Apache `/var/www/html` (owner ist `root`)
-- 
 - Python: Passwort Cracker, von einer Person ist bekannt, dass sie einen Frauennamen sowie das Geburtsjahr als Passwort verwendet. Erstellen einer eigenen Wortliste mit Python Skript.
 - **Excel Makrovirus** erstellen: Siehe "Amberg Video 177 Einen Makro-Virus mit Empire erstellen"
 - **Trojaner** erstellen, `putty.exe` als Carrier Application, `msfvenom` erzeugt Wrapper, Opfer Windows 7, "Amberg Video 179. Einen Trojaner selbst erstellen".
@@ -66,6 +63,7 @@ D.h. 15-17 Termine pro Gruppe
 - Statische Malware Analyse, sysinternals strings, evtl. auch mit regular expressions, "Amberg Video 200. Strings - Zeichenketten in Programmen finden"
 - **`host` Datei** von Windows manipulieren, Siehe Amberg Video 212 ab 9:00–11:00, für lokale Namensauflösung, höhere Priorität als DNS Server, `C:\Windows\System32\drivers\etc\host`, Editieren: notepad als Admin öffnen, z.B. zusätzliche Zeile am Ende `192.168.178.50 www.attacker.com`
 - **EXIF**: Möglichst viele Informationen aus einem Bild ermitteln. Insbesondere wo es aufgenommen wurde. `exif` Tool unter Kali Linux. (Achtung: bei Export aus Apple Photos muss das Häckchen für die Geo Position gesetzt werden).
+- Python Script für automatiiertes Passwort guessing auf einen telnet Server
 
 
 
