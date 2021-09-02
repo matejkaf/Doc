@@ -24,8 +24,6 @@ Ein Passwort muss man sich merken können, daher irgend ein Schema als Merkhilfe
 
 Z.B. Name der Ehefrau "helene", allerdings lassen das die Passwortrichtlinien (password policy) nicht zu, daher hängt der Nutzer einfach ein Sonderzeichen und so viele Ziffern an bis die Mindestlänge erreicht ist außerdem wird der Name groß geschrieben. Die Ziffern ergeben sich aus dem Geburtdatum.
 
-
-
 Reconnaissance Phase: Herausfinden von Informationen über Leben und Umfeld einer Person, daraus sind Rückschlüsse auf das verwendete Passwort möglich.
 
 Online Password Guessing ist oftmals nicht erfolgreich weil meist die Anmeldung nach 3-5 Fehlversuchen gesperrt wird.
@@ -290,6 +288,8 @@ $ wc -l br.cewl
 ### John the Ripper
 
 in anderes Dokument übernommen
+
+
 
 ## L0ftCrack
 

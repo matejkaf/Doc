@@ -66,3 +66,12 @@ $ nmap -p 23 <target_ip>
 
 
 
+---
+
+#### Übung (Banner grabbing)
+
+Beim banner grabbing nutzen Hacker die Informationen die Zielsysteme in Rückantworten auf Dienstanfragen über sich zur Verfügung stellen. Häufig erhält man Informationen über Betriebssysteme, welche Software installiert ist und in welcher Version diese vorliegt. Über diese Informationen kann dan recherchiert werden ob es Schwachstellen (vulnerabilities) und darauf aufbauende Exploits gibt.
+
+- Welche Informationen sind im Banner bei telnet auf Metasploitable
+- Prüfe welche Informationen verfügbar sind wenn telnet auf den SSH Port von Metasploitable ausgeführt wird und ob sich über diese Informationen eine Schwachstelle finden lässt
+

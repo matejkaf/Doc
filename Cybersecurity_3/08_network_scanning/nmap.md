@@ -614,6 +614,7 @@ Optionen:
   - einige Timer Optimierungen.
 - `-T4` ... Moderate Beschleunigung des Scans (Timeouts)
 - `-F` ... 100 häufigste Ports
+- `-p 22` ... bestimmte Ports
 - `-v` ... Verbose
 
 
@@ -654,6 +655,22 @@ Schneller erster Scan **mit Scripts**:
 ```bash
 $ nmap -A -T4 -F -v <Ziel>
 ```
+
+Test ob telnet Port 23/tcp offen:
+
+```sh
+$ nmap -p 23 <Ziel>
+```
+
+Test ob ssh Port 22/tcp offen ist mit Versionserkennung:
+
+
+```sh
+$ nmap -sV -p 22 <Ziel>
+```
+
+
+
 
 
 

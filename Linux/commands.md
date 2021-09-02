@@ -23,8 +23,6 @@ title: Linux Kommandos
 
 `id` – Login/Group id
 
-`which` - zeigt pfad eines Tools
-
 `hostname`
 
 `alias` - listet alle Alias
@@ -42,8 +40,6 @@ title: Linux Kommandos
 `mkdir`
 
 `tee` – read from standard input and write to standard output and files
-
-
 
 
 
@@ -78,6 +74,8 @@ $ ls --full-time
 
 ```
 
+
+
 ## man
 
 Suche in man pages mit `/`, `n` für next.
@@ -85,8 +83,6 @@ Suche in man pages mit `/`, `n` für next.
 Suche nach man pages: `man -f passwd`. Shows different sections. `man 5 passwd`.
 
 `man -k copy` : searches both the names and descriptions of the man pages for a keyword
-
-
 
 
 
@@ -114,6 +110,8 @@ $ cp [source] [destination]
 
 ```
 
+
+
 ## mv (move, rename)
 
 ```bash
@@ -124,6 +122,8 @@ $ mv [source] [destination]
 
 Verschiebt auch Directories.
 
+
+
 ## rm
 
 ```bash
@@ -131,6 +131,8 @@ $ rm -i * # ask
 $ rm -r # delete directory
 $ rmdir # delete directory (if empty)
 ```
+
+
 
 ## grep
 
@@ -143,6 +145,8 @@ Rekursiv (`-r`) + ignore case  (`-i`)
 ```bash
 $ grep -rin searchstring *
 ```
+
+
 
 ## ps
 
@@ -162,6 +166,8 @@ $ sudo ps –ejH
 # show process tree
 # nicht BSD/macOS
 ```
+
+
 
 ## mount / umount
 
@@ -239,4 +245,20 @@ chmod u=rwx,go=rx
 ```
 
 
+
+## su
+
+substitute user identity
+
+Gleichbleibende Umgebung (Variablen, etc.):
+
+```sh
+$ su user
+```
+
+Neue Umgebung (login shell) mit den Einstellungen des Users [[*](https://superuser.com/a/453989)]:
+
+```sh
+$ su - user
+```
 

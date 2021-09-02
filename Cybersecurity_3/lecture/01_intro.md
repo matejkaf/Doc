@@ -18,6 +18,7 @@ Stoff:
   - Windows
 - Hacking
   - im Sinne von: ein **technische Detailwissen** und **Fertigkeiten** erlangen die es ermöglichen ein System auf eine Art und Weise auszunutzen die vom Entwickler **nicht vorgesehen** bzw. beabsichtigt war.
+  - Hacking Tools
 - Python
   - Skript-(Programmier-)Sprache
   - vielseitig und einfach

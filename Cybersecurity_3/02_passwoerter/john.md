@@ -57,6 +57,25 @@ Rounds: 5000 default wert
 
 
 
+
+
+# Yescrypt
+
+"Problem" bei Kali Linux: Neue User werden mit `$y$` (yescrypt) gehasht. `john` kann noch kein yescrypt
+
+```sh
+$ john crack.password 
+No password hashes loaded (see FAQ)
+```
+
+Diese Fehlermeldung kommt wenn John kein bekanntes Hashverfahren findet (z.B. nur yescrypt in Kali)
+
+Lösung:
+
+Erzeugen des `shadow` Eintrags mit `mkpasswd`.
+
+
+
 # mkpasswd
 
 ```bash
@@ -83,22 +102,7 @@ nt              NT-Hash
 
 
 
-
-
-# Yescrypt
-
-"Problem" bei Kali Linux: Neue User werden mit `$y$` (yescrypt) gehasht. `john` kann noch kein yescrypt
-
-```sh
-$ john crack.password 
-No password hashes loaded (see FAQ)
-```
-
-Diese Fehlermeldung kommt wenn John kein bekanntes Hashverfahren findet (z.B. nur yescrypt in Kali)
-
-
-
-Mögliche Lösung: [[How to set specify encryption hash when creating Linux user?](https://serverfault.com/questions/688357/how-to-set-specify-encryption-hash-when-creating-linux-user)]
+Beispiele:
 
 ```sh
 $ mkpasswd --method=sha512crypt p8ssw0rd  
