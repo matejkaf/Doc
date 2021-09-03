@@ -14,7 +14,7 @@ Kriterium für Zugang zu Systemen bzw. Feststellen der Identität eines Users
 
 ![image-20210507113617340](fig/image-20210507113617340.png)
 
-Zusätzliche Sicherheit durch **Zwei-Faktor**-Authentifizierung (aus 2 Kategorien)
+Zusätzliche Sicherheit durch **Zwei-Faktor**-Authentifizierung (aus 2 Kategorien) (2FA)
 
 Häufig:
 
@@ -221,5 +221,4 @@ Standard Algorithmen:
 - [crypt](https://en.wikipedia.org/wiki/Crypt_(C)) (UNIX)
 - [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)
 - [scrypt (RFC7914)](https://tools.ietf.org/html/rfc7914.html) – neuerer Standard (2016), berücksichtigt die ständig steigende Rechenleistung die Anfreifern zur Verfügung steht.
-
 

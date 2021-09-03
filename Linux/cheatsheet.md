@@ -84,7 +84,7 @@ $ cd /var/www/html
 
 
 
-## vi
+## vi, vim
 
 `i` → Insert mode, `ESC` → Command mode
 
@@ -94,5 +94,6 @@ $ cd /var/www/html
 - `0` (zero) start of line
 - `:w` speichern
 - `:q` beenden, `:wq` speichern und beenden
+- `:x` speichern (wenn Änderungen) und beenden
 - `:q!` beenden (Änderungen verwerfen)
 

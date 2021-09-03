@@ -52,6 +52,7 @@ Cursor bewegen, Cut,Copy, Paste (wie?)
 - `:w` speichern
 - `:q` beenden
 - `:wq` speichern und beenden
+- `:x` speichern (wenn Änderungen) und beenden
 - `:q!` beenden (Änderungen verwerfen)
 
 **Quellen:**

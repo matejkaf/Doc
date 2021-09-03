@@ -7,13 +7,13 @@ subtitle: Web Entwicklungsumgebung
 
 # News
 
+- [Präsentationen mit REPLIT](https://replit.com/@templates/Remarkjs-Slideshow)
+
 - [Debugging](https://blog.replit.com/multiplayer-debugging) wird nun unterstützt!
 
 - > You can now embed `.draw` files in markdown as if they were images: `![my cool drawing](art.draw)`.
 
-- [Status page](https://status.replit.com)
-
-- 
+- [Server Status page](https://status.replit.com)
 
 -   > Python **replit.web**: 
   >

@@ -123,3 +123,10 @@ Quad Channel: 256 Bits.
 - [Dynamic Random Access Memory (DRAM). Part 6: Burst Mode and Bank Interleaving](https://youtu.be/9BjVUmaXaCQ)
 
 - [Dynamic Random Access Memory (DRAM). Part 7: Memory Address Mapping](https://youtu.be/8Ha1Zd0T1r0), erklärt wie durch geschicktes interpretieren der Speicheradresse bank-interleaving und prefetching zur Beschleunigung genutzt werden kann.
+
+
+
+# Weiterführend
+
+- [What Every Programmer Should Know About Memory](https://akkadia.org/drepper/cpumemory.pdf)
+

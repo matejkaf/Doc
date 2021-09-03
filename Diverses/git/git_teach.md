@@ -1,5 +1,6 @@
 ---
 title: git
+tags: [lecture]
 ---
 
 * TOC
@@ -556,6 +557,8 @@ Der Branch `working` kann entfernt werden:
 $ git branch -d working
 ```
 
+
+
 ## vi Basics
 
 In manchen Situation öffnet `git` den Text Editor `vi`
@@ -568,8 +571,7 @@ Mit `i` nach Insert mode, mit `ESC` zurück in Command mode
 
 Command Mode:
 
-- `:w` speichern
-- `:q` beenden
+- `:x` speichern & beenden
 - `:q!` beenden (Änderungen verwerfen)
 
 

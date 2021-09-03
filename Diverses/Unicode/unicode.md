@@ -456,3 +456,5 @@ Content-Type: text/html; charset=utf-8
 ## Look At
 
 - [Different UTF-16 Encoding in Java versus C#](https://stackoverflow.com/questions/34167777/different-utf-16-encoding-in-java-versus-c-sharp)
+- [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+

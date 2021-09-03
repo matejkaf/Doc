@@ -7,9 +7,11 @@ GitHub is a code hosting platform for version control and collaboration. It lets
 
 # Links
 
-[git](https://git-scm.com)
-[github](https://github.com)
-[Git in Visual Studio Code](https://code.visualstudio.com/Docs/editor/versioncontrol)
+- [git](https://git-scm.com)
+- [github](https://github.com)
+- [Git in Visual Studio Code](https://code.visualstudio.com/Docs/editor/versioncontrol)
+- [missing-semester Version Control (Git)](https://missing.csail.mit.edu/2020/version-control/)
+
 
 
 # Allgemeine Begriffe
@@ -316,8 +318,7 @@ Command mode, mit `i` nach Insert mode mit `ESC` zurück in Command mode
 
 Command Mode:
 
-- `:w` speichern
-- `:q` beenden
+- `:x` speichern & beenden
 - `:q!` beenden trotz ungesicherter Änderungen 
 
 
