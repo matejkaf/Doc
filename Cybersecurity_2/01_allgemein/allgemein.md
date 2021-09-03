@@ -102,12 +102,12 @@ Hacker:
 
 # Angriffsformen
 
+- Ransomware (ransom = Lösegeld)
 - Phishing
 - Systeme kompromittieren (unberechtigtes eindringen und manipulieren/ausspähen)
 - Passwort Diebstahl
   - Data exfiltration
 - Schadsoftware (Viren)
-- Ransomware (ransom = Lösegeld)
 - Social Engineering
 - ...
 
