@@ -59,6 +59,7 @@ Cursor bewegen, Cut,Copy, Paste (wie?)
 
 -   [Basic vi Commands](https://www.cs.colostate.edu/helpdocs/vi.html)
 -   [VI Text Editor with Commands: Linux/Unix Tutorial](https://www.guru99.com/the-vi-editor.html)
+-   [vim Cheat Sheet](https://kapeli.com/cheat_sheets/Vim.docset/Contents/Resources/Documents/index)
 
 
 

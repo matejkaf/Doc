@@ -8,6 +8,8 @@ tags: [Cybersecurity_2]
 
 Das Internet verbindet immer mehr Geräte miteinander (IoT – Internet of Things). Viele Angriffe nutzen Schwachstellen der Netzwerktechnologien.
 
+![Computer programming](fig/Computer programming.jpeg)
+
 Daher ist eine gute Kenntniss der Netzwerktechnologien zentral für IT Sicherheit.
 
 Dieses Kapitel zeigt Angriffe auf unterster Netzwerkebene: 

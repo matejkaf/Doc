@@ -102,10 +102,8 @@ Alle ähnlich zu C und stark verbreitet.
 
 ## Top Ten der Programmiersprachen
 
-[TIOBE](http://www.tiobe.com/tiobe-index/)
-		
-
-
+- [RedMonk Top 20 Languages Over Time: June 2021](https://redmonk.com/rstephens/2021/08/05/top-20-june-2021/)
+- [TIOBE](http://www.tiobe.com/tiobe-index/)
 
 
 
@@ -115,8 +113,6 @@ Alle ähnlich zu C und stark verbreitet.
 [Link](http://www.monster.at/)
 
 
-
-
 *Sprache* | *2013* | *2014* | *2015* | *2018*  | *2020* 
 --- | --- | --- | --- | --- | ---
 Java  | 155 | 136 | 167 | 237 | 431
@@ -124,8 +120,6 @@ C/C++  | 99 | 86 | 111 | 117 | 81
 C#  | 76 | 97 | 114 | 82 | 119
 SQL  | 177 | 162 | 153 | 220 | 415
 JavaScript | 65 | 59 | 87 | 110 | 407
-
-
 
 
 
