@@ -93,7 +93,7 @@ openssl aes-256-cbc -d -in data.bin.enc -K '0106eb4887051520fcf40b5e8fa5acceab27
 
 
 
-# RSA encryption/decrytion
+# RSA encryption/decrytion {RSA_enc_dec}
 
 [Encrypt and decrypt files to public keys via the OpenSSL Command Line](https://raymii.org/s/tutorials/Encrypt_and_decrypt_files_to_public_keys_via_the_OpenSSL_Command_Line.html)
 

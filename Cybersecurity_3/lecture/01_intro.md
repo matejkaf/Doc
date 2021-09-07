@@ -18,6 +18,10 @@ Stoff:
   - Windows
 - Hacking
   - im Sinne von: ein **technische Detailwissen** und **Fertigkeiten** erlangen die es ermöglichen ein System auf eine Art und Weise auszunutzen die vom Entwickler **nicht vorgesehen** bzw. beabsichtigt war.
+    - HW (Computer von innen)
+    - SW (Programmieren)
+    - OS (Linux, Windows)
+    - Netzwerke
   - Hacking Tools
 - Python
   - Skript-(Programmier-)Sprache

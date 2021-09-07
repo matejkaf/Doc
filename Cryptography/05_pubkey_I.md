@@ -18,7 +18,7 @@ Die Schlüssel sind sehr groß, z.B. 4096 bits.
 
 Anwendung:
 
-- *encryption* (sehr rechenaufwändig, Daten<Schlüssellänge)
+- *encryption* (eingeschränkt da sehr rechenaufwändig und Daten<Schlüssellänge)
 - *authentication*
 - *symmetric key* transport (*key exchange*)
 - *digital signature (in Verbindung mit Hash Funktion)*
