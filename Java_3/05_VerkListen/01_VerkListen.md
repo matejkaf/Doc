@@ -1,6 +1,6 @@
 ---
 title: Verkettete Listen
-tags: [lecture,3BHELS]
+tags: [lecture,4BHELS]
 ---
 
 >  Was eine guten Meister macht: Wissen, Können und Wollen. (Deutsches Sprichwort)

@@ -7,7 +7,9 @@ subtitle: Web Entwicklungsumgebung
 
 # News
 
-- [Präsentationen mit REPLIT](https://replit.com/@templates/Remarkjs-Slideshow)
+- [Curriculum hub](https://replit.com/curriculum), in Teams for education importierbare Unterrichtseinheiten
+
+- [Präsentationen mit REPLIT (remarkjs)](https://replit.com/@templates/Remarkjs-Slideshow)
 
 - [Debugging](https://blog.replit.com/multiplayer-debugging) wird nun unterstützt!
 
@@ -15,13 +17,13 @@ subtitle: Web Entwicklungsumgebung
 
 - [Server Status page](https://status.replit.com)
 
--   > Python **replit.web**: 
+- [Python **replit.web**](https://blog.replit.com/replit-web), Siehe auch [hier](https://replit-py.readthedocs.io/en/latest/web_tutorial.html)  
+  
   >
   > ```python
   > from replit import web
   > ```
-  > A flask based web server that connects to Replit with ease! Authenticate your users with Repl Auth. Store information with Repl DB. Combine it all together with a web server and you have entire websites that can be constructed with 12 lines of code (just like in the image above)! So don't wait, [learn how to build your own website in this YouTube video](http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlC9-2BLbB94KKTsleCUP5vBNTIBmXmNJsLG0s5z4o0JDwQyKsUF-2Fw9EpX-2FmqLp3r5ngw-3D-3DkfIP_zKt1wg0aG1ov-2B8JCwzoaVQW10bsacuLz2uK9Xmc71t-2BnNKK2ar1od7p9SpJWLa4GRk5d5V96mCGMjW-2FzKzNDQoG2xuUsWvLkod-2BbR3y2Sn1b1zdqdYg91fpxUGi-2FdTFHm2iKObJkFBrQvkH3duqNz2bTJESMRh1OcaUj2oqbi1JcjYJhLJrba8HOol1aGTYhw0lO9Rylhvnkg-2BAMCtUmHqDvOb3G8mP7jsG-2BAFgP01xRsD3j6J0eU0yAO8vydpw1FhmrNzi16umT-2ByVDf-2FP8PRJncqpv4KlX1afcKzbWRn11EJjMkZF-2FFxXVcUGIXLX97T7t3OCVcqDP-2B5aFwkdrk72yngZJcDs-2F1tk1UtHRTeOuvs4g4BYw7Xs9YAYYEBT0p7Iv-2Fe-2FYXrUk7VedGzSJ664QMDMrt0If1TYCofArgxR-2BMgeRFT-2FdLLjp-2BxgzFBq1NjQcla3KVlbgfZBFKtntLzcpdesci1e2TtjV7Ll5yFs-3D).  
-  > Siehe auch [hier](https://replit-py.readthedocs.io/en/latest/web_tutorial.html)
+  > A flask based web server that connects to Replit with ease! Authenticate your users with Repl Auth. Store information with Repl DB. Combine it all together with a web server and you have entire websites that can be constructed with 12 lines of code (just like in the image above)! So don't wait, [learn how to build your own website in this YouTube video](http://url1361.repl.it/ls/click?upn=6C3RbwTZ5-2F31fSjC5gMvlC9-2BLbB94KKTsleCUP5vBNTIBmXmNJsLG0s5z4o0JDwQyKsUF-2Fw9EpX-2FmqLp3r5ngw-3D-3DkfIP_zKt1wg0aG1ov-2B8JCwzoaVQW10bsacuLz2uK9Xmc71t-2BnNKK2ar1od7p9SpJWLa4GRk5d5V96mCGMjW-2FzKzNDQoG2xuUsWvLkod-2BbR3y2Sn1b1zdqdYg91fpxUGi-2FdTFHm2iKObJkFBrQvkH3duqNz2bTJESMRh1OcaUj2oqbi1JcjYJhLJrba8HOol1aGTYhw0lO9Rylhvnkg-2BAMCtUmHqDvOb3G8mP7jsG-2BAFgP01xRsD3j6J0eU0yAO8vydpw1FhmrNzi16umT-2ByVDf-2FP8PRJncqpv4KlX1afcKzbWRn11EJjMkZF-2FFxXVcUGIXLX97T7t3OCVcqDP-2B5aFwkdrk72yngZJcDs-2F1tk1UtHRTeOuvs4g4BYw7Xs9YAYYEBT0p7Iv-2Fe-2FYXrUk7VedGzSJ664QMDMrt0If1TYCofArgxR-2BMgeRFT-2FdLLjp-2BxgzFBq1NjQcla3KVlbgfZBFKtntLzcpdesci1e2TtjV7Ll5yFs-3D). 
   
   
 
