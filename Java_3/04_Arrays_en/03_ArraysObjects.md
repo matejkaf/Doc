@@ -1,6 +1,6 @@
 ---
 title: Arrays of Objects
-tags: [3BHELS,lecture,java,array]
+tags: [lecture,java,array]
 ---
 
 Java lets you define arrays containing objects.

@@ -1,7 +1,7 @@
 ---
 title: Einfach verkettete Liste
 subtitle: Übungen
-tags: [assignment,3BHELS]
+tags: [assignment]
 ---
 
 #### Übung (Einfach verkettete Liste I)

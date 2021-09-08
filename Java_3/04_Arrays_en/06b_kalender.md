@@ -1,7 +1,7 @@
 ---
 title: ArrayList
 subtitle: Übung Kalender
-tags: [3BHELS]
+tags: []
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Arrays
 subtitle: Dynamic Array aus Strings Variante I
-tags: [assignment,3BHELS]
+tags: [assignment]
 ---
 
 Erstelle eine Klasse die die Funktion eines dynamischen Arrays (ähnlich ArrayList) zur Verfügung stellt. Es soll ein Array aus Strings verwaltet werden.

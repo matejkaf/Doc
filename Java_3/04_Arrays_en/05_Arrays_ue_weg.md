@@ -1,7 +1,7 @@
 ---
 title: ArrayList
 subtitle: Übungen – Schulweg Statistik
-tags: [assignment,3BHELS]
+tags: [assignment]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

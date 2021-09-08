@@ -1,6 +1,6 @@
 ---
 title: Arrays
-tags: [lecture,java, array, 3BHELS]
+tags: [lecture,java,array]
 ---
 
 > The important thing is not to stop questioning. –Albert Einstein

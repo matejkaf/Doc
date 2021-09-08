@@ -1,7 +1,7 @@
 ---
 title: ArrayList
 subtitle: Übungen – Walters Liste
-tags: [assignment,3BHELS]
+tags: [assignment]
 ---
 
 #### Übung (Walters Liste)

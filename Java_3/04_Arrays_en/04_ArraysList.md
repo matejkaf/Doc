@@ -1,7 +1,7 @@
 ---
 title: ArrayList
 subtitle: Dynamic arrays in Java
-tags: [3BHELS, lecture,java, array]
+tags: [lecture,java,array]
 ---
 
 # Inhalt
