@@ -1,7 +1,7 @@
 ---
 title: Schnelle Schritte zu Java
 description: Schneller Umstieg von C nach Java.
-tags: [lecture, java, 3BHELS ]
+tags: [lecture,java]
 ---
 
 >  C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off. [Bjarne Stroustrup – Erfinder von C++]

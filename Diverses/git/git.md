@@ -1,4 +1,10 @@
+---
+title: git
+subtitle: Sammlung
+---
 
+* TOC
+{:toc}
 
 
 # Einleitung
@@ -118,11 +124,11 @@ git commit file.xyz
 ```
 
 
-# File History
+# File History (log)
 
 Commits für ein File:
 
-```
+```sh
 git log --pretty=oneline jsfileupload2.php
 ```
 
@@ -144,6 +150,15 @@ git log --stat
 git log --graph
 
 ```
+
+```sh
+git log --all --graph --decorate
+# --oneline für kompakte darstellung
+```
+
+
+
+
 
 # Branching
 
@@ -263,8 +278,15 @@ git reset --hard - Removes Staged Tracked and UnStaged Tracked files ONLY[Type 1
 git stash -u - Removes all changes [Type 1, Type 2, Type 3]
 ```
 
+## Vergleichen (diff)
 
-## Vergleichen
+Vergleich aktuellen working directory Stand mit letzten Commit
+
+```sh
+git diff
+```
+
+
 
 Vergleicht das aktuelle mit dem letzten Commit
 

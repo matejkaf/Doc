@@ -2,7 +2,7 @@
 title: Übung Schulklasse
 description: Einfache erste Übungen zu OOP
 tag: [java, oop]
-tags: [assignment,3BHELS]
+tags: [assignment]
 ---
 
 

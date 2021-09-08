@@ -1,6 +1,6 @@
 ---
 title: Übung Bankkonto
-tags: [assignment,java,3BHELS]
+tags: [assignment,java]
 ---
 
 
