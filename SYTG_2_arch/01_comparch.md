@@ -14,14 +14,14 @@ Computer:
 - IoT – Internet of Things
 - Embedded – Computer die man nicht sieht  (Beispiele: Auto, im Haushalt? – Fernseher)
 
-Computer sind Geräte auf denen Programme laufen. Diese können fix programmiert sein (bei den meisten Embedded Systemen) oder können beliebige Anwendungen ausführen (z.B. Desktop Computer).
+Computer sind Geräte auf denen Programme laufen. Diese können können beliebige Anwendungen ausführen (z.B. Desktop Computer) oder auch fix programmiert sein (bei den meisten Embedded Systemen der Fall).
 
 Die zugrundeliegenden Architektur-Prinzipien (Hardware und Software) sind bei allen Arten von Computer-Systemen grundsätzlich gleich.
 
-Hardware
+Die Hardware besteht aus
 
-- Speicher
 - CPU
+- Speicher
 - Peripherie
 
 
@@ -32,8 +32,6 @@ Software (Schichten)
 - Betriebssystem
 - Firmware (mit Bootloader)
 - (Hardware)
-
-*<<< Woche 1*
 
 Die **Firmware** ist fest ("firm") im Gerät gespeichert und wird unmittelbar nach dem Einschalten aktiv. Dient zum initialisieren des Systems. Der **Bootloader** lädt das Betriebssystem von der Festplatte und startet dieses.
 

@@ -1,7 +1,7 @@
 ---
 title: Programmieren Anfang
 subtitle: C Grundlagen
-tags: [lecture,C_1]
+tags: [lecture,C_1,1AHITS,1CHELS]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

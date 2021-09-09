@@ -96,6 +96,8 @@ int main() {
 
 ## C oder C++
 
+Frage soll man ein C oder ein C++ REPL verwenden?
+
 ### C
 
 Automatisch generierter REPL Source Code
@@ -139,7 +141,7 @@ clang++-7 -pthread -std=c++17 -o main main.cpp
 
 ### Anmerkungen zu C vs. C++
 
-C "Hello World" ist für Einsteiger etwas komplexer, weil gleich sehr viele unbekannte Schlüsselwörter vorkommen. Das C++ kann ohne Änderung der `includes` auf printf umgeschrieben werden:
+C "Hello World" ist für Einsteiger etwas komplexer, weil gleich sehr viele unbekannte Schlüsselwörter vorkommen. Das C++ kann aber ohne Änderung der `includes` auf printf umgeschrieben werden:
 
 ```c++
 #include <iostream>
