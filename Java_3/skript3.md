@@ -1,11 +1,15 @@
 # Anfang
 
-Motivation warum Java
-Einstieg in Netbeans
+- Motivation warum Java
+- Erstes Programm mit REPLIT
+
+
 
 # Schnelle Schritte zu Java
 
-Auch Möglich: Array Beispiel (Methode generiert den Array Inhalt)
+Aufgabenstellung: Ermittle in einer Funktion den Index des größten Werts in einem `int` Array.
+
+Das gleiche Programm dann in Java programmieren.
 
 
 

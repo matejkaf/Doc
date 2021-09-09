@@ -1,79 +1,7 @@
 ---
 title: Überblick
+tags: [lecture,3AHITS]
 ---
-
-
-
-## FSST --- 3./4. Klasse
-
-**Stundenausmaß**
-
-- 2h FSST (geteilt, 2 Gruppen, gleicher Lehrer)
-
-
-
-## FSST --- 5. Klasse
-
-**Stundenausmaß**
-
-- 1h Theorie
-- 2h FSST (geteilt, 14 tägig, 4h, Gruppen abwechselnd)
-- **Keine Fehlstunden!**	
-		- versäumte Stunden nachholen
-		- in der anderen Gruppe
-	
-
-## Benotung
-
-Tests. Wie bekannt
-
-
-
-
-## Eigene Laptops
-
-
-- Theorieunterricht: Nein
-- Übungen: Ja
-	
-	- Voraussetzung: Alles vorab installiert
-	- Kein Abstecken vorhandener Kabel
-	
-
-
-
-
-
-
-
-## HTL Braunau --- Informatik --- FSST (KSN)
-
-- 1.-2.\ Klasse: 
-	
-	- C / C++
-	- Programmieren lernen
-	- Mikrocontroller
-	
-- 3.\ Klasse: 
-	
-	- Objekt orientiertes Programmieren (OOP)
-	- Java
-	
-- 4.\ Klasse: 
-	
-	- OOP Themen
-	- Netzwerk-Programmierung
-	- Datenbanken
-	
-- 5.\ Klasse: 
-	
-	- Algorithmen und Datenstrukturen
-	- Datenbanken
-	
-
-
-
-
 
 
 
@@ -81,18 +9,19 @@ Tests. Wie bekannt
 # Warum Java?
 
 
-## Welche Programmiersprache für FSST?
+## Welche Programmiersprache für SEW/FSST?
 
 
 - Bisher C.
 - Möglichkeiten sind ausgereizt.
 - Nun neue Sprache notwendig. Möglich:
 
-- C++
-- Objective-C / Swift
-- C#
-- Java
-- ...
+  - C++
+  - Objective-C / Swift
+  - C#
+  - Java
+  - Python
+  - ...
 
 
 Alle ähnlich zu C und stark verbreitet.
@@ -210,15 +139,15 @@ Java ist der umgangssprachliche Ausdruck für **Kaffee** (in den USA). Die Erfin
 
 ## Internet
 
-- Java **Tutorials**: [Link](http://download.oracle.com/javase/tutorial/)
+- Oracle Java **Tutorials**: [Link](http://download.oracle.com/javase/tutorial/)
 - Wikipedia: [Link](http://de.wikipedia.org/wiki/Java_(Programmiersprache))
 
 
 
 ## Bücher
 
-- **Sprechen sie Java**, \textit{Hanspeter Mössenböck}. Im LIZ vorhanden. Sehr empfehlenswert!
-- **Java ist auch eine Insel**, \textit{Christian Ullenboom}. Online: [Link](http://openbook.rheinwerk-verlag.de/javainsel/).
+- **Sprechen sie Java**, *Hanspeter Mössenböck*. Im LIZ vorhanden. Sehr empfehlenswert!
+- **Java ist auch eine Insel**, *Christian Ullenboom*. Online: [Link](http://openbook.rheinwerk-verlag.de/javainsel/).
 
 
 

@@ -1,25 +1,15 @@
 ---
 title: Schnelle Schritte zu Java
 description: Schneller Umstieg von C nach Java.
-tags: [lecture,java]
+tags: [lecture,java,3AHITS]
 ---
 
 >  C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off. [Bjarne Stroustrup – Erfinder von C++]
 
 > Java is C++ without the guns, knives, and clubs. [James Gosling – Erfinder von Java]
 
-# Entwicklungsumgebung
-
-Notwendige Programme (zum Installieren am eigenen Rechner)
-
-- zuerst das Java Development Kit **JDK** ([download](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html))  installieren (z.B. *Windows x64 Installer*), und dann
-- **Eclipse** ([download](https://www.eclipse.org/downloads/)) installieren. Siehe auch [Anleitung](https://www.eclipse.org/downloads/packages/installer). Oder alternativ (das geht auch ohne Admin Rechte) nur das package (eigener Download - zip File, am O: Laufwerk verfügbar) entpacken (z.B. auf den Desktop)
-
-Zur Not gehts auch online – "online java compiler" googeln
-
-- z.B.: [tutorialspoint: online java compiler](https://www.tutorialspoint.com/compile_java_online.php)
-
-
+* TOC
+{:toc}
 
 # Grundlagen
 
@@ -37,7 +27,11 @@ public class HelloWorld {
 }
 ```
 
-Eclipse:  `syso` tippen, dann `Strg+space`
+IDE snippets:
+
+- Replit: `sysout` und Tab
+
+- Eclipse:  `syso` tippen, dann `Strg+space`
 
 
 
@@ -146,6 +140,8 @@ System.out.println("Die Zahl ist " + wert);
 
 Mit Hilfe des + Operators und `println` lassen sich Ausgaben wie in C mit `printf` machen.
 
+
+
 # Kontrollstrukturen
 
 wie in C:
@@ -161,6 +157,31 @@ Ebenfalls gibt es
 
 -  `break` (Schleife verlassen) und 
 -  `continue` (Schleife wiederholen).
+
+
+
+# Arrays
+
+Um ein Array neu anzulegen wird das Schlüsselwort `new` verwendet.
+
+```java
+int[] a; // Referenzvariable (=Zeiger)
+a = new int[10]; // Speicher allokieren
+
+for(int i=0;i<a.length;i++) {
+   a[i] = (int)(Math.random()*11)-5;
+}
+```
+
+- Mit `int[] a` wird eine Variable für das Array angelegt.
+- Um das Array zu erzeugen schreibt man: `new a[10]`.
+- Dies reserviert Speicher (=Allokation) für das Array und liefert eine Referenz auf diesen Speicher (wie ein Zeiger).
+- Diese Referenz (die Speicheradresse) wird in der Variable `a` gespeichert.
+- Das ist also wie ein Zeiger in C.
+
+Weiters interessant: `length` liefert die Anzahl der Elemente im Array. Das Array weiß daher selbst wie groß es ist, das ist einw wesentliche Programmier-Erleichterung
+
+`Math.random()` liefert eine zufällige `double` Zahl größer gleich 0 und kleiner 1.
 
 
 
@@ -223,36 +244,9 @@ Kurz gefasst: Wenn zu Elementen (Methoden, Variable) in der ersten Ebene der Kla
 
 
 
-
-# Arrays
-
-Um ein Array neu anzulegen wird das Schlüsselwort `new` verwendet.
-
-```java
-int[] a; // Referenzvariable (=Zeiger)
-a = new int[10]; // Speicher allokieren
-
-for(int i=0;i<a.length;i++) {
-   a[i] = (int)(Math.random()*11)-5;
-}
-```
-
-- Mit `int[] a` wird eine Variable für das Array angelegt.
-- Um das Array zu erzeugen schreibt man: `new a[10]`.
-- Dies reserviert Speicher (=Allokation) für das Array und liefert eine Referenz auf diesen Speicher (wie ein Zeiger).
-- Diese Referenz (die Speicheradresse) wird in der Variable `a` gespeichert.
-- Das ist also wie ein Zeiger in C.
-
-Weiters interessant: `length` liefert die Anzahl der Elemente im Array. Das Array weiß daher selbst wie groß es ist, das ist einw wesentliche Programmier-Erleichterung
-
-`Math.random()` liefert eine zufällige `double` Zahl größer gleich 0 und kleiner 1.
-
-
-
 # Benutzereingaben
 
-Generell sind Benutzereingaben beim Programmieren in Java weniger wichtig.
-Zum Programmtest gibt man einfach feste Werte vor.
+Generell sind Benutzereingaben beim Programmieren in Java weniger wichtig. Zum Programmtest gibt man einfach feste Werte vor.
 
 Beispiel:
 ```java
@@ -264,12 +258,15 @@ System.out.println(a);
 // usw.
 ```
 
-# Scanner
+
+
+## Scanner
 
 Wo doch nötig können Eingaben mit der Klasse `Scanner` realisiert werden:
 
 ```java
 Scanner in = new Scanner(System.in);
+// Achtung: nur **einmal** im Programm `new Scanner` verwenden!
 
 // Text Eingabe
 String str = in.nextLine();
@@ -284,5 +281,5 @@ Double val = Double.parseDouble(in.nextLine());
 System.out.println(val);
 ```
 
-Achtung: nur **einmal** im Programm `new Scanner` verwenden!
+
 
