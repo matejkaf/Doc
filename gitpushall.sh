@@ -3,7 +3,7 @@
 echo "================================="
 echo "= Create HTML Index of md Files ="
 echo "================================="
-./Python/Scripts/19_md_manager/htmltags.py "" "C_1" "C_2" "SYTG_2_Linux" "Cybersecurity_2" "challenge" "4BHELS"
+./Python/Scripts/19_md_manager/htmltags.py "" "C_1" "C_2" "SYTG_2_Linux" "Cybersecurity_2" "challenge" "4BHELS" "3AHITS"
 
 echo "Publish to gitpages"
 git add --all

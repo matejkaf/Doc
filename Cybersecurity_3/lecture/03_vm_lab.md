@@ -1,8 +1,9 @@
 ---
 title: VM Hacking Labor
+tags: [lecture,3AHITS]
 ---
 
-Für praktische Übungen
+
 
 - Kali Linux
 - Metasploitable
@@ -10,7 +11,7 @@ Für praktische Übungen
 
 Jeweils als virtuelle Maschine
 
-
+Grundlagen für die Übungen:
 
 # Linux Netzwerk
 
