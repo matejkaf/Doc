@@ -1,7 +1,7 @@
 ---
 title: Wiederholung I. Klasse
 subtitle: Programmieren in C
-tags: [lecture,C_2,2AHELS]
+tags: [lecture,C_2,2AHELS,2AHITS]
 ---
 
 
