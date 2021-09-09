@@ -1,7 +1,7 @@
 ---
 title: Virtuelle Maschinen installieren
-subtitle: Übung
-tags: [assignment]
+subtitle: ITS Übung
+tags: [assignment,3AHITS]
 ---
 
 [Häufig benötigte Linux Befehle](../../Linux/cheatsheet)

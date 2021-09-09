@@ -19,3 +19,4 @@ Installation von einem fertigen Image für VmWare
 - Terminal öffnen und mit `ifconfig` testen ob Netzwerk konfiguriert ist
 - Internet Test mit Browser
 - VmWare Tools installieren: [Installing VMware Tools](https://www.kali.org/docs/virtualization/install-vmware-guest-tools/)
+
