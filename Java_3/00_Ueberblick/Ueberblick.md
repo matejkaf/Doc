@@ -56,12 +56,13 @@ JavaScript | 65 | 59 | 87 | 110 | 407
 
 - Verbreitung (Firmen und Unis)
 - Einfach erlernbar
+- Objektorientiert
 - Sehr ähnlich zu C
+- Gut zum erlernen des "Programmieren im Großen"
 - Nicht an Hersteller gebunden
 	
 	- C#: Microsoft
 	- Objective-C / Swift: Apple
-	
 - Umlernen auf andere Programmiersprache leicht
 
 
