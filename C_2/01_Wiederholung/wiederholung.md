@@ -1,21 +1,10 @@
 ---
-title: SEW – Wiederholung
-tags: [lecture,C_2]
+title: Wiederholung I. Klasse
+subtitle: Programmieren in C
+tags: [lecture,C_2,2AHELS]
 ---
 
 
-## Übersicht
-
-```c
-#include <conio.h>
-#include <stdio.h>
-
-void main()
-{
-  printf("Hallo Welt\n");
-  getch();
-}
-```
 
 - scanf/printf
 - Variablen / Berechnungen
