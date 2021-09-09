@@ -2,7 +2,7 @@
 title: Einstieg in Java
 subtitle: Übungen
 description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static public.
-tags: [assignment,java]
+tags: [assignment,java,3AHITS]
 ---
 
 #### **Übung (FizzBuzz):**
@@ -10,6 +10,8 @@ tags: [assignment,java]
 Write a program that prints numbers from 1 to 100. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`.  For numbers which are multiples of both three and five print `FizzBuzz` (and neither `Fizz` nor `Buzz`). 
 
 ---
+
+
 
 #### **Übung (Notenliste):**
 
