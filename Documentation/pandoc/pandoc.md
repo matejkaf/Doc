@@ -6,6 +6,22 @@
 
 [daring fireball](https://daringfireball.net/projects/markdown/syntax)
 
+
+
+# Installation
+
+[Link](https://pandoc.org/installing.html#macos)
+
+```sh
+$ brew install pandoc
+```
+
+
+
+
+
+# Beispiele
+
 Nach HTML
 
     pandoc JavaScript.md -f markdown -t html --self-contained --highlight-style tango -s --toc -c style.css -o JavaScript.html
@@ -13,6 +29,18 @@ Nach HTML
 Nach LaTeX
 
     pandoc JavaScript.md -f markdown -t latex --listings -o JavaScript.tex
+
+
+
+# Nach PDF
+
+```sh
+$ pandoc 05_Anfang_ue02.md --pdf-engine=xelatex -o 05_Anfang_ue02.pdf
+```
+
+
+
+
 
 # Eigenes LaTeX Template
 
@@ -37,6 +65,10 @@ $endif$
 
 $body$
 ```
+
+Siehe [Beispiel-Template](https://gist.github.com/michaelt/1017790)
+
+
 
 # Inline Images
 
@@ -161,9 +193,9 @@ tags: [ csharp, python, dotnet, c, java, array ]
 
 In Python – [python-frontmatter](https://github.com/eyeseast/python-frontmatter)
 
-```
-​```bash
+````
+```bash
 sudo python3 -m pip install python-frontmatter
-​```
 ```
+````
 
