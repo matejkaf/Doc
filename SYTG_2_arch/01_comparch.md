@@ -4,7 +4,18 @@ description: Klassifikation von Computern. Von Neumann Architektur. Grundlagen z
 tags: [lecture,2AHITS]
 ---
 
-Ziel: Durch verstehen wie Computer intern funktionieren IT Systeme besser anwenden können.
+SYTG – Computerarchitektur
+
+Ziel:  Verstehen wie Computer intern funktionieren, dadurch IT Systeme besser anwenden können.
+
+Was ist ein Computer?
+
+Computer sind Geräte auf denen Programme laufen. 
+
+- beliebige Anwendungen (Software)  (z.B. Desktop Computer) oder auch 
+- fix programmiert (Firmware)
+
+
 
 Computer:
 
@@ -14,7 +25,7 @@ Computer:
 - IoT – Internet of Things
 - Embedded – Computer die man nicht sieht  (Beispiele: Auto, im Haushalt? – Fernseher)
 
-Computer sind Geräte auf denen Programme laufen. Diese können können beliebige Anwendungen ausführen (z.B. Desktop Computer) oder auch fix programmiert sein (bei den meisten Embedded Systemen der Fall).
+
 
 Die zugrundeliegenden Architektur-Prinzipien (Hardware und Software) sind bei allen Arten von Computer-Systemen grundsätzlich gleich.
 

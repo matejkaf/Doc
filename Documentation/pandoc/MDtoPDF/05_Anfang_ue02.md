@@ -73,6 +73,8 @@ Du besitzt ein Moped 50 ccm, 2-Takter. Versicherung und Pickerl kosten im Jahr E
 
 Die Ausgabe des Programms soll so aussehen:
 
+
+
 ```
 km/Monat: 120
 Du bist 1440 km im Jahr gefahren.
@@ -80,6 +82,7 @@ Es hat dich 247.39 Euro gekostet.
 ```
 
 
+<b>Das ist ein Test</b>
 
 <img src="fig/image-20210910165854169.png" alt="image-20210910165854169" style="zoom:33%;" />
 
@@ -90,4 +93,10 @@ if(test==42)
   printf("Hurra\n");
 }
 ```
+
+![image-20210910165854169](fig/image-20210910165854169.png)
+
+
+
+![image-20210911161905041](fig/image-20210911161905041.png)
 
