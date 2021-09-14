@@ -1,12 +1,29 @@
 ---
 title: Umgebungsvariablen
-subtitle: environment variables
+subtitle: bash scripting
+tags: [lecture,3AHITS]
 ---
+
+Environment variables
+
+```sh
+$ env
+...
+```
+
+Können ins Skripts verwendet werden.
+
+Spezielle Bedeutung:
+
+- `$PATH`
+- `$PS1`
+
+
 
 Liefern Informationen über das System und die shell.
 
 ```bash
-$ printenv
+$ env
 ```
 
 ```
