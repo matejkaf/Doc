@@ -23,7 +23,7 @@ Computer:
 - Server
 - Mobil
 - IoT – Internet of Things
-- Embedded – Computer die man nicht sieht  (Beispiele: Auto, im Haushalt? – Fernseher)
+- Embedded – Computer die man nicht sieht  (Beispiele: Auto, im Haushalt? – Fernseher, Rasenroboter)
 
 
 
