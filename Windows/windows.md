@@ -111,7 +111,7 @@ Kontrollieren bzw. statische IP Adressen setzen
 
 **To set a static IP address in Windows 7, 8, and 10:**
 
-1. Click **Start Menu** > **Control Panel** > **Network and Sharing Center** or **Network and Internet > Network and Sharing Center (Netzwerkstatus und -aufgaben anzeigen).**
+1. Click **Start Menu** > **Control Panel (Systemsteuerung)** > **Network and Sharing Center** or **Network and Internet > Network and Sharing Center (Netwerk- und Freigabecenter) / Netzwerkstatus und -aufgaben anzeigen).**
 2. Click **Change adapter settings**.
 3. Right-click on **Wi-Fi** or **Local Area Connection.**
 4. Click **Properties**.

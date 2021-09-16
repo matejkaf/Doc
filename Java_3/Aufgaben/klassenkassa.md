@@ -25,6 +25,6 @@ Anmerkung: für jede Einzahlung wird ein Objekt erstellt, d.h. wenn ein Schüler
 
 - `eingezahlt` – Übergabeparameter ist der Name. In der Methode soll das gesamte Array nach diesem Namen durchsucht und die Summe aus den Beträgen gebildet werden. Die sich ergebende Summe ist der Rückgabewert der Funktion.
 
-- `print` – Verwendet eine Schleife um alle in der ArrayList gespeicherten `Einz` Elemente auszugeben und nutzt dazu die `toString` Methode von `Einz`
+- `print` – Verwende eine Schleife um alle in der ArrayList gespeicherten `Einz` Elemente auszugeben und nutzt dazu die `toString` Methode von `Einz`
 
 Zeige in einem **Hauptprogramm** die Anwendung der Klassen `Kasse` und `Einz`.

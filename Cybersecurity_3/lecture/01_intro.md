@@ -35,8 +35,11 @@ Stoff:
 
 Themenübersicht:
 
-- Markdown
+- Virtualisierung
 - Remote Shells
 - Passwörter und cracking
 - Zugriffskontrolle (access permissions)
+- Kryptographie
+
+
 
