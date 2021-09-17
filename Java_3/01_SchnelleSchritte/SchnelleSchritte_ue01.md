@@ -5,9 +5,11 @@ description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static
 tags: [assignment,java,3AHITS]
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 #### **Übung (FizzBuzz):**
 
-Write a program that prints numbers from 1 to 100. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`.  For numbers which are multiples of both three and five print `FizzBuzz` (and neither `Fizz` nor `Buzz`). 
+Write a program that prints numbers from 1 to 100. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`.  For numbers which are multiples of both three and five print `FizzBuzz` (and neither `Fizz` nor `Buzz`). Ensure  that only one of these texts gets printed (e.g. for 15 only `FizzBuzz`).
 
 ---
 
@@ -73,7 +75,7 @@ Aufgabenstellungen:
 
 #### **Übung (Primzahltest):**
 
-Eine Primzahl ist eine positive Zahl größer eins mit genau zwei natürlichen Zahlen als Teiler, der Zahl 1 und sich selbst. Die kleinsten Primzahlen sind: $2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, \ldots$
+Eine Primzahl ist eine positive Zahl größer eins mit genau zwei natürlichen Zahlen als Teiler, der Zahl 1 und sich selbst. Die kleinsten Primzahlen sind: $$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, \ldots$$
 
 Implementiere eine Methode `boolean isPrim()` die von einer als Parameter übergebenen Zahl prüft ob es sich um eine Primzahl handelt.
 
