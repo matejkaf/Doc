@@ -30,10 +30,3 @@ Geerbt werden kann immer nur von einer einzigen Klasse, aber wie oft Vererbung h
 
 - `OeffArb`
 - `Jahrling`
-
-
-
-
-
-
-

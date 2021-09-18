@@ -24,18 +24,22 @@ $ brew install pandoc
 
 Nach HTML
 
-    pandoc JavaScript.md -f markdown -t html --self-contained --highlight-style tango -s --toc -c style.css -o JavaScript.html
+```sh
+pandoc JavaScript.md -f markdown -t html --self-contained --highlight-style tango -s --toc -c style.css -o JavaScript.html
+```
 
 Nach LaTeX
 
-    pandoc JavaScript.md -f markdown -t latex --listings -o JavaScript.tex
+```sh
+pandoc JavaScript.md -f markdown -t latex --listings -o JavaScript.tex
+```
 
 
 
-# Nach PDF
+Nach PDF
 
 ```sh
-$ pandoc 05_Anfang_ue02.md --pdf-engine=xelatex -o 05_Anfang_ue02.pdf
+pandoc 05_Anfang_ue02.md --pdf-engine=xelatex -o 05_Anfang_ue02.pdf
 ```
 
 

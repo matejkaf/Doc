@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [assignment,java,strings]
 ---
 
-#### **Übung (toUpper):**
+#### **Übung (toUpper)**
 
 Schreibe eine `static` Methode `toUpper` mit der ein beliebiges Wort in einem beliebigen Text auf Großbuchstaben geändert werden kann. Der geänderte String ist der Rückgabewert.
 
@@ -36,7 +36,7 @@ System.out.println(n); // 3
 
 ---
 
-#### **Übung (Sum Up):**
+#### **Übung (Sum Up)**
 
 Gegeben ist ein String mit durch Beistriche getrennte ganzen Zahlen:
 
@@ -50,7 +50,7 @@ Schreibe ein Programm das die **größte** dieser Zahlen und deren **Summe** erm
 
 ---
 
-#### **Übung (killWord):**
+#### **Übung (killWord)**
 
 Implementiere eine `static` Methode `killWord` die das erste Vorkommen eines Worts aus einem Text löscht. Der geändere String ist der Rückgabewert.
 
@@ -64,7 +64,7 @@ System.out.println(r); // xyz nur e ein abcd test
 
 ---
 
-#### **Übung (killWords):**
+#### **Übung (killWords)**
 
 Implementiere eine `static` Methoden `killAllWords` mit einem Algorithmus der alle Vorkommen eines Worts aus einem Text löscht. Der geändere String ist der Rückgabewert.
 
