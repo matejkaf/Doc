@@ -34,6 +34,14 @@ tags: [assignment,C_1]
 
 
 
+# Math
+
+
+
+[](https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/)
+
+[](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
+
 # Offene Probleme
 
 In Typora skalierte Bilder werden nicht angezeigt.
