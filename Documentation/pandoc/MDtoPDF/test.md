@@ -2,9 +2,8 @@
 title: Title
 subtitle: Subtitle
 tags: [assignment,C_1]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Das ist ein Test $x^2$ und so
 
