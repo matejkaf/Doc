@@ -6,6 +6,9 @@ tags: [assignment,C_1]
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+$x^2$
+
+
 
 #### Übung (Schreibe die ersten 11 Zweierpotenzen an)
 
