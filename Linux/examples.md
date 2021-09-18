@@ -210,12 +210,19 @@ wandeln:
 
 ```sh
 $ gsed -r "s/\*\*(Übung.*):\*\*/#### \1/" challenge01.md >challenge01_.md
+$ -r, --regexp-extended
 ```
 
 Oder inplace mit `-i`
 
 ```sh
 $ gsed -i -r "s/\*\*(Übung.*):\*\*/#### \1/" challenge01.md
+```
+
+Ersetze alle `$$` denen mindestens ein Buchstabe folgt mit `$`
+
+```sh
+$ gsed -r 's/\$\$(.)/\$\1/g' xyz.md
 ```
 
 
@@ -228,3 +235,18 @@ Länge einer Website
 $ curl --head --silent google.com | grep 'Content-Length' | cut -d ' ' -f 2
 219
 ```
+
+
+
+## grep
+
+Text in Files rekursiv suchen
+
+```sh
+$ grep -r --include=\*.md summe2 .
+# -l,, --files-with-matches
+# Write only the names of files containing selected lines to standard output.
+```
+
+`*` wird escaped sonst shell globbing
+
