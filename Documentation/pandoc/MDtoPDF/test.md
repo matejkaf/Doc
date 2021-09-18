@@ -5,7 +5,7 @@ tags: [assignment,C_1]
 use_math: true
 ---
 
-Das ist ein Test $x^2$ und so
+Das ist ein Test $x^2$ und so xyz
 
 #### Übung (Schreibe die ersten 11 Zweierpotenzen an)
 
