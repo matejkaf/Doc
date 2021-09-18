@@ -2,6 +2,7 @@
 title: Mehrdimensionale Arrays
 subtitle: Übungen Vektorrechnung
 tags: [C_2,assignment,c]
+use_math: true
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -28,7 +29,7 @@ Um Drehungen, Verkleinerung und Vergrößerung umzusetzen werden Matrizen verwen
 
 #### Übung (Matrizenrechnung)
 
-Lege eine $$3\times 3$$  Matrix aus `int` Elementen an und schreibe folgende Funktionen:
+Lege eine $3\times 3$  Matrix aus `int` Elementen an und schreibe folgende Funktionen:
 
 - `eingabe()` und  `ausgabe()`.
 

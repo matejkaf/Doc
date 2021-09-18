@@ -2,9 +2,8 @@
 title: Mehrdimensionale Arrays
 subtitle: Diverse Übungen
 tags: [assignment,c,C_2]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 #### Übung (Schachaufgabe Läufer)
 
@@ -57,7 +56,7 @@ Erweiterung:  Man kann gegen den Computer spielen. Dabei kann der Computer zufä
 
 #### Übung (Sudoku)
 
-Schreibe ein Programm das ermittelt ob in einem $$9\times 9$$ Array die [Sudoku](http://de.wikipedia.org/wiki/Sudoku) Eigenschaften erfüllt sind.
+Schreibe ein Programm das ermittelt ob in einem $9\times 9$ Array die [Sudoku](http://de.wikipedia.org/wiki/Sudoku) Eigenschaften erfüllt sind.
 
 ---
 
@@ -79,7 +78,7 @@ int arr[][4] = {
     };
 ```
 
-Dieses $$3\times 4$$ Array soll auf ein $$4\times 3$$ Array umkopiert werden, so dass die erste Zeile des ersten Arrays gleich ist der ersten Spalte des zweiten Arrays, usw. 
+Dieses $3\times 4$ Array soll auf ein $4\times 3$ Array umkopiert werden, so dass die erste Zeile des ersten Arrays gleich ist der ersten Spalte des zweiten Arrays, usw. 
 
 Optional: Der Umkopiervorgang soll in einer Funktion stattfinden und ausschließlich mittels Zeiger implementiert werden.
 
