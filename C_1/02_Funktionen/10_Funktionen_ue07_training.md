@@ -3,9 +3,8 @@ title: Funktionen
 subtitle: Trainingsaufgaben III
 description: challenge
 tags: [assignment,c,funktionen,challenge,C_1]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 #### Übung (Zweier-Logarithmus)
 
@@ -19,27 +18,27 @@ Beispiele: `log(17) = 5`, `log(16) = 4`
 
 #### Übung (Quadratzahl)
 
-Jede Quadratzahl $$n^2$$ ist immer eine Summe von ungeraden Zahlen.
+Jede Quadratzahl $n^2$ ist immer eine Summe von ungeraden Zahlen.
 
- Beispiel: $$1+3+5+7=16=4^2$$. Das bedeutet 16 ist eine Quadratzahl weil die Summer der ersten 4 ungeraden Zahlen genau 16 ergibt. Die Anzahl der zu summierenden ungeraden Zahlen ist die Basis fürs quadrieren.
+ Beispiel: $1+3+5+7=16=4^2$. Das bedeutet 16 ist eine Quadratzahl weil die Summer der ersten 4 ungeraden Zahlen genau 16 ergibt. Die Anzahl der zu summierenden ungeraden Zahlen ist die Basis fürs quadrieren.
 
 Wenn man wissen will ob 100 eine Quadratzahl ist und welche Zahl zum Quadrat 100 ergibt so summiert man alle ungeraden Zahlen bis die Summe genau 100 ergibt. Also 
 
-$$1+3+5+7+9+11+13+15+17+19$$
+$1+3+5+7+9+11+13+15+17+19$$
 
-Da genau 10 ungerade Zahlen addierten werden mussten weiß man nun dass $$10^2=100$$ ist.
+Da genau 10 ungerade Zahlen addierten werden mussten weiß man nun dass $10^2=100$ ist.
 
-Ist die gegebene Zahl keine Quadratzahl, z.B. $$95$$ dann geht sich die Summe nicht genau aus
+Ist die gegebene Zahl keine Quadratzahl, z.B. $95$ dann geht sich die Summe nicht genau aus
 
-$$1+3+5+7+9+11+13+15+17=81$$
+$1+3+5+7+9+11+13+15+17=81$$
 
 und
 
-$$1+3+5+7+9+11+13+15+17+19=100$$
+$1+3+5+7+9+11+13+15+17+19=100$$
 
-In diesem Fall kann man aufhören da $$100>95$$ ist, und man weiß, dass 95 keine Quadratzahl ist.
+In diesem Fall kann man aufhören da $100>95$ ist, und man weiß, dass 95 keine Quadratzahl ist.
 
-Schreibe eine Funktion die von einer als Parameter übergebenen `int` Zahl prüft, ob es sich um eine Quadratzahl handelt. Die Funktion soll die Quadratbasis zurückgeben (d.h. die Anzahl der Additionen) oder $$0$$ falls es sich um keine Quadratzahl handelt.
+Schreibe eine Funktion die von einer als Parameter übergebenen `int` Zahl prüft, ob es sich um eine Quadratzahl handelt. Die Funktion soll die Quadratbasis zurückgeben (d.h. die Anzahl der Additionen) oder $0$ falls es sich um keine Quadratzahl handelt.
 
 Hinweis: Summiere in einer Schleife in aufsteigender Reihenfolge die ungeraden Zahlen. Ergibt diese Summe **genau** die zu prüfende Zahl, handelt es sich um eine Quadratzahl. Wenn die Summe jedoch größer als die Zahl wird (ohne genau gleich dieser Zahl zu werden) so ist diese Zahl keine Quadratzahl. 
 

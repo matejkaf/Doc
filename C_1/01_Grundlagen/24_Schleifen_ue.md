@@ -2,9 +2,8 @@
 title: Schleifen
 subtitle: Übungen
 tags: [assignment,C_1]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 #### Übung (Zahlenfolge)
 Schreibe ein Programm, welches mittels einer Schleife folgende Zahlenfolge ausgibt: 

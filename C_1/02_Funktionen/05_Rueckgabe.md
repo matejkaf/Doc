@@ -2,9 +2,8 @@
 title: Funktionen
 subtitle: Rückgabewert
 tags: [lecture,c,funktionen,C_1]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Um einen Wert zurück ans aufrufende Programm zu geben.
 
@@ -48,8 +47,8 @@ Ablauf von `umf = umfang(10, 20);`
 
 
 - Aufruf der Funktion `umfang()`.
-- Die Parameter erhalten die Werte $$a=10$$ und $$b=20$$. 
-- Berechnen von $$u = 2*(a + b)$$, Ergebnis: $$u=60$$. 
+- Die Parameter erhalten die Werte $a=10$ und $b=20$. 
+- Berechnen von $u = 2*(a + b)$, Ergebnis: $u=60$. 
 - Mit `return u` wird der Wert von `u`  (nämlich 60) zurückgegeben.
 - An der Stelle des Aufrufs `umfang(10,20)` wird mit dem zurückgegebenen Wert (60) weitergearbeitet.
 
@@ -124,7 +123,6 @@ printf("%d\n", umfang(11, 22) );
   ```
 
   
-
 
 
 

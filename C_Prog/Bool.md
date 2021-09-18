@@ -1,8 +1,7 @@
 ---
 Title: Datentyp bool
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 `bool` ist ein besonderer Datentyp.
 
@@ -152,20 +151,20 @@ Ermittle mit Hilfe dieser Funktion die Anzahl der Primzahlen im Bereich 1...1000
 
 #### Übung (Monte Carlo Methode)
 
-Mit Hilfe von Zufallszahlen kann die Zahl $$\pi$$ bestimmt werden.
+Mit Hilfe von Zufallszahlen kann die Zahl $\pi$ bestimmt werden.
 Man nimmt ein Quadrat der Kantenlänge 2. In dieses Quadrat zeichnet man einen Kreis mit Radius 1.
 Dann setzt man zufällig Punkte im Quadrat.
 Für jeden Punkt ermittelt man ob sich der Punkt im Inneren des Kreises befindet.
 Man ermittelt darauf welcher Anteil aller Punkte im Inneren des Kreises war.
 Nun nimmt man den gleichen Anteil von der Fläche des Quadrats und erhält die Fläche des Kreises.
 
-Schreibe eine Programm das $$\pi$$ auf diese Weise ermittelt.
+Schreibe eine Programm das $\pi$ auf diese Weise ermittelt.
 Wie viele zufällig Punkte müssen gewählt werden um ca. eine Genauigkeit von 3 Kommastellen zu erreichen?
 
 
 Hinweise:
 - Lege den Mittelpunkt des Koordinatensystems in den Mittelpunkt von Quadrat und Kreis.
-- Bilde 2 zufällige `double` Variablen ($$x$$ und $$y$$) im Bereich $$-1,\ldots,+1$$
+- Bilde 2 zufällige `double` Variablen ($x$ und $y$) im Bereich $-1,\ldots,+1$$
 
 ```c
 double x = 2.0*rand()/MAX_RAND - 1;

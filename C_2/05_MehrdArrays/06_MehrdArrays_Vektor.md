@@ -5,8 +5,6 @@ tags: [C_2,assignment,c]
 use_math: true
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 Die **Vektorrechnung** spielt vor allem für die Computergrafik eine bedeutende Rolle.
 
 Ein Vektor beschreibt entweder:

@@ -1,9 +1,8 @@
 ---
 title: HMAC
 subtitle: hash-based message authentication code
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # Allgemeines
 
@@ -15,7 +14,7 @@ Verschlüsselter Hash-Wert = MAC (message authentication code)
 
 HMAC ist ein spezielles (häufig angewandtes) Verfahren. Für HMAC kann eine beliebige kryptografische Hashfunktion verwendet werden – z.B. HMAC-SHA256. Der Output von HMAC ist gleich lang wie das Ergebnis der Hashfunktion. Der Schlüssel kann beliebige Länge haben.
 
-$$\text{HMAC}(K,m)$$
+$\text{HMAC}(K,m)$$
 
 Auf der Empfängerseite muss der für die HMAC Berechnung verwendet Schlüssel bekannt sein. Wenn sich der gleiche HMAC Wert ergibt wurde die Nachricht nicht manipuliert.
 
@@ -27,7 +26,7 @@ Da einem Angreifer der Schlüssel K nicht zur Verfügung steht kann die Nachrich
 
 [Quelle: wikipedia](https://en.wikipedia.org/wiki/HMAC#Definition)
 
-$$\begin{align}
+$\begin{align}
   \operatorname{HMAC}(K, m) &= \operatorname{H}\Bigl(\bigl(K' \oplus opad\bigr) \parallel 
 \operatorname{H} \bigl(\left(K' \oplus ipad\right) \parallel m\bigr)\Bigr) \\
                          K' &= \begin{cases}
@@ -39,7 +38,7 @@ $$\begin{align}
 - H is a cryptographic hash function
 -  ''m'' is the message to be authenticated
 - ''K'' is the secret key
-- $$K'$$ is a block-sized key derived from the secret key, ''K''; either by padding to the right with 0s up to the block size, or by hashing down to less than or equal to the block size first and then padding to the right with zeros
+- $K'$ is a block-sized key derived from the secret key, ''K''; either by padding to the right with 0s up to the block size, or by hashing down to less than or equal to the block size first and then padding to the right with zeros
 - ‖ denotes concatenation
 - ⊕ denotes bitwise exclusive or (XOR)
 - ''opad'' is the block-sized outer padding, consisting of repeated bytes valued 0x5c

@@ -1,8 +1,7 @@
 ---
 title: Bitmanipulation
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 
 ## Zahlendarstellung
@@ -18,51 +17,51 @@ Mit einem Bit lassen sich die Zahlen 0 und 1 darstellen. Kommt ein zweites Bit d
 Bei 3 Bits sind es 8 Möglichkeiten. 
 
 Mit jedem weiteren Bit verdoppelt sich die Anzahl der darstellbaren Zahlen. 
-Allgemein ergeben $$n$$ Bits $$2^n$$ (2 hoch n) darstellbare Zahlen.
+Allgemein ergeben $n$ Bits $2^n$ (2 hoch n) darstellbare Zahlen.
 
 | Bit-Anzahl | Möglichkeiten  |
 | ---------- | ---- |
-| 1          | $$2^1=2$$ |
-| 2          | $$2^2=4$$ |
-| 3 | $$2^3=8$$ |
-| 4 | $$2^4=16$$ |
-| 5 | $$2^5=32$$ |
-| 6 | $$2^6=64$$ |
-| 7 | $$2^7=128$$ |
-| 8 | $$2^8=256$$ |
+| 1          | $2^1=2$ |
+| 2          | $2^2=4$ |
+| 3 | $2^3=8$ |
+| 4 | $2^4=16$ |
+| 5 | $2^5=32$ |
+| 6 | $2^6=64$ |
+| 7 | $2^7=128$ |
+| 8 | $2^8=256$ |
 
 
 
 ### Byte
 
-8 Bits werden zu einem Byte zusammengefasst. Mit einem Byte können $$2^8={256}$$ Zahlen dargestellt werden. Da auch die 0 enthalten ist, ergibt sich ein Wertebereich von $$0\ldots 255$$.
+8 Bits werden zu einem Byte zusammengefasst. Mit einem Byte können $2^8={256}$ Zahlen dargestellt werden. Da auch die 0 enthalten ist, ergibt sich ein Wertebereich von $0\ldots 255$.
 Um größere Zahlen darzustellen werden häufig 2, 4 oder 8 Byte zusammengefasst.
 
 | Bit-Anzahl | Wertebereich | Wertebereich |
 | ---------- | ------------ | ------------ |
-| 8  | $$0\ldots 2^{8}$$  | $$0\ldots 255$$ |
-| 16 | $$0\ldots 2^{16}$$ | $$0\ldots 65535$$ |
-| 32 | $$0\ldots 2^{32}$$ | $$0\ldots 4294967296$$ |
-| 64 | $$0\ldots 2^{64}$$ | $$0\ldots 18446744073709551616$$ |
+| 8  | $0\ldots 2^{8}$  | $0\ldots 255$ |
+| 16 | $0\ldots 2^{16}$ | $0\ldots 65535$ |
+| 32 | $0\ldots 2^{32}$ | $0\ldots 4294967296$ |
+| 64 | $0\ldots 2^{64}$ | $0\ldots 18446744073709551616$ |
 
 Größenordnungsvergleich (Flächen)
 
- $$ 2^{8}\ \text{m}^2$$ — Vier Klassenzimmer
- $$2^{16}\ \text{m}^2$$ — 9 Fußballfelder
- $$2^{32}\ \text{m}^2$$ — Etwa ein Drittel der Fläche Oberösterreichs
- $$2^{64}\ \text{m}^2$$ — Ca. das 3-fache der Sonnenoberfläche
+ $ 2^{8}\ \text{m}^2$ — Vier Klassenzimmer
+ $2^{16}\ \text{m}^2$ — 9 Fußballfelder
+ $2^{32}\ \text{m}^2$ — Etwa ein Drittel der Fläche Oberösterreichs
+ $2^{64}\ \text{m}^2$ — Ca. das 3-fache der Sonnenoberfläche
 
 
 ## Größenangaben
 
-- 1 kB (Kilo-Byte) = $$2^{10}$$ Bytes, 1024 Bytes. (ca. 10 Zeilen Text)
-- 1 MB (Mega-Byte) = $$2^{20}$$ Bytes, 1024 kB. (MP3 Datei ca. 5-10~MB)
-- 1 GB (Giga-Byte) = $$2^{30}$$ Bytes, 1024 MB. (aktueller Hauptspeicher, ca. 4~GB)
-- 1 TB (Tera-Byte) = $$2^{40}$$ Bytes, 1024 GB. (Aktuelle Festplatte, 1-2~TB)
-- 1 PB (Peta-Byte) = $$2^{50}$$ Bytes, 1024 TB. (50 PB: die Summe aller geschriebenen Texte, in allen Sprachen, seit Beginn der Geschichtsschreibung)
-- 1 EB (Exa-Byte) = $$2^{60}$$ Bytes, 1024 PB. (5 EB: Alle Wörter die je von Menschen gesprochen wurden)
-- 1 ZB (Zetta-Byte) = $$2^{70}$$ Bytes, 1024 EB. (2,7 ZB: Gesamtanzahl der weltweit gespeicherten Daten in 2012)
-- 1 YB (Yotta-Byte) = $$2^{80}$$ Bytes, 1024 ZB.
+- 1 kB (Kilo-Byte) = $2^{10}$ Bytes, 1024 Bytes. (ca. 10 Zeilen Text)
+- 1 MB (Mega-Byte) = $2^{20}$ Bytes, 1024 kB. (MP3 Datei ca. 5-10~MB)
+- 1 GB (Giga-Byte) = $2^{30}$ Bytes, 1024 MB. (aktueller Hauptspeicher, ca. 4~GB)
+- 1 TB (Tera-Byte) = $2^{40}$ Bytes, 1024 GB. (Aktuelle Festplatte, 1-2~TB)
+- 1 PB (Peta-Byte) = $2^{50}$ Bytes, 1024 TB. (50 PB: die Summe aller geschriebenen Texte, in allen Sprachen, seit Beginn der Geschichtsschreibung)
+- 1 EB (Exa-Byte) = $2^{60}$ Bytes, 1024 PB. (5 EB: Alle Wörter die je von Menschen gesprochen wurden)
+- 1 ZB (Zetta-Byte) = $2^{70}$ Bytes, 1024 EB. (2,7 ZB: Gesamtanzahl der weltweit gespeicherten Daten in 2012)
+- 1 YB (Yotta-Byte) = $2^{80}$ Bytes, 1024 ZB.
 
 
 
@@ -73,9 +72,9 @@ Wir rechnen normalerweise im Dezimalzahlen.
 Jede Stelle kann 10 verschiedenen Zustände annehmen, die Zahlenbasis ist 10.
 
 Beispiel:
-327 = $$3\cdot 10^{2} + 2\cdot 10^{1} + 7\cdot 10^{0}$$
+327 = $3\cdot 10^{2} + 2\cdot 10^{1} + 7\cdot 10^{0}$$
 
-$$10^{0}$$, $$10^{1}$$, $$10^{2} \ldots$$, Stellenwertigkeit
+$10^{0}$, $10^{1}$, $10^{2} \ldots$, Stellenwertigkeit
 
 Grund für Dezimalsystem: 10 Finger. Computer kennen nur 0 und 1 – zwei Zustände daher Zahlenbasis 2 (Binär bzw. Dual).
 
@@ -85,8 +84,8 @@ $$
 10110101_{2} = 1\cdot 2^7+0\cdot 2^6+1\cdot 2^5+1\cdot 2^4+0\cdot 2^3+1\cdot 2^2+0\cdot 2^1+1\cdot 2^0 = 181_{10}
 $$
 
-Kleinste Zahl: $$00000000_{2}=0_{10}$$
-Größte Zahl: $$11111111_{2}$$ = $$255_{10}$$ = $$2^{8}-1$$
+Kleinste Zahl: $00000000_{2}=0_{10}$$
+Größte Zahl: $11111111_{2}$ = $255_{10}$ = $2^{8}-1$$
 
 
 Aufgabe: Schreibe die Zahlen 0–15 im Binärsystem.
@@ -115,19 +114,19 @@ $$
 Wandle die folgenden Dezimalzahlen nach Binär:
 
 
-- $$195_{10}$$
-- $$89_{10}$$
-- $$127_{10}$$
-- $$128_{10}$$
-- $$235_{10}$$
-- $$255_{10}$$
+- $195_{10}$$
+- $89_{10}$$
+- $127_{10}$$
+- $128_{10}$$
+- $235_{10}$$
+- $255_{10}$$
 
-$$195_{10}$$ = $$11000011_{2}$$, 
-$$89_{10}$$ = $$01011001_{2}$$, 
-$$127_{10}$$ = $$01111111_{2}$$, 
-$$128_{10}$$ = $$10000000_{2}$$, 
-$$235_{10}$$ = $$11101011_{2}$$, 
-$$255_{10}$$ = $$11111111_{2}$$.
+$195_{10}$ = $11000011_{2}$, 
+$89_{10}$ = $01011001_{2}$, 
+$127_{10}$ = $01111111_{2}$, 
+$128_{10}$ = $10000000_{2}$, 
+$235_{10}$ = $11101011_{2}$, 
+$255_{10}$ = $11111111_{2}$.
 
 
 
@@ -139,7 +138,7 @@ Das Hexadezimalsystem ist praktisch bei der Darstellung von Speicherinhalten im 
 | Wert | Hexadezimale Ziffer |
 | ---- | ------------------- |
 | 0 | 0 |
-| $$\ldots$$ | $$\ldots$$ |
+| $\ldots$ | $\ldots$ |
 | 9 | 9 |
 | 10 | A |
 | 11 | B |
@@ -148,11 +147,11 @@ Das Hexadezimalsystem ist praktisch bei der Darstellung von Speicherinhalten im 
 | 14 | E |
 | 15 | F |
 
-Beispiel, Hexadezimal $$\rightarrow$$ Dezimal:
+Beispiel, Hexadezimal $\rightarrow$ Dezimal:
 
-$$\text{8E5}_{16} = 8\cdot 16^2 + 14\cdot 16^1 + 5\cdot 16^0 = 2277_{10}$$
+$\text{8E5}_{16} = 8\cdot 16^2 + 14\cdot 16^1 + 5\cdot 16^0 = 2277_{10}$$
 
-Beispiel, Dezimal $$\rightarrow$$ Hexadezimal:
+Beispiel, Dezimal $\rightarrow$ Hexadezimal:
 
 $$
 \begin{aligned}
@@ -163,7 +162,7 @@ $$
 
 Zwischen dem Hex- und dem Binärsystem gibt es einen einfachen Zusammenhang, da eine Gruppe von 4 Bits immer einer einzigen Hex-Ziffer (und umgekehrt) entspricht.
 
-Hex $$\rightarrow$$ Bin:
+Hex $\rightarrow$ Bin:
 Hex Zahl nach Binär wandeln und Ergebnisse hintereinander anschreiben.
 $$
 \mbox{8E5}_{16}=
@@ -171,7 +170,7 @@ $$
 1000\,1110\,1110_2
 $$
 
-Bin$$\rightarrow$$ Hex:
+Bin$\rightarrow$ Hex:
 Von rechts beginnend 4 Bit Gruppen zusammenfassen. Dezimalen Wert dieser 4 Bits errechnen (0–15), entsprechende Hex Ziffer (0–9, A–F) anschreiben.
 
 Beispiel:
@@ -206,7 +205,7 @@ Bedeutung hat das Hexadezimalsystem für die platzsparende Darstellung von Speic
 (Nicht Prüfungsstoff)
 
 Höchstwertiges Bit ist das Vorzeichenbit.
-Bei einem Byte hat dieses Bit den Stellenwert $$-2^7=-128$$.
+Bei einem Byte hat dieses Bit den Stellenwert $-2^7=-128$.
 Alle anderen Bits haben positives Vorzeichen.
 
 Beispiel:
@@ -218,17 +217,17 @@ Beachte: In der Dualzahl wird keine Information gespeichert ob ein Vorzeichen vo
 
 Wertebereiche:
 
-- 1 Byte vorzeichenbehaftet: $$-128, \ldots,0, \ldots,+127$$
-- 2 Byte vorzeichenbehaftet: $$-32768, \ldots,0, \ldots,+32767$$
-- 4 Byte vorzeichenbehaftet: $$-2^{31}, \ldots,0, \ldots,+2^{31}-1$$
+- 1 Byte vorzeichenbehaftet: $-128, \ldots,0, \ldots,+127$$
+- 2 Byte vorzeichenbehaftet: $-32768, \ldots,0, \ldots,+32767$$
+- 4 Byte vorzeichenbehaftet: $-2^{31}, \ldots,0, \ldots,+2^{31}-1$$
 
 Positiver Bereich ist kleiner weil die Null dazuzählt.
 
 Überlege wie negative Zahlen von Dezimal nach Binär gewandelt werden können.
 
-Der Wert des höchstwertigsten Bits wird negativ genommen. Z.B.\ bei einer 8 Bit Zahl ist dies $$-127$$. 
-Wenn die negative Zahl $$x$$ dargestellt werden soll so sucht man ein $$y$$ so dass $$-127+y=x$$ (Dieses $$y$$ muss eine positive Zahl sein).
-Das gefundene $$y$$ wandelt man nach Binär und an das Ergebnis hängt man noch ein gesetztes höchstwertiges Bit (Vorzeichenbit) an.
+Der Wert des höchstwertigsten Bits wird negativ genommen. Z.B.\ bei einer 8 Bit Zahl ist dies $-127$. 
+Wenn die negative Zahl $x$ dargestellt werden soll so sucht man ein $y$ so dass $-127+y=x$ (Dieses $y$ muss eine positive Zahl sein).
+Das gefundene $y$ wandelt man nach Binär und an das Ergebnis hängt man noch ein gesetztes höchstwertiges Bit (Vorzeichenbit) an.
 
 
 
@@ -270,11 +269,11 @@ Das Ergebnis kann in einem Byte nicht mehr dargestellt werden. C erkennt diesen 
 Beispiel:
 120-2
 
-2 in negative Zahl wandeln: $$-2=-128+x \Rightarrow x=+126$
+2 in negative Zahl wandeln: $-2=-128+x \Rightarrow x=+126$
 
-$$126_{10}=01111110_2$$ daher $$-2=11111110_2$$
+$126_{10}=01111110_2$ daher $-2=11111110_2$$
 
-$$120_{10}=01111000_2$$
+$120_{10}=01111000_2$$
 
 ```
     0 1 1 1 1 0 0 0
@@ -304,12 +303,12 @@ Alle C Datentypen in der Übersicht.
 
 | *Typ* | `printf` | *Wertebereich* | *Beschreibung* |
 | ----- | -------- | -------------- | -------------- |
-| `char` | `\%hhd` | $$-128\,\ldots+127$$ | 1 Byte |
+| `char` | `\%hhd` | $-128\,\ldots+127$ | 1 Byte |
 | `char` | `\%c` | Zeichen | 1 Byte Zeichen |
-| `short` | `\%hd` | $$-32768\,\ldots\,+32767$$ | 2 Byte  |
-| `long` | `\%ld` | $$-2^{31}\,\ldots\,2^{31}-1$$ | 4 Byte |
+| `short` | `\%hd` | $-32768\,\ldots\,+32767$ | 2 Byte  |
+| `long` | `\%ld` | $-2^{31}\,\ldots\,2^{31}-1$ | 4 Byte |
 | `int` | `\%d` | Wie `long` | 4 Byte. Manchmal 2 Byte.  |
-| `long long` | `\%lld` | $$-2^{63}\,\ldots\,2^{63}-1$$ | 8 Byte |
+| `long long` | `\%lld` | $-2^{63}\,\ldots\,2^{63}-1$ | 8 Byte |
 
 
 
@@ -319,11 +318,11 @@ Alle C Datentypen in der Übersicht.
 
 | *Typ* | printf | *Wertebereich* | *Beschreibung* |
 | ----- | ------ | -------------- | -------------- |
-| `unsigned char` | `\%hhu` | $$0\,\ldots\,255$$ | 1 Byte ||
-| `unsigned short` | `\%hu` | $$0\,\ldots\,65535$$ | 2 Byte  ||
-| `unsigned long` | `\%lu` | $$0\,\ldots\,2^{32}-1$$ | 4 Byte ||
+| `unsigned char` | `\%hhu` | $0\,\ldots\,255$ | 1 Byte ||
+| `unsigned short` | `\%hu` | $0\,\ldots\,65535$ | 2 Byte  ||
+| `unsigned long` | `\%lu` | $0\,\ldots\,2^{32}-1$ | 4 Byte ||
 | `unsigned int` | `\%u` | Wie `long` | 4 Byte. Manchmal 2 Byte. ||
-| `unsigned long long` | `\%llu` | $$0\,\ldots\,2^{64}-1$$ | 8 Byte ||
+| `unsigned long long` | `\%llu` | $0\,\ldots\,2^{64}-1$ | 8 Byte ||
 
 *Empfehlung:* 
 `unsigned` nur verwenden wenn man keine negativen Zahlen aber einen erweiterten Wertebereich benötigt.
@@ -335,8 +334,8 @@ Auch: Gleitkomma, Fließkomma
 
 | *Typ* | printf | *Wertebereich* | *Beschreibung* |
 | ----- | ------ | -------------- | -------------- |
-| `float` | `\%f`} | $${-3,4\cdot}{10^{38}}\,\ldots\,{3,4\cdot}{10^{38}}$$ | 4 Byte. <br />Einfache Genauigkeit. 7–8 Stellen. |
-| `double` | `\%lf`} | $${-1,7\cdot}{10^{308}}\,\ldots\,{1,7\cdot}{10^{308}}$$ | 8 Byte. <br />Doppelte Genauigkeit. 15–16 Stellen. |
+| `float` | `\%f`} | ${-3,4\cdot}{10^{38}}\,\ldots\,{3,4\cdot}{10^{38}}$ | 4 Byte. <br />Einfache Genauigkeit. 7–8 Stellen. |
+| `double` | `\%lf`} | ${-1,7\cdot}{10^{308}}\,\ldots\,{1,7\cdot}{10^{308}}$ | 8 Byte. <br />Doppelte Genauigkeit. 15–16 Stellen. |
 
 
 

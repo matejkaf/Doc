@@ -1,9 +1,8 @@
 ---
 title: Verändern von verschlüsselten Daten
 subtitle: Kryptographie in Python
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # Hintergrund
 
@@ -17,29 +16,29 @@ Kennt ein Angreifer Daten aus dem plaintext so kann er diese durch eine XOR Mani
 
 # Ver- und Entschlüsseln
 
-$$p$$ ist ein Byte aus dem Plaintext und dem Angreifer bekannt. $$k$$ (Key, Schlüssel) ist ein Byte aus der Bitmaske die verwendet wird um $$p$$ zu verschlüsseln. Der Ciphertext ergibt sich mit:
+$p$ ist ein Byte aus dem Plaintext und dem Angreifer bekannt. $k$ (Key, Schlüssel) ist ein Byte aus der Bitmaske die verwendet wird um $p$ zu verschlüsseln. Der Ciphertext ergibt sich mit:
 
-$$c=p \oplus k$$
+$c=p \oplus k$$
 
-Das Entschlüsseln ergibt sich durch ein weiteres anwenden von $$k$$:
+Das Entschlüsseln ergibt sich durch ein weiteres anwenden von $k$:
 
-$$c \oplus k = (p \oplus k) \oplus k = p \oplus (k \oplus k) = p \oplus 0 = p$$
+$c \oplus k = (p \oplus k) \oplus k = p \oplus (k \oplus k) = p \oplus 0 = p$$
 
-Durch die XOR Operation hebt sich der Schlüssel auf weil $$k \oplus k = 0$$ und $$x \oplus 0 = x$$ gilt.
+Durch die XOR Operation hebt sich der Schlüssel auf weil $k \oplus k = 0$ und $x \oplus 0 = x$ gilt.
 
 
 
 # Manipulation
 
-Ein Angreifer der $$c$$ abgefangen hat und $$p$$ kennt kann dieses so manipulieren, dass der Empfänger statt dem $$p$$ ein beliebiges $$p'$$ empfängt.
+Ein Angreifer der $c$ abgefangen hat und $p$ kennt kann dieses so manipulieren, dass der Empfänger statt dem $p$ ein beliebiges $p'$ empfängt.
 
-Der Angreifer ersetzt $$c$$ durch $$c'$$:
+Der Angreifer ersetzt $c$ durch $c'$:
 
-$$c'= c \oplus p \oplus p'$$
+$c'= c \oplus p \oplus p'$$
 
 Dazu muss der Angreifer den Schlüssel nicht kennen.
 
-Der Empfänger erhält $$c'$$ und entschlüsselt mit $$k$$:
+Der Empfänger erhält $c'$ und entschlüsselt mit $k$:
 $$
 \begin{align*}
 c' \oplus k &= (c \oplus p \oplus p') \oplus k \\
@@ -51,7 +50,7 @@ c' \oplus k &= (c \oplus p \oplus p') \oplus k \\
  &= p'
 \end{align*}
 $$
-Der Empfänger erhält die manipulierten Daten $$p'$$, es gibt keine Möglichkeit die Manipulation zu erkennen.
+Der Empfänger erhält die manipulierten Daten $p'$, es gibt keine Möglichkeit die Manipulation zu erkennen.
 
 
 

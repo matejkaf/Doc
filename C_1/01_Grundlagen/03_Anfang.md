@@ -2,9 +2,8 @@
 title: Programmieren Anfang
 subtitle: C Grundlagen
 tags: [lecture,C_1,1AHITS,1CHELS]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Programmieren von Computern (Programmiersprache C)
 
@@ -276,7 +275,7 @@ Was ist die (ganzzahlige) Division genau?
 12 / 5
 ```
 
-gesucht sind ganze Zahlen $$q$$ (Quotient) und $$r$$ (Rest): 
+gesucht sind ganze Zahlen $q$ (Quotient) und $r$ (Rest): 
 $$
 12=q \cdot 5 + r
 $$

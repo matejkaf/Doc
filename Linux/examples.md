@@ -222,7 +222,7 @@ $ gsed -i -r "s/\*\*(Übung.*):\*\*/#### \1/" challenge01.md
 Ersetze alle `$$` denen mindestens ein Buchstabe folgt mit `$`
 
 ```sh
-$ gsed -r 's/\$\$(.)/\$\1/g' xyz.md
+$ gsed -i -r 's/\$\$(.)/\$\1/g' xyz.md
 ```
 
 
@@ -249,4 +249,37 @@ $ grep -r --include=\*.md summe2 .
 ```
 
 `*` wird escaped sonst shell globbing
+
+
+
+## xargs
+
+grep ergibt alle Pfade mit einem bestimmten Inhalt, für jedes davon `wc` anwenden.
+
+```sh
+$ ggrep -r -l --include=\*.md mathjax.org . | xargs wc
+```
+
+```
+      94     395    3562 ./Cryptography/python/07_hmac.md
+     102     461    3342 ./Cryptography/python/09_block_cipher_manipulation.md
+     118     491    4051 ./Cryptography/07_pubkey_math.md
+...
+     224     970    7881 ./Cybersecurity_3/lecture/06_passwoerter.md
+      48     186    1754 ./Java_3/04_Arrays_en/07_Arrays_ue_weg.md
+     116     724    5452 ./Java_3/04_Arrays_en/15_Arrays_Polynom.md
+    3838   14030  104491 total
+```
+
+sed auf einem bestimmten Satz von Dateien ausführen
+
+```sh
+ggrep -r -l --include=\*.md mathjax.org . | xargs gsed -i -r 's/\$\$(.)/\$\1/g'
+```
+
+Alle Dateien mit Endung `md` die den Text `mathjax.org` beinhalten öffnen:
+
+```sh
+ggrep -r -l --include=\*.md mathjax.org . | xargs open
+```
 

@@ -1,9 +1,8 @@
 ---
 title: Passwörter
 tags: [lecture]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 * TOC
 {:toc}
@@ -124,7 +123,7 @@ Das PW cracking muss sehr zeitintensiv sein. Dies wird durch 3 Maßnahmen erreic
 
 Ausgangspunkt: Anzahl der Möglichkeiten für das Passwort.
 
-Beispiel: 5 Zeichen lang, aus den 26 Buchstaben a-z → $$26^5=11881376$$ Möglichkeiten
+Beispiel: 5 Zeichen lang, aus den 26 Buchstaben a-z → $26^5=11881376$ Möglichkeiten
 
 Bei 1000 guesses/second, ca. 3 Stunden
 
@@ -135,7 +134,7 @@ log_2(26^5)=23,5 \ \text{bits}\\
 $$
 Anzahl der Bits die notwendig sind um alle Möglichkeiten durchzunummerieren.
 
-Ziel z.B. 40 Bits Entropie (online guessing): $$2^{40}$$ Möglichkeiten bei 1000 guesses/second, ca. 35 Jahre.
+Ziel z.B. 40 Bits Entropie (online guessing): $2^{40}$ Möglichkeiten bei 1000 guesses/second, ca. 35 Jahre.
 
 Bei offline guessing z.B. 80 Bits Entropie
 

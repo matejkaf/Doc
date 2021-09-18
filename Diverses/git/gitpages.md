@@ -62,7 +62,7 @@ Default theme auswählen: [Step 5 - Selected a Github pages default theme](https
 Geht von selbst mit MathJax [[Math on GitHub Pages](https://g14n.info/2014/09/math-on-github-pages/)]
 
 ```
-$$x^2=2$$
+$x^2=2$$
 ```
 
 

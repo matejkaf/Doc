@@ -2,13 +2,12 @@
 title: Schleifen
 subtitle: Challenges
 tags: [assignment,challenge,C_1]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 ####  Übung (Quadratzahl)
 
-Jede Quadratzahl *n*² ist immer eine Summe der ersten *n* ungeraden Zahlen (Bsp.: $$4^2=4\times 4=1+3+5+7$$). 
+Jede Quadratzahl *n*² ist immer eine Summe der ersten *n* ungeraden Zahlen (Bsp.: $4^2=4\times 4=1+3+5+7$). 
 
 - Berechne das Quadrat einer eingegebenen `int` Zahl nach diesem Verfahren, d.h. ohne eine Multiplikation zu verwenden!
 - Prüfe ob eine eingegebene Zahl selbst eine Quadratzahl ist. Das ist dann der Fall wenn sich diese Zahl als Summe von ungeraden Zahlen berechnen lässt.
@@ -51,11 +50,11 @@ Hoehe: 5
 
 Eine Hochzahl ist eine Kurzschreibweise für mehrere Multiplikationen. Beispiel:
 
-$$2^4=2\cdot 2\cdot 2\cdot 2$$
+$2^4=2\cdot 2\cdot 2\cdot 2$$
 
 Schreibe ein Programm das die Eingabe einer Basis (`double`) und eines Exponenten (`int` und größer gleich 0) ermöglicht und das Ergebnis berechnet.
 
-Berücksichtige auch dass $$a^0=1$$.
+Berücksichtige auch dass $a^0=1$.
 
 
 
@@ -66,9 +65,9 @@ Berücksichtige auch dass $$a^0=1$$.
 
 Berechne mittels verschachtelter `for`-Schleifen:
 
-$$2^i=2^0+2^1+2^2+\cdots + 2^7 = 255$$
+$2^i=2^0+2^1+2^2+\cdots + 2^7 = 255$$
 
-$$1^0+2^1+3^2+4^3+5^4+6^5+7^6=126126$$
+$1^0+2^1+3^2+4^3+5^4+6^5+7^6=126126$$
 
 ---
 

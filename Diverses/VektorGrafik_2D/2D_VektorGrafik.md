@@ -1,9 +1,8 @@
 ---
 title: Vektorgeometrie
 subtitle: Grundlagen der 2D Computergrafik
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Vektorgeometrie (auch [Analytische Geometrie](http://de.wikipedia.org/wiki/Analytische_Geometrie)), ist das mathematische Werkzeug für Berechnungen im 2 bzw. 3-dimensionalem Raum und Grundlage der Computergrafik.
 
@@ -62,7 +61,7 @@ $$
 $$
 
 ## Skalar
-**Skalar** ist die Bezeichnung einer "normalen Zahl". Beschriftung oft mit griechischem Buchstaben (z.B.: $$\lambda$$ – Lambda).
+**Skalar** ist die Bezeichnung einer "normalen Zahl". Beschriftung oft mit griechischem Buchstaben (z.B.: $\lambda$ – Lambda).
 
 
 Die Multiplikation eines Skalars mit einem Vektor ist definiert als:
@@ -73,7 +72,7 @@ $$
 \left[ \begin{array}{c} \lambda\; x \\ \lambda\; y \end{array} \right]
 $$
 
-Spezialfälle: $$\lambda=-1$$ (Vorzeichenumkehr) und $$\lambda=1/\rho$$ (Division).
+Spezialfälle: $\lambda=-1$ (Vorzeichenumkehr) und $\lambda=1/\rho$ (Division).
 
 Grafische Interpretation: Verkürzen/Verlängern eines Vektors (Skalieren).
 
@@ -134,7 +133,7 @@ $$
 \lVert \vec{v} \rVert = \sqrt{v^2_x + v^2_y}
 $$
 
-Einen Vektor dessen Norm 1 ist ($$\lVert \vec{v} \rVert =1$$) nennt man **Einheitsvektor**. Jeder Vektor kann auf einen Einheitsvektor normiert werden:
+Einen Vektor dessen Norm 1 ist ($\lVert \vec{v} \rVert =1$) nennt man **Einheitsvektor**. Jeder Vektor kann auf einen Einheitsvektor normiert werden:
 
 $$
 \vec{v}_{\circ} = \frac{1}{\lVert \vec{v} \rVert} \; \vec{v}
@@ -147,7 +146,7 @@ $$
 \vec{e}_2 = \left[ \begin{array}{c} 0 \\ 1 \end{array} \right]
 $$
 
-Ein Vektor kann dann auch so geschrieben werden (Linearkombination aus den Einheitsvektoren $$e_1$$ und $$e_2$$)
+Ein Vektor kann dann auch so geschrieben werden (Linearkombination aus den Einheitsvektoren $e_1$ und $e_2$)
 
 $$
 \left[ \begin{array}{c} \lambda_x \\ \lambda_y \end{array} \right] =
@@ -159,9 +158,9 @@ $$
 
 #### Beispiel/Aufgabe
 
-Zwei Punkte sind durch die Positionsvektoren $$A$$ und $$B$$ gegeben. Gesucht ist ein Punkt $$C$$ der sich auf der Geraden von $$A$$ nach $$B$$ befindet und 2 Einheiten (z.B. cm) von $$A$$ entfernt ist.
+Zwei Punkte sind durch die Positionsvektoren $A$ und $B$ gegeben. Gesucht ist ein Punkt $C$ der sich auf der Geraden von $A$ nach $B$ befindet und 2 Einheiten (z.B. cm) von $A$ entfernt ist.
 
-Endpunkt minus Startpunkt ergibt den Richtungsvektor $$\overrightarrow{AB}$$:
+Endpunkt minus Startpunkt ergibt den Richtungsvektor $\overrightarrow{AB}$:
 
 $$
 \overrightarrow{AB} = B - A
@@ -186,7 +185,7 @@ $$
 X = A + \lambda\, \vec{v}_{\circ}
 $$
 
-**Verbindungsvektor** von $$\vec{P}$$ nach $$\vec{Q}$$
+**Verbindungsvektor** von $\vec{P}$ nach $\vec{Q}$$
 $$
 \vec{v}=
 \vec{Q}-\vec{P}
@@ -198,7 +197,7 @@ $$
 $$
 
 
-Die **Parameterdarstellung** der Strecke $$\overline{PQ}$$
+Die **Parameterdarstellung** der Strecke $\overline{PQ}$$
 
 $$
 \overline{PQ}=\vec{P}+t\cdot \vec{v} \qquad\qquad t\in [0,1]
@@ -268,9 +267,9 @@ $$
 
 Das Ergebnis ist ein **Skalar**.
 
-Grafische Interpretation von $$\vec{v}\cdot \vec{w}$$: Rechtwinkelige Projektion des Vektor $$\vec{v}$$ auf $$\vec{w}$$, dann wird die Länge der Projektion mit der Länge von $$\vec{w}$$ multipliziert.
+Grafische Interpretation von $\vec{v}\cdot \vec{w}$: Rechtwinkelige Projektion des Vektor $\vec{v}$ auf $\vec{w}$, dann wird die Länge der Projektion mit der Länge von $\vec{w}$ multipliziert.
 
-Der Winkel $$\varphi$$ zwischen den Vektoren läßt sich mit folgender Formel über das innere Produkt berechnen:
+Der Winkel $\varphi$ zwischen den Vektoren läßt sich mit folgender Formel über das innere Produkt berechnen:
 
 
 $$
@@ -290,7 +289,7 @@ $$
 ## Matrix
 
 Eine Matrix ist eine rechteckige Anordnung von Zahlen in Zeilen und Spalten. 
-Beispiele (2$$\times$$2, 3$$\times$$2, 3$$\times$$4 Matrix):
+Beispiele (2$\times$2, 3$\times$2, 3$\times$4 Matrix):
 $$
 %
 \left[
@@ -436,7 +435,7 @@ C &=A\cdot B \\ &=
 \end{align*}
 $$
 
-Die sich ergebenden Spaltenvektoren ergeben aneinandergereiht die Ergebnismatrix $$C$$. $$C$$ ist eine Matrix die so viele Zeilen hat wie $$A$$ und so viele Spalten wie $$B$$.
+Die sich ergebenden Spaltenvektoren ergeben aneinandergereiht die Ergebnismatrix $C$. $C$ ist eine Matrix die so viele Zeilen hat wie $A$ und so viele Spalten wie $B$.
 Allgemein: Wenn A eine $m\times n$ Matrix und B eine $n\times k$ Matrix ist, so ist C eine $m\times k$ Matrix.
 
 ---
@@ -454,7 +453,7 @@ Implementiere Matrix mal Vektor und Matrix mal Matrix für $2\times 1$ Vektoren 
 
 In diesem Kapitel soll die Frage beantwortet werden welche praktische Bedeutung Matrizen in der Computergrafik haben.
 
-Wendet man eine Matrix $$T$$ auf einen Punkt $$P$$ an so entsteht ein neuer Punkt $$P'$$. 
+Wendet man eine Matrix $T$ auf einen Punkt $P$ an so entsteht ein neuer Punkt $P'$. 
 Dies nennt man Transformation, die je nach Aussehen der Matrix unterschiedliche geometrische Eigenschaften hat.
 
 Einheitsmatrix
@@ -492,7 +491,7 @@ $$
 $$
 
 
-Rotieren gegen den Uhrzeigersinn um Winkel $$\varphi$$
+Rotieren gegen den Uhrzeigersinn um Winkel $\varphi$$
 $$
 	R(\varphi) =
     \left[\begin{matrix}
@@ -529,7 +528,7 @@ $$
 
 Das Verschieben von Punkten nennt man Translation.
 
-Ein Punkt P soll in x und in y Richtung (um $$d_x$$ bzw. $$d_y$$) verschoben werden.
+Ein Punkt P soll in x und in y Richtung (um $d_x$ bzw. $d_y$) verschoben werden.
 
 
 $$
@@ -572,7 +571,7 @@ $$
 
 
 
-$$T$$ nennt man die Translationsmatrix.
+$T$ nennt man die Translationsmatrix.
 
 ---
 
@@ -592,12 +591,12 @@ Der Vorteil alle Transformationen als Matrix darstellen zu können liegt darin, 
 Wenn die Transformation auf mehrere Punkte gleichzeitig angewendet werden soll, ergibt dies eine wesentliche Vereinfachung.
 
 Beispiel:
-Der Punkt $$\vec{P}$$ soll um den Punkt $$\vec{Q}$$ und den Winkel $$\theta$$ rotiert werden.
+Der Punkt $\vec{P}$ soll um den Punkt $\vec{Q}$ und den Winkel $\theta$ rotiert werden.
 
-Dies kann man lösen, indem der Punkt $$\vec{Q}$$ in den Nullpunkt verschoben wird – $$\vec{P}$$ wird um den gleichen Wert mitverschoben. Dann rotiert man $$\vec{P}$$ um den Nullpunkt und verschiebt wieder zurück.
+Dies kann man lösen, indem der Punkt $\vec{Q}$ in den Nullpunkt verschoben wird – $\vec{P}$ wird um den gleichen Wert mitverschoben. Dann rotiert man $\vec{P}$ um den Nullpunkt und verschiebt wieder zurück.
 
-Sei $$T$$ die Translationsmatrix die $$\vec{Q}$$ in den Nullpunkt verschiebt und $$T^{-1}$$ jene, die wieder zurückverschiebt.
-$$R$$ ist die Rotationsmatrix.
+Sei $T$ die Translationsmatrix die $\vec{Q}$ in den Nullpunkt verschiebt und $T^{-1}$ jene, die wieder zurückverschiebt.
+$R$ ist die Rotationsmatrix.
 
 $$
 \begin{align*}
@@ -660,9 +659,9 @@ Transformation: *world* $\longrightarrow$ *screen coordinates*.
 Im Normalfall stimmen die Koordinaten des grafischen Modells (Weltkoordinaten) nicht mit den Bildschirmkoordinaten überein.
 Insbesondere liegt bei den Bildschirmkoordinaten der Nullpunkt ganz links oben und die y Koordinaten wachsen positiv nach unten (d.h. genau umgekehrt wie im kartesischen Koordinatensystem üblich).
 
-Grenzen der Welt-Koordinaten: $$left, right, bottom, top$$
+Grenzen der Welt-Koordinaten: $left, right, bottom, top$$
 
-Bildschirm-Koordinaten: $$0-maxx$$, $$0-maxy$$
+Bildschirm-Koordinaten: $0-maxx$, $0-maxy$$
 
 Durch Verhältnisrechnung ergibt sich:
 
@@ -721,7 +720,7 @@ Anwendung: Bewegungsrichtung eines Objekts ist durch einen Richtungsvektor gegeb
 
 Herleitung der Matrix für die Drehung um den Nullpunkt. [[Quelle](http://www.chemgapedia.de/vsengine/vlu/vsc/de/ma/1/mc/ma_11/ma_11_03/ma_11_03_02.vlu/Page/vsc/de/ma/1/mc/ma_11/ma_11_03/ma_11_03_09.vscml.html)]
 
-Gegeben ist ein Punkt $$P$$, dieser kann in kartesischen ($$x,y$$) oder polaren Koordinaten ($$r, \phi$$) dargestellt werden:
+Gegeben ist ein Punkt $P$, dieser kann in kartesischen ($x,y$) oder polaren Koordinaten ($r, \phi$) dargestellt werden:
 $$
 \vec{P}=\left[ \begin{array}{c} x \\ y \end{array} \right] = 
 \left[ \begin{array}{c} r \cdot \cos\phi \\ r \cdot \sin\phi \end{array} \right]
@@ -729,9 +728,9 @@ $$
 
 
 
-$$r$$ ist der Abstand vom Nullpunkt.
+$r$ ist der Abstand vom Nullpunkt.
 
-Drehung um den Ursprung nach links (gegen Uhrzeigersinn) um den Winkel $$\theta$$ (Theta):
+Drehung um den Ursprung nach links (gegen Uhrzeigersinn) um den Winkel $\theta$ (Theta):
 
 $$
 \vec{P'}=\left[ \begin{array}{c} x' \\ y' \end{array} \right] = 
@@ -780,7 +779,7 @@ $$
       + y \cdot \cos\theta
 \end{array} \right]
 $$
-Mit Hilfe dieser Formel können aus den Koordinaten des Ausgangspunkts $$\vec{P}$$ und dem Drehwinkel $$\theta$$ die Koordinaten des gedrehten Punktes $$\vec{P'}$$ berechnet werden.
+Mit Hilfe dieser Formel können aus den Koordinaten des Ausgangspunkts $\vec{P}$ und dem Drehwinkel $\theta$ die Koordinaten des gedrehten Punktes $\vec{P'}$ berechnet werden.
 
 In Matrix/Vektor Schreibweise:
 
@@ -794,7 +793,7 @@ $$
 $$
 
 
-Dies nennt man die Rotationsmatrix (mit dem Winkel $$\theta$$).
+Dies nennt man die Rotationsmatrix (mit dem Winkel $\theta$).
 
 
 
@@ -847,8 +846,8 @@ $$
 $$
 
 
-$$\varphi$$ ist der Winkel zwischen den Vektoren.
-The result of $$\vec{v}\times\vec{w}$$ points in the same direction a screw must point if twisting from $$\vec{v}$$ to $$\vec{w}$$ drives it into the wood. 
+$\varphi$ ist der Winkel zwischen den Vektoren.
+The result of $\vec{v}\times\vec{w}$ points in the same direction a screw must point if twisting from $\vec{v}$ to $\vec{w}$ drives it into the wood. 
 
 Drehung 90 Grad nach links
 $$
