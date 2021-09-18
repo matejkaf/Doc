@@ -3,9 +3,8 @@ title: Einstieg in Java
 subtitle: Übungen
 description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static public.
 tags: [assignment,java,3AHITS]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 #### **Übung (FizzBuzz)**
 

@@ -5,7 +5,7 @@ tags: [assignment,C_1]
 use_math: true
 ---
 
-Das ist ein Test $x^2$ und so xyz
+Das ist ein Test $x^2$ und so 
 
 #### Übung (Schreibe die ersten 11 Zweierpotenzen an)
 
@@ -35,6 +35,8 @@ $$
 (a) $10010011_{2}=$
 (a) $01110000_{2}=$
 
+Nummerierung wird von jekyll nicht unterstützt.
+
 ---
 
 #### Übung (Wandle Dezimal nach 8-Bit Binär)
@@ -44,5 +46,9 @@ $$
 (a) 215
 (a) 198
 (a) 253
+
+
+
+![bla](fig/image-20210910165854169.png)
 
 ---

@@ -2,9 +2,8 @@
 title: Sieb des Eratosthenes
 description: Sieb des Eratosthenes in Java implementieren. 
 tags: [assignment,java, array, challenge]
+use_math: true
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 #### **Übung (Sieb des Eratosthenes)**
 

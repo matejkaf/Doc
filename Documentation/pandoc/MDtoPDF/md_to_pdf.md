@@ -42,11 +42,31 @@ tags: [assignment,C_1]
 
 [](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
 
+
+
+# Bilder
+
+Man kann Bilder mit normaler Markdown-Syntax einfügen und dann die Größe über die DPI steuern (in macOS Preview > Tools > Resize)
+
+Mit Name wird als figure Umgebung gesetzt (Zentriert mit Caption)
+
+```markdown
+![bla](fig/image-20210910165854169.png)
+```
+
+Ohne 
+
+```markdown
+![](fig/image-20210910165854169.png)
+```
+
+Linksbündig (vermutlich ohne figure Umgebung)
+
+
+
 # Offene Probleme
 
 In Typora skalierte Bilder werden nicht angezeigt.
-
-
 
 ```md
 <img src="fig/image-20210910165854169.png" alt="image-20210910165854169" style="zoom:33%;" />
@@ -59,4 +79,6 @@ In Typora skalierte Bilder werden nicht angezeigt.
 [raw_attribute extension](https://pandoc.org/MANUAL.html#extension-raw_attribute)
 
 Tests waren nicht erfolgreich!
+
+
 
