@@ -246,6 +246,7 @@ Text in Files rekursiv suchen
 $ grep -r --include=\*.md summe2 .
 # -l,, --files-with-matches
 # Write only the names of files containing selected lines to standard output.
+# -i ... match lower and uppcase.
 ```
 
 `*` wird escaped sonst shell globbing
@@ -253,6 +254,12 @@ $ grep -r --include=\*.md summe2 .
 
 
 ## xargs
+
+Erstellt ein neues Kommando aus dem Output eines anderen Kommandos.
+
+- [12 Practical Examples of Linux Xargs Command for Beginners](https://www.tecmint.com/xargs-command-examples/)
+
+- [Linux and Unix xargs command tutorial with examples](https://shapeshed.com/unix-xargs/)
 
 grep ergibt alle Pfade mit einem bestimmten Inhalt, für jedes davon `wc` anwenden.
 
@@ -282,4 +289,6 @@ Alle Dateien mit Endung `md` die den Text `mathjax.org` beinhalten öffnen:
 ```sh
 ggrep -r -l --include=\*.md mathjax.org . | xargs open
 ```
+
+Mit der Option `-I` werden mehrere Kommandos generiert nicht nur eines.
 

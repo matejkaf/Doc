@@ -47,8 +47,8 @@ Nummerierung wird von jekyll nicht unterstützt.
 (a) 198
 (a) 253
 
+```html
+![steam-fish-1](/assets/steam-fish-1.jpeg){: width="250" }
+```
 
-
-![bla](fig/image-20210910165854169.png)
-
----
+![bla](fig/image-20210910165854169.png){: width="250" }
