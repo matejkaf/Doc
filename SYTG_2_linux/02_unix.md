@@ -1,7 +1,7 @@
 ---
 title: Betriebssystem - UNIX/Linux
 description: Allgemeines zu UNIX und Linux
-tags: [lecture, unix, SYTG_2_Linux ]
+tags: [lecture, unix, SYTG_2_Linux, 2AHELS ]
 ---
 
 Ein Betriebssystem (*operating system*, OS) macht die HW eines Computers verwendbar. Aufgaben:

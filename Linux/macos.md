@@ -50,3 +50,16 @@ Hinweis:
 brew install wakeonlan
 ```
 
+
+
+# .zshenv
+
+```sh
+# ~/.zshenv
+PATH=$PATH:~/Documents/Htl/lib/bin
+CDPATH=.:~/Documents/Htl
+```
+
+- [What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?](https://unix.stackexchange.com/a/71258)
+- [Quick directory navigation in the bash shell](https://unix.stackexchange.com/questions/31161/quick-directory-navigation-in-the-bash-shell)](https://unix.stackexchange.com/a/31179)
+
