@@ -53,4 +53,4 @@ Funktioniert mit jekyll HTML:
 ohne den Doppelpunkt gehts nicht in Jekyll aber in Pandoc (und vice versa)
 ```
 
-![bla](fig/image-20210910165854169.png){ : width="250" }
+![bla](fig/image-20210910165854169.png){: width="400" }
