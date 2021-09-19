@@ -1,7 +1,7 @@
 ---
 title: Word für Portfolio
 description: Word Grundlagen für das Erstellen eines Berichts/Portfolios. Nummerieren der Überschriften. Screenshots. Inhaltsverzeichnis. Kopf- und Fußzeilen.
-tags: [word]
+tags: [word, 2AHITS]
 ---
 
 
@@ -49,8 +49,7 @@ Am Ende des Semesters: Abgabe eines Sammeldokuments.
 - Tastenkürzel (Screenshot in Zwischenablage)
   - **Druck**: Gesamter Bildschirm
   - **Alt-Druck**: Aktives Fenster 
-  - **Windows key + Shift + S**
-- Snipping Tool (über Start Menü)
+  - **Windows key + Shift + S** – Snipping Tool (auch über Start Menü)
 
 
 

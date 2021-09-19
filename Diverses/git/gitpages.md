@@ -57,6 +57,29 @@ Default theme auswählen: [Step 5 - Selected a Github pages default theme](https
 
 
 
+# Images
+
+
+```markdown
+![bla](fig/image.png){: width="250" }
+```
+
+Image Größe Jekyll kompatibel:
+
+```markdown
+![bla](fig/image.png){: width="250" }
+```
+
+Image Größe Pandoc kompatibel:
+
+```markdown
+![bla](fig/image.png){ width="250" }
+```
+
+TODO: Skript zum herausfiltern des `':'`
+
+
+
 # Math
 
 Geht von selbst mit MathJax [[Math on GitHub Pages](https://g14n.info/2014/09/math-on-github-pages/)]

@@ -64,6 +64,20 @@ Linksbündig (vermutlich ohne figure Umgebung)
 
 
 
+Skalierung von Bildern in Pandoc:
+
+```markdown
+![bla](fig/image-20210910165854169.png){ width="250" }
+```
+
+Geht so leider nicht in Jekyll/github pages. Jekyll brauch einen zusätzlichen Doppelpunkt (attribute list für HTML)
+
+```markdown
+![bla](fig/image-20210910165854169.png){: width="250" }
+```
+
+
+
 # Offene Probleme
 
 In Typora skalierte Bilder werden nicht angezeigt.
@@ -78,7 +92,26 @@ In Typora skalierte Bilder werden nicht angezeigt.
 
 [raw_attribute extension](https://pandoc.org/MANUAL.html#extension-raw_attribute)
 
-Tests waren nicht erfolgreich!
+Tests waren allerdings nicht erfolgreich!
 
 
+
+# Shellscript
+
+Siehe ~/Documents/Htl/lib/bin
+
+```sh
+#!/bin/bash
+
+#
+# md2pdf - convert Markdown to PDF
+# usage: md2pdf.sh file.md
+# writes file.pdf in working directory
+#
+FILE=$1
+TEMPLATE=~/Documents/Htl/lib/pandoc_latex2.template
+OUTFILE=${FILE%.md}.pdf # strip of ".md" at the end and append ".pdf"
+pandoc $FILE --from=markdown --template=$TEMPLATE --pdf-engine=xelatex --listings -o $OUTFILE
+echo $OUTFILE ready
+```
 

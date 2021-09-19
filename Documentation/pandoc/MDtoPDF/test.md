@@ -35,7 +35,7 @@ $$
 (a) $10010011_{2}=$
 (a) $01110000_{2}=$
 
-Nummerierung wird von jekyll nicht unterstützt.
+Diese Nummerierung wird von jekyll nicht unterstützt.
 
 ---
 
@@ -51,6 +51,16 @@ Nummerierung wird von jekyll nicht unterstützt.
 Funktioniert mit jekyll HTML:
 ![bla](fig/image-20210910165854169.png){: width="250" }
 ohne den Doppelpunkt gehts nicht in Jekyll aber in Pandoc (und vice versa)
+Für Pandoc
+![bla](fig/image-20210910165854169.png){ width="250" }
+
 ```
 
-![bla](fig/image-20210910165854169.png){: width="400" }
+
+Mit Bildunterschrift:
+
+![bla](fig/image-20210910165854169.png){ width="400" }
+
+Ohne Bildunterschrift
+
+![](fig/image-20210910165854169.png){ width="400" }

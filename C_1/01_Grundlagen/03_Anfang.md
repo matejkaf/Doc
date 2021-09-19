@@ -207,6 +207,10 @@ Für `printf` und `scanf`:  `%lf`
 
 Schreibe ein Programm, das **amerikanische Dollar in Euro** umrechnen kann. Mit Ein- und Ausgabe.
 
+1 € = 1,17 $
+
+Bsp.: 765 $ sind 653,85 €
+
 ---
 
 
@@ -327,14 +331,12 @@ Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder au
 
 # Automatische Typwandlungen
 
-*todo: Besseren Platz suchen*
-
 Wenn man in einer Berechnung `int` und `double` mischt so wird automatisch mit `double` gerechnet.
 
 ```java
 int a=12;
 double b;
-b = a/10; // ergibt 1.0
+b = a/10; // ergibt 1.0 weil 10 ein int Wert ist
 b = a/10.0; // ergibt 1.2
 ```
 
