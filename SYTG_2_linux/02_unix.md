@@ -14,7 +14,7 @@ Ein Betriebssystem (*operating system*, OS) macht die HW eines Computers verwend
 2 Möglichkeiten der Interaktion:
 
 - GUI – Graphical User Interface
-- CLI – Command Line Interface (Kommandozeile, shell, Terminal)
+- CLI – Command Line Interface/CLI (Kommandozeile, shell, Terminal)
 
 
 
