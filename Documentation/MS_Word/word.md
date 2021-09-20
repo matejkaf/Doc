@@ -8,7 +8,7 @@ tags: [word, 2AHITS]
 
 z.B. mit **Word365**
 
-- Deckblatt
+- Meta Informationen
   - Fach
   - Thema
   - Name
@@ -74,5 +74,9 @@ Verweise > Beschriftungen > Abbildungsverzeichnis einfügen
 
 Einfügen > Kopf und Fußzeile > Kopfzeile
 
-- 3 spaltig, links SYTG, ..., rechts Name
-- links Seitenzahl > Einfache Zahl 2 auswählen
+Beispiel:
+
+![image-20210920164115231](fig/image-20210920164115231.png)
+
+- Fußzeile: links SYTG, rechts Seitennummer
+
