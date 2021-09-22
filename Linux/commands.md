@@ -29,7 +29,7 @@ title: Linux Kommandos
 
 `uname` - Systeminformation (`uname -a`)
 
-`clear` (auch Ctrl L)
+`clear` (auch Ctrl-K)
 
 `ascii` Zeige ASCII Tabelle (immer installiert? Nicht macOS)
 
@@ -107,7 +107,6 @@ $ cp [source] [destination]
 # -i prompt before overwriting
 # -n no overwrite
 # -r copy directory
-
 ```
 
 
@@ -116,8 +115,9 @@ $ cp [source] [destination]
 
 ```bash
 $ mv [source] [destination]
-
-# -i -n -v Wie bei cp
+# -v Verbose mode
+# -i prompt before overwriting
+# -n no overwrite
 ```
 
 Verschiebt auch Directories.
@@ -145,6 +145,16 @@ Rekursiv (`-r`) + ignore case  (`-i`)
 ```bash
 $ grep -rin searchstring *
 ```
+
+Text in Files rekursiv suchen in Dateien mit Endung `md`
+
+```sh
+$ grep -r --include=\*.md summe2 .
+# -l, --files-with-matches
+#    Write only the names of files containing selected lines to standard output.
+```
+
+`*` wird escaped sonst shell globbing
 
 
 

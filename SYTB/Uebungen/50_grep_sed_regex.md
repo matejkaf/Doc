@@ -1,6 +1,6 @@
 ---
 title: Grundlagen UNIX shell
-subtitle: grep sed und Regular Expressions
+subtitle: grep, sed und Regular Expressions
 ---
 
 

@@ -6,7 +6,7 @@ tags: [lecture,3AHITS]
 
 * TOC
 {:toc}
-**Scripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegeben Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
+**Scripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegebene Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
 
 Shell Kommandos können in Textdateien geschrieben und dann ausgeführt werden. Ergibt gleiches Ergebnis als wenn diese direkt in der shell ausgeführt werden.
 
@@ -48,12 +48,13 @@ echo Hello World
 
 
 
-# `$0`, `$1`, `$2` 
+# Argumente
 
 Sind spezielle Variable
 
 ```sh
 #!/bin/sh
+echo $0
 echo $1
 echo $2
 echo $3
@@ -65,7 +66,7 @@ echo $3
 
 ```sh
 $0 - The name of the Bash script.
-$1 - $9 - The first 9 arguments to the Bash script. (As mentioned above.)
+$1 - $9 - The first 9 arguments to the Bash script.
 $# - How many arguments were passed to the Bash script.
 $@ - All the arguments supplied to the Bash script.
 $? - The exit status of the most recently run process.
@@ -77,15 +78,19 @@ $RANDOM - Returns a different random number each time is it referred to.
 $LINENO - Returns the current line number in the Bash script.
 ```
 
+---
+
 #### Übung (spezielle Variable)
 
 Probiere diese Variable aus
 
-
+---
 
 #### Übung (Zufallszahlen)
 
 Schreibe ein Bash Skript das 3 Zufallszahlen in einer einzigen Zeile ausgibt.
+
+---
 
 
 
@@ -118,7 +123,6 @@ test.txt --> 2021-09-14-test.txt
 Schreibe einen Einzeiler mit Hilfe von Command Substitution.
 
 ---
-
 
 
 

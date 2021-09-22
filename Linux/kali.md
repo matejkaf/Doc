@@ -11,9 +11,13 @@ title: Kali Linux
 - nano
 - leafpad (GUI)
 
+
+
 # Programme
 
 - nautilus: File Manager?
+
+
 
 
 # VS Code installieren

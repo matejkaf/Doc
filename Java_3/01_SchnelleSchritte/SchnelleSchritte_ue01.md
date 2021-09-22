@@ -74,7 +74,7 @@ Aufgabenstellungen:
 
 #### **Übung (Primzahltest)**
 
-Eine Primzahl ist eine positive Zahl größer eins mit genau zwei natürlichen Zahlen als Teiler, der Zahl 1 und sich selbst. Die kleinsten Primzahlen sind: $$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, \ldots$$
+Eine Primzahl ist eine positive Zahl größer eins mit genau zwei natürlichen Zahlen als Teiler, der Zahl 1 und sich selbst. Die kleinsten Primzahlen sind: $2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, \ldots$
 
 Implementiere eine Methode `boolean isPrim()` die von einer als Parameter übergebenen Zahl prüft ob es sich um eine Primzahl handelt.
 

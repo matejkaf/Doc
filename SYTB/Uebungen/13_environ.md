@@ -11,7 +11,7 @@ $ env
 ...
 ```
 
-Können ins Skripts verwendet werden.
+Können in Skripts verwendet werden.
 
 Spezielle Bedeutung:
 

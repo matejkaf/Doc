@@ -27,8 +27,6 @@ $ sudo -i
 $ setxkbmap -layout de
 ```
 
-
-
 ```sh
 # Metasploitable
 $ loadkeys de

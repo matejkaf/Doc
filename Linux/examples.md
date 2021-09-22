@@ -79,7 +79,6 @@ mkdir $(printf "%04u" $newdir)
 
 ```bash
 #!/bin/bash
-
 # search all subfolders for mp4 files and move all of them to the current folder
 find . -mindepth 2 -type f  -name "*.mp4" -print -exec mv {} . \;
 ```
@@ -174,8 +173,6 @@ for filename in ./*; do mv "./$filename" "./$(echo "$filename" | sed -e 's/to de
 for filename in *.tex; do
     [ -f "$filename" ] || break
     echo $filename "${filename%.*}.md"
-    mv $filename "${filename%.*}.md"
-    tex_to_md.bash "${filename%.*}.md"
 done
 
 ```
@@ -237,19 +234,6 @@ $ curl --head --silent google.com | grep 'Content-Length' | cut -d ' ' -f 2
 ```
 
 
-
-## grep
-
-Text in Files rekursiv suchen
-
-```sh
-$ grep -r --include=\*.md summe2 .
-# -l,, --files-with-matches
-# Write only the names of files containing selected lines to standard output.
-# -i ... match lower and uppcase.
-```
-
-`*` wird escaped sonst shell globbing
 
 
 

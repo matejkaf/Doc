@@ -45,9 +45,9 @@ Yes, that's true.
 
 > The right side of && will only be evaluated if the exit status of the left side is zero (i.e. true). || is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
 
+---
 
+#### Übung (Datei zu groß)
 
-Aufgaben:
-
--   Schreibe eine Kommandozeile die den Text `Datei ist zu groß` ausgibt wenn die Datei mehr als 100kB hat.
+Schreibe ein Skript mit einer Datei als Argument, es soll der Text `Datei ist zu groß` ausgegeben werden wenn die Datei mehr als 100kB hat.
 

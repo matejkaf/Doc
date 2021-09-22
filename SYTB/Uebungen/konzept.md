@@ -7,8 +7,9 @@ title: Konzept SYTB Übungen
 - Wiederholung II. JG
 - Markdown
 - Bash Sk
-- C File in mehreren Dateie
+- C File in mehreren Dateien
 - Makefile
+- [Linux Logfiles](/Doc/Linux/logfiles)
 
 
 
