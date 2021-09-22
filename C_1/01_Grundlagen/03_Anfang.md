@@ -16,7 +16,7 @@ IT = Informations Technologie
 # Programm
 
 
-Liste von Anweisungen, z.B.\ für:
+Liste von Anweisungen, z.B. für:
 
 
 - Eingabe – von der Tastatur
@@ -129,8 +129,6 @@ $$
 # Ausgaben
 
 
-
-
 Mit `printf`.
 
 ```c
@@ -157,8 +155,6 @@ printf("Noch %d Minuten bis zur Pause\n",min);
 # Eingabe
 
 
-
-
 Mit `scanf`.
 
 ```c
@@ -173,6 +169,8 @@ int laenge;
 printf("Laenge eingeben: ");
 scanf("%d",&laenge);
 ```
+
+---
 
 #### Übung (Addieren)
 
@@ -196,7 +194,7 @@ Zahl 2: 3
 Kommazahlen werden mit dem Datentyp `double` definiert.
 
 ```c
-double pi=3.14;
+double pi=3.14; // Punkt = Komma
 ```
 
 Für `printf` und `scanf`:  `%lf`

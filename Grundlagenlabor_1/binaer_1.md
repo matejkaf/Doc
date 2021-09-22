@@ -5,8 +5,9 @@ tags: []
 use_math: true
 ---
 
-#### Übung (Schreibe die ersten 11 Zweierpotenzen an)
+#### Übung (Zweierpotenzen) 
 
+Berechne die folgenden 2er Potenzen.
 $$
 \begin{aligned}
     2^0 &= 1 \\        
@@ -20,6 +21,12 @@ $$
     2^8 &=  \\
     2^9 &=  \\
     2^{10} &=  \\
+    2^{11} &=  \\
+    2^{12} &=  \\
+    2^{13} &=  \\   
+    2^{14} &=  \\
+    2^{15} &=  \\
+    2^{16} &=  \\
 \end{aligned}
 $$
 
@@ -42,3 +49,4 @@ $$
 (a) 215
 (a) 198
 (a) 253
+
