@@ -30,7 +30,7 @@
             let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
             $set.wrapAll(idtxt); 
         });
-        // all elemente mit Klasse assignment auf die gesuchte id überprüfen
+        // all Elemente mit Klasse assignment auf die gesuchte id überprüfen
         $('.assignment').each( function() {
             let div_id=$(this)[0].id;
             console.log(div_id)
