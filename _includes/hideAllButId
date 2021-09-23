@@ -3,9 +3,13 @@
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
 
-    console.log('hideAllButId V2 included');
+    console.log('hideAllButId V3 included');
 
-    //?hideAllButId=notenliste
+    /*
+    test ob der Query parameter hideAllButId vorhanden ist 
+    in der URL z.B.: ?hideAllButId=notenliste
+    wenn ja dann nur dieses Beispiel darstellen (alle anderen verbergen)
+    */
     const params = new URLSearchParams(window.location.search)
     //console.log(window.location.search)
     if(params.has('hideAllButId')) {
@@ -17,20 +21,24 @@
     }
     
     function hideAllButId(idToShow) {
+        console.log('hideAllButId '+idToShow);
+        // alle h4 bis zum nächsten h4 in ein div packen (h4 ist auch im div)
         $('.report-content h4').each(function(){ 
             let heading_id = $(this)[0].id
+            console.log(heading_id)
             let $set = $(this).nextUntil("h2").addBack();
             let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
-            //console.log(idtxt)
             $set.wrapAll(idtxt); 
         });
+        // all elemente mit Klasse assignment auf die gesuchte id überprüfen
         $('.assignment').each( function() {
             let div_id=$(this)[0].id;
+            console.log(div_id)
             if(div_id==idToShow) {
-                //console.log('show '+div_id)
+                console.log('show '+div_id)
                 $(this).show(); 
             } else {
-                //console.log('hide '+div_id)
+                console.log('hide '+div_id)
                 $(this).hide(); 
             }
         });
