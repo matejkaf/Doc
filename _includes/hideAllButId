@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V7 included');
+    console.log('hideAllButId V8 included');
 
     $(document).ready(function(e) {   
         console.log('document ready')
@@ -21,7 +21,6 @@
             console.log('hideAllButId inactive (no hideAllButId value)')
         }
     });
-
     
     function hideAllButId(idToShow) {
         console.log('hideAllButId '+idToShow);

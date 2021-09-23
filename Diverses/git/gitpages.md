@@ -174,3 +174,31 @@ description: Description Text
 <meta property="og:description" content="Description Text">
 ```
 
+
+
+# H4 ausblenden
+
+`_includes/hideAllButId`:
+
+```js
+```
+
+`_layouts/default.html`
+
+```html
+    </main>
+    {% if page.hideAllButId %}
+      {% include hideAllButId %}
+    {% endif %}
+  </body>
+</html>
+```
+
+```md
+---
+title: Einstieg in Java
+subtitle: Übungen
+hideAllButId: true
+---
+```
+
