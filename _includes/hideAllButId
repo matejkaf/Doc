@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V10 included');
+    console.log('hideAllButId V1 included');
 
     $(document).ready(function(e) {   
         console.log('document ready')
