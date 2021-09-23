@@ -3,7 +3,7 @@
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
 
-    console.log('hideAllButId V1 included');
+    console.log('hideAllButId V2 included');
 
     //?hideAllButId=notenliste
     const params = new URLSearchParams(window.location.search)
