@@ -22,9 +22,6 @@
       {% include mathjax_support %}
     {% endif %}
     
-    {% if page.hideAllButId %}
-      {% include hideAllButId %}
-    {% endif %}
     
 </head>
   <body>
@@ -46,5 +43,10 @@
         – Franz Matejka – HTL Braunau
       </footer>
     </main>
+
+    {% if page.hideAllButId %}
+      {% include hideAllButId %}
+    {% endif %}
+
   </body>
 </html>

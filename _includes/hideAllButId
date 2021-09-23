@@ -2,6 +2,17 @@
 
 <script type="text/javascript">
     console.log('hideAllButId included');
+
+    //?hideAllButId=notenliste
+    const params = new URLSearchParams(window.location.search)
+    //console.log(window.location.search)
+    if(params.has('hideAllButId')) {
+        let paravalue = params.get('hideAllButId')
+        console.log('show only '+paravalue)
+        hideAllButId(paravalue);
+    } else {
+        console.log('hideAllButId inactive (no hideAllButId value)')
+    }
     
     function hideAllButId(idToShow) {
         $('.report-content h2').each(function(){ 
