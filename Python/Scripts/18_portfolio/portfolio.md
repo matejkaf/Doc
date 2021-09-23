@@ -55,8 +55,13 @@ Aktueller Stand:
 
 
 ## 2021/Q2
+3000 --> Savity Konservativ
+3000 --> Hello (OK)
+7000 TopZins --> Verrechnungskonto
 
-- Savity Konservativ dazugekommen. Für ein Jahr
+## 2021/Q2
+
+- Savity Konservativ dazugekommen. Für ein Jahr:
   - 1000,- mtl. (Sparplan)
   - 3000,- pro Quartal
   - =2*12.000,- = 24.000,-

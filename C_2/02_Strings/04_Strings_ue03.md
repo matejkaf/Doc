@@ -22,6 +22,34 @@ Implementiere eine Funktion `rightStr`, diese kopiert vom Ende eines Strings ein
 
 ---
 
+#### Übung (Überschriften)
+
+Eine Funktion `headline` bekommt einen String als Parameter übergeben. Aufruf z.B.:
+
+```c++
+headline("Strinprogrammierung");
+headline("HTL Braunau");
+```
+
+Es soll dieser String in folgender Form (geeignet für eine Überschrift) ausgegeben werden:
+
+```
+S T R I N G P R O G R A M M I E R U N G
+H T L  B R A U N A U
+```
+
+**Erweiterung:** Ergänze einen `int` Parameter. Hat dieser den Wert 1 wird obiges Format verwendet, hat dieser Wert 2 sieht die Ausgabe folgendermaßen aus:
+
+```
+===========================================
+= S T R I N G P R O G R A M M I E R U N G =
+===========================================
+```
+
+
+
+---
+
 #### Übung (Zeichen einfügen)
 
 Schreibe eine Funktion `strinsert` die in einem bestehenden String ein Zeichen an einer bestimmten Stelle einfügt, die Zeichen dahinter rutschen um eins nach rechts.

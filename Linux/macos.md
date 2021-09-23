@@ -63,3 +63,50 @@ CDPATH=.:~/Documents/Htl
 - [What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?](https://unix.stackexchange.com/a/71258)
 - [Quick directory navigation in the bash shell](https://unix.stackexchange.com/questions/31161/quick-directory-navigation-in-the-bash-shell)](https://unix.stackexchange.com/a/31179)
 
+
+
+# Homebrew
+
+**macOS installs Homebrew GNU tools**
+
+[Small Sharp Software Tools](https://smallsharpsoftwaretools.com/tutorials/gnu-mac/)
+
+[How to replace Mac OS X utilities with GNU core utilities?](https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities)
+
+
+
+```sh
+$ brew install coreutils findutils gnu-tar gnu-sed gawk gnu grep
+# Die GNU Utilities beginnen alle mit einem g (ggrep, gawk, gsed, ...)
+```
+
+
+
+```sh
+$ brew install pandoc
+$ brew install node
+```
+
+
+
+
+
+
+
+# Python
+
+
+
+```sh
+$ brew install python
+```
+
+Pandas für M1 [[*](https://github.com/pandas-dev/pandas/issues/40611#issuecomment-819833220)]:
+
+```sh
+$ pip3 install cython
+$ pip3 install numpy --no-use-pep517
+$ pip3 install pandas --no-use-pep517
+$ pip3 install matplotlib
+```
+

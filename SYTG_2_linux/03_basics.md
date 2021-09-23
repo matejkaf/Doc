@@ -65,7 +65,18 @@ Optionen und Argumente koennen gemeinsam verwendet werden.
 
 # History
 
-Mit den Pfeil-rauf und runter Tasten hat man Zugriff auf bereits vorher ausgeführte Befehle.
+Mit den Pfeil-rauf und runter Tasten hat man Zugriff auf bereits vorher ausgeführte Befehle. 
+
+
+
+# Tastenkürzel
+
+- `Strg+a`: Anfang der Zeile
+- `Strg+e`: Ende der Zeile
+- `Strg+k`: Anzeige löschen
+- `Strg+c`: Laufendes Programm abbrechen
+
+[siehe hier](https://blog.ssdnodes.com/blog/cheatsheet-bash-shortcuts/)
 
 
 

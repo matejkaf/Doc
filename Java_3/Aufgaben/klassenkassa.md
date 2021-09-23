@@ -1,10 +1,8 @@
 ---
-title: ArrayList
+title: ArrayList – Klassenkassa
 subtitle: Übung
 tags: [4BHELS]
 ---
-
-
 
 
 Schreibe ein Java Programm mit dem die Einzahlungen in die Klassenkasse verwaltet werden können.

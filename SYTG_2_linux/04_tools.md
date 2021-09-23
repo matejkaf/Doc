@@ -211,7 +211,7 @@ Mayr,22.09.2019,20.0,Werkstatt
 Wagner,18.09.2019,20.0,Werkstatt
 ```
 
-
+Option `-i` für *not case sensitive*
 
 ---
 
@@ -260,7 +260,7 @@ echo '1+2+3' | python3 -c 'print(eval(input()))'
 
 # Translate
 
-`tr` Translate (einzelne Zeichen ersetzen/löschen)
+`tr` *translate* (einzelne Zeichen ersetzen/löschen)
 
 Stelle das CSV File `klassenkassa.csv` lesbarer dar (`','` durch `'\t'` - Tabulator - erstetzen).
 
@@ -272,9 +272,9 @@ Mehr Beispiele siehe [tr command in Unix/Linux with examples](https://www.geeksf
 
 
 
-# sed (stream editor)
+# sed
 
-[Sed Command in Linux/Unix with examples](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
+`sed` *stream editor*
 
 ```bash
 $ echo "hello there"
@@ -289,6 +289,9 @@ hi there
 $ echo "hello there" | sed "s/hello/hi/" | sed "s/there/robots/"
 hi robots
 ```
+
+[Sed Command in Linux/Unix with examples](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
+
 
 
 # Weiterführend
