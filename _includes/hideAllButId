@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V5 included');
+    console.log('hideAllButId V6 included');
 
     $(document).ready(function(e) {   
         console.log('document ready')
@@ -39,7 +39,7 @@
             console.log(div_id)
             if(div_id==idToShow) {
                 console.log('show '+div_id)
-                $(this).show(); 
+                //$(this).show(); 
             } else {
                 console.log('hide '+div_id)
                 $(this).hide(); 
