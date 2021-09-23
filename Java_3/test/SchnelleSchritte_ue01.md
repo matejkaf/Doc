@@ -4,6 +4,7 @@ subtitle: Übungen
 description: Einfache Aufgaben zum Umstieg von C nach Java. Alle Elemente static public.
 tags: [assignment,java,3AHITS]
 use_math: true
+hideAllButId: true
 ---
 
 #### **Übung (FizzBuzz)** {#fizzbuzz}

@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    console.log('hideAllButId included');
+    
+    function hideAllButId(idToShow) {
+        $('.report-content h2').each(function(){ 
+            let heading_id = $(this)[0].id
+            let $set = $(this).nextUntil("h2").addBack();
+            let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
+            //console.log(idtxt)
+            $set.wrapAll(idtxt); 
+        });
+        $('.assignment').each( function() {
+            let div_id=$(this)[0].id;
+            if(div_id==idToShow) {
+                //console.log('show '+div_id)
+                $(this).show(); 
+            } else {
+                //console.log('hide '+div_id)
+                $(this).hide(); 
+            }
+        });
+    }
+</script>

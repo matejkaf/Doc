@@ -21,6 +21,11 @@
     {% if page.use_math %}
       {% include mathjax_support %}
     {% endif %}
+    
+    {% if page.hideAllButId %}
+      {% include hideAllButId %}
+    {% endif %}
+    
 </head>
   <body>
     <header class="page-header" role="banner">
