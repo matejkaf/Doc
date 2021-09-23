@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V6 included');
+    console.log('hideAllButId V7 included');
 
     $(document).ready(function(e) {   
         console.log('document ready')
@@ -29,7 +29,7 @@
         $('h4').each(function(){ 
             let heading_id = $(this)[0].id
             console.log(heading_id)
-            let $set = $(this).nextUntil("h2").addBack();
+            let $set = $(this).nextUntil("h4").addBack();
             let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
             $set.wrapAll(idtxt); 
         });
