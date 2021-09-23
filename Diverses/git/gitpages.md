@@ -181,18 +181,81 @@ description: Description Text
 `_includes/hideAllButId`:
 
 ```js
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    // http://jsfiddle.net/krnwcav1/2/
+    console.log('hideAllButId V1 included');
+
+    $(document).ready(function(e) {   
+        console.log('document ready')
+        /*
+        test ob der Query parameter hideAllButId vorhanden ist 
+        in der URL z.B.: ?hideAllButId=notenliste
+        wenn ja dann nur dieses Beispiel darstellen (alle anderen verbergen)
+        */
+        const params = new URLSearchParams(window.location.search)
+        //console.log(window.location.search)
+        if(params.has('hideAllButId')) {
+            let paravalue = params.get('hideAllButId')
+            console.log('show only '+paravalue)
+            hideAllButId(paravalue);
+        } else {
+            console.log('hideAllButId inactive (no hideAllButId value)')
+        }
+    });
+    
+    function hideAllButId(idToShow) {
+        console.log('hideAllButId '+idToShow);
+        // alle h4 bis zum nächsten h4 in ein div packen (h4 ist auch im div)
+        $('#div_content h4').each(function(){ 
+            let heading_id = $(this)[0].id
+            console.log(heading_id)
+            let $set = $(this).nextUntil("h4").addBack();
+            let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
+            $set.wrapAll(idtxt); 
+        });
+        // all Elemente mit Klasse assignment auf die gesuchte id überprüfen
+        $('.assignment').each( function() {
+            let div_id=$(this)[0].id;
+            console.log(div_id)
+            if(div_id==idToShow) {
+                console.log('show '+div_id)
+                //$(this).show(); 
+            } else {
+                console.log('hide '+div_id)
+                $(this).hide(); 
+            }
+        });
+    }
+</script>
+
 ```
 
 `_layouts/default.html`
 
 ```html
+    <main id="content" class="main-content" role="main">
+
+      <div id="div_content">
+        {{ content }}
+      </div>
+
+      <footer style="border-top: none;opacity: 0.5" class="site-footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+        – Franz Matejka – HTL Braunau
+      </footer>
     </main>
+
     {% if page.hideAllButId %}
       {% include hideAllButId %}
     {% endif %}
+
   </body>
 </html>
 ```
+
+Alles in einem eigenen div eingebettet sonst ist beim letzten H4 auch der footer mit dabei.
 
 ```md
 ---
