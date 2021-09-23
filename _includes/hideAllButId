@@ -1,6 +1,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type="text/javascript">
+    // http://jsfiddle.net/krnwcav1/2/
+
     console.log('hideAllButId V1 included');
 
     //?hideAllButId=notenliste
@@ -15,7 +17,7 @@
     }
     
     function hideAllButId(idToShow) {
-        $('.report-content h2').each(function(){ 
+        $('.report-content h4').each(function(){ 
             let heading_id = $(this)[0].id
             let $set = $(this).nextUntil("h2").addBack();
             let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
