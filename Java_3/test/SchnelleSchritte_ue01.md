@@ -80,3 +80,6 @@ Eine Primzahl ist eine positive Zahl größer eins mit genau zwei natürlichen Z
 Implementiere eine Methode `boolean isPrim()` die von einer als Parameter übergebenen Zahl prüft ob es sich um eine Primzahl handelt.
 
 Überprüfe damit: Es gibt 1229 Primzahlen von 2--10000.
+
+---
+
