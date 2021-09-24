@@ -1,7 +1,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V4');
+    console.log('hideAllButId V5');
     /*
     test ob der Query parameter hideAllButId vorhanden ist 
     in der URL z.B.: ?hideAllButId=notenliste
