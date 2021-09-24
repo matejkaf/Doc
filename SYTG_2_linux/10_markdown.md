@@ -26,6 +26,8 @@ Vorteile:
 
 Elemente von markdown: [wiki](https://de.wikipedia.org/wiki/Markdown)
 
+[GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
+
 
 
 ## Sammlung
