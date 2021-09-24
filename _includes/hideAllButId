@@ -1,7 +1,8 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V6');
+    // https://stackoverflow.com/a/14521482
+    console.log('hideAllButId V7');
     /*
     test ob der Query parameter hideAllButId vorhanden ist 
     in der URL z.B.: ?hideAllButId=notenliste
@@ -12,8 +13,7 @@
     if(params.has('hideAllButId')) {
         hideAllButIdValue = params.get('hideAllButId')
         console.log('show only '+hideAllButIdValue)
-        // load jQuery on demand
-        load_jQuery()
+        load_jQuery()   // load jQuery on demand
     } else {
         console.log('hideAllButId stays inactive (no hideAllButId value)')
     }
@@ -27,7 +27,7 @@
             $(document).ready(function(e) {
                 console.log('jQuery document ready')
                 console.log('hideAllButIdValue='+hideAllButIdValue)
-                //hideAllButId(paravalue)
+                hideAllButId(hideAllButIdValue)
             });
         };
         script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
