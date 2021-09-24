@@ -22,7 +22,6 @@
         script.onload = function () {
             // jQuery loaded
             $(document).ready(function(e) {
-                console.log('hideAllButIdValue='+hideAllButIdValue)
                 hideAllButId(hideAllButIdValue)
             });
         };
@@ -42,10 +41,8 @@
         $('.assignment').each( function() {
             let div_id=$(this)[0].id;
             if(div_id==idToShow) {
-                console.log('show '+div_id)
                 //$(this).show(); 
             } else {
-                console.log('hide '+div_id)
                 $(this).hide(); 
             }
         });
