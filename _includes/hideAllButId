@@ -1,8 +1,7 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V1');
+    console.log('hideAllButId V2');
     /*
     test ob der Query parameter hideAllButId vorhanden ist 
     in der URL z.B.: ?hideAllButId=notenliste
@@ -13,14 +12,26 @@
         let paravalue = params.get('hideAllButId')
         console.log('show only '+paravalue)
         //hideAllButId(paravalue);
+        load_jQuery()
     } else {
         console.log('hideAllButId inactive (no hideAllButId value)')
     }
 
     $(document).ready(function(e) {   
-        console.log('document ready')
+        console.log('jQuery document ready')
     });
     
+    function load_jQuery() {
+        console.log('loading jQuery')
+        var script = document.createElement('script');
+        script.onload = function () {
+        //do stuff with the script
+        console.log('jQuery loaded')
+        };
+        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
+        document.head.appendChild(script); //or something of the likes
+    }
+
     function hideAllButId(idToShow) {
         console.log('hideAllButId '+idToShow);
         // alle h4 bis zum nächsten h4 in ein div packen (h4 ist auch im div)
