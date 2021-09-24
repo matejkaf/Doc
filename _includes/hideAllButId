@@ -1,7 +1,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V5');
+    console.log('hideAllButId V6');
     /*
     test ob der Query parameter hideAllButId vorhanden ist 
     in der URL z.B.: ?hideAllButId=notenliste
@@ -10,11 +10,12 @@
     let hideAllButIdValue=null
     const params = new URLSearchParams(window.location.search)
     if(params.has('hideAllButId')) {
-        let hideAllButIdValue = params.get('hideAllButId')
+        hideAllButIdValue = params.get('hideAllButId')
         console.log('show only '+hideAllButIdValue)
+        // load jQuery on demand
         load_jQuery()
     } else {
-        console.log('hideAllButId inactive (no hideAllButId value)')
+        console.log('hideAllButId stays inactive (no hideAllButId value)')
     }
     
     function load_jQuery() {
@@ -23,7 +24,7 @@
         script.onload = function () {
             // jQuery loaded
             console.log('jQuery loaded')
-            $(document).ready(function(e) {   
+            $(document).ready(function(e) {
                 console.log('jQuery document ready')
                 console.log('hideAllButIdValue='+hideAllButIdValue)
                 //hideAllButId(paravalue)
