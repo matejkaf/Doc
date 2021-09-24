@@ -1,7 +1,7 @@
 
 <script type="text/javascript">
     // http://jsfiddle.net/krnwcav1/2/
-    console.log('hideAllButId V3');
+    console.log('hideAllButId V4');
     /*
     test ob der Query parameter hideAllButId vorhanden ist 
     in der URL z.B.: ?hideAllButId=notenliste
@@ -16,17 +16,16 @@
     } else {
         console.log('hideAllButId inactive (no hideAllButId value)')
     }
-
-    $(document).ready(function(e) {   
-        console.log('jQuery document ready')
-    });
     
     function load_jQuery() {
         console.log('loading jQuery')
         var script = document.createElement('script');
         script.onload = function () {
-        //do stuff with the script
-        console.log('jQuery loaded')
+            // jQuery loaded
+            console.log('jQuery loaded')
+            $(document).ready(function(e) {   
+                console.log('jQuery document ready')
+            });
         };
         script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
         document.head.appendChild(script); //or something of the likes
