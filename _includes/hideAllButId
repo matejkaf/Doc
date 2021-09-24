@@ -7,11 +7,11 @@
     in der URL z.B.: ?hideAllButId=notenliste
     wenn ja dann nur dieses Beispiel darstellen (alle anderen verbergen)
     */
+    let hideAllButIdValue=null
     const params = new URLSearchParams(window.location.search)
     if(params.has('hideAllButId')) {
-        let paravalue = params.get('hideAllButId')
-        console.log('show only '+paravalue)
-        //hideAllButId(paravalue)
+        let hideAllButIdValue = params.get('hideAllButId')
+        console.log('show only '+hideAllButIdValue)
         load_jQuery()
     } else {
         console.log('hideAllButId inactive (no hideAllButId value)')
@@ -25,6 +25,8 @@
             console.log('jQuery loaded')
             $(document).ready(function(e) {   
                 console.log('jQuery document ready')
+                console.log('hideAllButIdValue='+hideAllButIdValue)
+                //hideAllButId(paravalue)
             });
         };
         script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
