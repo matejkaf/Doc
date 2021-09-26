@@ -265,5 +265,5 @@ print( int(round(dst / 250.0 + 200, 0 )) )
 # Source Code
 
 - [`ccchyperloop.py`](./ccchyperloop.py)
-- [`oopccc.py`](./oopccc.py)
+- [`oopccc.py`](./oopccc.py) (Objektorientierte Variante)
 
