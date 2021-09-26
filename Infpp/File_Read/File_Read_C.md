@@ -5,7 +5,7 @@ title: Daten aus Textdateien lesen in C/C++
 
 
 
-Testdaten für ein Programm in einer Textdatei abzuspeichern erspart mühsame Tastatureingaben. In vielen Programmierwettbewerben (z.B. CCC) werden zu beabeitende Daten in Textdateien vorgegeben.
+Testdaten für ein Programm in einer Textdatei abzuspeichern erspart mühsame Tastatureingaben. In vielen Programmierwettbewerben (z.B. CCC) werden zu bearbeitende Daten in Textdateien vorgegeben.
 
 
 
