@@ -6,17 +6,19 @@ an alle hoch motivierten Informatik und Programmier Begeisterten.
 
 Ich kann im Schuljahr 2020/2021 ein Freifach anbieten: **Informatik++**
 
-Wir werden:
+Im Rahmen dieses Fachs gibt es die Möglichkeit:
 
-- Die **Programmiersprache Python** kennenlernen
-- Am CCC (**Cloudflare Coding Contest**, vormals Catalyst Coding Contest) teilnehmen (einmal im Herbst und einmal im Frühjahr)
-- Besonders Motivierte können sich auch zusätzlich mit den Aufgaben der **Informatik Olympiade** beschäftigen (Corona bedingt nicht ganz sicher) – das wäre dann in C/C++ oder Java zu programmieren
+- Die **Programmiersprache Python** kennenzulernen,
+- am CCC (**Cloudflare Coding Contest**), und 
+- an der **Informatik Olympiade** teilzunehmen.
 
-Voraussetzung: Gute Programmierkenntnisse (Schleifen, Funktionen, Arrays)
+Für eine Note in dem Fach ist für mindestens eines davon ein entsprechender Erfolg nachzuweisen.
 
-Wegen der aktuellen Situation und weil wir eh nie einen freien Platz im Stundeplan finden wird die Veranstaltung hauptsächlich als **Fernunterricht** (über MS Teams) stattfinden.
+Voraussetzung: Du bist schon mindestens im 2. Jahrgang und hast gute Programmierkenntnisse (Schleifen, Funktionen, Arrays).
 
-Für alle die Interessiert sind findet am **Montag 05.10.2020 um 10:30** eine Vorbesprechung statt (Konferenzzimmer rechter Teil). Wer da nicht kommen kann und sich trotzdem sicher ist, dass er dabei sein möchte schickt mir einfach eine Email (bitte die Klasse angeben).
+Das Python Modul wird hauptsächlich als **Fernunterricht** (über MS Teams) stattfinden.
+
+Interessierte schicken mir bitte eine Email mit Name und Klasse.
 
 Beste Grüße
 
@@ -63,19 +65,6 @@ Sollte jemanden die Zeit nicht (mehr) aufbringen können ist das auch kein Beinb
 
 
 
-
-# cygwin
-
-- [Installationsbeschreibung auf Deutsch](https://cygwingermany.wordpress.com/installation/)
-  Ältere Website, scheint nicht mehr am Leben zu sein
-
-
-
-# Windows Store
-
-- 
-
-  
 
 
 

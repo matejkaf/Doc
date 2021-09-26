@@ -44,6 +44,41 @@ Hinweis:
 
 
 
+**Image Crop**
+
+```
+--cropToHeightWidth pixelsH pixelsW
+		Crop image to fit specified size.
+
+--cropOffset offsetY offsetH
+		Crop offset from top left corner.
+```
+
+
+
+```sh
+sips --getProperty pixelWidth --getProperty pixelHeight Mairboeck_Fabian.jpg
+```
+
+
+
+```sh
+cp Mairboeck_Fabian.jpg Mairboeck_Fabian_.jpg;sips --cropOffset 25 40 --cropToHeightWidth 250 170 Mairboeck_Fabian_.jpg
+```
+
+
+
+```sh
+cp *.jpg build;find ./build -type f -name '*.jpg' -maxdepth 1 \
+ -exec sips --cropOffset 25 40 --cropToHeightWidth 250 170 {} ';'
+```
+
+
+
+
+
+
+
 # wakeonlan
 
 ```sh

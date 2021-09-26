@@ -1,15 +1,14 @@
 ---
-title: Python für den CCC
-cmds: ['md_html.bash --small']
+title: Daten aus Textdateien lesen in Python
 ---
 
 Dieses Dokument beschreibt wie ein Level des CCC mit Hilfe von Python gelöst werden kann.
 
 # Hyperloop
 
-Das hier betrachtete Beispiel "Hyperloop" stammt aus dem CCC 2017 – siehe `2017_level1.pdf` für die Level Beschreibung.
+Das hier betrachtete Beispiel "Hyperloop" stammt aus dem CCC 2017 – siehe [2017_level1.pdf](./2017_level1.pdf) für die Level Beschreibung.
 
-Das Input File `2017_level1-eg.txt` sieht folgenermaßen aus:
+Das Input File [`2017_level1-eg.txt`](./2017_level1-eg.txt) sieht folgenermaßen aus:
 
 ```
 5
@@ -261,4 +260,10 @@ dst = distance(getLocation(locations, HyperloopLocationNames[0]),getLocation(loc
 print( int(round(dst / 250.0 + 200, 0 )) )
 ```
 
+
+
+# Source Code
+
+- [`ccchyperloop.py`](./ccchyperloop.py)
+- [`oopccc.py`](./oopccc.py)
 
