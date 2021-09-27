@@ -7,7 +7,7 @@ use_math: true
 
 #### Übung (Zweierpotenzen) 
 
-Berechne die folgenden 2er Potenzen.
+Berechne die folgenden 2er Potenzen von $2^0$ bis $2^16$.
 $$
 \begin{aligned}
     2^0 &= 1 \\        
@@ -15,20 +15,13 @@ $$
     2^2 &= 4 \\
     2^3 &= 8 \\
     2^4 &=  \\
-    2^5 &=  \\
-    2^6 &=  \\
-    2^7 &=  \\
-    2^8 &=  \\
-    2^9 &=  \\
-    2^{10} &=  \\
-    2^{11} &=  \\
-    2^{12} &=  \\
-    2^{13} &=  \\   
-    2^{14} &=  \\
+		\ldots\\
     2^{15} &=  \\
     2^{16} &=  \\
 \end{aligned}
 $$
+
+
 
 ---
 
@@ -49,4 +42,31 @@ $$
 (a) 215
 (a) 198
 (a) 253
+
+---
+
+#### Übung (16 Binärzahlen)
+
+Schreibe die Zahlen 0–15 als vierstellige Binärzahlen an.
+
+---
+
+#### Übung (Wandle nach Hex)
+
+- $01110110_2=$
+- $11101010_2=$
+- $11000101_2=$
+- $191_{10}=$
+- $239_{10}=$
+
+---
+
+#### Übung (Wandle von Hex nach Bin und Dez)
+
+- $AB_{16}=$
+- $8C_{16}=$
+- $E9_{16}=$
+- $7F_{16}=$
+
+
 

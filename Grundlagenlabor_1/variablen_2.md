@@ -7,6 +7,22 @@ use_math: true
 
 #### Übung (Variablenwerte)
 
+Welche Werte nimmt die `int` Variable `n` an? Was wird am Ende ausgegeben?
+
+```c++
+int n=83;
+n=n/2;
+n=n/2;
+n=n/2;
+n=n/2;
+n=n/2;
+printf("%d\n",n);
+```
+
+
+
+#### Übung (Variablenwerte)
+
 Schreibe an was folgendes Programm (exakt!) am Bildschirm ausgibt:
 
 ```c++

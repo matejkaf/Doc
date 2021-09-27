@@ -70,17 +70,3 @@ printf("x=%d\n",x);
 
 
 
-#### Übung (Variablenwerte)
-
-Welche Werte nimmt die `int` Variable `n` an? Was wird am Ende ausgegeben?
-
-```c++
-int n=83;
-n=n/2;
-n=n/2;
-n=n/2;
-n=n/2;
-n=n/2;
-printf("%d\n",n);
-```
-
