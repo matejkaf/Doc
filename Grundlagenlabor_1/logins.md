@@ -3,6 +3,8 @@ title: HTL Logins
 present: true
 ---
 
+* TOC
+{:toc}
 
 
 # Erster Login
@@ -38,3 +40,32 @@ present: true
 
 
 
+# OneDrive
+
+Cloud Speicher. Unter Office 365
+
+
+
+# Teams
+
+Unter Office 365
+
+
+
+# WebUntis
+
+Klassenbuch & Stundenplan – über HTL Braunau Homepage aufrufen.
+
+
+
+# Notenmanagement
+
+über HTL Braunau Homepage aufrufen
+
+
+
+# Netzlaufwerke
+
+- O: Lehrer
+- P: Privates Laufwerk
+- ?: Klassenlaufwerk
