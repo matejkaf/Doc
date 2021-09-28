@@ -16,7 +16,7 @@ present: true
 
 - [www.htl-braunau.at](https://www.htl-braunau.at)
   ![image-20210928151703548](fig/image-20210928151703548.png)
-- OFFICE 365
+- OFFICE 365 – **noch nicht das Passwort eingeben!**
   ![image-20210928151810162](fig/image-20210928151810162.png)
 
 - "Forgot my password" > Handynummer eingeben, dann rücksetzen des Passworts möglich (wenn vergessen)
