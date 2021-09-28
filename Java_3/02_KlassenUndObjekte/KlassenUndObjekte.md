@@ -1,7 +1,7 @@
 ---
 title: Klassen und Objekte
 description: Erste Einführung in Klassen und Objekte. Methoden, Konstruktor, this, this(), toString
-tags: [lecture,java,klasse]
+tags: [lecture,java,klasse,3AHITS]
 ---
 
 > Wie wenig Lärm machen die wirklichen Wunder. *Antoine de Saint Exupéry*
