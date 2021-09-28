@@ -35,7 +35,7 @@ Stelle beide VMs auf **Bridged Mode** und warte ca. 10 Sekunden bis sich das Net
 - Führe von Kali aus einen Ping auf das Hostsystem aus
 - Führe vom Kali VM einen Ping auf ein anderes Kali System auf einem anderen Rechner aus.
 
-Stelle nun beide VMs zurück auf **NAT** und wiederhole obige Versuche
+Stelle nun beide VMs zurück auf **NAT** und wiederhole obige Versuche, protokolliere das Ergebnis.
 
 
 
