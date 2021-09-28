@@ -5,8 +5,6 @@ present: true
 
 * TOC
 {:toc}
-
-
 # Erster Login
 
 - Mit den Login Daten einloggen
@@ -34,7 +32,6 @@ present: true
 # Word 365 + Email
 
 - Erstelle ein Word Dokument mit Überschrift und Text. Überschrift: 3 Fächer der HTL, Text: kurze Beschreibung was in diesem Fach schon gemacht wurde.
-
 - Erstelle aus dem Word Dokument ein PDF Dokument
 - Schicke dieses Word Dokument in einer höflichen Email an `franz.matejka@htl-braunau.at` 
 
@@ -58,6 +55,12 @@ Klassenbuch & Stundenplan – über HTL Braunau Homepage aufrufen.
 
 
 
+# Infopoint
+
+Infopoint für Schüler/innen – über HTL Braunau Homepage aufrufen.
+
+
+
 # Notenmanagement
 
 über HTL Braunau Homepage aufrufen
@@ -69,3 +72,11 @@ Klassenbuch & Stundenplan – über HTL Braunau Homepage aufrufen.
 - O: Lehrer
 - P: Privates Laufwerk
 - ?: Klassenlaufwerk
+
+
+
+# replit.com
+
+Webbasierte Entwicklungsumgebung zum Programmieren.
+
+Eigener Login notwendig.
