@@ -70,7 +70,7 @@ function setVisibilityOnElementNr(nr,visibility)
 
 function hide_all_first_level_elements() 
 {
-  let main_element = document.getElementsByTagName('main')[0];
+  let main_element = document.getElementsByTagName('div_content')[0];
   main_element.children[0].style.visibility = "hidden"
 
   for (let i = 0; i < main_element.children.length; i++) {
