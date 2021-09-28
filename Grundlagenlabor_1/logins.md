@@ -9,7 +9,7 @@ Zweiter Absatz
 
 - Mit den Login Daten einloggen
 - Passwort ändern (≥8 Zeichen, Großbuchstabe, Ziffer, Sonderzeichen)
-- [](www.htl-braunau.at)
+- [www.htl-braunau.at](https://www.htl-braunau.at)
   ![image-20210928151703548](fig/image-20210928151703548.png)
 - OFFICE 365
   ![image-20210928151810162](fig/image-20210928151810162.png)
