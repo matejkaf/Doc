@@ -41,9 +41,7 @@ $$
 
 Dieses $t$ hat für beliebiges $x$ die Eigenschaft: 
 $$
-\begin{equation}
-	x^t=1\ \pmod n \quad\quad \text{(Formel 1)}
-\end{equation}
+x^t=1 \pmod n \quad\quad\quad \text{(Formel 1)}
 $$
 
 >  Anmerkung: Nach Euler-Fermat wäre $t=(p-1)(q-1)$ aber das kgv ist auch OK (siehe `doc/t_kgv_beweis_wolfgang.png`), wahrscheinlich um die Zahl klein zu halten.
