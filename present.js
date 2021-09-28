@@ -57,7 +57,7 @@ function scrollIfNecessary(el)
 
 function getElementNr(nr) 
 {
-  let main_element = document.getElementsByTagName('div_content')[0];
+  let main_element = document.getElementById('div_content');
   return main_element.children[nr]
 }
 
@@ -70,7 +70,7 @@ function setVisibilityOnElementNr(nr,visibility)
 
 function hide_all_first_level_elements() 
 {
-  let main_element = document.getElementsByTagName('div_content')[0];
+  let main_element = document.getElementById('div_content');
   main_element.children[0].style.visibility = "hidden"
 
   for (let i = 0; i < main_element.children.length; i++) {
