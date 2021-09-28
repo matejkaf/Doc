@@ -29,7 +29,7 @@ Das ist ein Test
 $$
 r=c^3
 $$
-Und noch ein Test bla.
+Und noch ein Test bla bla.
 
 ---
 
