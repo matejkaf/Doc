@@ -39,15 +39,31 @@ present: true
 
 
 
+# Email Programm am Handy
+
+Sollte installiert werden wegen automatischer Benachrichtigung wenn eine neue Email kommt.
+
+Siehe HTL Braunau Homepage > Service > [IT-Servicecenter](https://www.htl-braunau.at/service/it-servicecenter)
+
+
+
 # OneDrive
 
-Cloud Speicher. Unter Office 365
+Cloud Speicher – unter Office 365
 
 
 
 # Teams
 
 Unter Office 365
+Teams am Handy installieren!
+Kanalbenachrichtigungen einschalten!
+
+Abgaben mit Teams
+
+- Lehrer erstellt eine Aufgabe
+
+- Gib das vorher erstellte PDF Dokument unter der Teams Aufgabe ab.
 
 
 
