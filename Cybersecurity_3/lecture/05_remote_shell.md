@@ -2,11 +2,16 @@
 title: Remote shells
 ---
 
-Ziel von Hackern ist es Zugriff auf entfernte Rechner zu erhalten. Dies geschieht meist durch direktes ausnutzen von Sicherheitslücken oder indem Anwender geschickt dazu manipuliert werden ein Programm zu starten (social engineering). Häufig ist das Ergebnis dieser exploitation eine shell die das Fernsteuern des Opfer-Rechners ermöglicht.
+Ziel von Hackern ist es Zugriff auf entfernte Rechner zu erhalten durch:
+
+- direktes ausnutzen von Sicherheitslücken, oder
+- Anwender geschickt (social engineering) dazu manipuliert werden ein Programm zu starten oder Login Daten auf einer gefälschten Website einzugeben (Phishing).
+
+Ergebnis ist häufig eine shell die das Fernsteuern des Opfer-Rechners ermöglicht.
 
 Darum ist auch häufig von eingeschleustem "shell-code" die Rede.
 
-Aber auch für legale Anwender sind remote shells sehr praktisch. Damit können auch weit entfernte Systeme gewartet werden in dem über das Netzwerk eine Verbindung aufgebaut wird.
+Aber auch für legale Anwender sind remote shells sehr praktisch zum Zugriff auf entfernte Systeme bzw. Systeme ohne Tastatur/Bildschirm (Server).
 
 Möglichkeiten:
 
@@ -17,15 +22,15 @@ Möglichkeiten:
 
 # Telnet
 
-Text-orientierte Verbindung zum Zielsystem. Sehr einfach. Keine Verschlüsselung! Username und Passwort können sehr einfach abgehört werden.
+Text-orientierte Verbindung zum Zielsystem. Sehr einfach. Keine Verschlüsselung! Username und Passwort können **sehr einfach** abgehört werden.
 
 - Port 23/TCP
 
-- Am Zielsystem muss ein telnet Server (Linux: demon) laufen
+- Am Zielsystem muss ein **telnet Server** (Linux: demon) laufen
 
 - telnet Client: Kommandozeilen tool `telnet` (muss unter Windows aktiviert werden).
 
-Achtung: telnet ist völlig unsicher und sollte in Produktivsystemen nicht zum Einsatz kommen.
+Achtung: telnet ist völlig unsicher und sollte in Produktivsystemen nicht mehr zum Einsatz kommen.
 
 
 

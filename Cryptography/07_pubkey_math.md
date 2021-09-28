@@ -75,7 +75,7 @@ $$
 c^d=(m^e)^d=m^{ed}
 $$
 
-Durch [Formel 2] ist $e*d=k*t+1$:
+Durch [Formel 2] ist $e*d=k*t+1$ :
 
 $$
 m^{ed}=m^{kt+1}=(m^t)^k*m
