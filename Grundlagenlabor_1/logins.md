@@ -7,14 +7,15 @@ present: true
 {:toc}
 # Erster Login
 
+- Ein Passwort überlegen (≥8 Zeichen, Großbuchstabe, Ziffer, Sonderzeichen) darf nicht Teile des Vor-/Nachnamens enthalten
 - Mit den Login Daten einloggen
-- Passwort ändern (≥8 Zeichen, Großbuchstabe, Ziffer, Sonderzeichen)
+- Passwort ändern
 
 
 
 # Office 365
 
-- [www.htl-braunau.at](https://www.htl-braunau.at)
+- [www.htl-braunau.at](https://www.htl-braunau.at) > Service
   <img src="fig/image-20210928151703548.png" alt="image-20210928151703548" style="zoom:33%;" />
 - OFFICE 365 – **noch nicht das Passwort eingeben!**
   <img src="fig/image-20210928151810162.png" alt="image-20210928151810162" style="zoom:33%;" />
