@@ -12,3 +12,5 @@ present: true
 - OFFICE 365
   ![image-20210928151810162](fig/image-20210928151810162.png)
 
+- "Forgot my password" > Handynummer eingeben, Rücksetzen des Passworts möglich (wenn vergessen)
+- 
