@@ -55,6 +55,14 @@ $ ip a
 
 
 
+### Gebundene Netzwerkservices
+
+```sh
+$ netstat -tlpn | grep 80
+```
+
+
+
 ### **Default Gateway**
 
 ```sh

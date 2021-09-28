@@ -51,3 +51,9 @@ Vorgehen der Angreifer kann in **Phasen** gegliedert werden. Ein **IT-Sicherheit
 
 ![Die Cyber-Killchain](fig/Die Cyber-Killchain.jpeg)
 
+# Variane 3 (metasploit)
+
+![image-20210928182411376](fig/image-20210928182411376.png)
+
+[Quelle](https://docs.rapid7.com/metasploit/)
+
