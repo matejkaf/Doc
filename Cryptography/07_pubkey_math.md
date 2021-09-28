@@ -52,7 +52,11 @@ e*d=1 \pmod t
 $$
 Bedeutet: $d$ ist das modulare Inverse zu $e$ mit Modul $t$. Siehe [Erweiterter euklidischer Algorithmus](https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus).
 
-Anders: $e*d=k*t+1$ für ein bestimmtes $k$. (Formel 2)
+Anders: für ein bestimmtes $k$ gilt:
+$$
+e*d=k*t+1 \quad\quad\quad \text{(Formel 2)}
+$$
+
 
 
 $d$ ist der **private key** (wird gemeinsam mit $p$, $q$ und $t$ geheim gehalten).
