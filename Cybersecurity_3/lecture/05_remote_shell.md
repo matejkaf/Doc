@@ -1,5 +1,6 @@
 ---
 title: Remote shells
+tags: [lecture,3AHITS]
 ---
 
 Ziel von Hackern ist es Zugriff auf entfernte Rechner zu erhalten durch:
