@@ -31,9 +31,11 @@ present: true
 
 # Word 365 + Email
 
-- Erstelle ein Word Dokument mit Überschrift und Text. Überschrift: 3 Fächer der HTL, Text: kurze Beschreibung was in diesem Fach schon gemacht wurde.
+- Erstelle ein Word Dokument mit Überschriften und Text. 3 x Überschrift: Fächer der HTL, Text: kurze Beschreibung was in diesem Fach schon gemacht wurde.
+- Ergänze im Word Dokument in der Kopfzeile: Name, Klasse, Datum
+- Ergänze einen Titel im Word Dokument: "Erste Versuche mit Word"
 - Erstelle aus dem Word Dokument ein PDF Dokument
-- Schicke dieses Word Dokument in einer höflichen Email an `franz.matejka@htl-braunau.at` 
+- Sende dieses PDF Dokument in einer höflichen Email an `franz.matejka@htl-braunau.at` 
 
 
 
