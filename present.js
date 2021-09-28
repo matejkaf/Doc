@@ -57,7 +57,7 @@ function scrollIfNecessary(el)
 
 function getElementNr(nr) 
 {
-  let main_element = document.getElementsByTagName('main')[0];
+  let main_element = document.getElementsByTagName('div_content')[0];
   return main_element.children[nr]
 }
 
