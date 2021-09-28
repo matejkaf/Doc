@@ -7,7 +7,7 @@ use_math: true
 
 #### Übung (Zweierpotenzen) 
 
-Berechne die folgenden 2er Potenzen von $2^0$ bis $2^16$.
+Berechne die folgenden 2er Potenzen von $2^0$ bis $2^{16}$.
 $$
 \begin{aligned}
     2^0 &= 1 \\        
