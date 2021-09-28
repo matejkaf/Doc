@@ -21,16 +21,6 @@ $$
 \end{aligned}
 $$
 
-
-$$
-a=x^2
-$$
-Das ist ein Test
-$$
-r=c^3
-$$
-Und noch ein Test bla bla.
-
 ---
 
 #### Übung (Wandle Binär nach Dezimal)
