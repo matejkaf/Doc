@@ -7,8 +7,7 @@ tags: [assignment,4BHELS]
 #### Übung (Einfach verkettete Liste I) {#liste1}
 
 - Schreibe eine Klasse `Node`. In einem Knoten wird ein Buchstabe gespeichert.
-- Schreibe eine Klasse `List`. Diese Klasse enthält die Start Referenz auf die verkettete Liste.
-  Alle Methoden die mit dieser Liste arbeiten werden in dieser Klasse implementiert
+- Schreibe eine Klasse `List`. Diese Klasse enthält die Start Referenz auf die verkettete Liste. Alle Methoden die mit dieser Liste arbeiten werden in dieser Klasse implementiert
 
 Implementiere folgende Aufgabenstellung:
 
@@ -46,13 +45,9 @@ Implementiere folgende Aufgabenstellung:
 
 - 
 Schreibe eine Methode `count` mit der ermittelt werden kann wie viele Knoten sich in der Liste befinden.
-- Ergänze eine Methode `get(int k)` die eine Referenz auf den `k`-ten Knoten zurückgibt.
-Der vorderste Knoten soll die Nummer 0 haben.
-Beispiel (`k=2`): `Node n=liste.get(2);`
+- Ergänze eine Methode `get(int k)` die eine Referenz auf den `k`-ten Knoten zurückgibt. Der vorderste Knoten soll die Nummer 0 haben. Beispiel (`k=2`): `Node n=liste.get(2);`
 Der Rückgabewert soll `null` sein, wenn die Stelle `k` nach dem Ende der Liste liegt.
-- Schreibe eine Methode 
-`removeFirst()`,
-die den ersten Knoten aus der Liste entfernt und eine Referenz auf diesen entfernten Knoten zurückliefert.
+- Schreibe eine Methode `removeFirst()`, die den ersten Knoten aus der Liste entfernt und eine Referenz auf diesen entfernten Knoten zurückliefert.
 
 
 
@@ -74,12 +69,9 @@ node.next = newNode;
 
 Aufgabenstellungen:
 
-- Schreibe eine Methode `insert` mit deren Hilfe ein neuer Knoten an beliebiger Stelle eingefügt wird.
-Übergabeparameter sind die Knotennnummer k und eine Referenz auf den einzufügenden Knoten.
-Der neu eingefügte Knoten nimmt die Position k ein.
+- Schreibe eine Methode `insert` mit deren Hilfe ein neuer Knoten an beliebiger Stelle eingefügt wird. Übergabeparameter sind die Knotennnummer k und eine Referenz auf den einzufügenden Knoten. Der neu eingefügte Knoten nimmt die Position k ein.
 k=0 ist die Positionsnummer des vordersten Knotens (Achtung: k=0 ist ein Edge-Case).
-- Die Methode 
-`append(Node newNode)` soll einen Knoten ans Ende der Liste anfügen.
+- Die Methode  `append(Node newNode)` soll einen Knoten ans Ende der Liste anfügen.
 Beachte den Fall, dass die Liste leer ist.
 Es gibt keinen Rückgabewert.
 
