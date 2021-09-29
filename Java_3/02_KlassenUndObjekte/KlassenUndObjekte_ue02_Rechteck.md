@@ -5,8 +5,6 @@ tag: [java, oop]
 tags: [assignment,3AHITS]
 ---
 
-
-
 **Übung (Rechteck)**
 
 - Eine Klasse Rechteck mit Seiten `a` und `b` und einem Konstruktor mit dem alle Instanzvariablen gesetzt werden können. Die Seitenlängen können Kommazahlen sein.
@@ -18,4 +16,6 @@ tags: [assignment,3AHITS]
   Diese Anwendung tritt beispielsweise beim skalieren von Bildern auf, in der Regel möchte man dabei, dass das Seitenverhältnis beibehalten wird und keine Verzerrung auftritt.
 - Eine Methode `area` soll die Fläche berechnen und zurückgeben.
 - Die Methode `int tile(Rechteck r)` soll die Frage beantworten wie oft das übergebene Rechteck (flächenmäßig) in das aktuelle Rechteck hineinpasst.
+
+---
 

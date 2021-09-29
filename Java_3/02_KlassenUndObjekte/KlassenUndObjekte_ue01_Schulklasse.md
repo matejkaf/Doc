@@ -5,8 +5,6 @@ tag: [java, oop]
 tags: [assignment,3AHITS]
 ---
 
-
-
 **Übung (Schulklasse)**
 
 - Erstelle eine Klasse `Schulklasse` mit Instanzvariablen für Anzahl der Schüler, Name des Klassenvorstands, Anzahl der Lehrer.
@@ -15,4 +13,6 @@ tags: [assignment,3AHITS]
 - Implementiere eine `toString` Methode zur Ausgabe aller Werte der Instanzvariablen.
 - Implementiere eine Methode `dazu` die zur Anzahl der Schüler eins dazuzählt. Verfahre ähnlich mit einer Methode `raus`.
 - Schreibe eine Methode `klassenwechselNach` zum Ummelden eines Schülers von einer Schulklasse in eine andere. Dabei wird von der Anzahl der Schüler in einem `Schulklasse` Objekt eins abgezogen und einem anderen `Schulklasse` Objekt zur Anzahl der Schüler eins hinzugezählt. Dieser Vorgang soll durch einen **einzigen Methodenaufruf** geschehen damit kein Schüler verloren geht. Hinweis: als Parameter die Referenz auf die zweite Schulklasse übergeben (der Schüler wechselt in diese 2te Schulklasse).
+
+---
 

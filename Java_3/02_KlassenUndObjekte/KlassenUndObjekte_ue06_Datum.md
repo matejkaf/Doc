@@ -1,11 +1,10 @@
 ---
 title: Übung Klasse Datum
 tags: [assignment,java, challenge]
+use_math: true
 ---
 
-
-
-**Übung (Datum):** 
+**Übung (Datum)**
 Implementiere eine Klasse `MyDate`, diese soll Tag (`day`), Monat (`month`) und Jahr (`year`) speichern.
 
 - 
@@ -20,7 +19,7 @@ Implementiere eine Methode `String toStringLong()` die einen String in der Form 
 
 ---
 
-**Übung (Datum Erweiterung 1):** 
+**Übung (Datum Erweiterung 1)** 
 
 Erweitere die Klasse `MyDate`.
 
@@ -52,7 +51,7 @@ Ausgabeformat: `2 years, 2 month, 1 week, and 6 days`
 
 ---
 
-**Übung (Datum Erweiterung 3):** 
+**Übung (Datum Erweiterung 3)** 
 
 Schreibe eine Methode `String getWeekday()` die den Wochentag ermittelt und als String zurückgibt (Montag, Dienstag, ...). Verwende die [Gaußsche Wochentagsformel](http://de.wikipedia.org/wiki/Gau%C3%9Fsche_Wochentagsformel)
 Dafür ist die Methode 

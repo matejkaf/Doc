@@ -4,8 +4,6 @@ description: Klasse zum Rechnen mit komplexen Zahlen. Beispiel mit Mandelbrotmen
 tags: [assignment,java]
 ---
 
-
-
 **Übung (Komplexe Zahl)**
 
 Schreibe eine Klasse `Complex` für eine komplexe Zahl. Unterstütze die Rechenoperationen `plus`, `times` und `abs` (Absolutwert). Der Rückgabewert von `plus` und `times` ist ein neues Objekt der Klasse `Complex`.
@@ -33,3 +31,6 @@ Die Mandelbrotmenge ist eine Teilmenge der komplexen Zahlen. Eine komplexe Zahl 
 - Schreibe ein Programm das von einer komplexen Zahl prüft ob diese in der Mandelbrotmenge ist. Konkret: während 100 Berechnungen der Formel ist die Distanz von $z$ zum Ursprung ($z=0$) immer kleiner als 2.
 - 
 Teste die Klasse `Complex` mit dem Programm `MandelbrotConsole.java` das ein Apfelmännchen in der Konsole "zeichnet" – das Apfelmännchen ist eine Darstellung der Mandelbrotmenge.
+
+---
+
