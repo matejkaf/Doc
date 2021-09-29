@@ -2,7 +2,7 @@
 title: Übung Schulklasse
 description: Einfache erste Übungen zu OOP
 tag: [java, oop]
-tags: [assignment]
+tags: [assignment,3AHITS]
 ---
 
 
@@ -14,5 +14,5 @@ tags: [assignment]
 - Erstelle einen Default Konstruktor (das ist einer ohne Parameter) für deine Schulklasse
 - Implementiere eine `toString` Methode zur Ausgabe aller Werte der Instanzvariablen.
 - Implementiere eine Methode `dazu` die zur Anzahl der Schüler eins dazuzählt. Verfahre ähnlich mit einer Methode `raus`.
-- Schreibe eine Methode `klassenwechsel` zum Ummelden eines Schülers von einer Schulklasse in eine andere. Dabei wird von der Anzahl der Schüler in einem `Schulklasse` Objekt eins abgezogen und einem anderen `Schulklasse` Objekt zur Anzahl der Schüler eins hinzugezählt. Dieser Vorgang soll durch einen **einzigen Methodenaufruf** geschehen damit kein Schüler verloren geht. Hinweis: als Parameter die Referenz auf die zweite Schulklasse übergeben.
+- Schreibe eine Methode `klassenwechselNach` zum Ummelden eines Schülers von einer Schulklasse in eine andere. Dabei wird von der Anzahl der Schüler in einem `Schulklasse` Objekt eins abgezogen und einem anderen `Schulklasse` Objekt zur Anzahl der Schüler eins hinzugezählt. Dieser Vorgang soll durch einen **einzigen Methodenaufruf** geschehen damit kein Schüler verloren geht. Hinweis: als Parameter die Referenz auf die zweite Schulklasse übergeben (der Schüler wechselt in diese 2te Schulklasse).
 

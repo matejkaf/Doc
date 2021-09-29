@@ -2,7 +2,7 @@
 title: Übung Klasse Rechteck
 description: Einfache erste Übungen zu OOP
 tag: [java, oop]
-tags: [assignment]
+tags: [assignment,3AHITS]
 ---
 
 
