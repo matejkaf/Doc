@@ -17,6 +17,7 @@ Implementiere weiters eine Klasse `Kalender` mit:
 
 - Einer ArrayList aus `Test` Objekten als Instanzvariable
 - Einer Methode `neuerTest` die das Datum und die Fachbezeichnung übergeben bekommt, daraus ein `Test` Objekt erzeugt und dieses in der ArrayList speichert.
+- Einer Methode `nochTests` die ein Datum als Parameter übergeben bekommt und zählt wie viele Tests nach diesem Datum kommen. Diese Anzahl soll als Rückgabewert verwendet werden.
 - Einer Methode `nächsterTest` die ein Datum als Parameter übergeben bekommt und jenen Test sucht der der nächste nach diesem Datum ist. Dieser Test soll als Rückgabewert verwendet werden. Zur Vereinfachung kann angenommen werden, dass alle Tests im Bereich von 01.10. bis 24.12. stattfinden.
   Unter Punkteabzug kann der Tag des Tests vernachlässigt werden.
 

@@ -1,10 +1,10 @@
 ---
 title: Einfach verkettete Liste
 subtitle: Übungen
-tags: [assignment]
+tags: [assignment,4BHELS]
 ---
 
-#### Übung (Einfach verkettete Liste I)
+#### Übung (Einfach verkettete Liste I) {#liste1}
 
 - Schreibe eine Klasse `Node`. In einem Knoten wird ein Buchstabe gespeichert.
 
@@ -29,7 +29,7 @@ Implementiere folgende Aufgabenstellung:
 
 ---
 
-#### Übung (Mock I)
+#### Übung (Mock I) {#mock1}
 
 Folgender Quelltext soll einen neuen Knoten am Beginn einer verketten Liste einfügen.
 Überlege anhand einer Skizze was falsch ist.
@@ -45,7 +45,7 @@ node.next=start;
 
 ---
 
-#### Übung (Einfach verkettete Liste II)
+#### Übung (Einfach verkettete Liste II) {#liste2}
 
 Implementiere folgende Aufgabenstellung:
 
@@ -64,7 +64,7 @@ die den ersten Knoten aus der Liste entfernt und eine Referenz auf diesen entfer
 
 ---
 
-#### Übung (Einfügeoperationen)
+#### Übung (Einfügeoperationen) {#liste3}
 
 Hinweis: Bei verketteten Listen kann man sehr einfach **nach** einem bestehenden Knoten (gegeben durch eine Referenz `node`) einen neuen Knoten einfügen.
 
@@ -93,7 +93,7 @@ Es gibt keinen Rückgabewert.
 
 ---
 
-#### Übung (Einfach verkettete Liste II)
+#### Übung (Einfach verkettete Liste II) {#liste4}
 
 Implementiere folgende Aufgabenstellung:
 
@@ -106,7 +106,7 @@ Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben ü
 
 ---
 
-#### Übung (Suchen eines Werts)
+#### Übung (Suchen eines Werts) {#liste5}
 
 Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert soll als Parameter übergeben werden. Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält. Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
 
@@ -117,7 +117,7 @@ Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert
 
 
 ---
-#### Übung (Mock II)
+#### Übung (Mock II) {#mock2}
 
 Überlege welche Auswirkungen der folgende Quelltext auf eine verkettete Liste hat.
 
@@ -133,7 +133,7 @@ start = m;
 
 ---
 
-#### Übung (Erweiterungen)
+#### Übung (Erweiterungen) {#liste5}
 
 Implementiere weiters:
 
