@@ -7,19 +7,14 @@ tags: [assignment,4BHELS]
 #### Übung (Einfach verkettete Liste I) {#liste1}
 
 - Schreibe eine Klasse `Node`. In einem Knoten wird ein Buchstabe gespeichert.
-
 - Schreibe eine Klasse `List`. Diese Klasse enthält die Start Referenz auf die verkettete Liste.
   Alle Methoden die mit dieser Liste arbeiten werden in dieser Klasse implementiert
 
 Implementiere folgende Aufgabenstellung:
 
 - Schreibe eine Methode `void prepend(Node newNode)` die einen Knoten ganz vorne einfügt. 
-
 - Schreibe eine `toString` Methode mit der die ganze Liste ausgegeben werden kann. Die Buchstaben in den Knoten sollen einfach aneinander gereiht werden.
-
-- 
-Überlade die `prepend` Methode: `prepend(char c)`.
-
+- Überlade die `prepend` Methode: `prepend(char c)`.
 - Schreibe eine Methode die alle Buchstaben aus einem String (der Parameter der Methode ist) an den Anfang der verkettete Liste schreibt.
   - Jeder Knoten soll einen Buchstaben aus dem String enthalten und
   - die Reihenfolge soll gleich sein wie im String.
@@ -83,7 +78,6 @@ Aufgabenstellungen:
 Übergabeparameter sind die Knotennnummer k und eine Referenz auf den einzufügenden Knoten.
 Der neu eingefügte Knoten nimmt die Position k ein.
 k=0 ist die Positionsnummer des vordersten Knotens (Achtung: k=0 ist ein Edge-Case).
-
 - Die Methode 
 `append(Node newNode)` soll einen Knoten ans Ende der Liste anfügen.
 Beachte den Fall, dass die Liste leer ist.
@@ -97,8 +91,7 @@ Es gibt keinen Rückgabewert.
 
 Implementiere folgende Aufgabenstellung:
 
-- 
-Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben überschreibt. Hinweis: Verwende die Methode `get`.
+- Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben überschreibt. Hinweis: Verwende die Methode `get`.
 - Methode `set(int k, Node newNode)` die den k-ten Knoten durch einen neuen Knoten ersetzt. Hinweis: es muss die `next` Referenz des Vorgängerknotens verändert werden.
 
 
@@ -137,14 +130,7 @@ start = m;
 
 Implementiere weiters:
 
-- 
-Methode `removeLast` die den letzten Knoten aus der Liste entfernt.
-
-- 
-Schreibe eine Methode `remove(char c)` mit der ein Knoten mit einem bestimmten Wert aus der Liste gelöscht werden kann. Die Methode soll `false` liefern falls der Wert nicht gefunden wurde, andernfalls `true`. Es soll nur das erste Vorkommen des Werts gesucht werden.
-
-- 
-Optimiere die `append` Methode so, dass diese in einem Schritt (ohne Suchen des Endes) durchgeführt werden kann. Hinweis: Führe zusätzlich zu `start` eine Referenz `end` mit die immer auf den letzten Knoten verweist.
-
-- 
-Schreibe eine Methode die die Liste alphabetisch sortiert.
+- Methode `removeLast` die den letzten Knoten aus der Liste entfernt.
+- Schreibe eine Methode `remove(char c)` mit der ein Knoten mit einem bestimmten Wert aus der Liste gelöscht werden kann. Die Methode soll `false` liefern falls der Wert nicht gefunden wurde, andernfalls `true`. Es soll nur das erste Vorkommen des Werts gesucht werden.
+- Optimiere die `append` Methode so, dass diese in einem Schritt (ohne Suchen des Endes) durchgeführt werden kann. Hinweis: Führe zusätzlich zu `start` eine Referenz `end` mit die immer auf den letzten Knoten verweist.
+- Schreibe eine Methode die die Liste alphabetisch sortiert.
