@@ -1,7 +1,7 @@
 ---
 title: Strings
 subtitle: Hangman
-tags: [c,strings,assignment,C_2]
+tags: [c,strings,assignment,C_2,2AHITS]
 ---
 
 Wir wollen Schritt für Schritt das Spiel "Hangman" programmieren.
@@ -88,5 +88,4 @@ Vorlage:
      |
  ____|____
 ```
-
 

@@ -1,7 +1,7 @@
 ---
 title: Strings
 subtitle: Übungen Einstieg
-tags: [c,strings,assignment,C_2]
+tags: [c,strings,assignment,C_2,2AHITS]
 ---
 
 #### Übung (Standard Stringfunktionen I)
@@ -62,5 +62,4 @@ Implementiere folgende Stringfunktionen.
 Ein Doppeldrom ist ein Wort das nur doppelte Buchstaben enthält, etwa `"LLaammaa"` oder `"ssaabb"`.
 Schreibe eine Funktion `istDoppeldrom` die ermittelt ob ein Wort ein Doppeldrom ist.
 Verwende `int` als Rückgabewert und mache keine Ausgaben in der Funktion (nur im Hauptprogramm).
-
 

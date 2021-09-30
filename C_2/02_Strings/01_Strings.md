@@ -1,7 +1,7 @@
 ---
 title: Strings
 subtitle: Einführung
-tags: [lecture,c,strings,intro,C_2]
+tags: [lecture,c,strings,intro,C_2,2AHITS]
 ---
 
 Für einzelne Zeichen gibt es den Datentyp `char`.
