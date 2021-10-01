@@ -103,3 +103,10 @@ $ cd /var/www/html
 - `:x` speichern (wenn Änderungen) und beenden
 - `:q!` beenden (Änderungen verwerfen)
 
+
+
+# explainshell
+
+Erklärung für Optionen
+
+[explainshell.com](https://www.explainshell.com)

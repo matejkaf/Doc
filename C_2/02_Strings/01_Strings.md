@@ -87,12 +87,27 @@ Achtung: Eingabe von Leerzeichen mit `scanf` nicht möglich, da dies als Ende de
 
 ---
 
-#### **Übung (Stringende suchen):**
+#### Übung (Name ein- und ausgeben)
+
+Schreibe eine Programm das nach deinem Namen fragt und einen Text wie z.B. "Guten Morgen, Max" wieder ausgibt.
+
+---
+
+#### Übung (Buchstabenweise ausgeben)
+
+Gib den eingegebenen Namen Buchstabe für Buchstabe untereinander aus. Teste mit unterschiedlich langen Namen. Es sollen keine überflüssigen Buchstaben ausgegeben werden.
+
+---
+
+#### **Übung (Stringende suchen)**
 
 Häufig sucht man das **Ende** eines Strings. Schreibe ein Programm das den Index von `'\0'` in einem vorgegebenen String sucht. Es soll ausgeben werden auf welchem Index `'\0'` gefunden wurde.
 
 ---
 
+
+
+# Funktionen
 
 Strings sind Arrays daher gilt **call by reference** wenn diese an eine Funktion übergeben werden:
 
@@ -114,7 +129,7 @@ void change(char str[])
 
 
 
-## ASCII Code
+# ASCII Code
 
 Ein Computer kann **nur Zahlen** speichern. Um Buchstaben darzustellen gibt es eine Übereinkunft den [ASCII-Code Standard](http://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) die Zahlen auf Buchstaben zuordnet. 
 
