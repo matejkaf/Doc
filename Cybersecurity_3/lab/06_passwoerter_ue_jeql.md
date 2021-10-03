@@ -1,6 +1,8 @@
 ---
 title: Cracking von Passwörtern
 subtitle: Lösungen
+tags: [solution]
+published: false
 ---
 
 Hashwerte:
