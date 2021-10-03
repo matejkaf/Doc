@@ -281,7 +281,7 @@ daraus:
 
 
 $$
-\displaystyle \varphi = \arccos {\frac {{\vec {v}}\cdot {\vec {w}}}{|{\vec {v}}||{\vec {w}}|}}
+\displaystyle \varphi = \arccos {\frac {\vec {v}\cdot {\vec {w}}}{|{\vec {v}}||{\vec {w}}|}}
 $$
 
 
@@ -311,7 +311,7 @@ $$
 \quad
 \left[
 \begin{matrix}
- 11 & 12 & 13 & 14\\
+ 11 & 12 & 13 & 14 \\
  21 & 22 & 23 & 24 \\
  31 & 32 & 33 & 34 \\
 \end{matrix} 
@@ -368,7 +368,7 @@ $$
  x \\
  y \\
 \end{smallmatrix} 
-\right] 
+\right]
 $$
 
 

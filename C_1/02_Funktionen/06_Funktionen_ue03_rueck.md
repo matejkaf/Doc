@@ -63,9 +63,9 @@ Schreibe eine Funktion die einen `double` Wert $x$ hoch einem `int` Wert $n$ ber
 double hoch(double x, int n)
 ```
 
-Beachte: $x^n  = \underbrace{x \ldots x}_{n\times} \quad \text{und}\quad x^0=1$$
+Beachte: $x^n  = \underbrace{x \ldots x}_{n\times} \quad \text{und}\quad x^0=1$
 
-Beispiel: $2^5  = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$$
+Beispiel: $2^5  = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$
 
 
 
@@ -76,11 +76,11 @@ Beispiel: $2^5  = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$$
 
 Berücksichtige auch negative Hochzahlen: 
 
-$x^{n}=\frac{1}{x^{-n}} \qquad \text{wenn}\; n<0$$
+$x^{n}=\frac{1}{x^{-n}} \qquad \text{wenn}\; n<0$
 
 Beispiele:
 
-$x^{-3}=\frac{1}{x^{3}}=\frac{1}{x\cdot x\cdot x} $$
+$x^{-3}=\frac{1}{x^{3}}=\frac{1}{x\cdot x\cdot x}$
 
-$2^{-5}=\frac{1}{2^{5}}=\frac{1}{2\cdot 2\cdot 2\cdot 2\cdot 2}= \frac{1}{32}$$
+$2^{-5}=\frac{1}{2^{5}}=\frac{1}{2\cdot 2\cdot 2\cdot 2\cdot 2}= \frac{1}{32}$
 

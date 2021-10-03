@@ -265,3 +265,85 @@ hideAllButId: true
 ---
 ```
 
+
+
+# Jekyll lokal
+
+[Jekyll on macOS](https://jekyllrb.com/docs/installation/macos/)
+
+```sh
+$ brew install ruby
+
+# M1
+$ echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+# Intel
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+
+$ export SDKROOT=$(xcrun --show-sdk-path)
+$ gem install --user-install bundler jekyll
+WARNING:  You don't have /Users/matejkafr/.gem/ruby/3.0.0/bin in your PATH,
+	  gem executables will not run.
+	  
+# M1
+$ echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.zshrc
+# Intel
+$ echo 'export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"' >> ~/.zshrc
+
+```
+
+Inhalt von `.zshrc`
+
+```sh
+# M1
+export PATH="/opt/homebrew/opt/ruby/bin:$HOME/.gem/ruby/3.0.0/bin:$PATH"
+```
+
+
+
+[](https://jekyllrb.com/docs/)
+
+Create a new Jekyll site at
+
+```
+jekyll new myblog
+```
+
+Change into your new directory.
+
+```
+cd myblog
+```
+
+
+
+```sh
+# im myblog directory (für Ruby 3 notwendig)
+$ bundle add webrick
+# fügt eine Zeile im Gemfile hinzu
+```
+
+Build the site and make it available on a local server.
+
+```
+bundle exec jekyll serve
+```
+
+1. Browse to [http://localhost:4000](http://localhost:4000/)
+
+
+
+`jekyll-theme-cayman`
+
+[](https://github.com/pages-themes/cayman)
+
+Vom github repo aus aufgebaut!
+
+
+
+Bei Änderungen im `Gemfile` 
+
+```sh
+bundle install
+bundle update
+```
+
