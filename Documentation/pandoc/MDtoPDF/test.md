@@ -47,6 +47,12 @@ Diese Nummerierung wird von jekyll nicht unterstützt.
 (a) 198
 (a) 253
 
+```java
+if( test== 5) {
+    System.out.println("Hurra\n");
+}
+```
+
 ```html
 Funktioniert mit jekyll HTML:
 ![bla](fig/image-20210910165854169.png){: width="250" }
