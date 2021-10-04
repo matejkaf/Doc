@@ -1,7 +1,7 @@
 ---
 title: Grundlagen UNIX shell
 subtitle: Elemementare bash Bedienung
-tags: [lecture, unix, shell, bash,SYTG_2_Linux ]
+tags: [lecture, unix, shell, bash,SYTG_2_Linux, 2AHITS ]
 ---
 
 * TOC
