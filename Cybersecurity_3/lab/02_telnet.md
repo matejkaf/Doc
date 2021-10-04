@@ -1,7 +1,7 @@
 ---
 title: Telnet
 subtitle: Übung
-tags: [assignment]
+tags: [assignment,3AHITS]
 ---
 
 

@@ -41,7 +41,7 @@ Stelle nun beide VMs zurück auf **NAT** und wiederhole obige Versuche, protokol
 
 ---
 
-#### Übung (Dateitransfer)
+#### Übung (Dateitransfer per Webserver)
 
 In dieser Übung soll der Dateitransfer zwischen Kali Linux und Metasploitable getestet werden.
 

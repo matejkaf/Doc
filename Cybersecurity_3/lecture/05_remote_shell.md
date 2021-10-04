@@ -6,15 +6,20 @@ tags: [lecture,3AHITS]
 Ziel von Hackern ist es Zugriff auf entfernte Rechner zu erhalten durch:
 
 - direktes ausnutzen von Sicherheitslücken, oder
-- Anwender geschickt (social engineering) dazu manipuliert werden ein Programm zu starten oder Login Daten auf einer gefälschten Website einzugeben (Phishing).
+- social engineering – Anwender geschickt dazu manipuliert 
+  - Programm zu starten (Trojaner), oder 
+  - per Phishing auf gefälschten Login Seite locken
 
-Ergebnis ist häufig eine shell die das Fernsteuern des Opfer-Rechners ermöglicht.
+Ergebnis ist eine unsichtbare shell über die der (entfernte) Angreifer das System übernehmen kann.
 
-Darum ist auch häufig von eingeschleustem "shell-code" die Rede.
+Die eingeschleusten Programme heißen daher of "shell-code".
 
-Aber auch für legale Anwender sind remote shells sehr praktisch zum Zugriff auf entfernte Systeme bzw. Systeme ohne Tastatur/Bildschirm (Server).
+Solche remote shells haben aber auch legale Anwendung bei Zugriff auf 
 
-Möglichkeiten:
+- entfernte System
+- Systeme ohne Tastatur/Bildschirm (Server)
+
+2 Möglichkeiten:
 
 - [telnet](https://en.wikipedia.org/wiki/Telnet) (teletype network)
 - [ssh](https://en.wikipedia.org/wiki/Secure_Shell) (secure shell)
@@ -26,10 +31,9 @@ Möglichkeiten:
 Text-orientierte Verbindung zum Zielsystem. Sehr einfach. Keine Verschlüsselung! Username und Passwort können **sehr einfach** abgehört werden.
 
 - Port 23/TCP
-
 - Am Zielsystem muss ein **telnet Server** (Linux: demon) laufen
-
 - telnet Client: Kommandozeilen tool `telnet` (muss unter Windows aktiviert werden).
+- da telnet Daten 1:1 weitergibt ist damit der Zugriff auf jedes textbasierte Protokoll möglich (z.B. http)
 
 Achtung: telnet ist völlig unsicher und sollte in Produktivsystemen nicht mehr zum Einsatz kommen.
 
@@ -39,8 +43,9 @@ Achtung: telnet ist völlig unsicher und sollte in Produktivsystemen nicht mehr 
 
 Kryptografisches Netzwerkprotokoll für remote shell Zugriff, sehr sicher, Ersatz für Telnet.
 
-- Passwörter und Datenverkehr verschlüsselt  (Vertraulichkeit)
+- Verschlüsselt Passwörter und Datenverkehr (Vertraulichkeit)
 - Manipulationsschutz (Integrität)
+- Schutz gegen MITM attacks
 
 Port 22/TCP
 

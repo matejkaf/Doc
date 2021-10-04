@@ -12,31 +12,40 @@ Vorgehen der Angreifer kann in **Phasen** gegliedert werden. Ein **IT-Sicherheit
 
 # Variante 1 (nach Eric Amberg)
 
-- **Reconaissance** – (Footprinting, Information gathering, Informationsbeschaffung)
+- **(1) Reconaissance** – (Footprinting, Information gathering, Informationsbeschaffung)
 
   - passive discovery (Webauftritt, Veröffentlichungen, ...)
   - active discovery (z.B. Telefonanruf, falscher Handwerker, soziale Netzwerke)
   - wichtigste und am längsten dauernde Phase
 
-- **Scanning** – Schwachstellen finden
+- **(2) Scanning** – Schwachstellen finden
 
-  - Port scanning – welche Dienste laufen, welche Version wird verwendet
+  - Port scanning – welche (Server) Dienste laufen, welche Version wird verwendet
   - Enumeration (Usernamen, Netzwerkresourcen, Services, ...)
   - Vulnerability Scanning – z.B. Prüfen ob gefundene Services Schwachstellen aufweisen
 
-- **Gaining access**
+- **(3) Gaining access** – Aktives Eindringen
 
-  - Exploitation – Schwachstelle nutzen
-  - Default Passwörter, Weak configuration, Code execution vulnerability, Trojaner, ...
+  - Ziel: shell am Zielsystem
+  - Zwei Ansätze:
 
-- **Post exploitation**
+    - Ohne user interaction: Nur IP Adresse bekannt.
+      - Exploitation – Schwachstelle nutzen
+        - Default Passwörter
+        - Weak configuration
+        - Code execution vulnerability (buffer overlow)
+    - User Interaktion notwendig
+      - social engineering
+      -  Trojaner
 
-  - Maintaining access (sich festsetzen)
+- **(4) Maintaining access**  – sich im System festsetzen – auch: **Post exploitation** Phase
+
   - Backdoors installieren
   - Weitere Systeme anvisieren
   - Privilege escalation (erhöhte Benutzerrechte erlangen)
+  - Keylogger installieren
 
-- **Clearing Tracks** (Spuren verwischen)
+- **(5) Clearing Tracks** (Spuren verwischen)
 
   - Rootkits (versteckt installierte Software)
   - Log Files löschen/manipulieren
