@@ -72,10 +72,12 @@ Datenfluss:
 
 Eigenschaften Von Neumann:
 
-- Daten und Code aus der Sicht des Prozessors nicht unterscheidbar. Für IT-Sicherheit: Daten können als Programm interpretiert werden. Viele Sicherheitslücken nutzen dies aus.
+- Daten und Programm im gleichen Speicher. 
+  - Laden von der Festplatte: Programm sind Daten
+  - CPU führt Programm aus: Daten sind Maschinencode
+- Daten und Code aus der Sicht des Prozessors nicht unterscheidbar. Für IT-Sicherheit: Daten können als Programm interpretiert werden. Viele Sicherheitslücken nutzen dies aus (code execution vulnerabilities – buffer overflow).
 - Die Bedeutung der Daten (Buchstabe, Zahl, ...) entsteht durch die Art und Weise wie diese im Programm verwendet werden. Für den Prozessor sind es nur 0 und 1.
-- Daten und Programm teilen sich den Speicher. Beim Laden von der Festplatte wird das Programm wie Daten behandelt (von einem anderen Programm).
-- Speicher ist eine große zusammengehörige Aneinanderreihung von Speicherstellen (Bytes). Der Speicherbereich des Prozessors enthält in einem einzigen ununterbrochenem Speicherraum:
+- Speicher: zusammengehörige Aneinanderreihung von Speicherstellen (Bytes). Enthält:
   - das Betriebssysten, 
   - alle laufenden Anwendungen, und
   - die zugehörige Daten.
