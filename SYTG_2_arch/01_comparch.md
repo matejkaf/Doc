@@ -86,7 +86,7 @@ Eigenschaften Von Neumann:
 
 ## Harvard Architektur
 
-Alternative zur von Neumann Architektur. Programm und Datenspeicher sind völlig voneinander getrennt. Hoher Aufwand weil die Speicherschnittstelle doppelt vorhanden sein muss. Nicht besonders häufig im Einsatz.
+Alternative zur von Neumann Architektur. Programm und Datenspeicher sind völlig voneinander getrennt. Hätte Vorteile (Sicherheit, Geschwindigkeit) aber wegen dem hohen Aufwand kaum im Einsatz.
 
 Most microprocessors available are standard Von Neumann machines. The main deviation from this is the *Harvard architecture* , in which instructions and data have different memory spaces ([Figure 1-5](https://www.oreilly.com/library/view/designing-embedded-hardware/0596007558/ch01.html#dbhardware2-CHP-1-FIG-5)) with separate address, data, and control buses for each memory space. This has a number of advantages in that instruction and data fetches can occur concurrently.
 
