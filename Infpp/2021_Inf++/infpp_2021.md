@@ -1,24 +1,24 @@
 # Email
 
+Freifach Informatik++ 2021/22
+
 Liebe Schülerinnen und Schüler,
 
-an alle hoch motivierten Informatik und Programmier Begeisterten.
+an alle hoch motivierten **Informatik und Programmier** Begeisterten **ab inkl. dem 2. Jahrgang** mit gefestigten Grundlagen (Schleifen, Funktionen, Arrays).
 
-Ich kann im Schuljahr 2020/2021 ein Freifach anbieten: **Informatik++**
+Ich biete im Schuljahr 2021/2022 wieder das Freifach **Informatik++** an.
 
-Im Rahmen dieses Fachs gibt es die Möglichkeit:
+es gibt die Möglichkeiten:
 
-- Die **Programmiersprache Python** kennenzulernen,
-- am CCC (**Cloudflare Coding Contest**), und 
-- an der **Informatik Olympiade** teilzunehmen.
+- die **Programmiersprache Python** kennenzulernen,
+- am **CCC** (Cloudflare Coding Contest, Fr. 05.11.2021) teilzunehmen,
+- sich an der **Informatik Olympiade** (Aufgaben im November verfügbar) zu versuchen.
 
-Für eine Note in dem Fach ist für mindestens eines davon ein entsprechender Erfolg nachzuweisen.
-
-Voraussetzung: Du bist schon mindestens im 2. Jahrgang und hast gute Programmierkenntnisse (Schleifen, Funktionen, Arrays).
+Für eine Note in dem Fach ist für **mindestens eines** davon ein entsprechender Erfolg/Aufwand nachzuweisen.
 
 Das Python Modul wird hauptsächlich als **Fernunterricht** (über MS Teams) stattfinden.
 
-Interessierte schicken mir bitte eine Email mit Name und Klasse.
+Interessierte schicken mir bitte eine **Email mit Name und Klasse**.
 
 Beste Grüße
 
