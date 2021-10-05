@@ -56,7 +56,9 @@ Settings = Einstellungen (Zahnrad)
 
 
 
+## Bildschirmlupe
 
+[Windows]+[+] Taste zum vergrößern, [Windows]+[-] zum verkleinern
 
 # Autostart
 

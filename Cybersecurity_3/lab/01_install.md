@@ -26,7 +26,13 @@ Installiere Metasploitable im VmWare Player.
 
 #### Übung (Netzwerk NAT/Bridged)
 
-Stelle beide VMs auf **Bridged Mode** und warte ca. 10 Sekunden bis sich das Netzwerk neu konfiguriert hat.
+Stelle beide VMs auf **Bridged Mode**  
+
+- Kali: warte ca. 10 Sekunden bis sich das Netzwerk neu konfiguriert hat.
+
+- Metasploitable: Interface deaktivieren und wieder aktivieren (Recherche!)
+
+Aufgaben:
 
 - Prüfen in beiden VMs welche IP Adresse (`ifconfig eth0`) und Default Gateway (`route -n`) dieser erhalten haben.
 - Führe von Kali aus einen Ping auf Metasploitable aus.

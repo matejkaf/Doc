@@ -17,10 +17,13 @@ present: true
 
 - [www.htl-braunau.at](https://www.htl-braunau.at) > Service
   <img src="fig/image-20210928151703548.png" alt="image-20210928151703548" style="zoom:33%;" />
-- OFFICE 365 – **noch nicht das Passwort eingeben!**
+  
+- OFFICE 365 – User (inkl. `@htl-braunau.at`) und Passwort eingeben
   <img src="fig/image-20210928151810162.png" alt="image-20210928151810162" style="zoom:33%;" />
 
-- "Forgot my password" > Handynummer eingeben, dann rücksetzen des Passworts möglich (wenn vergessen)
+- ![img](fig/1*QCG3iyKWAnqK7iz5ixaffg.png)
+
+- Handynummer eingeben, dann später rücksetzen des Passworts möglich (wenn vergessen)
 
 - Einloggen in office 365
 
@@ -42,7 +45,7 @@ present: true
 
 # Email Programm am Handy
 
-Sollte installiert werden wegen automatischer Benachrichtigung wenn eine neue Email kommt.
+Outlook am Handy installieren (Vorteil: automatischer Benachrichtigung wenn eine neue Email).
 
 Siehe HTL Braunau Homepage > Service > [IT-Servicecenter](https://www.htl-braunau.at/service/it-servicecenter)
 
@@ -52,15 +55,17 @@ Siehe HTL Braunau Homepage > Service > [IT-Servicecenter](https://www.htl-brauna
 
 Cloud Speicher – unter Office 365
 
+Handy App verfügbar
+
 
 
 # Teams
 
-Unter Office 365
-Teams am Handy installieren!
-Kanalbenachrichtigungen einschalten!
+- Unter Office 365
+- Teams am Handy installieren!
+- Kanalbenachrichtigungen einschalten!
 
-Abgaben mit Teams
+Abgaben mit Teams:
 
 - Lehrer erstellt eine Aufgabe
 
@@ -72,11 +77,15 @@ Abgaben mit Teams
 
 Klassenbuch & Stundenplan – über HTL Braunau Homepage aufrufen.
 
+Handy App: Untis
+
 
 
 # Infopoint
 
 Infopoint für Schüler/innen – über HTL Braunau Homepage aufrufen.
+
+Sharepoint Handy App installieren
 
 
 

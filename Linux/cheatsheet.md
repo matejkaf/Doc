@@ -71,13 +71,26 @@ $ route -n
 
 
 
-### **ARP** cache (geht auch unter Windows)
+## Restart
+
+In Metasploitable notwendig nach Konfigurationsänderungen
+
+```sh
+$ sudo ifdown eth0
+$ sudo ifup eth0
+```
+
+
+
+### **ARP** cache
 
 ```sh
 arp -a -n
 # `-a` ... Use alternate BSD style output format (with no fixed columns)
 # `-n`, `--numeric` ... shows numerical addresses instead of trying to determine symbolic host, port or user names
 ```
+
+geht auch unter Windows)
 
 
 
