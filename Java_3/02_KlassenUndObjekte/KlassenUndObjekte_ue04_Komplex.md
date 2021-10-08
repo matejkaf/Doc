@@ -2,7 +2,7 @@
 title: Übung Komplexe Zahl
 description: Klasse zum Rechnen mit komplexen Zahlen. Beispiel mit Mandelbrotmenge und Apfelmännchen.
 tags: [assignment,java,3AHITS]
-use_math: 2
+use_math: true
 ---
 
 #### Übung (Komplexe Zahl)
