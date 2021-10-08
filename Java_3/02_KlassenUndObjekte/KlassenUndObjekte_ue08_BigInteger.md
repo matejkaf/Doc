@@ -1,7 +1,7 @@
 ---
 title: Übung Fakultät mit BigInteger
 tags: [assignment,java, oop]
-use_math:true
+use_math: true
 ---
 
 #### Übung (BigInteger)
