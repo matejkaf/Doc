@@ -4,6 +4,9 @@ description: Erste Einführung in Klassen und Objekte. Methoden, Konstruktor, th
 tags: [lecture,java,klasse,3AHITS]
 ---
 
+* TOC
+{:toc}
+
 > Wie wenig Lärm machen die wirklichen Wunder. *Antoine de Saint Exupéry*
 
 **Objekt-orientierte Programmierung** (OOP): Kernkonzept in Java.

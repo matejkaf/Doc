@@ -11,11 +11,11 @@ tags: [assignment,3AHITS]
 - Ausgabe von `a` und `b` (dafür `toString` implementieren)
 - Implementiere eine Methode `resize`, die kleinere Seite wird von der größeren abgezogen.
 - Erstelle eine Methode `inflate` – Parameter ist ein Prozentwert um dem beide Seiten vergrößert werden sollen.
-- Eine Methode `aspectRatio`  die das Seitenverhältnis ermittelt und zurückgibt (`return` Wert)
+- Eine Methode `aspectRatio`  die das Seitenverhältnis (simpel `a/b`) als `double` Wert ermittelt und zurückgibt (`return` Wert).
 - Eine Methode `setMaxSide` die als Parameter eine neue Seitenlänge übergeben wird. Die längste der bestehenden Seitenlängen soll auf diesen Wert gesetzt werden. Die andere Seitenlänge soll so gesetzt werden, dass das ursprüngliche Seitenverhältnis beibehalten wird. 
   Diese Anwendung tritt beispielsweise beim skalieren von Bildern auf, in der Regel möchte man dabei, dass das Seitenverhältnis beibehalten wird und keine Verzerrung auftritt.
 - Eine Methode `area` soll die Fläche berechnen und zurückgeben.
-- Die Methode `int tile(Rechteck r)` soll die Frage beantworten wie oft das übergebene Rechteck (flächenmäßig) in das aktuelle Rechteck hineinpasst.
+- Die Methode `int tile(Rechteck r)` soll die Frage beantworten wie oft das übergebene Rechteck (flächenmäßig) in das aktuelle Rechteck hineinpasst. Z.B. von einem beliebigen Rechteck soll die Fläche als Anzahl von Fußballfeldern (100m x 64m) ausgedrückt werden.
 
 ---
 
