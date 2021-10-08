@@ -52,3 +52,7 @@ Berücksichtige dies bei der Bewertung des BMI.
 
 Hinweis: Verwende zur Darstellung des Geschlechts eine `char` Instanzvariable mit den Werten `'m'` und `'w'`.
 
+
+
+---
+
