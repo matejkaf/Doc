@@ -1,9 +1,10 @@
 ---
 title: Übung Fakultät mit BigInteger
 tags: [assignment,java, oop]
+use_math:true
 ---
 
-**Übung (BigInteger):**
+#### Übung (BigInteger)
 
 Die Berechnung der Fakultät ($n!=1 \cdot 2 \cdot 3 \cdot\ldots\cdot n$) ergibt sehr große Zahlen, z.B. hat $70!$ nicht mehr in einem `long` Platz. Die Klasse `BigInteger` kann zum Speichern und Rechnen mit beliebig großen ganzen Zahlen verwendet werden.
 

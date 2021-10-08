@@ -1,6 +1,6 @@
 ---
 title: Übung Klasse für Uhrzeit
-tags: [assignment,java]
+tags: [assignment,java,3AHITS]
 ---
 
 #### Übung (Uhr)

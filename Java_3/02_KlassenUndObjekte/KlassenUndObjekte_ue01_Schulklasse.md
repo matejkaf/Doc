@@ -16,3 +16,4 @@ tags: [assignment,3AHITS]
 
 ---
 
+[Skript zu Klassen und Objekte (Strg-Klick)](https://matejkaf.github.io/Doc/Java_3/02_KlassenUndObjekte/KlassenUndObjekte)

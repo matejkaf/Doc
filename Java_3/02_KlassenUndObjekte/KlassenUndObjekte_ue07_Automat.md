@@ -5,7 +5,7 @@ tags: [assignment,oop]
 
 
 
-**Übung (Getränkeautomat):**
+#### Übung (Getränkeautomat)
 
 Es soll ein Getränkeautomat für Kaffee und Tee als Klasse (`Automat`) implementiert werden.
 

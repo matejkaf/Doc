@@ -1,6 +1,6 @@
 ---
 title: Übung Bankkonto
-tags: [assignment,java]
+tags: [assignment,java,3AHITS]
 ---
 
 #### Übung (Bankkonto)
@@ -34,5 +34,5 @@ Schreibe eine Klasse zur Verwaltung eines Bankkontos. Es ist keine Benutzereinga
 
 ---
 
-
+[Skript zu Klassen und Objekte (Strg-Klick)](https://matejkaf.github.io/Doc/Java_3/02_KlassenUndObjekte/KlassenUndObjekte)
 

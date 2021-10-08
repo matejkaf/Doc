@@ -1,6 +1,6 @@
 ---
 title: Übung Klasse Datum
-tags: [assignment,java, challenge]
+tags: [assignment,java, challenge,3AHITS]
 use_math: true
 ---
 

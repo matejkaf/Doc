@@ -1,7 +1,8 @@
 ---
 title: Übung Komplexe Zahl
 description: Klasse zum Rechnen mit komplexen Zahlen. Beispiel mit Mandelbrotmenge und Apfelmännchen.
-tags: [assignment,java]
+tags: [assignment,java,3AHITS]
+use_math: 2
 ---
 
 #### Übung (Komplexe Zahl)
@@ -28,7 +29,7 @@ Die Mandelbrotmenge ist eine Teilmenge der komplexen Zahlen. Eine komplexe Zahl 
 - Und man beliebig oft die Formel $z=z^2+c$ anwenden kann ohne, dass $z$ sich um weiter als 2 vom Ursprung entfernt. Dabei startet man mit $z=0$ und setzt das sich ergebende neue $z$ wieder in die Formel ein.
 
  Aufgaben:
-- Schreibe ein Programm das von einer komplexen Zahl prüft ob diese in der Mandelbrotmenge ist. Konkret: während 100 Berechnungen der Formel ist die Distanz von $z$ zum Ursprung immer kleiner als 2.
+- Schreibe ein Programm das von einer komplexen Zahl prüft ob diese in der Mandelbrotmenge ist. Konkret: während 100 Berechnungen der Formel ist die Distanz von $z$ zum Ursprung immer kleiner als 2. Teste Werte im Bereich -2<x<1,1 und -1,1<y<1,1
 - Teste die Klasse `Complex` mit folgendem Programm das mit Hilfe der Klasse `Komplex` ein **Apfelmännchen** in der Konsole "zeichnet" – das Apfelmännchen ist eine Darstellung der Mandelbrotmenge.
 
 ```java

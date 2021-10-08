@@ -15,11 +15,11 @@ Buchstabe:
 ===============
 ```
 
-#### **Übung (Hangman – Start):**
+#### Übung (Hangman – Start)
 
-Ein zu erratendes Wort wird eingegeben. 
-Danach kann man durch Drücken von Tasten Buchstaben raten. 
-Buchstaben die im Wort vorkommen werden dabei aufgedeckt.
+- Ein zu erratendes Wort wird eingegeben. 
+- Danach kann man durch Drücken von Tasten Buchstaben raten. 
+- Buchstaben die im Wort vorkommen werden dabei aufgedeckt.
 
 Schrittweise Anleitung:
 
@@ -40,24 +40,21 @@ Wiederhole dies in einer Schleife.
 
 ---
 
-#### **Übung (Hangman – Wort erraten):**
+#### Übung (Hangman – Wort erraten)
 
-Nun muss erkannt werden ob das Wort fertig erraten wurde.
-Das Wort ist erraten wenn im String `rate` keine `'_'` Zeichen mehr sind. 
+Nun muss erkannt werden ob das Wort fertig erraten wurde. Das Wort ist erraten wenn im String `rate` keine `'_'` Zeichen mehr sind. 
 
 Tip: Schreibe dazu eine Funktion die zählt wie oft ein Zeichen vorkommt und baue diese ins Programm ein.
 
 ---
 
-#### **Übung (Hangman – Verdeckte Eingabe)**
+#### Übung (Hangman – Verdeckte Eingabe)
 
-Falls das verwendete System `getch()` unterstützt:
-
-Schreibe eine Funktion mit der das zu ratende Wort (verdeckt wie bei einem Passwort) eingegeben werden kann. Ergebnis im String `text`.
+Falls das verwendete System `getch()` unterstützt (nicht in replit.com!): Schreibe eine Funktion mit der das zu ratende Wort (verdeckt wie bei einem Passwort) eingegeben werden kann. Ergebnis im String `text`.
 
 ---
 
-#### **Übung (Hangman – Anzahl von Versuchen):**
+#### Übung (Hangman – Anzahl von Versuchen)
 
 Nach 10 erfolglosen Versuchen ist das Spiel verloren, verwende die Variable `int versuche=10`. 
 Zeige die Anzahl der noch verfügbaren Versuche an.
@@ -66,7 +63,7 @@ Tip: Zähle wie oft der eingegeben Buchstabe gefunden wurde. Bei 0 war der Versu
 
 ---
 
-#### **Übung (Hangman – Erweiterungen):**
+#### Übung (Hangman – Erweiterungen)
 
 Mögliche Erweiterungen:
 
@@ -76,8 +73,7 @@ ASCII-Code: `'A'=65`, `'Z'=90`, `'a'=97`, `'z'=122`.
 - Wird ein, bereits einmal geratener aber nicht im zu ratenden Text enthaltener, Buchstabe gedrückt, so soll von den verbleibenden Versuchen nichts abgezogen werden.
 Tipp: Bereits gedrückte Tasten in einem Array speichern – der Index ins Array ist der ASCII Code des Zeichens. 
 
-- Stelle (schrittweise) einen Galgen dar.
-Vorlage:
+- Stelle (schrittweise) einen Galgen dar. Vorlage:
 ```
      _________
      |/      |
