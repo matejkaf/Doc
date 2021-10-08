@@ -3,7 +3,7 @@ title: Übung Bankkonto
 tags: [assignment,java]
 ---
 
-**Übung (Bankkonto)**
+#### Übung (Bankkonto)
 
 Schreibe eine Klasse zur Verwaltung eines Bankkontos. Es ist keine Benutzereingabe erforderlich die Werte können fix im Programm vorgegeben werden.
 

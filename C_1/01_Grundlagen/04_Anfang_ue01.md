@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [assignment,C_1]
 ---
 
-#### **Übung (Ausgabe):**
+#### **Übung (Ausgabe)**
 
 Schreibe ein Programm das mit Hilfe **einer einzigen (!)** `printf` Anweisung folgendes ausgibt. Verwende: `\n`\, `\t`, `\"`, `\\`, und `%%` 
 
@@ -18,13 +18,13 @@ die HTL ist 100% OK
 
 ---
 
-#### **Übung (Rechteckumfang):**
+#### **Übung (Rechteckumfang)**
 
 Schreibe ein Programm das den Umfang eines Rechtecks berechnet. Mit Ein- und Ausgabe. Verwende `int` Variablen. Inklusive Benutzerführung (Bsp.: `Seite a eingeben: _`).
 
 ---
 
-#### **Übung (Variablennamen):**
+#### **Übung (Variablennamen)**
 
 Welche Variablennamen sind falsch?
 
@@ -40,7 +40,7 @@ Welche Variablennamen sind falsch?
 
 ---
 
-#### **Übung (Ausdrücke):**
+#### **Übung (Ausdrücke)**
 
 Schreibe folgende Ausdrücke als mathematische Formeln:
 
@@ -51,7 +51,7 @@ Schreibe folgende Ausdrücke als mathematische Formeln:
 
 ---
 
-#### **Übung (Zuweisungen):**
+#### **Übung (Zuweisungen)**
 
 Welche der folgenden Zuweisungen ist falsch?
 
@@ -65,7 +65,7 @@ Welche der folgenden Zuweisungen ist falsch?
 
 ---
 
-#### **Übung (Mock I):**
+#### **Übung (Mock I)**
 
 Suche den Fehler in folgendem Programmausschnitt.
 
@@ -80,7 +80,7 @@ printf(Das Ergebnis ist: \n"%d)
 
 ---
 
-#### **Übung (Mock II):**
+#### **Übung (Mock II)**
 
 Suche den Fehler in folgendem Programmausschnitt.
 

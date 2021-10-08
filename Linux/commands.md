@@ -41,6 +41,8 @@ title: Linux Kommandos
 
 `tee` – read from standard input and write to standard output and files
 
+`basename`, `dirname` – return filename or directory portion of pathname
+
 
 
 ## ls

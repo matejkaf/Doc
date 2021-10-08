@@ -40,6 +40,8 @@ Vorgehen der Angreifer kann in **Phasen** gegliedert werden. Ein **IT-Sicherheit
 
 - **(4) Maintaining access**  – sich im System festsetzen – auch: **Post exploitation** Phase
 
+  - Systemprozesse infizieren
+  - In Bootprozess integrieren
   - Backdoors installieren
   - Weitere Systeme anvisieren
   - Privilege escalation (erhöhte Benutzerrechte erlangen)
@@ -52,17 +54,17 @@ Vorgehen der Angreifer kann in **Phasen** gegliedert werden. Ein **IT-Sicherheit
   
   
 
-![IMG_8DF01DADCDAB-1](fig/IMG_8DF01DADCDAB-1.jpeg)
+![IMG_8DF01DADCDAB-1](../../../../../Desktop/IMG_8DF01DADCDAB-1.png)
 
 
 
 # Variante 2 (iX Zeitschrift)
 
-![Die Cyber-Killchain](fig/Die Cyber-Killchain.jpeg)
+![Die Cyber-Killchain](../../../../../Desktop/Die Cyber-Killchain.png)
 
 # Variane 3 (metasploit)
 
-![image-20210928182411376](fig/image-20210928182411376.png)
+![image-20210928182411376](../../../../../Desktop/image-20210928182411376.png)
 
 [Quelle](https://docs.rapid7.com/metasploit/)
 

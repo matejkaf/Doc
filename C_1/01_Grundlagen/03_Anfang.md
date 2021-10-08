@@ -149,6 +149,14 @@ Kann mit Text gemischt werden.
 printf("Noch %d Minuten bis zur Pause\n",min);
 ```
 
+Weiters:
+
+```c++
+int x=3;
+int d=2*x;
+printf("das Doppelte von %d ist %d\n", x, d );
+```
+
 
 
 

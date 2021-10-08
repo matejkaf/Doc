@@ -5,7 +5,7 @@ tag: [java, oop]
 tags: [assignment,3AHITS]
 ---
 
-**Übung (Schulklasse)**
+#### Übung (Schulklasse)
 
 - Erstelle eine Klasse `Schulklasse` mit Instanzvariablen für Anzahl der Schüler, Name des Klassenvorstands, Anzahl der Lehrer.
 - Erstellen einen Konstruktor mit dem alle Instanzvariablen gesetzt werden können.

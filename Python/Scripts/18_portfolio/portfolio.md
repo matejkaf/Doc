@@ -7,7 +7,8 @@
 Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 
 - Bibliotheken installieren
-    ```
+
+    ```sh
     $ sudo python3 -m pip install pandas
     $ sudo python3 -m pip install matplotlib
     $ sudo python3 -m pip install pandas_datareader
@@ -54,10 +55,12 @@ Aktueller Stand:
 
 
 
-## 2021/Q2
-3000 --> Savity Konservativ
+## 2021/Q3
+
+2000 --> Savity Konservativ
+1000 --> Savity Aggressiv
 3000 --> Hello (OK)
-7000 TopZins --> Verrechnungskonto
+7000 von TopZins --> Verrechnungskonto
 
 ## 2021/Q2
 

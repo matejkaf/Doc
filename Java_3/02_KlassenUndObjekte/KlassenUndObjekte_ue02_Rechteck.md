@@ -5,7 +5,7 @@ tag: [java, oop]
 tags: [assignment,3AHITS]
 ---
 
-**Übung (Rechteck)**
+#### Übung (Rechteck)
 
 - Eine Klasse Rechteck mit Seiten `a` und `b` und einem Konstruktor mit dem alle Instanzvariablen gesetzt werden können. Die Seitenlängen können Kommazahlen sein.
 - Ausgabe von `a` und `b` (dafür `toString` implementieren)

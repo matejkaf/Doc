@@ -3,8 +3,8 @@ title: Übung Klasse für Uhrzeit
 tags: [assignment,java]
 ---
 
+#### Übung (Uhr)
 
-**Übung (Uhr):** 
 Implementiere eine Klasse `Time` die eine Uhrzeit in Stunden (24) und Minuten speichert.
 
 Weitere Aufgaben:
@@ -13,7 +13,7 @@ Weitere Aufgaben:
   - 
     einen Default Konstruktor (setzt auf `7:50`), 
   - 
-    einen Konstruktor mit Minuten als Parameter (Achtung: kann $\ge 60$ sein), und 
+    einen Konstruktor mit Minuten als Parameter (Achtung: kann ≥60 sein), und 
   - 
     einen Konstruktor mit dem Stunden und Minuten gesetzt werden. 
 
@@ -28,7 +28,10 @@ Weitere Aufgaben:
 
 ---
 
-**Übung (Uhr Erweiterung):** 
+
+
+#### Übung (Uhr Erweiterung)
+
 Erweitere die Klasse `Time`.
 
 Es soll eine Umschaltung zwischen 12 und 24 Stunden Modus möglich sein.
@@ -39,6 +42,5 @@ Die Umschaltung zwischen den Modi geschieht durch die Methoden `setTo12()` bzw. 
 Unmittelbar nach der Instanzierung soll der 24 Stunden Modus verwendet werden.
 
 ---
-
 
 
