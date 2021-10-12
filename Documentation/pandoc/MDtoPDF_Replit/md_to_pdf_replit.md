@@ -319,7 +319,7 @@ HOME=/home/runner
 
 Das ist ein Test \(x^2\) und so
 
-\hypertarget{uxfcbung-schreibe-die-ersten-11-zweierpotenzen-an}{%
+\hypertarget{uxfcbung-schreibe-die-ersten-11-zweierpotenzen-an}{ %
 \paragraph{Übung (Schreibe die ersten 11 Zweierpotenzen
 an)}\label{uxfcbung-schreibe-die-ersten-11-zweierpotenzen-an}}
 
@@ -341,7 +341,7 @@ an)}\label{uxfcbung-schreibe-die-ersten-11-zweierpotenzen-an}}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{uxfcbung-wandle-binuxe4r-nach-dezimal}{%
+\hypertarget{uxfcbung-wandle-binuxe4r-nach-dezimal}{ %
 \paragraph{Übung (Wandle Binär nach
 Dezimal)}\label{uxfcbung-wandle-binuxe4r-nach-dezimal}}
 
@@ -364,7 +364,7 @@ Diese Nummerierung wird von jekyll nicht unterstützt.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{uxfcbung-wandle-dezimal-nach-8-bit-binuxe4r}{%
+\hypertarget{uxfcbung-wandle-dezimal-nach-8-bit-binuxe4r}{ %
 \paragraph{Übung (Wandle Dezimal nach 8-Bit
 Binär)}\label{uxfcbung-wandle-dezimal-nach-8-bit-binuxe4r}}
 
