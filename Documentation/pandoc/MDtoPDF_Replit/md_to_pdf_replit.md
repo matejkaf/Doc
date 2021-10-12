@@ -201,8 +201,6 @@ HOME=/home/runner
 
 \usepackage{scrlayer-scrpage} % Anpassen von Kopf-/Fußzeile
 \pagestyle{scrheadings} % Vordefinierter Stil (Kopf-/Fußzeile jeweils 3-teilig)
-\usepackage{scrlayer-scrpage}
-\pagestyle{scrheadings}
 \lohead[]{\color[gray]{0.5}$title$}
 \cohead[]{\color[gray]{0.5}3AHITS}
 \rohead[]{\color[gray]{0.5}$subtitle$}
