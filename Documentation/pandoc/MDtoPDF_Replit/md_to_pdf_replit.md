@@ -284,12 +284,12 @@ HOME=/home/runner
 
 % itemize auf compactitem umdefinieren 
 % \usepackage{paralist}
-% \renewenvironment{itemize}{\begin{compactitem}[\textbullet]}{%
+% \renewenvironment{itemize}{\begin{compactitem}[\textbullet]}{ %
 %     \end{compactitem}\ignorespacesafterend% as suggested above
 % }
 
 % enumerate auf compactenum umdefinieren 
-% \renewenvironment{enumerate}{\begin{compactenum}[(a)]}{%
+% \renewenvironment{enumerate}{\begin{compactenum}[(a)]}{ %
 %     \end{compactenum}\ignorespacesafterend% as suggested above
 % }
 
