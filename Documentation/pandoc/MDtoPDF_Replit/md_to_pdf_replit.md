@@ -3,8 +3,6 @@ title: pandoc und LaTeX in REPL
 tags: [3AHITS]
 ---
 
-
-
 * TOC
 {:toc}
 
