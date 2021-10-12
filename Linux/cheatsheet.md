@@ -90,7 +90,7 @@ arp -a -n
 # `-n`, `--numeric` ... shows numerical addresses instead of trying to determine symbolic host, port or user names
 ```
 
-geht auch unter Windows)
+geht auch unter Windows
 
 
 

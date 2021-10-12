@@ -262,7 +262,7 @@ String interpolation (Python ≥3.6):
 print(f'{x*2} Test')
 ```
 
-Formattierung
+mit Formattierung
 
 ```python
 '{:02}_{}'.format(3, 'sometext')
@@ -292,7 +292,7 @@ print(chr(1200)) 	# Ұ
 [Google for Education](https://developers.google.com/edu/python/lists)
 
 ```python
-a = ['spam', 'eggs', 100, 1234] # list a[0]
+a = ['spam', 'eggs', 100, 1234]
 print(a[0])
 print(a)
 for el in a:
@@ -343,7 +343,7 @@ print(a)
 [3*x for x in vec if x > 3]
 ```
 
-`for` loop mit Index `enumerate`:
+`for` loop mit Index `enumerate` (Erzeugt lfd.Nr./Wert Tuple):
 
 ```python
 presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson"]
@@ -357,7 +357,8 @@ for num, name in enumerate(presidents, start=1):
 ```python
 # nested lists
 q = [2, 3]
-p = [1, q, 4] p[1]
+p = [1, q, 4] 
+p[1]
 p[1][0]
 ```
 
@@ -423,6 +424,8 @@ for k, v in dict.items():
 ```
 
 
+
+Komplexere Datenstruktur
 
 ```python
 params = {"id":33,"method":"authenticate","params":{"user":"matejkafr", "password":"mypass", "client":"CLIENT"},"jsonrpc":"2.0"}
@@ -594,9 +597,9 @@ f = open('path','r')
 
 contents = f.read() # all content
 
-line = f.readline()
+line = f.readline() # line by line
 
-lines = f.readlines()
+lines = f.readlines() # list of lines
 for line in lines:
   print(line)
 
@@ -852,6 +855,8 @@ print(random.randrange(1, 10))
 
 ## Kommandozeilen Argumente
 
+Direkter Zugriff auf `sys.argv`
+
 ```python
 import sys
 sys.argv # array
@@ -861,12 +866,14 @@ x = " ".join(sys.argv[1:])
 
 ```
 
-[argparse](https://docs.python.org/3/library/argparse.html)
+Library [argparse](https://docs.python.org/3/library/argparse.html)
 
 ```python
 import argparse
 
 parser = argparse.ArgumentParser(description='Tool Description.')
+
+# configure arguments and options with 'add_argument'
 
 # positional arguments
 parser.add_argument("fileName", help="file name")
@@ -882,22 +889,60 @@ parser.add_argument("--boolTest", help="boolean test", action="store_true")
 # shorthand with default value and specific type
 parser.add_argument("-n", "--number", help="a number (default: 5)", default=5, type=int)
 
+# parse arguments and options
 args = parser.parse_args()
 
 #access arguments
 print(args)
 print(args.fileName)
 
+# test options
 if args.boolTest:
   print("is True")
 else:
   print("is NOT True")
 
-# test if an optional argument is set
+# option with argument
 if(args.fromdate):
   print(f"set to '{args.fromdate}''")
   print(type(args.fromdate)) # always string!
 ```
+
+Mit Option `-h, --help` wird ein automatisch erzeugter Hilfetext angezeigt.
+
+Wenn die Argumente lesbare Files sein sollen ([Multiple files for one argument in argparse](https://stackoverflow.com/a/27008413)). Z.B. Verhalten von `cat file1.txt file2.txt`
+
+```python
+parser.add_argument('file', type=argparse.FileType('r'), nargs='+')
+args = parser.parse_args()
+print(args.files)
+```
+
+Fehlermeldung wenn eine Datei nicht lesbar ist. Bearbeitung:
+
+```python
+args = parser.parse_args()
+for f in args.files:
+  print(f)
+  for line in f:
+    print(line)
+```
+
+Mit `nargs='+'` muss mindestens ein Argument angegeben werden (sonst Fehlermeldung). `nargs='*'` ermöglicht auch 0 Argumente.
+
+Lesen von stdin wenn kein Argument angegeben:
+
+```python
+parser.add_argument('files', type=argparse.FileType('r'), nargs='*', default=[sys.stdin])
+```
+
+
+
+
+
+
+
+
 
 Links
 

@@ -31,18 +31,16 @@ Info: Die Installation von Anaconda ist nicht unbedingt notwendig
 - Für 3 Jahre
     - Q3 2020 - Q3 2023
     - 12 Quartale
-- Hello! von 200.000,- auf 275.000,- (ca. +75.000,-)
-    - 70% High-Risk / 30% Low-Risk (max. kumm. Verlust 45%)
-    - Kontinuierliches (Quartalsweise) Rebalancing innerhalb von 2 Jahren.
-    - Auf 3 Jahre: **Plus 6.000,- pro Quartal** (12x6000,– = 72.000,–)
-- Savity: 500 – 1.500 pro Monat
-- Einzeltitel komplett abbauen
-- Gehaltskonto: 15. des letzen Monats im Quartal Abschöpfen in ganze 1000,– >10.000,– bleiben am Konto
-  
+
+Oktober, 2021
+Hello! Stand 175.000,-
+    - Ziel: 70% High-Risk / 30% Low-Risk (max. kumm. Verlust 45%)
+
+Savity Aggressiv   52.000,- (+ 1.000,- mtl.)
+Savity Konservativ 25.100,- (+ 1.000,- mtl.)
+
+- Gehaltskonto: 15. des letzen Monats im Quartal Abschöpfen in ganze 1000,– >10.000,– bleiben am Konto  
     -  1 Teil Savity / 1 Teil Hello / 1 Teil Fill Up Fond
-
- 
-
 
 
 ## Fill Up Fond
