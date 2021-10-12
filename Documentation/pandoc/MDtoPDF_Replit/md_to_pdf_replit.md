@@ -185,6 +185,7 @@ HOME=/home/runner
 
 \usepackage{hyperref} % für links
 \usepackage{amsmath}  % Mathematische Formeln
+\usepackage{color}
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % Seitenränder und Textgröße
@@ -209,37 +210,21 @@ HOME=/home/runner
 % lcr: left center right
 % o: odd pages, bei einseitigen Dokumenten gibt es nur odd pages
 
-
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\usepackage{color}
-\definecolor{color-gray-25}{gray}{0.25}
-\definecolor{color-gray-40}{gray}{0.4}
-\definecolor{color-gray-50}{gray}{0.5}
-\definecolor{color-gray-75}{gray}{0.75}
-\definecolor{listingbackground}{gray}{0.92}
-\definecolor{textblue}{RGB}{0, 91, 230}
-\definecolor{lightyellow}{RGB}{255,255, 190}
+% Beliebige Farben
+% \lohead[]{\color[rgb]{1,0,0}$title$}
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \usepackage{listings}
 \lstset{
-	frame=single,
-	language=c++, 
-	tabsize=4,
+  frame=single, 
+  tabsize=4,
   breaklines=true,
-	backgroundcolor=\color{listingbackground},
-	showstringspaces=false,
-	basicstyle=\ttfamily\footnotesize,
-	keywordstyle=\color{blue},
-	commentstyle=\color{color-gray-40},
-	emphstyle=\color{magenta},
-	columns=fullflexible,		% damit keine extra Leerzeichen bei copy/paste
-	escapeinside={(*@}{@*)},
-	morekeywords={String},
-	extendedchars=true,
-    literate={ä}{{\"a}}1 {Ä}{{\"A}}1 {ö}{{\"o}}1 {Ö}{{\"O}}1 {ü}{{\"u}}1 {Ü}{{\"U}}1 {ß}{{\ss}}1, % no UTF8 support in listings
+  backgroundcolor=\color[gray]{0.97},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color[rgb]{0,0.25,0.95},
+  commentstyle=\color[gray]{0.6},
+  columns=fullflexible,		% damit keine extra Leerzeichen bei copy/paste
 }
-
 
 %
 % Pandoc Sepcial
@@ -273,7 +258,6 @@ HOME=/home/runner
 
 \usepackage[labelformat=empty]{caption}
 
-
 % pandoc braucht \tightlist
 \providecommand{\tightlist}{ %
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -298,114 +282,27 @@ HOME=/home/runner
 % Title
 % https://golatex.de//wiki/Titelseite_mit_KOMA-Script
 
-\title{Title}
+$if(title)$
+\title{$title$}
+$endif$
 
-\subtitle{Subtitle}
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
 
 \date{} % blank the date
 
 
-
-
 %--------------------------------------------------------------------------------
-
 \begin{document}
 
 %\maketitle
 
-Das ist ein Test \(x^2\) und so
-
-\hypertarget{uxfcbung-schreibe-die-ersten-11-zweierpotenzen-an}{ %
-\paragraph{Übung (Schreibe die ersten 11 Zweierpotenzen
-an)}\label{uxfcbung-schreibe-die-ersten-11-zweierpotenzen-an}}
-
-\[
-\begin{aligned}
-    2^0 &= 1 \\        
-    2^1 &= 2 \\
-    2^2 &= 4 \\
-    2^3 &= 8 \\
-    2^4 &=  \\
-    2^5 &=  \\
-    2^6 &=  \\
-    2^7 &=  \\
-    2^8 &=  \\
-    2^9 &=  \\
-    2^{10} &=  \\
-\end{aligned}
-\]
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{uxfcbung-wandle-binuxe4r-nach-dezimal}{ %
-\paragraph{Übung (Wandle Binär nach
-Dezimal)}\label{uxfcbung-wandle-binuxe4r-nach-dezimal}}
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
-\tightlist
-\item
-  \(01011101_{2}=\)
-\item
-  \(11011110_{2}=\)
-\item
-  \(11000001_{2}=\)
-\item
-  \(10010011_{2}=\)
-\item
-  \(01110000_{2}=\)
-\end{enumerate}
-
-Diese Nummerierung wird von jekyll nicht unterstützt.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{uxfcbung-wandle-dezimal-nach-8-bit-binuxe4r}{ %
-\paragraph{Übung (Wandle Dezimal nach 8-Bit
-Binär)}\label{uxfcbung-wandle-dezimal-nach-8-bit-binuxe4r}}
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
-\tightlist
-\item
-  51
-\item
-  103
-\item
-  215
-\item
-  198
-\item
-  253
-\end{enumerate}
-
-\begin{lstlisting}[language=Java]
-if( test== 5) {
-    System.out.println("Hurra\n");
-}
-\end{lstlisting}
-
-\begin{lstlisting}[language=HTML]
-Funktioniert mit jekyll HTML:
-![bla](fig/image-20210910165854169.png){: width="250" }
-ohne den Doppelpunkt gehts nicht in Jekyll aber in Pandoc (und vice versa)
-Für Pandoc
-![bla](fig/image-20210910165854169.png){ width="250" }
-\end{lstlisting}
-
-Mit Bildunterschrift:
-
-\begin{figure}
-\centering
-\includegraphics[width=4.16667in,height=\textheight]{fig/image-20210910165854169.png}
-\caption{bla}
-\end{figure}
-
-Ohne Bildunterschrift
-
-\includegraphics[width=4.16667in,height=\textheight]{fig/image-20210910165854169.png}
+$body$
 
 \end{document}
+
+
 
 ```
 

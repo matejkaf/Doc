@@ -7,6 +7,26 @@ use_math: true
 
 Das ist ein Test $x^2$ und so 
 
+```c++
+// Kommentar
+if(x==3)
+{
+  printf("WOW WOW\n");
+}
+// ßöü
+```
+
+inline `int x=42;` code
+
+```sh
+FILE=$1
+# strip of ".md" at the end and append ".pdf"
+OUTFILE=${FILE%.md}.pdf
+echo producing $OUTFILE ...
+pandoc $FILE --from=markdown --template=pandoc_latex.template --pdf-engine=xelatex --listings -o $OUTFILE
+echo $OUTFILE ready
+```
+
 #### Übung (Schreibe die ersten 11 Zweierpotenzen an)
 
 $$
