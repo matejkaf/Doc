@@ -258,14 +258,14 @@ HOME=/home/runner
 % -- that they will get their normal width if they fit onto the page, but
 % -- are scaled down if they would overflow the margins.
 \makeatletter
-\def\ScaleWidthIfNeeded{%
+\def\ScaleWidthIfNeeded{ %
  \ifdim\Gin@nat@width>0.7\linewidth
     0.7\linewidth
   \else
     \Gin@nat@width
   \fi
 }
-\def\ScaleHeightIfNeeded{%
+\def\ScaleHeightIfNeeded{ %
   \ifdim\Gin@nat@height>0.7\textheight
     0.7\textheight
   \else
@@ -279,7 +279,7 @@ HOME=/home/runner
 
 
 % pandoc braucht \tightlist
-\providecommand{\tightlist}{%
+\providecommand{\tightlist}{ %
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % itemize auf compactitem umdefinieren 
