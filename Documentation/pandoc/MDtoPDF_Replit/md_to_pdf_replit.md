@@ -187,11 +187,12 @@ HOME=/home/runner
 \usepackage{amsmath}  % Mathematische Formeln
 \usepackage{color}
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-% Seitenränder und Textgröße
 \setlength{\parindent}{0ex}
 \setlength{\parskip}{0ex}
 
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Seitenränder und Textgröße
 \usepackage{anysize} % mehr Text auf eine Seite
 \marginsize{2cm}{1cm}{0.5cm}{1cm}  % {left}{right}{top}{bottom}
 %\addtolength{\headsep}{-15pt}

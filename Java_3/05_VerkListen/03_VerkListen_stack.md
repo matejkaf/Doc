@@ -1,9 +1,10 @@
 ---
 title: Stack
-tags: [lecture]
+subtitle: Anwendung verkettete Liste
+tags: [lecture, 4BHELS]
 ---
 
-Häufiger Anwendungsfall – Zwischenspeichern von Datenobjekten:
+Häufiger Anwendungsfall – **Zwischenspeichern** von Datenobjekten die man zu einem späteren Zeitpunkt wieder braucht:
 
 - Ein einzelnes Datenobjekt wird gelesen
 - Das Datenobjekt wird zwischengespeichert (gemeinsam mit anderen, bereits gespeicherten Datenobjekten)
@@ -12,7 +13,6 @@ Häufiger Anwendungsfall – Zwischenspeichern von Datenobjekten:
 	
 	- Last-In / First-Out  ⟶ Stack (LiFo)
 	- First-In / First-Out ⟶ Queue (FiFo)
-	- höchste Priorität zuerst ⟶ Priority Queue
 	
 - Speichern und Entnehmen kann in beliebiger Reihenfolge auftreten
 
@@ -89,8 +89,7 @@ Zur Verwendung dieser Klasse genügt zu wissen:
 - Welche Methoden es gibt (push, pop, empty) und
 - wie sich diese verhalten (Stack/LIFO).
 
-Daher kann die Klasse die eigentliche Implementierung vor dem Anwender verbergen.
-D.h. um diese Klasse anwenden zu können muss man nicht wissen, dass der Stack als verkettete Liste implementiert wurde.
+Daher kann die Klasse die eigentliche Implementierung vor dem Anwender verbergen. D.h. um diese Klasse anwenden zu können muss man nicht wissen, dass der Stack als verkettete Liste implementiert wurde.
 
 
 Dies ist ein allgemeines Prinzip des objekt-orientierten Programmierens und wird **information hidding** (Geheimnisprinzip) genannt.
@@ -110,7 +109,7 @@ Welcher Teil einer Klasse öffentlich und was verborgen ist wird ausgedrückt du
 
 Arithmetischer Ausdruck ist als String vorgegeben und soll ausgerechnet werden. Vereinfachung: Vollständig geklammert, d.h. aus `1+2+3` wird `1+(2+3)`.
 
-**Problem:** Man muss sich Zwischenergebnisse für später merken. Das geht mit Stacks, für diese Aufgabenstellung ist der Dijkstra Algorithmus eine bekannte Lösung, dieser verwender 2 Stacks, einen für die Operanden (Zahlen) und einen für die Operatoren.
+**Problem:** Man muss sich Zwischenergebnisse für später merken. Das geht mit Stacks, für diese Aufgabenstellung ist der Dijkstra Algorithmus eine bekannte Lösung, dieser verwendet 2 Stacks, einen für die Operanden (Zahlen) und einen für die Operatoren.
 
 **Dijkstra Algorithmus – Ablauf**
 
@@ -152,6 +151,7 @@ EBNF: Syntax von Programmiersprachen ([JavaBNF](https://cs.au.dk/~amoeller/RegAu
 
 
 
+---
 
 
 

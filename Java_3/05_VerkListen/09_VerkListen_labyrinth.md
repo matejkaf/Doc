@@ -55,7 +55,7 @@ Je nachdem ob der Bag als Stack oder als Queue implementiert wird ergibt sich un
 
 ---
 
-**Übung (Labyrinth):**
+#### Übung (Labyrinth)
 
 Ein Labyrinth ist gegeben durch ein Array aus Strings. Die Wände werden durch \textsf{\#} markiert. Implementiere die Suche eines Wegs von S nach Z. 
 Verwende zuerst einen Stack zum Speichern noch nicht besuchter Felder, dann eine Queue.
@@ -84,3 +84,6 @@ String = laby[] {
 	"#########################" 
 	};
 ```
+
+---
+

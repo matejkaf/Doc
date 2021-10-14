@@ -41,7 +41,7 @@ node.next=start;
 
 #### Übung (Einfach verkettete Liste II) {#liste2}
 
-Implementiere folgende Aufgabenstellung:
+Erweitere die Klasse `List` um folgende Aufgabenstellung:
 
 - 
 Schreibe eine Methode `count` mit der ermittelt werden kann wie viele Knoten sich in der Liste befinden.
@@ -69,6 +69,8 @@ node.next = newNode;
 
 Aufgabenstellungen:
 
+Erweitere die Klasse `List`.
+
 - Schreibe eine Methode `insert` mit deren Hilfe ein neuer Knoten an beliebiger Stelle eingefügt wird. Übergabeparameter sind die Knotennnummer k und eine Referenz auf den einzufügenden Knoten. Der neu eingefügte Knoten nimmt die Position k ein.
 k=0 ist die Positionsnummer des vordersten Knotens (Achtung: k=0 ist ein Edge-Case).
 - Die Methode  `append(Node newNode)` soll einen Knoten ans Ende der Liste anfügen.
@@ -79,9 +81,9 @@ Es gibt keinen Rückgabewert.
 
 ---
 
-#### Übung (Einfach verkettete Liste II) {#liste4}
+#### Übung (Einfach verkettete Liste – set) {#liste4}
 
-Implementiere folgende Aufgabenstellung:
+Implementiere in der Klasse `List` folgende Aufgabenstellung:
 
 - Methode `set(int k, char c)` die den im k-ten Knoten gespeicherten Buchstaben überschreibt. Hinweis: Verwende die Methode `get`.
 - Methode `set(int k, Node newNode)` die den k-ten Knoten durch einen neuen Knoten ersetzt. Hinweis: es muss die `next` Referenz des Vorgängerknotens verändert werden.
@@ -93,7 +95,7 @@ Implementiere folgende Aufgabenstellung:
 
 #### Übung (Suchen eines Werts) {#liste5}
 
-Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert soll als Parameter übergeben werden. Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält. Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
+Implementiere in der Klasse `List` Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert soll als Parameter übergeben werden. Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält. Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
 
 
 - `findFirst` – Es soll das erste Vorkommen des Werts gesucht werden.
@@ -107,9 +109,9 @@ Implementiere Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert
 Überlege welche Auswirkungen der folgende Quelltext auf eine verkettete Liste hat.
 
 ```java
-Node m = start.next.next;
+Node m = start.next;
 start.next = m.next;
-m.next = start.next;
+m.next = start;
 start = m;
 ```
 
@@ -120,7 +122,7 @@ start = m;
 
 #### Übung (Erweiterungen) {#liste5}
 
-Implementiere weiters:
+Implementiere in der Klasse `List` weiters:
 
 - Methode `removeLast` die den letzten Knoten aus der Liste entfernt.
 - Schreibe eine Methode `remove(char c)` mit der ein Knoten mit einem bestimmten Wert aus der Liste gelöscht werden kann. Die Methode soll `false` liefern falls der Wert nicht gefunden wurde, andernfalls `true`. Es soll nur das erste Vorkommen des Werts gesucht werden.

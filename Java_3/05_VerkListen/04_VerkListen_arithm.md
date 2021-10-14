@@ -1,8 +1,7 @@
 ---
 title: Stack
 subtitle: Auswerten arithmetischer Ausdrücke
-
-tags: [assignment]
+tags: [assignment,4BHELS]
 ---
 
 Die **Stack** Datenstruktur wird in Aufgaben der Informatik häufig benötigt. Zum Beispiel bei der Auswertung von **arithmetischen Ausdrücken**.
@@ -11,22 +10,22 @@ Arithmetische Ausdrücke beschreiben Berechnungen mittels der arithmetischen Ope
 
 Du hast die Aufgabe einen einfachen "Taschenrechner" zu programmieren der es erlaubt solche Ausdrücke einzugeben und das Ergebnis berechnet.
 
-Ein Stack ist in der Informatik eine sogenannte Datenstruktur, also ein Objekt das andere Objekte auf eine bestimmte Art und Weise speichert bzw. organisiert.
+Ein **Stack** ist in der Informatik eine sogenannte **Datenstruktur**, also ein Objekt das andere Objekte auf eine bestimmte Art und Weise speichert bzw. organisiert.
 
-Ein Stack speichert Daten in einer bestimmten Reihenfolge. Datenobjekte können einzeln einem Stack hinzugefügt und einzeln aus diesem entnommen werden. Die Schnittstelle eines Stacks besteht aus 2 Operationen:
+Ein Stack speichert Daten in einer bestimmten **Reihenfolge**. Datenobjekte können einzeln einem Stack hinzugefügt und einzeln aus diesem entnommen werden. Die Schnittstelle eines Stacks besteht aus 2 Operationen:
 
 - `push`, und 
 - `pop`
 
-Mit push wird ein neues Objekt auf dem Stack abge- legt. Mit pop wird das jüngste vorhandene Objekt vom Stack genommen.
+Mit **push** wird ein neues Objekt auf dem Stack abge- legt. Mit **pop** wird das jüngste vorhandene Objekt vom Stack genommen.
 
-Einen Stack kann man sich daher am besten als einen Stapel vorstellen, oben wird jeweils ein Objekt abgelegt (push) oder weggenommen (pop).
+Einen Stack kann man sich daher am besten als einen **Stapel** vorstellen, oben wird jeweils ein Objekt abgelegt (push) oder weggenommen (pop).
 
 
 
 ---
 
-#### **Übung (Stack für char):**
+#### **Übung (Stack für char)**
 
 Schreibe eine Klasse `StackChar` mit der Zeichen auf einem Stack abgelegt und von diesem wieder entnommen werden können. Verwende eine verkettete Liste.
 
@@ -50,9 +49,11 @@ public class StackChar {
 
 ---
 
-#### **Übung (Stack für int):**
+#### **Übung (Stack für int)**
 
 Wie Übung vorher, aber für `int`. Verwende zur Implementierung eine ArrayList (statt der verketteten Liste).
+
+---
 
 
 
@@ -76,7 +77,9 @@ Diese Aufgabe kann mit 2 Stacks gelöst werden. Ein Stack speichert die Zahlen 
 
 
 
-#### **Übung (Dijkstra Auswertung):**
+---
+
+#### Übung (Dijkstra Auswertung)
 
 Ziel: Auswerten (*evaluate*=Berechnen) von z.B.:
 
@@ -111,7 +114,7 @@ Am Papier durchprobieren für:
 
 ---
 
-#### **Übung (Erweiterte Klammerung):**
+#### Übung (Erweiterte Klammerung)
 
 Erweiterung – weniger Klammern notwendig: 
 
@@ -132,7 +135,7 @@ Anleitung:
 
 ---
 
-#### **Übung (Operator-Reihenfolge):**
+#### Übung (Operator-Reihenfolge)
 
 Berücksichtigen der Operator Reihenfolge. 
 
@@ -153,7 +156,7 @@ Prioritäten:
 
 ---
 
-#### **Übung (Zahlen):**
+#### Übung (Zahlen)
 
 Ergänzungen:
 
@@ -164,7 +167,7 @@ Ergänzungen:
 
 ---
 
-#### **Übung (Hochzahlen und Funktionen):**
+#### Übung (Hochzahlen und Funktionen)
 
 Ergänzungen:
 

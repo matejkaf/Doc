@@ -4,35 +4,43 @@ subtitle: bash scripting
 tags: [lecture,3AHITS]
 ---
 
+[Ryans Tutorials – Bash Scripting Tutorial - 2. Variables](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php)
 
+```sh
+$ myvariable=Hello
+$ anothervar=Fred
+$ echo $myvariable $anothervar
+```
 
-# Variablen
-
-[Ryans Tutorials – Bash Scripting Tutorial - 2. Variables](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php#activities)
-
-
+Achtung: Keine Leerzeichen bei `=`
 
 ```bash
-#!/bin/bash
-# A simple variable example
-myvariable=Hello
-anothervar=Fred
-echo $myvariable $anothervar
-echo
 sampledir=/etc
 ls $sampledir
 ```
 
+```bash
+DIR1=hallo
+DIR2=welt
+FILE=test
+EXTENSION=txt
+mkdir $DIR1
+mkdir $DIR1/$DIR2
+touch $DIR1/$DIR2/$FILE.$EXTENSION
+FILE_PATH=$DIR1/$DIR2/$FILE.$EXTENSION
+echo "nur ein test" > $FILE_PATH
+more $FILE_PATH
+```
 
 
-## Quotes
 
-Leerzeichen dienen oft als Trenner zwischen mehreren Teilen eines Kommandos.
-Daher Variablenwerte mit Hochkomma definieren wenn diese Leerzeichen enthalten
+# Quotes
+
+Leerzeichen dienen oft als Trenner zwischen mehreren Teilen eines Kommandos. Daher Variablenwerte mit Hochkomma definieren wenn diese Leerzeichen enthalten.
 
 ```bash
-myvar="Hallo Welt"
-echo $myvar
+MYVAR="Hallo Welt"
+echo $MYVAR
 ```
 
 Es gibt einfache (single quotes) und doppelte Hochkomma (double quotes).
@@ -51,13 +59,17 @@ newvar='More $myvar'
 echo $newvar
 ```
 
-curly braces: Wenn kein Leerzeichen nach der Variable
+
+
+# curly braces
+
+Wenn kein Leerzeichen/Trennzeichen nach der Variable
 
 Wenn der Name der Variable sonst nicht vom umgebenden Text abgetrennt werden kann.
 
 ```bash
-name="myfile"
-echo $name_001
-echo ${name}_001
+NAME="myfile"
+echo $NAME_001
+echo ${NAME}_001
 ```
 

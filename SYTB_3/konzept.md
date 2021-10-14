@@ -12,5 +12,7 @@ subtitle: SYTB
 # Übungen
 
 - shell Programmierung
+- make
+- Markdown --> LaTeX --> PDF generieren
 - MIPS Assembler
 
