@@ -1,10 +1,10 @@
 ---
 title: Programmieren Anfang
 subtitle: Übungen
-tags: [assignment,C_1]
+tags: [assignment,C_1,1CHELS]
 ---
 
-#### **Übung (Ausgabe)**
+#### Übung (Ausgabe)
 
 Schreibe ein Programm das mit Hilfe **einer einzigen (!)** `printf` Anweisung folgendes ausgibt. Verwende: `\n`\, `\t`, `\"`, `\\`, und `%%` 
 
@@ -18,7 +18,7 @@ die HTL ist 100% OK
 
 ---
 
-#### **Übung (Rechteckumfang)**
+#### Übung (Rechteckumfang)
 
 Schreibe ein Programm das den Umfang eines Rechtecks berechnet. Mit Ein- und Ausgabe. Verwende `int` Variablen. Inklusive Benutzerführung (Bsp.: `Seite a eingeben: _`).
 

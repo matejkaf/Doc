@@ -6,7 +6,7 @@ tags: [assignment,C_1]
 
 
 
-#### **Übung (Kreisumfang):**
+#### Übung (Kreisumfang)
 
 Schreibe ein Programm das den Umfang eines Kreises berechnet. Der **Radius** kann eine **Kommazahl** sein. Mit Ein- und Ausgabe. Inklusive Benutzerführung.
 
@@ -73,7 +73,6 @@ km/Monat: 120
 Du bist 1440 km im Jahr gefahren.
 Es hat dich 247.39 Euro gekostet.
 ```
-
 
 
 
