@@ -11,16 +11,14 @@ $ env
 ...
 ```
 
-Können in Skripts verwendet werden.
+Beim starten eines Scripts stehen diese Variablen dem Script zur Verfügung.
 
-Spezielle Bedeutung:
+Spezielle Bedeutung (Informationen über das System und die shell):
 
 - `$SHELL`
 - `$PATH`
 - `$PS1`
 - `$PWD`
-
-Liefern Informationen über das System und die shell.
 
 
 

@@ -21,7 +21,7 @@ Aufgaben:
 
 - Implementiere eine Methode `advance` die eine Anzahl von Minuten als Parameter übergeben bekommt. Die Uhrzeit soll um diese Anzahl von Minuten vorgestellt werden. Achte auf mögliche Minutenüberläufe. Als Anzahl von Minuten sollen auch große Zahlen (z.B. 1000) möglich sein. Ein sich ergebender Stundenüberlauf (24 Stundengrenze) soll als Rückgabewert (`int`) in Anzahl von Tagen verwendet werden.
 
-- Schreibe eine Methode `diff` die als Parameter eine Referenz auf ein anderes `Time` Objekt übergeben bekommt. Der Rückgabewert sind die Anzahl der Minuten die sich die lokale von der übergebenen Uhrzeit unterscheidet. Dieser Wert kann auch negativ sein, je nach Reihenfolge der Parameter.
+- Schreibe eine Methode `diff` die als Parameter eine Referenz auf ein anderes `Time` Objekt übergeben bekommt. Der Rückgabewert sind die Anzahl der Minuten die sich die lokale von der übergebenen Uhrzeit unterscheidet. Dieser Wert kann auch negativ sein.
 
 - Schreibe eine Methode `sum` die als Parameter eine Referenz auf ein anderes `Time` Objekt übergeben bekommt. Es soll aus der lokalen und übergebenen Zeit ein neues `Time` Objekt erzeugt werden. Dazu sollen beide Zeiten summiert werden.
 

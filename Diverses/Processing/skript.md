@@ -10,11 +10,13 @@
 
 # Processing
 
-Taschenrechner mit Fixen Werten und Ausgabe, kurzes Beispiel für if.
+Taschenrechner mit fixen Werten und Ausgabe, kurzes Beispiel für if.
 
 Text (grafisch) ausgeben. Einen Rahmen mit 4 Linien Zeichnen.
 
 Den Rahmen mit Variablen machen (auch Abstand des Rahmens variabel). Den Rahmen animieren. Zufällige Farben für den Rahmen. Größe des Rahmens begrenzen.
+
+
 
 # Sich bewegender Text
 

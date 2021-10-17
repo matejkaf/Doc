@@ -66,7 +66,5 @@ Ein Doppeldrom ist ein Wort das nur doppelte Buchstaben enthält, etwa `"LLaamma
 Schreibe eine Funktion `istDoppeldrom` die ermittelt ob ein Wort ein Doppeldrom ist.
 Verwende `int` als Rückgabewert und mache keine Ausgaben in der Funktion (nur im Hauptprogramm).
 
-
-
 ---
 

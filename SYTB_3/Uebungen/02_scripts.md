@@ -6,25 +6,27 @@ tags: [lecture,3AHITS]
 
 * TOC
 {:toc}
+**Skripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegebene Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
 
-**Scripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegebene Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
-
-Shell Kommandos können in Textdateien geschrieben und dann ausgeführt werden. Ergibt gleiches Ergebnis als wenn diese direkt in der shell ausgeführt werden.
+Shell Kommandos können in **Textdateien** geschrieben und dann ausgeführt werden. Ergibt gleiches Ergebnis als wenn diese direkt in der shell ausgeführt werden.
 
 
 
 # Hello World Script
 
 
-Erstellen eines einfachen shell scripts
+Erstellen eines einfachen shell scripts in `vi`
 
 ```bash
-$ echo '#!/bin/sh' > my-script.sh
-$ echo 'echo Hello World' >> my-script.sh
-$ chmod u+x my-script.sh  # octal 755
-$ ./my-script.sh
+#!/bin/sh
+# Hello World Skript
+echo Hello World
+```
+
+```bash
+$ chmod u+x hello.sh  # octal 755
+$ ./hello.sh
 Hello World
-$ 
 ```
 
 
@@ -32,29 +34,23 @@ $
 - eXecution flag
 - warum `./`? siehe `echo $PATH`!
 
-Inhalte des scripts:
-
-```bash
-#!/bin/sh
-echo Hello World
-```
-
-Kommentare
-
-```bash
-#!/bin/sh
-# Say Hello to the world
-echo Hello World
-```
-
 
 
 # Argumente
 
 Sind spezielle Variable für Kommandozeilenargumente
 
+```
+$0 - The name of the Bash script.
+$1 - $9 - The first 9 arguments to the Bash script.
+$# - How many arguments were passed to the Bash script.
+```
+
+Test:
+
 ```sh
 #!/bin/sh
+echo $#
 echo $0
 echo $1
 echo $2
@@ -69,15 +65,140 @@ $ ./args.sh eins zwei drei vier
 
 
 
-# Weitere spezielle Variable
+---
+
+#### Übung (Directory Struktur)
+
+Schreibe ein Shell-Script das Unterverzeichnisse und Dateien anlegt.
+
+Aufruf:  `./build_dirs.sh abcd`
+
+Dies führt zu folgender Directorystruktur:
+
+```
+./
+└── abcd/
+    ├── abcd_01/
+    │   ├── abcd.01.1.txt
+    │   ├── abcd.01.2.txt
+    │   └── abcd.01.3.txt
+    └── abcd_02/
+        ├── abcd.02.1.txt
+        ├── abcd.02.2.txt
+        └── abcd.02.3.txt
+```
+
+Schreibe weiters ein Shell-Script `clean_dir.sh` das diese Verzeichnisstruktur wieder löscht.
+
+---
+
+#### Übung (Skript Generator)
+
+Schreibe ein Skript das 
+
+- eine Skriptdatei erzeugt, 
+- die She-Bang Zeile einfügt, 
+- einen echo Befehl einfügt und 
+- das eXecution Flag für das Skript setzt.
+
+Anwendung:
 
 ```sh
-$0 - The name of the Bash script.
-$1 - $9 - The first 9 arguments to the Bash script.
-$# - How many arguments were passed to the Bash script.
-$@ - All the arguments supplied to the Bash script.
-$? - The exit status of the most recently run process.
+$ ./makescript.sh mytest
+```
+
+erzeugt die Datei `mytest.sh` :
+
+```sh
+#!/bin/sh
+
+echo "mytest Skript"
+
+# write yor script here
+
+```
+
+Das Skript kann sofort ausgeführt werden:
+
+```sh
+$ ./mytest.sh
+```
+
+---
+
+
+
+# process ID
+
+```
 $$ - The process ID of the current script.
+```
+
+
+
+---
+
+#### Übung (process ID `$$`)
+
+Verifiziere, dass beim Starten eines Skripts ein eigener Prozess gestartet wird. D.h. dass die shell die ein shell-script startet ein anderer Prozess ist als die shell die das script dann tatsächlich ausführt
+
+---
+
+
+
+# Argumentliste (`$@`)
+
+ergibt eine Liste aller übergebenen Argumente. Dies kann für eine Schleife verwendet werden:
+
+```sh
+$ for args in $@; do echo "$args"; done
+```
+
+oder
+
+```sh
+for args in $@
+do
+  echo "$args"
+done
+```
+
+---
+
+#### Übung (Headline Cat)
+
+Schreibe ein Skript das eine Art `cat` zur Verfügung stellt. Als Argumente werden Textdateien übergeben. Das Ergebnis wird in die Datei `result.txt` geschrieben (ist die Datei vorhanden soll deren Inhalt überschrieben werden). Jedem Datei-Inhalt soll eine Überschrift vorangestellt werden.
+
+Beispiel – der Aufruf
+
+```sh
+$ ./headline_cat.sh file1.txt file2.txt file3.txt
+```
+
+ergibt die Datei `result.txt` mit folgendem Inhalt:
+
+```
+== file1.txt ==========================================
+Das ist der Inhalt
+der ersten Textdatei
+
+== file2.txt ==========================================
+Das ist der Inhalt
+der zweiten Textdatei
+
+== file3.txt ==========================================
+Das ist der Inhalt
+der dritten Textdatei
+
+```
+
+---
+
+
+
+# Weitere Variablen
+
+```sh
 $USER - The username of the user running the script.
 $HOSTNAME - The hostname of the machine the script is running on.
 $SECONDS - The number of seconds since the script was started.
@@ -87,51 +208,13 @@ $LINENO - Returns the current line number in the Bash script.
 
 
 
-# Variablen in Skripts
-
-Skript:
-
-```sh
-echo $PWD
-echo $MYVAR
-```
-
-Aufruf:
-
-```sh
-MYVAR=HALLLOOOO
-$ ./test.sh 
-/home/runner/NaturalNanoDos
-
-$
-```
-
-`$MYVAR` steht nicht in der gestarteten Shell zur Verfügung – muss erst exportiert werden
-
-```sh
-$ export MYVAR
-$ ./test.sh
-/home/runner/NaturalNanoDos
-HALLLOOOO
-```
-
-Für jedes gestartete Script wird eine eigener shell Prozess gestartet, es werden dabei nur die exportierten shell Variablen übergeben.
-
-
-
-
-
 ---
 
 #### Übung (spezielle Variable)
 
 Probiere die speziellen Variablen aus
 
----
-
-#### Übung (Zufallszahlen)
-
-Schreibe ein Bash Skript das 3 Zufallszahlen in **einer einzigen** Zeile ausgibt.
+Gib 3 Zufallszahlen in **einer einzigen** Zeile ausgibt.
 
 ---
 

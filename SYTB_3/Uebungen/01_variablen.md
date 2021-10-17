@@ -7,17 +7,24 @@ tags: [lecture,3AHITS]
 [Ryans Tutorials – Bash Scripting Tutorial - 2. Variables](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php)
 
 ```sh
-$ myvariable=Hello
-$ anothervar=Fred
-$ echo $myvariable $anothervar
+$ MYVAR=Hello
+$ echo $MYVAR
 ```
 
 Achtung: Keine Leerzeichen bei `=`
 
-```bash
-sampledir=/etc
-ls $sampledir
+Großbuchstaben = Konvention
+
+Verwenden von Variablen
+
+```sh
+FILE_NAME=test.txt
+DIR=mydir
+mkdir $DIR
+echo "Das ist ein Text" > $DIR/$FILE_NAME
 ```
+
+
 
 ```bash
 DIR1=hallo
@@ -48,28 +55,55 @@ Es gibt einfache (single quotes) und doppelte Hochkomma (double quotes).
 - Single quotes: Inhalt wird 1:1 übernommen
 - Double quotes: Variablen werden eingesetzt (variable substitution)
 
-Beispiel:
+Innerhalb von `"`: Variable substitution.
 
-```bash
-myvar='Hello World'
-echo $myvar
-newvar="More $myvar"
-echo $newvar
-newvar='More $myvar'
-echo $newvar
+```sh
+NAME=Franz
+GREETING="Lieber $NAME Guten Morgen!"
+echo $GREETING
+```
+
+
+```sh
+STR1='$NAME Single quoted string'
+STR2="$NAME Double quoted \$ string"
+echo $STR1
+echo $STR2
+```
+
+single: Text 1:1
+double: Variable substitution
+
+`$'string'` Syntax für `\n` usw.[[Quelle](https://stackoverflow.com/a/3182519)]
+
+```sh
+TEXT=$'Hallo\nWELT'
+echo $TEXT # \n wird als Trenner interpretiert!
+echo "$TEXT" # daher Quotes notwendig
 ```
 
 
 
-# curly braces
+# Curly Braces
 
 Wenn kein Leerzeichen/Trennzeichen nach der Variable
 
 Wenn der Name der Variable sonst nicht vom umgebenden Text abgetrennt werden kann.
 
 ```bash
-NAME="myfile"
-echo $NAME_001
-echo ${NAME}_001
+FILE_NAME="myfile"
+echo "$FILE_NAME_001"  # myfile_001
+echo "$FILE_NAME_002"  # myfile_002
+```
+
+
+Geht nicht weil nach Variablen `FILE_NAME_001` gesucht wird.
+
+Lösung: curly braces `{}` um den Variablennamen
+
+```sh
+FILE_NAME="myfile"
+echo "${FILE_NAME}_001"  # myfile_001
+echo "${FILE_NAME}_002"  # myfile_002
 ```
 
