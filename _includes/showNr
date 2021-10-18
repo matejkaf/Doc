@@ -1,6 +1,6 @@
 
 <script type="text/javascript">
-    console.log('show nr V1');
+    console.log('show nr V2');
     /*
     test ob der Query parameter nr vorhanden ist 
     in der URL z.B.: ?nr=2
