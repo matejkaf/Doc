@@ -1,0 +1,47 @@
+
+<script type="text/javascript">
+    console.log('show nr V1');
+    /*
+    test ob der Query parameter nr vorhanden ist 
+    in der URL z.B.: ?nr=2
+    wenn ja dann nur dieses Beispiel darstellen (alle anderen verbergen)
+    */
+    let exampleNr=null
+    const params = new URLSearchParams(window.location.search)
+    if(params.has('nr')) {
+        exampleNr = params.get('nr')
+        load_jQuery()   // load jQuery on demand
+    }
+    
+    function load_jQuery() {
+        var script = document.createElement('script');
+        script.onload = function () {
+            // jQuery loaded
+            $(document).ready(function(e) {
+                hideAllButNr(parseInt(exampleNr))
+            });
+        };
+        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
+        document.head.appendChild(script);
+    }
+
+    function hideAllButNr(nrToShow) {
+        // alle h4 bis zum nächsten h4 in ein div packen (h4 ist auch im div)
+        $('#div_content h4').each(function(){ 
+            let heading_id = $(this)[0].id
+            let $set = $(this).nextUntil("h4").addBack();
+            let idtxt = '<div class="assignment" id="'+heading_id+'"_ />'
+            $set.wrapAll(idtxt); 
+        });
+        // alle Elemente mit Klasse assignment auf die gesuchte id überprüfen
+        let idx=1
+        $('.assignment').each( function() {
+            if(idx==idToShow) {
+                $(this).show()
+            } else {
+                $(this).hide()
+            }
+            idx++
+        });
+    }
+</script>
