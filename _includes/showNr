@@ -25,6 +25,11 @@
         document.head.appendChild(script);
     }
 
+/**
+Funktioniert nicht mit mathjax, hier müsste man darauf warten bis dieses fertig ist bevor alle h4's gescannt werden.
+Siehe: https://stackoverflow.com/questions/60154233/event-when-typesetting-is-done-mathjax-3
+ */
+ 
     function hideAllButNr(nrToShow) {
         // alle h4 bis zum nächsten h4 in ein div packen (h4 ist auch im div)
         $('#div_content h4').each(function(){ 
