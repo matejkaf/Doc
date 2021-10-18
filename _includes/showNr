@@ -36,7 +36,7 @@
         // alle Elemente mit Klasse assignment auf die gesuchte id überprüfen
         let idx=1
         $('.assignment').each( function() {
-            if(idx==idToShow) {
+            if(idx==nrToShow) {
                 $(this).show()
             } else {
                 $(this).hide()
