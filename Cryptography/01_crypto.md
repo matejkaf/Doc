@@ -92,6 +92,8 @@ Verändert Eve die Nachricht kann dies durch Bob erkannt werden.
 
 
 
+
+
 ## Public key encryption
 
 Problem bei *shared secret key*: Sicherer Austausch der Schlüssel. **Public key** systeme lösen dieses Problem sehr elegant.
@@ -103,6 +105,7 @@ Prinzip:
 - Nur Bob kann den entstehenden ciphertext mit dem *private key* entschlüsseln.
 
 ![](fig/overv03.png)
+
 
 
 ## Digital signature

@@ -1,10 +1,10 @@
 ---
 title: Public-key cryptography
 subtitle: Allgemeines
-tags: [5AHELS,lecture, krypto ]
+tags: [5AHELS,lecture,krypto]
 ---
 
-Bei symetrischer Verschlüsselung muss ein Schlüssel ausgetauscht werden. Dieser Schlüsselaustausch ist angreifbar.
+Bei symetrischer Verschlüsselung muss ein Schlüssel ausgetauscht werden – dieser Schlüsselaustausch ist angreifbar.
 
 **Public-key cryptography** ist eine innovative Idee aus den 1970er Jahren die einen solchen Angriff unmöglich macht. 
 
@@ -27,7 +27,13 @@ Anwendung:
 
 # Ablauf 
 
-Alice will an Bob eine verschlüsselte Nachricht schicken.
+- Alice will an Bob eine verschlüsselte Nachricht schicken.
+
+- Bob hat ein Schlüsselpaar: einen *public key* ($P_{Bob}$) und einen *private (secret) key* ($S_{Bob}$).
+- Den *public key* ($P_{Bob}$) kann Alice (und jeder andere) zum verschlüsseln verwenden. Bob kann diesen auf beliebige Weise zur Verfügung stellen. Auch wenn dieser in die falschen Hände fällt ist das kein Problem.
+- 
+
+![](fig/public.jpg)
 
 - Bob berechnet (aus großen Primzahlen) 2 Schlüssel (**public key** und **private key**). Der public key wird öffentlich zugänglich gemacht der private key geheim gehalten.
 - Alice holt sich **Bobs public key**, **verschlüsselt** die Nachricht damit und schickt sie an Bob.
@@ -35,11 +41,19 @@ Alice will an Bob eine verschlüsselte Nachricht schicken.
 - **Eve** die die Nachricht abhört kann die Nachricht ohne den private key nicht entschlüsseln. Eve hat Zugang zum public key, aber mit diesem kann nicht entschlüsselt werden.
 - Für Kommunikation in **umgekehrter Richtung** (Bob an Alice) muss Alice ein eigenes public/private Schlüsselpaar erzeugen.
 
-![](fig/public.jpg)
 
 
+## Public key encryption
 
+Problem bei *shared secret key*: Sicherer Austausch der Schlüssel. **Public key** systeme lösen dieses Problem sehr elegant.
 
+Prinzip:
+
+- 
+- 
+- Nur Bob kann den entstehenden ciphertext mit dem *private key* entschlüsseln.
+
+![](fig/overv03.png)
 
 
 

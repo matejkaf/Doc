@@ -149,7 +149,7 @@ $ mkdir mysecondir
 $ ls
 ```
 
-[! G2 04.10.2021]
+[! G1 11.10.2021]
 
 darunter einen weiteren Unterordner erzeugen: 
 
