@@ -609,6 +609,7 @@ f.close()
 ```python
 f = open('path','w')
 f.write('this is a line\n')
+# oder
 print('text', file=f)
 f.close()
 ```
@@ -1065,5 +1066,24 @@ eins,zwei = foo()
 
 # unpacking tuple
 eins,zwei = bar()
+```
+
+
+
+## Shell Programme starten
+
+```python
+runret = subprocess.run(['ifconfig', 'en0'], capture_output=True, encoding="utf8")
+print(runret.stdout)
+print(type(runret.stdout)) # string
+```
+
+Mit stdin und stdout
+
+```python
+stdin_str = 'string from stdin'
+p1 = subprocess.Popen(['cat'], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+p1_out = p1.communicate(input=stdin_str.encode())[0]
+print(p1_out.decode())
 ```
 

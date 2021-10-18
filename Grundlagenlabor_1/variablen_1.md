@@ -59,7 +59,7 @@ Schreibe an was folgendes Programm (exakt!) am Bildschirm ausgibt:
 int x=10;
 int y=x*2-4;
 int z;
-printf("%d / %d\n",x,y;)
+printf("%d / %d\n",x,y);
 z=y-x;
 printf("z=%d\n",z);
 z=z+1;
