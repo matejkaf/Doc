@@ -7,9 +7,9 @@
     wenn ja dann nur dieses Beispiel darstellen (alle anderen verbergen)
     */
     let exampleNr=null
-    const params = new URLSearchParams(window.location.search)
-    if(params.has('nr')) {
-        exampleNr = params.get('nr')
+    const paramasShow = new URLSearchParams(window.location.search)
+    if(paramasShow.has('nr')) {
+        exampleNr = paramasShow.get('nr')
         load_jQuery()   // load jQuery on demand
     }
     
