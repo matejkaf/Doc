@@ -54,9 +54,13 @@ Die **Firmware** ist fest ("firm") im Gerät gespeichert und wird unmittelbar na
 
 *Ziel: Von Neumann Architektur erklären*
 
+![image-20211019114155211](fig/image-20211019114155211.png)
 
+Betrachtung von CPU, Speicher und Bus genügt.
 
-![Basic computer system](comparch/httpatomoreillycomsourceoreillyimages61604.png)
+Arten von Daten im Speicher:
+
+![image-20211019114308316](fig/image-20211019114308316.png)
 
 
 
@@ -94,48 +98,53 @@ Most microprocessors available are standard Von Neumann machines. The main devia
 
 
 
-# Speicher
+# Speicher und Bus
 
 Arbeitsspeicher / Hauptspeicher / main memory
 
 Organisiert in Bytes = 8 Bit 
 
-*Zeichnung für Byte, Bitnummerierung, Wertigkeit*
+![image-20211019114413898](fig/image-20211019114413898.png)
+
+Verbindung CPU ↔ Speicher (Adress-, Daten-, Control-Bus)
+
+
 
 (Arbeits-)Speicher = durchnummerierte Bytes. CPU kann jedes Byte direkt lesen bzw. schreiben = wahlfreier Zugriff, daher der Begriff RAM (random access memory).
 
-*Zeichnung Speicherblock mit Adressen und ein paar Bytes als Beispiel. Unterscheidung Daten/Adressen. Verbindung mit CPU.*
+![image-20211019114456949](fig/image-20211019114456949.png)
+
+Beispiel CPU/RAM: 
+
+- 8 Bit Datenbus
+- 10 Bit Adressbus
+
+![image-20211019114543421](fig/image-20211019114543421.png)
+
+
+
+Programmiermodell:
+
+![image-20211019114703811](fig/image-20211019114703811.png)
 
 Arbeitsspeicher kann auch 16, 32 oder 64 Bitweise organisiert werden. Dann betrifft ein Speicherzugriff gleich mehrere Bytes (2, 4 oder 8) was zu einer höheren Geschwindigkeit führt.
 
-*Beispiel: 32 Bit breiten Speicherblock zeichenen, zeigen dass die Adressen immer um 4 springen. Bits und Bytes nummerieren, 0..31, 0..3*
+![image-20211019114738247](fig/image-20211019114738247.png)
+
+Breite (Anzahl der Leitungen) des Adress-Bus bestimmt die maximal adressierbare Speichergröße
 
 
-
-## Bus
-
-Die Aufgabe der CPU (Prozessor) ist es Anweisungen auszuführen und damit Daten zu bearbeiten (beides ist im Hauptspeicher). Der **Bus** ist die Verbindung der CPU mit deren Umgebung insbesondere dem Hauptspeicher.
-
-Bus besteht aus 3 Arten von digitalen Leitungen
-
--   Adressen
--   Daten
--   Control
-
-![640px-Computer_system_bus.svg_](comparch/640px-Computer_system_bus.svg_-1783575.png)
-
-*ToDo Skizze – Beispiel 16 Bit Addressbus, 8 Bit Datenbus, Control: R/W*
-
-**Datenbus**-Breite bestimmt wie viele Daten auf einmal transportiert werden können. Typisch 8/16/32/64 Bit.
 
 Der **Adressbus** bestimmt auf welches Byte gerade zugegriffen werden soll. Die Anzahl der maximal adressierbaren Bytes ergibt sich durch 2 hoch (Anzahl der Adressleitungen).
 
--   *Beispiel 10/16/20/32/64 Addressleitung*
--   *Hinweis auf: kB (sind 10 Leitungen!), MB, GB, TB (1024 Stückelung).*
+-   *Beispiel 10/16/22/32/64 Addressleitung*
+-   *Hinweis auf: kB (sind 10 Leitungen!), MB, GB, TB (1024 Stückelung, SI: 1000er Schritte).*
     -   Dezimapräfix (k,M,T,...) = SI Präfixe vs. Binärpräfix IEC (KiB, MiB, TiB)
     -   Bei Hauptspeicher sind immer Binärpräfixe in Verwendung. Ansonsten wird aber wild gemischt! Aufpassen!
+        -   Beispiel SSD mit 256 GiB wären 256*2^30 / 10^9 = 274,9 GB – macht sich im Werbetext besser
 
-Trend zu **64 Bit** Systemen. Daten und Adressen sind 64 Bit. Vorher: 32 Bit Adressen – 4 GB Speichergrenze.
 
-Der **Control Bus** enthält alle Signale die zusätzlich noch notwendig sind. Z.B. RD ... lesen und WR ... schreiben.
 
+## Weiteres
+
+- [Video: How Smartphones Operate: Inside the Primary Processor/ System on a Chip/ Brain of your Smartphone](https://youtu.be/NKfW8ijmRQ4), Super Animationen

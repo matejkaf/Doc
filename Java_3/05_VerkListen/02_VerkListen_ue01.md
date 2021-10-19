@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [assignment,4BHELS]
 ---
 
-#### Übung (Einfach verkettete Liste I) {#liste1}
+#### Übung (Einfach verkettete Liste I)
 
 - Schreibe eine Klasse `Node`. In einem Knoten wird ein Buchstabe gespeichert.
 - Schreibe eine Klasse `List`. Diese Klasse enthält die Start Referenz auf die verkettete Liste. Alle Methoden die mit dieser Liste arbeiten werden in dieser Klasse implementiert
@@ -23,7 +23,7 @@ Implementiere folgende Aufgabenstellung:
 
 ---
 
-#### Übung (Mock I) {#mock1}
+#### Übung (Mock I)
 
 Folgender Quelltext soll einen neuen Knoten am Beginn einer verketten Liste einfügen.
 Überlege anhand einer Skizze was falsch ist.
@@ -39,7 +39,7 @@ node.next=start;
 
 ---
 
-#### Übung (Einfach verkettete Liste II) {#liste2}
+#### Übung (Einfach verkettete Liste II)
 
 Erweitere die Klasse `List` um folgende Aufgabenstellung:
 
@@ -54,7 +54,7 @@ Der Rückgabewert soll `null` sein, wenn die Stelle `k` nach dem Ende der Liste 
 
 ---
 
-#### Übung (Einfügeoperationen) {#liste3}
+#### Übung (Einfügeoperationen)
 
 Hinweis: Bei verketteten Listen kann man sehr einfach **nach** einem bestehenden Knoten (gegeben durch eine Referenz `node`) einen neuen Knoten einfügen.
 
@@ -81,7 +81,7 @@ Es gibt keinen Rückgabewert.
 
 ---
 
-#### Übung (Einfach verkettete Liste – set) {#liste4}
+#### Übung (Einfach verkettete Liste – set)
 
 Implementiere in der Klasse `List` folgende Aufgabenstellung:
 
@@ -93,7 +93,7 @@ Implementiere in der Klasse `List` folgende Aufgabenstellung:
 
 ---
 
-#### Übung (Suchen eines Werts) {#liste5}
+#### Übung (Suchen eines Werts)
 
 Implementiere in der Klasse `List` Methoden zur Suche eines Werts (Buchstabe) in der Liste.  Der Wert soll als Parameter übergeben werden. Rückgabewert ist die Referenz auf den Knoten der den gesuchten Wert enthält. Die Methode soll `null` zurückgeben wenn der Wert nicht gefunden wurde. 
 
@@ -104,7 +104,7 @@ Implementiere in der Klasse `List` Methoden zur Suche eines Werts (Buchstabe) in
 
 
 ---
-#### Übung (Mock II) {#mock2}
+#### Übung (Mock II)
 
 Überlege welche Auswirkungen der folgende Quelltext auf eine verkettete Liste hat.
 
@@ -120,7 +120,7 @@ start = m;
 
 ---
 
-#### Übung (Erweiterungen) {#liste5}
+#### Übung (Erweiterungen)
 
 Implementiere in der Klasse `List` weiters:
 

@@ -6,31 +6,42 @@ tags: [lecture]
 
 Der Prozessor (CPU) führt Programme (=Folge von Befehlen) aus die im Speicher stehen.
 
-Grundsätzlicher Ablauf in CPU:
+Grundsätzlicher Ablauf (*instruction cycle*) in CPU :
 
 -   fetch –  Befehl aus dem Hauptspeicher in die CPU transportieren
 -   decode – feststellen was zu tun ist
 -   execute – Befehl ausführen
 
-Befehle werden in fixen Zeitabständen ausgeführt = Takt. Gängig 1–5 GHz, Bei µC auch im MHz Bereich.
+Befehle werden in fixen Zeitabständen ausgeführt = **Takt**. Gängig 1–5 GHz, Bei µC auch im MHz Bereich.
+
+![image-20211019115638663](fig/image-20211019115638663.png)
+
+<img src="fig/image-20211019115734527.png" alt="image-20211019115734527" style="zoom:25%;" />
+
+
 
 *Dauer für einen Befehl bei 1GHz?*
 
 Interne Struktur einer CPU
 
--   Register
-    Speicherelement mit 8, 16, 32 oder 64 Bits
-    Begrenzte Anzahl, z.B. 16 oder 32
--   PC (program counter)
+-   **Register**
+    Speicherelement mit 8, 16, 32 oder 64 Bits. Begrenzte Anzahl, z.B. 16 oder 32. Register bestehen aus Flip-Flops (FF pro Bit)
+-   **PC** (program counter)
     Speicher-Adresse des nächsten Befehls
--   IR (instruction register)
+-   **IR** (instruction register)
     Enthält den auszuführenden Befehl
--   ALU – algorithmic and logic unit
+-   **ALU** – algorithmic and logic unit
     Führt Berechnungen aus, hat 2 Eingänge und einen Ausgang
--   SR (status register)
-    Informationen über die Befehlsausführung, z.B. Berechnung hat (zero-flag) ergeben. Oder Fehlersituationen (overflow-flag).
 
-*ToDo CPU Skizze, darin grundsätzlicher Ablauf*
+![image-20211019115901993](fig/image-20211019115901993.png)
+
+-   **SR** (status register) besteht aus Flags (Bits)
+    ![image-20211019120022755](fig/image-20211019120022755.png)
+    Zustände der Bits leiten sich ab aus der vorhergehenden Operation der ALU. Ergbnis ist 0 setzt z.B. das zero-flag. Auch Fehlersituationen werden so gemeldet (overflow-flag)
+
+# Übersichtsbild CPU mit grundsäzlichem Ablauf
+
+![image-20211019120250319](fig/image-20211019120250319.png)
 
 
 
@@ -40,11 +51,11 @@ Die Befehle die ein Prozessor versteht sind in Maschinensprache kodiert, d.h. si
 
 
 
-## Hypothetischer Prozessor
+## Bsp. hypothetischer Prozessor
 
 Nur für Grundprinzip/Idee, nicht real existent.
 
-8 Register (R0-R7), 16 Bit Befehlssatz, opcode in obersten 5 Bits (=32 Befehle).
+8 Register (R0-R7), 16 Bit Befehlssatz, opcode in obersten 5 Bits (2^5=32 Befehle).
 
 3 Befehle als Beispiel
 
@@ -52,7 +63,7 @@ Nur für Grundprinzip/Idee, nicht real existent.
 - LDI – Laden eines Registers mit Wert
 - ADD – Zwei Registerwerte addieren
 
-
+**Assembler** Code = Maschinencode als lesbarer Quelltext
 
 ```
 CLR R5 # R5=R5 XOR R5
@@ -64,7 +75,7 @@ CLR R5 # R5=R5 XOR R5
 
 Aufgabe: Assemblieren
 
-
+![image-20211019120550161](fig/image-20211019120550161.png)
 
 ```
 LDI R5,22
@@ -75,6 +86,8 @@ LDI R5,22
 - [7:0] value
 
 Aufgabe: Assemblieren
+
+![image-20211019120627781](fig/image-20211019120627781.png)
 
 
 
@@ -91,11 +104,9 @@ Aufgabe: Assemblieren
 
 
 
-## Assembler code / Maschinensprache
+## Assemblieren
 
-Assembler Code ist Maschinencode als lesbarer Quelltext.
-
-Dieser Code wird durch einen Assembler (Programm) in die Maschinensprache (0en / 1en) übersetzt.
+Assembler Code:
 
 ```
 LDI R2,18 # Setze Register Nr. 2 auf den Wert 18
@@ -103,7 +114,7 @@ LDI R3,22 # Setze Register Nr. 3 auf den Wert 22
 ADD R2,R3 # addiere R2 mit R3, speichere Ergebnis in R2
 ```
 
-Maschinencode (hex):
+Maschinencode in hex:
 
 ```
 ...todo...
@@ -111,19 +122,23 @@ Maschinencode (hex):
 
 *Gesamten Programmablauf in der CPU Skizze nachstellen*
 
+Disassembler: von Maschinensprache in Assembler (Hacking Tool)
+
 
 
 ## ATmega16
 
-Maschinencode anhand des Przessors **ATmega16** (16 Bit Befehle)
+Maschinencode anhand des Przessors **ATmega16** (16 Bit Befehle) – µC der Firma Atmel (µC = CPU+Speicher+Peripherie auf einem Chip)
 
-Hacking: **Disassemblieren** eines Speicherdumps (allgemein: reverse engineering):
+Hacking: **Disassemblieren** eines Speicherdumps (allgemein: reverse engineering) in Hex:
 
 ```
 05E11EE0100F
 ```
 
 The **AVR** is "little-endian", d.h. low byte zuerst im Speicher.
+
+D.h. E105 ist ein Maschinensprachebefehl.
 
 Disassembly:
 
@@ -146,18 +161,31 @@ Siehe `doc/atmel-0856-avr-instruction-set-manual.pdf`
 
 ## Bedeutung Maschinensprache/Assembler
 
-Zum Verstehen wie ein Prozessor funktioniert. Aber: Assembler wird heute nur in Ausnahmefällen programmiert, Gründe:
+- Zum Verstehen wie ein Prozessor funktioniert. 
+- Reverse Engineering (z.B. bei Malware)
+- Suchen von Schwachstellen für Angriffe
+- Programmiert wird in Assembler weniger:
+  - Mühsam
+  - C-Compiler sind auch sehr gut
+  - Ausnahmen
+    - Nutzen von speziellen Prozessor Features oder besonderer HW Componenten
+    - Boot/Firmware Code
 
-- Maximale Geschwindigkeit notwendig (allerdings: C Compiler werden immer besser)
-- Nutzen von speziellen Prozessor Features oder besonderer HW Componenten
-- Boot/Firmware Code
+
+
+# Multicore-Architektur
+
+- Multi-Core: Mehrere CPU Kerne in einem Prozessor (Dual, Quad, Octa, ...).
+  - Es werden mehrere Programme gleichzeitig ausgeführt – Jeder Core kann  ein Programm ausführen.
+
+z.B. Quad-Core (=4)
+
+![image-20211019134240347](fig/image-20211019134240347.png)
 
 
 
 # Mehrprozessor-Architekturen
 
-- Multi-Core: Mehrere CPU Kerne in einem Prozessor (Dual, Quad, Octa, ...).
-  - Es werden mehrere Programme gleichzeitig ausgeführt – Jeder Core kann  ein Programm ausführen.
 - Multi-Prozessor: Getrennte Prozessoren (evtl. Multi-Core) teilen sich Bus, Speicher und I/O.
 
 

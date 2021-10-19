@@ -94,7 +94,7 @@ Verwende telnet um dich Remote von Kali aus auf Metasploitable einzuloggen. Die 
 
 ```sh
 # Metasploitable
-$ ifconfig
+$ ifconfig en0
 ...
 ```
 

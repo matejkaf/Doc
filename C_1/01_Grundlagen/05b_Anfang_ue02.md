@@ -66,7 +66,7 @@ Gib Wert 3 ein: 123.899
 
 #### Übung (Mopedkosten)
 
-Du besitzt ein Moped 50 ccm, 2-Takter. Versicherung und Pickerl kosten im Jahr EUR 180,--. Der Spritverbrauch liegt bei 3,6 l/100km (Liter pro 100 gefahrenen Kilometern). Ein Liter kostet EUR 1,3. Schreibe ein Programm das die Eingabe der monatlich gefahrenen Kilometer ermöglicht und die Jahreskosten ermittelt.
+Du besitzt ein Moped 50 ccm, 2-Takter. Versicherung und Pickerl kosten im Jahr EUR 180,–. Der Spritverbrauch liegt bei 3,6 l/100km (Liter pro 100 gefahrenen Kilometern). Ein Liter kostet EUR 1,3. Schreibe ein Programm das die Eingabe der monatlich gefahrenen Kilometer ermöglicht und die Jahreskosten ermittelt.
 
 Die Ausgabe des Programms soll so aussehen:
 
@@ -76,7 +76,7 @@ Du bist 1440 km im Jahr gefahren.
 Es hat dich 247.39 Euro gekostet.
 ```
 
-
+---
 
 
 
