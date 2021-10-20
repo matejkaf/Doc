@@ -1,7 +1,7 @@
 ---
 title: Strings
 subtitle: Übungen
-tags: [assignment,java,strings]
+tags: [assignment,java,strings,3AHITS]
 ---
 
 #### **Übung (toUpper)**
