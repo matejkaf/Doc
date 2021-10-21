@@ -6,6 +6,8 @@ tags: [lecture,3AHITS]
 
 * TOC
 {:toc}
+[3AHITS G2 21.10.2021]
+
 **Skripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegebene Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
 
 Shell Kommandos können in **Textdateien** geschrieben und dann ausgeführt werden. Ergibt gleiches Ergebnis als wenn diese direkt in der shell ausgeführt werden.
@@ -64,6 +66,8 @@ $ ./args.sh eins zwei drei vier
 ```
 
 
+
+[3AHITS G1 14.10.2021]
 
 ---
 
