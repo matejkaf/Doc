@@ -3,7 +3,7 @@ title: Basics
 subtitle: Python Einführung
 ---
 
-Die Programmiersprache Python ist ein **Skriptsprache**, d.h. der Quelltext wird direkt durch einen **Interpreter** ausgeführt und nicht compiliert. Python ist **einfach** aber trotzdem sehr **mächtig**.
+Die Programmiersprache Python ist ein **Skriptsprache**, d.h. der Quelltext wird direkt durch einen **Interpreter** ausgeführt und nicht compiliert. Python ist **einfach** aber trotzdem sehr **mächtig**, man kommt ziemlich schnell zu einem funktionierenden Programm.
 
 Beispiel:
 

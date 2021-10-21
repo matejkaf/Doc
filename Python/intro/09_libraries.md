@@ -55,7 +55,6 @@ sys.argv # array
 sys.argv[0] # Skript Name
 sys.argv[1:] # Nur die Argumente
 x = " ".join(sys.argv[1:])
-
 ```
 
 **Betriebssystem Info**
@@ -97,5 +96,3 @@ x = " ".join(sys.argv[1:])
 # csv
 
 [`csv`](https://docs.python.org/3/library/csv.html#module-csv) — CSV File Reading and Writing
-
-TODO

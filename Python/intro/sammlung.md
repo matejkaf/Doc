@@ -1,5 +1,15 @@
 
 
+# Datum
+
+Arbeiten mit Datumswerten
+
+TODO
+
+Könnte später dann beim Einlesen von Geburtsdaten aus einer CSV Datei verwendet werden.
+
+
+
 # She-Bang
 
 Das Starten eines Skripts läßt sich (unter Linux) noch weiter vereinfachen durch eine sogenannte **shebang** (`#!`) Zeile:
