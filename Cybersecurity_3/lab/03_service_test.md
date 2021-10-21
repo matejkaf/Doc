@@ -1,7 +1,7 @@
 ---
 title: Tests von Services
-subtitle: Übung
-tags: [assignment]
+subtitle: Cybersecurity Übung
+tags: [assignment,3AHITS]
 ---
 
 
@@ -42,4 +42,6 @@ Beim banner grabbing nutzen Hacker die Informationen die Zielsysteme in Rückant
 
 - Welche Informationen sind im Banner bei telnet auf Metasploitable
 - Prüfe welche Informationen verfügbar sind wenn telnet auf den SSH Port von Metasploitable ausgeführt wird und ob sich über diese Informationen eine Schwachstelle finden lässt
+
+---
 

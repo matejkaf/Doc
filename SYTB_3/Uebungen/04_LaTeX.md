@@ -1,7 +1,13 @@
 ---
 title: LaTeX
+subtitle: bash scripting
 tags: [lecture,3AHITS]
 ---
+
+* TOC
+{:toc}
+
+# LaTeX
 
 LaTeX [[ˈlaːtɛç](https://de.wikipedia.org/wiki/Liste_der_IPA-Zeichen)] ist ein System zum erstellen von PDF Dokumenten. Im Gegensatz zu Word ist es nicht WYSIWYG sondern der Autor schreibt eine Textdatei mit Inhalt und Formatierungsbefehlen.
 
@@ -15,7 +21,9 @@ Da ist ein Absatz
 Ich beginne heute damit \textbf{LaTeX} zu lernen.
 ```
 
-LaTeX (bzw. das darunter liegende TeX) ist ein Programm das aus dem `.tex` File ein PDF Dokument erzeugt. Die Stärken von LaTeX liegen im sehr **schönen Layout**, der guten Unterstützung von **Formeln** und der Unterstützung für **große Dokumente** (Diplomarbeiten). Da .tex Files reinen Text enthalten können diese auch sehr einfach automatisiert erstellt werden und daraus dann PDF Dokumente.
+LaTeX (bzw. TeX auf das LaTeX aufbaut) ist ein Programm das aus dem `.tex` File ein **PDF** Dokument erzeugt. Die Stärken von LaTeX liegen im sehr **schönen Layout**, der guten Unterstützung von **Formeln** und der Unterstützung für **große Dokumente** (Diplomarbeiten). 
+
+Da .tex Files reinen Text enthalten können diese auch sehr einfach automatisiert erstellt werden und sind daher eine einfache Möglichkeit PDF Dokumente zu generieren.
 
 
 
@@ -26,11 +34,7 @@ LaTeX (bzw. das darunter liegende TeX) ist ein Programm das aus dem `.tex` File 
 - Erstelle einen Account
 - Erstelle ein neues "Example Project", ändere Name und Titel in der Überschrift.
 
-
-
-
-
-Erstelle ein neues "Blank Project" und experimentiere:
+- Erstelle ein neues "Blank Project" und experimentiere:
 
 ```latex
 % This is a comment
@@ -120,7 +124,7 @@ Kopf- und Fußzeilen
 
 [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 
-Listings
+# Listings
 
 Im Vorspan
 
@@ -159,7 +163,7 @@ Code \lstinline{int x=42;} im Text.
 
 
 
-Bilder
+# Bilder
 
 ```latex
 \usepackage{graphicx}

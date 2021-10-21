@@ -1,6 +1,6 @@
 ---
 title: Telnet
-subtitle: Übung
+subtitle: Cybersecurity Übung
 tags: [assignment,3AHITS]
 ---
 

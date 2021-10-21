@@ -1,6 +1,6 @@
 ---
 title: Virtuelle Maschinen installieren
-subtitle: ITS Übung
+subtitle: Cybersecurity Übung
 tags: [assignment,3AHITS]
 ---
 
