@@ -24,7 +24,9 @@ mkdir $DIR
 echo "Das ist ein Text" > $DIR/$FILE_NAME
 ```
 
+#### Übung (Variablen)
 
+Lege 2 Variablen für Directories an, eine Variable für den Filenamen und eine Variable für die Dateiendung (Extension). Erzeuge die Directories (das zweite befindet sich in dem ersten). Lege in dem zweiten Directory eine Datei mit Filenamen und Extension (getrennt mit `.`) an. Gib den Inhalt der Datei (unter verwendung der Variablen) aus.
 
 ```bash
 DIR1=hallo

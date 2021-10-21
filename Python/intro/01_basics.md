@@ -18,7 +18,28 @@ Dieses Skript wird durch das Programm `python` (=Interpreter) ausgeführt:
 $ python3 hello.py
 ```
 
-Python hat auch einen **interaktiven Modus** (eignet sich zum schnell ausprobieren), mit `exit()` wird beendet:
+`python3` ... 3 ist die Versionsnummer der aktuellen Python Version.
+
+
+
+# Entwicklungsumgebung
+
+Es gibt mehrere Möglichkeiten Python zu verwenden.
+
+Die einfachste ist wahrscheinlich die Online IDE [replit.com](https://replit.com/) zu Verwenden.
+
+Eine andere Variante ist sich lokal eine Python IDE zu installieren, z.B.
+
+- Visual Studio Code ([Anleitung](https://code.visualstudio.com/docs/python/python-tutorial))
+- PyCharm von [JetBrains](https://www.jetbrains.com)
+
+
+
+# Interaktiver Modus
+
+Python hat auch einen **interaktiven Modus** (eignet sich zum schnell ausprobieren), in diesen kommt man wenn man `python3` ohne weiteren Argumente aufruft:
+
+
 
 ```python
 $ python3
@@ -28,28 +49,7 @@ $ python3
 $
 ```
 
-Das Starten eines Skripts läßt sich (unter Linux) noch weiter vereinfachen durch eine sogenannte **shebang** (`#!`) Zeile:
-
-```python
-#! /usr/bin/env python3
-print("Hallo Welt")
-```
-
-Zusätzlich muss das eXecutable flag des Skript Files gesetzt werden:
-
-```sh
-$ ls -l main.py
--rw-r--r-- 1 runner runner 851 Jun 16 16:24 main.py
-$ chmod u+x main.py  # _u_ser / _g_roup / _o_thers / _a_ll
-$ ls -l main.py
--rwxr--r-- 1 runner runner 851 Jun 16 16:24 main.py
-```
-
-Der `python3` Interpreter wird durch die shell gestartet:
-
-```python
-$ ./main.py
-```
+Mit `exit()` wird beendet.
 
 
 
