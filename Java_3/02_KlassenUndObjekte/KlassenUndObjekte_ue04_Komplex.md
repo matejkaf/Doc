@@ -26,53 +26,57 @@ double r = c.abs(); // 0.1118
 Die Mandelbrotmenge ist eine Teilmenge der komplexen Zahlen. Eine komplexe Zahl $c$ ist Teil der Mandelbrotmenge wenn:
 
 - diese nahe am Nullpunkt ist – d.h. Distanz von $c$ zum Ursprung ist kleiner als 2.
-- Und man beliebig oft die Formel $z=z^2+c$ anwenden kann ohne, dass $z$ sich um weiter als 2 vom Ursprung entfernt. Dabei startet man mit $z=0$ und setzt das sich ergebende neue $z$ wieder in die Formel ein.
+- Und man beliebig oft die Formel $z=z^2+c$ anwenden kann ohne, dass z sich um weiter als 2 vom Ursprung entfernt. Dabei startet man mit z=0 und setzt das sich ergebende neue z wieder in die Formel ein.
+
+Wenn man alle Punkte die in der Mandelbrotmenge sind schwarz einfärbt ergibt sich folgendes Bild.
+
+![Figure 2: The Mandelbrot set](fig/image010.gif)
 
  Aufgaben:
-- Schreibe ein Programm das von einer komplexen Zahl prüft ob diese in der Mandelbrotmenge ist. Konkret: während 100 Berechnungen der Formel ist die Distanz von $z$ zum Ursprung immer kleiner als 2. Teste Werte im Bereich -2<x<1,1 und -1,1<y<1,1
+- Schreibe ein Programm das von einer komplexen Zahl prüft ob diese in der Mandelbrotmenge ist. Konkret: während 100 Berechnungen der Formel ist die Distanz von $z$ zum Ursprung immer kleiner als 2. Teste folgende Werte im Bereich -2<x<1,1 und -1,1<y<1,1:
+  - (-1,2+0,1i) – innerhalb
+  - (-1,2+0,5i) – außerhalb
+  - (0,1-0,6i) – innerhalb
+  - (0+0,8i) – außerhalb
 - Teste die Klasse `Complex` mit folgendem Programm das mit Hilfe der Klasse `Komplex` ein **Apfelmännchen** in der Konsole "zeichnet" – das Apfelmännchen ist eine Darstellung der Mandelbrotmenge.
 
 ```java
-package mandelbrotconsole;
+public static void printMandelbrot() {
 
-public class MandelbrotConsole {
+  int steps_x=80;
+  int steps_y=24;
 
-  public static void main(String[] args) {
+  double start_x = -2;
+  double start_y = 1.1;
+  double end_x = 1.1;
+  double end_y = -1.1;
+  double step_x=(end_x-start_x)/steps_x;
+  double step_y=(end_y-start_y)/steps_y;
 
-    int steps_x=80;
-    int steps_y=24;
-
-    double start_x = -2;
-    double start_y = 1.1;
-    double end_x = 1.1;
-    double end_y = -1.1;
-    double step_x=(end_x-start_x)/steps_x;
-    double step_y=(end_y-start_y)/steps_y;
-
-    for (double y = start_y; y > end_y; y+=step_y) {
-      for( double x = start_x; x < end_x; x+=step_x) {
-        Complex c = new Complex(x,y);
-        Complex z = new Complex(0,0);
-        double r=0; // distance
-        int cnt=100;
-        while(cnt-- > 0 && r<2) {
-          z = z.times(z);
-          z = z.plus(c);
-          r = z.abs();
-        }
-        if(cnt==-1)
-          System.out.print("*");
-        else if(cnt<75)
-          System.out.print("o");
-        else if(cnt<90)
-          System.out.print(".");
-        else
-          System.out.print(" ");
+  for (double y = start_y; y > end_y; y+=step_y) {
+    for( double x = start_x; x < end_x; x+=step_x) {
+      Complex c = new Complex(x,y);
+      Complex z = new Complex(0,0);
+      double r=0; // distance
+      int cnt=100;
+      while(cnt-- > 0 && r<2) {
+        z = z.times(z);
+        z = z.plus(c);
+        r = z.abs();
       }
-      System.out.println("");
+      if(cnt==-1)
+        System.out.print("*");
+      else if(cnt<75)
+        System.out.print("o");
+      else if(cnt<90)
+        System.out.print(".");
+      else
+        System.out.print(" ");
     }
+    System.out.println("");
   }
 }
+
 
 ```
 
