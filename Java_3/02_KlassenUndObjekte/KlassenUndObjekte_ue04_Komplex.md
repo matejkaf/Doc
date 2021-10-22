@@ -30,7 +30,7 @@ Die Mandelbrotmenge ist eine Teilmenge der komplexen Zahlen. Eine komplexe Zahl 
 
 Wenn man alle Punkte die in der Mandelbrotmenge sind schwarz einfärbt ergibt sich folgendes Bild.
 
-![Figure 2: The Mandelbrot set](fig/image010.gif)
+![Die Mandelbrotmenge](fig/image010.gif)
 
  Aufgaben:
 - Schreibe ein Programm das von einer komplexen Zahl prüft ob diese in der Mandelbrotmenge ist. Konkret: während 100 Berechnungen der Formel ist die Distanz von $z$ zum Ursprung immer kleiner als 2. Teste folgende Werte im Bereich -2<x<1,1 und -1,1<y<1,1:
@@ -42,7 +42,6 @@ Wenn man alle Punkte die in der Mandelbrotmenge sind schwarz einfärbt ergibt si
 
 ```java
 public static void printMandelbrot() {
-
   int steps_x=80;
   int steps_y=24;
 
@@ -76,8 +75,6 @@ public static void printMandelbrot() {
     System.out.println("");
   }
 }
-
-
 ```
 
 
