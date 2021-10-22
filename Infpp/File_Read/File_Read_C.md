@@ -84,16 +84,10 @@ Die gelesene Länge verwenden um **dynamisch** ein Array genau dieser Länge anz
 ```c
 int N;
 fscanf(fp, "%d", &N);
-for (int i=0; i<N; i++)
-    fscanf(fp, "%d", &a[i]);
 int* a = new int[N];
 for (int i=0; i<N; i++)
     fscanf(fp, "%d", &a[i]);
 ```
-
-
-
-
 
 
 

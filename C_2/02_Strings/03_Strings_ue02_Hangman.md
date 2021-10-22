@@ -6,6 +6,8 @@ tags: [c,strings,assignment,C_2,2AHITS]
 
 Wir wollen Schritt für Schritt das Spiel "Hangman" programmieren.
 
+Beispiel für die Ausgabe am Bildschirm:
+
 
 ```
 === Hangman ===
@@ -84,4 +86,6 @@ Tipp: Bereits gedrückte Tasten in einem Array speichern – der Index ins Array
      |
  ____|____
 ```
+
+---
 
