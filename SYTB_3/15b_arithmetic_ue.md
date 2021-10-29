@@ -1,5 +1,5 @@
 ---
-title: Arithmetic
+title: Arithmetik
 subtitle: Übungen bash scripting
 tags: [assignment,3AHITS]
 ---
