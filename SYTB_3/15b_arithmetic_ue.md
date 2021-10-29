@@ -6,7 +6,7 @@ tags: [assignment,3AHITS]
 
 #### Übung (multiply)
 
-Create a simple script which will take two command line arguments and then multiply them together using each of the methods detailed above.
+Create a simple script which will take two command line arguments and then multiply them together using each of the discussed methods.
 
 
 
