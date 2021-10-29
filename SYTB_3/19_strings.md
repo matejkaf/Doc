@@ -1,5 +1,7 @@
 ---
 title: Stringmanipulation
+subtitle: bash scripting
+tags: [lecture,3AHITS]
 ---
 
 
