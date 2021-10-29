@@ -1,5 +1,12 @@
 
 
+# Ideen für Übungsbeispiele
+
+- script das in ein Logfile schreibt: `date`, `whoami`, …
+- 
+
+
+
 # Variablen in gestarteten Skripts (export)
 
 Skript:

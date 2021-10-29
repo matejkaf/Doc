@@ -16,14 +16,30 @@ Shell Kommandos können in **Textdateien** geschrieben und dann ausgeführt werd
 
 # Hello World Script
 
+Erstellen eines einfachen shell scripts `hello.sh` in `vi`
 
-Erstellen eines einfachen shell scripts in `vi`
+```sh
+# Hello World Skript
+echo Hello World
+```
+
+Aufruf:
+
+```sh
+$ sh hello.sh
+```
+
+`sh` startet eine weitere shell
+
+Das zu startende Programm kann auch in die erste Zeile des Skripts integriert werden:
 
 ```bash
 #!/bin/sh
 # Hello World Skript
 echo Hello World
 ```
+
+Um es direkt starten zu können muss das eXecution flag gesetzt werden:
 
 ```bash
 $ chmod u+x hello.sh  # octal 755
@@ -127,6 +143,12 @@ Das Skript kann sofort ausgeführt werden:
 ```sh
 $ ./mytest.sh
 ```
+
+---
+
+#### Übung (self listing script)
+
+Schreibe ein Skript das nach dem Starten den enthaltenen Text ausgibt (sozusagen sich selbst ausgibt)
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Body Mass Index – Übung Klassen
-tags: [assignment,java, oop]
+tags: [assignment,java,oop]
 use_math: true
 ---
 
@@ -26,7 +26,7 @@ Schreibe:
 
 #### Übung (Erweiterungen)
 
-Schreibe eine Methode die ausgibt ob eine Person Unter-, Normal oder Übergewichtig ist. Ein Wert von $18,5-25,0$ gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
+Schreibe eine Methode die ausgibt ob eine Person Unter-, Normal- oder Übergewichtig ist. Ein Wert von $18,5-25,0$ gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
 
 
 
@@ -46,7 +46,7 @@ Ist der BMI im Normbereich oder zu klein soll die Körpergröße unverändert bl
 
 #### Übung (Geschlecht)
 
-Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen. Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich $20-25 kg/m^2$, und bei Frauen $19-24 kg/m^2$ (.Quelle: wikipedia)
+Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen. Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich $20-25 kg/m^2$, und bei Frauen $19-24 kg/m^2$ (Quelle: wikipedia)
 
 Berücksichtige dies bei der Bewertung des BMI.
 

@@ -132,7 +132,21 @@ Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.micro
 
 
 
-## Trends
+# Apple M1
+
+![_20-5_screenshot-71347b528e0c1474](fig/_20-5_screenshot-71347b528e0c1474.png)
+
+[ct Artikel (19.10.2021): Apple Silicon M1 Max: Apple will es mit Nvidias GeForce RTX 3080 aufnehmen](https://www.heise.de/news/Apple-Silicon-M1-Max-Apple-will-es-mit-Nvidias-GeForce-RTX-3080-aufnehmen-6222030.html)
+
+
+
+![image-20211022162258284](fig/image-20211022162258284.png)
+
+
+
+![image-20211022162323363](fig/image-20211022162323363.png)
+
+# Trends
 
 **Moore's Law** (Intel, 1975): Die Anzahl der Transistoren pro IC verdoppelt sich alle 2 Jahre (+40% p.a.).
 

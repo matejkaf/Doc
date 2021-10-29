@@ -75,7 +75,7 @@ Es genügt eine Zuweisung (keine Definition notwendig).
 x=42
 ```
 
-Datentypen werden automatisch zugewiesen.
+Datentypen werden automatisch erkannt.
 
 ```python
 a = 1    		# int
@@ -89,12 +89,39 @@ Interessant: `int` Werte können beliebig groß werden.
 Datentypumwandlungen:
 
 ```python
-x=3.14
-y=int(x)
+x=3.14   # das ist ein float
+y=int(x) # gewandelt nach int fallen die Kommastellen weg
+```
+
+```python
+# string nach int
 textInt="42"
 n=int(textInt)
+```
+
+```python
+# string nach float
 textFloat="1.2345"
 m=float(textFloat)
+```
+
+```python
+# int --> string
+textInt=str(n)
+# float --> string
+textFloat=str(m)
+```
+
+
+
+# Ausgaben
+
+```python
+print("PYTHON")
+x=5
+print(x)
+print("Wert ist"+str(x))
+print(f"Wert ist {x} und das doppelte ist {2*x}")
 ```
 
 

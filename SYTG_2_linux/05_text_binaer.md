@@ -178,8 +178,6 @@ $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/chinese.txt
 $ wget https://matejkaf.github.io/Doc/SYTG_2_linux/testdata/arabic.txt
 ```
 
-> [!2AHITS G2 09.04.2021]
-
 
 
 # Latin 1

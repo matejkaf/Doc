@@ -5,7 +5,7 @@ title: Linux Kommandos
 * TOC
 {:toc}
 
-## small tools
+# small tools
 
 `history` - zeigt die shell History an (shell built in)
 
@@ -44,6 +44,8 @@ title: Linux Kommandos
 `basename`, `dirname` – return filename or directory portion of pathname
 
 
+
+# Tools
 
 ## ls
 
@@ -273,4 +275,37 @@ Neue Umgebung (login shell) mit den Einstellungen des Users [[*](https://superus
 ```sh
 $ su - user
 ```
+
+
+
+## du – disc usage
+
+```
+du -sh file_path
+```
+
+**Explanation**
+
+- `du` (**d**isc **u**sage) command estimates file_path space usage 
+
+- The options `-sh` are (from `man du`):
+
+  ```
+    -s, --summarize
+           display only a total for each argument
+  
+    -h, --human-readable
+           print sizes in human readable format (e.g., 1K 234M 2G)
+  ```
+
+  To check more than one directory and see the total, use `du -sch`:
+
+  ```
+    -c, --total
+           produce a grand total
+  ```
+
+Kombination mit `find`:
+
+> It works very nice with `find` e.g. to count the amount of space in specific subdirectories in current path: `$ find . -type d -name "node_modules" -prune -exec du -sh {} \;`
 

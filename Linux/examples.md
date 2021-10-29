@@ -90,8 +90,8 @@ find . -mindepth 2 -type f  -name "*.mp4" -print -exec mv {} . \;
 [remove all directories (and contents) but not files in pwd](https://superuser.com/a/713745)
 
 ```sh
-$ gfind -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
-# GNU find!
+$ find -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
+# gfind on mac GNU find!
 ```
 
 
@@ -171,7 +171,7 @@ for filename in ./*; do mv "./$filename" "./$(echo "$filename" | sed -e 's/to de
 # alle .tex Files in einem Verzeichnis bearbeiten
 #
 for filename in *.tex; do
-    [ -f "$filename" ] || break
+    [ -f "$filename" ] || break  # if exists and is regular file
     echo $filename "${filename%.*}.md"
 done
 
