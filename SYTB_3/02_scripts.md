@@ -99,9 +99,9 @@ $$ - The process ID of the current script.
 
 
 
-# Argumentliste (`$@`)
+# Argumentliste
 
-ergibt eine Liste aller übergebenen Argumente. Dies kann für eine Schleife verwendet werden:
+`$@` ergibt eine Liste (white space getrennt) aller übergebenen Argumente. Dies kann für eine Schleife verwendet werden:
 
 ```sh
 $ for args in $@; do echo "$args"; done
