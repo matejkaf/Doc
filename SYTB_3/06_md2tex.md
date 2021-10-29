@@ -166,6 +166,8 @@ $ PATH="$HOME/$REPL_SLUG/.TinyTeX/bin/x86_64-linux:$HOME/$REPL_SLUG/.pandoc/bin:
 
 ## mini.tex
 
+Einfaches TeX Dokument zum testen:
+
 ```latex
 % This is a simple sample document.  For more complicated documents take a look in the excersice tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
 
@@ -202,6 +204,8 @@ $ PATH="$HOME/$REPL_SLUG/.TinyTeX/bin/x86_64-linux:$HOME/$REPL_SLUG/.pandoc/bin:
 
 
 ## pandoc_latex.template
+
+Template für Arbeitsbericht.
 
 ```latex
 \documentclass[12pt]{scrartcl}  

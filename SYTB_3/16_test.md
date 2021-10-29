@@ -1,27 +1,49 @@
 ---
-title: if statement
+title: test Kommando
 subtitle: bash scripting
 tags: [lecture,3AHITS]
 ---
 
-[Bash Scripting Tutorial - 5. If Statements](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
 
-[Conditions in bash scripting (if statements)](https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/)
+
+Das Kommando `test` zeigt im exit status (`$?`) das Ergebnis von Vergleichen. Grundlage für if Anweisungen in scripts. Siehe [Linux test command](https://www.computerhope.com/unix/test.htm).
+
+-   `$?` ist 0: entspricht true
+-   `$?` ist 1: entspricht false
+
+
 
 ```bash
-#!/bin/bash
-# Basic if statement
-if [ $1 -gt 100 ]
-then
-	echo "Hey that's a large number."
-	pwd
-fi
-date
+$ test 'xyz' = 'xyz'; echo $?
+0
+$ test 'xyz' = 'xy'; echo $?
+1
 ```
 
-`[]` Wie [`test`](https://man7.org/linux/man-pages/man1/test.1.html) Kommando.
+Achtung die Leerzeichen sind wichtig:
 
-> The square brackets ( [ ] ) in the **if** statement above are actually a reference to the command **test**. This means that all of the operators that test allows may be used here as well. Look up the man page for test to see all of the possible operators (there are quite a few) but some of the more common ones are listed below.
+```bash
+$ test 'xyz'=='xyz'; echo $?
+0
+```
+
+Andere Form mit `[]` 
+
+```bash
+$ [ 'xyz' = 'xyz' ]; echo $?
+0
+# Leerzeichen neben den [ ] !
+```
+
+Exit Status mit `&&` und `||` Operatoren:
+
+```bash
+$ test 100 -gt 99 && echo "Yes, that's true." || echo "No, that's false."
+
+Yes, that's true.
+```
+
+> The right side of && will only be evaluated if the exit status of the left side is zero (i.e. true). || is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
 
 Übersicht:
 
@@ -45,22 +67,10 @@ date
 
 
 
-```bash
-#!/bin/bash
-# else example
-if [ $# -eq 1 ]
-then
-	nl $1
-else
-	nl /dev/stdin
-fi
-```
+---
 
+#### Übung (Datei zu groß)
 
+Schreibe ein Skript mit einer Datei als Argument, es soll der Text `Datei ist zu groß` ausgegeben werden wenn die Datei mehr als 100kB hat.
 
-Aufgaben:
-
--   Ein Directory anlegen wenn dieses nicht existiert.
--   Create a Bash script which will take 2 numbers as command line arguments. It will print to the screen the larger of the two numbers.
--   Create a Bash script which will print a message based upon which day of the week it is (eg. 'Happy hump day' for Wedensday, 'TGIF' for Friday etc).
-
+---

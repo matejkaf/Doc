@@ -1,65 +1,18 @@
 ---
 title: Arithmetic
-subtitle: bash scripting
-tags: [lecture,3AHITS]
+subtitle: Übungen bash scripting
+tags: [assignment,3AHITS]
 ---
 
-
-
-[Bash Scripting Tutorial - 4. ArithmeticTutorial Sections ](https://ryanstutorials.net/bash-scripting-tutorial/bash-arithmetic.php)
-
-
-
-Mit `let`
-
-```sh
-let a=5+4 # keine Leerzeichen erlaubt
-let "a = 5 + 4"
-let "a = $1 * 2"
-let a=a\*2  # * muss escaped werden
-```
-
-Mit  `expr`  wird das Ergebnis ausgegeben anstelle es mit `let` in einer Variable zu speichern
-
-```sh
-expr 5 + 4 # Leerzeichen sind OK
-echo $(expr 5 + 4) # $(...) command substitution
-```
-
-Mit `$((<expr>))` – 2 Klammern! – sind C ähnliche Ausdrücke möglich. 
-
-`(())` wenn das Ergebnis nicht weiterverwendet wird.
-
-```bash
-#!/bin/bash
-# Basic arithmetic using double parentheses
-a=$(( 4 + 5 ))
-echo $a # 9
-
-a=$((3+5)) # Leerzeichen sind nicht wichtig
-echo $a # 8
-
-b=$(( a + 3 )) # ohne $ Zeichen
-echo $b # 11
-
-# noch C ähnlicher
-((a=2*a)) 
-((a++))
-((a+=4))
-
-```
-
-> There are several ways in which to do arithmetic in Bash scripts. Double parentheses is the preferred method.
-
-
-
-#### Übung ()
+#### Übung (multiply)
 
 Create a simple script which will take two command line arguments and then multiply them together using each of the methods detailed above.
 
 
 
-#### Übung ()
+---
+
+#### Übung (Zeitmessung)
 
 Schreibe 2 Skripts: `time_start.sh` und `time_stop.sh`. Bei Aufruf von `time_stop.sh` wird die Anzhahl der Sekunden ausgegeben die seit dem letzten Aufruf von `time_start.sh` vergangen sind. 
 
@@ -69,7 +22,9 @@ Schreibe 2 Skripts: `time_start.sh` und `time_stop.sh`. Bei Aufruf von `time_sto
 
 
 
-#### Übung ()
+---
+
+#### Übung (Random Number V1 & V2)
 
 Remember when we looked at [variables](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php) we discovered `$RANDOM` will return a random number. This number is between 0 and 32767 which is not always the most useful. Let's write a script which will use this variable and some arithmetic (hint: play with modulus) to return a random number between 0 and 100.
 
