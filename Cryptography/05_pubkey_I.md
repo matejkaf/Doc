@@ -30,7 +30,7 @@ Anwendung:
 
 Alice will an Bob eine verschlüsselte Nachricht schicken.
 
-- Bob (al Empfänger) erstellt ein Schlüsselpaar: einen *public key* ($P_{Bob}$) und einen *private (secret) key* ($S_{Bob}$).
+- Bob (als Empfänger) erstellt ein Schlüsselpaar: einen *public key* ($P_{Bob}$) und einen *private (secret) key* ($S_{Bob}$).
 - Den *public key* ($P_{Bob}$) kann Alice (und jeder andere) zum verschlüsseln verwenden. Bob kann diesen auf beliebige Weise zur Verfügung stellen. Auch wenn dieser in die falschen Hände fällt ist das kein Problem.
 - den *private (secret) key* ($S_{Bob}$) muss Bob absolut sicher verwahren.
 
