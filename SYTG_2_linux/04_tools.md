@@ -255,6 +255,14 @@ echo '1+2+3' | python3 -c 'print(eval(input()))'
 ```
 
 > [!TODO] Das tatsächlich summieren der Werte wäre auch ein Beispiel für AWK
+>
+> - auch shell arithmetic funktioniert 
+>
+> - ```sh
+>   % test=20.0+20.23+20.0+20.5
+>   % echo $(( test ))
+>   80.730000000000004
+>   ```
 
 
 
