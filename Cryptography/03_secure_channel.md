@@ -1,7 +1,7 @@
 ---
 title: Secure Channel
 description: Secure Channel, MAC, Hash
-tags: [5AHELS,lecture, krypto, mac ]
+tags: [lecture, krypto, mac ]
 ---
 
 

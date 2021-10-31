@@ -1,7 +1,7 @@
 ---
 title: Kryptographie
 description: Grundbegriffe der modernen Kryptographie
-tags: [5AHELS,lecture, krypto ]
+tags: [lecture, krypto ]
 ---
 
 

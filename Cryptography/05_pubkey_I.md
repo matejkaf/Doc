@@ -1,7 +1,7 @@
 ---
 title: Public-key cryptography
 subtitle: Allgemeines
-tags: [5AHELS,lecture,krypto]
+tags: [lecture,krypto]
 use_math: true
 ---
 

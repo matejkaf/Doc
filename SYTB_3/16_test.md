@@ -43,7 +43,7 @@ $ test 100 -gt 99 && echo "Yes, that's true." || echo "No, that's false."
 Yes, that's true.
 ```
 
-> The right side of && will only be evaluated if the exit status of the left side is zero (i.e. true). || is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
+> The right side of `&&` will only be evaluated if the exit status of the left side is zero (i.e. true). `||` is the opposite: it will evaluate the right side only if the left side exit status is non-zero (i.e. false).
 
 Übersicht [`test`](https://man7.org/linux/man-pages/man1/test.1.html) Vergleiche:
 

@@ -1,7 +1,7 @@
 ---
 title: Block cipher
 description: Block cipher Verschlüsselung, DES, AES, Block cipher mode
-tags: [5AHELS,lecture, krypto ]
+tags: [lecture, krypto ]
 ---
 
 

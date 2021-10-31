@@ -1,7 +1,7 @@
 ---
 title: Private Key Infrastructure (PKI)
 description:
-tags: [5AHELS,lecture, krypto ]
+tags: [lecture, krypto ]
 ---
 
 Fragen bei public key crypto:
