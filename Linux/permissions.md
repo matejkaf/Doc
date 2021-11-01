@@ -229,7 +229,18 @@ groups ... supplementary group IDs. Zusätzliche Gruppen für Zugriffsrechten au
 
 Erzeugt ein User ein neues File/Directory so erhält dieses als Gruppenzuordnung die Primary Group des Users.
 
-## Beispiel
+Auch mit dem Kommando `groups` werden die zugeordneten Gruppen angezeigt
+
+```sh
+$ groups
+staff everyone localaccounts ...
+```
+
+
+
+- Neue Gruppe: `groupadd`
+- Gruppe eines Files/Dirs ändern: `chgrp`
+- Hinzufügen eines Users zu einer Gruppe: `usermod -aG`
 
 ```bash
 # logged in as user 'htluser'
@@ -272,11 +283,16 @@ permissions
 $ 
 ```
 
+`htluser` zu Gruppe `prj` hinzufügen
+
 ```bash
-# htluser zu Gruppe prj hinzufügen
 $ sudo usermod -aG prj htluser
 # htluser must relogin now!
-...
+```
+
+Anzeige der Gruppen denen der User zugeordnet ist:
+
+```sh
 $ groups
 htluser sudo prj
 $ cd /projects/
@@ -287,7 +303,7 @@ $ cat file.txt
 
 
 
-## Advanced Directory Permission Flags
+# Advanced Directory Permission Flags
 
 - [Linux File Permission Confusion](https://www.hackinglinuxexposed.com/articles/20030417.html)
 
@@ -297,7 +313,7 @@ $ cat file.txt
 
 
 
-### Sticky Bit
+## Sticky Bit
 
 The **sticky bit** () states that files and directories within that directory may only be deleted or renamed by their owner (or root). 
 
@@ -321,7 +337,7 @@ $ chmod o+t test
 
 
 
-### Set group id bit
+## Set group id bit
 
 If you set the sgid bit on a directory, any files created in that directory will have their group ownership set to the directory's group owner.
 
@@ -343,7 +359,7 @@ $ chmod g+s test
 
 
 
-### Set uid bit
+## Set uid bit
 
 Normally, on a unix-like operating system, the ownership of files and directories is based on the default `uid` (user-id) and `gid` (group-id) of the user who created them. The same thing happens when a process is launched: it runs with the effective user-id and group-id of the user who started it, and with the corresponding privileges. This behavior can be modified by using special permissions.
 

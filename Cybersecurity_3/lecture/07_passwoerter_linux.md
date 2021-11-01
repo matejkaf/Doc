@@ -1,6 +1,6 @@
 ---
 title: Technische Details – Linux
-subtitle: Passwörter
+subtitle: Passwörter und Cracking Tools
 tags: [lecture,3AHITS]
 ---
 
@@ -21,9 +21,9 @@ tags: [lecture,3AHITS]
 
 Beachte die eingeschränkten Rechte
 
-Beispiel mit SHA-512 – (`passwd` mittels `unshadow`):
+## Beispiel
 
-Zeile in passwd:
+Zeile in `passwd`:
 
 ```
 matejka:x:1000:1000:Franz MATEJKA,,,:/home/matejka:/bin/bash
@@ -56,7 +56,9 @@ const static u_int8_t Base64Code[] =
 >
 > ([wikipedia Base64](https://en.wikipedia.org/wiki/Base64).)
 
-Rounds: 5000 default wert, kann als Option auf einen anderen Wert gesetzt werden:
+## Rounds
+
+Default: 5000 – kann als Option in `shadow`  auf einen anderen Wert gesetzt werden:
 
 ```
 $6$rounds=5000$
@@ -64,9 +66,9 @@ $6$rounds=5000$
 
 
 
+## yescrypt
 
-
-Neu (z.B. in Kali): **yescrypt**
+Neueres Verfahren zum speichern von Passwörtern – z.B. in Kali
 
 ```
 kali:x:1000:1000:Kali,,,:/home/kali:/usr/bin/zsh
@@ -117,12 +119,11 @@ $ passwd bob
 Ist ein Tool um Passwort Hashwerte zu berechnen. Generierte Strings können 1:1 in  `/etc/shadow` eingefügt werden.
 
 ```bash
-# mkpasswd verwenden um Hash-Wert zu berechnen:
 $ mkpasswd --method=sha512crypt --salt=Y.6vLGlD1cGsutIg franz
 $6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.
 ```
 
-Alle Hash Methoden anzeigen:
+Alle verfügbaren Hash Methoden anzeigen:
 
 ```bash
 $ mkpasswd --method=help
@@ -143,16 +144,16 @@ nt              NT-Hash
 
 
 
-Beispiele:
+Beispiel – wenn kein Salt angegeben wird ein zufälliges generiert:
 
 ```sh
 $ mkpasswd --method=sha512crypt p8ssw0rd  
 $6$QrBQnyeXt61IcfVR$lXEiG4LME9LF9VjOmPa5R4IsZ2/oXkztP04nh.wwcdAKnHehxreneSljIis6ub2KRGTEmUgMbNQcWWUVm4BNu/
 ```
 
-Generiert zufälliges Salt wenn keines angegeben!
 
-Beispiel:
+
+Beispiel – gleiches Passwort (`test1`) aber unterschiedliches Salt:
 
 ```sh
 $ mkpasswd --method=sha512crypt test1  
@@ -166,23 +167,12 @@ $ mkpasswd --method=sha512crypt test1
 $6$2zZ27E60wx7caMIV$gC7p6u0Jp1GtC4cQBBE36aZRIjT.WMe9Drlde9KSAVvzS22hIlkF6rNTRabIr/MHObkwNKmGgrf5GDRag4TfI1
 ```
 
-Beispiel:
-
-```sh
-$ mkpasswd --method=sha512crypt Test18  
-$6$6ebEaPf.mvEQ0zAk$ttrtrTSc3O9qAjX7uY2aX1TKmYZBNUMGmKF1i2t3y02RRU/8hQHkH5n34UF7bmjtS/IHGMOaEFn0wRT84cUo2/
-```
-
-Beispiel – mit Anzahl von Runden.
+Beispiel – mit Anzahl von Runden (`--rounds=<RUNDEN>`).
 
 ```sh
 $ mkpasswd --method=sha512crypt --rounds=20000 p8ssw0rd 
 $6$rounds=20000$zRsXAj3dLKuy4ynB$lb9OMX/eqfPRKzbSCC6.Z0o/zJ/zlfU17FOQ6yGANLMth0OblyXoG1zv8qqhoiQQma0y9zacqepAynxnU8VYk1
 ```
-
-
-
-
 
 
 
@@ -192,7 +182,7 @@ $6$rounds=20000$zRsXAj3dLKuy4ynB$lb9OMX/eqfPRKzbSCC6.Z0o/zJ/zlfU17FOQ6yGANLMth0O
 
 ## unshadow
 
-Kombiniert /etc/passwd /etc/shadow zu einer einzigen Datei, diese kann von John the Ripper gelesen werden.
+Kombiniert `/etc/passwd` mit  `/etc/shadow` zu einer einzigen Datei, diese kann von **John the Ripper** gelesen werden.
 
 ```sh
 $ unshadow /etc/passwd /etc/shadow > crack.password
@@ -219,7 +209,7 @@ $ unshadow /etc/passwd /etc/shadow > crack.password
 
 [John the Ripper usage examples](https://www.openwall.com/john/doc/EXAMPLES.shtml)
 
-Single crack mode:
+**Single** crack mode:
 
 ```sh
 $ john --single crack.password
@@ -227,7 +217,7 @@ $ john --single crack.password
 
 
 
-Wordlist crack mode:
+**Wordlist** crack mode:
 
 ```sh
 $	john --wordlist crack.password
@@ -237,7 +227,7 @@ Verwendet john's Standard Wordlist (`/usr/share/john/password.lst` – ist eher 
 
 
 
-Incremental cracking mode:
+**Incremental** cracking mode:
 
 ```sh
 $ john --incremental crack.password
@@ -245,7 +235,7 @@ $ john --incremental crack.password
 
 
 
-Wenn kein Mode angegeben probiert john in der Reihenfolge single,wordlist,incremental:
+Wenn **kein Mode** angegeben probiert john in der Reihenfolge single, wordlist, incremental:
 
 ```sh
 $ john crack.password 
@@ -253,11 +243,9 @@ $ john crack.password
 
 
 
-### .pot File
+### pot File
 
-John merkt sich bereits gecrackte Passwörter in einer Datenbank und versucht es nicht noch einmal (auch wenn man eine andere Methode ausprobieren will).
-
-Lösung: `john.pot` File löschen:
+John merkt sich bereits gecrackte Passwörter (pro User) in einer Datenbank und versucht es nicht noch einmal. Wenn man ganz von vorne beginnen möchte (z.B. Passwort wurde geändert) muss folgendes File gelöscht werden:
 
 ```sh
 $ rm ~/.john/john.pot
@@ -265,9 +253,9 @@ $ rm ~/.john/john.pot
 
 
 
-### Single
+### Single Mode
 
-Cracking Mode **single** mit pw=username
+Cracking Mode **single** (z.B. pw=username)
 
 ```sh
 $ john --single crack.password   
@@ -295,7 +283,7 @@ test1:test1:1001:1001:,,,:/home/test1:/bin/bash
 1 password hash cracked, 0 left
 ```
 
-Mangling rules?
+Mangling rules? Auszug aus Dokumentation:
 
 ```
 --single
@@ -324,29 +312,91 @@ Mangling rules?
 
 [Wordlist rules syntax](https://www.openwall.com/john/doc/RULES.shtml)
 
-Nicht so übersichtlich auf den ersten Blick, die Grundidee ist, dass Standard-Änderungen durchprobiert werden (z.B. anfügen einer Zahl).
+Oft wird für ein Passwort ein Wort gewählt das man sich gut merken kann. Die meisten Passwortregeln erzwingen zusätzlich Großbuchstaben, Ziffern und/oder Sonderzeichen. Also verändert der User sein gewähltes Passwort (z.B. `cybersecurity`) ein wenig damit es den Passwortregeln entspricht sich aber immer noch gut merken lässt, z.B. `Cybersecurity21` oder `cybersecuritY#`.
 
-Z.B. der Username ist `test` und das Passwort `Test18` (großer Anfangsbuchstabe und angefügte Zahl). Dies wird durch die "mangling rules" erkannt.
+Die *mangling rules* bilden diese kleinen üblichen Änderungen in John the Ripper nach.
 
 
 
-### Mangling Rules
+### Wordlist Mode
 
-Oft werden Passwörter **mutiert** (mangling), d.h. Sonderzeichen und Ziffern eingebaut sowie Groß-/Kleinschreibung verändert. 
+```sh
+$ more /usr/share/john/password.lst 
+```
 
-John the Ripper hat dafür etliche Regeln eingebaut um mutierte Wortlisten zu erzeugen
+```sh
+$	john --wordlist crack.password
+```
 
-Anwendung:
+john's Standard Wordlist (ist eher klein) (`/usr/share/john/password.lst`) wird verwendet wenn keine andere Wortliste angegeben wird.
 
-```bash
-$ more test.txt 
+
+
+#### Wortlisten
+
+Die Erfolgswahrscheinlichkeit ein Passwort zu knacken hängt stark von der **Qualität der Wortliste** ab. Umfangreiche Wortlisten stammen von diversen password breaches, z.B. `rockyou.txt`. 
+
+- Siehe in Kali: `/usr/share/wordlists`. 
+- Mit dem Tool `metasploit` kommen Listen von Default Passwörtern: `/usr/share/metasploit-framework/data/wordlists`
+- Wortlisten können selber erstellt oder [gekauft](https://www.openwall.com/wordlists/) werden. Es gibt auch Tools zum erzeugen von Wortlisten, z.B. `crunch` oder `cewl` (Passwort Profiling von Begriffen die auf einer Internetseite gefunden werden).
+
+
+
+
+
+#### Eigene Wortliste
+
+Wortlisten sind simple Textfiles
+
+```sh
+$ more test.lst
 braunau
 htl
 gundula
 ```
 
 ```sh
-$ john --wordlist=test.txt --rules --stdout >test-mutated.txt
+$	john --wordlist=test.lst crack.password
+```
+
+
+
+#### Mangling Rules
+
+Die Erfolgswahrscheinlichkeit im Wordlist Mode kann wesentlich erhöht werden wenn zusätzlich Mangling Rules angewendet werden. Dafür gibt es die Option `--rules`:
+
+```sh
+$	john --wordlist=password.lst --rules crack.password
+```
+
+Wird die Option `--rules` bei `--wordlist` verwendet so arbeitet john mit den Mutationsregeln der Sektion `[List.Rules:Wordlist]` in `/etc/john/john.conf`. Diese sind weniger rechenintensiv als die Regeln vom Single Mode. Die Mutationsregeln können zusätzlich angegeben werden.
+
+
+
+```sh
+$ john --wordlist=password.lst --rules=Single crack.password
+```
+
+`Single` ist bspw. erfolgreich bei Mutation von `test` in `Test24` – die `WordList` Rules scheitern daran.
+
+Mit der Option `--stdout` werden die Passwortkandidaten ausgegeben ohne diese mit den Hashwerten zu vergleichen.
+
+```sh
+$ more test.lst
+braunau
+htl
+gundula
+```
+
+
+
+```sh
+$ john --rules --wordlist=test.lst --stdout
+```
+
+
+
+```
 ...
 Gundula1
 htlhtl
@@ -376,14 +426,18 @@ Braunau0
 ..
 ```
 
-Wird die Option `--rules` bei `--wordlist` verwendet so arbeitet john mit den Mutationsregeln der Sektion `[List.Rules:Wordlist]` in `/etc/john/john.conf`:
 
-**Eigene Regel** in der Konfigurationsdatei ergänzen:
+
+#### Eigene Regeln
+
+**Eigene Regel** in der Konfigurationsdatei von John the Ripper ergänzen:
 
 ```bash
 $ sudo -i
 $ nano /etc/john/john.conf
 ```
+
+Beispiel: Erweitern der `WordList` Sektion durch eine Regel (`^[0-9]$[0-9]`) die alle Ziffern am Anfang und am Ende des Worts ausprobiert:
 
 ```
 ...
@@ -442,89 +496,38 @@ $ john --wordlist=test.txt --rules=TwoDigits --stdout >test-mutated.txt | more
 
 
 
-### Wordlist
+### Incremental Mode
 
-john's Standard Wordlist (ist eher klein) (`/usr/share/john/password.lst`) wird verwendet wenn keine eigene Wortliste angegeben wird.
-
-```sh
-$ more /usr/share/john/password.lst 
-```
-
-
-
-```sh
-$	john --wordlist crack.password
-```
-
-> To catch weak passwords not derived from readily available users' personal information, you should proceed with cracking modes demanding more processor time. First, let's try a tiny wordlist with word mangling rules enabled: [[*](https://www.openwall.com/john/doc/EXAMPLES.shtml)]
-
-
-
-Eigene Wortliste:
-
-```sh
-$ more password.lst 
-test
-pass
-```
-
-```sh
-$	john --wordlist=password.lst --rules crack.password
-```
-
-Wordlists alleine sind natürlich eher nicht erfolgreich:
-
-```sh
-$	john --wordlist=password.lst crack.password
-```
-
-Auch die Standard Wordlist (Mangling) Rules helfen nicht weiter
-
-```sh
-$	john --wordlist=password.lst --rules crack.password
-```
-
-Erfolgreich (pw=`Test24`):
-
-```sh
-$ john --wordlist=password.lst --rules=Single crack.password
-```
-
-Mangling Rules ausprobieren:
-
-```sh
-$ john --rules=Single --wordlist=password.lst --stdout
-```
-
-
-
-#### Wortlisten
-
-Die Erfolgswahrscheinlichkeit ein Passwort zu knacken hängt von der **Qualität der Wortliste** ab. Umfangreiche Wortlisten stammen von diversen password breaches, z.B. `rockyou.txt`. 
-
-- Siehe in Kali: `/usr/share/wordlists`. 
-
-- Mit dem Tool `metasploit` kommen Listen von Default Passwörtern: `/usr/share/metasploit-framework/data/wordlists`
-
-- Wortlisten können selber erstellt oder [gekauft](https://www.openwall.com/wordlists/) werden. Es gibt auch Tools zum erzeugen von Wortlisten, z.B. `crunch` oder `cewl` (Passwort Profiling von Begriffen die auf einer Internetseite gefunden werden).
-
-
-
-
-
-### Incremental
+Der stärkste (un rechenaufwändigste) cracking mode. Probiert alle Möglichkeiten durch
 
 ["Incremental" mode](https://www.openwall.com/john/doc/MODES.shtml#:~:text="Incremental" mode)
 
-TODO
+```sh
+$ john --incremental crack.password
+```
 
+Default Einstellungen in `/etc/john/john.conf` in der Sektion `[Incremental:ASCII]`:
 
+- 95 ASCII Zeichen
+- alle möglichen Längen bis 13
+
+Dies kann lange (ewig) dauern.
+
+Schwächere Passwörter können mit anderen vordefinierten Incremental Mode Parametern gefunden werden, z.B. `digits`:
+
+```sh
+$ john --incremental=digits mypasswd
+```
+
+probiert alle Ziffernkombinationen von `0` bis `99999999999999999999`
+
+Siehe auch [hier](https://www.openwall.com/john/doc/EXAMPLES.shtml).
 
 
 
 ## Crunch
 
-Tool `crunch`: zum erstellen einer brute-force Wortliste
+Tool `crunch`: zum erstellen einer brute-force Wortliste – ähnlich zum Incremental Mode von John the Ripper.
 
 BeispieL: Länge 4 aus einer Buchstabenliste:
 
@@ -566,7 +569,7 @@ $ crunch 4 8 -f /usr/share/crunch/charset.lst mixalpha-numeric-all-sv -o crunch2
 #              Specifies a character set from the charset.lst
 ```
 
-Achtung 84 PB! (Peta Byte)
+Achtung kann groß werden: 84 PB! (Peta Byte)
 
 Siehe `man crunch` – eher komplex in der Bedienung.
 

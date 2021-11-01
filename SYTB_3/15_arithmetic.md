@@ -34,7 +34,7 @@ echo $(expr 5 + 4) # $(...) command substitution
 
 Mit `$((<expr>))` – 2 Klammern! – sind C ähnliche Ausdrücke möglich. 
 
-`(())` wenn das Ergebnis nicht weiterverwendet wird.
+`(())` wenn das Ergebnis nicht weiterverwendet wird (kein "return").
 
 ```bash
 #!/bin/bash

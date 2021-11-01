@@ -126,6 +126,26 @@ Kontrollieren bzw. statische IP Adressen setzen
 
 
 
+Andere Beschreibung:
+
+## Statische IP
+
+Click rechts unten auf Netzwerksymbol
+
+![image-20210604182932998](fig/image-20210604182932998.png)
+
+![image-20210604183221959](fig/image-20210604183221959.png)
+
+ Adapteroptionen ändern / Adapter auswählen![image-20210604183335168](fig/image-20210604183335168.png)
+
+Eigenschaften:
+
+![image-20210604183354604](fig/image-20210604183354604.png)
+
+
+
+
+
 # Windows Defender AntiVirus
 
 [ct: Windows Defender deaktivieren - so klappt's](https://www.heise.de/tipps-tricks/Windows-Defender-deaktivieren-so-klappt-s-4030040.html)

@@ -38,8 +38,13 @@ $ [ 'xyz' = 'xyz' ]; echo $?
 Exit Status mit `&&` und `||` Operatoren:
 
 ```bash
-$ test 100 -gt 99 && echo "Yes, that's true." || echo "No, that's false."
+$ test 100 -gt 99 && echo "Yes, that's true."
+$ test 98 -gt 99 && echo "Yes, that's true."
+$ test 98 -gt 99 || echo "No, that's false."
+$ test 100 -gt 99 || echo "No, that's false."
 
+# Möglich aber vielleicht nicht so gut lesbar.
+$ test 100 -gt 99 && echo "Yes, that's true." || echo "No, that's false."
 Yes, that's true.
 ```
 
@@ -49,7 +54,7 @@ Yes, that's true.
 
 |              Operator | Description                                                  |
 | --------------------: | :----------------------------------------------------------- |
-|          ! EXPRESSION | The EXPRESSION is false.                                     |
+|          ! EXPRESSION | Negate.                                                      |
 |             -n STRING | The length of STRING is greater than zero.                   |
 |             -z STRING | The lengh of STRING is zero (ie it is empty).                |
 |     STRING1 = STRING2 | STRING1 is equal to STRING2                                  |
