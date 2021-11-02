@@ -24,7 +24,7 @@ print(repeat('Yay', False))  ## YayYayYay
 print(repeat('Woo Hoo', True))  ## Woo HooWoo HooWoo Hoo!!!
 ```
 
-Ob eine Funktion einen Rückgabewer hat ergibt sich nur daraus ob diese mit `return` verlassen wird.
+Ob eine Funktion einen Rückgabewert hat ergibt sich nur daraus ob diese mit `return` verlassen wird.
 
 ```python
 # Funktion ohne Rückgabewert

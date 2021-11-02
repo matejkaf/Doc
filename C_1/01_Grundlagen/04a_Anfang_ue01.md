@@ -1,7 +1,7 @@
 ---
-title: Variablen I
-subtitle: Grundlagenlabor
-tags: []
+title: Programmieren Anfang
+subtitle: Übungen
+tags: [assignment,C_1,1CHELS,1AHITS]
 ---
 
 #### **Übung (Variablennamen)**
@@ -33,7 +33,7 @@ Schreibe folgende Ausdrücke als mathematische Formeln:
 
 #### **Übung (Zuweisungen)**
 
-Welche der folgenden Zuweisungen sind falsch?
+Welche der folgenden Zuweisungen ist falsch?
 
 - `summe = summe + 10;`
 - `x*x=x*5;`
@@ -47,7 +47,7 @@ Welche der folgenden Zuweisungen sind falsch?
 
 #### **Übung (Mock I)**
 
-Suche die Fehler in folgendem Programmausschnitt:
+Suche die Fehler in folgendem Programmausschnitt.
 
 ```c
 int a=2;
@@ -68,4 +68,6 @@ int zahl = 10;
 summe = summe + zahl;
 printf("Summe is %d\n", Summe);
 ```
+
+---
 
