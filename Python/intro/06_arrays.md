@@ -11,7 +11,7 @@ Eine Liste definieren:
 colors = ['red', 'blue', 'green']
 ```
 
-  Zugriff per Index:
+  Zugriff per Index (beginnt bei 0):
 
 ```python
 print(colors[0])    ## red
@@ -53,7 +53,7 @@ list.append('b')
 
 # Schleife
 
-Schleife über alle Elemente in einer Liste:
+Schleife über alle Elemente in einer Liste mit `for`:
 
 ```python
 a=[1,2,3,4]
@@ -90,6 +90,7 @@ Neues Element am Ende anfügen:
 ```python
 l=[3,4,5]
 l.append(42)
+print(l) # [3,4,5,42]
 ```
 
 Neues Element an Index einfügen:
@@ -97,6 +98,7 @@ Neues Element an Index einfügen:
 ```python
 l=['zwei','drei']
 l.insert(0,'eins')
+print(l) # ['eins',zwei','drei']
 ```
 
 Element an Index entfernen
@@ -109,23 +111,23 @@ el=list.pop()		## vorderstes Element entfernen
 print(el)				## a
 ```
 
-Siehe [docs.python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) – alle List Methoden (`append`, `extend`, `insert`, `remove`, `pop`, `clear`, `index`, `count`, `sort`, `reverse`, `copy`)
+Siehe [docs.python](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) –  (z.B.: `append`, `extend`, `insert`, `remove`, `pop`, `clear`, `index`, `count`, `sort`, `reverse`, `copy`)
 
 
 
-# Split
+## Split
 
 Teilt einen String aufgrund eines Trennzeichens in mehrere Substrings. Das Ergebnis ist ein Array aus Strings.
 
 ```python
 csv_str="Mustermann,42,mm@test.com"
 csv_data=csv_str.split(',')
-print(csv_data)		## ['Mustermann', '42', 'mm@test.com']
+print(csv_data)		# ['Mustermann', '42', 'mm@test.com']
 ```
 
 
 
-# String Join
+## String Join
 
 ```python
 "_".join(['a','b','c'])		# a_b_c
@@ -143,7 +145,7 @@ Syntax `[von:bis]` – der `bis` Index ist nicht dabei.
 [2, 3, 4, 5, 6, 7]
 ```
 
-Slices sind Kopien
+Slices sind Kopien.
 
 von und bis können weggelassen werden.
 

@@ -82,6 +82,7 @@ a = 1    		# int
 b = 2.8  		# float
 c = True 		# bool (True/False)
 d = "abcd" 	# string
+e = 'xyz'   # double oder single quotes bei Strings, beides gleich
 ```
 
 Interessant: `int` Werte können beliebig groß werden.

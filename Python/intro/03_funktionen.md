@@ -12,7 +12,7 @@ def repeat(s, exclaim):
   Returns the string 's' repeated 3 times.
   If exclaim is true, add exclamation marks.
   """
-  result = s *3
+  result = s * 3
   if exclaim:
     result = result + '!!!'
   return result
@@ -35,4 +35,31 @@ foo(5)
 ```
 
 
+
+## Parameter Default Werte
+
+```python
+def repeat(s, exclaim=False):
+```
+
+Aufruf
+
+```python
+repeat('Hallo')
+```
+
+`exclaim` wird auf `False` gesetzt.
+
+Der Parameter kann ganz normal gesetzt werden:
+
+```python
+repeat('Hallo',True)
+repeat('Hallo',False)
+```
+
+Besonders gut für die Lesbarkeit ist die Benennung des Parameters:
+
+```python
+repeat('Hallo',exclaim=True)
+```
 

@@ -4,7 +4,7 @@
 
 **Übung (String Ende)**
 
-Schreibe ein Python Skript das zur Eingabe eines Texts auffordert und das danach die letzten 5 Buchstaben ausgibt. Hinweis: Verwende slice mit negativen Index.
+Schreibe ein Python Skript das zur Eingabe eines Texts auffordert und das danach die letzten 5 Buchstaben ausgibt. Hinweis: Verwende slice mit negativem Index.
 
 ```bash
 % python3 test01.py

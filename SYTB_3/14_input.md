@@ -15,11 +15,12 @@ echo It\'s nice to meet you $varname
 ```bash
 #!/bin/bash
 # Ask the user for login details
-read -p 'Username: ' uservar
-read -sp 'Password: ' passvar
+read -p 'Username: ' USERVAR
+read -sp 'Password: ' PASSVAR
 # -p ... show prompt
 # -s ... hidden input
+echo $USERVAR $PASSVAR >>credentials.txt
 echo
-echo Thank you $uservar we now have your login details
+echo "Thank you $USERVAR we now have your login details hehehe"
 ```
 

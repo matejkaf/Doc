@@ -24,3 +24,31 @@ for i in range(10):
 # 0,..,9
 ```
 
+
+
+Varianten für `range`:
+
+```python
+range(5, 10)
+# 5 6 7 8 9
+# 10 ist nicht dabei!
+range(3, 9, 2)
+# 3 5 7
+```
+
+
+
+Die `for` Schleife in Python ist besonders bei Datenstrukturen (Arrays, ...) hilfreich.
+
+
+
+---
+
+#### Übung (Nächste Primzahl)
+
+Erstelle eine Funktion `nextPrim` die eine Zahl übergeben bekommt und die erste Primzahl zurückgibt die größer ist als diese Zahl.
+
+---
+
+
+
