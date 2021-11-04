@@ -3,6 +3,9 @@ title: Strings
 tags: [3AHITS]
 ---
 
+* TOC
+{:toc}
+
 > The secret of joy in work is contained in one word: excellence. To know how to do something well is to enjoy it. *Pearl S. Buck*
 
 Strings sind in Java **Objekte** der **Klasse** `String`. 
@@ -24,7 +27,7 @@ int laenge = s.length();
 
 
 
-## Auf einzelnes Zeichen zugreifen
+# Auf einzelnes Zeichen zugreifen
 
 ```java
 String s = "Wann sind Ferien";
@@ -34,11 +37,19 @@ c = s.charAt(5);         // 's' von "sind"
 c = s.charAt(s.length()-1);     // Letztes Zeichen 'n'
 ```
 
-**Übung:** Einen String zeichenweise in umgekehrter Reihenfolge ausgeben.
+
+
+---
+
+#### Übung (Reverse)
+
+Gib einen String zeichenweise in umgekehrter Reihenfolge aus.
+
+---
 
 
 
-## Suchen
+# Suchen
 
 ```java
 String s = "Wann sind Ferien";
@@ -62,7 +73,7 @@ Suche das erste und zweite vorkommen eines Hashtags in einem String.
 
 
 
-## Teile von Strings
+# Teile von Strings
 
 ```java
 String s = "Wann sind Ferien";
@@ -87,7 +98,7 @@ sub = s.substring(5, 9); // 4 Zeichen ab 5: "sind"
 
 
 
-## Groß-/Kleinschreibung
+# Groß-/Kleinschreibung
 
 ```java
 String s = "Wann sind Ferien";
@@ -108,9 +119,9 @@ Schreibe eine Methode `String upperBetween(String s)`, die aus dem gegebenen ein
 
 
 
-## Stringmanipulation
+# Stringmanipulation
 
-### Strings zusammenfügen
+## Strings zusammenfügen
 
 Mit dem **+ Operator** können 2 Strings zu einem **neuen** String zusammengefügt werden.
 
@@ -120,7 +131,7 @@ String r = s + " Peter";
 ```
 
 
-### Immutable
+## Immutable
 
 Java Strings sind **unveränderlich** (en. *immutable*)! 
 
@@ -133,7 +144,7 @@ s = s + "World";
 
 Was passiert dabei im Speicher? *Skizze*.
 
-### Garbage Collector
+## Garbage Collector
 
 Ist Bestandteil der JVM (Java Virtual Machine).  Entfernt nicht mehr benötigte Objekte aus dem Speicher. "Müllabfuhr" der JVM.
 
@@ -148,11 +159,11 @@ s = "Es" + s.substring(4);
 
 
 
-## String und Zahlen
+# String und Zahlen
 
 Beachte den Unterschied zwischen Text und einer binären Zahl.
 
-### Text
+## Text
 
 ```java
 String s="123";
@@ -164,7 +175,7 @@ String s="123";
 - Ein-/Ausgabe, Text-Datei
 - Keine Berechnungen möglich!
 
-### Binäre Zahl
+## Binäre Zahl
 
 ```java
 int s=123;
@@ -227,7 +238,7 @@ Schreibe eine Methode `int calc(String s)` die einen String in der Form `"<zahl1
 
 
 
-## Vergleichen von Strings
+# Vergleichen von Strings
 
 `String` ist eine Klasse, Variablen mit Datentyp `String` sind **Referenzvariablen** (= Speicher-Adressen).
 
@@ -287,7 +298,7 @@ Schreibe eine Methode `boolean is09(String s)` die nur dann `true` zurückgibt w
 
 
 
-## Split
+# Split
 
 `split` trennt einen String aufgrund eines Trennzeichens. Das Ergebnis ist ein Array aus Strings.
 
@@ -322,7 +333,7 @@ Hinweis : Verwende `split("\\+")` da `+` alleine eine spezielle Bedeutung in spl
 
 
 
-## Strings sind keine Arrays
+# Strings sind keine Arrays
 Ganz anders als in C!
 
 **Wichtig**: Strings sind in Java **keine Arrays** sondern Objekte.
