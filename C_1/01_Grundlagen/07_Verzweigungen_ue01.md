@@ -4,7 +4,14 @@ subtitle: Übungen
 tags: [assignment,C_1]
 ---
 
+#### Übung (Gerade/Ungerade)
+
+Schreibe ein Programm das von einer eingegeben `int` Zahl ausgibt ob es sich um eine gerade oder um eine ungerade Zahl handelt.
+
+---
+
 #### Übung (Vergleichen I)
+
 Schreibe ein Programm das 2 Zahlen (`int`) einliest und ausgibt ob die Zahlen gleich oder ungleich sind.
 
 ---

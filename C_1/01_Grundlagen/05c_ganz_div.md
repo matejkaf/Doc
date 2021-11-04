@@ -57,26 +57,38 @@ Im Programm:
 Was steht in der `int` Variable `x`.
 
 - `x=15/6`
-- `x=15`
-- `x=21`
-- `x=17`
+- `x=15%6`
+- `x=21%7`
+- `x=17%5`
 - `x=3/9`
 - `x=3`
 
 ---
 
+#### Übung (Division)
+
+Schreibe ein Programm das eine ganzzahlige Division mit Rest durchführt und das Ergebnis ausführlich ausgibt. Die Ausgabe soll genau so aussehen (für die Werte 55 und 12):
+
+```
+Dividend: 55
+Divisor:  12
+55 : 12 = 4
+     7R
+Probe:
+12*4 + 7 = 55
+```
+
+---
 
 #### Übung (Zeit)
 
-Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder ausgibt.
+Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder ausgibt. z.B.: 120 Minutens sind 2 Stunden und 0 Minuten. 350 Minuten sind 5 Stunden und 50 Minuten.
 
 ---
 
-#### Übung (Gereade/Ungerade)
+#### Übung (Modulo ohne %)
 
-Schreibe ein Programm das von einer eingegeben `int` Zahl ausgibt ob es sich um eine gerade oder um eine ungerade Zahl handelt.
+Schreibe ein Programm das den Rest einer Division ermittelt ohne den `%` Operator zu verwenden.
 
 ---
-
-
 

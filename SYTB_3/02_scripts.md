@@ -81,10 +81,6 @@ Aufruf mit
 $ ./args.sh eins zwei drei vier
 ```
 
-
-
-[3AHITS G1 14.10.2021]
-
 [Übungen](02b_scripts_ue)
 
 
@@ -118,6 +114,8 @@ done
 
 [Übungen](02d_scripts_ue)
 
+[3AHITS G1 04.11.2021]
+
 
 
 # Weitere Variablen
@@ -129,5 +127,4 @@ $SECONDS - The number of seconds since the script was started.
 $RANDOM - Returns a different random number each time is it referred to.
 $LINENO - Returns the current line number in the Bash script.
 ```
-
 
