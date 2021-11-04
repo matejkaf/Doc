@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [assignment,java,strings,3AHITS]
 ---
 
-#### **Übung (toUpper)**
+#### Übung (toUpper)
 
 Schreibe eine `static` Methode `toUpper` mit der ein beliebiges Wort in einem beliebigen Text auf Großbuchstaben geändert werden kann. Der geänderte String ist der Rückgabewert.
 
@@ -20,7 +20,7 @@ System.out.println(r); // Wo SIND die Klassen?
 
 ---
 
-#### **Übung (countWord)**
+#### Übung (countWord)
 
 Implementiere eine `static` Methode `countWord` die zählt wie oft ein Wort in einem Text vorkommt. Hinweis: verwende die `indexOf` Variante mit 2 Parametern ([Siehe Dokumentation hier](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String,%20int))). 
 
@@ -50,7 +50,7 @@ Schreibe ein Programm das die **größte** dieser Zahlen und deren **Summe** erm
 
 ---
 
-#### **Übung (killWord)**
+#### Übung (killWord)
 
 Implementiere eine `static` Methode `killWord` die das erste Vorkommen eines Worts aus einem Text löscht. Der geändere String ist der Rückgabewert.
 
@@ -64,7 +64,7 @@ System.out.println(r); // xyz nur e ein abcd test
 
 ---
 
-#### **Übung (killWords)**
+#### Übung (killWords)
 
 Implementiere eine `static` Methoden `killAllWords` mit einem Algorithmus der alle Vorkommen eines Worts aus einem Text löscht. Der geändere String ist der Rückgabewert.
 
@@ -78,7 +78,7 @@ System.out.println(r); // xyz nur e ein  test
 
 ---
 
-#### **Übung (HTML tags)**
+#### Übung (HTML tags)
 
 
 Ändere in einem String alle HTML tags auf Großbuchstaben.
@@ -87,4 +87,6 @@ System.out.println(r); // xyz nur e ein  test
 String s="<p>...<img>...</img>...</p>";
 s=...; // <P>...<IMG>...</IMG>...</P>
 ```
+
+---
 
