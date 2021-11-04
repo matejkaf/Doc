@@ -67,7 +67,7 @@ Was steht in der `int` Variable `x`.
 
 #### Übung (Division)
 
-Schreibe ein Programm das eine ganzzahlige Division mit Rest durchführt und das Ergebnis ausführlich ausgibt. Die Ausgabe soll genau so aussehen (für die Werte 55 und 12):
+Schreibe ein Programm das eine ganzzahlige Division mit Rest durchführt und das Ergebnis ausführlich ausgibt. Die Ausgabe soll genau so aussehen (zum Beispiel für die Werte 55 und 12):
 
 ```
 Dividend: 55
