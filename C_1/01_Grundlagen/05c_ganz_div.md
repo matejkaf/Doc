@@ -61,7 +61,7 @@ Was steht in der `int` Variable `x`.
 - `x=21%7`
 - `x=17%5`
 - `x=3/9`
-- `x=3`
+- `x=3%2`
 
 ---
 
