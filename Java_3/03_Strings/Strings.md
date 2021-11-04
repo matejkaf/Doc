@@ -52,7 +52,13 @@ i = s.lastIndexOf('e');  // Sucht das letzte Vorkommen von 'e'
 
 Return von -1​ wenn **nicht gefunden**.
 
-**Übung:** Suche das erste und zweite vorkommen eines Hashtags in einem String.
+---
+
+#### Übung (Hashtags)
+
+Suche das erste und zweite vorkommen eines Hashtags in einem String.
+
+---
 
 
 
@@ -71,7 +77,13 @@ sub = s.substring(5, 9); // 4 Zeichen ab 5: "sind"
 // Index 9 ist nicht dabei!
 ```
 
+---
+
+#### Übung (substringBetween)
+
 **Übung:** Schreibe eine Methode `String substringBetween(String s)`, die alles zwischen dem ersten `'#'` und dem zweiten `'#'` als neuen String zurückgibt (Beispiel: `"abcd#dies#12345"`).
+
+---
 
 
 
@@ -85,7 +97,13 @@ uc = s.toUpperCase();	// alles in Großbuchstaben
 
 Alle String-Methoden ergeben immer einen **neuen String**, der Ausgangs-String bleibt **unverändert**.
 
-**Übung:** Schreibe eine Methode `String upperBetween(String s)`, die aus dem gegebenen einen neuen String erzeugt in dem alle Buchstaben zwischen dem ersten `'#'` und dem zweiten `'#'` in Großbuchstaben gewandelt wurden. Der neue String ist der Rückgabewert (Beispiel: `"abcd#dies#12345"` --> `"abcd#DIES#12345"`).
+---
+
+#### Übung (upperBetween)
+
+Schreibe eine Methode `String upperBetween(String s)`, die aus dem gegebenen einen neuen String erzeugt in dem alle Buchstaben zwischen dem ersten `'#'` und dem zweiten `'#'` in Großbuchstaben gewandelt wurden. Der neue String ist der Rückgabewert (Beispiel: `"abcd#dies#12345"` --> `"abcd#DIES#12345"`).
+
+---
 
 
 
@@ -191,15 +209,21 @@ Diesen Klassen enthalten weitere brauchbare Dinge, z.B.: `Integer.MAX_VALUE`, `I
 
 
 
-**Übung:** Schreibe eine Methode `int calc(String s)` die einen String in der Form `"<zahl1>+<zahl2>"` Übergeben bekommt (z.B. `42+9`, `123+3210`). Die Methode soll die Summe der beiden im String enthaltenen Zahlen zurückgeben.
+---
+
+#### Übung (calc)
+
+Schreibe eine Methode `int calc(String s)` die einen String in der Form `"<zahl1>+<zahl2>"` Übergeben bekommt (z.B. `42+9`, `123+3210`). Die Methode soll die Summe der beiden im String enthaltenen Zahlen zurückgeben.
 
 **Erweiterung:** Drei Zahlen, z.B. `123+3210+34`
 
-**Erweiterung:** Es gehen drei als auch zwei Zahlen.
+**Erweiterung:** Es gehen sowohl drei als auch zwei Zahlen.
 
 **Erweiterung:** `+`, `-`, `*`, und `/` sind (gemischt) möglich – Auswertung von links nach rechts ohne Priorisierung.
 
 **Erweiterung:** Beliebig viele Zahlen sind möglich
+
+---
 
 
 
@@ -245,7 +269,9 @@ if (t1.equals(t2)) {
 
 ---
 
-**Übung:** Monatsnamen sind leider etwas entfremdet worden:
+#### Übung (Monatsnamen)
+
+Monatsnamen sind leider etwas entfremdet worden:
 
 - `Sep#hk jshf#tember`
 - `SEPTE#Hallo#MBER`
@@ -283,8 +309,16 @@ Ausgabe:
 33
 ```
 
-**Übung:** Schreibe eine Methode die Ausdrücke in der Form `"<zahl_1>+<zahl_2>+...+<zahl_n>"` berechnen kann. 
+
+
+---
+
+#### Übung (Summieren)
+
+Schreibe eine Methode die Ausdrücke in der Form `"<zahl_1>+<zahl_2>+...+<zahl_n>"` berechnen kann. 
 Hinweis : Verwende `split("\\+")` da `+` alleine eine spezielle Bedeutung in split hat.
+
+---
 
 
 
