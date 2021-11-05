@@ -232,7 +232,7 @@ Schreibe eine Methode `int calc(String s)` die einen String in der Form `"<zahl1
 
 **Erweiterung:** `+`, `-`, `*`, und `/` sind (gemischt) möglich – Auswertung von links nach rechts ohne Priorisierung.
 
-**Erweiterung:** Beliebig viele Zahlen sind möglich
+**Erweiterung (optional – schwierig):** Beliebig viele Zahlen sind möglich
 
 ---
 
