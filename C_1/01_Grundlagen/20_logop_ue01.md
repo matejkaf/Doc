@@ -4,7 +4,7 @@ subtitle: Übungen
 tags: [assignment,C_1]
 ---
 
-#### Übung (Vergleichen III)
+#### Übung (Drei Zahlen Vergleichen)
 
 Schreibe ein Programm, das 3 Werte x, y und z einliest und mit Hilfe von **logischen Operatoren** überprüft:
 
@@ -13,8 +13,6 @@ Schreibe ein Programm, das 3 Werte x, y und z einliest und mit Hilfe von **logis
 - ob mindestens zwei Werte gleich sind.
 
 Gib für jeden Fall einen entsprechenden Text aus.
-
-
 
 ---
 
@@ -27,7 +25,8 @@ Die bei einem Test erreichten Punkte ergeben wie folgt eine Note:
 - "befriedigend": 15–17 Punkte
 - "gut": 18–20 Punkte
 - "sehr gut": 21–24 Punkte
-- "I": mehr als 24 Punkte
+- "super wahnsinn": mehr als 24 Punkte
 
 Schreibe ein Programm, das nach Eingabe der Punkte die passende Note ausgibt.
 
+---

@@ -35,6 +35,8 @@ Schreibe ein Programm, das von einer eingegeben Zahl (`int`) ausgibt ob diese ge
 In einem Programm soll, von zwei einzugebenden Zahlen (`int`), geprüft werden ob die eine die andere teilt. Dabei kann sowohl sein, dass die erste Zahl die zweite Zahl teilt, als auch umgekehrt.
 Eine Zahl x ist durch eine Zahl y genau dann teilbar, wenn der Rest der Division x/y​ Null ergibt, d.h. `(x%y)==0` wahr ist.
 
+---
+
 
 
 

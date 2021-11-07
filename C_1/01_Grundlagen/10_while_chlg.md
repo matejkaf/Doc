@@ -9,8 +9,6 @@ tags: [assignment,challenge,C_1]
 Schreibe ein Programm das von einem Startwert zu einem Endwert (beides Eingaben) zählen kann. Das Programm soll sowohl aufwärts als auch abwärts zählen können. Abwärts zählt das Programm dann wenn der Startwert größer ist als der Endwert.
 
 
-
-
 ---
 
 #### Übung (Summe mit Start und Ende)
@@ -35,7 +33,6 @@ Startwert und Endwert wurden vom Benutzer eingegeben.
   6+7+8+9+10=40  
   ```
 
-  
 
 ---
 
