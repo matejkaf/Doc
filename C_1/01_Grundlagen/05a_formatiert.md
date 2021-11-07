@@ -27,10 +27,26 @@ Variante: `%05d` – mit führenden Nullen statt Leerzeichen.
 
 # Kommazahlen
 
-Angabe der Ausgabebreite (enthält Vorzeichen, Vorkomma, Komma und Nachkomma) und der Nachkommastellen.
+Anzahl Nachkommastellen mit Runden:
+
+```c++
+double x=2.3469;
+printf("%.2lf",x); // 2.34
+printf("%.3lf",x); // 2.347
+```
+
+Angabe der Ausgabebreite (enthält Vorzeichen, Vorkomma, Komma und Nachkomma)
 
 Beispiel:
-Ein Vorzeichen, 3 Vorkommastellen und 2 Nachkommastellen – Ausgabebreite?
+Ein Vorzeichen, 4 Vorkommastellen und 2 Nachkommastellen – Ausgabebreite?
+
+```
+12345678
+-9999.99
+daher: %8.2lf
+```
+
+
 
 ```c
 double x=12.379;
@@ -38,8 +54,6 @@ double y=-1368.4;
 printf("x=%8.2lf",x);
 printf("y=%8.2lf",y);
 ```
-
-Variante nur K
 
 
 
