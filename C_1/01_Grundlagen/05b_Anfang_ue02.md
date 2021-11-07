@@ -8,7 +8,7 @@ tags: [assignment,C_1,1CHELS,1AHITS]
 
 #### Übung (Kreis)
 
-Schreibe ein Programm das Umfang und Fläche eines Kreises berechnet. Der **Radius** kann eine **Kommazahl** sein. Mit Ein- und Ausgabe. Inklusive Benutzerführung.
+Schreibe ein Programm das Umfang und Fläche eines Kreises berechnet. Der **Radius** kann eine **Kommazahl** sein. Mit Ein- und Ausgabe. Inklusive Benutzerführung. Die Ausgabe soll auf 3 Kommastellen genau erfolgen.
 
 Erweiterung: Die Eingabe erfolgt in cm die Ausgabe in Metern.
 
@@ -24,9 +24,11 @@ Gib Wert 2 ein: 9.339
 2.438 + 9.339 = 11.777
 ```
 
+Die Ausgabe soll auf 3 Kommastellen genau erfolgen.
+
 ---
 
-#### Übung (Celsius nach Fahrenheit)
+#### Übung (Celsius und Fahrenheit)
 
 Die Umrechnungsformel von Celsius nach Fahrenheit lautet: 
 
@@ -36,11 +38,7 @@ Schreibe ein Programm, welches eine Temperatur in (Grad Celsius) einliest und di
 
 Teste das Programm (z.B. mit Hilfe eines Einheiten Umrechners im Internet).
 
----
-
-#### Übung (Fahrenheit nach Celsius)
-
-Verändere das Programm aus voriger Übung so, dass auch die umgekehrte Rechnung – Fahrenheit nach Celsius – ausgeführt wird.
+**Erweiterung:** Das Programm soll weiters nach einer Temperatur in Fahrenheit fragen und diese dann in Celsius umrechnen.
 
 ---
 
