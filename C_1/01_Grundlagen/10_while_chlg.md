@@ -15,7 +15,7 @@ Schreibe ein Programm das von einem Startwert zu einem Endwert (beides Eingaben)
 Schreibe ein Programm das alle Zahlen beginnend bei einem Startwert bis zu einem Endwert addiert. Start- und Endwert können eingegeben werden. Das Endergebnis soll ausgegeben werden.
 
 Beispiel: Es wurde 6 (Start) und 10 (Ende) eingegeben:
-Das Programm berechnet $6+7+8+9+10=40$
+Das Programm berechnet `6+7+8+9+10`
 
 ```
 Startwert: 6
