@@ -3,7 +3,9 @@ title: Basics
 subtitle: Übungen
 ---
 
-Mit der Input Funktion sind Eingaben möglich.
+# input
+
+Mit der `input` Funktion sind Eingaben möglich:
 
 ```python
 print('Gib deinen Namen ein:')
@@ -12,6 +14,18 @@ print('Hallo, ' + name)
 ```
 
 Bei der Eingabe von Zahlen ist zu bedenken, dass dies Strings sind und für evtl. Berechnungen erst mit `int()` bzw. `float()` gewandelt werden müssen.
+
+```python
+valueStr = input('Ganze Zahl')
+value = 2*int(valueStr)
+print(value)
+```
+
+```python
+valueStr = input('Komma-Zahl')
+value = 2.718*float(valueStr)
+print(value)
+```
 
 
 
@@ -25,7 +39,7 @@ Schreibe ein Python Skript das zur Eingabe einer Temperatur in Fahrenheit auffor
 42 Grad Fahrenheit sind 5.555555555555555 Grad Celsius
 ```
 
-Zusatzaufgabe: gib das Ergebnis auf 2 Kommastellen gerundet aus.
+Zusatzaufgabe (Recherche): gib das Ergebnis auf 2 Kommastellen gerundet aus.
 
 ---
 
