@@ -52,13 +52,13 @@ Hunderte Distributionen bieten einen unterschiedlichen Mix aus diesen 3 Hauptkom
 
 
 
-[! G2 18.10.2021]
+[! 2AHITS G2 18.10.2021]
 
 
 
 # Einsatzgebiete
 
-Linux kostet nichts und kann viel. Gerätehersteller verwenden daher gerne Linux.
+Linux kostet nichts und kann viel. Daher stark verbreitet:
 
 Beispiele:
 
@@ -68,8 +68,8 @@ Beispiele:
 - Server
 - Desktop Rechner
 - Netzwerkinfrastruktur
-  - Managed Switch
   - Router
+  - Switch
   - Firewall
   - ...
 - IoT Geräte

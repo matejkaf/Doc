@@ -149,7 +149,7 @@ $ mkdir mysecondir
 $ ls
 ```
 
-[! G1 11.10.2021]
+[! 2AHITS G1 11.10.2021]
 
 darunter einen weiteren Unterordner erzeugen: 
 
@@ -181,11 +181,13 @@ $ pwd
 /root/myseconddir
 ```
 
+Übung ["Directories und Files"](02_basics_ue).
+
 
 
 # Weitere file Kommandos
 
-Files und Ordner löschen.
+Files und Ordner **löschen**.
 
 `rm`, `rmdir`
 
@@ -195,7 +197,7 @@ Nicht leere Verzeichnisse löschen:
 $ rm -r <dir_path>
 ```
 
-Dateien kopieren
+Dateien **kopieren**
 
 ```bash
 $ cp
@@ -203,7 +205,7 @@ $ cp
 $ cp -r
 ```
 
-Dateien/Directory bewegen/umbenennen.
+Dateien/Directory **bewegen**/**umbenennen**.
 
 ```bash
 $ mv xyz abcd.txt
@@ -213,5 +215,5 @@ $ mv xyz abcd.txt
 $ mv hallo.txt mydir
 ```
 
-
+[Übung "Bewegen und Kopieren"](02_basics_ue)
 
