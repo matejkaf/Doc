@@ -24,7 +24,6 @@ Lege mit `mkdir` und `touch` folgende Verzeichnisstruktur an:
 Weiters:
 
 - Stelle das Arbeitsverzeichnis auf `abcd/abcd_02` und erstelle (ohne `cd` ein weiteres Mal zu verwenden):
-
   - ein Unterverzeichnis `in_first_dir`  in `first_dir`, und
   - darin wiederum eine Datei `neu.txt`
     Endgültig sieht es dann so aus:
