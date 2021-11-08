@@ -10,17 +10,6 @@ Arithmetische Ausdrücke beschreiben Berechnungen mittels der arithmetischen Ope
 
 Du hast die Aufgabe einen einfachen "Taschenrechner" zu programmieren der es erlaubt solche Ausdrücke einzugeben und das Ergebnis berechnet.
 
-Ein **Stack** ist in der Informatik eine sogenannte **Datenstruktur**, also ein Objekt das andere Objekte auf eine bestimmte Art und Weise speichert bzw. organisiert.
-
-Ein Stack speichert Daten in einer bestimmten **Reihenfolge**. Datenobjekte können einzeln einem Stack hinzugefügt und einzeln aus diesem entnommen werden. Die Schnittstelle eines Stacks besteht aus 2 Operationen:
-
-- `push`, und 
-- `pop`
-
-Mit **push** wird ein neues Objekt auf dem Stack abge- legt. Mit **pop** wird das jüngste vorhandene Objekt vom Stack genommen.
-
-Einen Stack kann man sich daher am besten als einen **Stapel** vorstellen, oben wird jeweils ein Objekt abgelegt (push) oder weggenommen (pop).
-
 
 
 ---
@@ -29,11 +18,11 @@ Einen Stack kann man sich daher am besten als einen **Stapel** vorstellen, oben 
 
 Schreibe eine Klasse `StackChar` mit der Zeichen auf einem Stack abgelegt und von diesem wieder entnommen werden können. Verwende eine verkettete Liste.
 
-Die Methoden dieser Klasse benötigen nur `char` als Parameter bzw. als Rückgabewert. Die Klasse `Node` wird nur innerhalb der Klasse benötigt und brauch nicht nach außen hin sichtbar sein – daher `private` und als **innere Klasse**. Das Prinzip Implementierungsdetails nach außen zu verbergen nennt man *information hidding* und gilt als vorteilhafter Programmierstil.
+Die Methoden dieser Klasse benötigen nur `char` als Parameter bzw. als Rückgabewert. Die Klasse `Node` wird nur innerhalb der Klasse benötigt und brauch nicht nach außen hin sichtbar sein – ist daher `private` und weiters als sogenannte **innere Klasse** definiert. Das Prinzip Implementierungsdetails nach außen zu verbergen nennt man *information hidding* und gilt als vorteilhafter Programmierstil.
 
 ```c
 public class StackChar {
-  private class Node { // innere Klasse
+  private class Node { // innere Klasse (nur in StackChar sichtbar)
     char c;
     Node next;
   }
@@ -51,7 +40,7 @@ public class StackChar {
 
 #### **Übung (Stack für int)**
 
-Wie Übung vorher, aber für `int`. Verwende zur Implementierung eine ArrayList (statt der verketteten Liste).
+Wie Übung vorher, aber für `int`. Verwende zur Implementierung eine **ArrayList** (statt der verketteten Liste).
 
 ---
 
