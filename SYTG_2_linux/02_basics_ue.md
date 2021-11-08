@@ -46,7 +46,7 @@ Weiters:
 
 ---
 
-#### Übungen (Bewegen und Kopieren)
+#### Übung (Bewegen und Kopieren)
 
 Ausgehend von der in der vorigen Übungen angelegten Directory und Filestruktur:
 
