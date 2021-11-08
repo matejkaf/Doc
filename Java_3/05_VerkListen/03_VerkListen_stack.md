@@ -97,19 +97,36 @@ Welcher Teil einer Klasse öffentlich und was verborgen ist wird ausgedrückt du
 
 ## Arithmetischer Ausdruck
 
-Arithmetischer Ausdruck ist als String vorgegeben und soll ausgerechnet werden. Vereinfachung: Vollständig geklammert, d.h. aus `1+2+3` wird `1+(2+3)`.
+Arithmetischer Ausdruck ist als String vorgegeben und soll ausgerechnet werden. 
 
-Beispiel:
+```
+(4-(1+(2-1))))
+```
+
+Probleme:
+
+- Klammern für die Reihenfolge berücksichtigen,
+- Zahlen, Zwischenergebnisse und Operanden müssen “für später” aufgehoben werden (solange bis das Ergebnis der folgenden Klammer bekannt ist).
+
+Ausdrücke können beliebig lang werden und die Operatoren der 4 Grundrechnungsarten enthalten.
+
+Beispiele:
 
 ```
 3 * (2 + ( 1 + ( 7 - 4) ) * (8 - 2) )
 ```
 
-**Problem:** Man muss sich Zahlen und Zwischenergebnisse für später im Programm merken. 
+```
+(2+(4+3*(7-(3*(4+(2*3))))))
+```
 
-Das geht mit Stacks, für diese Aufgabenstellung ist der **Dijkstra Algorithmus** eine bekannte Lösung, dieser verwendet **2 Stacks**, einen für die Operanden (Zahlen) und einen für die Operatoren.
+Für diese Aufgabenstellung ist der **Dijkstra Algorithmus** eine bekannte Lösung, dieser verwendet **2 Stacks**, einen für die Operanden (Zahlen) und einen für die noch offenen Rechenoperationen.
+
+
 
 ### Dijkstra Algorithmus
+
+Vereinfachung: Ausdruck ist vollständig paarweise geklammert, d.h. aus `1+2+3` wird `1+(2+3)`.
 
 Nimm ein Zeichen aus dem String und unterscheide:
 

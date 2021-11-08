@@ -4,17 +4,21 @@ subtitle: Auswerten arithmetischer Ausdrücke
 tags: [assignment,4BHELS]
 ---
 
+[Skriptum zum Thema](https://matejkaf.github.io/Doc/Java_3/05_VerkListen/03_VerkListen_stack.html)
+
 Die **Stack** Datenstruktur wird in Aufgaben der Informatik häufig benötigt. Zum Beispiel bei der Auswertung von **arithmetischen Ausdrücken**.
 
-Arithmetische Ausdrücke beschreiben Berechnungen mittels der arithmetischen Operatoren (+,-,*,/, usw.) und Klammern. Beispiel: `4 * (3 - 1 )`
+Arithmetische Ausdrücke beschreiben Berechnungen mittels der arithmetischen Operatoren (`+`,`-`,`*`,`/`, usw.) und Klammern. Beispiel: `4 * (3 - 1 )`
 
 Du hast die Aufgabe einen einfachen "Taschenrechner" zu programmieren der es erlaubt solche Ausdrücke einzugeben und das Ergebnis berechnet.
+
+Dazu sind einige Vorbereitungen notwendig.
 
 
 
 ---
 
-#### **Übung (Stack für char)**
+#### Übung (Stack für char)
 
 Schreibe eine Klasse `StackChar` mit der Zeichen auf einem Stack abgelegt und von diesem wieder entnommen werden können. Verwende eine verkettete Liste.
 
@@ -38,37 +42,15 @@ public class StackChar {
 
 ---
 
-#### **Übung (Stack für int)**
+#### Übung (Stack für int)
 
-Wie Übung vorher, aber für `int`. Verwende zur Implementierung eine **ArrayList** (statt der verketteten Liste).
-
----
-
-
-
-## Arithmetische Ausdrücke
-
-Auswertung (=Berechnen) arithmetischer Ausdrücke – diese liegen als String vor.
-
-```
-(4-(1+(2-1))))
-```
-
-Reihenfolge der Auswertung ist wichtig. Zahlen und Operanden müssen “für später” aufgehoben werden (solange bis das Ergebnis der folgenden Klammer bekannt ist).
-
-Ausdrücke können beliebig lang werden und die Operatoren der 4 Grundrechnungsarten enthalten.
-
-```
-(2+(4+3*(7-(3*(4+(2*3))))))
-```
-
-Diese Aufgabe kann mit 2 Stacks gelöst werden. Ein Stack speichert die Zahlen und Zwischenergebnisse (Operanden-Stack), der zweite Stack speichert die noch offenen Rechenoperationen (Operatoren-Stack). Dies ist der sogenannte **Dijkstra Algorithmus**.
-
-
+Erstelle eine Klasse `StackInt` die einen Stack für `int` Werte zur Verfügung stellt. Verwende zur Implementierung eine **ArrayList** (statt der verketteten Liste).
 
 ---
 
-#### Übung (Dijkstra Auswertung)
+[Skriptum zum Thema](https://matejkaf.github.io/Doc/Java_3/05_VerkListen/03_VerkListen_stack.html)
+
+#### Übung (Dijkstra Algorithmus)
 
 Ziel: Auswerten (*evaluate*=Berechnen) von z.B.:
 
@@ -99,7 +81,9 @@ Am Papier durchprobieren für:
 (1 + (5 − 3))
 ```
 
+Aufgabenstellung:
 
+- Implementiere eine Methode `static int evaluate(String expression)` die wie beschrieben mit Hilfe von 2 Stacks einen arithmetischen Ausdruck (`expression`) berechnen kann. Das Ergebnis ist der Rückgabewert.
 
 ---
 
