@@ -6,7 +6,7 @@ tags: [assignment,C_1,1CHELS,1AHITS]
 
 #### Übung (Ausgabe)
 
-Schreibe ein Programm das mit Hilfe **einer einzigen (!)** `printf` Anweisung folgendes ausgibt. Verwende: `\n`\, `\t`, `\"`, `\\`, und `%%` 
+Schreibe ein Programm das mit Hilfe **einer einzigen (!)** `printf` Anweisung folgendes ausgibt. Verwende: `\n`, `\t`, `\"`, `\\`, und `%%` 
 
 ```
 Mein Name ist:
