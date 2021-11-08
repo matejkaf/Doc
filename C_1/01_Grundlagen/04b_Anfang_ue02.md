@@ -24,8 +24,8 @@ Schreibe ein Programm das den Umfang eines Rechtecks berechnet. Mit Ein- und Aus
 
 Erweiterungen:
 
-- Fläche ausgeben
-- Eingabe in Metern Ausgabe in cm
+- Eingabe der Seitenlängen in Metern und Ausgabe des Umfangs in cm
+- Fläche berechnen und ausgeben (in cm²)
 
 ---
 
