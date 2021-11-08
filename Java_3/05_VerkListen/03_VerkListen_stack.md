@@ -4,6 +4,9 @@ subtitle: Anwendung verkettete Liste
 tags: [lecture, 4BHELS]
 ---
 
+* TOC
+{:toc}
+
 Häufiger Anwendungsfall – **Zwischenspeichern** von einzelnen Datenobjekten die man zu einem späteren Zeitpunkt wieder braucht:
 
 - Ein einzelnes Datenobjekt wird gelesen
@@ -42,7 +45,7 @@ Ein [Stack](http://de.wikipedia.org/wiki/Stapelspeicher) ist eine Datenstruktur 
 
 ---
 
-#### **Übung (Stack zeichnen):** 
+#### Übung (Stack zeichnen) 
 
 Zeichne den Stack der sich ergibt durch:
 
@@ -58,12 +61,11 @@ pop()
 pop()
 ```
 
-Ein Stack lässt sich sehr gut mit einer einfach verketteten Liste implementieren.
-Hinzufügen und Entfernen findet am Anfang der Liste statt.
+Ein Stack lässt sich sehr gut mit einer einfach verketteten Liste implementieren. Hinzufügen und Entfernen findet am Anfang der Liste statt.
 
 ---
 
-### Klasse für Stack
+## Klasse für Stack
 
 ```java
 public class Stack {
@@ -72,6 +74,10 @@ public class Stack {
     public boolean empty(){...}
 }
 ```
+
+
+## Geheimnisprinzip
+
 Zur Verwendung dieser Klasse genügt zu wissen:
 
 - Welche Methoden es gibt (push, pop, empty) und
@@ -89,17 +95,23 @@ Welcher Teil einer Klasse öffentlich und was verborgen ist wird ausgedrückt du
 
 
 
-### Auswerten eines arithmetischen Ausdrucks
+## Arithmetischer Ausdruck
+
+Arithmetischer Ausdruck ist als String vorgegeben und soll ausgerechnet werden. Vereinfachung: Vollständig geklammert, d.h. aus `1+2+3` wird `1+(2+3)`.
+
+Beispiel:
 
 ```
 3 * (2 + ( 1 + ( 7 - 4) ) * (8 - 2) )
 ```
 
-Arithmetischer Ausdruck ist als String vorgegeben und soll ausgerechnet werden. Vereinfachung: Vollständig geklammert, d.h. aus `1+2+3` wird `1+(2+3)`.
+**Problem:** Man muss sich Zahlen und Zwischenergebnisse für später im Programm merken. 
 
-**Problem:** Man muss sich Zwischenergebnisse für später merken. Das geht mit Stacks, für diese Aufgabenstellung ist der Dijkstra Algorithmus eine bekannte Lösung, dieser verwendet 2 Stacks, einen für die Operanden (Zahlen) und einen für die Operatoren.
+Das geht mit Stacks, für diese Aufgabenstellung ist der **Dijkstra Algorithmus** eine bekannte Lösung, dieser verwendet **2 Stacks**, einen für die Operanden (Zahlen) und einen für die Operatoren.
 
-**Dijkstra Algorithmus – Ablauf**
+### Dijkstra Algorithmus
+
+Nimm ein Zeichen aus dem String und unterscheide:
 
 - Wert: auf Werte-Stack.
 - Operator: auf Operator-Stack.
@@ -124,7 +136,7 @@ Sind folgende Ausdrücke gültig?
 
 **Regel als Text:** Paarweise vollständig geklammert, Zahlen nur ein Buchstabe, kein Vorzeichen
 
-Zur mathematisch exakten Formulierung der Gültigkeit eines Ausdrucks verwendet man Produktionsregeln.  Wenn sich ein Ausdruck durch wiederholte Anwendung dieser Regeln erzeugen lässt ist er gültig.
+Compiler haben solche Regeln in einer formaleren Art und Weise eingebaut. Zur mathematisch exakten Formulierung der Gültigkeit eines Ausdrucks verwendet man **Produktionsregeln**.  Nur wenn sich ein Ausdruck durch wiederholte Anwendung dieser Regeln erzeugen lässt ist er gültig.
 
 **EBNF:** (Extended Backus-Naur Form)
 
@@ -136,10 +148,6 @@ digit  = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ```
 
 EBNF: Syntax von Programmiersprachen ([JavaBNF](https://cs.au.dk/~amoeller/RegAut/JavaBNF.html))
-
-
-
----
 
 
 
