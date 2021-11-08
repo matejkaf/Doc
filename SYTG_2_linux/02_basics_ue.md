@@ -26,7 +26,7 @@ Weiters:
 - Stelle das Arbeitsverzeichnis auf `abcd/second_dir` und erstelle (ohne `cd` ein weiteres Mal zu verwenden):
   - ein Unterverzeichnis `in_first_dir`  in `first_dir`, und
   - darin wiederum eine Datei `neu.txt`
-    Endgültig sieht es dann so aus:
+    Endgültig sieht es dann so aus: 
 
   ```
   ./
