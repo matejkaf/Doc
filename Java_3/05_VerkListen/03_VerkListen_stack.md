@@ -4,42 +4,30 @@ subtitle: Anwendung verkettete Liste
 tags: [lecture, 4BHELS]
 ---
 
-Häufiger Anwendungsfall – **Zwischenspeichern** von Datenobjekten die man zu einem späteren Zeitpunkt wieder braucht:
+Häufiger Anwendungsfall – **Zwischenspeichern** von einzelnen Datenobjekten die man zu einem späteren Zeitpunkt wieder braucht:
 
 - Ein einzelnes Datenobjekt wird gelesen
 - Das Datenobjekt wird zwischengespeichert (gemeinsam mit anderen, bereits gespeicherten Datenobjekten)
 - Weitere Datenobjekte werden zwischengespeichert
 - Die zwischengespeicherten Objekte werden einzeln wieder entnommen. Je nach Reihenfolge spricht man von:
 	
-	- Last-In / First-Out  ⟶ Stack (LiFo)
-	- First-In / First-Out ⟶ Queue (FiFo)
+	- Last-In / First-Out  ⟶ **Stack** (LiFo)
+	  ![stack01](fig/stack01.png)
+	- First-In / First-Out ⟶ **Queue** (FiFo)
+	  ![queue01](fig/queue01.png)
+	  ![queue02](fig/queue02.png)
 	
 - Speichern und Entnehmen kann in beliebiger Reihenfolge auftreten
 
-Die Datenstrukturen Stack und Queue können mit verketteten Listen implementiert werden. Dabei finden die Einfüge- und Entnahme-Operationen nur am Beginn oder Ende der Liste statt.
-
-## Stack
-
-![stack01](fig/stack01.png)
+Die Datenstrukturen **Stack** und **Queue** können mit **verketteten Listen** implementiert werden. Dabei finden die Einfüge- und Entnahme-Operationen nur am Beginn oder Ende der Liste statt.
 
 
 
-
-## Queue
-
-FIFO first in, first out
-
-![queue01](fig/queue01.png)
-
-![queue02](fig/queue02.png)
-
-
-
-
-
-## Stack
+# Stack
 
 Stapel, LIFO (last in first out), Bsp.: Stapel Bücher
+
+<img src="fig/image-20211108113736094.png" alt="image-20211108113736094" style="zoom:50%;" />
 
 Operationen:
 

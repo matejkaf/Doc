@@ -46,13 +46,11 @@ SDRAM (Synchron Dynamic RAM), für Hauptspeicher von Computern, seit ca. 20 Jahr
 
 Richtiges Interpretieren der technischen Daten. 
 
-![image-20210110160423967](fig/image-20210110160423967.png)
+![image-20211108113128159](fig/image-20211108113128159.png)
 
 ([Quelle wikipedia](https://en.wikipedia.org/wiki/DDR_SDRAM#Generations))
 
 [**Raspberry Pi 4** Tech Specs](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/)
-
-> [!25.01.2021 2AHITS]
 
 Was bedeutet **DDR4-3200**?:
 
@@ -92,11 +90,15 @@ Höhere Bandbreiten werden benötigt weil immer mehr CPU Cores auf einen gemeins
 - Diverse Optimierungen um **reale Datenrate** zu erhöhen. Ca. ⅓ schneller als DDR4 bei gleicher Transfer Rate.
   ![img](fig/ddr5_blog_post_image_2.png)
 
-### Dual (Quad) Channel
+[c't: Schnelles DRAM: DDR5-Spezifikation lernt DDR5-6400 kennen](https://www.heise.de/news/Schnelles-DRAM-DDR5-Spezifikation-lernt-DDR5-6400-kennen-6233489.html)
+
+### Dual / Quad / Octa Channel
 
 2 DIMM Steckplätze werden parallel verwendet, verdoppelt die Busbreite auf 128 Bits.
 
 Quad Channel: 256 Bits.
+
+Octa Channel: 512 Bits
 
 
 
