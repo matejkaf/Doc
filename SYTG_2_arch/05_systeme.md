@@ -146,6 +146,12 @@ Mikrocontroller (Embedded Systeme) – [**dsPIC33CH128MP202**](https://www.micro
 
 ![image-20211022162323363](fig/image-20211022162323363.png)
 
+5nm Prozess
+
+Plan Apple/TSMC M3 mit 40 Kernen in 3nm.
+
+
+
 # Trends
 
 **Moore's Law** (Intel, 1975): Die Anzahl der Transistoren pro IC verdoppelt sich alle 2 Jahre (+40% p.a.).

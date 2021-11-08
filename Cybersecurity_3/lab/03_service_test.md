@@ -26,7 +26,7 @@ Wie hoch ist das Sicherheitsrisiko durch einen aktiven telnet Port einzuschätze
 
 #### Übung (nmap für telnet)
 
-Verwende das Hacking Tool `nmap` um von Kali aus zu prüfen ob telnet auf Metasploitable aktiv ist. Versuche das gleiche mit dem Windows Host System.
+Verwende das Hacking Tool `nmap` um von Kali aus zu prüfen ob telnet auf Metasploitable aktiv ist. Versuche das gleiche mit ssh.
 
 ```sh
 $ nmap -p 23 <target_ip>
@@ -38,10 +38,10 @@ $ nmap -p 23 <target_ip>
 
 #### Übung (Banner grabbing)
 
-Beim banner grabbing nutzen Hacker die Informationen die Zielsysteme in Rückantworten auf Dienstanfragen über sich zur Verfügung stellen. Häufig erhält man Informationen über Betriebssysteme, welche Software installiert ist und in welcher Version diese vorliegt. Über diese Informationen kann dan recherchiert werden ob es Schwachstellen (vulnerabilities) und darauf aufbauende Exploits gibt.
+Beim **banner grabbing** nutzen Hacker die Informationen die Zielsysteme in Rückantworten auf Dienstanfragen über sich zur Verfügung stellen. Häufig erhält man Informationen über Betriebssysteme, welche Software installiert ist und in welcher Version diese vorliegt. Über diese Informationen kann dann recherchiert werden ob es Schwachstellen (vulnerabilities) und darauf aufbauende Exploits gibt – z.B. CVE Datenbanken (Common Vulnerabilities and Exposures).
 
-- Welche Informationen sind im Banner bei telnet auf Metasploitable
-- Prüfe welche Informationen verfügbar sind wenn telnet auf den SSH Port von Metasploitable ausgeführt wird und ob sich über diese Informationen eine Schwachstelle finden lässt
+- telnet auf das Metasploitable System: welche Informationen sind im Banner?
+- Prüfe welche Informationen verfügbar sind wenn telnet auf den SSH Port von Metasploitable ausgeführt wird und ob sich über diese Informationen eine Schwachstelle finden lässt.
 
 ---
 

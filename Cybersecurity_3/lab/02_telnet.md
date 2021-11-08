@@ -42,7 +42,7 @@ Connection: close
 
 ```
 
-2x Enter Taste in der letzten Zeile, es sollte eine Antwort vom Server dargestellt werden.
+2x Enter Taste in der letzten Zeile, dann sollte eine Antwort vom Server dargestellt werden.
 
 Dies geht bei HTTP weil dieses Protokoll nach demselben Prinzip wie telnet arbeitet:
 - Text vom Client zum Server (Request)
@@ -90,7 +90,7 @@ $ pwd
 
 
 
-Verwende telnet um dich Remote von Kali aus auf Metasploitable einzuloggen. Die dafür notwendige IP Adresse kann per `ifconfig` ermittelt werden:
+Verwende telnet um dich Remote **von Kali aus** auf Metasploitable einzuloggen. Die dafür notwendige IP Adresse kann per `ifconfig` ermittelt werden:
 
 ```sh
 # Metasploitable
@@ -112,7 +112,7 @@ Beim Sniffing werden am Netzwerk gesendete Daten mitgelesen. Wir verwenden dazu 
 
 - Wiederhole das telnet Login von Kali auf Metasploitable
 
-- Kannst du die Kommunikation in der Wireshark Aufzeichnung finden?
+- Suche die Kommunikation in der Wireshark Aufzeichnung finden?
 
 - Setze Display Filter auf: `ip.addr==<Metasp_IP> and tcp.port==23 `
 
