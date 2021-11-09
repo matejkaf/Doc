@@ -30,6 +30,7 @@ Interne Struktur einer CPU
     Speicher-Adresse des nächsten Befehls
 -   **IR** (instruction register)
     Enthält den auszuführenden Befehl
+    [! 2AHITS 09.11.2021]
 -   **ALU** – algorithmic and logic unit
     Führt Berechnungen aus, hat 2 Eingänge und einen Ausgang
 

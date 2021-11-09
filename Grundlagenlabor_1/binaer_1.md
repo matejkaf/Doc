@@ -21,8 +21,6 @@ $$
 \end{aligned}
 $$
 
----
-
 #### Übung (Wandle Binär nach Dezimal)
 
 (a) $01011101_{2}=$
@@ -31,23 +29,18 @@ $$
 (a) $10010011_{2}=$
 (a) $01110000_{2}=$
 
----
-
 #### Übung (Wandle Dezimal nach 8-Bit Binär)
 
 (a) 51
 (a) 103
 (a) 215
 (a) 198
+(a) 123
 (a) 253
-
----
 
 #### Übung (16 Binärzahlen)
 
 Schreibe die Zahlen 0–15 als vierstellige Binärzahlen an.
-
----
 
 #### Übung (Wandle nach Hex)
 
@@ -57,14 +50,13 @@ Schreibe die Zahlen 0–15 als vierstellige Binärzahlen an.
 - $191_{10}=$
 - $239_{10}=$
 
----
-
 #### Übung (Wandle von Hex nach Bin und Dez)
 
 - $AB_{16}=$
 - $8C_{16}=$
 - $E9_{16}=$
 - $7F_{16}=$
+- $5D_{16}=$
 
 
 

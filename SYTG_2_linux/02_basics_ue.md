@@ -52,8 +52,8 @@ Ausgehend von der in der vorigen Übungen angelegten Directory und Filestruktur:
 - Nenne `neu.txt` in `umbenannt.txt`  um.
 - Bewege das Verzeichnis `first_dir` in das Verzeichnis `second_dir`
 - Bewege `umbenannt.txt` eine Verzeichnisebene höher (d.h. nach `second_dir`)
-- Kopiere den Inhalt von `first_dir` in ein neues Verzeichnis `kopie_von_first` im Verzeichnis `second_dir`.
-- Lösche das Verzeichnis `first_dir`
+- Kopiere den Inhalt von `first_dir` in ein neues Verzeichnis `kopie_von_first` im Verzeichnis `second_dir` (Hinweis: beim Kopieren von Directories mit `cp`  muss die Option `-r`).
+- Lösche das Verzeichnis `first_dir`.
 
 ---
 

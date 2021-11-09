@@ -80,7 +80,7 @@ public class Stack {
 
 Zur Verwendung dieser Klasse genügt zu wissen:
 
-- Welche Methoden es gibt (push, pop, empty) und
+- Welche Methoden es gibt (`push`, `pop`, `empty`) und
 - wie sich diese verhalten (Stack/LIFO).
 
 Daher kann die Klasse die eigentliche Implementierung vor dem Anwender verbergen. D.h. um diese Klasse anwenden zu können muss man nicht wissen, dass der Stack als verkettete Liste implementiert wurde.
@@ -88,10 +88,10 @@ Daher kann die Klasse die eigentliche Implementierung vor dem Anwender verbergen
 
 Dies ist ein allgemeines Prinzip des objekt-orientierten Programmierens und wird **information hidding** (Geheimnisprinzip) genannt.
 
-Welcher Teil einer Klasse öffentlich und was verborgen ist wird ausgedrückt durch:
+Welcher Teil einer Klasse öffentlich und was verborgen ist wird ausgedrückt durch die Schlüsselwörter:
 
-- `public` Öffentlich
-- `private` Verborgen
+- `public` – Öffentlich
+- `private` – Verborgen
 
 
 
@@ -143,7 +143,7 @@ Nimm ein Zeichen aus dem String und unterscheide:
 
 ### Wie wird ein gültiger Ausdruck beschrieben?
 
-Sind folgende Ausdrücke gültig?
+Sind folgende Ausdrücke gültig? Wie kann das überpfüft werden?
 
 ```
 (3 * (2 + 1 )

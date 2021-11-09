@@ -148,3 +148,4 @@ Der **Adressbus** bestimmt auf welches Byte gerade zugegriffen werden soll. Die 
 ## Weiteres
 
 - [Video: How Smartphones Operate: Inside the Primary Processor/ System on a Chip/ Brain of your Smartphone](https://youtu.be/NKfW8ijmRQ4), Super Animationen
+
