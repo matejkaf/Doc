@@ -606,6 +606,8 @@ for line in lines:
 f.close()
 ```
 
+Textfiles schreiben
+
 ```python
 f = open('path','w')
 f.write('this is a line\n')
