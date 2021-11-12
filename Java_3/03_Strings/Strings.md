@@ -81,7 +81,11 @@ String sub;
 sub = s.substring(10);   // "Ferien" - alles ab Index 10
 ```
 
-**Übung:** Schreibe eine Methode `String substringFrom(String s)`, die alles nach dem ersten `'#'` als neuen String zurückgibt.
+---
+
+#### Übung (substringFrom)
+
+Schreibe eine Methode `String substringFrom(String s)`, die alles nach dem ersten `'#'` als neuen String zurückgibt.
 
 ```java
 sub = s.substring(5, 9); // 4 Zeichen ab 5: "sind"
@@ -92,7 +96,7 @@ sub = s.substring(5, 9); // 4 Zeichen ab 5: "sind"
 
 #### Übung (substringBetween)
 
-**Übung:** Schreibe eine Methode `String substringBetween(String s)`, die alles zwischen dem ersten `'#'` und dem zweiten `'#'` als neuen String zurückgibt (Beispiel: `"abcd#dies#12345"`).
+Schreibe eine Methode `String substringBetween(String s)`, die alles zwischen dem ersten `'#'` und dem zweiten `'#'` als neuen String zurückgibt (Beispiel: `"abcd#dies#12345"`).
 
 ---
 
