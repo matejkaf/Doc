@@ -12,7 +12,7 @@ Arithmetische Ausdrücke beschreiben Berechnungen mittels der arithmetischen Ope
 
 Du hast die Aufgabe einen einfachen "Taschenrechner" zu programmieren der es erlaubt solche Ausdrücke einzugeben und das Ergebnis berechnet.
 
-Dazu sind einige Vorbereitungen notwendig.
+Als Vorbereitung auf diese Aufgabe benötigen wir zuerst 2 Stacks, einen für die Operanden und einen für die Zahlen/Zwischenergebnisse – siehe folgende Aufgaben.
 
 
 
@@ -22,10 +22,10 @@ Dazu sind einige Vorbereitungen notwendig.
 
 Schreibe eine Klasse `StackChar` mit der Zeichen auf einem Stack abgelegt und von diesem wieder entnommen werden können. Verwende eine verkettete Liste.
 
-Die Methoden dieser Klasse benötigen nur `char` als Parameter bzw. als Rückgabewert. Die Klasse `Node` wird nur innerhalb der Klasse benötigt und brauch nicht nach außen hin sichtbar sein – ist daher `private` und weiters als sogenannte **innere Klasse** definiert. Das Prinzip Implementierungsdetails nach außen zu verbergen nennt man *information hidding* und gilt als vorteilhafter Programmierstil.
+Die Methoden dieser Klasse benötigen nur `char` als Parameter bzw. als Rückgabewert. Die Klasse `Node` wird nur innerhalb der Klasse benötigt und braucht nicht nach außen hin sichtbar sein – ist daher `private` und weiters als sogenannte **innere Klasse** definiert. Das Prinzip Implementierungsdetails nach außen zu verbergen nennt man *information hidding* und gilt als vorteilhafter Programmierstil.
 
-```c
-public class StackChar {
+```java
+class StackChar {
   private class Node { // innere Klasse (nur in StackChar sichtbar)
     char c;
     Node next;
@@ -45,6 +45,32 @@ public class StackChar {
 #### Übung (Stack für int)
 
 Erstelle eine Klasse `StackInt` die einen Stack für `int` Werte zur Verfügung stellt. Verwende zur Implementierung eine **ArrayList** (statt der verketteten Liste).
+
+Hilfestellung – Syntax der ArrayList:
+
+```java
+import java.util.ArrayList;
+
+ArrayList<Integer> list = new ArrayList<>();
+
+// vorne anfügen
+int zahl=42;
+list.add(0,zahl); 
+
+// vorne anfügen
+zahl = 21;
+list.add(0,zahl); 
+
+// Anzahl der Elemente
+int sz = list.size();
+
+// vorderstes Element lesen und dieses entfernen
+int inhalt = list.get(0); 
+list.remove(0);
+System.out.println(inhalt);
+```
+
+
 
 ---
 
@@ -85,6 +111,15 @@ Aufgabenstellung:
 
 - Implementiere eine Methode `static int evaluate(String expression)` die wie beschrieben mit Hilfe von 2 Stacks einen arithmetischen Ausdruck (`expression`) berechnen kann. Das Ergebnis ist der Rückgabewert.
 
+
+
+Hinweise:
+
+- Mit  `Character.isDigit(c)` wird geprüft ob `c` (vom Datentyp `char`) eine Ziffer ist.
+- Enthält `c` eine Ziffer so kann diese mit `int d=c-'0'` in eine Zahl gewandelt werden (Subtraktion des ASCII Codes von `0`).
+
+
+
 ---
 
 #### Übung (Erweiterte Klammerung)
@@ -112,12 +147,12 @@ Anleitung:
 
 Berücksichtigen der Operator Reihenfolge. 
 
-Wenn ein Operator gelesen wird,
-prüfe ob der oberste Operator am Stack gleiche oder höhere Priorität hat.
-Falls ja nimm den Operator vom Stack und berechne mit den 2 obersten Werten am Werte-Stack.
-Ergebnis wieder am Stack ablegen.
+Wenn ein Operator gelesen wird:
 
-Danach den gelesenen Operator auf Stack legen.
+- prüfe ob der oberste Operator am Stack gleiche oder höhere Priorität hat.
+  - Falls ja nimm den Operator vom Stack und berechne mit den 2 obersten Werten am Werte-Stack.
+    Ergebnis wieder am Stack ablegen.
+- Danach den gelesenen Operator auf Stack legen.
 
 Prioritäten:
 

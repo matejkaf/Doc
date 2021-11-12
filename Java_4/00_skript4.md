@@ -119,13 +119,10 @@ Was ist das Trennzeichen zwischen den Spalten?
 
 ```bash
 $ hexdump -C -n400 Student.txt
+# 400 Zeichen, seitlicher Text.
 ```
 
-400 Zeichen, seitlicher Text.
-
-Das Zeichen `0x09` ist der Tabulator `\t` (Kann man über die 
-[Wikipedia Tabelle](https://en.wikipedia.org/wiki/ASCII#Control_characters)
-herausfinden)
+Das Zeichen `0x09` ist der Tabulator `\t` (Kann man über die [Wikipedia Tabelle](https://en.wikipedia.org/wiki/ASCII#Control_characters) herausfinden)
 
 `line.split("\t")` funktioniert!
 

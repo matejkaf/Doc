@@ -26,18 +26,20 @@ Schreibe ein Programm, das nach einer erfolgten Eingabe des Geburtsjahres das Al
 
 ---
 
-#### Übung (Gerade Zahl)
-Schreibe ein Programm, das von einer eingegeben Zahl (`int`) ausgibt ob diese gerade oder ungerade ist. 
-
----
-
 #### Übung (Teilbar)
 In einem Programm soll, von zwei einzugebenden Zahlen (`int`), geprüft werden ob die eine die andere teilt. Dabei kann sowohl sein, dass die erste Zahl die zweite Zahl teilt, als auch umgekehrt.
-Eine Zahl x ist durch eine Zahl y genau dann teilbar, wenn der Rest der Division x/y​ Null ergibt, d.h. `(x%y)==0` wahr ist.
+Eine Zahl `x` ist durch eine Zahl `y` genau dann teilbar, wenn der Rest der Division `x` geteilt durch `y`​ Null ergibt, d.h. `(x%y)==0` wahr ist.
 
 ---
 
+#### Übung (Drei Zahlen Vergleichen)
 
+Schreibe ein Programm, das 3 Werte x, y und z einliest und überprüft:
 
+- ob x, y und z alle gleich sind,
+- ob x, y und z alle unterschiedlich sind,
 
+Gib für jeden Fall einen entsprechenden Text aus.
+
+---
 

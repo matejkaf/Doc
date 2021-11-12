@@ -1,7 +1,7 @@
 ---
 title: Zeiger und Strings
 subtitle: Übungen
-tags: [assignment,c,pointer,strings,intro,C_2]
+tags: [assignment,c,pointer,strings,intro,C_2,2AHITS]
 ---
 
 #### Übung (Ausgabe I)
@@ -56,17 +56,6 @@ char getat(char* p, int n)
 	return *q;
 }
 ```
-
----
-
-#### Übung (Funktionen)
-
-Implementiere mit Hilfe von Zeigern.
-
-- In einer Funktion: Ermittle die Länge eines Strings – die Länge ist der Rückgabewert.
-- Schreibe eine Funktion die den letzten Buchstaben eines Strings zurückgibt.
-- Schreibe eine Funktion die einen String und eine Zahl `n` übergeben bekommt.
-  Im String sollen ab (inklusive) dem n-ten Buchstaben alle folgenden Buchstaben mit `'x'` überschrieben werden. Der erste Buchstabe des Strings hat die Nummer 0. 
 
 ---
 

@@ -56,6 +56,8 @@ Hello World
 
 # Argumente
 
+[! 3AHITS G2 21.10.2021]
+
 Sind spezielle Variable für Kommandozeilenargumente
 
 ```

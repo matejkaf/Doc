@@ -4,15 +4,11 @@ subtitle: Übungen
 tags: [assignment,c,pointer,C_2]
 ---
 
-
-
-# call-by-reference
-
 Normalerweise werden Parameter per Kopie an Funktionen übergeben. Eine Änderung des lokalen Parameters in der Funktion hat keine Auswirkung auf die beim Funktionsaufruf übergebene Variable.
 
 Übergibt man jedoch einen Zeiger an die Funktion ist es möglich die Variable aus der Funktion heraus zu ändern. Dieses Verhalten nennt man *call-by-reference*.
 
-Um einen Zeiger auf eine Variable zu erhalten stellt man ein `"&"` davor. Dies ist der **Adressoperator**, weil dieser die Adresse einer Variable ermittelt.
+Um einen Zeiger auf eine Variable zu erhalten stellt man ein `&` davor. Dies ist der **Adressoperator**, weil dieser die Adresse einer Variable ermittelt.
 
 
 Beispiel:
@@ -45,8 +41,6 @@ char a='o';
 char b='p';
 swap(&a,&b);
 ```
-
-
 
 ---
 
@@ -84,8 +78,6 @@ while(ok==0)
 printf("Korrekte Eingabe: %lf\n", temp);
 ```
 
-
-
 ---
 
 **Übung (Sortieren):**
@@ -96,8 +88,6 @@ Schreibe eine Funktion die die Werte von 3 Variablen in eine sortierte Reihenfol
 int a[]={42,21,37};
 sort3(&a[0], &a[1], &a[2]);
 ```
-
-
 
 ---
 

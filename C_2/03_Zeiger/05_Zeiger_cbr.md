@@ -11,9 +11,7 @@ Ein Zeiger wird definiert mittels:
 int* p; // Zeiger auf int
 ```
 
-Ein Zeiger ist ein Variable die eine Speicher-Adresse enthält.
-Durch dereferenzieren `*p` kann auf den Inhalt dieser Speicher-Adresse zugegriffen werden.
-Da es sich um einen `int` Zeiger handelt wird in diesem Fall ein `int` Wert adressiert.
+Ein Zeiger ist ein Variable die eine Speicher-Adresse enthält. Durch dereferenzieren `*p` kann auf den Inhalt dieser Speicher-Adresse zugegriffen werden. Da es sich um einen `int` Zeiger handelt wird in diesem Fall ein `int` Wert adressiert.
 
 In einem laufenden Programm ist jeder Variable eine Speicheradresse zugewiesen, diese kann mit dem `&` Operator ermittelt werden.
 

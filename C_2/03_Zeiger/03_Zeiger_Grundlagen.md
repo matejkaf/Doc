@@ -13,7 +13,7 @@ Die Zeile `int* p;` liest man von rechts nach links:
 
 - "Die Variable `p` ist ein Zeiger auf einen `int` Wert" – dies bedeutet, dass `p` eine Adresse speichert und an dieser Adresse befindet sich ein `int` Wert.
 
-Um solche Adressen zu ermitteln dient z.B. der `&` Operator. Setzt man diesen vor eine Variable wird deren Adresse ermittelt. `&a` ergibt die Adresse von a.
+Um  Adressen zu ermitteln dient der `&` Operator. Setzt man `&` vor eine Variable wird deren Adresse ermittelt. `&a` ergibt die Adresse von a.
 
 Beispiel:
 
