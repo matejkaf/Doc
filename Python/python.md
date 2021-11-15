@@ -383,6 +383,7 @@ print(dict)  ## {'a': 'alpha', 'o': 'omega', 'g': 'gamma'}
 
 print(dict['a'])     ## Simple lookup, returns 'alpha'
 dict['a'] = 6       ## Put new key/value into dict
+# test for key presence
 'a' in dict         ## True
 ## print dict['z']                  ## Throws KeyError
 if 'z' in dict: 

@@ -20,8 +20,6 @@
 
 
 
-
-
 Erstes Beispiel
 
 ```csharp

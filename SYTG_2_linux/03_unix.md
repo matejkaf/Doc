@@ -4,6 +4,8 @@ description: Allgemeines zu UNIX und Linux
 tags: [lecture, unix, SYTG_2_Linux, 2AHITS ]
 ---
 
+[! 2AHITS G1 08.11.2021]
+
 Ein Betriebssystem (*operating system*, OS) macht die HW eines Computers verwendbar. Aufgaben:
 
 - Programme starten

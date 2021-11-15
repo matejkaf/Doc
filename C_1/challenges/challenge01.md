@@ -56,9 +56,9 @@ dann wird immer wieder ein neues w nach folgender Formel berechnet:
 
 w = (w+x/w)/2
 
-Mit jedem Mal Rechnen wird der Wert genauer.
-Dies ist unter dem Namen **Herons Verfahren** bekannt.
+Mit jedem Mal Ausführen dieser Formel wird der Wert genauer. Dies ist unter dem Namen **Herons Verfahren** bekannt.
 
-Probiere aus wie oft gerechnet werden muss bis $\sqrt{16}$ bis zur 3ten Kommastelle stimmt.
+Probiere aus wie oft gerechnet werden muss bis √16 bis zur 3ten Kommastelle stimmt.
 
 ---
+

@@ -38,9 +38,11 @@ Interne Struktur einer CPU
 
 -   **SR** (status register) besteht aus Flags (Bits)
     ![image-20211019120022755](fig/image-20211019120022755.png)
-    Zustände der Bits leiten sich ab aus der vorhergehenden Operation der ALU. Ergbnis ist 0 setzt z.B. das zero-flag. Auch Fehlersituationen werden so gemeldet (overflow-flag)
+    Zustände der Bits leiten sich ab aus der vorhergehenden Operation der ALU. Ergebnis ist 0 setzt z.B. das zero-flag. Auch Fehlersituationen werden so gemeldet (overflow-flag)
 
-# Übersichtsbild CPU mit grundsäzlichem Ablauf
+# Übersichtsbild CPU 
+
+mit grundsäzlichem Ablauf
 
 ![image-20211019120250319](fig/image-20211019120250319.png)
 
@@ -156,14 +158,18 @@ E01E = LDI R17,14
 Siehe `doc/atmel-0856-avr-instruction-set-manual.pdf`
 
 - LDI Seite 115, opcode ganz links 4 Bits: 1110
-- ADD Seite 32, 115, opcode ganz links 6 Bits: 000011
+- ADD Seite 32, opcode ganz links 6 Bits: 000011
+
+![image-20211113111817514](fig/image-20211113111817514.png)
+
+![image-20211113111917072](fig/image-20211113111917072.png)
 
 
 
 ## Bedeutung Maschinensprache/Assembler
 
 - Zum Verstehen wie ein Prozessor funktioniert. 
-- Reverse Engineering (z.B. bei Malware)
+- Reverse Engineering (z.B. bei Malware analysieren)
 - Suchen von Schwachstellen für Angriffe
 - Programmiert wird in Assembler weniger:
   - Mühsam

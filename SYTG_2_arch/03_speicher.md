@@ -8,10 +8,12 @@ tags: [lecture, 2AHITS_Teach]
 
 Für Programme und Daten, von der CPU aus über den Bus direkt und byteweise adressierbar.
 
+Arten:
+
 -   Flüchtiger Speicher (volatile, Strom weg => Daten weg)
     -   RAM - Random Access Memory 
         -   SRAM – Static RAM (D Flip Flops, schnell, teuer), nur für spezielle Anwendungen
-        -   **SDRAM** – Synchronous Dynamic RAM (Kondensator, langsamer, billiger), der Standard!
+        -   **SDRAM** – Synchronous Dynamic RAM (Kondensator, langsamer, billiger) – der Standard!
 
 - Nicht-flüchtiger Speicher (non volatile, behält die Daten bei Spannungsverlust)
   - ROM - Read Only Memory 

@@ -3,7 +3,7 @@ title: Regular Expressions
 subtitle: Python
 ---
 
-## 
+
 
 [docs.python Referenz](https://docs.python.org/3/library/re.html)
 
@@ -15,7 +15,19 @@ subtitle: Python
 
 
 
-`re.search`
+# Search
+
+[`re.search`](https://docs.python.org/3/library/re.html#re.search) – returned ein [match object](https://docs.python.org/3/library/re.html#match-objects)
+
+Grundprinzip:
+
+```python
+match = re.search(pattern, string)
+if match: # None if no match
+    process(match)
+```
+
+Beispiel:
 
 ```python
 html_header = " bla bla   Content-Length: 1234  bla bla  "
@@ -41,7 +53,17 @@ if content_length_search:
   print(content_length)
 ```
 
+Output:
+
+```
+1234
+```
+
 `group(0)` ist immer der gesamte match.
+
+
+
+# Ersetzen
 
 Ersetzen mit `re.sub`:
 
@@ -53,7 +75,9 @@ result = re.sub(r'\s+', ' ',   input)           # Eliminate duplicate whitespace
 
 
 
-Beispiel – Datum extrahieren:
+# Beispiele
+
+## Datum extrahieren
 
 ```python
 import re
@@ -84,7 +108,7 @@ for str in tests:
 
 
 
-# Beispiele
+## Beispiele
 
 Alle Image Links in Markdown finden (z.B. alle Vorkommen in einem File):
 

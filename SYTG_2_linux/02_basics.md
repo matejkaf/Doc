@@ -149,8 +149,6 @@ $ mkdir mysecondir
 $ ls
 ```
 
-[! 2AHITS G1 11.10.2021]
-
 darunter einen weiteren Unterordner erzeugen: 
 
 ```bash
