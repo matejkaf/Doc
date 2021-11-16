@@ -4,12 +4,10 @@ subtitle: Dynamic arrays in Java
 tags: [lecture,java,array]
 ---
 
-# Inhalt
-
 * TOC
 {:toc}
 
-## Dynamisches Array
+# Dynamisches Array
 
 With class `ArrayList` (Java library)
 
@@ -43,7 +41,7 @@ The Method `add` inserts a new element at the end of the array – the array gro
 
 
 
-## Methods of ArrayList
+# Methods of ArrayList
 
 For `ArrayList<TYPE>`:
 
@@ -61,7 +59,7 @@ Attention: ArrayLists's are objects, the elements stored by these objects must t
 
 
 
-## Objects only!
+# Objects only!
 
 ArrayList's store **references to objects**!
 
@@ -92,7 +90,7 @@ int k = 2*m // unboxing – Integer to int – on demand
 
 
 
-## Output
+# Output
 
 For ArrayList's there is an extraordinary easy way to print out the content:
 
@@ -106,11 +104,11 @@ Which calls the ArrayLists `toString` Method.
 
 
 
-## Dynamic Arrays – Exercises
+# Dynamic Arrays – Exercises
 
 
 
-#### **Exercise (Reverse input):**
+#### Exercise (Reverse input)
 
 Write a programm that allows the input of an unlimited number of integer values. A value of –1 ends the input. Afterwards all entered numbers should be printed in reverse order (not including –1).
 
@@ -127,7 +125,7 @@ System.out.println(input);
 
 ---
 
-#### **Exercise (Count words):**
+#### Exercise (Count words)
 
 Write a program to count word occurences. The program lets the user enter words and counts how often each word is entered. The program shall support an arbitrary amount of different words. At program start the number of different words is not known.
 
@@ -144,7 +142,7 @@ Use a class `Word` which stores the word as `String` and the count as `int`. Sto
 
 ---
 
-#### **Exercise (Count words in sorted order):**
+#### Exercise (Count words in sorted order)
 
 Extend the last exercise: Sort the list. Hint: Use bubblesort for sorting. 
 
@@ -152,6 +150,7 @@ Extend the last exercise: Sort the list. Hint: Use bubblesort for sorting.
 Sort words by number of occurence in descending order. 
 - Sort words in alphabetical ascending order. Hint: Read about the `compareTo` method of `String`.
 
+---
 
 
 

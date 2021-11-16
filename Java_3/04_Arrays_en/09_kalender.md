@@ -4,8 +4,6 @@ subtitle: Übung Kalender
 tags: []
 ---
 
-
-
 Schreibe ein Programm das **Kalendereinträge** mit **Datum** (Monat + Tag) einem beliebigen Text (z.B. Mathematik) und einer Kategorie in verwalten kann.
 
 Kategorien:

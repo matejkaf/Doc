@@ -10,7 +10,7 @@ In dieser Aufgabenstellung ist eine Klasse zu implementieren die Daten in einem 
 
 ---
 
-#### **Übung (StaticArray):**
+#### Übung (StaticArray)
 
 Implementiere:
 
@@ -26,7 +26,7 @@ Im Konstruktor soll das Array mit `new` angelegt werden.
 
 ---
 
-#### **Übung (StaticArray Erweiterungen):**
+#### Übung (StaticArray Erweiterungen)
 
 Erweitere durch:
 
@@ -37,7 +37,6 @@ Experimentiere was bei Änderung der Array Werte passiert – wenn Array Element
 
 
 ---
-
 
 
 

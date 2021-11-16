@@ -5,7 +5,7 @@ tags: [assignment]
 use_math: true
 ---
 
-#### **Übung (Schulweg Statistik):**
+#### Übung (Schulweg Statistik)
 
 Du möchtest wissen wie lange du durchschnittlich für den Schulweg brauchst (in Minuten, Datentyp `double`) und wie stark diese Dauer variiert. Schreibe dazu ein Programm das die Eingabe beliebig vieler `double` Werte ermöglicht – beenden wenn 0 eingegeben wird. Speichere alle Werte in einer `ArrayList`. 
 
@@ -31,7 +31,7 @@ Schreibe Methoden zur Berechnung beider Werte.
 
 ---
 
-#### **Übung (Schulweg Statistik II):**
+#### Übung (Schulweg Statistik II)
 
 Erweitere die vorhergehende Übung auf mehrere Schüler. Erstelle dazu eine Klasse `Schueler` die 
 

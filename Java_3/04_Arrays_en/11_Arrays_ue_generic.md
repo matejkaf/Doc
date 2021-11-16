@@ -66,7 +66,7 @@ Test<Integer> test = new Test<Integer>(Integer.class, 7);
 
 ---
 
-#### **Übung (Generic StaticArray):**
+#### Übung (Generic StaticArray)
 
 Erweitere die Klasse `StaticArray` mittels Generics so, dass Arrays beliebiger Datentypen verwaltet werden können.
 
@@ -80,7 +80,7 @@ Teste mit den Klassen:
 
 ---
 
-#### **Übung (Generic StaticArray):**
+#### Übung (Generic StaticArray)
 
 Erweitere durch:
 

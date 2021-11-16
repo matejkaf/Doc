@@ -23,7 +23,7 @@ Die Klasse `DynamicArray` soll ähnliche Funktionen wie ArrayList zur Verfügung
 
 ---
 
-#### **Übung (Start):**
+#### Übung (Start)
 
 Implementiere:
 
@@ -37,7 +37,7 @@ Es können maximal 3 Personen eingefügt werden, beim Einfügen einer 4ten Perso
 
 
 ---
-#### **Übung (Vergrößern):**
+#### Übung (Vergrößern)
 
 Schreibe eine Methode `inflate` in der Klasse `DynamicArray`, diese soll das Array vergrößern ohne, dass Daten verloren gehen. Dies ist folgendermaßen zu realisieren:
 
@@ -50,14 +50,14 @@ Schreibe eine Methode `inflate` in der Klasse `DynamicArray`, diese soll das Arr
 
 
 ---
-#### **Übung (Beliebig viele einfügen):**
+#### Übung (Beliebig viele einfügen)
 
 Verwende die Methode `inflate` um `add` ohne Limit aufrufen zu können. D.h. es soll möglich sein beliebig viele Personen hinzuzufügen.
 
 
 
 ---
-#### **Übung (Entfernen):**
+#### Übung (Entfernen)
 
 Schreibe folgende Methoden in der Klasse `DynamicArray`:
 
@@ -68,17 +68,16 @@ Schreibe folgende Methoden in der Klasse `DynamicArray`:
 
 
 ---
-#### **Übung (Einfügen beliebig):**
+#### Übung (Einfügen beliebig)
 
 Schreibe eine überladene Variante der `add` Methode in der Klasse `DynamicArray` mit der ein neues Element an beliebiger Stelle eingefügt werden kann. Alle Elemente die sich an dieser Stelle und dahinter befinden sollen um eine Indexposition verschoben werden. Das Array soll sich automatisch erweitern falls notwendig.
 
 
 
 ---
-#### **Übung (Schrumpfen):**
+#### Übung (Schrumpfen)
 
 Wenn durch das entfernen von Elementen nur mehr ein Viertel (oder weniger) der Array Elemente belegt sind, dann soll das Array auf die Hälfte verkürzt werden.
 
 ---
-
 
