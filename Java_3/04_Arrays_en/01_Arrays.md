@@ -1,11 +1,14 @@
 ---
 title: Arrays
-tags: [lecture,java,array]
+tags: [lecture,java,array,3AHITS]
 ---
 
 > The important thing is not to stop questioning. –Albert Einstein
 
-Two step process:
+* TOC
+{:toc}
+
+Creating an array is a two step process:
 
 
 - 
@@ -13,7 +16,7 @@ Define reference variable
 ```java
 int[] values; // like a pointer in C
 ```
-- Allocate with `new`
+- Allocate memory with `new`
 
 ```java
 values = new int[5]; // initialized with 0 values
@@ -27,28 +30,44 @@ int[] values = new int[5];
 ```
 
 Initialize with values:
+
 ```java
-int[] values = {1,2,3,4};
-String[] txts = {"one","two","three"};
-// or:
 values = new int[] {1,2,3,4};
 ```
 
+C++ like Syntax also supported but only at time of variable definition.
 
-Size of array may be a variable:
+```java
+int[] values = {1,2,3,4};
+String[] txts = {"one","two","three"};
+```
+
+Size of array may be a non constant (variable):
+
 ```java
 int n=7;
 int[] values = new int[n*2];
 ```
 
+This works because arrays are allocated at runtime not at compiletime.
+
 Print an array:
+
 ```java
+import java.util.*;
+//...
 System.out.println(Arrays.toString(values) );
+```
+
+The utility method `Arrays.toString(ARRAY)` returns a String showing the content of the Array:
+
+```
+[1,2,3,4]
 ```
 
 
 
-## Access the Array
+# Access the Array
 
 Use index:
 ```java
@@ -60,29 +79,37 @@ Arrays "know" their size:
 int len = values.length;
 ```
 
+Example:
+
+```java
+int lastValue = values[values.length-1]
+```
 
 
 
-## Watch your index!
-Common programming error:
+
+# Watch your index!
+Common programming error ("of by one"):
 ```java
 int[] values = {1,2,3,4};
 for(int i=0; i<=values.length; i++)
     values[i] = i + 1;
 ```
 
-
 Compiler: happy!
 
-Run program:
+Java Programs are executed by the Java Virtual Machin (JVM). The JVM monitors the validity of array indices.
+
+Result of running above program:
 ```java
-Exception in thread "main" 
-java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException
 ```
 
-This is a programming error discovered at runtime.
+This is a **logic error** discovered at **runtime**.
 
-**Exceptions** help to discover problems early. Got an exception? Locate bug in your code!
+**Exceptions** help to discover problems early. 
+
+Got an exception? → Locate bug in your code!
 
 Distinguish: Compile time error – Run time error
 
@@ -90,7 +117,7 @@ Distinguish: Compile time error – Run time error
 
 ---
 
-#### **Assignment (Create Array):**
+#### Assignment (Create Array)
 
 Write a program that fills an `int` Array (size entered by user) with the values `1,2,4,8,16,...`.
 
@@ -100,8 +127,9 @@ Write a program that fills an `int` Array (size entered by user) with the values
 
 
 
-## Arrays and Methods
+# Arrays and Methods
 
+## Parameter
 
 Arrays may be passed to methods as **parameters**.
 
@@ -124,7 +152,7 @@ Changes of array values within the method modifies the original array.
 
 ---
 
-#### **Assignment (Rectangular frame):**
+#### Assignment (Rectangular frame)
 
 Write a method that takes an array of strings and prints them, one per line, in a rectangular frame. For example the array `"Hello World", "in", "a", "frame"` gets printed as:
 
@@ -137,11 +165,9 @@ Write a method that takes an array of strings and prints them, one per line, in 
 ***************
 ```
 
-
-
 ---
 
-#### **Assignment (Reverse – in place):**
+#### Assignment (Reverse – in place)
 
 Implement a `static` method which gets an `int` Array as a parameter and returns `void`. The array passed to the method should be reversed "in place", which means no new array should be allocated to store the reversed array. Instead implement by swapping 2 array elements at a time.
 
@@ -176,15 +202,13 @@ a = methodName();
 
 ---
 
-#### **Assignment (Reverse):**
+#### Assignment (Reverse)
 
 Write a `static` method that takes an `int` array as parameter and returns a new array in reversed order. The array passed to the method must not be modified!
 
-- Implement as explained.
-- Use only two local variables: index and the reversed array.
+- Improve your first solution: Limit yourself to just two local variables: the index and the reversed array.
 
 ---
-
 
 
 
