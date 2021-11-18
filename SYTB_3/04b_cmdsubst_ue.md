@@ -8,11 +8,17 @@ Löse mit Hilfe von command substitution
 
 #### Übung (Zufälliges Wort)
 
-Erstelle ein Skript das ein zufälliges Wort aus der [Wortliste](testdata/wortliste1000.txt) (1000 häufigste deutsche Wörter) ausgibt.
+Erstelle ein Skript das einen Satz aus 5 zufälligen Wörtern bildet, z.B.:
+
+```
+richtig ganzen Kilometer auf Mittel.
+```
+
+Wähle die Wörter der [Wortliste](testdata/wortliste1000.txt) (1000 häufigste deutsche Wörter).
 
 Hinweis: Das Komando `sed -n 5p` gibt vom Input bspw. nur die 5te Zeile aus. 
 
-
+Hinweis: Berechnungen (`+`, `-`, `*`, `/`, `%`) können mit der Syntax `$(( EXPR ))` durchgeführt werden.
 
 
 ---
