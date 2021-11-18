@@ -6,9 +6,19 @@ tags: [assignment,3AHITS]
 
 #### Übung (spezielle Variable)
 
-Probiere die speziellen Variablen aus
+Schreibe ein shellscript das eine beliebige Menge von Dateinamen als Parameter akzeptiert. Von all diesen Dateien soll eine Kopie im gleichen Verzeichnis angelegt werden. Die Kopie unterscheidet sich vom Original durch eine angefügte Zufallszahl, Beispiel:
 
-Gib 3 Zufallszahlen in **einer einzigen** Zeile ausgibt.
+```
+test.txt --> test.txt.38573
+```
+
+Aufrufbeispiele:
+
+```sh
+$ ./randcp.sh test1.txt test2.txt
+$ ./randcp.sh xyz1.md test3.txt abcd.dat
+$ ./randcp.sh *.md
+```
 
 ---
 

@@ -85,7 +85,7 @@ $ ./args.sh eins zwei drei vier
 
 [Übungen](02b_scripts_ue)
 
-
+[!3AHITS G2 11.11.2021]
 
 # process ID
 
@@ -116,7 +116,7 @@ done
 
 [Übungen](02d_scripts_ue)
 
-[3AHITS G1 04.11.2021]
+[!3AHITS G1 04.11.2021]
 
 
 
