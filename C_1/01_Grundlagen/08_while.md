@@ -14,12 +14,12 @@ while (Bedingung)
 Wie `if` Bedingung – Anweisungen werden jedoch immer wieder ausgeführt **solange** (*while*) die Bedingung wahr ist.
 
 
-Beispiel: Ausgabe der Zahlen 1 bis 3.
+Beispiel: Ausgabe der Zahlen 1 bis 42.
 
 ```c
 int i;
 i=1;
-while (i<=3)
+while (i<=42)
 {
 	printf("%d ",i);
 	i=i+1;
