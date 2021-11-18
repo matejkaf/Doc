@@ -331,7 +331,7 @@ Ausgabe:
 #### Übung (Summieren)
 
 Schreibe eine Methode die Ausdrücke in der Form `"<zahl_1>+<zahl_2>+...+<zahl_n>"` berechnen kann. 
-Hinweis : Verwende `split("\\+")` da `+` alleine eine spezielle Bedeutung in split hat.
+Hinweis : Verwende `split("\\+")` da `+` alleine eine spezielle Bedeutung in split hat (regular expression).
 
 ---
 

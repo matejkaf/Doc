@@ -34,7 +34,7 @@ Implementiere eine Methode die alle passenden Wörter aus dem Satz löscht. Der 
 
 
 
-#### **Übung (String -- Palindrom):**
+#### **Übung (String – Palindrom):**
 
 Schreibe ein Programm das einen Text umgekehrt ausgibt.  Weiters soll das Programm prüfen können ob es sich um ein ein Palindrom handelt. Ein Palindrom ist ein Text der von vorn und von hinten gelesen gleich bleibt (Bsp.: `Rentner`).
 
