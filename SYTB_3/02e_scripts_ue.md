@@ -20,6 +20,7 @@ $ ./randcp.sh xyz1.md test3.txt abcd.dat
 $ ./randcp.sh *.md
 ```
 
----
+Achtung: `#!/bin/bash` in der she-bang Zeile verwenden. `sh` unterstützt (in REPL) keine Zufallszahlen.
 
+---
 
