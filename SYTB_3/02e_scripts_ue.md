@@ -6,7 +6,7 @@ tags: [assignment,3AHITS]
 
 #### Übung (spezielle Variable)
 
-Schreibe ein shellscript das eine beliebige Menge von Dateinamen als Parameter akzeptiert. Von all diesen Dateien soll eine Kopie im gleichen Verzeichnis angelegt werden. Die Kopie unterscheidet sich vom Original durch eine angefügte Zufallszahl, Beispiel:
+Schreibe ein shellscript das eine beliebige Menge von Dateinamen als Parameter akzeptiert. Von jeder dieser Dateien soll eine Kopie im gleichen Verzeichnis angelegt werden. Die Kopie unterscheidet sich vom Original durch eine angefügte Zufallszahl, Beispiel:
 
 ```
 test.txt --> test.txt.38573
@@ -21,6 +21,5 @@ $ ./randcp.sh *.md
 ```
 
 ---
-
 
 

@@ -4,11 +4,13 @@ subtitle: Übungen bash scripting
 tags: [assignment,3AHITS]
 ---
 
+Löse mit Hilfe von command substitution
+
 #### Übung (Zufälliges Wort)
 
 Erstelle ein Skript das ein zufälliges Wort aus der [Wortliste](testdata/wortliste1000.txt) (1000 häufigste deutsche Wörter) ausgibt.
 
-Hinweis: Das Komando `sed -n 5p` gibt vom Input nur die 5te Zeile aus. 
+Hinweis: Das Komando `sed -n 5p` gibt vom Input bspw. nur die 5te Zeile aus. 
 
 
 
@@ -25,7 +27,7 @@ Create a script which will take a filename as its first argument and create a da
 
 #### Übung (dated copy V2)
 
-**Challenge:** To make it a bit harder, see if you can get it so that the date is after the name of the file (eg. `file1_2021-10-29.txt` (The command **basename** can be useful here.)
+**Challenge:** To make it a bit harder, see if you can get it so that the date is after the name of the file (eg. `file1_2021-10-29.txt` (Hint: The command **basename** can be useful here.)
 
 
 
@@ -33,7 +35,7 @@ Create a script which will take a filename as its first argument and create a da
 
 #### Übung (dated copy V3)
 
-**Challenge:** Now see if you can expand the previous question to accept a list of files on the command line and it will create a named copy of all of them. (The command [xargs](https://ryanstutorials.net/linuxtutorial/bonus.php#xargs) may be useful here.)
+**Challenge:** Now see if you can expand the previous question to accept a list of files on the command line and it will create a named copy of all of them. (Hint: The command [xargs](https://ryanstutorials.net/linuxtutorial/bonus.php#xargs) may be useful here.)
 
 ---
 
