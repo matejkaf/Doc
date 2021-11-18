@@ -36,15 +36,15 @@ System.out.println(n); // 3
 
 ---
 
-#### **Übung (Sum Up)**
+#### Übung (Sum Up)
 
 Gegeben ist ein String mit durch Beistriche getrennte ganzen Zahlen:
 
 ```java
-String data="25,731,94,-126,33,444,736,21,4,-66";
+String data="25.4,731.1,94,-126.3,33,444.56,736,21,4,-66.1";
 ```
 
-Schreibe ein Programm das die **größte** dieser Zahlen und deren **Summe** ermittelt.
+Schreibe ein Programm das den **Durchschnitt** der Absolutwerte ermittelt. Ermittle weiters die **durchschnittliche Abweichung** von diesem Mittelwert.
 
 
 
