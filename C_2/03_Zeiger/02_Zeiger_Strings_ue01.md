@@ -30,8 +30,8 @@ char* q = p + 4;
 p=p+7;
 while(p>q) 
 {
-	printf("%c", *p );
-	p--;
+  printf("%c", *p );
+  p--;
 }
 ```
 

@@ -88,5 +88,7 @@ String s="<p>...<img>...</img>...</p>";
 s=...; // <P>...<IMG>...</IMG>...</P>
 ```
 
+Schreibe dazu eine Methode.
+
 ---
 

@@ -5,13 +5,13 @@ tags: [assignment,C_2,c,pointer,strings,intro]
 
 ---
 
-**Übung (Umgekehrt ausgeben):**
+#### Übung (Umgekehrt ausgeben)
 
 Schreibe eine Funktion die einen String in umgekehrter Reihenfolge ausgibt. `"lager" --> "regal"`
 
 ---
 
-**Übung (Ziffern):**
+#### Übung (Ziffern)
 
 Gegeben: Ein String aus Ziffern, zum Bsp. `00033040500000340000`
 
@@ -23,14 +23,16 @@ Gegeben: Ein String aus Ziffern, zum Bsp. `00033040500000340000`
 
 ---
 
-**Übung (Twist):**
+#### Übung (Twist)
+
 Schreibe eine Funktion `twist` die die Reihenfolge der Buchstaben eines Strings umdreht.
 `"lager" --> "regal"`
 Der als Parameter übergebene String soll durch die Funktion verändert werden. Es soll kein lokaler String als Zwischenspeicher angelegt werden.
 
 ---
 
-**Übung (Suche erstes Zeichen aus mehreren):**
+#### Übung (Suche erstes Zeichen aus mehreren)
+
 Schreibe eine Funktion `strcspn` (get span until character in string) mit 2 Strings `s1` und `s2` als Parameter.
 Die Funktion sucht in `s1` das erste Vorkommen von irgendeinem der Zeichen in `s2`.
 Der Return Wert ist ein Zeiger auf das gefundene Zeichen in `s1`.
@@ -46,7 +48,7 @@ strcspn("3+4-9*2/4", "+-*/") --> '+'
 
 ---
 
-**Übung (Weitere Aufgaben):**
+#### Übung (Weitere Aufgaben)
 
 - `strinsert` – ein Zeichen an einer Indexposition einfügen.
 - `strdel` – ein Zeichen von einer Indexposition löschen.
