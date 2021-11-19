@@ -3,7 +3,7 @@ title: if Anweisung
 subtitle: Übungen
 ---
 
-
+[Allgemeine Informationen zur if Anweisung in Python](02_if)
 
 ---
 
