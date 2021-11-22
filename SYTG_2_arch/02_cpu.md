@@ -4,6 +4,9 @@ description: Grundlegende Arbeitsweise einer CPU
 tags: [lecture]
 ---
 
+* TOC
+{:toc}
+
 Der Prozessor (CPU) führt Programme (=Folge von Befehlen) aus die im Speicher stehen.
 
 Grundsätzlicher Ablauf (*instruction cycle*) in CPU :
@@ -48,9 +51,11 @@ mit grundsäzlichem Ablauf
 
 
 
-# Maschinencode
+# Maschinensprache
 
-Die Befehle die ein Prozessor versteht sind in Maschinensprache kodiert, d.h. sind ein Bitmuster. Jeder Befehl bekommt eine eindeutige Nummer die als **opcode** bezeichnet wird. Alle opcodes zusammen ergeben den **Befehlssatz** eines Prozessors.
+= Befehle die ein Prozessor versteht (Befehlssatz), kodiert als Bitmuster.
+
+Eindeutige Nummer für jeden Befehl (= **opcode**)
 
 
 
@@ -69,7 +74,7 @@ Nur für Grundprinzip/Idee, nicht real existent.
 **Assembler** Code = Maschinencode als lesbarer Quelltext
 
 ```
-CLR R5 # R5=R5 XOR R5
+CLR R5 # R5 = R5 XOR R5
 ```
 
 - [15:11] opcode = 3
@@ -125,15 +130,13 @@ Maschinencode in hex:
 
 *Gesamten Programmablauf in der CPU Skizze nachstellen*
 
-Disassembler: von Maschinensprache in Assembler (Hacking Tool)
+## Disassemblieren: 
 
-
-
-## ATmega16
+von Maschinensprache in Assembler (Hacking Tool). Allgemeiner Begriff: reverse engineering
 
 Maschinencode anhand des Przessors **ATmega16** (16 Bit Befehle) – µC der Firma Atmel (µC = CPU+Speicher+Peripherie auf einem Chip)
 
-Hacking: **Disassemblieren** eines Speicherdumps (allgemein: reverse engineering) in Hex:
+Speicherdump:
 
 ```
 05E11EE0100F

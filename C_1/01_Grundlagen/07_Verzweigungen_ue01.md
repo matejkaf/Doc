@@ -32,6 +32,22 @@ Eine Zahl `x` ist durch eine Zahl `y` genau dann teilbar, wenn der Rest der Divi
 
 ---
 
+#### Übung (Schaltjahr)
+
+Schreibe ein Programm das von einer eingegebenen Jahreszahl (`int`) ermittelt ob dies ein Schaltjahr ist.
+
+- Ein Jahr ist (meistens) ein Schaltjahr, wenn die Jahreszahl durch 4 teilbar ist (z.B. 2012). 
+- Ausnahme 1: Durch 100 teilbare Jahreszahlen sind (meistens) **keine** Schaltjahre (z.B. 1900). 
+- Ausnahme von Ausnahme 1: Durch 400 teilbare Jahreszahlen sind **immer** Schaltjahre (z.B. 2000).
+
+---
+
+#### Übung (Datum prüfen)
+
+Schreibe ein Programm das ein Datum mit Tag, Monat und Jahr auf Gültigkeit prüft. Berücksichtige Schaltjahre für den Februar.
+
+---
+
 #### Übung (Drei Zahlen Vergleichen)
 
 Schreibe ein Programm, das 3 Werte x, y und z einliest und überprüft:

@@ -4,20 +4,9 @@ subtitle: Challenges
 tags: [assignment,challenge]
 ---
 
-
-
-#### Übung (Datum formatieren)
-
-Schreibe ein Programm, welches die 3 Werte eines Datums (Tag, Monat, Jahr) einliest und im Format TT.MM.JJ wieder ausgibt (Bsp.: 03.07.98). 
-Das Jahr soll als komplette Jahreszahl (4-stellig) eingegeben aber 2-stellig wieder ausgegeben werden (Bsp.: 2009 → 09).
-
----
-
-
-
 #### Übung (Runden)
 
-Schreibe ein Programm, dass eine Zahl n (Datentyp `int`) auf das nächstliegende Vielfache von 100 rundet. Beispiele:  149→100, $150→200$.
+Schreibe ein Programm, dass eine Zahl n (Datentyp `int`) auf das nächstliegende Vielfache von 100 rundet. Beispiele:  149→100, 150→200.
 
 Hinweis: Probiere was bei einer Division durch 100 passiert.
 

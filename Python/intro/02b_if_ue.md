@@ -7,7 +7,7 @@ subtitle: Übungen
 
 ---
 
-**Übung (Name, Alter und Geschlecht)**
+#### Übung (Name, Alter und Geschlecht)
 
 Schreibe ein Python Skript das zur Eingabe eines Namens, eines Geburtsjahrs und des Geschlechts auffordert. Die Ausgabe soll den Namen und das Alter enthalten und die Anrede an das Geschlecht (`Liebe` oder `Lieber`) anpassen.
 
@@ -23,7 +23,7 @@ Lieber Franz du bis 51 Jahre alt
 
 ---
 
-**Übung (Notenermittlung)**
+#### Übung (Notenermittlung)
 
 Noten werden häufig über erreichte Prozent ermittelt. Ein Schüler kann zwischen 0 und 100% erreichen.
 

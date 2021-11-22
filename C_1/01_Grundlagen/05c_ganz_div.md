@@ -9,7 +9,7 @@ use_math: true
 Was ist die Ausgabe dieses Programms?
 
 ```java
-int a = 12;
+int a = 13;
 int b = 5;
 int c;
 c = a/b;
@@ -21,7 +21,7 @@ Ausgabe: 2 – Warum? –  `int` Variablen haben keine Kommastellen!
 Was ist die (ganzzahlige) Division genau?
 
 ```c
-12 / 5
+13 / 5
 ```
 
 gesucht sind ganze Zahlen $q$ (Quotient) und $r$ (Rest): 
@@ -80,6 +80,12 @@ Probe:
 
 ---
 
+#### Übung (Dezimal nach Binär wandeln)
+
+Schreibe ein Programm das die Eingabe einer ganzen Zahl von 0..255 ermöglicht. Das Programm soll diese Zahl im Binärformat ausgeben.
+
+---
+
 #### Übung (Zeit)
 
 Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder ausgibt. z.B.: 120 Minutens sind 2 Stunden und 0 Minuten. 350 Minuten sind 5 Stunden und 50 Minuten.
@@ -89,6 +95,13 @@ Schreibe ein Programm, das Minuten einliest und in Stunden und Minuten wieder au
 #### Übung (Modulo ohne %)
 
 Schreibe ein Programm das den Rest einer Division ermittelt ohne den `%` Operator zu verwenden.
+
+---
+
+#### Übung (Datum formatieren)
+
+Schreibe ein Programm, welches die 3 Werte eines Datums (Tag, Monat, Jahr) einliest und im Format TT.MM.JJ wieder ausgibt (Bsp.: 03.07.98). 
+Das Jahr soll als komplette Jahreszahl (4-stellig) eingegeben aber 2-stellig wieder ausgegeben werden (Bsp.: 2009 → 09).
 
 ---
 
