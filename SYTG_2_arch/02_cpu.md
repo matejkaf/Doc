@@ -172,11 +172,11 @@ Siehe `doc/atmel-0856-avr-instruction-set-manual.pdf`
 ## Bedeutung Maschinensprache/Assembler
 
 - Zum Verstehen wie ein Prozessor funktioniert. 
-- Reverse Engineering (z.B. bei Malware analysieren)
-- Suchen von Schwachstellen für Angriffe
+- Reverse Engineering (Schadsoftware analysieren)
+- Hacker: Suchen von Schwachstellen für Angriffe
 - Programmiert wird in Assembler weniger:
   - Mühsam
-  - C-Compiler sind auch sehr gut
+  - C-Compiler sind ausreichend gut optimierend
   - Ausnahmen
     - Nutzen von speziellen Prozessor Features oder besonderer HW Componenten
     - Boot/Firmware Code
