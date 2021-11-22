@@ -4,6 +4,8 @@ title: Linux File Permissions
 
 * TOC
 {:toc}
+Unix/Linux verfolgt die Idee **"Everything is a file"**. Bedeutet: fast alle Ressourcen des Betriebssystems werden über das Filesystem zugänglich gemacht. Zugriffsrechten auf Dateien bestimmen daher universell die Möglichkeiten des Users.
+
 # Basics
 
 ```bash
@@ -41,7 +43,7 @@ directory
  owner
 ```
 
-Ein File/Directory hat genau einen owner (User) und gehört zu genau einer Gruppe. Ein User kann zu beliebig vielen Gruppen gehören. Die group permissions gelten wenn ein User nicht der owner ist aber zur Gruppe des Files gehört.
+Ein File/Directory hat genau einen **owner** (User/Besitzer) und gehört zu genau einer **group** (Gruppe). Ein User kann zu beliebig vielen Gruppen gehören. Die group permissions gelten wenn ein User zwar nicht der owner ist aber zur Gruppe des Files gehört. Die Benutzerrechte **other** gelten wenn man weder der owner ist noch zur Gruppe gehört.
 
 Siehe auch:  [tutorialspoint](https://www.tutorialspoint.com/unix/unix-file-permission.htm)
 
@@ -416,3 +418,10 @@ Admin/super user/root legt einen Ordner `projects` an in dem befinden sich weite
 - [Unix file types](https://en.wikipedia.org/wiki/Unix_file_types)
 - [What do the fields in ls -al output mean?](https://unix.stackexchange.com/questions/103114/what-do-the-fields-in-ls-al-output-mean)
 
+## Exercises
+
+"linux file permissions exercises"
+
+- [](https://devconnected.com/30-linux-permissions-exercises-for-sysadmins/)
+- [](https://blog.pentesteracademy.com/practice-linux-permissions-basics-with-13-easy-questions-part-i-75aeaf299ebf)
+- [](http://csis.pace.edu/adelgado/rha-030/workbooks/rha030-workbook04-student-6.1-2.pdf)
