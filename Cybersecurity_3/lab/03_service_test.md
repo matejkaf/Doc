@@ -10,15 +10,7 @@ tags: [assignment,3AHITS]
 
 #### Übung (telnet und ssh Services)
 
-Verwende `ps` und `netstat` um herauszufinden ob telnet und ssh auf Kali bzw. Metasploitable aktiv sind.
-
-
-
----
-
-#### Übung (Sicherheitsrisiko)
-
-Wie hoch ist das Sicherheitsrisiko durch einen aktiven telnet Port einzuschätzen? Wie sieht es mit ssh aus?
+Verwende `ps` und `netstat` um herauszufinden ob **telnet** und **ssh** auf Kali bzw. Metasploitable aktiv sind.
 
 
 
@@ -26,7 +18,9 @@ Wie hoch ist das Sicherheitsrisiko durch einen aktiven telnet Port einzuschätze
 
 #### Übung (nmap für telnet)
 
-Verwende das Hacking Tool `nmap` um von Kali aus zu prüfen ob telnet auf Metasploitable aktiv ist. Versuche das gleiche mit ssh.
+Aus Hacker Sicht ist es natürlich interessanter von einem Remote System aus zu prüfen welcher Services aktiv sind. Dies geht mit Tools die allgemein als Port Scanner bekannt sind, z.B. `nmap`.
+
+Verwende das Hacking Tool `nmap` um von Kali aus zu prüfen ob **telnet** (Port 23) auf Metasploitable aktiv ist. Versuche das gleiche mit **ssh**.
 
 ```sh
 $ nmap -p 23 <target_ip>
@@ -40,7 +34,7 @@ $ nmap -p 23 <target_ip>
 
 Beim **banner grabbing** nutzen Hacker die Informationen die Zielsysteme in Rückantworten auf Dienstanfragen über sich zur Verfügung stellen. Häufig erhält man Informationen über Betriebssysteme, welche Software installiert ist und in welcher Version diese vorliegt. Über diese Informationen kann dann recherchiert werden ob es Schwachstellen (vulnerabilities) und darauf aufbauende Exploits gibt – z.B. CVE Datenbanken (Common Vulnerabilities and Exposures).
 
-- telnet auf das Metasploitable System: welche Informationen sind im Banner?
+- Normales telnet auf das Metasploitable System: welche Informationen sind im Banner? Was läßt sich alles ableiten/recherchieren.
 - Prüfe welche Informationen verfügbar sind wenn telnet auf den SSH Port von Metasploitable ausgeführt wird und ob sich über diese Informationen eine Schwachstelle finden lässt.
 
 ---

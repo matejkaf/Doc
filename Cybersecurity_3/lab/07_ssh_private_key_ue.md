@@ -6,6 +6,7 @@ tags: [assignment]
 
 * TOC
 {:toc}
+SSH Login mittels SSH Keys, von Kali auf Metasploitable
 
 # Schritt 1 – Generiere SSH keys
 
@@ -77,13 +78,13 @@ $ adduser alice
 # pw: alice
 ```
 
-Test mit `su` (switch user)
+Test 1: mit `su` (switch user)
 
 ```sh
 $ su - alice
 ```
 
-Einloggen per `ssh` – fragt nach dem Passwort von alice:
+Test 2: Einloggen per `ssh` – fragt nach dem Passwort von alice:
 
 ```sh
 $ ssh alice@192.168.178.76
@@ -96,7 +97,7 @@ alice@192.168.178.76's password:
 
 # Schritt 2 – auf Client
 
-Den Public key am Server installieren, mit `ssh-copy-id`:
+Vom Client (Kali) aus den Public key am Server installieren, mit `ssh-copy-id`:
 
 ```sh
 $ ssh-copy-id username@remote_host
@@ -136,7 +137,7 @@ $ ssh alice@192.168.178.76
 
 
 
-# Dateien am Server (Metasploitable)
+# Dateien am Server
 
 Auf Metasploitable:
 
@@ -219,7 +220,9 @@ Oder mit jedem Text-Editor.
 
 # ssh Spielereien
 
-Erzeugen einer Datei am Remote System mit eingegeben Inhalt.
+`ssh` kann als weiteres Argument ein auszuführender Befehl übergeben werden. Dabei werden daten aus dem lokalen stdin auf das remote stdin übertregen und stdout in der Gegenrichtung.
+
+(1) Erzeugen einer Datei am Remote System mit eingegebenen Inhalt.
 
 ```sh
 $ cat | ssh alice@192.168.178.76 "cat > test.txt"
@@ -229,13 +232,17 @@ Zeilen
 ^D
 ```
 
-Anzeige des Inhalts einer Remote Datei:
+
+
+(2) Anzeige des Inhalts einer Remote Datei:
 
 ```sh
 $ ssh alice@192.168.178.76 "cat test.txt"
 ```
 
-Folgendes Script soll Remote erzeugt und ausgeführt werden:
+
+
+(3) Folgendes Script soll Remote erzeugt und ausgeführt werden:
 
 ```sh
 # Erzeuge 5 Text Files 1.txt, ..., 5.txt

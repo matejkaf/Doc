@@ -6,15 +6,9 @@ tags: [3AHITS]
 
 
 
-#### Übung (adduser)
+#### Übung (passwd und shadow)
 
-Füge unter Metasploitable einen neuen User hinzu. Was ändert sich in der `passwd` und `shadow` Datei? 
-
-
-
----
-
-#### Übung (passwd)
+Was ändert sich in der `passwd` und `shadow` Datei wenn (unter Metasploitable) ein neuer User hinzugefügt wird.
 
 Ändere das Passwort des Users. Was ändert sich in `passwd` und `shadow`?
 
@@ -24,7 +18,11 @@ Füge unter Metasploitable einen neuen User hinzu. Was ändert sich in der `pass
 
 #### Übung (mkpasswd)
 
-Füge unter metasploitable einen neuen User hinzu ohne `adduser` zu verwenden. Hinweis: nutze `mkpasswd` , `vi`, etc. Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden.
+Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwenden. 
+
+- Hinweis: nutze `mkpasswd` , `vi`, etc. 
+
+- Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden.
 
 
 
@@ -32,7 +30,7 @@ Füge unter metasploitable einen neuen User hinzu ohne `adduser` zu verwenden. H
 
 #### Übung (john – weak password)
 
-Lege (mit `adduser`) in metasploitable einen User mit einem sehr schwachen Passwort (3 Zeichen Kleinbuchstaben) an. Transferiere die Passwortdateien zu Kali und verwende **john the ripper** um das passwort zu knacken.
+Lege (mit `adduser`) in metasploitable einen User mit einem sehr schwachen Passwort (3 Zeichen nur Kleinbuchstaben) an. Transferiere die Passwortdateien zu Kali und verwende **john the ripper** um das passwort zu knacken.
 
 
 
@@ -42,7 +40,7 @@ Lege (mit `adduser`) in metasploitable einen User mit einem sehr schwachen Passw
 
 Knacke die folgenden Passwörter mit `john`
 
-(1) Variation des User Namens (`test`):
+(1) Variation des User Namens (user `test`):
 
 ```
 $6$KI8/NC0B5e0e/QRQ$f85wgSQK/E4XlE3M/cT1OqdQCkcChLvrv2XSvprCEiQbBRc/mJueUmTBZKvFxI1DDQl3DCDuBJ02.9ZqNN/wJ0
