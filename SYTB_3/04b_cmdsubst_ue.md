@@ -4,7 +4,7 @@ subtitle: Übungen bash scripting
 tags: [assignment,3AHITS]
 ---
 
-Löse mit Hilfe von command substitution:
+Löse alle Aufgaben mit Hilfe von command substitution.
 
 
 

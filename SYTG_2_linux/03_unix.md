@@ -4,8 +4,6 @@ description: Allgemeines zu UNIX und Linux
 tags: [lecture, unix, SYTG_2_Linux, 2AHITS ]
 ---
 
-[! 2AHITS G1 08.11.2021]
-
 Ein Betriebssystem (*operating system*, OS) macht die HW eines Computers verwendbar. Aufgaben:
 
 - Programme starten
@@ -99,6 +97,8 @@ Bedeutung:
 - Historisch erste Art Computer zu bedienen
 - unter UNIX/Linux weiter enorm wichtig
 - insbesondere für **Administratoren**.
+
+[! 2AHITS G1 22.11.2021]
 
 Mit der shell (das ein Programm ist) wird über ein **Terminal** (auch **Konsole**, bzw. **TTY** -TeleTYpe) kommuniziert. Das Terminal war früher ein eigenes per Kabel mit dem Computer verbundenes Gerät. Heute ist es meist ein Terminal **Emulator**, d.h. ein Programm das so tut als wäre es ein Terminal. 
 

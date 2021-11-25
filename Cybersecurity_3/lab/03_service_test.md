@@ -35,6 +35,7 @@ $ nmap -p 23 <target_ip>
 Beim **banner grabbing** nutzen Hacker die Informationen die Zielsysteme in Rückantworten auf Dienstanfragen über sich zur Verfügung stellen. Häufig erhält man Informationen über Betriebssysteme, welche Software installiert ist und in welcher Version diese vorliegt. Über diese Informationen kann dann recherchiert werden ob es Schwachstellen (vulnerabilities) und darauf aufbauende Exploits gibt – z.B. CVE Datenbanken (Common Vulnerabilities and Exposures).
 
 - Normales telnet auf das Metasploitable System: welche Informationen sind im Banner? Was läßt sich alles ableiten/recherchieren.
+- Verbinde dich mit telnet auf den Webserver des Metasploitable Systems und finde durch einen GET Request den Typ und die Version des Servers heraus.
 - Prüfe welche Informationen verfügbar sind wenn telnet auf den SSH Port von Metasploitable ausgeführt wird und ob sich über diese Informationen eine Schwachstelle finden lässt.
 
 ---
