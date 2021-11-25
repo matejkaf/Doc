@@ -254,6 +254,24 @@ DEM1XLxv4Hw1Y1Bl1ST4TQ==
 
 
 
+# Base64
+
+Nach Base64
+
+```sh
+$ openssl base64 -in <infile> -out <outfile>
+```
+
+Ohne `-in` wird stdin, ohne `-out` stdout verwendet.
+
+Von Base64 (`-d` ... decode)
+
+```sh
+$ openssl base64 -d -in <infile> -out <outfile>
+```
+
+
+
 # Key derivation
 
 key/iv aus einem Passwort+Salt erzeugen

@@ -85,8 +85,6 @@ $ ./args.sh eins zwei drei vier
 
 [Übungen](02b_scripts_ue)
 
-[!3AHITS G2 11.11.2021]
-
 # process ID
 
 ```
@@ -102,13 +100,13 @@ $$ - The process ID of the current script.
 `$@` ergibt eine Liste (white space getrennt) aller übergebenen Argumente. Dies kann für eine Schleife verwendet werden:
 
 ```sh
-$ for args in $@; do echo "$args"; done
+$ for args in "$@"; do echo "$args"; done
 ```
 
 oder
 
 ```sh
-for args in $@
+for args in "$@"
 do
   echo "$args"
 done
@@ -116,9 +114,7 @@ done
 
 [Übungen](02d_scripts_ue)
 
-[!3AHITS G1 04.11.2021]
-
-
+[!3AHITS G2 25.11.2021]
 
 # Weitere Variablen
 

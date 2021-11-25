@@ -44,6 +44,6 @@ Schreibe ein Programm das von einem eingegebenen Startwert immer jeden zweiten W
 
 #### Übung (Summe)
 
-Schreibe ein Programm, das die Eingabe einer Zahl n erfordert und dann jede Zahl beginnend von 1 bis inklusive $n$ addiert. Das Ergebnis soll ausgegeben werden. Beispiel.: Es wird 4 eingegeben, das Programm rechnet 1+2+3+4=10 und gibt am Bildschirm 10 aus.
+Schreibe ein Programm, das die Eingabe einer Zahl n erfordert und dann jede Zahl beginnend von 1 bis inklusive n addiert. Das Ergebnis soll ausgegeben werden. Beispiel.: Es wird 4 eingegeben, das Programm rechnet 1+2+3+4=10 und gibt am Bildschirm 10 aus.
 
 ---

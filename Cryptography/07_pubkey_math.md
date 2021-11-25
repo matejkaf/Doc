@@ -50,7 +50,7 @@ Eine Zahl $d$ wird ermittelt, so dass gilt:
 $$
 e*d=1 \pmod t
 $$
-Bedeutet: $d$ ist das modulare Inverse zu $e$ mit Modul $t$. Siehe [Erweiterter euklidischer Algorithmus](https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus).
+Bedeutet: $d$ ist das multiplikativ Inverse zu $e$ mit Modul $t$. Siehe [Erweiterter euklidischer Algorithmus](https://de.wikipedia.org/wiki/Erweiterter_euklidischer_Algorithmus).
 
 Anders: für ein bestimmtes $k$ gilt:
 $$
