@@ -1,7 +1,7 @@
 ---
 title: Zeiger und Strings
 subtitle: Allgemeine Übungen
-tags: [assignment,C_2,c,pointer,strings,intro]
+tags: [assignment,C_2,c,pointer,strings,intro,2AHITS]
 
 ---
 

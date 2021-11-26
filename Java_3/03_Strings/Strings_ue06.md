@@ -6,9 +6,9 @@ tags: [assignment]
 
 
 
-#### **Übung (String Tokenizer):**
+#### Übung (String Tokenizer)
 
-Implementiere die Klasse `MyStringTokenizer`.  Diese soll es ermöglichen einen Text in einzelne Wörter zu zerlegen. Als Trennzeichen zwischen zwei Wörtern gilt das Leerzeichen. Das Leerzeichen gehört nicht zum Wort. Die Methode `nextToken()` liefert jeweils das nächste Wort. Mit `hasMoreTokens()` kann festgestellt werden ob noch ein Wort zum Lesen vorhanden ist.\
+Implementiere die Klasse `MyStringTokenizer`.  Diese soll es ermöglichen einen Text in einzelne Wörter zu zerlegen. Als Trennzeichen zwischen zwei Wörtern gilt das Leerzeichen. Das Leerzeichen gehört nicht zum Wort. Die Methode `nextToken()` liefert jeweils das nächste Wort. Mit `hasMoreTokens()` kann festgestellt werden ob noch ein Wort zum Lesen vorhanden ist.
 
 *Anwendung:*
 
