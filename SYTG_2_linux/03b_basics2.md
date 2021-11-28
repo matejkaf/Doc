@@ -107,7 +107,13 @@ $ ls
 $ cat <test.txt
 ```
 
-**Übung:** mit Hilfe von "cat" eine Kopie der Datei test.txt --> test2.txt
+---
+
+#### Übung (Kopie mit cat)
+
+Erstelle mit Hilfe von "cat" eine Kopie der Datei `test.txt` → `test2.txt`
+
+---
 
 Der Befehl `echo` gibt sein Argument auf stdout aus, durch stdout Umleitung kann eine Datei mit Textinhalt erzeugt werden.
 
@@ -141,7 +147,31 @@ Zweite Zeile
 
 ```bash
 $ cat hallo.txt
+$ cat hallo.txt test.txt
 ```
+
+---
+
+#### Übung (C Hallo Welt)
+
+Erstelle mit Hilfe von `echo` Befehlen eine Datei `hello.cpp` mit folgendem Inhalt: 
+
+```c++
+#include <iostream>
+
+int main() {
+  printf("\n\t*** Hallo Welt ***\n");
+	return 0;
+}
+```
+
+Compiliere und starte das C Programm mit folgendem Befehl in der Kommandozeile:
+
+```sh
+$ g++ -o hello hello.cpp;./hello
+```
+
+---
 
 
 

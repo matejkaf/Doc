@@ -200,3 +200,10 @@ z.B. Quad-Core (=4)
 
 
 
+# Videos
+
+- [Wie funktioniert ein Prozessor (CPU)? Erklärvideo von BYTEthinks (7:21)](https://youtu.be/ergYcSJ3Zns)
+- [How a CPU Works (20:42)](https://youtu.be/cNN_tTXABUA)
+- [Playlist: Evolution of CPU processing power](https://youtube.com/playlist?list=PLC7a8fNahjQ8IkiD5f7blIYrro9oeIfJU)
+- [How Do CPUs Work? (10:39)](https://youtu.be/jx-w2o-Lj8g)
+- [From Sand to Silicon: The Making of a Microchip | Intel (4:44)](https://youtu.be/_VMYPLXnd7E)

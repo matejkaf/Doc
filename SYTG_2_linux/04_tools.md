@@ -65,7 +65,8 @@ Welche Optionen/Argumente unterstützt ein Kommando?  `--help` oder `man` nutzen
 
 ---
 
-**Übung (head)**
+#### Übung (head)
+
 Versuche zu verstehen was das folgender shell Ausdruck macht:
 
 ```bash
@@ -130,6 +131,7 @@ cat shopping.txt shopping2.txt | sort | tail -n15
 Gib von `shopping.txt` alles bis auf die ersten zwei und die letzten zwei Zeilen aus. Hinweis: die `-n` Option von `head` und `tail` erlaubt dies durch eine spezielle Angabe bei der Zeilenanzahl.
 
 ---
+
 
 
 # Zählen

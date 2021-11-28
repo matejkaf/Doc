@@ -5,9 +5,7 @@ tags: [C_1]
 
 ASCII = **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange. Festgelegt 1967.
 
-Die leeren Felder sind nach ASCII Norm spezielle Steuerzeichen, unter Windows verbergen sich dahinter aber einige ganz hübsche Symbole.
-
-Ein ASCII Zeichen lässt sich in einem Byte abbilden. Der Datentyp `char` entspricht einem Byte. Die Zeichen von 128 bis 255 sind abhängig von Betriebssystem und Sprache, z.B.\ ISO~8859-1 für westeuropäische Sonderzeichen (z.B.\ Umlaute) – siehe [Link](http://de.wikipedia.org/wiki/ISO_8859-1).
+Ein Computer speichert nur Zahlen. Der ASCII Code legt für jedes Zeichen eine Zahl von 0 bis 127 fest.
 
 
 ```
@@ -49,5 +47,4 @@ Ein ASCII Zeichen lässt sich in einem Byte abbilden. Der Datentyp `char` entspr
 +--------------------------------------------------------------+
 ```
 
-
-
+Die leeren Felder sind nach ASCII Norm spezielle Steuerzeichen.

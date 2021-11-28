@@ -1,6 +1,6 @@
 ---
 title: Buchstaben im Computer
-tags: [C_1]
+tags: [lecture,C_1]
 ---
 
 Datentyp `char` – speichert einzelnes Zeichen.
@@ -18,42 +18,20 @@ Computer kann nur Zahlen verarbeiten, in einer `char` Variable steht daher eigen
 
 
 
-## Ein- und Ausgabe
+# Eingabe
 
-Einlesen eines einzelnen Zeichens, 2 Möglichkeiten: `scanf` und `getch`.
+Einlesen eines einzelnen Zeichens mit `scanf`.
 
 ```c
 char c;
 scanf("%c", &c);
 ```
 
-```c
-char c;
-c=getch(); // ohne Enter Taste
-```
-
-`char` speichert eine Zahl (wie `int`).
-
-```c
-char c='a';
-printf("%d", c); // mit %d als Zahl ausgeben
-```
-
-Mit dem ASCII Code kann man auch rechnen
-
-```c
-char c='a';
-c = c + 2;
-printf("%c",c);
-```
-
-Dies ist eine (sehr einfache) Verschlüsselungsmethode (Caesar)
-
 
 
 # Benutzer Auswahl
 
-Ein Programm schreiben das dem Anwender eine Auswahl bietet.
+Ein Programm schreiben das dem Anwender eine Auswahl (=Menü) bietet.
 
 ```c
 char taste;

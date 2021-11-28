@@ -42,7 +42,7 @@ Command Mode:
 
 Cursor bewegen, Cut,Copy, Paste (wie?)
 
-- `o` neue Zeile darunter anlegen und in INSERT Mode wechseln
+- `o` neue Zeile darunter anlegen (`O` für darüber) und in INSERT Mode wechseln
 - `dw` Delete Word
 - `dd` Zeile löschen
 - `x` Zeichen löschen

@@ -20,7 +20,7 @@ Arten:
     - EEPROM – electrically erasable programmable read-only memory, byteweise löschen und neu programmieren möglich. Lebensdauer ca. 1 Mio. Zyklen. Meist nur wenige MB und teuer.
     - **Flash** – spezieller günstiger EEPROM Typ der nur in großen Blöcken (>=512 Bytes) gelöscht werden kann. Lebensdauer ca. 10.000 Zyklen. Im GB/TB Bereich verfügbar. Verwendung in SSD (Solid State Disk), Handys, Tablets, ...
 
-## SDRAM
+# SDRAM
 
 SDRAM (Synchron Dynamic RAM), für Hauptspeicher von Computern, seit ca. 20 Jahren. Kostengünstig verfügbar. Größen typisch 8 bzw. 16 GByte. Ständige technische Verbesserungen und erhöhung der Taktfrequenz.
 
@@ -96,7 +96,7 @@ Höhere Bandbreiten werden benötigt weil immer mehr CPU Cores auf einen gemeins
 
 ### Dual / Quad / Octa Channel
 
-2 DIMM Steckplätze werden parallel verwendet, verdoppelt die Busbreite auf 128 Bits.
+Dual Channel: 2 DIMM Steckplätze werden parallel verwendet, verdoppelt die Busbreite auf 128 Bits.
 
 Quad Channel: 256 Bits.
 
@@ -104,7 +104,7 @@ Octa Channel: 512 Bits
 
 
 
-### Videos DRAM
+# Videos DRAM
 
 - [RAM Explained - Random Access Memory](https://youtu.be/PVad0c2cljo) – Basics, Allgemeine Einführung, DIMM, SRAM, SDRAM, Bandwidth (PC-100, PC-133), RIMM, DDR, DDR2, DDR3, DDR4, ECC
 

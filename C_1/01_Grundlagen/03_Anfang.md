@@ -34,9 +34,6 @@ Liste von Anweisungen, z.B. für:
 - Programm starten und testen.
 
 
-Alles zusammen in **MS Visual Studio** enthalten.
-
-
 
 ## Das erste Programm
 

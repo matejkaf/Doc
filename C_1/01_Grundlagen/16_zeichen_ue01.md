@@ -29,7 +29,9 @@ Nach einer Berechnung soll das Auswahlmenü wieder angezeigt werden. Drücken de
 
 Die Umrechnungsformel von Celsius nach Fahrenheit lautet:
 
-$fahrenheit = (celsius \cdot 9)/50 + 32$
+```
+fahrenheit = (celsius * 9)/50 + 32
+```
 
 
 
@@ -49,3 +51,24 @@ Auswahl: _
 ```
 
 Nach der Auswahl soll das Programm die Rechnung und das Ergebnis ausgeben. Alle Kommazahlen sollen auf 3 Kommastellen genau ausgegeben werden.
+
+---
+
+#### Übung (Erweiterung Taschenrechner)
+
+Erweitere das Menü um einen Punkt `Beenden`:
+
+```
+Was willst du tun?
+a .. Addieren
+s .. Subtrahieren
+m .. Multiplizieren
+d .. Dividieren
+e ... Beenden
+Auswahl: _
+```
+
+Nach der Berechnung wird das Menü immer wieder angezeigt und dem Anwender die Möglichkeit für eine weitere Berechnung gegeben. Erst durch Auswahl der Taste `e` wird das Programm beendet.
+
+---
+

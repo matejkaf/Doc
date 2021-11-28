@@ -32,9 +32,9 @@ echo $(expr 5 + 4) # $(...) command substitution
 
 # BASH Arithmetik
 
-Mit `$((<expr>))` – 2 Klammern! – sind C ähnliche Ausdrücke möglich. 
+> There are several ways in which to do arithmetic in Bash scripts. **Double parentheses is the preferred method**.
 
-`(())` wenn das Ergebnis nicht weiterverwendet wird (kein "return").
+Mit `$((<expr>))` – 2 Klammern! – sind C ähnliche Ausdrücke möglich. 
 
 ```bash
 #!/bin/bash
@@ -47,7 +47,11 @@ echo $a # 8
 
 b=$(( a + 3 )) # ohne $ Zeichen
 echo $b # 11
+```
 
+`(())` – ohne `$` – wenn das Ergebnis nicht weiterverwendet wird (kein "return").
+
+```bash
 # noch C ähnlicher
 ((a=2*a)) 
 ((a++))
@@ -55,15 +59,15 @@ echo $b # 11
 
 ```
 
-> There are several ways in which to do arithmetic in Bash scripts. **Double parentheses is the preferred method**.
 
 [BASH Arithmetic](http://faculty.salina.k-state.edu/tim/unix_sg/bash/math.html#bash-arithmetic):
 
-| `+ -`   | Addition, subtration                |
-| ------- | ----------------------------------- |
-| `++ --` | Increment, decrement                |
-| `* / %` | Multiplication, division, remainder |
-| `**`    | Exponentiation                      |
+| Operator | Operation                           |
+| -------- | ----------------------------------- |
+| `+ -`    | Addition, subtration                |
+| `++ --`  | Increment, decrement                |
+| `* / %`  | Multiplication, division, remainder |
+| `**`     | Exponentiation                      |
 
 Numerical boolean expressions in [Control Constructs](http://faculty.salina.k-state.edu/tim/unix_sg/bash/control.html#control) are also expressed using double parenthesis.
 
