@@ -5,13 +5,13 @@ tags: [lecture,krypto]
 use_math: true
 ---
 
-Bei symetrischer Verschlüsselung verwenden Sender und Empfänger den gleichen Schlüssel – dieser muss einmal ausgtauscht werden – dieser Schlüsselaustausch ist angreifbar.
+Bei symmetrischer Verschlüsselung verwenden Sender und Empfänger den gleichen Schlüssel – dieser muss einmal ausgtauscht werden – dieser Schlüsselaustausch ist angreifbar.
 
 **Public-key cryptography** ist eine innovative/mathematische Idee aus den 1970er Jahren die einen solchen Angriff unmöglich macht. 
 
 Dabei gibt es 2 Schlüssel:
 
-- einen geheimen **private key** der nicht weitergegeben wird und
+- einen geheimen **private key** (secret key) der nicht weitergegeben wird und
 - einen öffentlichen **public key** der ohne Einschränkung verbreitet werden kann.
 
 Die Schlüssel sind sehr groß, z.B. 4096 bits.
@@ -19,7 +19,7 @@ Die Schlüssel sind sehr groß, z.B. 4096 bits.
 
 Anwendung:
 
-- *encryption* (eingeschränkt da sehr rechenaufwändig und Daten<Schlüssellänge)
+- *encryption* (jedoch eingeschränkt da sehr rechenaufwändig und Daten<Schlüssellänge)
 - *authentication* (z.B. SSH)
 - *symmetric key* transport (*key exchange*)
 - *digital signature* (in Verbindung mit Hash Funktion)
