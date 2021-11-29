@@ -51,9 +51,11 @@ mit grundsäzlichem Ablauf
 
 
 
+
+
 # Maschinensprache
 
-= Befehle die ein Prozessor versteht (Befehlssatz), kodiert als Bitmuster.
+Bitmuster die ein Prozessor als Befehle versteht Maschinencode.
 
 Eindeutige Nummer für jeden Befehl (= **opcode**)
 
@@ -73,17 +75,21 @@ Nur für Grundprinzip/Idee, nicht real existent.
 
 **Assembler** Code = Maschinencode als lesbarer Quelltext
 
+---
+
 ```
-CLR R5 # R5 = R5 XOR R5
+CLR R5     # R5 = R5 XOR R5
 ```
 
 - [15:11] opcode = 3
 - [10:8] reg
 - [7:0] reserved
 
-Aufgabe: Assemblieren
+Aufgabe: Assemblieren in Binär und Hex
 
 ![image-20211019120550161](fig/image-20211019120550161.png)
+
+---
 
 ```
 LDI R5,22
@@ -97,7 +103,7 @@ Aufgabe: Assemblieren
 
 ![image-20211019120627781](fig/image-20211019120627781.png)
 
-
+---
 
 ```
 ADD R3,R5  # R3=R3+R5
@@ -130,11 +136,38 @@ Maschinencode in hex:
 
 *Gesamten Programmablauf in der CPU Skizze nachstellen*
 
-## Disassemblieren: 
 
-von Maschinensprache in Assembler (Hacking Tool). Allgemeiner Begriff: reverse engineering
 
-Maschinencode anhand des Przessors **ATmega16** (16 Bit Befehle) – µC der Firma Atmel (µC = CPU+Speicher+Peripherie auf einem Chip)
+## Guessing Game
+
+Weitere Maschinenbefehle
+
+- `IN` "input", lese eine Zahl von Tastatur
+- `OUT` "output", gib einen Buchstaben auf dem Bildschirm aus
+- `BEQ` "branch on equal", korrigiere PC um ± wenn `ZE` Flag um Statusregister gesetzt
+- `JMP` "unconditional jump", korrigiere PC um ±
+- `CMP` "compare", Subtraktion ohne Ergebnis (setzt nur Statusregister)
+
+```
+#
+# number guessing game
+#
+0100   LDI R1,7    # R1: number to guess
+0101   IN R2       # R2: read number from keyboard
+0102   CMP R1,R2   # compare R1 with R2
+0103   BEQ 3			 # branch relative if ZE bit is set
+0104   OUT 'T'     # try again
+0105	 JMP -4      # relative jump
+0106   OUT 'W'     # you won
+```
+
+
+
+## Disassemblieren
+
+von Maschinensprache nach Assembler (Hacking Tool). Allgemeiner Begriff: reverse engineering
+
+Maschinencode anhand des Prozessors **ATmega16** (16 Bit Befehle) – µC der Firma Atmel (µC = CPU+Speicher+Peripherie auf einem Chip)
 
 Speicherdump:
 

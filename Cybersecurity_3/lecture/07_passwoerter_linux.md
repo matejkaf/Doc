@@ -527,9 +527,9 @@ Siehe auch [hier](https://www.openwall.com/john/doc/EXAMPLES.shtml).
 
 ## Crunch
 
-Tool `crunch`: zum erstellen einer brute-force Wortliste – ähnlich zum Incremental Mode von John the Ripper.
+Tool `crunch`: zum erstellen einer **brute-force Wortliste** – ähnlich zum **Incremental Mode** von John the Ripper.
 
-BeispieL: Länge 4 aus einer Buchstabenliste:
+Beispiel: Länge 4 aus einer Buchstabenliste:
 
 ```sh
 $ crunch 4 4 "asdfgzxcv1234567890#?" | head
@@ -555,7 +555,7 @@ aaa1
 Alle Wörter von Länge 4 bis 6 aus bestimmten Buchstaben zusammengesetzt:
 
 ```bash
-$ crunch 4 6 abcdefg123456789! -o crunchlist.txt
+$ crunch 4 6 "abcdefg123456789!"" -o crunchlist.txt
 # crunch <min-len> <max-len> [<charset string>] [options]
 # -o wordlist.txt
 #              Specifies the file to write the output to, eg: wordlist.txt
