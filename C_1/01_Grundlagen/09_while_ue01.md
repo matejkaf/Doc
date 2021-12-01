@@ -22,8 +22,6 @@ Schreibe ein Programm das mit Hilfe einer `while` Schleife 7 mal `Hallo Welt` au
 
 - Erweitere so, dass die Anzahl der Wiederholungen eingegeben werden kann.
 
-
-
 ---
 
 #### Übung (Zahlenfolge)
@@ -31,14 +29,18 @@ Schreibe ein Programm das mit Hilfe einer `while` Schleife 7 mal `Hallo Welt` au
 - Schreibe ein Programm, das alle Zahlen vom Startwert 5 bis zum Endwert 20 untereinander ausgibt.
 - Ändere das Programm so, dass Start- und Endwert eingegeben werden können. 
 
+---
 
+#### Übung (Runterzählen)
+
+Schreibe ein Programm das von einem größeren Startwert bis zu einem kleineren Endwert alle Zahlen untereinander ausgibt. Start- und Endwert können eingegeben werden. Der Startwert muss größer als der Endwert sein.
+
+- Erweiterung: Falls der Startwert nicht größer ist als der Endwert soll das Programm eine Fehlermeldung ausgeben.
 
 ---
 
 #### Übung (Schritte)
 Schreibe ein Programm das von einem eingegebenen Startwert immer jeden zweiten Wert bis zu einem eingegebenen Endwert ausgibt. Danach soll das Programm vom Endwert wieder zurück zum Startwert abwärts zählen.
-
-
 
 ---
 
