@@ -6,8 +6,6 @@ tags: [lecture, krypto ]
 use_math: true
 ---
 
-# Math
-
 RSA verwendet Modulo Multiplikationen.
 
 Im ersten Schritt werden 2 große **Primzahlen** $p$ und $q$ zufällig gewählt.  $p$  und $q$ sollten ungefähr gleich groß sein.
@@ -22,16 +20,7 @@ Im ersten Schritt werden 2 große **Primzahlen** $p$ und $q$ zufällig gewählt.
 
 
 
-## Verschlüsselung
-
-Die Nachricht $m$ wird als Zahl dargestellt (z.B. 128/256 bits).
-
-Ciphertext: 
-$$
-c=m^e\  \pmod n
-$$
-
-## Private Key
+# Private Key
 
 Es wird das kleinste gemeinsame Vielfache $t$ von $p-1$ und $q-1$ bestimmt.
 
@@ -63,16 +52,27 @@ $d$ ist der **private key** (wird gemeinsam mit $p$, $q$ und $t$ geheim gehalten
 
 
 
-## Entschlüsselung
+# Verschlüsselung
+
+Die Nachricht $m$ wird als Zahl dargestellt (z.B. 128/256 bits).
+
+Ciphertext: 
+$$
+c=m^d\  \pmod n
+$$
+
+
+
+# Entschlüsselung
 
 $$
-c^d\  (\text{mod}\ n)=m
+c^e\  (\text{mod}\ n)=m
 $$
 
 Beweis (alles $\text{mod}\ n$):
 
 $$
-c^d=(m^e)^d=m^{ed}
+c^d={(m^d)}^e=m^{ed}
 $$
 
 Durch [Formel 2] ist 
@@ -97,6 +97,8 @@ $$
 - Gängige Größen für $n$: 2048/4096 Bits.
 
 
+
+# Intuitiv
 
 Für einen etwas einacheren Zugang – mit konkreten Zahlen – siehe `doc/RSA.pdf`. Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
 
