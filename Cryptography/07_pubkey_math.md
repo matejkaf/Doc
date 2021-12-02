@@ -54,25 +54,27 @@ $d$ ist der **private key** (wird gemeinsam mit $p$, $q$ und $t$ geheim gehalten
 
 # Verschlüsselung
 
-Die Nachricht $m$ wird als Zahl dargestellt (z.B. 128/256 bits).
+Die Nachricht $m$ wird als Zahl dargestellt (z.B. 128/256 bits) und mit dem public key `e` mod `n` verschlüsselt.
 
 Ciphertext: 
 $$
-c=m^d\  \pmod n
+c=m^e\  \pmod n
 $$
 
 
 
 # Entschlüsselung
 
+Mit private key `d` mod `n`
 $$
-c^e\  (\text{mod}\ n)=m
+c^d\  (\text{mod}\ n)=m
 $$
+
+---
 
 Beweis (alles $\text{mod}\ n$):
-
 $$
-c^d={(m^d)}^e=m^{ed}
+c^d={(m^e)}^d=m^{ed}
 $$
 
 Durch [Formel 2] ist 
@@ -92,6 +94,8 @@ Wegen [Formel 1] ist $m^t=1$:
 $$
 (m^t)^k*m=(1)^k*m=m\  (\text{mod}\ n)
 $$
+
+---
 
 - Geheimhaltung: Ist einem Angreifer nur eine Zahl $d$, $p$, $q$ oder $t$ bekannt so wäre ein entschlüsseln möglich.
 - Gängige Größen für $n$: 2048/4096 Bits.
