@@ -22,6 +22,8 @@ Hinweis: Das Komando `sed -n 5p` gibt vom Input bspw. nur die 5te Zeile aus.
 
 Hinweis: Berechnungen (`+`, `-`, `*`, `/`, `%`) können mit der Syntax `$(( EXPR ))` durchgeführt werden.
 
+Erweiterung: Das Skript soll auch die Anzahl der in der Wortliste enthaltenen Wörter ermitteln. D.h. die Konstante 1000 soll im Skript nicht vorkommen.
+
 
 
 
@@ -29,7 +31,7 @@ Hinweis: Berechnungen (`+`, `-`, `*`, `/`, `%`) können mit der Syntax `$(( EXPR
 
 #### Übung (dated copy V1)
 
-Create a script which will take a filename as its first argument and create a dated copy of the file. eg. if our file was named `file1.txt` it would create a copy such as `2021-10-29_file1.txt`. (To achieve this you will probably want to play with command substitution and the command **date**)
+Create a script which will take a filename as its first argument and create a dated copy of the file. eg. if our file was named `file1.txt` it would create a copy such as `2021-10-29_file1.txt`. (To achieve this you will probably want to play with command substitution and the command `date`)
 
 
 
@@ -37,7 +39,7 @@ Create a script which will take a filename as its first argument and create a da
 
 #### Übung (dated copy V2)
 
-**Challenge:** To make it a bit harder, see if you can get it so that the date is after the name of the file (eg. `file1_2021-10-29.txt` (Hint: The command **basename** can be useful here.)
+**Challenge:** To make it a bit harder, see if you can get it so that the date is after the name of the file (eg. `file1_2021-10-29.txt` (Hint: Use `cut` to seperate filename from extension)
 
 
 

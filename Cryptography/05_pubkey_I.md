@@ -1,7 +1,7 @@
 ---
 title: Public-key cryptography
 subtitle: Allgemeines
-tags: [lecture,krypto]
+tags: [lecture,krypto,3AHITS]
 use_math: true
 ---
 
@@ -68,3 +68,14 @@ $$
 
 
 
+# RSA Verfahren
+
+Bekanntestes public key cryptosystem. Rivest-Shamir-Adleman. Turing Preis 2002. [wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem)).
+
+
+
+# Key exchange
+
+Aufgrund des **extremen Rechenaufwands** (rechnen mit Zahlen die tausende Stellen haben können) wird RSA nur zum verschlüsseln kleiner Datenmengen verwendet (wenige kB – kleiner als die Schlüssellänge).
+
+Für Volumendaten generiert z.B. Alice einen **shared secret key** (für stream- oder block-cipher) und schickt diesen mit dem **public key verschlüsselt** an Bob.  Bob und Alice verwenden dann weiters eine stream- oder block-cipher für die weitere Kommunikation. Dies wird **hybride Verschlüsselung** genannt. Der ausgetauschte Schlüssel wird nur kurzzeitig verwendet (session key).

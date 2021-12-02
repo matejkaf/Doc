@@ -45,15 +45,48 @@ strcspn("Hallo Welt", "cde") --> 'e' (in Welt)
 strcspn("3+4-9*2/4", "+-*/") --> '+'
 ```
 
+---
+
+#### Übung (Zeichen entfernen)
+
+Schreibe eine Funktion `strdel` – die ein Zeichen von einer Indexposition entfernt.
+
+Beispiel:
+
+```c++
+char str[] = "einXe";
+strdel(str,3); // entfernt das X
+```
+
 
 ---
 
-#### Übung (Weitere Aufgaben)
+#### Übung (Zeichen einfügen)
 
-- `strinsert` – ein Zeichen an einer Indexposition einfügen.
-- `strdel` – ein Zeichen von einer Indexposition löschen.
-- `strrotateright` – String um ein Zeichen nach rechts bewegen, letztes Zeichen kommt ganz nach vorne.
-- `strstrinsert` – einen String in einen anderen String an einer Indexposition einfügen.
+Schreibe eine Funktion `strinsert` die an einer beliebigen Stelle im String (gegeben durch einen Index) einen Buchstaben einfügt. Dazu werden alle dahinterliegenden Buchstaben um eins verschoben.
+
+Beispiel: Einfügen von `k` in `funtion` an der Indexposition 3 ergibt `funktion`.
+
+```c++
+char str[10] = "funtion";
+strinsert(str,3,'k');
+```
+
+---
+
+#### Übung (Rotieren)
+
+Schreibe 2 Funktionen zum String rotieren. Dabei werden alle Zeichen in eine Richtung (links oder rechts) geschoben. Das rausfallende Zeichen kommt auf der anderen Seite des Strings wieder rein.
+
+- `strrotateleft`: "rotieren" → "otierenr"
+
+- `strrotateright`: "rotieren" → "nrotiere"
+
+---
+
+#### Übung (String einfügen)
+
+Schreibe eine Funktion `strstrinsert` – die einen String in einen anderen String an einer Indexposition einfügt. 
 
 ---
 
