@@ -3,7 +3,7 @@ title: Digitale Signatur
 tags: [lecture, krypto, 3AHITS ]
 ---
 
-Mit dem RSA Verfahren kann auch der **private key zum verschlüsseln** verwendet werden. Eine solche Nachricht kann durch den **public key entschlüsselt** werden. Da der public key jedem zur Verfügung steht ist diese Nachricht **nicht geheim** aber **fälschungssicher**.
+Mit dem RSA Verfahren kann auch der **private key zum verschlüsseln** verwendet werden. Eine solche Nachricht kann durch den **public key entschlüsselt** und ist daher **nicht geheim** aber **fälschungssicher**.
 
 Die Entschlüsselung ergibt nur mit dem **passenden public key** sinnvolle Daten.
 

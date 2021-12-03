@@ -64,9 +64,9 @@ System.out.println(r); // xyz nur e ein abcd test
 
 ---
 
-#### Übung (killWords)
+#### Übung (killAllWords)
 
-Implementiere eine `static` Methoden `killAllWords` mit einem Algorithmus der alle Vorkommen eines Worts aus einem Text löscht. Der geändere String ist der Rückgabewert.
+Implementiere eine `static` Methode `killAllWords` mit einem Algorithmus der alle Vorkommen eines Worts aus einem Text löscht. Der geänderte String ist der Rückgabewert.
 
 Anwendung:
 
