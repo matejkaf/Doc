@@ -1,5 +1,5 @@
 ---
- title: Stundenplan
+title: Stundenplan
 subtitle: Übung
 tags: [C_2, assignment]
 ---
