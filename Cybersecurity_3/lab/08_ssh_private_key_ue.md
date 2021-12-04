@@ -22,9 +22,9 @@ Enter file in which to save the key (/home/username/.ssh/id_rsa):
 ...
 ```
 
-Frage wo die keys gespeichert werden sollen. Default `~/.ssh/id_rsa` (private) und `~/.ssh/id_rsa.pub` (public).
+Default `~/.ssh/id_rsa` (private) und `~/.ssh/id_rsa.pub` (public).
 
-Als zusätzliche Sicherheitsmaßnahme kann der private key mit einem Passwort (passphrase) verschlüsselt werden. Bei jedem Remote Einloggen muss dieses angegeben werden.
+Als zusätzliche Sicherheitsmaßnahme kann der private key mit einem Passwort (passphrase) verschlüsselt werden. Bei jedem Remote Einloggen müsste dieses angegeben werden.
 
 Eventuell vorhandene Schlüssel werden überschrieben (es kommt eine Warnung in diesem Fall).
 
@@ -75,7 +75,7 @@ Eigenen User anlegen:
 
 ```sh
 $ adduser alice
-# pw: alice
+# pw: alice1234
 ```
 
 Test 1: mit `su` (switch user)
@@ -140,10 +140,6 @@ $ ssh alice@192.168.178.76
 # Dateien am Server
 
 Auf Metasploitable:
-
-![image-20210630155017583](fig/image-20210630155017583.png)
-
-
 
 ```sh
 $ su - alice

@@ -498,7 +498,7 @@ $ john --wordlist=test.txt --rules=TwoDigits --stdout >test-mutated.txt | more
 
 ### Incremental Mode
 
-Der stärkste (un rechenaufwändigste) cracking mode. Probiert alle Möglichkeiten durch
+Der stärkste (aber auch rechenaufwändigste) cracking mode. Probiert alle Möglichkeiten durch
 
 ["Incremental" mode](https://www.openwall.com/john/doc/MODES.shtml#:~:text="Incremental" mode)
 
