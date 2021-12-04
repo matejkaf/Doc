@@ -4,8 +4,6 @@ subtitle: Übung
 tags: [assignment, c, structure,C_2 ]
 ---
 
-
-
 #### Übung (Einkaufsliste)
 
  Verwende folgende Strukturdefinition:
@@ -130,8 +128,8 @@ Erweitere das Programm um eine Funktion und einen Menüpunkt zum Löschen eines 
 
 #### Übung (Einkaufsliste Durchblättern)
 
-Ergänze Menüpunkt und Funktion für: Durchblättern durch die Einkaufsliste. Es wird immer nur ein Eintrag angezeigt – mit einer Nummer um den wievielten es sich handelt. Mit der Taste `'v'` ("`vor"') kommt man zum nächsten Eintrag, mit `'z'` ("`zurück"') zum vorhergehenden, die Taste `'e'` kehrt zum Menü zurück.
-Natürlich werden nur die belegten Speicherplätze angezeigt. Zusätzlich kann mit der Taste `'l'` ("`löschen"') der gerade angezeigte Eintrag gelöscht werden.
+Ergänze Menüpunkt und Funktion für: Durchblättern durch die Einkaufsliste. Es wird immer nur ein Eintrag angezeigt – mit einer Nummer um den wievielten es sich handelt. Mit der Taste `'v'` ("vor") kommt man zum nächsten Eintrag, mit `'z'` ("zurück") zum vorhergehenden, die Taste `'e'` kehrt zum Menü zurück.
+Natürlich werden nur die belegten Speicherplätze angezeigt. Zusätzlich kann mit der Taste `'l'` ("löschen") der gerade angezeigte Eintrag gelöscht werden.
 
 
 ---

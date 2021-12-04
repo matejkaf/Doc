@@ -38,15 +38,11 @@ range(3, 9, 2)
 
 
 
-Die `for` Schleife in Python ist besonders bei Datenstrukturen (Arrays, ...) hilfreich.
-
-
-
 ---
 
 #### Übung (Nächste Primzahl)
 
-Erstelle eine Funktion `nextPrim` die eine Zahl übergeben bekommt und die erste Primzahl zurückgibt die größer ist als diese Zahl.
+Erstelle eine Funktion `nextPrim` die eine Zahl übergeben bekommt und die die erste Primzahl zurückgibt die größer ist als diese Zahl.
 
 ---
 
