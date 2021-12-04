@@ -1,3 +1,9 @@
+---
+title: Linux Permissions
+subtitle: Cybersecurity 3 (Übungen)
+tags: [assignment,3AHITS]
+---
+
 
 
 #### Übung (Arbeitsblatt)

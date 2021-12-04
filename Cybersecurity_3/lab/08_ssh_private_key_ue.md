@@ -1,7 +1,7 @@
 ---
 title: SSH Login mit private key
 subtitle: Übungen
-tags: [assignment]
+tags: [assignment,3AHITS]
 ---
 
 * TOC
