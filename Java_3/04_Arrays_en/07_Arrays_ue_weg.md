@@ -16,7 +16,7 @@ $$
 $$
 
 
-und die **Standardabweichung** $s$ – das ist das statistische Maß für die Abweichung vom Mittelwert.
+und die **Standardabweichung** $s$ – das ist das statistische Maß für die durchschnittliche Abweichung vom Mittelwert.
 
 $$
 {s^{2}={\frac {1}{n}}\sum _{i=1}^{n}{\left(x_{i}-{\overline {x}}\right)^{2}}={\frac {1}{n}}\left(\left(x_{1}-{\overline {x}}\right)^{2}+\left(x_{2}-{\overline {x}}\right)^{2}+\dotsb +\left(x_{n}-{\overline {x}}\right)^{2}\right)\\
@@ -44,4 +44,6 @@ Suche nun:
 
 - den Schüler mit dem **längsten Schulweg** (größter Mittelwert) und 
 - den Schüler mit dem **konstantesten Schulweg** (geringste Standardabweichung).
+
+---
 

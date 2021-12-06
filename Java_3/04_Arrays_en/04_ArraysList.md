@@ -138,8 +138,6 @@ Hints:
 Use a class `Word` which stores the word as `String` and the count as `int`. Store instances of this class in an `ArrayList`.
 
 
-
-
 ---
 
 #### Exercise (Count words in sorted order)
@@ -152,7 +150,8 @@ Sort words by number of occurence in descending order.
 
 ---
 
+#### Übung (Gemeinden)
 
+Implementiere das Übungsbeispiel "Gemeinden" mit Hilfe einer ArrayList.
 
-
-
+---

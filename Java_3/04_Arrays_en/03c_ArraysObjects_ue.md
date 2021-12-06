@@ -10,7 +10,7 @@ Es sollen die Daten von Gemeinden verwaltet werden. Von jeder Gemeinde ist bekan
 
 - der Name
 - die Einwohnerzahl
-- die Fläche
+- die Fläche (in km²)
 
 Erstelle eine Klasse `Gemeinde` dafür.
 
