@@ -30,6 +30,11 @@ root@2569fd4b293f:/var/log# tail dpkg.log
 
 
 
+Varianten:
+
+- syslog
+- systemd – journald (ersetzt oder erweitert syslog)
+
 # journalctl
 
 Anzeige der logs von `systemd` (starten der Service mit `systemctl start <service>`)

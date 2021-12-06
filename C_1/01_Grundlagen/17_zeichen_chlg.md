@@ -8,15 +8,11 @@ tags: [assignment,challenge,C_1]
 
 Man kann aufgrund des ASCII Codes eines Buchstabens herausfinden ob es sich um einen Groß- oder Kleinbuchstaben handelt. Schreibe ein Programm dass zur Eingabe eines Zeichens auffordert und dann prüft ob es sich um einen Groß- oder Kleinbuchstaben oder um ein ganz anderes Zeichen handelt. Gib für jede der 3 Möglichkeiten einen informativen Text aus.
 
-
-
 ------
 
 #### Übung (Groß-/Klein Umwandeln)
 
 Mit ASCII Codes kann man auch rechnen. Schreibe ein Programm das wenn ein Kleinbuchstabe eingegeben wird diesen als Großbuchstabe wieder ausgibt und umgekehrt. Sollte ein Buchstabe eingegeben werden der weder ein Klein- noch ein Großbuchstabe ist so wird dieser unverändert wieder ausgegeben.
-
-
 
 ------
 
@@ -41,3 +37,4 @@ abcdefghijklmnopqrstuvwxyz
 
 Was wäre die verschlüsselte Form von `hallo`?
 
+---

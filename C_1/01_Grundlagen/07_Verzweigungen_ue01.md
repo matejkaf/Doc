@@ -1,7 +1,7 @@
 ---
 title: Verzweigungen
 subtitle: Übungen
-tags: [assignment,C_1]
+tags: [assignment,C_1,1CHELS,1AHITS]
 ---
 
 #### Übung (Gerade/Ungerade)

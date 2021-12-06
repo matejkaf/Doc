@@ -1,7 +1,7 @@
 ---
 title: while Schleifen
 subtitle: Übungen
-tags: [assignment,C_1,1CHELS]
+tags: [assignment,C_1,1CHELS,1AHITS]
 ---
 
 #### Übung (Hallo Welt mehrfach)

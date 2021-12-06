@@ -5,35 +5,26 @@ tags: [assignment,C_1]
 ---
 
 #### Übung (Würstl Tycoon)
-Stell dir vor, du hast soeben ein Würstelstandl gepachtet. Die Aufgabe ist ein Spiel zu programmieren, das den Geschäftsablauf Tag für Tag simuliert (=nachspielt). Das folgende Programm berechnet eine zufälligen Nachfrage nach Würstel pro Tag und gibt diese am Bildschirm aus.
+Stell dir vor, du hast soeben ein **Würstelstandl** gepachtet. Die Aufgabe ist ein Spiel zu programmieren, das den Geschäftsablauf Tag für Tag simuliert (=nachspielt). Das folgende Programm berechnet eine zufälligen Nachfrage nach Würstel pro Tag und gibt diese am Bildschirm aus.
 
 Aufgabe: Kopiere den Code in ein eigenes Programm und probiere es aus.
 
 ```c
-#include <stdio.h>
-#include <conio.h>	
-#include <stdlib.h>	
-#include <time.h>	
-#include <locale.h>
+int nachfrage = 0;
+int nachfrageMax = 50;  // maximal = größtmöglich
+char taste='j';
 
-void main()
+srand(time(NULL));
+
+while(taste == 'j') 
 {
-	int nachfrage = 0;
-	int nachfrageMax = 50;  // maximal = größtmöglich
-	char taste='j';
+	printf("### Würstel - Tycoon ###\n");
+  
+  nachfrage = rand() % (nachfrageMax+1); // 0..nachfrageMax
+  printf("Nachfrage = %d\n", nachfrage);
 
-	setlocale( LC_ALL, "German" );
-	srand(time(NULL));
-	printf("### Wuerstel - Tycoon ###\n");
-
-	while(taste == 'j') 
-	{
-		nachfrage = rand() % (nachfrageMax+1); // 0..nachfrageMax
-		printf("Nachfrage = %d\n", nachfrage);
-		
-		printf("Nochmals? (j/n)\n");
-		taste = getch();
-	}
+  printf("Nochmals? (j/n)\n");
+  taste = getch();
 }
 ```
 
@@ -55,8 +46,6 @@ Berechne die Einnahmen und die Ausgaben im Programm, weise die Ergebnisse den Va
 
 Berücksichtige, dass du immer auf die maximale Nachfrage vorbereitet sein musst (d.h. es werden immer `nachfrageMax` Würstel eingekauft).
 
-
-
 ---
 
 #### Übung (Konto)
@@ -66,8 +55,6 @@ Du beginnst mit einem Startkapital von EUR 200.
 double konto = 200;      // Startkapital
 ```
 Berechne den neuen Kontostand nach jedem Tag (=ein Schleifendurchlauf) indem du zum Kapital die Einnahmen hinzuzählst und die Ausgaben abziehst. Gib den neuen Kontostand aus.
-
-
 
 ---
 
@@ -96,8 +83,6 @@ printf(" * Reparaturkosten: EUR 50,-       *\n");
 printf(" ***********************************\n\n");
 ```
 
-
-
 ---
 
 #### Übung (Bauoption – Vordach)
@@ -113,8 +98,6 @@ Speichere die Information ob ein Vordach gekauft wurde in einer Variable.
 int vordach = 0; // auf 1 wenn gekauft
 ```
 
-
-
 ---
 
 #### Übung (Bauoption – Werbeplakat)
@@ -125,16 +108,12 @@ Ab 500 Euro am Konto kann ein Werbeplakat gebucht werden. Ein Plakat kostet einm
 int plakate = 0; // Anzahl der gemieteten Werbeplakate
 ```
 
-
-
 ---
 
 #### Übung (Los Metallichaos)
 
 Leider gibt es eine Jugendbande (es sind die Los Metallichaos – in deinem Land gibt es keine HTL). Die **Los Metallichaos** schlagen im Schnitt alle 4 Wochen zu. Ergebnis: 50% deines Kontos werden geraubt, das Programm meldet:
 `Uups, die Los Metallichaos waren da`
-
-
 
 ---
 
@@ -145,8 +124,6 @@ Ab 800 Euro am Konto ist es möglich auf eine Miniküche aufzurüsten. EUR 250 E
 ```c
 int kueche = 0; // auf 1 wenn gekauft
 ```
-
-
 
 
 ---
@@ -167,8 +144,6 @@ Miniküchen:     0  Kosten:      0 Euro und  0 Euro laufend
 Achte auf eine "schöne" Formatierung der Ausgabe.
 
 
-
-
 ---
 
 #### Übung (Weitere Ausbaustufen)
@@ -183,3 +158,5 @@ Leider ist dieser aber nicht immer erfolgreich.
 - Bei einem Kontostand von mehr als EUR~1000 könnte die **Mafia** auf dich aufmerksam werden. Das Gute daran: Sie halten dir die Los Metallichaos vom Leib. Der Preis: Die Schutzgelder sind höher als der Schaden durch die Los Metallichaos. Gut du kannst natürlich die Polizei einschalten (das kostet auf deiner Insel natürlich Geld), aber vielleicht ist die korrupt? 
 - Es gibt auch den **Fussball-Verein** El Equipo Divino, der einen Sponsor sucht (da spielen übrigens einige der Los Metallichaos mit). 
 - Und so weiter und so fort.
+
+---

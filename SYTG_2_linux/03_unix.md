@@ -52,10 +52,6 @@ Hunderte Distributionen bieten einen unterschiedlichen Mix aus diesen 3 Hauptkom
 
 
 
-[! 2AHITS G2 18.10.2021]
-
-
-
 # Einsatzgebiete
 
 Linux kostet nichts und kann viel. Daher stark verbreitet:
@@ -97,8 +93,6 @@ Bedeutung:
 - Historisch erste Art Computer zu bedienen
 - unter UNIX/Linux weiter enorm wichtig
 - insbesondere für **Administratoren**.
-
-[! 2AHITS G1 22.11.2021]
 
 Mit der shell (das ein Programm ist) wird über ein **Terminal** (auch **Konsole**, bzw. **TTY** -TeleTYpe) kommuniziert. Das Terminal war früher ein eigenes per Kabel mit dem Computer verbundenes Gerät. Heute ist es meist ein Terminal **Emulator**, d.h. ein Programm das so tut als wäre es ein Terminal. 
 

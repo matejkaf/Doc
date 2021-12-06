@@ -1,7 +1,7 @@
 ---
 title: Zufallszahlen 
 subtitle: Übungen
-tags: [assignment,C_1]
+tags: [assignment,C_1,1CHELS,1AHITS]
 ---
 
 #### Übung (Zufallszahl)
@@ -24,7 +24,7 @@ Beim Lotto "6 aus 45" werden 6 zufällige Zahlen von 1–45 gezogen. Schreibe ei
 
 #### Übung (2er Pasch)
 
-Finde heraus wie oft es bei insgesamt 1000 Würfen vorkommt, dass bei einem sechsseitigen Würfel zweimal hinterander die gleiche Zahl vorkommt. 
+Finde heraus wie oft es bei insgesamt 1000 Würfen vorkommt, dass bei einem sechsseitigen Würfel **zweimal hinterander die gleiche Zahl** vorkommt. 
 
 Im folgenden wäre es 4 mal der Fall gewesen.
 
@@ -32,15 +32,15 @@ Im folgenden wäre es 4 mal der Fall gewesen.
 3 5 3 2 2 4 5 3 3 3 2 1 1
 ```
 
+Berechne daraus die Wahrscheinlichkeit in %.
+
 ---
 
 #### Übung (4er Pasch)
 
-Das Spiel Kniffel wird mit 5 Würfeln gespielt. Als sogenannten Viererpasch wird ein Wurf bezeichnet bei dem 4 Würfel von 5 die gleiche Zahl haben. Finde heraus wie groß die Wahrscheinlichkeit ist einen Viererpasch zu würfeln. Hinweis: Mache 100000 Versuche und zähle die Viererpasch, diese Anzahl mal hundert dividiert durch 100000 ergibt die Wahrscheinlichkeit in Prozent.
+Das Spiel Kniffel wird mit 5 Würfeln gespielt. Als sogenannten Viererpasch wird ein Wurf bezeichnet bei dem 4 Würfel von 5 die gleiche Zahl haben. Finde heraus wie groß die Wahrscheinlichkeit ist einen Viererpasch mit der Augenzahl 3 zu würfeln. Hinweis: Mache 100000 Versuche und zähle die Viererpasch, diese Anzahl mal hundert dividiert durch 100000 ergibt die Wahrscheinlichkeit in Prozent.
 
 ---
-
-
 
 
 

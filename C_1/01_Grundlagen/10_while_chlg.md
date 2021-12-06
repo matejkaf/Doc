@@ -1,7 +1,7 @@
 ---
 title: While Schleifen
 subtitle: Übungen (Challenge)
-tags: [assignment,challenge,C_1,1CHELS]
+tags: [assignment,challenge,C_1,1CHELS,1AHITS]
 ---
 
 #### Übung (Zahlenfolge auf oder ab)
