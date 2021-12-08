@@ -49,26 +49,26 @@ Hinweis: Nach der Kombination von `passwd` und `shadow` durch `unshadow` lösche
 
 ---
 
-#### Übung (john)
+#### Übung (john – single crack mode)
 
-Knacke die folgenden Passwörter mit `john`
-
-(1) Variation des User Namens (User Name ist `test`) – verwende den Single crack mode:
+Knacke das folgende Passwort mit `john` – es ist durch Variation des User Namens `test` entstanden – verwende den single crack mode:
 
 ```
 $6$KI8/NC0B5e0e/QRQ$f85wgSQK/E4XlE3M/cT1OqdQCkcChLvrv2XSvprCEiQbBRc/mJueUmTBZKvFxI1DDQl3DCDuBJ02.9ZqNN/wJ0
 ```
 
-Anleitung: Erstelle selbst eine Passwort Datei die john versteht. Schaue dir dafür den Output von unshadow an – es wird im Prinzip das Format vom `passwd` File genommen und das `x` darin durch das gehashte Passwort aus `shadow` ersetzt. Nutze `vi` um eine Kopie der john-Inputdatei aus der vorhergehenden Übung anzupassen. Eventuell hilfreiche `vi` Kommandos sind:
+Anleitung: Erstelle selbst eine Passwort Datei die `john` versteht. Schaue dir dafür den Output von `unshadow` an – es wird im Prinzip das Format vom `passwd` File genommen und das `x` darin durch das passende gehashte Passwort aus `shadow` ersetzt. 
+
+Nutze `vi` um eine Kopie der john-Inputdatei aus der vorhergehenden Übung anzupassen. Eventuell hilfreiche `vi` Kommandos sind:
 
 - `dtX`: lösche alles bis zum Zeichen `'X'`
 - `:r filename`: Lädt den Inhalt der Datei `filename` in die Zeile unterhalb der aktuellen Cursor Position.
 
+---
 
+#### Übung (john – wordlist mode)
 
-
-
-(2) Aus Standard Wordlist von john:
+Knacke das folgende Passwort mit `john` – es ist ein Passwort aus der Standard Wordlist von john – verwende den single crack mode:
 
 ```
 $6$CwtsW1oDR7UZsa8i$8cB4rAkJI.vMWVsIflGQz.HhV656qkUOIdq/BJyr5FY1oxMwLJBcwD70pNk9a/sRF0D4DiRctTvBoUn.rkjQ21
@@ -78,7 +78,7 @@ $6$CwtsW1oDR7UZsa8i$8cB4rAkJI.vMWVsIflGQz.HhV656qkUOIdq/BJyr5FY1oxMwLJBcwD70pNk9
 
 #### Übung (John + crunch)
 
-Verwende `crunch` und `john` um folgende Passwörter zu knacken:
+Verwende `crunch` ([→doku](../lecture/07_passwoerter_linux#crunch)) und `john` um folgende Passwörter zu knacken:
 
 (1) Kombination aus 3 Fächernamen der 3AHITS (Großbuchstaben). Hinweis: Verwende die `-p` Option von crunch.
 
