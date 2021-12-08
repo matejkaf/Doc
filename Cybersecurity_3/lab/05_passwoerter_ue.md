@@ -26,13 +26,24 @@ Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwende
 - Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden. 
   - Unter Kali Daten mit `>` in Dateien schreiben und diese per Web-Server auf Metasploit übertragen (`wget`).
 
-- Hinweis: Mit `>>` kann der stdout eines Programms an bestehende Dateien angefügt
+- Hinweis: Mit `>>` kann das stdout eines Programms an bestehende Dateien angefügt werden.
+
+---
+
+#### Übung (unshadow)
+
+In dieser Übung geht es darum das Kali Tool `unshadow` zu verwenden und zu verstehen was dieses macht.
+
+- Lege (mit `adduser`) in Metasploitable einen User mit einem sehr schwachen Passwort (3 Zeichen nur Kleinbuchstaben) an. 
+- Transferiere die Passwortdateien `passwd` und `shadow`  zu Kali.
+- Verwende `unshadow` ([→doku](../lecture/07_passwoerter_linux#unshadow)) um den Inhalt von `passwd` und `shadow` zu kombinieren. 
+- Welchen Regeln/Format folgt das Ergebnis von `unshadow`?
 
 ---
 
 #### Übung (john – weak password)
 
-Lege (mit `adduser`) in Metasploitable einen User mit einem sehr schwachen Passwort (3 Zeichen nur Kleinbuchstaben) an. Transferiere die Passwortdateien zu Kali und verwende **john the ripper** (ohne einen Mode anzugeben) um das Passwort zu knacken.
+Verwende nun  **john the ripper** ([→doku](../lecture/07_passwoerter_linux#John the Ripper))(ohne einen Mode anzugeben) um das Passwort zu knacken.
 
 Hinweis: Nach der Kombination von `passwd` und `shadow` durch `unshadow` lösche am besten alle uninteressanten Passwort-Zeilen aus der entstandenen Datei. Z.B. mittels `vi` und Tastenkürzel `dd`.
 

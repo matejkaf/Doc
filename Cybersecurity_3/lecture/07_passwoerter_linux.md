@@ -123,20 +123,22 @@ $ mkpasswd --method=sha512crypt --salt=Y.6vLGlD1cGsutIg franz
 $6$Y.6vLGlD1cGsutIg$Hn2/2.hNyojM19F1AwNHPAzAHEk.3vPhsOqWOGyds5hieGvedb45DCxV5aqZ194w12zhaet1rhWJyCx/mzePk.
 ```
 
+`$6$` ist die Kennung für sha512crypt als Hash Methode.
+
 Alle verfügbaren Hash Methoden anzeigen:
 
 ```bash
 $ mkpasswd --method=help
 Available methods:
-yescrypt        Yescrypt
+yescrypt        Yescrypt ($y$)
 gost-yescrypt   GOST Yescrypt
 scrypt          scrypt
 bcrypt          bcrypt
 bcrypt-a        bcrypt (obsolete $2a$ version)
-sha512crypt     SHA-512
-sha256crypt     SHA-256
+sha512crypt     SHA-512 ($6$)
+sha256crypt     SHA-256 ($5$)
 sunmd5          SunMD5
-md5crypt        MD5
+md5crypt        MD5 ($1$)
 bsdicrypt       BSDI extended DES-based crypt(3)
 descrypt        standard 56 bit DES-based crypt(3)
 nt              NT-Hash
