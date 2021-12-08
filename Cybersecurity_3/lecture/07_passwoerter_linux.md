@@ -182,7 +182,7 @@ $6$rounds=20000$zRsXAj3dLKuy4ynB$lb9OMX/eqfPRKzbSCC6.Z0o/zJ/zlfU17FOQ6yGANLMth0O
 
 ## unshadow
 
-Kombiniert `/etc/passwd` mit  `/etc/shadow` zu einer einzigen Datei, diese kann von **John the Ripper** gelesen werden.
+Kombiniert `passwd` mit  `shadow` zu einer einzigen Datei, diese kann von **John the Ripper** gelesen werden.
 
 ```sh
 $ unshadow /etc/passwd /etc/shadow > crack.password

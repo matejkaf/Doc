@@ -216,7 +216,7 @@ Oder mit jedem Text-Editor.
 
 # ssh Spielereien
 
-`ssh` kann als weiteres Argument ein auszuführender Befehl übergeben werden. Dabei werden daten aus dem lokalen stdin auf das remote stdin übertregen und stdout in der Gegenrichtung.
+Dem Befehl `ssh` kann als weiteres Argument ein **auszuführender Befehl** übergeben werden. Dabei wird das lokale stdin in das remote stdin übertregen und stdout in der Gegenrichtung.
 
 (1) Erzeugen einer Datei am Remote System mit eingegebenen Inhalt.
 

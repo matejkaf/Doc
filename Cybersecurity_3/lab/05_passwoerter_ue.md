@@ -4,29 +4,37 @@ subtitle: Cybersecurity Übung
 tags: [3AHITS]
 ---
 
+[Siehe Skriptum](../lecture/07_passwoerter_linux)
+
 #### Übung (passwd und shadow)
 
-Metasploitable:
+Experimentiere unter Metasploitable mit den Passwortdateien:
 
-- Was ändert sich in der `passwd` und `shadow` Datei wenn ein neuer User hinzugefügt wird.
-
-- Ändere das Passwort des Users. Was ändert sich in `passwd` und `shadow`?
+- Was ändert sich in der `/etc/passwd` und `/etc/shadow` Datei wenn ein neuer User ([→doku adduser](../lecture/07_passwoerter_linux#adduser)) hinzugefügt wird?
+- Welchen Hash-Algorithmus verwendet Metasploitable
+- Ändere das Passwort des Users ([→doku passwd](../lecture/07_passwoerter_linux#passwd)) . Was ändert sich in `passwd` und `shadow`?
 
 ---
 
 #### Übung (mkpasswd)
 
-Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwenden. 
+Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwenden. Verändere dazu direkt die `passwd` und `shadow` Dateien. 
 
-- Hinweis: nutze `mkpasswd` , `vi`, etc. 
+- Informiere dich über das Format von `passwd` und `shadow`
+- Der Passwort Hash kann mit `mkpasswd` ([→doku](../lecture/07_passwoerter_linux#mkpasswd)) generiert werden.
 
-- Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden.
+- Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden. 
+  - Unter Kali Daten mit `>` in Dateien schreiben und diese per Web-Server auf Metasploit übertragen (`wget`).
+
+- Hinweis: Mit `>>` kann der stdout eines Programms an bestehende Dateien angefügt
 
 ---
 
 #### Übung (john – weak password)
 
-Lege (mit `adduser`) in Metasploitable einen User mit einem sehr schwachen Passwort (3 Zeichen nur Kleinbuchstaben) an. Transferiere die Passwortdateien zu Kali und verwende **john the ripper** um das passwort zu knacken.
+Lege (mit `adduser`) in Metasploitable einen User mit einem sehr schwachen Passwort (3 Zeichen nur Kleinbuchstaben) an. Transferiere die Passwortdateien zu Kali und verwende **john the ripper** (ohne einen Mode anzugeben) um das Passwort zu knacken.
+
+Hinweis: Nach der Kombination von `passwd` und `shadow` durch `unshadow` lösche am besten alle uninteressanten Passwort-Zeilen aus der entstandenen Datei. Z.B. mittels `vi` und Tastenkürzel `dd`.
 
 ---
 
@@ -39,6 +47,8 @@ Knacke die folgenden Passwörter mit `john`
 ```
 $6$KI8/NC0B5e0e/QRQ$f85wgSQK/E4XlE3M/cT1OqdQCkcChLvrv2XSvprCEiQbBRc/mJueUmTBZKvFxI1DDQl3DCDuBJ02.9ZqNN/wJ0
 ```
+
+Anleitung: Erstelle selbst eine Passwort Datei die john versteht. Schaue dir dafür den Output von unshadow an – es wird das Format vom `passwd` File genommen und das `x` darin durch das gehashte Passwort aus `shadow` ersetzt.
 
 (2) Aus Standard Wordlist von john:
 

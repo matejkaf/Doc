@@ -35,6 +35,22 @@ Varianten:
 - syslog
 - systemd – journald (ersetzt oder erweitert syslog)
 
+
+
+# Metasploitable
+
+Unter Metasploitable kein `journalctl`.
+
+SSH login "Failed password"
+
+```
+/var/log/auth.log
+```
+
+
+
+
+
 # journalctl
 
 Anzeige der logs von `systemd` (starten der Service mit `systemctl start <service>`)
