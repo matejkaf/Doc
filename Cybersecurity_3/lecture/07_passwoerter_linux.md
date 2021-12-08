@@ -192,7 +192,7 @@ $ unshadow /etc/passwd /etc/shadow > crack.password
 
 
 
-## John the Ripper
+## John the Ripper  {#johntheripper}
 
 [[Linux Password Cracking: Explain unshadow and john Commands ( John the Ripper Tool )](https://www.cyberciti.biz/faq/unix-linux-password-cracking-john-the-ripper/)]
 
