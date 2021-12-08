@@ -43,7 +43,7 @@ In dieser Übung geht es darum das Kali Tool `unshadow` zu verwenden und zu vers
 
 #### Übung (john – weak password)
 
-Verwende nun  **john the ripper** ([→doku](../lecture/07_passwoerter_linux#John_the_Ripper))(ohne einen Mode anzugeben) um das Passwort zu knacken.
+Verwende nun  **john the ripper** ([→doku](../lecture/07_passwoerter_linux#John%20the%20Ripper))(ohne einen Mode anzugeben) um das Passwort zu knacken.
 
 Hinweis: Nach der Kombination von `passwd` und `shadow` durch `unshadow` lösche am besten alle uninteressanten Passwort-Zeilen aus der entstandenen Datei. Hinweis: Das `vi` Kommando `dd` löscht die Zeile unter der aktuellen Cursorposition.
 
@@ -53,13 +53,16 @@ Hinweis: Nach der Kombination von `passwd` und `shadow` durch `unshadow` lösche
 
 Knacke die folgenden Passwörter mit `john`
 
-(1) Variation des User Namens (user `test`) – verwende den Single crack mode:
+(1) Variation des User Namens (User Name ist `test`) – verwende den Single crack mode:
 
 ```
 $6$KI8/NC0B5e0e/QRQ$f85wgSQK/E4XlE3M/cT1OqdQCkcChLvrv2XSvprCEiQbBRc/mJueUmTBZKvFxI1DDQl3DCDuBJ02.9ZqNN/wJ0
 ```
 
-Anleitung: Erstelle selbst eine Passwort Datei die john versteht. Schaue dir dafür den Output von unshadow an – es wird im Prinzip das Format vom `passwd` File genommen und das `x` darin durch das gehashte Passwort aus `shadow` ersetzt. Nutze `vi` um eine Kopie der john-Inputdatei aus der vorhergehenden Übung anzupassen.
+Anleitung: Erstelle selbst eine Passwort Datei die john versteht. Schaue dir dafür den Output von unshadow an – es wird im Prinzip das Format vom `passwd` File genommen und das `x` darin durch das gehashte Passwort aus `shadow` ersetzt. Nutze `vi` um eine Kopie der john-Inputdatei aus der vorhergehenden Übung anzupassen. Eventuell hilfreiche `vi` Kommandos sind:
+
+- `dtX`: lösche alles bis zum Zeichen `'X'`
+- `:r filename`: Lädt den Inhalt der Datei `filename` in die Zeile unterhalb der aktuellen Cursor Position.
 
 
 
