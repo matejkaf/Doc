@@ -4,55 +4,61 @@ subtitle: Übungen
 tags: [assignment,C_1,1CHELS,1AHITS]
 ---
 
-**Einmal** am Beginn des Programms:
+Zuerst ein wenig "Theorie":
+
+Zufallszahlen sind für Simulationen oder Spiele praktisch. Dafür sind 2 Befehle im Programm notwendig `srand` und `rand`.
+
+Möchte man Zufallszahlen verwenden muss einmal am Beginn des Programms  `srand` in folgender weise aufgerufen werden:
 
 
 ```c
 srand(time(NULL));
 ```
 
-Sonst bekommt man immer die gleichen Zufallszahlen!
+Läßt man diese Zeile weg so bekommt man immer wieder die gleichen Zufallszahlen!
 
-Variable für die zufällige Zahl:
+Mit dem Befehl `rand` kann dann eine zufällige Zahl gebildet werden. Diese ist ein `int` Wert. Wir brauchen daher eine `int` Variable.
 
 
 ```c
 int z;
 ```
 
-Da wo eine zufällige Zahl gewünscht ist:
+So bekommt die Variable `z` eine zufällige Zahl zugewiesen:
 
 
 ```c
 z = rand();
 ```
 
-`rand()` liefert eine große positive Zufallszahl.
+Denn Befehl `rand` kann man im Programm mehrfach aufrufen (z.B. auch in einer Schleife). Es ergibt sich immer eine neue Zufallszahl.
 
-Für eine Zufallszahl aus 0–9 schreibt man:
+`rand()` liefert eine große positive Zufallszahl – meist möchte man den Wertebereich aber selber bestimmten. Das geht sehr einfach mit dem Modulo Operator (Rest der Division).
+
+Für eine Zufallszahl aus 0–9 schreibt man zum Beispiel:
 
 
 ```c
 z = rand()%10;
 ```
 
-Durch den Modulooperator (`%10`) ergeben sich die möglichen Werte für die Zufallszahl von 0 bis 9.
+Durch den Modulooperator (`%10`) ergeben sich die möglichen Werte für die Zufallszahl von 0 bis 9. Das sind die möglichen Reste die sich bei einer Division durch 10 ergeben können.
 
-Für 5–10:
+Ist der gewünschte Wertebereich von 5–10 so kann folgend vorgegangen werden:
 
 ```c
-z = rand()%6+5;
+z = rand()%6 + 5;
 ```
 
 Erklärung: `rand()%6` ergibt die 6 möglichen Werte `0 1 2 3 4 5`. Nach `+5` entstehen daraus die Werte `5 6 7 8 9 10`.
 
-Noch einmal als komplettes Programm:
+Noch einmal alles als komplettes Programm:
 
 ```c++
 int z;
 srand(time(NULL)); // Befehl nur einmal notwendig
 
-// 3 zufällige Zahlen ausgeben
+// 3 zufällige Zahlen ausgeben indem rand 3 mal verwendet wird
 z = rand()%6+5;
 printf("\n%d\n",z);
 z = rand()%6+5;
