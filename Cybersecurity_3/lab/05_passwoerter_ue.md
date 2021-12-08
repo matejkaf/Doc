@@ -43,7 +43,7 @@ In dieser Übung geht es darum das Kali Tool `unshadow` zu verwenden und zu vers
 
 #### Übung (john – weak password)
 
-Verwende nun  **john the ripper** ([→doku](../lecture/07_passwoerter_linux#John the Ripper))(ohne einen Mode anzugeben) um das Passwort zu knacken.
+Verwende nun  **john the ripper** ([→doku](../lecture/07_passwoerter_linux#John_the_Ripper))(ohne einen Mode anzugeben) um das Passwort zu knacken.
 
 Hinweis: Nach der Kombination von `passwd` und `shadow` durch `unshadow` lösche am besten alle uninteressanten Passwort-Zeilen aus der entstandenen Datei. Hinweis: Das `vi` Kommando `dd` löscht die Zeile unter der aktuellen Cursorposition.
 
