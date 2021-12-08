@@ -46,6 +46,45 @@ Schreibe ein Programm das von einem eingegebenen Startwert immer jeden zweiten W
 
 #### Übung (Summe)
 
-Schreibe ein Programm, das die Eingabe einer Zahl n erfordert und dann jede Zahl beginnend von 1 bis inklusive n addiert. Das Ergebnis soll ausgegeben werden. Beispiel.: Es wird 4 eingegeben, das Programm rechnet 1+2+3+4=10 und gibt am Bildschirm 10 aus.
+Schreibe ein Programm, das die Eingabe einer Zahl n erfordert und dann jede Zahl beginnend von 1 bis inklusive n addiert. Das Ergebnis soll ausgegeben werden. 
+
+Beispiel.: Es wird 4 eingegeben, das Programm rechnet 1+2+3+4=10 und gibt am Bildschirm 10 aus.
 
 ---
+
+#### Übung (Summe mit Start und Ende)
+
+Schreibe ein Programm das alle Zahlen beginnend bei einem Startwert bis zu einem Endwert addiert. Start- und Endwert können eingegeben werden. Das Endergebnis soll ausgegeben werden.
+
+Beispiel: Es wurde 6 (Start) und 10 (Ende) eingegeben:
+Das Programm berechnet `6+7+8+9+10`
+
+```
+Startwert: 6
+Endwert: 10
+Ergebnis = 40
+```
+
+Startwert und Endwert wurden vom Benutzer eingegeben.
+
+- Erweiterung V2: Es soll die gesamte Rechnung zusätzlich zum Endergebnis ausgegeben werden.
+
+  ```
+  Startwert: 6
+  Endwert: 10
+  6+7+8+9+10=40  
+  ```
+
+- Erweiterung V3: Nun soll auch die Schrittweite eingegeben und berücksichtigt werden. Es sollen alle Werte berücksichtigt werden die kleiner oder gleich dem Endwert sind.
+
+  ```
+  Startwert: 7
+  Endwert: 20
+  Schrittweite: 3
+  7+10+13+16+19=65
+  ```
+
+
+---
+
+#### 
