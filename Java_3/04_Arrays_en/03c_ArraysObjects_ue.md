@@ -28,3 +28,5 @@ Implementiere in der Klasse `Bezirk`
 
 - Erstelle eine Methode `sortByEinwohner` die das Array nach der Einwohnerzahl in absteigender Reihenfolge sortiert.
 - Erstelle eine Methode `sortByName` die das Array nach dem Gemeindenamen in aufsteigender Reihenfolge sortiert.
+
+---

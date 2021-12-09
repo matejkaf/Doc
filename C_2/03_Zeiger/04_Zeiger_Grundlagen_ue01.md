@@ -6,7 +6,9 @@ tags: [assignment,c,pointer,intro,C_2]
 
 #### Übung (Adressen und Größen)
 
-Lege `char`, `short`, `long`, `int`, `float` und `double` Variablen an. Definiere zugehörige Zeigervariablen und weise diesen die Adressen der Variablen zu. 
+Zeiger sind Variablen die die Adressen anderer Variablen speichern. Diese Tatsache soll in dieser Übung sichtbar gemacht werden.
+
+Lege `char`, `short`, `long`, `int`, `float` und `double` Variablen an. Definiere zugehörige Zeigervariablen und weise diesen mit dem `&` Operator die Adressen der passenden Variablen zu. 
 
 -  Gib die Werte der Zeigervariablen (=Adressen) hexadezimal aus: `printf("%p", p)`. 
 - Ermittle mit dem `sizeof(<Variable>)` Operator die Größen aller Variablen **und** Zeigervariablen. D.h. wie viele Bytes diese Variable im Speicher belegt.
@@ -19,7 +21,7 @@ Halte deine Erkenntnisse mittels Kommentare im Programm fest.
 
 Mit dieser Aufgabe wollen wir überprüfen ob die Annahme stimmt, dass alle Array Elemente unmittelbar hintereinander im Speicher liegen.
 
-Lege ein Array aus 5 `int` Elementen an. Gib die Adresse des ersten und letzten Elements hexadezimal (`%p`) aus. Berechne (am Papier) die hexadezimalen Adressen aller weiteren Array-Elemente. Der Abstand zwischen 2 Elementen muss der Größe (Anzahl Bytes) eines `int` Werts eintsprechen. Im Zuge dieser Berechnung muss nach 4 Additionen die Adresse des letzten Elements herauskommen.
+Lege ein Array aus 5 `int` Elementen an. Gib die Adresse des ersten und letzten Elements hexadezimal (mittels `%p`) aus. Berechne (am Papier) die hexadezimalen Adressen aller weiteren Array-Elemente. Der Abstand zwischen 2 Elementen muss der Größe (Anzahl Bytes) eines `int` Werts entsprechen. Im Zuge dieser Berechnung muss nach 4 Additionen die Adresse des letzten Elements herauskommen – Überprüfe!
 
 Ergänzung: Mache das gleiche mit Arrays aus `short` und aus `char`.
 
