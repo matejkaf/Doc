@@ -1,5 +1,5 @@
 ---
-title: Shell Scripts
+title: Shell Scripts (Argumentliste)
 subtitle: Übungen bash scripting
 tags: [assignment,3AHITS]
 ---

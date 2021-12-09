@@ -1,5 +1,5 @@
 ---
-title: Shell Scripts
+title: Shell Scripts (spezielle Variable)
 subtitle: Übungen bash scripting
 tags: [assignment,3AHITS]
 ---

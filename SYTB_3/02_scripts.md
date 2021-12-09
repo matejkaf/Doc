@@ -6,8 +6,6 @@ tags: [lecture,3AHITS]
 
 * TOC
 {:toc}
-[3AHITS G2 21.10.2021]
-
 **Skripts** sind Programme die durch **Interpreter** ausgeführt werden, es gibt keinen Compiler. Da Shells in Textform eingegebene Befehle sofort ausführen sind diese bereits eine Form von Interpreter.
 
 Shell Kommandos können in **Textdateien** geschrieben und dann ausgeführt werden. Ergibt gleiches Ergebnis als wenn diese direkt in der shell ausgeführt werden.
@@ -56,8 +54,6 @@ Hello World
 
 # Argumente
 
-[! 3AHITS G2 21.10.2021]
-
 Sind spezielle Variable für Kommandozeilenargumente
 
 ```
@@ -91,7 +87,9 @@ $ ./args.sh eins zwei drei vier
 $$ - The process ID of the current script.
 ```
 
-[Übungen](02c_scripts_ue)
+#### Übung (process ID `$$`)
+
+Verifiziere, dass beim Starten eines Skripts ein eigener Prozess gestartet wird. D.h. dass die shell die ein shell-script startet ein anderer Prozess ist als die shell die das script dann tatsächlich ausführt
 
 
 
@@ -114,8 +112,6 @@ done
 
 [Übungen](02d_scripts_ue)
 
-[!3AHITS G2 25.11.2021]
-
 # Weitere Variablen
 
 ```sh
@@ -126,3 +122,4 @@ $RANDOM - Returns a different random number each time is it referred to.
 $LINENO - Returns the current line number in the Bash script.
 ```
 
+[Übungen](02e_scripts_ue)
