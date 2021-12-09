@@ -6,6 +6,8 @@ tags: [lecture,3AHITS]
 
 * TOC
 {:toc}
+[3AHITS G2 09.12.2021]
+
 ```sh
 $ env
 ...

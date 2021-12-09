@@ -29,7 +29,7 @@ void main()
 
 ---
 
-**Übung (swap):**
+#### Übung (swap)
 
 Schreibe eine Funktion `swap()` die den Inhalt zweier `char` Variablen vertauscht. Verwende dafür Zeiger als Funktions-Parameter. 
 
@@ -44,9 +44,9 @@ swap(&a,&b);
 
 ---
 
-**Übung (mul):**
+#### Übung (mul)
 
-Schreibe eine Funktion die von einer Zahl das doppelte, vierfache und achtfache ermittelt und per Zeiger in Variablen schreibt.
+Schreibe eine Funktion `mul` die von einer Zahl das doppelte, vierfache und achtfache ermittelt und per Zeiger in Variablen schreibt.
 
 In dieser Funktion dürfen **keine lokalen Variablen** angelegt werden.
 ```c
@@ -56,7 +56,8 @@ mul(42,&dopp,&vierf,&achtf);
 
 ---
 
-**Übung (Eingabe):**
+#### Übung (Eingabe)
+
 Schreibe eine Funktion die Benutzerführung, Eingabe (Für `double` Werte) und Überprüfung auf korrekten Wertebereich erledigt. Wenn der eingegebene Wert sich innerhalb des Wertebereichs befindet so gibt die Funktion 1 andernfalls 0 zurück.
 
 
@@ -80,7 +81,8 @@ printf("Korrekte Eingabe: %lf\n", temp);
 
 ---
 
-**Übung (Sortieren):**
+#### Übung (3-Sort)
+
 Schreibe eine Funktion die die Werte von 3 Variablen in eine sortierte Reihenfolge bringen kann.
 
 
@@ -91,7 +93,8 @@ sort3(&a[0], &a[1], &a[2]);
 
 ---
 
-**Übung (Kleinerer):**
+#### Übung (Kleinerer)
+
 Schreibe eine Funktion die zwei `int` Werte als Zeiger übergeben bekommt und einen Zeiger auf den kleineren der beiden Werte zurückgibt.
 
 ---

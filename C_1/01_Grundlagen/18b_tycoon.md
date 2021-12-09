@@ -18,8 +18,8 @@ srand(time(NULL));
 
 while(taste == 'j') 
 {
-	printf("### Würstel - Tycoon ###\n");
-  
+  printf("### Würstel - Tycoon ###\n");
+
   nachfrage = rand() % (nachfrageMax+1); // 0..nachfrageMax
   printf("Nachfrage = %d\n", nachfrage);
 
