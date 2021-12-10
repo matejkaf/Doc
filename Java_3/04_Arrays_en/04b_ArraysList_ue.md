@@ -1,7 +1,7 @@
 ---
 title: ArrayList
 subtitle: Dynamic arrays in Java (Exercises)
-tags: [lecture,java,array]
+tags: [lecture,java,array,3AHITS]
 ---
 
 #### Exercise (Reverse input)
