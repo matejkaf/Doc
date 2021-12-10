@@ -123,3 +123,35 @@ Beispiel:
 D.h. wählt man $n$ groß genug und gibt dieses öffentlich bekannt, hält $p$ und $q$ aber geheim, so ist es einem Angreifer praktisch unmöglich $p$ und $q$ herauszufinden.
 
 Da es theoretisch mit genug Rechenpower und Zeit möglich sein könnte, dass eine Faktorisierung gelingt sind **RSA Keys** in der Praxis mit einem **Ablaufdatum** versehen (einige Jahre).
+
+
+
+# WolframAlpha
+
+[WolframAlpha](https://www.wolframalpha.com/)
+
+Zufällige Primzahlen in einem Wertebereich
+
+```mathematica
+RandomPrime[{10000,20000}]
+```
+
+Erweiterter euklidischer Algorithmus:
+
+```mathematica
+ExtendedGCD[534,421]
+```
+
+Zwei zufällige Primzahlen multiplizieren:
+
+```mathematica
+p=RandomPrime[1000], q=RandomPrime[1000],n=p*q
+[Out] n = 26549, p = 139, q = 191
+```
+
+
+
+```mathematica
+factor 26549
+```
+

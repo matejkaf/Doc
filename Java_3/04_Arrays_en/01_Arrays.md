@@ -172,7 +172,7 @@ Write a method that takes an array of strings and prints them, one per line, in 
 Implement a `static` method which gets an `int` Array as a parameter and returns `void`. The array passed to the method should be reversed "in place", which means no new array should be allocated to store the reversed array. Instead implement by swapping 2 array elements at a time.
 
 - Implement as explained.
-- Use only one local variable: the index.
+- Use only one index-Variable.
 
 ---
 
@@ -205,8 +205,6 @@ a = methodName();
 #### Assignment (Reverse)
 
 Write a `static` method that takes an `int` array as parameter and returns a new array in reversed order. The array passed to the method must not be modified!
-
-- Improve your first solution: Limit yourself to just two local variables: the index and the reversed array.
 
 ---
 
