@@ -1,7 +1,7 @@
 ---
 title: Arrays
 subtitle: Übungen
-tags: [assignment]
+tags: [assignment,3AHITS]
 ---
 
 #### Übung (Array als Rückgabewert)
