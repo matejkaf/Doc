@@ -255,6 +255,26 @@ echo 'for num in $(seq -w 1 5); do\n touch "${num}.txt"\n done\n' | ssh alice@19
 
 
 
+## Dateien kopieren
+
+Per ssh können mit dem Tool `scp` Dateien kopiert werden [[*](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/)].
+
+Allgemeine Befehls-Syntax
+
+```
+scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
+```
+
+Beispiel
+
+```sh
+$ scp msfadmin@192.168.126.130:syslog.txt .
+```
+
+
+
+
+
 # Windows 10 als Client
 
 Verwende Windows 10 als Client mittels zweier Varianten:
