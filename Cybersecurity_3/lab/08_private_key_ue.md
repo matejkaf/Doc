@@ -12,7 +12,7 @@ Die Übungen sind durch Internet Recherche zu lösen.
 
 Verwende das Tool `openssl` um ein private/public Schlüsselpaar mit 4096 Bits für das RSA Verfahren  zu erstellen. Das Ergebnis soll in einem `private-key.pem` File abgespeichert werden. Dieses File enthält typischerweise den public und den private Key.
 
-Erstelle weiters mittels `openssl` eine Datei `public-key.pem` die nur den public key enthält. Dieses File kann problemlos weitergegeben werden ohne die Verschlüsselungssicherheit zu gefährden.
+Erstelle weiters mittels `openssl` aus der Datei `private-key.pem` eine Datei `public-key.pem` die nur den public key enthält. Dieses File kann problemlos weitergegeben werden ohne die Verschlüsselungssicherheit zu gefährden.
 
 ---
 
@@ -20,8 +20,8 @@ Erstelle weiters mittels `openssl` eine Datei `public-key.pem` die nur den publi
 
 Verwende `openssl` zum sicheren Austausch einer selbsterstellten Textdatei. 
 
-- Gib deinen public key an die/den in der Klassenliste folgenden (anwesenden) Schüler*in.
-- Verschlüssele deine Nachricht mit dem public key und sende diese **Base64 kodiert** per **Email** an die Person mit dem passenden private key. 
+- Gib deinen public key weiter an die/den in der Klassenliste folgenden (anwesenden) Schüler*in.
+- Verschlüssele deine Nachricht mit dem public key und sende diese **Base64 kodiert** per **Email** an die Person mit dem passenden private key.
 - Entschlüssele die Nachricht die du von jemand anderen erhalten hast.
 
 ---
@@ -29,6 +29,6 @@ Verwende `openssl` zum sicheren Austausch einer selbsterstellten Textdatei.
 #### Übung (Limits)
 
 1. Versuche eine Datei zu verschlüsseln die aus mehr als 4096 Bits (Schlüsslellänge) besteht.
-2. Kannst du das private key File `private-key.pem` mit sich selbst verschlüsseln?
+2. Kannst du das private key File `private-key.pem` mit sich selbst verschlüsseln? Welche Fehlermeldung kommt? Warum ist das so?
 
 ---

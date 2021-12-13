@@ -11,22 +11,36 @@ tags: [3AHITS]
 Experimentiere unter Metasploitable mit den Passwortdateien:
 
 - Was ändert sich in der `/etc/passwd` und `/etc/shadow` Datei wenn ein neuer User ([→doku adduser](../lecture/07_passwoerter_linux#adduser)) hinzugefügt wird?
-- Welchen Hash-Algorithmus verwendet Metasploitable
+- Welchen Hash-Algorithmus verwendet Metasploitable?
 - Ändere das Passwort des Users ([→doku passwd](../lecture/07_passwoerter_linux#passwd)) . Was ändert sich in `passwd` und `shadow`?
 
 ---
 
 #### Übung (mkpasswd)
 
-Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwenden. Verändere dazu direkt die `passwd` und `shadow` Dateien. 
+Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwenden. Verändere dazu direkt die `passwd` und `shadow` Dateien.
 
 - Informiere dich über das Format von `passwd` und `shadow`
-- Der Passwort Hash kann mit `mkpasswd` ([→doku](../lecture/07_passwoerter_linux#mkpasswd)) generiert werden.
-
+- Der Passwort Hash kann mit `mkpasswd` ([→doku mkpasswd](../lecture/07_passwoerter_linux#mkpasswd)) generiert werden.
 - Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden. 
-  - Unter Kali Daten mit `>` in Dateien schreiben und diese per Web-Server auf Metasploit übertragen (`wget`).
-
+  - Unter Kali Daten mit `>` in Dateien schreiben und diese auf Metasploit übertragen (z.B. per Web-Server und `wget`).
 - Hinweis: Mit `>>` kann das stdout eines Programms an bestehende Dateien angefügt werden.
+
+Tipp: die Dateiübertragung kann auch per ssh mit dem Tool `scp` (secure copy) durchgeführt werden, was komfortabler ist als der Umweg über den Webserver. [[→scp Tutorial](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/)].
+
+Allgemeine Befehls-Syntax:
+
+```
+scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
+```
+
+Beispiel
+
+```sh
+$ scp msfadmin@192.168.126.130:syslog.txt .
+```
+
+Kopiert die Datei  `syslog.txt` vom Homeverzeichnis des Users `msfadmin` auf dem Host mit der IP Adresse `192.168.126.130`, ins Zieldirectory `.` (dem aktuellen Arbeitsverzeichnis).
 
 ---
 
