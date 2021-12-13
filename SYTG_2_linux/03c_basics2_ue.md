@@ -35,5 +35,7 @@ Compiliere und starte das C Programm mit folgendem Befehl in der Kommandozeile:
 $ g++ -o hello hello.cpp;./hello
 ```
 
+Hinweis: Verwende einfache Hochkommas rund um den mit `echo` auszugebenden Text (`echo 'text'`) ansonsten hat die shell "Schwierigkeiten" mit den Sonderzeichen `#`,`<`,`>` etc.
+
 ---
 
