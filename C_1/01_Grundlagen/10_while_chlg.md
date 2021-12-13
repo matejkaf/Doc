@@ -19,7 +19,7 @@ Schreibe ein Programm das die Eingabe eines Start- und eines Endwerts erfordert.
 
 #### Übung (Dreieck)
 
-Schreibe eine Funktion die ein Dreieck in folgender Form ausgibt.
+Schreibe ein Programm das ein Dreieck in folgender Form ausgibt.
 
 ```
 *****
