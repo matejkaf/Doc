@@ -45,8 +45,6 @@ Teste:
 
 ---
 
-
-
 #### Übung (Ziffernsumme)
 
 Schreibe ein Programm, das von einer eingegeben `int` Zahl die Ziffernsumme ermittelt. Für 4711 ist diese zum Beispiel 13.
@@ -114,7 +112,7 @@ Plutonium 24110 Jahre / Caesium 30 Jahre / Radon 3,8 Tage (Quelle: [wikipedia: H
 ---
 
 #### Übung (Millionär)
-Schreibe ein Programm, welches errechnet, nach wie vielen Jahren man Millionär geworden  
+Schreibe ein Programm, welches errechnet, nach wie vielen Jahren man Millionär geworden
 ist, wenn man einen beliebigen Betrag zu einem bestimmten Zinssatz verzinst. Programmiere dazu eine Schleife, die beendet wird, wenn die Bedingung (Millionär) erfüllt wird.
 
 Beispiel: Ermittle wie lange es dauert bis du Millionär geworden bist wenn du EUR 100.000,-- mit 5\% auf ein Konto legst. Wie lange dauert es bei 10%?
@@ -190,3 +188,4 @@ Schreibe ein Programm das durch Durchprobieren aller Möglichkeiten alle Pythago
 - Vermeide doppelte Ausgaben, Bsp. (5,4,3) entspricht (3,4,5)
 - Beschränke die Ausgabe auf Primitive Tripel
 
+---

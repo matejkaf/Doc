@@ -17,18 +17,52 @@ Schreibe ein Programm das die Eingabe eines Start- und eines Endwerts erfordert.
 
 ---
 
-#### Übung (Summe auch umgekehrt)
-Schreibe ein Programm das alle Zahlen beginnend bei einem Startwert bis zu einem Endwert addiert. Start- und Endwert können eingegeben werden. Weiters ist eine Schrittweite zu berücksichtigen und der Start- und Endwert können vertauscht sein. 
+#### Übung (Dreieck)
 
-Beispiel:
+Schreibe eine Funktion die ein Dreieck in folgender Form ausgibt.
 
 ```
-Startwert: 20
-Endwert: 14
-Schrittweite: 2
-20+18+16+14=68
+*****
+****
+***
+**
+*
 ```
 
-Startwert, Endwert und Schrittweite wurden vom Benutzer eingegeben.
+Hinweis: Verwende zwei ineinander verschachtelte Schleifen.
+
+Erweiterung V2: Die Breite des Dreiecks kann eingegeben werden.
+
+---
+
+#### Übung (Diamant)
+
+Schreibe ein Programm das die folgende Form ausgibt (Breite kann eingegeben werden).
+
+```
+**********
+****oo****
+***oooo***   
+**oooooo**   
+*oooooooo*
+**oooooo**   
+***oooo***   
+****oo****
+**********
+```
+
+Erweiterung V2: Die Ausgabe soll folgendermaßen aussehen:
+
+```
+**********
+****oo****
+***o  o***   
+**o    o**   
+*o      o*
+**o    o**   
+***o  o***
+****oo****
+**********
+```
 
 ---
