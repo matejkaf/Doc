@@ -4,6 +4,9 @@ subtitle: Elemementare bash Bedienung
 tags: [lecture, unix, shell, bash,SYTG_2_Linux, 2AHITS ]
 ---
 
+* TOC
+{:toc}
+
 # Wildcards
 
 Um mehrere Files auf einmal anzugeben
@@ -71,9 +74,7 @@ test0	test1	test2	test3	test4	test5	test6	test7	test8	test9
 
 > `cat`, Umleitung stdout `>` und `>>`, Umleitung stdin `<`
 
-Befehl der über die shell gestartet wird liest von stdin (standard input) und schreibt auf stdout (standard output).
-
-Normalerweise:
+Befehl der über die shell gestartet wird liest von stdin (standard input) und schreibt auf stdout (standard output). Normalerweise:
 
 - stdin : Tastatur
 - stdout : Konsole/Bildschirm
@@ -87,9 +88,9 @@ $ cat
 
 > genauer: Die Zeichen werden vom Terminal gesammelt, der Anwender sieht dabei seine Eingaben (das nennt sich *echo*). Erst beim drücken der Enter Taste werden die Daten an den laufenden `cat` Befehl übergeben.
 
-Die shell kann stdin und stdout flexibel festlegen.
+Die shell kann stdin und stdout aber auch ganz flexibel festlegen.
 
-**Umleiten (redirect)** von stdout in eine Datei:
+**Umleiten (redirect)** von stdout in eine Datei mit `>`:
 
 ```bash
 # stdin: Tastatur
@@ -99,7 +100,7 @@ $ cat >test.txt
 $ ls
 ```
 
-**Umleiten** einer Datei (stdin) auf das Terminal (stdout).
+**Umleiten** einer Datei von stdin mit `<`.
 
 ```bash
 # stdin: von Datei
@@ -107,13 +108,11 @@ $ ls
 $ cat <test.txt
 ```
 
----
+[Übungen "Kopie mit cat" und "dirlist in File"](03b_basics2_ue)
 
-#### Übung (Kopie mit cat)
 
-Erstelle mit Hilfe von "cat" eine Kopie der Datei `test.txt` → `test2.txt`
 
----
+## An Datei anfügen
 
 Der Befehl `echo` gibt sein Argument auf stdout aus, durch stdout Umleitung kann eine Datei mit Textinhalt erzeugt werden.
 
@@ -141,83 +140,20 @@ Hallo Welt
 Zweite Zeile
 ```
 
-> Hinweis: echo fügt auch einen Zeilenumbruch ein!
+Hinweis: `echo` fügt auch einen Zeilenumbruch ein – Option `-n` um das zu unterbinden.
 
-`cat` kann auch mit Filenamen verwendet werden
+Anmerkung: `cat` kann auch mit Filenamen (statt stdin) verwendet werden:
 
 ```bash
 $ cat hallo.txt
 $ cat hallo.txt test.txt
+# Zusammenfügen (concatenation)
+$ cat hallo.txt test.txt >hallotest.txt
 ```
 
----
-
-#### Übung (C Hallo Welt)
-
-Erstelle mit Hilfe von `echo` Befehlen eine Datei `hello.cpp` mit folgendem Inhalt: 
-
-```c++
-#include <iostream>
-
-int main() {
-  printf("\n\t*** Hallo Welt ***\n");
-	return 0;
-}
-```
-
-Compiliere und starte das C Programm mit folgendem Befehl in der Kommandozeile:
-
-```sh
-$ g++ -o hello hello.cpp;./hello
-```
-
----
+[Übung "C Hallo Welt"](03b_basics2_ue)
 
 
-
-# Pipes
-
-> `ls -l`, `more`, Pipes, `less`
-
-Mit `ls -l` bekommt man mehr Information über den Verzeichnisinhalt
-
-```bash
-$ ls -l /etc
-# Inhalt von '/etc' mit mehr Detail
-```
-
-Die Ausgabe kann man natürlich auch in eine Datei schreiben:
-
-```bash
-$ ls -l /etc >etc.txt
-$ cat etc.txt
-# cat kann auch selbst ohne Umleitung aus einer Datei lesen
-# der Dateiname wird als Argument angegeben.
-```
-
-Wenn die Ausgaben sehr lang sind kann mit `more` nach einer Seite gestoppt werden.
-
-```bash
-$ more etc.txt
-# weiter mit Leertaste
-```
-
-Das geht natürlich auch mit einer Dateiumleitung auf stdin
-
-```bash
-$ more <etc.txt
-# weiter mit Leertaste
-```
-
-Mit Hilfe von Pipes können mehrere Befehle hintereinander ausgeführt werden, dabei wird stdout des einen Befehls zum stdin des nächsten Befehls. Die Befehle werden dabei durch das Pipe (`'|'`) Zeichen voneinander getrennt.
-
-Beispiel:
-
-```bash
-$ ls -l /etc | more
-```
-
-Hinweis: Der Befehl `less` ist ähnlich wie `more` aber mit zusätzlichen Funktionen (Pfeiltasten, Bild rauf/runter, Abbruch mit `'q'` - quit).
 
 
 

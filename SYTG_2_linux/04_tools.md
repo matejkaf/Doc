@@ -65,17 +65,6 @@ Welche Optionen/Argumente unterstützt ein Kommando?  `--help` oder `man` nutzen
 
 ---
 
-#### Übung (head)
-
-Versuche zu verstehen was das folgender shell Ausdruck macht:
-
-```bash
-$ head --help | head -n12
-```
-
-
----
-
 #### Übung (date)
 
 Verwende Optionen von `date` damit die Ausgabe des Datums und der Uhrzeit in der Form `30.10.20 09:15` erfolgt.
@@ -87,6 +76,48 @@ Verwende Optionen von `date` damit die Ausgabe des Datums und der Uhrzeit in der
 Systeme können sich bei den Optionen unterscheiden. Gibt unterschiedliche Standards und Implementierungen (GNU/POSIX). Beispiel  `date` auf dem Mac (BSD) hat keine `-I` Option, cygwin/GNU (Mac: `gdate` falls installiert) schon.
 
 
+
+# Pipes
+
+> `ls -l`, `more`, Pipes, `less`
+
+Mit `ls -l` bekommt man mehr Information über den Verzeichnisinhalt
+
+```bash
+$ ls -l /etc
+```
+
+Wenn die Ausgaben sehr lang sind kann mit `more` nach einer Seite gestoppt werden.
+
+```bash
+$ ls -l /etc >etc.txt
+$ more <etc.txt # weiter mit Leertaste
+# oder direkt die Datei angeben
+$ more etc.txt
+```
+
+Mit Hilfe von **Pipes** können mehrere Befehle hintereinander ausgeführt werden (`$ cmd1 | cmd2 | cmd3`), dabei wird stdout des einen Befehls zum stdin des nächsten Befehls. Die Befehle werden dabei durch das Pipe (`'|'`) Zeichen voneinander getrennt.
+
+Beispiel:
+
+```bash
+$ ls -l /etc | more
+```
+
+Hinweis: Der Befehl `less` ist ähnlich wie `more` aber mit zusätzlichen Funktionen (Pfeiltasten, Bild rauf/runter, Abbruch mit `'q'` - quit).
+
+---
+
+#### Übung (head)
+
+Verwende `head` um nur die ersten 12 Zeilen von `ls -l /etc` auszugeben. 
+
+Hinweis: `head` kann auch von stdin lesen.
+
+
+---
+
+#### 
 
 # Filter
 

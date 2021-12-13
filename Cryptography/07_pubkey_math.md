@@ -104,7 +104,7 @@ $$
 
 # Intuitiv
 
-Für einen etwas einacheren Zugang – mit konkreten Zahlen – siehe `doc/RSA.pdf`. Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
+Für einen etwas einfacheren Zugang – mit konkreten Zahlen – siehe `doc/RSA.pdf`. Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
 
 
 
@@ -179,7 +179,7 @@ print( pow(2,3,5) )  # 2^3 % 5 = 8 % 5 = 3
 print( pow(2,5,13) ) # 2^5 % 13 = 32 % 13 = 6
 ```
 
-Modular Inverse (Python 3.8+) [[→stackoverflow](https://stackoverflow.com/a/9758173)]
+Modular Inverses (Python 3.8+) [[→stackoverflow](https://stackoverflow.com/a/9758173)]
 
 
 ```python
@@ -229,5 +229,24 @@ Integer Faktorisierung
 import sympy
 print(sympy.factorint(26549))
 # {139: 1, 191: 1} --> dictionary factor=>multiplicity
+```
+
+Text nach ganzer Zahl
+
+```python
+plaintext = "Das ist ein Test"
+plaintext_bytes = plaintext.encode('utf-8')
+print(plaintext_bytes)
+plaintext_number = int.from_bytes(plaintext_bytes,byteorder='little')
+print(plaintext_number)
+```
+
+Zurück von ganzer Zahl nach Text:
+
+```python
+plaintext_bytes_2 = plaintext_number.to_bytes((plaintext_number.bit_length() + 7)//8, byteorder='little')
+print(plaintext_bytes_2)
+plaintext_2 = plaintext_bytes_2.decode('utf-8')
+print(plaintext_2)
 ```
 
