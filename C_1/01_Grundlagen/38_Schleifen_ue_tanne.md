@@ -64,3 +64,26 @@ Wir wollen den Baum mit Christbaumkugeln schmücken.  Dazu soll mit einer Wahrsc
 
 ---
 
+#### Übung (Farben)
+
+Verwende unterschiedliche Farben für die "Kugeln". 
+
+Um Farben ausgeben zu können schickt man dem Terminal eine sogenannte Escape Sequenz, das ist eine Folge von speziellen Zeichen das dieses als Befehl interpretiert.
+
+Folgendes schaltet die Ausgabefarbe für alle weiteren Ausgaben auf Rot:
+
+```c++
+printf("\x1b[38;5;1m");
+```
+
+oder auf Violett:
+
+```c++
+printf ("\x1b[38;5;5m");
+```
+
+Die letzte Zahl bestimmt die Farbe. Es gibt 256 mögliche Farben siehe [→hier](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit).
+
+`\x1b` ist das Escape Zeichen (als hexadezimale Zeichencode angegeben).
+
+---

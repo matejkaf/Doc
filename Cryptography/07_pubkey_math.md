@@ -149,9 +149,85 @@ p=RandomPrime[1000], q=RandomPrime[1000],n=p*q
 [Out] n = 26549, p = 139, q = 191
 ```
 
-
+Eine Zahl Faktorisieren
 
 ```mathematica
 factor 26549
+```
+
+
+
+# Python
+
+Zufallszahlen
+
+```python
+import random
+r=random.randint(0,1000000)
+```
+
+Modulo Operator
+
+```python
+print(13%5)
+```
+
+Modular exponentiation
+
+```python
+print( pow(2,3,5) )  # 2^3 % 5 = 8 % 5 = 3
+print( pow(2,5,13) ) # 2^5 % 13 = 32 % 13 = 6
+```
+
+Modular Inverse (Python 3.8+) [[→stackoverflow](https://stackoverflow.com/a/9758173)]
+
+
+```python
+# 5*d mod 72
+# d=?
+print(pow(5, -1, 72))
+```
+
+GCD ... greatest commond divisor (=ggT)
+
+```python
+import math
+print (math.gcd(3, 6))
+```
+
+Modular Inverses mit extended GCD
+
+```python
+# Extended GCD (recursive)
+def extendedGCD(num1, num2): 
+  if num1 == 0 :  
+    return num2, 0, 1
+  output, n, m = extendedGCD(num2 % num1, num1) 
+  n1 = m - ( num2//num1 ) * n    # // ... integer division
+  m1 = n 
+  return output,n1,m1
+
+# an + bm = GCD(a,b), where n and m are integer coefficients.
+a=72
+b=5
+gcd, n, m = extendedGCD(a,b)
+print(f"gcd = {gcd} = {a}*{n}+{b}*{m} = {a*n+b*m}")
+```
+
+Primzahlen
+
+```python
+# sympy Library functions for prime - https://stackoverflow.com/a/42440056
+import sympy
+print(sympy.isprime(5)) 
+print(sympy.randprime(10000, 20000))
+```
+
+Integer Faktorisierung
+
+```python
+import sympy
+print(sympy.factorint(26549))
+# {139: 1, 191: 1} --> dictionary factor=>multiplicity
 ```
 
