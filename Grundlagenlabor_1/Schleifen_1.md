@@ -14,8 +14,8 @@ tags: [assignment,C_1,1CHELS]
 int i=1;
 while(i<3)
 {
-     printf("%d ",i);
-     i++;
+  printf("%d ",i);
+  i++;
 }
 printf("\nEnde=%d", i);
 ```
@@ -26,8 +26,8 @@ printf("\nEnde=%d", i);
 int i=1;
 while(i<=3)
 {
-     printf("%d ",i);
-     i++;
+  printf("%d ",i);
+  i++;
 }
 printf("\nEnde=%d", i);
 ```
@@ -38,8 +38,8 @@ printf("\nEnde=%d", i);
 int i=1;
 while(i<=3)
 {
-     i++;
-     printf("%d ",i);
+  i++;
+  printf("%d ",i);
 }
 printf("\nEnde=%d", i);
 ```
@@ -49,8 +49,8 @@ printf("\nEnde=%d", i);
 int i = 1;
 while(i<11) 
 {
-	i = i + 3;
-	printf("%d ",i);
+  i = i + 3;
+  printf("%d ",i);
 }
 printf("\nEnde=%d", i);
 ```
@@ -62,9 +62,9 @@ int i = 4;
 int n = 1;
 while(i>=0)
 {
-	n = n * 2;
-	i = i - 1;
-	printf("%d %d\n", i, n);
+  n = n * 2;
+  i = i - 1;
+  printf("%d %d\n", i, n);
 }
 ```
 
