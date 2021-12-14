@@ -4,7 +4,9 @@ subtitle: Cybersecurity Übung
 tags: [3AHITS]
 ---
 
-[Siehe Skriptum](../lecture/07_passwoerter_linux)
+[Siehe Skriptum "Technische Details zu Linux Passwörtern"](../lecture/07_passwoerter_linux)
+
+---
 
 #### Übung (passwd und shadow)
 
@@ -22,8 +24,9 @@ Füge unter metasploitable einen neuen User hinzu **ohne** `adduser` zu verwende
 
 - Informiere dich über das Format von `passwd` und `shadow`
 - Der Passwort Hash kann mit `mkpasswd` ([→doku mkpasswd](../lecture/07_passwoerter_linux#mkpasswd)) generiert werden.
-- Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden. 
-  - Unter Kali Daten mit `>` in Dateien schreiben und diese auf Metasploit übertragen (z.B. per Web-Server und `wget`).
+- Hinweis: `mkpasswd` ist unter Metasploitable nicht installiert, daher muss dieses Kommando auf Kali Linux ausgeführt werden. Möglichkeiten dafür
+  - Unter Kali Daten mit `>` in Dateien schreiben und diese auf Metasploit übertragen (z.B. per Web-Server und `wget` oder `scp` siehe unten).
+  - Oder per ssh von Kali aus auf Metasploitable einloggen und die Copy/Paste Funktionalität des Kali Terminals nutzen.
 - Hinweis: Mit `>>` kann das stdout eines Programms an bestehende Dateien angefügt werden.
 
 Tipp: die Dateiübertragung kann auch per ssh mit dem Tool `scp` (secure copy) durchgeführt werden, was komfortabler ist als der Umweg über den Webserver. [[→scp Tutorial](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/)].
@@ -34,7 +37,7 @@ Allgemeine Befehls-Syntax:
 scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
 ```
 
-Beispiel
+Beispiel:
 
 ```sh
 $ scp msfadmin@192.168.126.130:syslog.txt .

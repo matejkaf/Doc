@@ -142,23 +142,24 @@ Maschinencode in hex:
 
 Weitere Maschinenbefehle
 
-- `IN` "input", lese eine Zahl von Tastatur
+- `IN` "input", lese eine Zahl von Tastatur in ein Register
 - `OUT` "output", gib einen Buchstaben auf dem Bildschirm aus
-- `BEQ` "branch on equal", korrigiere PC um ± wenn `ZE` Flag um Statusregister gesetzt
+- `BEQ` "branch on equal", korrigiere PC um ± wenn `ZE` Flag im Statusregister gesetzt
 - `JMP` "unconditional jump", korrigiere PC um ±
-- `CMP` "compare", Subtraktion ohne Ergebnis (setzt nur Statusregister)
+- `CMP` "compare", Subtraktion zweier Register ohne Ergebnis (setzt nur Statusregister Flags)
 
 ```
 #
 # number guessing game
 #
+Addr   Mnemonic    # Comments
 0100   LDI R1,7    # R1: number to guess
-0101   IN R2       # R2: read number from keyboard
-0102   CMP R1,R2   # compare R1 with R2
-0103   BEQ 3			 # branch relative if ZE bit is set
-0104   OUT 'T'     # try again
-0105	 JMP -4      # relative jump
-0106   OUT 'W'     # you won
+0102   IN R2       # R2: number read from keyboard
+0104   CMP R1,R2   # compare R1 with R2
+0106   BEQ 3			 # branch relative if ZE bit is set to 0106
+0108   OUT 'T'     # try again
+010A	 JMP -4      # relative jump to 0101
+010C   OUT 'W'     # you won
 ```
 
 
