@@ -1,5 +1,6 @@
 ---
 title: Rechentrainer
+tags: [assignment,C_1]
 ---
 
 #### Übung (Rechentrainer V1.0)
