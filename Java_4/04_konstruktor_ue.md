@@ -1,7 +1,7 @@
 ---
 title: Vererbung
 subtitle: Übung Konstruktoren
-tags: [assignment]
+tags: [assignment,4BHELS]
 ---
 
 #### Übung (A/B Erweiterung)

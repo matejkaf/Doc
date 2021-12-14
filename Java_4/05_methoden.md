@@ -1,7 +1,7 @@
 ---
 title: Methoden
 subtitle: Vererbung
-tags: [lecture]
+tags: [lecture,4BHELS]
 ---
 
 
