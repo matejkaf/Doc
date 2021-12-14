@@ -1,11 +1,9 @@
 ---
 title: Vererbung
-tags: [lecture]
+tags: [lecture,4BHELS]
 ---
 
 
-
-# Allgemein
 
 Bei der **Vererbung** wird eine neue Klasse angelegt die den Inhalt einer bestehenden Klasse enthält.
 
@@ -49,8 +47,7 @@ Auch Methoden werden vererbt.
 public class Person {
     String name;
     String capName() {
-        return name.substring(0,1).toUpperCase() +
-            name.substring(1).toLowerCase();
+        return name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase();
     } 
 }
 

@@ -4,17 +4,32 @@ subtitle: Übung Konstruktoren
 tags: [assignment]
 ---
 
+#### Übung (A/B Erweiterung)
 
+Erweitere die Klasse `A` um eine private `int` Instanzvariable. Ergänze Konstruktoren (in beiden Klassen) mit einem Parameter um diese Instanzvariable auf einen Startwert setzen zu können.
+
+---
+
+#### Übung (Konstruktor in Person und Schüler)
+
+Implementiere Konstruktoren in den Klassen `Person` und `Schueler`. Dabei soll der Konstruktor von `Person` vom Konstruktor in `Schueler` aus aufgerufen werden.
+
+---
 
 #### Übung (Datum)
 
-Schreibe die Klassen `Datum`, `DatumUsa` und `DatumEu` zur Unterstützung unterschiedlicher Datumsformate.
+Schreibe die Klasse `Datum`, mit Tag, Monat und Jahr. Die Instanzvariablen sind als `private` zu definieren.
+
+Definiere per Vererbung die Klassen `DatumUsa` und `DatumEu` zur Unterstützung unterschiedlicher Datumsausgabeformate:
 
 - EU: `Tag.Monat.Jahr`
 - USA: `Monat/Tag/Jahr`
 
 
-Aufgaben
+Aufgaben:
 
-- Schreibe `toString` Methoden, so dass jedes Datum im entsprechenden Format ausgegeben werden kann.
-- Implementiere Konstruktoren zum setzen der Instanzvariablen. Der Konstruktor der `Datum` Klasse soll dabei immer aufgerufen werden.
+- Implementiere `toString` Methoden, so dass jedes Datum im entsprechenden Format ausgegeben werden kann.
+- Implementiere Konstruktoren zum setzen der Instanzvariablen. Der Konstruktor der `Datum` Klasse soll dabei immer aufgerufen werden (ist ohnehin notwendig denn man kann nicht auf die `private` Variablen der Basisklasse zugreifen).
+
+---
+

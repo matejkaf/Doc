@@ -1,7 +1,7 @@
 ---
 title: Konstruktoren
 subtitle: Vererbung
-tags: [lecture]
+tags: [lecture,4BHELS]
 ---
 
 Konstruktoren werden **nicht vererbt** sondern **automatisch aufgerufen**.
@@ -36,11 +36,4 @@ public class B extends A {
 
 `super` wird benötigt wenn ein Konstruktor mit Parameter aufgerufen werden soll. Siehe nachfolgende Aufgabe.
 
-
-
----
-
-#### Übung (Erweiterung)
-
-Erweitere die Klasse A um eine private `int` Instanzvariable. Ergänze Konstruktoren (in beiden Klassen) mit einem Parameter um diese Instanzvariable auf einen Startwert setzen zu können.
 

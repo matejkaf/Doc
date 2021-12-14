@@ -155,6 +155,7 @@ Lade das passwortgeschützte ZIP File ([→download link](data/secret.zip))
 
 Hinweise:
 
+- Ähnliche Vorgangsweise wie bei der Word Datei
 - Verwende `zip2john`
 - Verwende den incremental Mode von john
 
