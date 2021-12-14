@@ -111,9 +111,53 @@ $6$c30aorWIR3zu3Q1b$zkLBnz/niLmokGH/vTyq6nJZtt.PJ9RYwSZZqlZlvy5Ont598rxFn4S2A8on
 
 ---
 
-#### Übung (Word Passwort Cracken)
+#### Übung (Microsoft Word)
 
-Versuche mit der Anleitung: [HOW TO – Crack Password-Protected Microsoft Office Files, Including Word Docs & Excel Spreadsheets](https://null-byte.wonderhowto.com/how-to/crack-password-protected-microsoft-office-files-including-word-docs-excel-spreadsheets-0193959/) ein passwortgeschütztes Word Dokument zu öffnen.
+Knacke das Passwort eines Word Dokuments ([→download link](data/doctocrack.docx)).
+
+Anleitung:
+
+(1) Download eines Python Scripts
+
+```sh
+$ wget https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/run/office2john.py
+```
+
+(2) Extrahieren der Hashwerte für John mit diesem Python Skript:
+
+```sh
+$ python office2john.py doctocrack.docx >doctocrack.hash
+$ cat doctocrack.hash
+```
+
+(3) Und john ausführen:
+
+```sh
+$ john doctocrack.hash
+...
+```
+
+(4) Anzeige des geknackten Passworts:
+
+```sh
+$ john --show doctocrack.hash
+```
+
+Was ist der Inhalt des Word Dokuments?
+
+Quelle: [HOW TO – Crack Password-Protected Microsoft Office Files, Including Word Docs & Excel Spreadsheets](https://null-byte.wonderhowto.com/how-to/crack-password-protected-microsoft-office-files-including-word-docs-excel-spreadsheets-0193959/).
 
 ---
 
+#### Übung (zip File)
+
+Lade das passwortgeschützte ZIP File ([→download link](data/secret.zip))
+
+Hinweise:
+
+- Verwende `zip2john`
+- Verwende den incremental Mode von john
+
+Was befindet sich im Inneren des ZIP Files?
+
+---
