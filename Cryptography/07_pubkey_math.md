@@ -104,7 +104,7 @@ $$
 
 # Intuitiv
 
-Für einen etwas einfacheren Zugang – mit konkreten Zahlen – siehe [doc/RSA.pdf](doc/RSA.pdf). Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
+Für einen etwas einfacheren Zugang – mit konkreten Zahlen – siehe [doc/Rsa.pdf](doc/Rsa.pdf). Idee vom Video: [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://youtu.be/JD72Ry60eP4)
 
 
 
