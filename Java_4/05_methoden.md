@@ -10,39 +10,32 @@ tags: [lecture,4BHELS]
 
 ```java
 public class Person {
-    String name;
-    public String toString() {
-        return "Name: "+name;
-    }
+  public String essen() {
+    return "Burger";
+  }
 }
 ```
 
 ```java
 public class Schueler extends Person {
-    int knr;
-    public String toString() {
-        return "KatNr: "+knr+", Name: "+name;
-    }
+  public String essen() {
+    return "Pizza";
+  }
 }
 ```
 
-`toString` bekommt in der Klasse `Schueler` eine neue Bedeutung, daher **Überschreiben**.
+`essen` bekommt in der Klasse `Schueler` eine neue Bedeutung, daher **Überschreiben**.
 
 
 Implementierung der Basisklasse aufrufen: Oft macht es Sinn das was die Basisklasse schon kann, in der abgeleiteten Klasse wiederzuverwenden. Dies geht mit dem Schlüsselwort `super`.
 
 ```java
 public class Schueler extends Person {
-    int knr;
-    public String toString() {
-        return "KatNr: "+knr+", "+super.toString();
-    }
+  public String essen() {
+    return super.essen()+" mit Pommes";
+  }
 }
 ```
-
-
-
-
 
 
 

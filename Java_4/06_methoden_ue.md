@@ -14,21 +14,20 @@ Definiere alle Instanzvariablen als `private`.
 Schreibe:
 
 - den Konstruktor,
-- Methode `beladen`, Rückgabe: `boolean`,
-- Methode `entladen`, Rückgabe: `boolean`,
+- Methode `beladen`, Rückgabe: `boolean` (immer `true`, bekommt erst später eine Bedeutung),
+- Methode `entladen`, Rückgabe: `boolean` (immer `true`),
 - Methode `fuellstand`, Rückgabe: `double`.
 
-Es sollen  keine Überprüfungen beim be- bzw.\ entladen durchgeführt werden, der Rückgabewert ist immer `true`.
+Es sollen  keine Überprüfungen beim be- bzw.\ entladen durchgeführt werden, der Rückgabewert ist daher  immer `true`.
 
-- Leite von der Klasse `Schubkarre` die Klasse `SichereSchubkarre` ab.
-  Diese kann eine gewisse maximale Last aufnehmen (weitere Instanzvariable).
+- Leite von der Klasse `Schubkarre` die Klasse `SichereSchubkarre` ab. Diese kann eine gewisse maximale Last aufnehmen (weitere Instanzvariable).
 
-Die Methoden `beladen` und `entladen` sollen überschrieben und so implementiert werden, dass 
+Die Methoden `beladen` und `entladen` sollen **überschrieben** und so implementiert werden, dass 
 
 - ein Beladen über die maximale Beladung und 
 - ein Entladen von mehr als der geladenen Menge nicht möglich ist 
 
-(in diesen Fällen wird nichts an der Ladung geändert und es soll der Rückgabewert `false` verwendet werden).
+In diesen Fällen wird nichts an der Ladung geändert und es soll der Rückgabewert `false` verwendet werden.
 
 Verwende so viel wie möglich von der Klasse `Schubkarre`.
 
