@@ -12,7 +12,9 @@ Eine Kleidungsgröße wird durch XS, S, M und L angegeben, es gibt 4 Stufen abh�
 - **M** ab 100cm
 - **L** ab 150cm
 
-Schreibe ein Programm das nach Eingabe der Körpergröße entsprechend XS, S, M oder L ausgibt.
+Schreibe ein Programm das nach Eingabe der Körpergröße entsprechend `XS`, `S`, `M` oder `L` ausgibt.
+
+Tipp: Verschachtele `if` Anweisungen ineinander.
 
 ---
 

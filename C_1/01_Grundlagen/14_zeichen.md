@@ -11,7 +11,7 @@ c = 'a';
 printf("%c",c);
 ```
 
-Für einzelne Buchstaben werden einfache Hochkomma ("ticks") verwendet.
+Für einzelne Buchstaben werden einfache Hochkomma ("ticks") verwendet – z.B. `'a'`.
 
 Computer kann nur Zahlen verarbeiten, in einer `char` Variable steht daher eigentlich eine Zahl. Jedem Zeichen wird eine Zahl zwischen 1 und 127 zugeordnet, dies ist der sogenannte **ASCII Code**. 
 
@@ -39,7 +39,9 @@ printf("r...Rot\n");
 printf("g...Gruen\n");
 printf("b...Blau\n");
 printf("Deine Wahl: ");
-taste = getch();
+	
+scanf("%c", &taste);
+
 if(taste == 'r')
 {
 	printf("Du hast Rot genommen\n");
@@ -66,25 +68,8 @@ while(taste=='j')
 {
 	...
 	printf("nochmal? (j/n)");
-	taste = getch();
+	scanf("%c", &taste);
 }
 ```
 
-
-
-# Sonderzeichen ausgeben
-
-Ausgabe von deutschen Sonderzeichen ist möglich durch verwenden der Bibliothek `locale.h` und dem Befehl `setlocale`.
-
-```c
-#include <stdio.h>
-#include <conio.h>
-#include <locale.h>
-void main()
-{
-	setlocale( LC_ALL, "German" );
-  printf("öäüß\n");
-  getch();
-}
-```
 

@@ -1,11 +1,25 @@
 ---
 title: Rechentrainer
-tags: [assignment,C_1]
+tags: [assignment,C_1,1CHELS]
 ---
+
+Du kannst mit Hilfe einer Schleife einen Programmteil auf Wunsch des Anwenders wiederholen:
+
+```c
+char taste = 'j';
+while(taste=='j')
+{
+	...
+	printf("nochmal? (j/n)");
+	scanf("%c", &taste);
+}
+```
+
+
 
 #### Übung (Rechentrainer V1.0)
 
-Programmiere einen Kopf-Rechentrainer für die Addition. Es werden 2 ganze Zahlen von 1–99 gewählt und geprüft ob die Antwort korrekt ist. Der Anwender kann das Üben wiederholen oder das Programm beenden.
+Programmiere einen Kopf-Rechentrainer für die Addition. Es werden 2 ganze Zahlen von 1–99 gewählt und geprüft ob die Antwort korrekt ist. Der Anwender kann das Üben (mit neuen Zahlen) wiederholen oder das Programm beenden.
 
 ```
 Berechne:
@@ -15,11 +29,13 @@ Richtig!!!
 Möchtest du noch einmal Üben (j/n): _
 ```
 
+Ein fehlgeschlagener Versuch wird nicht wiederholt – es werden immer neue Zahlen generiert.
+
 ---
 
 **Erweiterung V1.1** 
 
-Ergänze eine Erfolgsstatistik und zähle die dafür die Anzahl der korrekten und der falschen Antworten. Der aktuelle Stand wird nach jedem Üben angezeigt:
+Ergänze eine Erfolgsstatistik und zähle dafür die Anzahl der korrekten und der falschen Antworten. Der aktuelle Stand wird **nach jedem Üben** angezeigt:
 
 ```
 Richtig: 7
@@ -30,7 +46,7 @@ Falsch: 2
 
 **Erweiterung V1.2**
 
-Das Programm soll nachdem der Anwender das Üben beendet hat eine Note ausgeben. Die Note ergibt sich aus dem Prozentsatz der richtigen Antworten. "genügend" bei mindestens 60%, "befriedigend" bei mindestens 70%, "gut" bei mindestens 80% und "sehr gut" bei mindestens 90%.
+Das Programm soll, nachdem der Anwender das Üben beendet hat, eine **Note** ausgeben. Die Note ergibt sich aus dem Prozentsatz der richtigen Antworten. "genügend" bei mindestens 60%, "befriedigend" bei mindestens 70%, "gut" bei mindestens 80% und "sehr gut" bei mindestens 90%.
 
 
 
@@ -62,7 +78,7 @@ Richtig!!! (Drücke eine beliebige Taste um ins Hauptmenü zurückzukehren)
 
 Die zu multiplizierenden Zahlen werden vom Programm zufällig gewählt.
 
-Nach der Übungsrechnung wird das Menü immer wieder angezeigt und dem Anwender die Möglichkeit für eine weitere Übung gegeben. Erst durch Auswahl der Taste `e` wird das Programm beendet.
+Nach der Übungsrechnung wird das Menü wieder angezeigt und dem Anwender die Möglichkeit für eine weitere Übung gegeben. Erst durch Auswahl der Taste `e` wird das Programm beendet.
 
 Wähle je nach Grundrechnungsart unterschiedlich große Zufallszahlen damit der Schwierigkeitsgrad ungefähr gleich ist, beispielsweise bei der Addition können die Zahlen etwas größer sein, bei der Multiplikation etwas kleiner.
 

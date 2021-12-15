@@ -1,7 +1,7 @@
 ---
 title: Der Würstl Tycoon
 subtitle: Ein Spiel
-tags: [assignment,C_1]
+tags: [assignment,C_1,1CHELS]
 ---
 
 #### Übung (Würstl Tycoon)
@@ -24,7 +24,7 @@ while(taste == 'j')
   printf("Nachfrage = %d\n", nachfrage);
 
   printf("Nochmals? (j/n)\n");
-  taste = getch();
+	scanf("%c", &taste);
 }
 ```
 
