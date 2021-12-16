@@ -4,8 +4,6 @@ subtitle: Schleifen Challenges
 tags: [assignment,challenge]
 ---
 
-
-
 #### Übung (Ungerade Zahlen bis Grenze addieren)
 
 Schreibe ein Programm. Der Anwender soll eine Zahl n eingeben. 
@@ -18,14 +16,14 @@ Beispiel: n=26, Die Summe 1+3+5+7+9 ergibt 25 das ist noch zu wenig, erst 1+3+5+
 
 #### Übung (Rauf- und runter)
 
-Schreibe ein Programm, welches von 1 bis 10 hochzählt und danach wieder zu 1 herunterzählt. Das Programm darf nur **eine einzige** Schleife enthalten.
+Schreibe ein Programm, welches von 1 bis 10 hochzählt und danach wieder zu 1 herunterzählt. Das Programm darf aber nur **eine einzige** Schleife enthalten.
 
 ---
 
 
 #### Übung (Fibonacci)
 
-Schreibe ein Programm das die sogenannten Fibonacci-Zahlen bis zu einer einzugebenden Höchstgrenze am Bildschirm ausgibt. Eine Fibonacci-Zahl wird als Summe der beiden vorhergehenden Fibonacci-Zahlen gebildet. Die erste und die zweite Fibonacci-Zahl sind gleich eins. Zahlenfolge: 1 1 2 3 5 8 13 21 ...
+Schreibe ein Programm das die sogenannten Fibonacci-Zahlen bis zu einer einzugebenden Höchstgrenze am Bildschirm ausgibt. Eine Fibonacci-Zahl wird als Summe der beiden vorhergehenden Fibonacci-Zahlen gebildet. Die erste und die zweite Fibonacci-Zahl sind gleich eins. Zahlenfolge: `1 1 2 3 5 8 13 21 ...`
 
 ---
 

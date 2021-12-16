@@ -24,9 +24,43 @@ Hinweis: bringe die 3 Werte durch paarweises vertauschen der Werte in die richti
 
 Zum Vertauschen der Werte zweier Variablen braucht man eine Hilfsvariable (im Beispiel t) um einen Wert der beiden Werte zwischenspeichern zu können.
 
-Dieses Verfahren kann auf eine beliebige Anzahl von Werten erweitert werden und trägt den Namen
-\href{http://de.wikipedia.org/wiki/Bubble_Sort}{Bubble Sort},
-da die größten Zahlen wie Blasen in einer Flüssigkeit nach oben schweben.
+Dieses Verfahren kann auf eine beliebige Anzahl von Werten erweitert werden und trägt den Namen Bubble Sort – da die größten Zahlen wie Blasen in einer Flüssigkeit nach oben schweben.
+
+Beispiel:
+
+```
+a b c
+7 5 3
+---    vertauschen
+5 7 3
+  ---  vertauschen
+5 3 7
+---    vertauschen
+3 5 7
+  ---  nicht vertauschen
+fertig
+```
+
+Es waren zwei mal zwei Vergleiche/Vertauschungen notwendig.
+
+Erweitere auf 4 Zahlen.
+
+Bei 4 Zahlen geht man 3x durch alle Paare durch:
+
+```
+a b c d
+---
+  ---
+    ---
+---
+  ---
+    ---
+---
+  ---
+    ---    
+```
+
+
 
 ---
 
