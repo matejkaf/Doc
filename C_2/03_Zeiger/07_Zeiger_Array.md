@@ -75,9 +75,7 @@ for(int i=0; i<len; i++) {
 
 # Sentry (Wächter)
 
-Störend: Zählvariable `i`. 
-
-Zwei Additionen pro Schleifendurchlauf, wir wollen aber nur eine!
+Bei dieser Art der Implementierung ist störend, dass 2 Variablen inkrementiert werden müssen, `i` und `p`:
 
 ```c++
 int a[] = {1,2,3,4,5};
@@ -91,10 +89,24 @@ while(i<5)
 }
 ```
 
+Wir wollen, dass nur eine Variable inkrementiert werden muss.
+
 Idee: Nehmen einen zweiten Zeiger und setzen diesen ans Ende (=Sentry).
 
-Zeiger können mit Vergleichsoperatoren verglichen werden. Bsp. `p<q`
+Hinweis: Zeiger können mit Vergleichsoperatoren verglichen werden. Bsp. `p<q`
 
+Lösung:
+
+```c++
+int a[] = {1,2,3,4,5};
+int *p=a;
+int q=a+5; // zeigt aufs "Ende" des Arrays
+while(p<q)
+{
+    printf("%d, ",*p);
+    p++;
+}
+```
 
 
 

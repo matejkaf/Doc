@@ -101,6 +101,3 @@ char* strstr(char* str1, char* str2);}
 
 - return: Zeiger auf die Stelle in `str1` an der der String `str2` beginnt.
   `NULL` falls nicht gefunden.
-
-
-

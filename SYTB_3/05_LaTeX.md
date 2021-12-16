@@ -14,7 +14,7 @@ LaTeX [[ˈlaːtɛç](https://de.wikipedia.org/wiki/Liste_der_IPA-Zeichen)] ist e
 Das sieht z.B. so aus:
 
 ```latex
-Da ist ein Absatz
+Das ist ein Absatz
 
 \section{Überschrift} % creates a section
 
@@ -67,17 +67,7 @@ Da .tex Files reinen Text enthalten können diese auch sehr einfach automatisier
 \end{document} % This is the end of the document
 ```
 
-
-
-# Dokumenten–Einstellungen
-
-Verwende
-
-```latex
-\documentclass[12pt]{scrartcl}
-```
-
-Umstellen auf Deutsch (z.B. für `\today`)
+Umstellen auf Deutsch (z.B. für `\today`, `\maketitle`)
 
 ```latex
 \usepackage[german]{babel}
@@ -87,6 +77,23 @@ Inhaltsverzeichnis einfügen:
 
 ```latex
 \tableofcontents
+```
+
+Verweise:
+
+```latex
+\label{equation:gamma}
+\ref{equation:gamma}
+```
+
+
+
+# Dokumenten–Einstellungen
+
+Verwende
+
+```latex
+\documentclass[12pt]{scrartcl}
 ```
 
 Absatzeinrückung und Absatzabstände

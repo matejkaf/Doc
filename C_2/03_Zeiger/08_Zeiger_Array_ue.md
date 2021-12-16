@@ -6,19 +6,27 @@ tags: [assignment,c,pointer,array,C_2]
 
 #### Übung (Werte setzen)
 
-Schreibe ein Programm, das mit Hilfe von Zeigern die Werte `1, 2, 3, ...` in ein Array aus `int` schreibt. Erweitere das Programm um eine Funktion die alle Zahlen im Array summiert (mit Zeigern).  Die Summe soll im Hauptprogramm ausgegeben werden.
+- Schreibe ein Programm, das mit Hilfe von Zeigern die Werte `1, 2, 3, ...` in ein Array aus `int` schreibt. 
+- Erweitere das Programm um eine Funktion `summe` die alle Zahlen im Array summiert (mit Zeigern).  Die Summe soll im Hauptprogramm ausgegeben werden.
+- Schreibe eine weitere Funktion `summe2` in der statt der Laufvariablen ein Wächter (Sentry) verwendet wird.
 
 ---
 
-#### Übung (Summe mit Sentry)
+#### Übung (Reverse Array)
 
-Schreibe die Funktion zum Summieren so um, dass statt der Laufvariablen ein Wächter verwendet wird.
+Schreibe eine Funktion `print_reverse` die ein Array in umgekehrter Reihenfolge ausgibt. Verwende dafür einen Wächter (Sentry).
 
----
-
-#### Übung (Summe mit Sentry 2)
-
-Schreibe eine weitere Funktion die das Array in umgekehrter Reihenfolge ausgibt. Hinweis: Verwende dafür einen Wächter am Array-Anfang.
+Hinweis:  Wächter auf den Array-Anfang setzen.
 
 ---
 
+#### Übung (Operatorkombination)
+
+Versuche durch Experimente und Recherche herauszufinden was folgende Konstrukte bedeuten
+
+- `*p++`
+- `*++p`
+- `(*p)++`
+- `--(*p)`
+
+---
