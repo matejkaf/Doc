@@ -91,7 +91,7 @@ int k = 2*m // unboxing – Integer to int
 Example: Array of `int`
 
 ```java
-ArrayList<Integer> list = new ArrayList(); // class Integer for primitive data type int
+ArrayList<Integer> list = new ArrayList<>(); // class Integer for primitive data type int
 list.add(42); // auto boxing converts int to Integer object
 int n = list.get(0); // auto unboxing converts Integer object to int value
 ```
