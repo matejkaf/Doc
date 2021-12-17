@@ -14,9 +14,17 @@ Es sollen die Daten von Gemeinden verwaltet werden. Von jeder Gemeinde ist bekan
 
 Erstelle eine Klasse `Gemeinde` dafür.
 
-Erstelle ein Array aus ca. 10 Gemeinden [siehe Liste der Gemeinden](http://www.gemeinden.at/gemeinden/bezirk/404/braunau-am-inn) und speichere dieses als Instanzvariable in einer Klasse `Bezirk`.
+Implementiere in einer weiteren Klasse `Bezirk`:
 
-Implementiere in der Klasse `Bezirk`
+- Ein Array aus ca. 10 Gemeinden als Instanzvariable –  [siehe Liste der Gemeinden](http://www.gemeinden.at/gemeinden/bezirk/404/braunau-am-inn). Verwende z.B. die folgende Syntax:
+
+  ```java
+  Gemeinde[] gemeinden = new Gemeinde[] {
+    new Gemeinde("nameA",1000,35),
+    new Gemeinde("nameB",2000,70),
+  	// ...
+  };
+  ```
 
 - Methode `grFläche`: suche die flächenmäßig größte Gemeinde und gibt diese Fläche zurück.
 

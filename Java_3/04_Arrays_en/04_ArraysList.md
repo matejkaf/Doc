@@ -79,13 +79,21 @@ The wrapper classes are:
 - `Double`
 - `Boolean`
 
-These classes can be used instead of the primitive data types, Java manages the conversion between both representations. From primitive datatype to Wrapper object this conversion is called boxing (e.g. `int` to `Integer`), the other way is called unboxing.
+These classes can be used instead of the primitive data types, Java manages the conversion between both representations automatically. From primitive datatype to Wrapper object this conversion is called boxing (e.g. `int` to `Integer`), the other way is called unboxing.
 
 ```java
 int n = 42; // primitive data type
 Integer m; // object of class Integer
 m = n; // boxing – new Integer object created
-int k = 2*m // unboxing – Integer to int – on demand
+int k = 2*m // unboxing – Integer to int
+```
+
+Example: Array of `int`
+
+```java
+ArrayList<Integer> list = new ArrayList(); // class Integer for primitive data type int
+list.add(42); // auto boxing converts int to Integer object
+int n = list.get(0); // auto unboxing converts Integer object to int value
 ```
 
 
