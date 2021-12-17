@@ -58,7 +58,7 @@ mul(42,&dopp,&vierf,&achtf);
 
 #### Übung (Eingabe)
 
-Schreibe eine Funktion die Benutzerführung, Eingabe (Für `double` Werte) und Überprüfung auf korrekten Wertebereich erledigt. Wenn der eingegebene Wert sich innerhalb des Wertebereichs befindet so gibt die Funktion 1 andernfalls 0 zurück.
+Schreibe eine Funktion `input` die Benutzerführung, Eingabe (Für `double` Werte) und Überprüfung auf korrekten Wertebereich erledigt. Wenn der eingegebene Wert sich innerhalb des Wertebereichs befindet so gibt die Funktion 1 andernfalls 0 zurück.
 
 
 Beispiel für die Anwendung dieser Funktion:
@@ -78,6 +78,8 @@ while(ok==0)
 }
 printf("Korrekte Eingabe: %lf\n", temp);
 ```
+
+Dieser Code zeigt das Hauptprogramm.
 
 ---
 

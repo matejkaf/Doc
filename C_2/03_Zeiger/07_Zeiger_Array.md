@@ -3,7 +3,7 @@ title: Zeiger und Arrays
 tags: [lecture,c,pointer,array,C_2]
 ---
 
-Zeiger sind eine Alternative zum Index-Zugriff. C kennt intern eigentlich gar keinen Index sondern wandelt dies in Zugriffe über Zeiger um.
+Zeiger sind eine **Alternative zum Index-Zugriff**. C kennt intern eigentlich gar keinen Index sondern wandelt dies in Zugriffe über Zeiger um.
 
 Setzen der Zeiger:
 
@@ -25,7 +25,7 @@ q = q - 3;
 q -= 3;
 ```
 
-Dabei gilt die Zeiger-Arithmetik, die Änderung des Zeiger-Werts ist vom Datentyp des Zeigers abhängig.
+Dabei gilt die **Zeiger-Arithmetik**, die Änderung des Zeiger-Werts ist vom Datentyp des Zeigers abhängig.
 Beispiel Zeiger auf `int` (`int* p`) – mit `p++` wird der Wert von p um die Anzahl von Bytes erhöht die ein `int` im Speicher an Platz benötigt (dies sind in der Regel 4 Byte). Dies ist praktisch wenn Zeiger zum Zugriff auf Arrays verwendet werden, mit `p++` bzw. `p--` bewegt man den Zeiger immer um eine ganze Indexposition.
 
 
@@ -33,7 +33,7 @@ Anmerkung:  die Anzahl der Bytes die ein Datentyp an Speicher belegt wird durch 
 
 Bei einer allgemeinen Addition, z.B. `p+4`: wird 4 mal die Datentyp-Größe von `p` addiert. Ist `p` ein `int` Zeiger so wird durch `p+4` tatsächlich zum Wert von `p` 16 Bytes addiert.
 
-Dieses Verhalten ermöglicht eine 1:1 Zuordnung zwischen Index- und Zeiger-Zugriff auf ein Array.
+Dieses Verhalten ermöglicht eine 1:1 Zuordnung zwischen **Index-Zugriff und Zeiger-Zugriff** auf ein Array.
 
 ```c++
 int arr[5];
@@ -90,9 +90,9 @@ while(i<5)
 
 Wir wollen, dass nur eine Variable inkrementiert werden muss.
 
-Idee: Nehmen einen zweiten Zeiger und setzen diesen ans Ende (=Sentry).
+Idee: Nehmen einen zweiten Zeiger und setzen diesen ans Ende (=**Sentry**).
 
-Hinweis: Zeiger können mit Vergleichsoperatoren verglichen werden. Bsp. `p<q`
+Hinweis: Zeiger können mit **Vergleichsoperatoren** verglichen werden. Bsp. `p<q`
 
 Lösung:
 

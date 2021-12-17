@@ -20,7 +20,7 @@ Hinweis: Prüfe ob Zahl durch 2 dividierbar, falls ja ist 2 ein Primfaktor, divi
 
 #### Übung (Gerechte Arbeitsteilung)
 
-Ein Haufen von $s$ gleich schweren Steinen soll weggetragen werden. Ein Arbeiter kann maximal $n$ Steine tragen. Finde heraus wie viele Arbeiter notwendig sind und finde weiters eine Aufteilung, so dass kein Arbeiter um mehr als einen Stein mehr tragen muss als ein anderer. Liefere das Ergebnis in einem Array das die Anzahl der Steine für jeden einzelnen Arbeiter enthält. Das Array soll Rückgabewert einer Klassen-Methode `split()` sein.
+Ein Haufen von s gleich schweren Steinen soll weggetragen werden. Ein Arbeiter kann maximal n Steine tragen. Finde heraus wie viele Arbeiter notwendig sind und finde weiters eine Aufteilung, so dass kein Arbeiter um mehr als einen Stein mehr tragen muss als ein anderer. Liefere das Ergebnis in einem Array das die Anzahl der Steine für jeden einzelnen Arbeiter enthält. Das Array soll Rückgabewert einer Klassen-Methode `split()` sein.
 
 
 ```java
