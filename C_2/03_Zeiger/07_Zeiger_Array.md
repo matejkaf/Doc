@@ -10,8 +10,8 @@ Setzen der Zeiger:
 ```c++
 const int len=5;
 int a[len];
-int* p = a;
-int* q = &a[len-1];
+int* p = a; // Zeiger auf erstes Element
+int* q = &a[len-1]; // Zeiger auf letztes Element
 ```
 
 Mit Zeigern kann + und - gerechnet werden:
@@ -26,12 +26,12 @@ q -= 3;
 ```
 
 Dabei gilt die Zeiger-Arithmetik, die Änderung des Zeiger-Werts ist vom Datentyp des Zeigers abhängig.
-Beispiel Zeiger auf `int`: `int* p`. Mit `p++` wird der Wert von p um die Anzahl von Bytes erhöht die ein `int` im Speicher an Platz benötigt (dies sind in der Regel 4 Byte).
+Beispiel Zeiger auf `int` (`int* p`) – mit `p++` wird der Wert von p um die Anzahl von Bytes erhöht die ein `int` im Speicher an Platz benötigt (dies sind in der Regel 4 Byte). Dies ist praktisch wenn Zeiger zum Zugriff auf Arrays verwendet werden, mit `p++` bzw. `p--` bewegt man den Zeiger immer um eine ganze Indexposition.
 
 
-Anmerkung:  die Anzahl der Bytes die ein Datentyp an Speicher belegt wird durch `sizeof` ermittelt. Beispiel: `sizeof(int)`
+Anmerkung:  die Anzahl der Bytes die ein Datentyp an Speicher belegt wird durch `sizeof` ermittelt. Beispiel: `sizeof(int)` ist häufig 4 Bytes.
 
-Bei einer allgemeinen Addition, z.B. `p+4` wird 4 mal die Datentyp-Größe von p addiert. Ist p ein int Zeiger so wird durch `p+4` tatsächlich zum Wert von p 16 Bytes addiert.
+Bei einer allgemeinen Addition, z.B. `p+4`: wird 4 mal die Datentyp-Größe von `p` addiert. Ist `p` ein `int` Zeiger so wird durch `p+4` tatsächlich zum Wert von `p` 16 Bytes addiert.
 
 Dieses Verhalten ermöglicht eine 1:1 Zuordnung zwischen Index- und Zeiger-Zugriff auf ein Array.
 
@@ -54,10 +54,9 @@ p[1] = 53; // == arr[0] = 53
 p[2] = 64; // == arr[0] = 64
 ```
 
-Diese "Umwandlung" nimmt der C Compiler immer selbst vor.
-Für ein compiliertes C Programm gibt es Arrays nicht mehr, sondern nur noch Zeiger auf dafür reservierte Speicherbereiche.
+Diese "Umwandlung" nimmt der C Compiler immer selbst vor. Für ein compiliertes C Programm gibt es Arrays nicht mehr, sondern nur noch Zeiger auf dafür reservierte Speicherbereiche.
 
-Um ein Programm statt mit Index mit Zeigerzugriffe zu schreiben würde es genügen Ausdrücke in der Form `arr[i]` durch `*(arr+i)` zu ersetzen, aber man kann mit Zeiger wesentlich eleganter arbeiten.
+Um ein Programm statt mit Index mit Zeigerzugriffe zu schreiben würde es genügen Ausdrücke in der Form `arr[i]` durch `*(arr+i)` zu ersetzen, aber man kann mit Zeiger auch wesentlich eleganter arbeiten.
 
 Beispiel: Alle Array-Elemente auf 0 setzen.
 
@@ -75,7 +74,7 @@ for(int i=0; i<len; i++) {
 
 # Sentry (Wächter)
 
-Bei dieser Art der Implementierung ist störend, dass 2 Variablen inkrementiert werden müssen, `i` und `p`:
+Bei dieser Art der Implementierung ist noch störend, dass 2 Variablen inkrementiert werden müssen, `i` und `p`:
 
 ```c++
 int a[] = {1,2,3,4,5};
