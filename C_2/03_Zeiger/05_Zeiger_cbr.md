@@ -1,6 +1,6 @@
 ---
 title: Zeiger - call by reference
-tags: [lecture,c,pointer,C_2]
+tags: [lecture,c,pointer,C_2,2AHITS]
 ---
 
 # Der Adressoperator (`&`)

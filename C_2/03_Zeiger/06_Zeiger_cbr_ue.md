@@ -1,7 +1,7 @@
 ---
 title: Call-by-Reference
 subtitle: Übungen
-tags: [assignment,c,pointer,C_2]
+tags: [assignment,c,pointer,C_2,2AHITS]
 ---
 
 Normalerweise werden Parameter per Kopie an Funktionen übergeben. Eine Änderung des lokalen Parameters in der Funktion hat keine Auswirkung auf die beim Funktionsaufruf übergebene Variable.
