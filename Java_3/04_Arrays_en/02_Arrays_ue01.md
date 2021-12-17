@@ -14,7 +14,9 @@ Schreibe eine Klassen-Methode die ein Array mit den Werten `{1,2,2,4,8,32,256,81
 
 Schreibe eine Methode die eine ganze, positive Zahl in ihre Primfaktoren zerlegt und diese in einem Array zurückgibt.
 
-Hinweis: Prüfe ob Zahl durch 2 dividierbar, falls ja ist 2 ein Primfaktor, dividiere dann die Zahl durch 2 und versuche 2 erneut als Primfaktor so lange bis die Zahl nicht mehr durch 2 dividierbar ist, setze dann mit 3, 5, 7, etc. in gleicher weise fort bis die der Überrest der Zahl 1 wird. Das die Faktoren Primzahlen sind ergibt sich bei dieser Vorgangsweise ganz automatisch.
+Hinweis: Prüfe ob Zahl durch 2 dividierbar, falls ja ist 2 ein Primfaktor, dividiere dann die Zahl durch 2 und versuche 2 erneut als Primfaktor so lange bis die Zahl nicht mehr durch 2 dividierbar ist, setze dann mit 3, 5, 7, etc. in gleicher Weise fort bis der Überrest der Zahl 1 wird. Die geraden Zahlen kann man zur Optimierung weglassen, da diese keine Primfaktoren sein können (außer 2). Dass die gefundenen Faktoren Primzahlen sind ergibt sich bei dieser Vorgangsweise ganz automatisch.
+
+Hinweis: eine `int` Variable hat 32 Bit und kann daher maximal 32 Primfaktoren haben. D.h. ein Array der Länge 32 ist auch für den schlechtesten Fall ausreichend. In einem solchen Array können die gefundenen Primfaktoren zuerst gesammelt und dann später (wenn die Anzahl der Primfaktoren bekannt ist) in ein Array der korrekten Länge umkopiert werden – dieses ist dann der Rückgabewert der Methode.
 
 ---
 

@@ -218,7 +218,7 @@ Oder mit jedem Text-Editor.
 
 Dem Befehl `ssh` kann als weiteres Argument ein **auszuführender Befehl** übergeben werden. Dabei wird das lokale stdin in das remote stdin übertregen und stdout in der Gegenrichtung.
 
-(1) Erzeugen einer Datei am Remote System mit eingegebenen Inhalt.
+(1) Erzeugen einer Datei am Remote System mit eingegebenen Inhalt am lokalen System.
 
 ```sh
 $ cat | ssh alice@192.168.178.76 "cat > test.txt"
@@ -238,7 +238,7 @@ $ ssh alice@192.168.178.76 "cat test.txt"
 
 
 
-(3) Folgendes Script soll Remote erzeugt und ausgeführt werden:
+(3) Folgendes Script soll Remote als `.sh` Datei erzeugt und dann Remote ausgeführt werden:
 
 ```sh
 # Erzeuge 5 Text Files 1.txt, ..., 5.txt
@@ -247,11 +247,13 @@ for num in $(seq -w 1 5); do
 done
 ```
 
-Alles in einer Zeile, remote in `do.sh` schreiben, eXecution flag setzen und Skript ausführen:
+Lösung: Alles in einer Zeile, remote in `do.sh` schreiben, eXecution flag setzen und Skript ausführen:
 
 ```sh
 echo 'for num in $(seq -w 1 5); do\n touch "${num}.txt"\n done\n' | ssh alice@192.168.178.76 'cat >do.sh;chmod u+x do.sh;./do.sh'
 ```
+
+Hat sich jemand unauthorisiert Zugang zu einem SSH Login verschafft ist es daher ein Leichtes Schadcode in das Zielsystem einzuschleusen.
 
 
 

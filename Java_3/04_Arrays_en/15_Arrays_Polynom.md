@@ -55,7 +55,7 @@ Erstellen Sie folgenden Konstruktoren:
 
 Eine Immutable Klasse ist eine Klasse deren Objekte sich nach dem Instanzieren nicht mehr ändern. Das bedeutet anders, dass Instanzvariablen nur in den Konstruktoren gesetzt und dannach nicht mehr beschrieben werden. 
 
-Um ein Verändern von "außen" zu verhindern werden die Instanzvariablen als `private` deklariert (dann von außen nicht sichtbar) und der Zugriff erfolgt nur über eine getter Methode.
+Um ein Verändern von "außen" zu verhindern werden die Instanzvariablen als `private` deklariert (dann von außen nicht sichtbar) und der Zugriff erfolgt nur über eine sogenannte getter Methode.
 
 ```java
 class ImmutableBeispiel {
