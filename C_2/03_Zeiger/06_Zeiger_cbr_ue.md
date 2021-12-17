@@ -16,14 +16,14 @@ Beispiel:
 ```c
 void foo(int* p, int n)
 {
-	*p = *p + n;
+  *p = *p + n;
 }
 
 void main()
 {
-	int x = 42;
-	foo(&x, 3); // &x = Zeiger auf x
-	printf("%d", x);
+  int x = 42;
+  foo(&x, 3); // &x = Zeiger auf x
+  printf("%d", x);
 }
 ```
 
@@ -67,14 +67,14 @@ int ok = 0;
 double temp;
 while(ok==0)
 {
-	ok = input(
-			"Bitte Temperatur eingeben",
-			&temp,
-			35.5,    // untere Grenze
-			44.5     // obere Grenze
-			);
-	if(ok==0)
-		printf("Falscher Wertebereich");
+  ok = input(
+    "Bitte Temperatur eingeben",
+    &temp,
+    35.5,    // untere Grenze
+    44.5     // obere Grenze
+  );
+  if(ok==0)
+    printf("Falscher Wertebereich");
 }
 printf("Korrekte Eingabe: %lf\n", temp);
 ```
