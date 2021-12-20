@@ -1,6 +1,6 @@
 ---
-title: Grundlagen UNIX shell II
-subtitle: Elemementare bash Bedienung (Übungen)
+title: stdin / stdout
+subtitle: Grundlagen UNIX shell (Übungen)
 tags: [assignment, unix, shell, bash,SYTG_2_Linux, 2AHITS ]
 ---
 
