@@ -6,7 +6,7 @@ tags: [assignment, unix, shell, bash,SYTG_2_Linux, 2AHITS ]
 
 #### Übung (Kopie mit cat)
 
-Erstelle mit Hilfe von "cat" eine Kopie der Datei `test.txt` → `test2.txt`
+Erstelle mit Hilfe von "cat" eine Kopie der Datei `test.txt` → `test2.txt`. `test2.txt` soll den gleichen Inhalt enthalten wie `test.txt`. Prüfe ob `test2.txt` wirklich den gewünschten Inhalt hat.
 
 ---
 
