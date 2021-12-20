@@ -1,16 +1,12 @@
 ---
-title: Grundlagen UNIX shell II
-subtitle: Elemementare bash Bedienung
+title: stdin / stdout
+subtitle: Grundlagen UNIX shell
 tags: [lecture, unix, shell, bash,SYTG_2_Linux, 2AHITS ]
 ---
 
 * TOC
 {:toc}
 [! 2AHITS G1 06.12.2021]
-
-
-
-# stdin / stdout
 
 > `cat`, Umleitung stdout `>` und `>>`, Umleitung stdin `<`
 
@@ -126,7 +122,6 @@ $ cat hallo.txt test.txt >hallotest.txt
 ```
 
 [Übung "C Hallo Welt"](03b_basics2_ue)
-
 
 
 
