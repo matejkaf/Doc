@@ -25,7 +25,7 @@ Erstelle mit Hilfe von `echo` Befehlen eine Datei `hello.cpp` mit folgendem Inha
 
 int main() {
   printf("\n\t*** Hallo Welt ***\n");
-	return 0;
+  return 0;
 }
 ```
 

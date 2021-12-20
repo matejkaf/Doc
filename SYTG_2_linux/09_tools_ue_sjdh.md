@@ -6,8 +6,6 @@ tags: [solution]
 
 
 
-
-
 ```sh
 $ echo "5 weeks" | gdate +"%d.%m.%Y" -f -
 23.01.2022
