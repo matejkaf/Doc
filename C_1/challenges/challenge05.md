@@ -4,12 +4,44 @@ subtitle: Schleifen Challenges
 tags: [assignment,challenge]
 ---
 
-#### Übung (Ungerade Zahlen bis Grenze addieren)
+#### Übung (Exponentielles Wachstum)
 
-Schreibe ein Programm. Der Anwender soll eine Zahl n eingeben. 
-Ermittle nun **wie viele** aufsteigende ungerade Zahlen (bei 1 beginnend) addiert werden müssen bis die Summe größer oder gleich n ist.
+Ein exponentielles Wachstum liegt dann vor wenn sich eine Größe innerhalb eines festen Zeitraums (z.B. 1 Tag) um einen konstanten Multiplikations-Faktor (z.B. 2) erhöht.
 
-Beispiel: n=26, Die Summe 1+3+5+7+9 ergibt 25 das ist noch zu wenig, erst 1+3+5+7+9+11 ergibt 36. Es mussten 6 Zahlen summiert werden daher wird 6 ausgegeben.
+Beispiel:
+
+```
+Startwert: 10
+Faktor: 2
+0. → 10
+1. → 20
+2. → 40
+3. → 80
+4. → 160
+5. → 320
+...
+```
+
+Die Verbreitung von Infektionskrankheiten wie COVID-19 ist z.B. exponentiell.
+
+Wir nehmen folgenden Ausschnitt aus den österreichischen Morgenmeldungen (Anzahl der positvien Tests)
+
+```
+2021-11-02T08:00:00+01:00;10;Österreich;838564
+2021-11-03T08:00:00+01:00;10;Österreich;846297
+...
+2021-11-16T08:00:00+01:00;10;Österreich;982111
+2021-11-17T08:00:00+01:00;10;Österreich;994995
+
+```
+
+Vom 3.–16.11. gilt in Österreich ein "Lockdown light", ein Zweiter „harter Lockdown“ ist von 17. November bis 6. Dezember 2020. Am 16.11. sind 135.814 Personen an COVID-19 erkrankt, nehmen wir an jene die am 02.11. neu erkrankten werden am 17.11 wieder gesund dies sind 7.733 Personen. Am 17.11. kommen 12.884 neu Positive hinzu das ergibt ein Wachstum an 12.884-7.733=5151 Personen. 
+
+Die Wachstumsrate ist daher zu diesem Zeitpunkt (135814+5151)/135814=1,0379268706
+
+d.h. ungefähr **3,8% pro Tag**, das erscheint nicht viel zu sein – oder? Warum also am 17.11. ein harter Lockdown?
+
+Finde durch ein Programm heraus wie lange (in Tagen) es nach dem 17.11. gedauert hätte bis 1 Mio. Menschen gleichzeitig infiziert wären? D.h. wie oft muss man 135814 mit 1,0379268706 multiplizieren bis sich eine Zahl größer als 1000000 ergibt?
 
 ---
 

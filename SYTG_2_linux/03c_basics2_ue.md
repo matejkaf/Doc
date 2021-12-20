@@ -12,7 +12,7 @@ Erstelle mit Hilfe von "cat" eine Kopie der Datei `test.txt` → `test2.txt`
 
 #### Übung (dirlist in File)
 
-Schreibe den Inhalt des Verzeichnisses `/etc`  in eine Datei mit dem Namen `etcdir.txt`.
+Schreibe den Inhalt des Verzeichnisses `/etc`  in eine Textdatei mit dem Namen `etcdir.txt`.
 
 ---
 
@@ -35,7 +35,7 @@ Compiliere und starte das C Programm mit folgendem Befehl in der Kommandozeile:
 $ g++ -o hello hello.cpp;./hello
 ```
 
-Hinweis: Verwende einfache Hochkommas rund um den mit `echo` auszugebenden Text (`echo 'text'`) ansonsten hat die shell "Schwierigkeiten" mit den Sonderzeichen `#`,`<`,`>` etc.
+Hinweis: Verwende einfache Hochkommas rund um den mit `echo` auszugebenden Text (Beispiel: `echo 'text'`) ansonsten hat die shell "Schwierigkeiten" mit den Sonderzeichen `#`,`<`,`>` etc.
 
 ---
 

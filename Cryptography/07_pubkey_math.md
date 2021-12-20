@@ -98,7 +98,7 @@ $$
 ---
 
 - Geheimhaltung: Ist einem Angreifer nur eine Zahl $d$, $p$, $q$ oder $t$ bekannt so wäre ein entschlüsseln möglich.
-- Gängige Größen für $n$: 2048/4096 Bits.
+- Gängige Größen für $n$: 2048/4096 Bits (616/1233 Stellen).
 
 
 
@@ -117,7 +117,7 @@ Ergibt sich aus der Tatsache, dass es sehr **leicht** ist 2 Zahlen zu **multipli
 
 Beispiel: 
 
-- [RSA-768](https://en.wikipedia.org/wiki/RSA_numbers#RSA-768) (768 Bit Zahl mit 232 Stellen faktorisieren). 2009. CPU-Zeit: 2000 Jahre. 2016 wird auch der diskrete Logarithmus berechnet.
+- [RSA-768](https://en.wikipedia.org/wiki/RSA_numbers#RSA-768) (768 Bit Zahl mit 232 Stellen faktorisieren). 2009. CPU-Zeit: 2000 Jahre.
 - [RSA-240](https://en.wikipedia.org/wiki/RSA_numbers#RSA-240) (795 Bit Zahl 240 Stellen), November 2019 [[*](https://www.heise.de/security/meldung/Forscher-vermelden-neuen-Rekord-beim-Knacken-von-RSA-4603700.html)], etwa 900 CPU-Kern-Jahre auf 2.1 GHz Xeons Gold, Diskreter Logarithmus wurde auch berechnet. Algorithmus ist 3-mal schneller als bei RSA-768 (HW Verbesserungen herausgerechnet)!
 
 D.h. wählt man $n$ groß genug und gibt dieses öffentlich bekannt, hält $p$ und $q$ aber geheim, so ist es einem Angreifer praktisch unmöglich $p$ und $q$ herauszufinden.

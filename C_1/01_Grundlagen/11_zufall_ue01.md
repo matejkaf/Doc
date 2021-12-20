@@ -77,7 +77,7 @@ Ermittle eine zufällige Zahl im Bereich 15–17. Starte das Programm häufig ge
 
 #### Übung (Würfel)
 
-Schreibe ein Programm das 10 zufällige Würfe eines Würfels mit 6 Seiten simuliert. Das Programm soll dazu 10 zufällige Zahlen von 1–6 ausgibt. Verwende eine Schleife die 10 Mal durchläuft.
+Schreibe ein Programm das 10 zufällige Würfe eines Würfels mit 6 Seiten simuliert. Das Programm soll dazu 10 zufällige Zahlen von 1–6 ausgeben. Verwende eine Schleife die 10 Mal durchläuft.
 
 ---
 
