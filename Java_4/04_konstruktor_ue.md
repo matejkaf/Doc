@@ -6,6 +6,8 @@ tags: [assignment,4BHELS]
 
 #### Übung (A/B Erweiterung)
 
+[Link zum Skriptum](https://matejkaf.github.io/Doc/Java_4/03_konstruktor.html)
+
 Erweitere die Klasse `A` um eine private `int` Instanzvariable. Ergänze Konstruktoren (in beiden Klassen) mit einem Parameter um diese Instanzvariable auf einen Startwert setzen zu können.
 
 ---
