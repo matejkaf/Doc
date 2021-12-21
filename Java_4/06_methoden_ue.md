@@ -8,7 +8,9 @@ tags: [assignment,4BHELS]
 
 #### Übung (Schubkarre)
 
-Die Smarte Schubkarre ist die neueste Inovation für die Baustelle, vorbei sind die Zeiten wo die Schubkarre zusammenbricht weil man diese wieder einmal überladen hat. Deine Aufgabe ist die Software für die Smarte Schubkarre zu schreiben – mit Hilfe von Vererbung – in 2 Klassen `Schubkarre` und  `SmarteSchubkarre`.
+[Link zum Skriptum](https://matejkaf.github.io/Doc/Java_4/05_methoden.html)
+
+Die smarte Schubkarre ist die neueste Inovation für die Baustelle, vorbei sind die Zeiten wo die Schubkarre zusammenbricht weil man diese wieder einmal überladen hat. Deine Aufgabe ist die Software für die Smarte Schubkarre zu schreiben – mit Hilfe von Vererbung – in 2 Klassen `Schubkarre` und  `SmarteSchubkarre`.
 
 Als ersten Schritt ist die Basisklasse `Schubkarre` zu implementieren. Diese hat die aktuell Beladung (kg) als Instanzvariable, diese soll `private` definiert werden.
 
