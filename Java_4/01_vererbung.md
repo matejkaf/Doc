@@ -17,11 +17,11 @@ Vorteile:
 Beispiel
 
 ```java
-public class Person {
+class Person {
     String name;
 }
 
-public class Schueler extends Person {
+class Schueler extends Person {
     // Schueler erbt Inhalt von Person
     int knr; 
 }
@@ -44,14 +44,14 @@ Man sagt:
 Auch Methoden werden vererbt.
 
 ```java
-public class Person {
+class Person {
     String name;
     String capName() {
         return name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase();
     } 
 }
 
-public class Schueler extends Person {
+class Schueler extends Person {
     int knr;
 }
 ```
@@ -69,7 +69,7 @@ System.out.println( s.capName() );
 Methoden in der Klasse `Schueler` haben Zugriff auf geerbte Instanzvariablen und Methoden.
 
 ```java
-public class Schueler extends Person {
+class Schueler extends Person {
     int knr;
     public void print() {
         System.out.println(knr + ": " + capName() );
