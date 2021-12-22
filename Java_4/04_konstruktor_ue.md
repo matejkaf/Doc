@@ -4,7 +4,7 @@ subtitle: Übung Konstruktoren
 tags: [assignment,4BHELS]
 ---
 
-#### Übung (A/B Erweiterung)
+#### Übung (Konstruktor – A/B Erweiterung)
 
 [Link zum Skriptum](https://matejkaf.github.io/Doc/Java_4/03_konstruktor.html)
 

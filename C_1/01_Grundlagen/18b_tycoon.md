@@ -24,7 +24,7 @@ while(taste == 'j')
   printf("Nachfrage = %d\n", nachfrage);
 
   printf("Nochmals? (j/n)\n");
-	scanf("%c", &taste);
+  scanf("%c", &taste);
 }
 ```
 
