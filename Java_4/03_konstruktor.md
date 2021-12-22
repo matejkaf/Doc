@@ -9,13 +9,13 @@ Konstruktoren sind eine Ausnahme, sie werden **nicht vererbt** sondern **automat
 Beispiel:
 
 ```java
-public class A  {
+class A  {
     public A() {
         System.out.println("AAA");
     }
 }
 
-public class B extends A {
+class B extends A {
     public B() {
         System.out.println("BBB");
     }
@@ -25,7 +25,7 @@ public class B extends A {
 Es wird automatisch der Default-Konstruktor der Basisklasse `A` aufgerufen. Das könnte man auch direkt hinschreiben mit dem Schlüsselwort `super`: 
 
 ```java
-public class B extends A {
+class B extends A {
     public B() {
         super(); // Aufruf Default Konstruktor in Klasse A
         System.out.println("BBB");

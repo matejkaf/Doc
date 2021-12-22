@@ -28,7 +28,7 @@ Lege Objekte von beiden Klassen an und verwende alle Instanzvariablen und Method
 
 Geerbt werden kann immer nur von einer einzigen Klasse, aber wie oft Vererbung hintereinander ausgeführt wird ist nicht begrenzt. Außerdem kann eine Klasse die Basisklasse für mehrere abgeleitete Klassen sein. Erstelle von der Klasse `Schueler` 2 weiter abgeleitete Klassen mit je einer zusätzlichen Instanzvariable:
 
-- `OeffArb` – Anzahl der freien Nachmittage
+- `OeffArb` (=Öffentlichkeitsarbeiter) – Anzahl der freien Nachmittage
 - `Jahrling` – Name der Herkunftsschule
 
 Mit jeweils einer eigenen Instanzvariable und passe die `toString` Methode entsprechend an.
