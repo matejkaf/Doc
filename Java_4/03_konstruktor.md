@@ -4,7 +4,7 @@ subtitle: Vererbung
 tags: [lecture,4BHELS]
 ---
 
-Konstruktoren sind eine Ausnahme werden **nicht vererbt** sondern **automatisch aufgerufen**.
+Konstruktoren sind eine Ausnahme, sie werden **nicht vererbt** sondern **automatisch aufgerufen**. Es wird immer dafür gesorgt, dass ein Konstruktor in der Basisklasse aufgerufen wird. Falls dieser Aufruf fehlt wird er automatisch ausgeführt.
 
 Beispiel:
 
