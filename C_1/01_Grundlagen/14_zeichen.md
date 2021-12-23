@@ -11,7 +11,7 @@ c = 'a';
 printf("%c",c);
 ```
 
-Für einzelne Buchstaben werden einfache Hochkomma ("ticks") verwendet – z.B. `'a'`.
+Für einzelne Buchstaben werden einfache Hochkomma (engl. "ticks") verwendet – z.B. `'a'`.
 
 Computer kann nur Zahlen verarbeiten, in einer `char` Variable steht daher eigentlich eine Zahl. Jedem Zeichen wird eine Zahl zwischen 1 und 127 zugeordnet, dies ist der sogenannte **ASCII Code**. 
 
@@ -71,5 +71,4 @@ while(taste=='j')
 	scanf("%c", &taste);
 }
 ```
-
 

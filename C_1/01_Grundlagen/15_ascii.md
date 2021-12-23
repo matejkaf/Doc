@@ -12,7 +12,7 @@ Ein Computer speichert nur Zahlen. Der ASCII Code legt für jedes Zeichen eine Z
 +--------------------------------------------------------------+
 | Dez | Zeichen | Dez | Zeichen | Dez | Zeichen | Dez | Zeichen|
 | --- | ------- | --- | ------- | --- | ------- | --- | -------|
-|  0  |   NL    | 32  |  Space  | 64  |   @     | 96  |   `    |
+|  0  |         | 32  |  Space  | 64  |   @     | 96  |   `    |
 |  1  |         | 33  |   !     | 65  |   A     | 97  |   a    |
 |  2  |         | 34  |   '     | 66  |   B     | 98  |   b    |
 |  3  |         | 35  |   #     | 67  |   C     | 99  |   c    |
@@ -43,8 +43,8 @@ Ein Computer speichert nur Zahlen. Der ASCII Code legt für jedes Zeichen eine Z
 |  28 |         | 60  |   <     | 92  |   \     | 124 |   |    |
 |  29 |         | 61  |   =     | 93  |   ]     | 125 |   }    |
 |  30 |         | 62  |   >     | 94  |   ^     | 126 |   ~    |
-|  31 |         | 63  |   ?     | 95  |   _     | 127 |   DEL  |
+|  31 |         | 63  |   ?     | 95  |   _     | 127 |        |
 +--------------------------------------------------------------+
 ```
 
-Die leeren Felder sind nach ASCII Norm spezielle Steuerzeichen.
+Die leeren Felder sind durch spezielle Steuerzeichen belegt.
